@@ -1,0 +1,87 @@
+{
+	"flex-layout.row#menu-links": {
+		"children": [
+			"vtex.menu@2.x:menu#category-menu_mob"	
+		],
+		"props": {
+			"blockClass": "menu-links"
+		}
+	},
+
+	"vtex.menu@2.x:menu#category-menu_mob"	: {
+		"title": "Menu [ MOBILE ]",
+		"children": [
+			"menu-item#position-1-mob",
+			"menu-item#position-2-mob",
+			"menu-item#position-3-mob",
+			"menu-item#position-4-mob"
+		],
+		"props": {
+			"blockClass": "category-menu_mob"
+		}
+	},
+
+	"menu-item#position-1-mob": {
+		"props": {
+			"id": "menu-item-position-1-mob",
+			"blockClass": "item-menu",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Absorventes Noturno",
+				"href": "#",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Absorventes Noturnos"
+			}
+		}
+	},
+
+	"menu-item#position-2-mob": {
+		"props": {
+			"id": "menu-item-position-2-mob",
+			"blockClass": "item-menu",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Absorventes Diurnos",
+				"href": "#",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Absorventes Diurnos"
+			}
+		}
+	},
+
+	"menu-item#position-3-mob": {
+		"props": {
+			"id": "menu-item-position-3-mob",
+			"blockClass": "item-menu",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Protetor Diário",
+				"href": "#",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Protetor Diário"
+			}
+		}
+	},
+
+	"menu-item#position-4-mob": {
+		"props": {
+			"id": "menu-item-position-4-mob",
+			"blockClass": "item-menu",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Calcinha Absorvente",
+				"href": "#",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Calcinha Absorvente"
+			}
+		}
+	}
+}

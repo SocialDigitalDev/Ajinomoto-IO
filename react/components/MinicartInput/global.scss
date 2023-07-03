@@ -1,0 +1,126 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+.minicart {
+    
+    &-input {
+        
+        &__group{
+            
+            label {
+                display: block;
+                width: 100%;
+                margin-bottom: 8px;
+                font-family: $Poppins;
+                font-weight: $medium;
+                font-size: 16px;
+                color: $purple-3;
+                line-height: 24px;
+            }
+
+            fieldset {
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 0;
+                margin: 0;
+                position: relative;
+                border: none;
+
+                #shipping {
+                    display: block;
+                    width: 100%;
+                    height: 45px;
+                    padding: 12px 125px 12px 40px;
+                    background: $white;
+                    border: 1px solid $gray-10;
+                    border-radius: 5px;
+                    font-family: $Poppins;
+                    font-weight: $semi-bold;
+                    font-size: 14px;
+                    color: $primary;
+                    line-height: 21px;
+
+                    &::placeholder {
+                        font-weight: $regular;
+                        color: $gray-6;
+                    }
+                }
+
+                .shipping-input__btn {
+                    display: block;
+                    width: 121px;
+                    height: 45px;
+                    padding: 12px 30px;
+                    margin: auto 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: $purple-3; 
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: none;
+                    font-family: $Poppins;
+                    font-weight: $regular;
+                    font-size: 14px;
+                    color: $white;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        background: $white;
+                        border: 2px solid $purple-3;
+                        color: $purple-3;
+                        font-weight: $semi-bold;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    &-result {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 8px 0;
+
+        &__label {
+            display: block;
+            width: 100%;
+            font-family: $Poppins;
+            font-weight: $medium;
+            font-size: 16px;
+            color: $purple-3;
+            line-height: 24px;
+        }
+
+        &__data {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0 10px;
+        }
+
+        &__value {
+            display: block;
+            font-family: $Poppins;
+            font-weight: $medium;
+            font-size: 16px;
+            color: $purple-3;
+            line-height: 24px;
+        }
+
+        &__remove {
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

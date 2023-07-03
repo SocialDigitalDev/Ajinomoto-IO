@@ -1,0 +1,11 @@
+{
+	"flex-layout.row#header-infos-client_mob": {
+		"children": [
+			"flex-layout.row#my-account",
+			"flex-layout.row#minicart"
+		],
+		"props": {
+			"blockClass": "header--infos-client_mob"
+		}
+	}
+}

@@ -1,0 +1,271 @@
+{
+	"store.custom#quem-somos":{
+		"blocks": [
+			"flex-layout.row#container-quem-somos",
+			"highlight-menu-institutional"
+		]
+	},
+	
+	"flex-layout.row#container-quem-somos": {
+		"title": "[ INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"flex-layout.col#container-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--container",
+				"institucional--container"
+			]
+		}
+	},
+	
+	"flex-layout.col#container-quem-somos": {
+		"children": [
+			"flex-layout.row#breadcrumb-institucional",
+			"flex-layout.row#menu-institucional",
+			"flex-layout.row#content-quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos--container"
+		}
+	},
+
+	"flex-layout.row#breadcrumb-institucional": {
+		"title": "[ BREADCRUMB - INSTITUCIONAL ]",
+		"children": [
+			"rich-text#breadcrumb-quem-somos"
+		],
+		"props": {
+			"blockClass": "breadcrumb-institucional"
+		}
+	},
+
+	"rich-text#breadcrumb-quem-somos": {
+		"props": {
+      "text": "[Início](/) > Institucional > <span class='vtex-rich-text-0-x-span--breadcrumb--institucional'>Quem Somos</span>",
+			"blockClass": [
+				"breadcrumb--quem-somos",
+				"breadcrumb--institucional"
+			]
+    }
+	},
+	
+	"flex-layout.row#menu-institucional": {
+		"title": "[ MENU INSTITUCIONAL ]",
+		"children": [
+			"vtex.menu@2.x:menu#menu-institucional"
+		],
+		"props": {
+			"blockClass": "menu-institucional"
+		}
+	},
+	
+	"flex-layout.row#content-quem-somos": {
+		"title": "[ CONTEÚDO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"flex-layout.col#content-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.col#content-quem-somos": {
+		"children": [
+			"flex-layout.row#title-quem-somos",
+			"flex-layout.row#resume-quem-somos",
+			"flex-layout.row#gallery-quem-somos",
+			"flex-layout.row#text-quem-somos",
+			"flex-layout.row#final-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.row#title-quem-somos": {
+		"title": "[ TÍTULO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"rich-text#title-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--title",
+				"institucional--title"
+			]
+		}
+	},
+	
+	"rich-text#title-quem-somos": {
+		"title": "[ TÍTULO - QUEM SOMOS ]",
+		"props": {
+			"text": "Quem somos",
+			"font": "t-heading-1",
+			"blockClass": [
+				"title--quem-somos",
+				"title--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#resume-quem-somos": {
+		"title": "[ RESUMO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#resume-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--resume",
+				"institucional--resume"
+			]
+		}
+	},
+	
+	"rich-text#resume-quem-somos": {
+		"title": "[ RICH TEXT - RESUMO QUEM SOMOS ]",
+		"props": {
+			"text": "Somos a Modess, a primeira marca de absorvente higiênico descartável no Brasil! Ao longo de nossa história, simbolizamos a expansão de possibilidades para as mulheres e contribuímos para a quebra de tabus e preconceitos relacionados à menstruação.",
+			"blockClass": [
+				"text--quem-somos",
+				"text--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#gallery-quem-somos": {
+		"title": "[ GALERIA DE FOTOS - QUEM SOMOS ]",
+		"children": [
+			"list-context.image-list#gallery-quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos--gallery"
+		}
+	},
+	
+	"list-context.image-list#gallery-quem-somos": {
+		"children": [
+			"slider-layout#gallery-quem-somos"
+		],
+		"props": {
+			"fullWidth": true,
+			"preload": true,
+			"height": 501,
+			"blockClass": "gallery-quem-somos",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/modess-institucional-02.jpg"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/modess-institucional-01.jpg"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/modess-institucional-03.png"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/modess-institucional-02.jpg"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/modess-institucional-01.jpg"
+				}
+			]
+		}
+	},
+	
+	"slider-layout#gallery-quem-somos": {
+		"props": {
+			"showNavigationArrows": "never",
+			"showPaginationDots": "never",
+			"infinite": false,
+			"itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1.5
+      },
+			"blockClass": "gallery-quem-somos"
+		}
+	},
+	
+	"flex-layout.row#text-quem-somos": {
+		"title": "[ TEXTO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#text-quem-somos"
+		],
+		"props": {
+			"blockClass": [
+				"quem-somos--text",
+				"institucional--text"
+			]
+		}
+	},
+	
+	"rich-text#text-quem-somos": {
+		"title": "[ RICH TEXT - QUEM SOMOS ]",
+		"props": {
+			"text": "Em 2023, a Ever Green relançou a marca com uma nova proposta: democratizar o uso de absorventes no Brasil, oferecendo opções para consumidoras de todas as camadas sociais. Contribuindo, assim, com a erradicação da pobreza menstrual no Brasil.",
+			"blockClass": [
+				"text--quem-somos",
+				"text--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#final-quem-somos": {
+		"title": "[ FINAL - QUEM SOMOS ]",
+		"children": [
+			"flex-layout.row#img-final-quem-somos",
+			"flex-layout.row#text-final-quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos--final"
+		}
+	},
+	
+	"flex-layout.row#img-final-quem-somos": {
+		"title": "[ IMAGEM FINAL - QUEM SOMOS ]",
+		"children": [
+			"image#img-final-quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos--final-img"
+		}
+	},
+	
+	"image#img-final-quem-somos": {
+		"title": "IMAGEM PARTE FINAL QUEM SOMOS",
+		"props": {
+			"src": "assets/img/modess-institucional-04.jpg"
+		}
+	},
+	
+	"flex-layout.row#text-final-quem-somos": {
+		"title": "[ TEXTO FINAL - QUEM SOMOS ]",
+		"children": [
+			"rich-text#text-final-quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos--final-text"
+		}
+	},
+
+	"rich-text#text-final-quem-somos": {
+		"title": "[ RICH TEXT - QUEM SOMOS ]",
+		"props": {
+			"text": "Todas as embalagens dos absorventes Modess são produzidas com plástico 100% biodegradável, que não deixa resíduos no meio ambiente.",
+			"blockClass": [
+				"text--quem-somos",
+				"final-text--quem-somos"
+			]
+		}
+	}
+}

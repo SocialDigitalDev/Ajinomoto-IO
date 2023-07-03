@@ -1,0 +1,18 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+.vtex-menu-2-x-menuContainer--menu-institucional {
+	
+	.vtex-menu-2-x-menuItem .vtex-menu-2-x-styledLink {
+		
+		&.active {
+			
+			display: block;
+			background: $primary;
+			transition: .3s;
+			
+			.vtex-menu-2-x-styledLinkContent {
+				color: $white;
+			}
+		}
+	}
+}

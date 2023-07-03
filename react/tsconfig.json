@@ -1,0 +1,36 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "lib": [
+      "es2017",
+      "dom",
+      "es2018.promise"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts"
+, "components/ShippingCalculate/index.js"  ],
+  "typeAcquisition": {
+    "enable": false
+  }
+}

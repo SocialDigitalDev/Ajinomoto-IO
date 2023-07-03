@@ -1,0 +1,162 @@
+{
+	"store.custom#politica-entrega":{
+		"blocks": [
+			"flex-layout.row#container-politica-entrega",
+			"highlight-menu-institutional"
+		]
+	},
+	
+	"flex-layout.row#container-politica-entrega": {
+		"title": "[ INSTITUCIONAL - Política de Entrega ]",
+		"children": [
+			"flex-layout.col#container-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--container",
+				"institucional--container"
+			]
+		}
+	},
+	
+	"flex-layout.col#container-politica-entrega": {
+		"children": [
+			"flex-layout.row#breadcrumb-institucional",
+			"flex-layout.row#menu-institucional",
+			"flex-layout.row#content-politica-entrega"
+		],
+		"props": {
+			"blockClass": "politica-entrega--container"
+		}
+	},
+	
+	"flex-layout.row#breadcrumb-institucional": {
+		"title": "[ BREADCRUMB - INSTITUCIONAL ]",
+		"children": [
+			"rich-text#breadcrumb-politica-entrega"
+		],
+		"props": {
+			"blockClass": "breadcrumb-institucional"
+		}
+	},
+	
+	"rich-text#breadcrumb-politica-entrega": {
+		"props": {
+			"text": "[Início](/) > Institucional > <span class='vtex-rich-text-0-x-span--breadcrumb--institucional'>Quem Somos</span>",
+			"blockClass": [
+				"breadcrumb--politica-entrega",
+				"breadcrumb--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#menu-institucional": {
+		"title": "[ MENU INSTITUCIONAL ]",
+		"children": [
+			"vtex.menu@2.x:menu#menu-institucional"
+		],
+		"props": {
+			"blockClass": "menu-institucional"
+		}
+	},
+	
+	"flex-layout.row#content-politica-entrega": {
+		"title": "[ CONTEÚDO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"flex-layout.col#content-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.col#content-politica-entrega": {
+		"children": [
+			"flex-layout.row#title-politica-entrega",
+			"flex-layout.row#resume-politica-entrega",
+			"flex-layout.row#text-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.row#title-politica-entrega": {
+		"title": "[ TÍTULO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"rich-text#title-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--title",
+				"institucional--title"
+			]
+		}
+	},
+	
+	"rich-text#title-politica-entrega": {
+		"title": "[ TÍTULO - QUEM SOMOS ]",
+		"props": {
+			"text": "Quem somos",
+			"font": "t-heading-1",
+			"blockClass": [
+				"title--politica-entrega",
+				"title--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#resume-politica-entrega": {
+		"title": "[ RESUMO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#resume-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--resume",
+				"institucional--resume"
+			]
+		}
+	},
+	
+	"rich-text#resume-politica-entrega": {
+		"title": "[ RICH TEXT - RESUMO QUEM SOMOS ]",
+		"props": {
+			"text": "Somos a Modess, a primeira marca de absorvente higiênico descartável no Brasil! Ao longo de nossa história, simbolizamos a expansão de possibilidades para as mulheres e contribuímos para a quebra de tabus e preconceitos relacionados à menstruação.",
+			"blockClass": [
+				"text--politica-entrega",
+				"text--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#text-politica-entrega": {
+		"title": "[ TEXTO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#text-politica-entrega"
+		],
+		"props": {
+			"blockClass": [
+				"politica-entrega--text",
+				"institucional--text"
+			]
+		}
+	},
+	
+	"rich-text#text-politica-entrega": {
+		"title": "[ RICH TEXT - QUEM SOMOS ]",
+		"props": {
+			"text": "Em 2023, a Ever Green relançou a marca com uma nova proposta: democratizar o uso de absorventes no Brasil, oferecendo opções para consumidoras de todas as camadas sociais. Contribuindo, assim, com a erradicação da pobreza menstrual no Brasil.",
+			"blockClass": [
+				"text--politica-entrega",
+				"text--institucional"
+			]
+		}
+	}
+}

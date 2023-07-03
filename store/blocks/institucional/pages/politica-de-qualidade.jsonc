@@ -1,0 +1,162 @@
+{
+    "store.custom#politica-de-qualidade":{
+		"blocks": [
+			"flex-layout.row#container-politica-de-qualidade",
+			"highlight-menu-institutional"
+		]
+	},
+	
+	"flex-layout.row#container-politica-de-qualidade": {
+		"title": "[ INSTITUCIONAL - Política de Qualidade ]",
+		"children": [
+			"flex-layout.col#container-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--container",
+				"institucional--container"
+			]
+		}
+	},
+	
+	"flex-layout.col#container-politica-de-qualidade": {
+		"children": [
+			"flex-layout.row#breadcrumb-institucional",
+			"flex-layout.row#menu-institucional",
+			"flex-layout.row#content-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": "politica-de-qualidade--container"
+		}
+	},
+
+	"flex-layout.row#breadcrumb-institucional": {
+		"title": "[ BREADCRUMB - INSTITUCIONAL ]",
+		"children": [
+			"rich-text#breadcrumb-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": "breadcrumb-institucional"
+		}
+	},
+
+	"rich-text#breadcrumb-politica-de-qualidade": {
+		"props": {
+      "text": "[Início](/) > Institucional > <span class='vtex-rich-text-0-x-span--breadcrumb--institucional'>Quem Somos</span>",
+			"blockClass": [
+				"breadcrumb--politica-de-qualidade",
+				"breadcrumb--institucional"
+			]
+    }
+	},
+	
+	"flex-layout.row#menu-institucional": {
+		"title": "[ MENU INSTITUCIONAL ]",
+		"children": [
+			"vtex.menu@2.x:menu#menu-institucional"
+		],
+		"props": {
+			"blockClass": "menu-institucional"
+		}
+	},
+	
+	"flex-layout.row#content-politica-de-qualidade": {
+		"title": "[ CONTEÚDO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"flex-layout.col#content-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.col#content-politica-de-qualidade": {
+		"children": [
+			"flex-layout.row#title-politica-de-qualidade",
+			"flex-layout.row#resume-politica-de-qualidade",
+			"flex-layout.row#text-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--content",
+				"institucional--content"
+			]
+		}
+	},
+	
+	"flex-layout.row#title-politica-de-qualidade": {
+		"title": "[ TÍTULO INSTITUCIONAL - QUEM SOMOS ]",
+		"children": [
+			"rich-text#title-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--title",
+				"institucional--title"
+			]
+		}
+	},
+	
+	"rich-text#title-politica-de-qualidade": {
+		"title": "[ TÍTULO - QUEM SOMOS ]",
+		"props": {
+			"text": "Quem somos",
+			"font": "t-heading-1",
+			"blockClass": [
+				"title--politica-de-qualidade",
+				"title--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#resume-politica-de-qualidade": {
+		"title": "[ RESUMO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#resume-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--resume",
+				"institucional--resume"
+			]
+		}
+	},
+	
+	"rich-text#resume-politica-de-qualidade": {
+		"title": "[ RICH TEXT - RESUMO QUEM SOMOS ]",
+		"props": {
+			"text": "Somos a Modess, a primeira marca de absorvente higiênico descartável no Brasil! Ao longo de nossa história, simbolizamos a expansão de possibilidades para as mulheres e contribuímos para a quebra de tabus e preconceitos relacionados à menstruação.",
+			"blockClass": [
+				"text--politica-de-qualidade",
+				"text--institucional"
+			]
+		}
+	},
+	
+	"flex-layout.row#text-politica-de-qualidade": {
+		"title": "[ TEXTO - QUEM SOMOS ]",
+		"children": [
+			"rich-text#text-politica-de-qualidade"
+		],
+		"props": {
+			"blockClass": [
+				"politica-de-qualidade--text",
+				"institucional--text"
+			]
+		}
+	},
+	
+	"rich-text#text-politica-de-qualidade": {
+		"title": "[ RICH TEXT - QUEM SOMOS ]",
+		"props": {
+			"text": "Em 2023, a Ever Green relançou a marca com uma nova proposta: democratizar o uso de absorventes no Brasil, oferecendo opções para consumidoras de todas as camadas sociais. Contribuindo, assim, com a erradicação da pobreza menstrual no Brasil.",
+			"blockClass": [
+				"text--politica-de-qualidade",
+				"text--institucional"
+			]
+		}
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"flex-layout.row#menu-ajuda-mob": {
+		"children": ["flex-layout.col#menu-ajuda-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-ajuda-mob": {
+		"children": ["disclosure-layout#menu-ajuda-footer"],
+		"props": {
+			"blockClass": "modess--links"
+		}
+	},
+
+	"disclosure-layout#menu-ajuda-footer": {
+		"children": [
+			"disclosure-trigger#menu-ajuda-footer",
+			"disclosure-content#menu-ajuda-footer"
+		],
+		"props": {
+			"blockClass": "modess--contatos"
+		}
+	},
+
+	"disclosure-trigger#menu-ajuda-footer": {
+		"children": ["rich-text#title-disclosure_contacts"],
+		"props": {
+			"blockClass": ["menu-footer","menu-ajuda-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_contacts": {
+        "title": "Título - Contatos [mobile]",
+		"props": {
+			"text": "Contatos",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-ajuda-footer": {
+		"children": [
+            "vtex.menu@2.x:menu#menu-ajuda"
+            // "vtex.menu@2.x:menu#contatos--footer_mob"
+        ],
+		"props": {
+			"blockClass": "menu-ajuda-footer"
+		}
+	}
+
+	// "vtex.menu@2.x:menu#contatos--footer_mob": {
+	// 	"title": "Links contatos Footer [mobile]",
+	// 	"children": [
+	// 		"menu-item#menu-footer-col-4-slot-1_mob",
+	// 		"menu-item#menu-footer-col-4-slot-2_mob",
+    //         "menu-item#menu-footer-col-4-slot-3_mob",
+    //         "menu-item#menu-footer-col-4-slot-4_mob",
+    //         "menu-item#menu-footer-col-4-slot-5_mob"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": ["menu-footer", "accordion-footer"]
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-4-slot-1_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-4-slot-1_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Política de Privacidade",  
+	// 			"text": "Política de Privacidade",
+	// 			"href": "/institucional/politica-de-privacidade"
+	// 		}
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-4-slot-2_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-4-slot-2_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Política de Frete",
+	// 			"text": "Política de Frete",
+	// 			"href": "/institucional/politica-de-frete"
+	// 		}
+	// 	}
+	// },
+
+
+    
+	// "menu-item#menu-footer-col-4-slot-3_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-4-slot-3_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Trocas e Devoluções",
+	// 			"text": "Trocas e Devoluções",
+	// 			"href": "/institucional/politica-de-privacidade"
+	// 		}
+	// 	}
+	// },
+
+    // "menu-item#menu-footer-col-4-slot-4_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-4-slot-3_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Dúvidas Frequentes",
+	// 			"text": "Dúvidas Frequentes",
+	// 			"href": "/institucional/duvidas-frequentes"
+	// 		}
+	// 	}
+	// },
+
+    // "menu-item#menu-footer-col-4-slot-5_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-4-slot-3_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "external",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Contatos",
+	// 			"text": "Contatos",
+	// 			"href": "https://modess.zendesk.com/hc/pt-br"
+	// 		}
+	// 	}
+	// }
+}

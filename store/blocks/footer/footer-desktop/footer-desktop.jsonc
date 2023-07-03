@@ -1,0 +1,51 @@
+{
+    "footer-layout.desktop": {
+        "children":[
+            "flex-layout.row#footer-logo",
+            "flex-layout.row#footer-data-desktop",
+            "flex-layout.row#footer-bottom-desktop",
+            "flex-layout.row#footer-operated"
+        ],
+        "props": {
+            "blockClass": "footer-desktop"
+        }
+    },
+
+    "flex-layout.row#footer-data-desktop": {
+        "children": [   
+          "flex-layout.col#menu-account",
+          "flex-layout.col#menu-produtos",
+          "flex-layout.col#menu-sobre-nos",
+          "flex-layout.col#menu-ajudas"  
+      ],
+      "props": {"blockClass": "footer-data"}
+    },
+
+    "flex-layout.row#footer-bottom-desktop": {
+        "children": [
+            "flex-layout.col#social-links",
+            "flex-layout.col#payments-footer",
+            "flex-layout.col#platform-footer",
+            "flex-layout.col#copyright-footer"
+        ],
+        "props": {
+         "blockClass": "footer-bottom-desktop" 
+        }
+      },
+  
+      "flex-layout.row#footer-operated": {
+        "children": ["rich-text#copyright-store"],
+        "props": {
+          "blockClass": "copyright-store"
+        }
+      },
+  
+      "rich-text#copyright-store": {
+        "props": {
+          "text": "© 2023 Social Unlimited Digital Commerce ♡ CNPJ: 28.511.223/0004-85",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "description-footer-bottom"        
+        }
+      }
+}

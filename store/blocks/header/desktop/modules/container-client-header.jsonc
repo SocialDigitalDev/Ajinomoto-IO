@@ -1,0 +1,63 @@
+{
+	"flex-layout.row#container-client-header": {
+		"children": [
+			"flex-layout.row#my-account",
+			"flex-layout.row#minicart"
+		],
+		"props": {
+			"blockClass": "header--container-client"
+		}
+	},
+	
+	"flex-layout.row#my-account": {
+		"children": [
+			// "login",
+			"custom-login"
+		],
+		"props": {
+			"blockClass": "header--account"
+		}
+	},
+
+	"custom-login": {
+		"children": [
+		  "login-content#custom"
+		]
+	},
+
+	"login-content#custom": {
+		"props": {
+		  "isInitialScreenOptionOnly": true,
+		  "showPasswordVerificationIntoTooltip": false,
+		  "optionsTitle": "Bem-vindo a ",
+		  "emailAndPasswordTitle": "Fazer login",
+		  "accessCodeTitle": "Fazer login com código",
+		  "emailPlaceholder": "Insira seu e-mail",
+		  "passwordPlaceholder": "Insira sua senha"
+		}
+	},
+	
+	"login": {
+		"props": {
+			"optionsTitle": "Acessar sua conta",
+			"emailAndPasswordTitle": "Acessar sua conta",
+			"accessCodeTitle": "Acesso rápido",
+			"emailPlaceholder": "Insira seu e-mail",
+			"passwordPlaceholder": "Insira sua senha",
+			"acessCodePlaceholder": "Insira o código encaminhado",
+			"showPasswordVerificationIntoTooltip": true,
+			"showIconProfile": false,
+			"accountOptionsButtonBehavior": "link",
+			"termsAndConditions": "Ao logar, você aceita os [termos e condições](/institucional/termos-e-condicoes) da Loja Modess"
+		}
+	},
+
+	"flex-layout.row#minicart": {
+		"children": [
+			"minicart.v2"
+		],
+		"props": {
+			"blockClass": "header--minicart"
+		}
+	}
+}

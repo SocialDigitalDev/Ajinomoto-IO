@@ -1,0 +1,47 @@
+.menuMobileAccount__item {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-right: 10px;
+}
+  
+.js-menuMobileAccount {
+    overflow: auto;
+    display: flex;
+    padding: 0 0 0 20px;
+
+    &::-webkit-scrollbar {
+		height: 4px;
+	}
+	
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+		border-radius: 5px;
+		border: none;
+	}
+}
+
+.vtex-flex-layout-0-x-flexRowContent--client-area-links {
+	
+	&::-webkit-scrollbar {
+		height: 4px;
+	}
+	
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+		border-radius: 5px;
+		border: none;
+	}
+	
+	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+		width: initial !important;
+	}
+}

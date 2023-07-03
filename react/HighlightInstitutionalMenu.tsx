@@ -1,0 +1,3 @@
+import HighlightInstitutionalMenu from "./components/HighlightInstitutionalMenu/index"
+
+export default HighlightInstitutionalMenu

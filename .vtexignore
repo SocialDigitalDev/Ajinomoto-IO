@@ -1,0 +1,25 @@
+# general
+
+.DS_Store
+**/node_modules/
+/.git/
+/package.json
+/README.md
+/crowdin.yml
+
+# tools
+**/.eslintrc
+**/.prettierrc
+**/.gitignore
+
+
+# tests
+**/__tests__
+**/__mocks__
+**/*.test.*
+react/testUtils/**
+
+/styles/scss
+package-lock.json
+.eslintrc
+store/styles/scss

@@ -1,0 +1,35 @@
+{
+	"helmet-component": {
+		"component": "HelmetComponent"
+	},
+	
+	"progress-bar": {
+		"component": "ProgressBar"
+	},
+	
+	"react-minicart-footer": {
+		"component": "CustomMinicartFooter"
+	},
+
+	"newsletter-custom": {
+		"component": "Newsletter"
+	},
+	
+	"buy-together": {
+		"component": "BuyTogether"
+	},
+
+	"highlight-menu-institutional": {
+        "component": "HighlightInstitutionalMenu"
+    },
+
+	"react-list-account-mobile": {
+		"component": "MenuMobileListAccount",
+		"composition": "children"
+	},
+
+	"custom-login": {
+		"component": "CustomLogin",
+		"composition": "children"
+	}
+}

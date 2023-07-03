@@ -1,0 +1,32 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: $primary $white;
+	outline: none;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #c8c8c8;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: $primary;
+	border-radius: 10px;
+	border: 1px solid $white;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+

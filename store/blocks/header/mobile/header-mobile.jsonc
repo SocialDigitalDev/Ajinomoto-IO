@@ -1,0 +1,13 @@
+{
+
+	"flex-layout.row#header-mobile": {
+		"children": [
+			"flex-layout.row#header-menu_mob",
+			"flex-layout.row#header-logo_mob",
+			"flex-layout.row#minicart"
+		],
+		"props": {
+			"blockClass": "header--mobile"
+		}
+	}
+}
