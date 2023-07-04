@@ -19,7 +19,8 @@
     ],
     "types": [
       "node",
-      "jest"
+      "jest",
+      "graphql"
     ]
   },
   "exclude": [
@@ -29,7 +30,7 @@
     "./typings/*.d.ts",
     "./**/*.tsx",
     "./**/*.ts"
-, "components/ShippingCalculate/index.js"  ],
+  ],
   "typeAcquisition": {
     "enable": false
   }

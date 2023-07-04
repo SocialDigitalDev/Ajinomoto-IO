@@ -1,12 +1,10 @@
 @import "../../../styles/scss/variables/_all.scss";
 
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
 	scrollbar-width: auto;
-	scrollbar-color: $primary $white;
-	outline: none;
+	// scrollbar-color: $red $white;
 }
 
 /* Chrome, Edge, and Safari */
@@ -15,18 +13,18 @@
 }
 
 *::-webkit-scrollbar-track {
-	background: #c8c8c8;
+	// background: $white;
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: $primary;
+	// background-color: $red;
 	border-radius: 10px;
-	border: 1px solid $white;
+	// border: 1px solid $white;
 }
 
-ul, ol {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
+//Largura máxima do Render
 
+.render-container {
+	max-width: 1920px;
+	margin: auto;
+}
