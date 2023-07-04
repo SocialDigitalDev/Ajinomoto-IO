@@ -20,7 +20,7 @@
 
     "flex-layout.col#shelf-left": {
         "children": [
-            // "add-to-list-btn#shelf",
+            "add-to-list-btn#shelf",
             "product-summary-image"
         ],
         "props": {
@@ -40,11 +40,11 @@
         }
     },
 
-    // "add-to-list-btn#shelf": {
-    //     "props": {
-    //         "blockClass": "shelf"
-    //     }
-    // },
+    "add-to-list-btn#shelf": {
+        "props": {
+            "blockClass": "shelf"
+        }
+    },
 
     "product-summary-image": {
         "props": {
