@@ -13,7 +13,7 @@
                 font-family: $Poppins;
                 font-weight: $medium;
                 font-size: 16px;
-                color: $purple-3;
+                color: $primary;
                 line-height: 24px;
             }
 
@@ -55,7 +55,7 @@
                     top: 0;
                     bottom: 0;
                     right: 0;
-                    background: $purple-3; 
+                    background: $primary; 
                     border: none;
                     border-radius: 5px;
                     box-shadow: none;
@@ -68,8 +68,8 @@
 
                     &:hover {
                         background: $white;
-                        border: 2px solid $purple-3;
-                        color: $purple-3;
+                        border: 2px solid $primary;
+                        color: $primary;
                         font-weight: $semi-bold;
                         transition: .3s;
                     }
@@ -92,7 +92,7 @@
             font-family: $Poppins;
             font-weight: $medium;
             font-size: 16px;
-            color: $purple-3;
+            color: $primary;
             line-height: 24px;
         }
 
@@ -109,7 +109,7 @@
             font-family: $Poppins;
             font-weight: $medium;
             font-size: 16px;
-            color: $purple-3;
+            color: $primary;
             line-height: 24px;
         }
 
