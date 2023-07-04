@@ -12,7 +12,7 @@
     "image#logo-footer": {
         "title": "LOGO",
         "props": {
-            "src": "assets/svg/logo-footer.svg",
+            "src": "",
             "link": {
                 "url": "/"
             },

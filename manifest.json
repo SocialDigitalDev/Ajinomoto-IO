@@ -85,7 +85,10 @@
     "vtex.store-media": "0.x",
     "vtex.admin-search": "1.x",
     "vtex.search-resolver": "1.x",
-    "vtex.challenge-tp-condition": "0.x"
+    "vtex.challenge-tp-condition": "0.x",
+    "vtex.order-shipping": "0.x",
+    "vtex.order-coupon": "0.x",
+    "vtex.session-client": "1.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",
