@@ -3,7 +3,8 @@
 		"blocks": [
 			"header-layout.desktop", 
 			"header-layout.mobile"
-		]		
+		]
+		
 	},
 
 	"header.full": {
@@ -20,50 +21,28 @@
 	"header-layout.desktop": {
 		"title": "Header Desktop",
 		"children": [
-            "helmet-component",
-            "header-row#top-bar"
-			// "flex-layout.row#header-desktop"
+			"helmet-component",
+			"flex-layout.row#header-desktop"
+			// "custom-lgpd"
 		],
 		"props": {
 			"blockClass": "header-desktop",
 			"sticky": true,
-			"fullWidth": true
+			"fullWidth": false
 		}
 	},
 	
 	"header-layout.mobile": {
 		"title": "Header Mobile",
 		"children": [
-            "helmet-component",
-            "header-row#top-bar"
-			// "flex-layout.row#header-mobile"
+			"helmet-component",
+			"flex-layout.row#header-mobile"
+			// "custom-lgpd"
 		],
 		"props": {
-            "blockClass": "header-mobile",
+			"blockClass": "header-mobile",
 			"sticky": true,
 			"fullWidth": true
 		}
-	},
-    
-    
-    "header-row#top-bar": {
-        "title": "TOP BAR",
-        "children": [
-            "rich-text#topbar"
-        ]
-    },
-
-    "rich-text#topbar": {
-        "title": "TEXTO",
-        "props": {
-            "text": "Nas compras a partir de R$ 120,00, ganhe de brinde o Ajipanda!",
-            "textPosition": "CENTER"
-        }
-    }
-
-    // "notification.bar#top-bar": {
-    //     "props": {
-    //         "content": "Nas compras a partir de R$ 120,00, ganhe de brinde o Ajipanda!"
-    //     }
-    // }
+	}
 }

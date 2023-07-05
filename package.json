@@ -71,6 +71,7 @@
 		"concurrently": "^7.5.0",
 		"global": "^4.4.0",
 		"npm": "^7.20.3",
+		"pretty-format": "^29.6.0",
 		"react": "^18.2.0",
 		"react-helmet": "^6.1.0",
 		"react-router-dom": "^6.3.0",

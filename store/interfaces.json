@@ -3,6 +3,14 @@
 		"component": "HelmetComponent"
 	},	
 
+	"progress-bar": {
+		"component": "ProgressBar"
+	},
+	
+	"react-minicart-footer": {
+		"component": "CustomMinicartFooter"
+	},
+	
 	"newsletter-custom": {
 		"component": "Newsletter"
 	},	

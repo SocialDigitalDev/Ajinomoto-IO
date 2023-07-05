@@ -1,34 +1,34 @@
 {
-	"flex-layout.row#menu-header": {
+	"flex-layout.row#menu-links": {
 		"children": [
-			"vtex.menu@2.x:menu#category-menu_desk"
+			"vtex.menu@2.x:menu#category-menu_mob"	
 		],
 		"props": {
-			"blockClass": "header--menu"
+			"blockClass": "menu-links"
 		}
 	},
-	
-	"vtex.menu@2.x:menu#category-menu_desk": {
-		"title": "Menu [ DESKTOP ]",
+
+	"vtex.menu@2.x:menu#category-menu_mob"	: {
+		"title": "Menu [ MOBILE ]",
 		"children": [
-			"menu-item#position-1",
-			"menu-item#position-2",
-			"menu-item#position-3",
-			"menu-item#position-4"
+			"menu-item#position-1-mob",
+			"menu-item#position-2-mob",
+			"menu-item#position-3-mob",
+			"menu-item#position-4-mob"
 		],
 		"props": {
-			"blockClass": "category-menu_desk"
+			"blockClass": "category-menu_mob"
 		}
 	},
-	
-	"menu-item#position-1": {
+
+	"menu-item#position-1-mob": {
 		"props": {
-			"id": "menu-item-position-1",
+			"id": "menu-item-position-1-mob",
 			"blockClass": "item-menu",
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "absorventes noturno",
+				"text": "Absorventes Noturno",
 				"href": "#",
 				"type": "internal",
 				"noFollow": true,
@@ -36,15 +36,15 @@
 			}
 		}
 	},
-	
-	"menu-item#position-2": {
+
+	"menu-item#position-2-mob": {
 		"props": {
-			"id": "menu-item-position-2",
+			"id": "menu-item-position-2-mob",
 			"blockClass": "item-menu",
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "absorventes diurnos",
+				"text": "Absorventes Diurnos",
 				"href": "#",
 				"type": "internal",
 				"noFollow": true,
@@ -53,14 +53,14 @@
 		}
 	},
 
-	"menu-item#position-3": {
+	"menu-item#position-3-mob": {
 		"props": {
-			"id": "menu-item-position-3",
+			"id": "menu-item-position-3-mob",
 			"blockClass": "item-menu",
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "protetor diário",
+				"text": "Protetor Diário",
 				"href": "#",
 				"type": "internal",
 				"noFollow": true,
@@ -69,18 +69,18 @@
 		}
 	},
 
-	"menu-item#position-4": {
+	"menu-item#position-4-mob": {
 		"props": {
-			"id": "menu-item-position-4",
+			"id": "menu-item-position-4-mob",
 			"blockClass": "item-menu",
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "calcinha absorvente",
+				"text": "Calcinha Absorvente",
 				"href": "#",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "calcinha absorvente"
+				"tagTitle": "Calcinha Absorvente"
 			}
 		}
 	}

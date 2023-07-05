@@ -11,7 +11,7 @@
 	
 	"flex-layout.row#my-account": {
 		"children": [
-			// "login",
+			"login",
 			"custom-login"
 		],
 		"props": {
@@ -37,20 +37,20 @@
 		}
 	},
 	
-	// "login": {
-	// 	"props": {
-	// 		"optionsTitle": "Acessar sua conta",
-	// 		"emailAndPasswordTitle": "Acessar sua conta",
-	// 		"accessCodeTitle": "Acesso rápido",
-	// 		"emailPlaceholder": "Insira seu e-mail",
-	// 		"passwordPlaceholder": "Insira sua senha",
-	// 		"acessCodePlaceholder": "Insira o código encaminhado",
-	// 		"showPasswordVerificationIntoTooltip": true,
-	// 		"showIconProfile": false,
-	// 		"accountOptionsButtonBehavior": "link",
-	// 		"termsAndConditions": "Ao logar, você aceita os [termos e condições](/institucional/termos-e-condicoes) da Loja Modess"
-	// 	}
-	// },
+	"login": {
+		"props": {
+			"optionsTitle": "Acessar sua conta",
+			"emailAndPasswordTitle": "Acessar sua conta",
+			"accessCodeTitle": "Acesso rápido",
+			"emailPlaceholder": "Insira seu e-mail",
+			"passwordPlaceholder": "Insira sua senha",
+			"acessCodePlaceholder": "Insira o código encaminhado",
+			"showPasswordVerificationIntoTooltip": true,
+			"showIconProfile": false,
+			"accountOptionsButtonBehavior": "link",
+			"termsAndConditions": "Ao logar, você aceita os [termos e condições](/institucional/termos-e-condicoes) da Loja Modess"
+		}
+	},
 
 	"flex-layout.row#minicart": {
 		"children": [

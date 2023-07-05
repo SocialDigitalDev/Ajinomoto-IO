@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#header-logo_mob": {
+        "children": [
+			"link#logo-header"
+		],
+		"props"	: {
+			"blockClass": "header--logo_mob"
+		}
+    }
+}
