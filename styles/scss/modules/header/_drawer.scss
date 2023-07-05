@@ -1,0 +1,86 @@
+.overlay {
+	
+	&--menu--mobile {
+		opacity: 0 !important;
+		z-index: 20;
+	}
+}
+
+.open {
+
+	&IconContainer {
+
+		&--menu--mobile {
+			padding: 0;
+			transition: all .15s ease-in-out;
+		}
+	}
+}
+
+.drawer {
+	
+	&--menu--mobile {
+		height: 100%;
+		background: $white;
+	}
+
+	&Content {
+
+		&--menu--mobile {
+			overflow-x: hidden;
+		}
+	}
+}
+
+.closed {
+	
+	&--menu--mobile {
+		top: 60px;
+		transition: .5s all ease-in-out;
+		z-index: 10;
+
+		@include media('<desktop', '>=phone') {
+			transform: translate3d(0, -110%, 0) !important;
+		}
+	}
+}
+
+.opened {
+	
+	&--menu--mobile {		
+		box-shadow: 5px 0px 10px -2px rgba(120, 120, 120, .4);
+		transition: .5s all ease-in-out;
+		z-index: 30;
+
+		@include media('<desktop', '>=phone') {
+			transform: translate3d(0, -0.4%, 0) !important;
+		}
+
+		@include media('>phone') {
+			top: 67px;
+			z-index: 90;
+		}
+
+		@include media('<=phone') {
+			top: 60px;
+			z-index: 90;
+		}
+	}
+}
+
+
+.closeIconButton--menu--mobile {
+	width: 60px;
+    height: 60px;
+}
+
+.closeIcon {
+	&Container {
+		top: -62px;
+		position: absolute;
+		left: 5px;
+	}
+	&--menu--mobile {
+		display: none;
+	}
+}
