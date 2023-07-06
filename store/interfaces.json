@@ -1,27 +1,5 @@
 {
 	"helmet-component": {
 		"component": "HelmetComponent"
-	},	
-
-	"progress-bar": {
-		"component": "ProgressBar"
-	},
-	
-	"react-minicart-footer": {
-		"component": "CustomMinicartFooter"
-	},
-	
-	"newsletter-custom": {
-		"component": "Newsletter"
-	},	
-	
-	"react-list-account-mobile": {
-		"component": "MenuMobileListAccount",
-		"composition": "children"
-	},
-
-	"custom-login": {
-		"component": "CustomLogin",
-		"composition": "children"
 	}
 }

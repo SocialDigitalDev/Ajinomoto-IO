@@ -1,5 +1,6 @@
-# Ajinomoto-IO
-Repositório de código da marca Ajinomoto
+# AJINOMOTO - VTEX IO
+
+Repositório de código do cliente Ajinomoto
 
 ## Tecnologias usadas:
 
