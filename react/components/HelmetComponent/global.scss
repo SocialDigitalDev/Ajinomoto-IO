@@ -1,10 +1,12 @@
 @import "../../../styles/scss/variables/_all.scss";
 
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
 	scrollbar-width: auto;
-	// scrollbar-color: $red $white;
+	scrollbar-color: $black $white;
+	outline: none;
 }
 
 /* Chrome, Edge, and Safari */
@@ -13,18 +15,178 @@
 }
 
 *::-webkit-scrollbar-track {
-	// background: $white;
+	background: #c8c8c8;
 }
 
 *::-webkit-scrollbar-thumb {
-	// background-color: $red;
+	background-color: $black;
 	border-radius: 10px;
-	// border: 1px solid $white;
+	border: 1px solid $white;
 }
 
-//Largura máxima do Render
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 
-.render-container {
-	max-width: 1920px;
-	margin: auto;
+
+// ACCOUNT
+
+.render-route-store-account {
+
+	.vtex-account {
+
+		@include media('<=phone') {
+			padding-top: 25px;
+		}
+
+		&__order-details {
+
+			& > div > div.w-100.fl.w-60-ns.pv3-ns.pr0 > ul > li:nth-child(2) {
+				display: none;
+			}
+		}
+	}
+
+	.vtex-account__page {
+
+		@include media('<=phone') {
+			padding-top: 80px;
+		}
+	}
+
+	& > div > div.vtex-store__template > div > div:nth-child(2) > div > div > div > div > div {
+
+		@include media('>phone') {
+			width: 80%;
+		}
+	}
+
+	.vtex-account_menu-link {
+
+		&.c-on-base {
+			color: $primary;
+		}
+
+		&.b--action-primary {
+			border-color: $primary;
+		}
+	}
+
+	.vtex-slider-layout-0-x-sliderTrackContainer--shelf-wishlist {
+
+		&::-webkit-scrollbar {
+			height: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: $gray-5;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary;
+			border-radius: 10px;
+			border: 1px solid $white;
+		}
+	}
+
+	.vtex-input {
+
+		&__label {
+			font-family: $OpenSans !important;
+		}
+
+		&-prefix__group {
+			input {
+				font-family: $OpenSans;
+			}
+		}
+	}
+
+	.vtex-dropdown {
+
+		&__label {
+			font-family: $OpenSans !important;
+		}
+
+		&__caption {
+			font-family: $OpenSans;
+		}
+
+		select {
+			font-family: $OpenSans;
+
+			option {
+				font-family: $OpenSans !important;
+			}
+		}
+	}
+
+	.vtex-my-orders-app-3-x-font {
+		font-family: $OpenSans;
+	}
+
+	.vtex-account__create-card{
+
+		.vtex-button {
+			background: $black;
+			border-color: $black;
+			color: $white;
+		}
+	}
+
+	.vtex-checkbox__inner-container {
+
+		&.bg-action-primary {
+			background: $primary;
+			border: 1px solid $primary;
+		}
+	}
+}
+
+
+// ORGANIZATION
+
+.styleguide__pageBlock {
+
+	.t-body {
+		@media (max-width: 1199px){
+			margin: 0;
+			padding: 0 16px;
+		}
+	}
+}
+.vtex-address-form__country {
+
+	.t-body {
+
+		@media (max-width: 1199px){
+			margin: initial;
+			padding: initial;
+		}
+	}
+}
+
+
+// ORDER PLACED
+
+.vtex-order-placed-2-x-orderPlacedWrapper {
+
+	.vtex-order-placed-2-x-customerInfoListContainer {
+
+		& > li {
+			font-family: $OpenSans;
+		}
+	}
+
+	.vtex-order-placed-2-x-addressContainer {
+
+		.address-summary {
+
+			span {
+				font-family: $OpenSans !important;
+			}
+		}
+	}
 }
