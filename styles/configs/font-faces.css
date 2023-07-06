@@ -1,124 +1,199 @@
-/* POPPINS */
+/* BARLOW */
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Thin.ttf) format('truetype');
 	font-weight: 100;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Thin.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-ExtraLight.ttf) format('truetype');
 	font-weight: 200;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-ExtraLight.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Light.ttf) format('truetype');
 	font-weight: 300;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Light.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Regular.ttf) format('truetype');
 	font-weight: 400;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Medium.ttf) format('truetype');
 	font-weight: 500;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-SemiBold.ttf) format('truetype');
 	font-weight: 600;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-SemiBold.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Bold.ttf) format('truetype');
 	font-weight: 700;
+	font-style: normal;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-ExtraBold.ttf) format('truetype');
 	font-weight: 800;
-	font-display: swap;
-	src: url(assets/fonts/Poppins-ExtraBold.ttf);
-}
-
-
-@font-face {
-	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 900;
 	font-display: swap;
-	src: url(assets/fonts/Poppins-Black.ttf);
-}
-
-/* Open Sans */
-@font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-SemiBold.ttf) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Barlow';
+	src: url(assets/fonts/Barlow-Black.ttf) format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* MONTSERRAT */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Thin.ttf) format('truetype');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-ExtraBold.ttf) format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-ExtraLight.ttf) format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-Bold.ttf) format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Regular.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(assets/fonts/OpenSans-Light.ttf) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Medium.ttf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(assets/fonts/Montserrat-Black.ttf) format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* OPEN SANS */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-Regular.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-Medium.ttf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-ExtraBold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/OpenSans-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}

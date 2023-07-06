@@ -1,8 +1,0 @@
-{
-    "flex-layout.row#payments-footer-mob": {
-        "children": ["flex-layout.col#payments-footer"],
-        "props": {
-             "blockClass": "footer-mobile"
-        }
-    }
-}

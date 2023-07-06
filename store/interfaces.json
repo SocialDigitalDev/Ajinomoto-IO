@@ -1,14 +1,5 @@
 {
 	"helmet-component": {
 		"component": "HelmetComponent"
-	},	
-
-	"newsletter-custom": {
-		"component": "Newsletter"
-	},	
-	
-	"react-list-account-mobile": {
-		"component": "MenuMobileListAccount",
-		"composition": "children"
-	}	
+	}
 }
