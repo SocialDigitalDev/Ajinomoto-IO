@@ -1,0 +1,27 @@
+{
+	"sticky-layout#header-desktop": {
+		"title": "[ HEADER - DESKTOP ]",
+		"children": [
+			"flex-layout.row#topbar-header",
+			"flex-layout.row#header-desktop"
+		],
+		"props": {
+			"blockClass": "sticky--header"
+		}
+	},
+
+	"flex-layout.row#header-desktop": {
+		"children": [
+			"rich-text#teste"
+		],
+		"props": {
+			"blockClass": "header--content"
+		}
+	},
+
+	"rich-text#teste": {
+		"props": {
+			"text": "MENU TESTE"
+		}
+	}
+}
