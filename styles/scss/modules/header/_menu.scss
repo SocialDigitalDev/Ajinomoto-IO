@@ -1,0 +1,49 @@
+.menu {
+
+	&ContainerNav--category-menu_desk {
+
+		.menuContainer {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			gap: 0 30px;
+
+			.menuItem {
+
+				.styledLink {
+
+					&Container {
+						padding: 0;
+						margin: 0;
+					}
+
+					&Content {
+						display: block;
+						font-family: $OpenSans;
+						font-weight: $regular;
+						font-size: 14px;
+						color: $gray-2;
+
+						&:hover {
+							font-weight: $medium;
+						}
+					}
+
+					&--highlight {
+
+						.styledLinkContent {
+							font-weight: $bold;
+							color: $primary;
+
+							&:hover {
+								font-weight: $extra-bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

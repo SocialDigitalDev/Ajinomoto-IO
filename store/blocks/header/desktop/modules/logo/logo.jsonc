@@ -14,7 +14,7 @@
 			"blockClass": "logo-header_desk",
 			"src": "assets/svg/logo-desktop-header.svg",
 			"link": "/",
-			"maxWidth": "163px"
+			"maxWidth": "93px"
 		}
 	}
 }

@@ -6,13 +6,15 @@
 			"flex-layout.row#header-desktop"
 		],
 		"props": {
-			"blockClass": "sticky--header"
+			"blockClass": [
+				"sticky--header",
+				"header-cy--ajinomoto"
+			]
 		}
 	},
 
 	"flex-layout.row#header-desktop": {
 		"children": [
-			"flex-layout.row#logo-header_desk",
 			"flex-layout.row#header-container"
 		],
 		"props": {
