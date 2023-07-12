@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#product-shelf": {
+        "children": [
+            "flex-layout.col#product-shelf"
+        ],
+        "props": {
+            "blockClass": "produto-prateleira"
+        }
+    },
+
+    "flex-layout.col#product-shelf": {
+        "title": "PRODUTO VITRINE",
+        "children": [
+            "rich-text#product-shelf",
+            "list-context.product-list#product-shelf"
+        ],
+        "props": {
+            "blockClass": "produto-prateleira"
+        }
+    },
+
+    "rich-text#product-shelf": {
+        "title": "TITULO DA VITRINE",
+        "props": {
+            "text": "Você também pode gostar",
+            "textPosition": "CENTER",
+            "blockClass": "shelf-titles"
+        }
+    },
+
+    // LIST SLIDER
+    "list-context.product-list#product-shelf": {
+        "title": "PRATELEIRA",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#shelf"],
+        "props": {
+            "maxItems": 4
+        }
+    }
+}

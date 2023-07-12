@@ -1,0 +1,22 @@
+{
+    "flex-layout.row#home-prateleira-home": {
+        "children": [
+            "list-context.product-list#home-prateleira-1"
+        ],
+        "props": {}
+    },
+
+    // LIST SLIDER
+    "list-context.product-list#home-prateleira-1": {
+        "title": "PRATELEIRA",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#shelf"],
+        "props": {
+            "maxItems": 8,
+            "collection": "",
+            "skusFilter": "ALL_AVAILABLE",
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    }
+
+}

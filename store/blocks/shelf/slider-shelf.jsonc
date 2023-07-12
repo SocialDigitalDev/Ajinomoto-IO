@@ -1,0 +1,16 @@
+{
+    "slider-layout#shelf": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 4,
+            "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "blockClass": "shelf",
+          "navigationStep": "page"
+        }
+    }
+}
