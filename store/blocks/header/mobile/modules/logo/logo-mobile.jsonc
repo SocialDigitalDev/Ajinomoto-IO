@@ -1,0 +1,20 @@
+{
+	"flex-layout.row#logo-header-mobile": {
+		"title": "[ LOGO AJINOMOTO - DESKTOP ]",
+		"children": [
+			"image#logo-header-mobile"
+		],
+		"props": {
+			"blockClass": "header--logo-mobile"
+		}
+	},
+
+	"image#logo-header-mobile": {
+		"props": {
+			"blockClass": "logo-header-mobile",
+			"src": "assets/svg/logo-desktop-header.svg",
+			"link": "/",
+			"maxWidth": "93px"
+		}
+	}
+}

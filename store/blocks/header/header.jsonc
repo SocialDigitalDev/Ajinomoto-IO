@@ -33,7 +33,8 @@
 	"header-layout.mobile": {
 		"title": "Header Mobile",
 		"children": [
-			"helmet-component"
+			"helmet-component",
+			"sticky-layout#header-mobile"
 		],
 		"props": {
 			"blockClass": "header-mobile",
