@@ -1,0 +1,14 @@
+{
+	"minicart.v2": {
+		"title": "Informações do Minicart",
+		"props": {
+			"variation": "drawer",
+			"maxDrawerWidth": "900px",
+			"quantityDisplay": "always",
+			"customPixelEventName": "addToCart"
+		},
+		"children": [
+			// "minicart-base-content"
+		]
+	}
+}

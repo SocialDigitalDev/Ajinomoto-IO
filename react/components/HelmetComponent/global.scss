@@ -31,6 +31,33 @@ ul, ol {
 }
 
 
+// HEADER
+
+.vtex-flex-layout-0-x-flexRowContent--header--container-top {
+
+	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+		width: initial !important;
+	}
+}
+
+.vtex-flex-layout-0-x-flexRowContent--header--infos-client {
+
+	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+		width: initial !important;
+	}
+}
+
+.vtex-flex-layout-0-x-flexRowContent--header--account {
+
+	.vtex-button__label {
+
+		& > span {
+			margin: 0;
+		}
+	}
+}
+
+
 // ACCOUNT
 
 .render-route-store-account {

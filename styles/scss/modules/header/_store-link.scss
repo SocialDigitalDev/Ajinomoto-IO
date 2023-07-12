@@ -1,0 +1,11 @@
+.link {
+
+	&--wishlist-link {
+		display: block;
+		width: 38px !important;
+		height: 33px;
+		background: url('assets/svg/ico_wishlist-header.svg') center no-repeat;
+		background-size: 100%;
+		cursor: pointer;
+	}
+}

@@ -20,7 +20,8 @@
 	"header-layout.desktop": {
 		"title": "Header Desktop",
 		"children": [
-			"helmet-component"
+			"helmet-component",
+			"sticky-layout#header-desktop"
 		],
 		"props": {
 			"blockClass": "header-desktop",
