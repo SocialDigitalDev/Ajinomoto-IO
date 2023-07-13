@@ -2,7 +2,7 @@
 
 	"flex-layout.row#header-left-mobile": {
 		"children": [
-			"category-menu",
+			"drawer#menu-mobile",
 			"flex-layout.row#wishlist"
 		],
 		"props": {

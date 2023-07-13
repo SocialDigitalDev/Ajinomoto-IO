@@ -87,19 +87,5 @@
 		"props": {
 			"src": "assets/svg/ico_search-desktop-fixed.svg"
 		}
-	},
-
-	// SEARCH --- STICKY
-	"modal-trigger#search-sticky-desktop": {
-		"children": ["image#search-sticky", "modal-layout#search-desktop"],
-		"props": {
-			"blockClass": ["search-sticky-desktop", "search-trigger-cy--ajinomoto"]
-		}
-	},
-
-	"image#search-sticky": {
-		"props": {
-			"src": "assets/svg/ico_search-desktop-sticky.svg"
-		}
 	}
 }

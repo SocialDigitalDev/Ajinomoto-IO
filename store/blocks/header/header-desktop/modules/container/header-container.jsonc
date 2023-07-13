@@ -97,8 +97,8 @@
 		],
 		"props": {
 			"blockClass": [
-				"search-fixed-desktop",
-				"search-trigger-cy--ajinomoto"
+				"search-fixed-desktop"
+				
 			]
 		}
 	},
@@ -126,8 +126,8 @@
 		],
 		"props": {
 			"blockClass": [
-				"search-sticky-desktop",
-				"search-trigger-cy--ajinomoto"
+				"search-sticky-desktop"
+				
 			]
 		}
 	},

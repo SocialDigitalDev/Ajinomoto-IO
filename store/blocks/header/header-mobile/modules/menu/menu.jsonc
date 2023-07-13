@@ -1,19 +1,39 @@
 {
-    "category-menu": {
-      "props": {
-        "showAllDepartments": false,
-        "showSubcategories": true,
-        "menuDisposition": "left",
-        "departments": [
-            "TEMPEROS E CONDIMENTOS",
-            "MOLHOS",
-            "CULINÁRIOS",
-            "CALDOS EM PÓ",
-            "BEBIDAS",
-            "AZEITES",
-            "ALIMENTOS INSTANTÊNEOS"
-        ],
-        "mobileMode": true
-      }
+  "drawer#menu-mobile": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing"
+    ],
+    "props": {
+      "orientation": "vertical"
     }
-  }
+  },
+
+  "menu-item#category-clothing": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      },
+      "iconProps": {
+        "id": "abacaxi",
+        "size": 24,
+        "viewBox": "0 0 24 40",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    },
+    "blocks": ["vtex.menu@2.x:submenu"]
+  } 
+}
