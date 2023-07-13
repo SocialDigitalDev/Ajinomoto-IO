@@ -1,0 +1,22 @@
+{
+
+	"flex-layout.row#header-left-mobile": {
+		"children": [
+			"category-menu",
+			"flex-layout.row#wishlist"
+		],
+		"props": {
+			"blockClass": "header--infos-client"
+		}
+	}, 
+
+	"flex-layout.row#header-right-mobile": {
+		"children": [
+			"flex-layout.row#my-account",
+			"flex-layout.row#minicart"
+		],
+		"props": {
+			"blockClass": "header--infos-client"
+		}
+	}
+}

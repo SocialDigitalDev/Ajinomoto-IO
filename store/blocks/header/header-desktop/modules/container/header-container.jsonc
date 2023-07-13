@@ -1,36 +1,36 @@
 {
-	"flex-layout.row#header-container-mobile": {
+	"flex-layout.row#header-container": {
 		"children": [
 			"flex-layout.col#header-container"
 		],
 		"props": {
-			"blockClass": "header--container-mobile"
+			"blockClass": "header--container"
 		}
-	}, 
+	},
 
 	"flex-layout.col#header-container": {
 		"children": [
-			"flex-layout.row#header-container-fixed-mobile",
-			"flex-layout.row#header-container-sticky-mobile"
+			"flex-layout.row#header-container-fixed",
+			"flex-layout.row#header-container-sticky"
 		],
 		"props": {
-			"blockClass": "header--container-mobile"
+			"blockClass": "header--container"
 		}
 	},
 
-	"flex-layout.row#header-container-fixed-mobile": {
+	"flex-layout.row#header-container-fixed": {
 		"children": [
-			"flex-layout.col#header-container-fixed-mobile"
+			"flex-layout.col#header-container-fixed"
 		],
 		"props": {
-			"blockClass": "header--container-fixed-mobile"
+			"blockClass": "header--container-fixed"
 		}
 	},
 
-	"flex-layout.col#header-container-fixed-mobile": {
+	"flex-layout.col#header-container-fixed": {
 		"children": [
 			"flex-layout.row#header--container-top",
-			"flex-layout.row#header--container-bottom-mobile"
+			"flex-layout.row#header--container-bottom"
 		],
 		"props": {
 			"blockClass": "header--container-fixed"
@@ -39,28 +39,28 @@
 
 	"flex-layout.row#header--container-top": {
 		"children": [
-			"flex-layout.row#logo-header-mobile",
-			"flex-layout.row#header--search-fixed-mobile",
-			"flex-layout.row#header--infos-client-mobile"
+			"flex-layout.row#logo-header",
+			"flex-layout.row#header--search-fixed",
+			"flex-layout.row#header--infos-client"
 		],
 		"props": {
-			"blockClass": "header--container-top-mobile"
+			"blockClass": "header--container-top"
 		}
 	},
 
 
-	"flex-layout.row#header--container-bottom-mobile": {
+	"flex-layout.row#header--container-bottom": {
 		"children": [
 			"flex-layout.row#header-menu"
 		],
 		"props": {
-			"blockClass": "header--container-bottom-mobile"
+			"blockClass": "header--container-bottom"
 		}
 	},
 
 	// HEADER STICKY
 
-	"flex-layout.row#header-container-sticky-mobile": {
+	"flex-layout.row#header-container-sticky": {
 		"children": [
 			"flex-layout.row#header--container-top-sticky"
 		]
@@ -68,7 +68,7 @@
 
 	"flex-layout.row#header--container-top-sticky": {
 		"children": [
-			"flex-layout.row#logo-header-mobile",
+			"flex-layout.row#logo-header",
 			"flex-layout.row#header-menu",
 			"flex-layout.row#header--search-sticky",
 			"flex-layout.row#header--infos-client"
@@ -81,23 +81,23 @@
 	
 	// SEARCH --- FIXED
 
-	"flex-layout.row#header--search-fixed-mobile": {
+	"flex-layout.row#header--search-fixed": {
 		"children": [
-			"modal-trigger#search-fixed-mobile"
+			"modal-trigger#search-fixed-desktop"
 		],
 		"props": {
-			"blockClass": "header--search-fixed-mobile"
+			"blockClass": "header--search-fixed"
 		}
 	},
 
-	"modal-trigger#search-fixed-mobile": {
+	"modal-trigger#search-fixed-desktop": {
 		"children": [
 			"image#search-fixed",
 			"modal-layout#search-desktop"
 		],
 		"props": {
 			"blockClass": [
-				"search-fixed-mobile",
+				"search-fixed-desktop",
 				"search-trigger-cy--ajinomoto"
 			]
 		}

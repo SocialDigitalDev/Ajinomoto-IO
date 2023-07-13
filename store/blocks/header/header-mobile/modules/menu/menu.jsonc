@@ -1,0 +1,13 @@
+{
+    "category-menu": {
+      "props": {
+        "showAllDepartments": false,
+        "showSubcategories": true,
+        "menuDisposition": "left",
+        "departments": [
+            "Temperos e condimentos"
+        ],
+        "mobileMode": true
+      }
+    }
+  }

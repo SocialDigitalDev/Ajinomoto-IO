@@ -1,0 +1,105 @@
+{
+	"flex-layout.row#header-container-mobile": {
+		"children": ["flex-layout.col#header-container-mobile"],
+		"props": {
+			"blockClass": "header--container-mobile"
+		}
+	},
+
+	"flex-layout.col#header-container-mobile": {
+		"children": [
+			"flex-layout.row#header-container-fixed-mobile"
+		],
+		"props": {
+			"blockClass": "header--container-mobile"
+		}
+	},
+
+	"flex-layout.row#header-container-fixed-mobile": {
+		"children": ["flex-layout.col#header-container-fixed-mobile"],
+		"props": {
+			"blockClass": "header--container-fixed-mobile"
+		}
+	},
+
+	"flex-layout.col#header-container-fixed-mobile": {
+		"children": [
+			"flex-layout.row#header--container-top-mobile",
+			"flex-layout.row#header--container-bottom-mobile"
+		],
+		"props": {
+			"blockClass": "header--container-fixed"
+		}
+	},
+
+	"flex-layout.row#header--container-top-mobile": {
+		"children": [
+			"flex-layout.row#header-left-mobile",
+			"flex-layout.row#logo-header",
+			"flex-layout.row#header-right-mobile"
+		],
+		"props": {
+			"blockClass": "header--container-top-mobile"
+		}
+	},
+
+	"flex-layout.row#header--container-bottom-mobile": {
+		"children": ["flex-layout.row#header--search-fixed-mobile"],
+		"props": {
+			"blockClass": "header--container-bottom-mobile"
+		}
+	},
+
+	// HEADER STICKY
+
+	"flex-layout.row#header-container-sticky-mobile": {
+		"children": ["flex-layout.row#header--container-top-sticky-mobile"]
+	},
+
+	"flex-layout.row#header--container-top-sticky-mobile": {
+		"children": [
+			"flex-layout.row#header-left-mobile",
+			"flex-layout.row#logo-header",
+			"flex-layout.row#header-right-mobile"
+		],
+		"props": {
+			"blockClass": "header--container-top"
+		}
+	},
+
+	// SEARCH --- FIXED
+
+	"flex-layout.row#header--search-fixed-mobile": {
+		"children": ["modal-trigger#search-fixed-mobile"],
+		"props": {
+			"blockClass": "header--search-fixed-mobile"
+		}
+	},
+
+	"modal-trigger#search-fixed-mobile": {
+		"children": ["image#search-fixed-mobile", "modal-layout#search-desktop"],
+		"props": {
+			"blockClass": ["search-fixed-mobile", "search-trigger-cy--ajinomoto"]
+		}
+	},
+
+	"image#search-fixed-mobile": {
+		"props": {
+			"src": "assets/svg/ico_search-desktop-fixed.svg"
+		}
+	},
+
+	// SEARCH --- STICKY
+	"modal-trigger#search-sticky-desktop": {
+		"children": ["image#search-sticky", "modal-layout#search-desktop"],
+		"props": {
+			"blockClass": ["search-sticky-desktop", "search-trigger-cy--ajinomoto"]
+		}
+	},
+
+	"image#search-sticky": {
+		"props": {
+			"src": "assets/svg/ico_search-desktop-sticky.svg"
+		}
+	}
+}

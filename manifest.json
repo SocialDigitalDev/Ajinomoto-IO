@@ -87,7 +87,9 @@
     "vtex.search-resolver": "1.x",
     "vtex.challenge-tp-condition": "0.x",
     "vtex.order-shipping": "0.x",
-    "vtex.order-coupon": "0.x"
+    "vtex.order-coupon": "0.x",
+    "vtex.category-menu": "2.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
