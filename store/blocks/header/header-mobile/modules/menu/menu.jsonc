@@ -5,7 +5,13 @@
         "showSubcategories": true,
         "menuDisposition": "left",
         "departments": [
-            "Temperos e condimentos"
+            "TEMPEROS E CONDIMENTOS",
+            "MOLHOS",
+            "CULINÁRIOS",
+            "CALDOS EM PÓ",
+            "BEBIDAS",
+            "AZEITES",
+            "ALIMENTOS INSTANTÊNEOS"
         ],
         "mobileMode": true
       }
