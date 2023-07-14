@@ -17,7 +17,8 @@
 
     ],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "mobile"
     }
   } 
 }

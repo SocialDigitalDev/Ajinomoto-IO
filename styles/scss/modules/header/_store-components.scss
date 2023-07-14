@@ -1,0 +1,11 @@
+.searchBarContainer {
+	padding: 0;
+}
+
+.autoCompleteOuterContainer {
+    :global(.vtex-input-prefix__group) {
+        border-radius: 50px;
+        border: 2px solid #E60012;
+        background: #F2F2F2;
+    }
+}
