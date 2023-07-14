@@ -1,0 +1,23 @@
+{
+  "drawer#menu-mobile": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  
+  "menu#drawer": {
+    "children": [
+      "menu-item#position-1",
+			"menu-item#position-2",
+			"menu-item#position-3",
+			"menu-item#position-4",
+			"menu-item#position-5",
+			"menu-item#position-6",
+			"menu-item#position-7"
+
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  } 
+}

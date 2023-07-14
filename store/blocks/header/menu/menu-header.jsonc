@@ -40,7 +40,8 @@
 				"noFollow": true,
 				"tagTitle": "Bebidas"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-1"]
 	},
 
 	"menu-item#position-2": {
@@ -59,7 +60,8 @@
 				"noFollow": true,
 				"tagTitle": "Sopas & Cremes"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-2"]
 	},
 
 	"menu-item#position-3": {
@@ -78,7 +80,8 @@
 				"noFollow": true,
 				"tagTitle": "Caldos"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-3"]
 	},
 
 	"menu-item#position-4": {
@@ -97,7 +100,8 @@
 				"noFollow": true,
 				"tagTitle": "Culinários"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-4"]
 	},
 
 	"menu-item#position-5": {
@@ -116,7 +120,8 @@
 				"noFollow": true,
 				"tagTitle": "Molhos e Azeites"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-5"]
 	},
 
 	"menu-item#position-6": {
@@ -135,7 +140,8 @@
 				"noFollow": true,
 				"tagTitle": "Temperos"
 			}
-		}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#position-6"]
 	},
 
 	"menu-item#position-7": {

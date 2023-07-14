@@ -1,0 +1,327 @@
+{
+    ///////////// SUBMNENU 1
+    "vtex.menu@2.x:submenu#position-1": {
+        "title": "SUBMNENU 1",
+        "children": [
+            "menu-item#sub-position-1-item-1",
+            "menu-item#sub-position-1-item-2",
+            "menu-item#sub-position-1-item-3",
+            "menu-item#sub-position-1-item-4",
+            "menu-item#sub-position-1-item-5",
+            "menu-item#sub-position-1-item-6",
+            "menu-item#sub-position-1-item-7",
+            "menu-item#sub-position-1-item-8",
+            "menu-item#sub-position-1-item-9",
+            "menu-item#sub-position-1-item-10",
+            "menu-item#sub-position-1-item-11",
+            "menu-item#sub-position-1-item-12",
+            "menu-item#sub-position-1-item-13",
+            "menu-item#sub-position-1-item-14",
+            "menu-item#sub-position-1-item-15"
+        ],
+        "props": {
+            
+        }
+    },
+
+    "menu-item#sub-position-1-item-1": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-2": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Limão",
+            "text": "Limão"
+          },
+          "iconProps": {
+            "id": "limao",
+            "size": 24,
+            "viewBox": "0 0 24 24"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-3": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Caju",
+            "text": "Caju"
+          },
+          "iconProps": {
+            "id": "caju",
+            "size": 41,
+            "viewBox": "0 0 26 41"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-4": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Goiaba",
+            "text": "Goiaba"
+          },
+          "iconProps": {
+            "id": "goiaba",
+            "size": 32,
+            "viewBox": "0 0 42 32"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-5": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Graviola",
+            "text": "Graviola"
+          },
+          "iconProps": {
+            "id": "graviola",
+            "size": 41,
+            "viewBox": "0 0 31 41"
+          },
+          "iconToTheRight": true
+        }
+    },
+    
+
+    "menu-item#sub-position-1-item-6": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Groselha",
+            "text": "Groselha"
+          },
+          "iconProps": {
+            "id": "groselha",
+            "size": 36,
+            "viewBox": "0 0 38 36"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-7": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-8": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-9": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-10": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-11": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-12": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-13": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-14": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-15": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "",
+            "text": ""
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40"
+          },
+          "iconToTheRight": true
+        }
+    }
+}

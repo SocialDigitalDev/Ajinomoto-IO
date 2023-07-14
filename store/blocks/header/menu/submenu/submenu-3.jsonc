@@ -1,0 +1,31 @@
+{
+     ///////////// SUBMNENU 3
+    "vtex.menu@2.x:submenu#position-3": {
+        "title": "SUBMNENU 3",
+        "children": [
+            "menu-item#sub-position-3-item-1"
+        ]
+    },
+
+    "menu-item#sub-position-3-item-1": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Abacaxi",
+            "text": "Abacaxi"
+          },
+          "iconProps": {
+            "id": "abacaxi",
+            "size": 24,
+            "viewBox": "0 0 24 40",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          },
+          "iconToTheRight": true
+        }
+    }
+}

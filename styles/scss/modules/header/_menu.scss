@@ -47,3 +47,33 @@
 		}
 	}
 }
+
+
+.submenuContainer {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 192px;
+}
+
+.submenuWrapper {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    padding: 53px 0;
+	background: rgba(238, 98, 98, 0.90);
+	box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.50) inset;
+	height: 270px;
+	border: none;
+
+	.submenu {
+		max-width: 1170px;
+		width: 100%;
+		margin: auto;
+		padding: 0 1em;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 162px);
+		grid-template-rows: repeat(3, auto);
+		gap: 30px 60px;
+	}
+}
