@@ -17,7 +17,8 @@
             "menu-item#sub-position-1-item-12",
             "menu-item#sub-position-1-item-13",
             "menu-item#sub-position-1-item-14",
-            "menu-item#sub-position-1-item-15"
+            "menu-item#sub-position-1-item-15",
+            "menu-item#sub-position-item-todos"
         ],
         "props": {
             
@@ -37,7 +38,7 @@
           },
           "iconProps": {
             "id": "abacaxi",
-            "size": 24,
+            "size": 30,
             "viewBox": "0 0 24 40"
           },
           "iconToTheRight": true
@@ -45,46 +46,6 @@
     },
 
     "menu-item#sub-position-1-item-2": {
-        "props": {
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Limão",
-            "text": "Limão"
-          },
-          "iconProps": {
-            "id": "limao",
-            "size": 24,
-            "viewBox": "0 0 24 24"
-          },
-          "iconToTheRight": true
-        }
-    },
-
-    "menu-item#sub-position-1-item-3": {
-        "props": {
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Caju",
-            "text": "Caju"
-          },
-          "iconProps": {
-            "id": "caju",
-            "size": 26,
-            "viewBox": "0 0 26 41"
-          },
-          "iconToTheRight": true
-        }
-    },
-
-    "menu-item#sub-position-1-item-4": {
         "props": {
           "type": "custom",
           "highlight": false,
@@ -104,6 +65,46 @@
         }
     },
 
+    "menu-item#sub-position-1-item-3": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Guaraná",
+            "text": "Guaraná"
+          },
+          "iconProps": {
+            "id": "guarana",
+            "size": 32,
+            "viewBox": "0 0 38 36"
+          },
+          "iconToTheRight": true
+        }
+    },
+
+    "menu-item#sub-position-1-item-4": {
+        "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Manga",
+            "text": "Manga"
+          },
+          "iconProps": {
+            "id": "manga",
+            "size": 32,
+            "viewBox": "0 0 30 35"
+          },
+          "iconToTheRight": true
+        }
+    },
+
     "menu-item#sub-position-1-item-5": {
         "props": {
           "type": "custom",
@@ -112,13 +113,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Graviola",
-            "text": "Graviola"
+            "tagTitle": "Tangerina",
+            "text": "Tangerina"
           },
           "iconProps": {
-            "id": "graviola",
-            "size": 31,
-            "viewBox": "0 0 31 41"
+            "id": "tangerina",
+            "size": 30,
+            "viewBox": "0 0 30 29"
           },
           "iconToTheRight": true
         }
@@ -133,13 +134,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Groselha",
-            "text": "Groselha"
+            "tagTitle": "Limão",
+            "text": "Limão"
           },
           "iconProps": {
-            "id": "groselha",
-            "size": 36,
-            "viewBox": "0 0 38 36"
+            "id": "limao",
+            "size": 25,
+            "viewBox": "0 0 24 25"
           },
           "iconToTheRight": true
         }
@@ -153,13 +154,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Graviola",
+            "text": "Graviola"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "graviola",
+            "size": 32,
+            "viewBox": "0 0 31 41"
           },
           "iconToTheRight": true
         }
@@ -173,13 +174,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Jabuticaba",
+            "text": "Jabuticaba"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "jabuticaba",
+            "size": 31,
+            "viewBox": "0 0 25 31"
           },
           "iconToTheRight": true
         }
@@ -193,13 +194,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Maracujá",
+            "text": "Maracujá"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "maracuja",
+            "size": 29,
+            "viewBox": "0 0 30 29"
           },
           "iconToTheRight": true
         }
@@ -213,13 +214,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Uva",
+            "text": "Uva"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "uva",
+            "size": 32,
+            "viewBox": "0 0 34 41"
           },
           "iconToTheRight": true
         }
@@ -233,13 +234,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Caju",
+            "text": "Caju"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "caju",
+            "size": 32,
+            "viewBox": "0 0 26 41"
           },
           "iconToTheRight": true
         }
@@ -253,13 +254,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Groselha",
+            "text": "Groselha"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "groselha",
+            "size": 32,
+            "viewBox": "0 0 38 36"
           },
           "iconToTheRight": true
         }
@@ -273,13 +274,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Laranja",
+            "text": "Laranja"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "laranja",
+            "size": 31,
+            "viewBox": "0 0 24 31"
           },
           "iconToTheRight": true
         }
@@ -293,13 +294,13 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
+            "tagTitle": "Morango",
+            "text": "Morango"
           },
           "iconProps": {
-            "id": "",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "morango",
+            "size": 32,
+            "viewBox": "0 0 27 29"
           },
           "iconToTheRight": true
         }
@@ -313,15 +314,36 @@
             "type": "internal",
             "href": "#",
             "noFollow": false,
-            "tagTitle": "",
-            "text": ""
+            "tagTitle": "Amora",
+            "text": "Amora"
           },
           "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40"
+            "id": "amora",
+            "size": 32,
+            "viewBox": "0 0 28 40"
           },
           "iconToTheRight": true
         }
-    }
+    },
+
+    "menu-item#sub-position-item-todos": {
+      "props": {
+        "type": "custom",
+        "blockClass": ["ver-todos"],
+        "highlight": true,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Ver Todos",
+          "text": "Ver Todos"
+        },
+        "iconProps": {
+          "id": "ver-todos",
+          "size": 33,
+          "viewBox": "0 0 33 21"
+        },
+        "iconToTheRight": true
+      }
+  }
 }
