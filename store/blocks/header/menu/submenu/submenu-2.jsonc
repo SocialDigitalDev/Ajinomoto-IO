@@ -1,32 +1,158 @@
 {
-      ///////////// SUBMNENU 2
-      "vtex.menu@2.x:submenu#position-2": {
-        "title": "SUBMNENU 2",
-        "children": [
-            "menu-item#sub-position-2-item-1"
-            
-        ]
-    },
+  ///////////// SUBMNENU 2
+  "vtex.menu@2.x:submenu#position-2": {
+    "title": "SUBMNENU 2",
+    "children": [
+      "menu-item#sub-position-2-item-1",
+      "menu-item#sub-position-2-item-2",
+      "menu-item#sub-position-2-item-3",
+      "menu-item#sub-position-2-item-4",
+      "menu-item#sub-position-2-item-5",
+      "menu-item#sub-position-2-item-6",
+      "menu-item#sub-position-2-item-7"      
+    ]
 
-    "menu-item#sub-position-2-item-1": {
-        "props": {
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
-          },
-          "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40",
-            "activeClassName": "rebel-pink",
-            "mutedClassName": "c-action-primary"
-          },
-          "iconToTheRight": true
-        }
+  },
+  
+  "menu-item#sub-position-2-item-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Abóbora",
+        "text": "Abóbora"
+      },
+      "iconProps": {
+        "id": "abobora",
+        "size": 33,
+        "viewBox": "0 0 38 33",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
+  },
+  
+  "menu-item#sub-position-2-item-2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aipim",
+        "text": "Aipim"
+      },
+      "iconProps": {
+        "id": "aipim",
+        "size": 32,
+        "viewBox": "0 0 41 37"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-2-item-3": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Batata",
+        "text": "Batata"
+      },
+      "iconProps": {
+        "id": "batata",
+        "size": 32,
+        "viewBox": "0 0 33 32"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-2-item-4": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Feijão",
+        "text": "Feijão"
+      },
+      "iconProps": {
+        "id": "feijao",
+        "size": 32,
+        "viewBox": "0 0 30 37"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-2-item-5": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cebola",
+        "text": "Cebola"
+      },
+      "iconProps": {
+        "id": "cebola",
+        "size": 29,
+        "viewBox": "0 0 29 29"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-2-item-6": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Limão",
+        "text": "Limão"
+      },
+      "iconProps": {
+        "id": "limao",
+        "size": 31,
+        "viewBox": "0 0 30 31"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-2-item-7": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Graviola",
+        "text": "Graviola"
+      },
+      "iconProps": {
+        "id": "graviola",
+        "size": 32,
+        "viewBox": "0 0 31 41"
+      },
+      "iconToTheRight": true
+    }
+  }  
 }
