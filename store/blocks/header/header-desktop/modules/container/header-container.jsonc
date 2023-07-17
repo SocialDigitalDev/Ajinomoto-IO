@@ -93,7 +93,7 @@
 	"modal-trigger#search-fixed-desktop": {
 		"children": [
 			"image#search-fixed",
-			"modal-layout#search-desktop"
+			"modal-layout#search-bar"
 		],
 		"props": {
 			"blockClass": [
@@ -122,7 +122,7 @@
 	"modal-trigger#search-sticky-desktop": {
 		"children": [
 			"image#search-sticky",
-			"modal-layout#search-desktop"
+			"modal-layout#search-bar"
 		],
 		"props": {
 			"blockClass": [

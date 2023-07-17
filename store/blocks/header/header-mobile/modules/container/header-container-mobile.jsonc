@@ -50,22 +50,6 @@
 		}
 	},
 
-	// HEADER STICKY
-
-	"flex-layout.row#header-container-sticky-mobile": {
-		"children": ["flex-layout.row#header--container-top-sticky-mobile"]
-	},
-
-	"flex-layout.row#header--container-top-sticky-mobile": {
-		"children": [
-			"flex-layout.row#header-left-mobile",
-			"flex-layout.row#logo-header",
-			"flex-layout.row#header-right-mobile"
-		],
-		"props": {
-			"blockClass": "header--container-top"
-		}
-	},
 
 	// SEARCH --- FIXED
 
@@ -77,7 +61,7 @@
 	},
 
 	"modal-trigger#search-fixed-mobile": {
-		"children": ["image#search-fixed-mobile", "modal-layout#search-desktop"],
+		"children": ["image#search-fixed-mobile", "modal-layout#search-bar"],
 		"props": {
 			"blockClass": ["search-fixed-mobile", "search-trigger-cy--ajinomoto"]
 		}

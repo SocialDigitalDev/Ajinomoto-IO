@@ -1,10 +1,18 @@
 {
-	"modal-layout#search-desktop": {
+	"modal-layout#search-bar": {
 		"children": [
+			"modal-actions.close",
 			"search-bar"
 		],
 		"props": {
 			"blockClass": "modal--search-desktop"
+		}
+	},
+	
+	"modal-actions.close": {
+		"props": {
+			"label": "x",
+			"blockClass": "search-bar"
 		}
 	},
 
