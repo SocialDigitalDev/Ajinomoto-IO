@@ -21,10 +21,10 @@
       "menu-item#sub-position-item-todos"
     ],
     "props": {
-      
+      "blockClass": "submenu-list"
     }
   },
-  
+    
   "menu-item#sub-position-1-item-1": {
     "props": {
       "type": "custom",
@@ -238,7 +238,7 @@
       },
       "iconProps": {
         "id": "caju",
-        "size": 32,
+        "size": 34,
         "viewBox": "0 0 26 41"
       },
       "iconToTheRight": true

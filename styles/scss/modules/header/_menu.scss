@@ -1,7 +1,6 @@
 .menu {
 
 	&ContainerNav--category-menu_desk {
-
 		.menuContainer {
 			display: flex;
 			flex-flow: row nowrap;
@@ -46,16 +45,39 @@
 			}
 		}
 	}
+
+	&ContainerNav--item-mobile {
+		width: 100%;
+
+		.menuItem--top-menu {
+			padding: 14px 44px 14px 30px;
+			border-bottom: 1px solid $gray-7;
+		}
+
+		.styledLinkContainer--top-menu {
+			padding: 0;
+			margin: 0;
+
+			.styledLinkContent--top-menu {
+				color: $gray-2;
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-weight: $regular;
+				line-height: normal;
+				
+			}
+		}
+	}
 }
 
-
-.submenuContainer {
+//SUBMENU
+.submenuContainer--submenu-list {
 	position: absolute;
     width: 100%;
     left: 0;
-    top: 192px;
+    top: 192px;	
 
-	.submenuWrapper {
+	.submenuWrapper--submenu-list--isOpen {
 		margin: 0;
 		width: 100%;
 		position: absolute;
@@ -65,7 +87,7 @@
 		height: 270px;
 		border: none ;
 	
-		.submenu {
+		.submenu--submenu-list {
 			max-width: 1170px;
 			width: 100%;
 			margin: auto;
@@ -78,6 +100,8 @@
 
 			.menuItem  {
 				.styledLinkContainer  {
+					margin: 0;
+					padding: 0;
 					.styledLinkContent  {
 						color: $white;
 						font-family: $OpenSans;
@@ -87,19 +111,23 @@
 						display: flex;
 						justify-content: flex-start;
 						align-items: center;
+						
 
 						.styledLinkIcon {
 							margin-right: 10px;
 							display: flex;
 							align-items: center;
+							
 						}
 					}
 				}
 
-				&--ver-todos {
-					position: absolute;
-					top: 0;
-					right: 5px;
+				&--ver-todos {					
+					@include media(">desktop") {
+						position: absolute;
+						top: 0;
+						right: 5px;
+					}
 				}
 			}
 		}

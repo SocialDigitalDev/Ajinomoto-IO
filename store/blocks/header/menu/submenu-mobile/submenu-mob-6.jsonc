@@ -1,0 +1,45 @@
+{
+    "disclosure-layout#submenu-mob-6": {
+        "title": "Menu Mobile 6",
+        "children": [
+            "disclosure-trigger#submenu-6",
+            "disclosure-content#submenu-6"
+        ],
+        "props": {
+           
+            "blockClass": "submenu"
+        }
+    },
+    
+    "disclosure-trigger#submenu-6": {
+        "title": "TRIGGER SUBMNENU 4",
+        "props": {
+            "blockClass": "menu-mobile"
+        },
+        "children": [
+            "rich-text#submenu-6"
+        ]
+    },
+    
+    "rich-text#submenu-6": {
+        "title": "submenu 6",
+        "props": {
+            "text": "Temperos",
+            "blockClass": "menu-mobile"
+        }
+    },
+    
+    "disclosure-content#submenu-6": {
+        "title": "ITENS SUBMENU 3",
+        "props": {
+            "blockClass": "menu-mobile-content"
+        },
+        "children": [
+            "menu-item#sub-position-6-item-1",
+            "menu-item#sub-position-6-item-2",
+            "menu-item#sub-position-6-item-3",
+            "menu-item#sub-position-6-item-4",
+            "menu-item#sub-position-6-item-5"
+        ]
+    }
+}

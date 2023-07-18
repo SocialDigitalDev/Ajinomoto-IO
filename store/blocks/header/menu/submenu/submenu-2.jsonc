@@ -10,8 +10,12 @@
       "menu-item#sub-position-2-item-5",
       "menu-item#sub-position-2-item-6",
       "menu-item#sub-position-2-item-7"      
-    ]
-
+    ],
+    
+    "props": {
+      "blockClass": "submenu-list"
+    }
+    
   },
   
   "menu-item#sub-position-2-item-1": {
@@ -44,13 +48,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Aipim",
-        "text": "Aipim"
+        "tagTitle": "Feijão",
+        "text": "Feijão"
       },
       "iconProps": {
-        "id": "aipim",
+        "id": "feijao",
         "size": 32,
-        "viewBox": "0 0 41 37"
+        "viewBox": "0 0 30 37"
       },
       "iconToTheRight": true
     }
@@ -64,13 +68,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Batata",
-        "text": "Batata"
+        "tagTitle": "Frango",
+        "text": "Frango"
       },
       "iconProps": {
-        "id": "batata",
+        "id": "frango",
         "size": 32,
-        "viewBox": "0 0 33 32"
+        "viewBox": "0 0 25 41"
       },
       "iconToTheRight": true
     }
@@ -84,13 +88,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Feijão",
-        "text": "Feijão"
+        "tagTitle": "Aipim",
+        "text": "Aipim"
       },
       "iconProps": {
-        "id": "feijao",
+        "id": "aipim",
         "size": 32,
-        "viewBox": "0 0 30 37"
+        "viewBox": "0 0 41 37"
       },
       "iconToTheRight": true
     }
@@ -124,13 +128,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Limão",
-        "text": "Limão"
+        "tagTitle": "Batata",
+        "text": "Batata"
       },
       "iconProps": {
-        "id": "limao",
-        "size": 31,
-        "viewBox": "0 0 30 31"
+        "id": "batata",
+        "size": 32,
+        "viewBox": "0 0 33 32"
       },
       "iconToTheRight": true
     }
@@ -144,13 +148,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Graviola",
-        "text": "Graviola"
+        "tagTitle": "Legumes",
+        "text": "Legumes"
       },
       "iconProps": {
-        "id": "graviola",
-        "size": 32,
-        "viewBox": "0 0 31 41"
+        "id": "legumes",
+        "size": 31,
+        "viewBox": "0 0 30 31"
       },
       "iconToTheRight": true
     }

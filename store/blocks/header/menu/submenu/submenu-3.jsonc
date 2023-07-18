@@ -1,31 +1,159 @@
 {
-     ///////////// SUBMNENU 3
-    "vtex.menu@2.x:submenu#position-3": {
-        "title": "SUBMNENU 3",
-        "children": [
-            "menu-item#sub-position-3-item-1"
-        ]
-    },
-
-    "menu-item#sub-position-3-item-1": {
-        "props": {
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Abacaxi",
-            "text": "Abacaxi"
-          },
-          "iconProps": {
-            "id": "abacaxi",
-            "size": 24,
-            "viewBox": "0 0 24 40",
-            "activeClassName": "rebel-pink",
-            "mutedClassName": "c-action-primary"
-          },
-          "iconToTheRight": true
-        }
+  ///////////// SUBMNENU 3
+  "vtex.menu@2.x:submenu#position-3": {
+    "title": "SUBMNENU 3",
+    "children": [
+      "menu-item#sub-position-3-item-1",
+      "menu-item#sub-position-3-item-2",
+      "menu-item#sub-position-3-item-3",
+      "menu-item#sub-position-3-item-4",
+      "menu-item#sub-position-3-item-5",
+      "menu-item#sub-position-3-item-6",
+      "menu-item#sub-position-3-item-7"   
+    ],
+    
+    "props": {
+      "blockClass": "submenu-list"
     }
+  },
+  
+  "menu-item#sub-position-3-item-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Bacon",
+        "text": "Bacon"
+      },
+      "iconProps": {
+        "id": "bacon",
+        "size": 32,
+        "viewBox": "0 0 32 32"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Costela",
+        "text": "Costela"
+      },
+      "iconProps": {
+        "id": "costela",
+        "size": 32,
+        "viewBox": "0 0 30 32"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-3": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Legumes",
+        "text": "Legumes"
+      },
+      "iconProps": {
+        "id": "legumes",
+        "size": 32,
+        "viewBox": "0 0 31 31"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-4": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Camarão",
+        "text": "Camarão"
+      },
+      "iconProps": {
+        "id": "camarao",
+        "size": 32,
+        "viewBox": "0 0 35 35"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-5": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Frutos do mar",
+        "text": "Frutos do mar"
+      },
+      "iconProps": {
+        "id": "frutos-do-mar",
+        "size": 32,
+        "viewBox": "0 0 38 36"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-6": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Carne",
+        "text": "Carne"
+      },
+      "iconProps": {
+        "id": "carne",
+        "size": 32,
+        "viewBox": "0 0 45 33"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-3-item-7": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Frango",
+        "text": "Frango"
+      },
+      "iconProps": {
+        "id": "frango",
+        "size": 32,
+        "viewBox": "0 0 27 32"
+      },
+      "iconToTheRight": true
+    }
+  }  
 }
