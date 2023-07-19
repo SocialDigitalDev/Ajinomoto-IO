@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#availability-notify": {
+        "children": [
+            "availability-notify"
+        ],
+        "props": {
+            "blockClass": "availability-notify",
+            "fullWidth": true
+        }
+    }
+}

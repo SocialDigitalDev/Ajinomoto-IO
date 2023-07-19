@@ -1,0 +1,18 @@
+{
+    "flex-layout.row#prices": {
+        "children": [
+            "product-price#product"
+        ],
+        "props": {
+            "blockClass": "product-price"
+        }
+    },
+
+    "product-price#product": {
+        "props": {
+          "showSavings": false,
+          "showListPrice": true,
+          "blockClass": "product"
+        }
+    }
+}

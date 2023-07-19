@@ -1,5 +1,15 @@
 {
 	"helmet-component": {
 		"component": "HelmetComponent"
+	},
+
+	"react-list-account-mobile": {
+		"component": "MenuMobileListAccount",
+		"composition": "children"
+	},
+
+	"custom-login": {
+		"component": "CustomLogin",
+		"composition": "children"
 	}
 }

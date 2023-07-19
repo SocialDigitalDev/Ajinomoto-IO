@@ -6,6 +6,7 @@ import "./global.css"
 
 const HelmetComponent = () => {
 	return (
+		// @ts-ignore
 		<Helmet>
 			<meta
 			name="viewport"

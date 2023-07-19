@@ -1,0 +1,67 @@
+{
+    "condition-layout.product#product-availability": {
+        "props": {
+            "conditions": [
+              {
+                "subject": "isProductAvailable"
+              }
+            ],
+            "Then": "flex-layout.row#product-buyButton",
+            "Else": "flex-layout.row#availability-notify"
+        }
+    },
+
+
+    "flex-layout.row#product-buyButton": {
+        "children": [
+            "flex-layout.col#quantity",
+            "flex-layout.col#buy-button"
+        ],
+        "props": {
+            "blockClass": "product-buyButton-group" 
+        }
+    },
+
+    "flex-layout.row#product-buyButton-disabled": {
+        "children": [
+            "flex-layout.col#buy-button"
+        ],
+        "props": {
+            "blockClass": ["product-buyButton-group", "product-buyButton-group-disabled"]
+        }
+    },
+
+    "flex-layout.col#quantity": {
+        "children": [
+            "product-quantity#product"
+        ],
+        "props": {
+            "blockClass": "column-quantity" 
+        }
+    },
+
+    "product-quantity#product": {
+        "props": {
+            "showLabel": false,
+            "blockClass": "product" 
+        }        
+    },
+
+    "flex-layout.col#buy-button": {
+        "children": [
+            "add-to-cart-button#pdpBuy"
+        ],
+        "props": {
+            "blockClass": "column-buy-button" 
+        }
+    },
+
+    "add-to-cart-button#pdpBuy": {
+		"title": "Botão Comprar",
+		"props": {
+			"text": "Comprar",
+			"unavailableText": "Avise-me",
+			"blockClass": "buy-button-product"
+		}
+	}   
+}

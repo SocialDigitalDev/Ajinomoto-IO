@@ -88,7 +88,8 @@
     "vtex.challenge-tp-condition": "0.x",
     "vtex.order-shipping": "0.x",
     "vtex.order-coupon": "0.x",
-    "vtex.category-menu": "2.x"
+    "vtex.category-menu": "2.x",
+    "vtex.session-client": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",

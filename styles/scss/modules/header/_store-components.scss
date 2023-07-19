@@ -1,13 +1,28 @@
 .searchBarContainer {
 	padding: 0;
+
+    .portalContainer {
+        position: relative !important;
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete) {
+        position: relative;
+        max-width: 768px;
+        border: none;
+        box-shadow: none;
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+        width: auto;
+    }
 }
 
 .autoCompleteOuterContainer {
     :global(.vtex-input-prefix__group) {
         border-radius: 50px;
         border: 2px solid $red-3;
+        height: 36px;
     }
-
     
     :global(.vtex-input__prefix) {
         background: $gray-15;
@@ -32,6 +47,10 @@
     }
 
     :global(.vtex-styleguide-9-x-input) {
+        color: $gray-2;
         background: $gray-15;
+        font-size: 12px;
+        border-radius: 0;
     }
 }
+

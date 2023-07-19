@@ -1,0 +1,43 @@
+{
+    //HOME - PRATELEIRA 1
+    "flex-layout.row#home-prateleira-1": {
+        "title": "HOME VITRINE 1",
+        "children": [
+            "flex-layout.col#home-prateleira-1"
+        ],
+        "props": {
+            "blockClass": "home-prateleira"
+        }
+    },
+
+    "flex-layout.col#home-prateleira-1": {
+        "children": [
+            "rich-text#home-prateleira-1",
+            "list-context.product-list#home-prateleira-1"
+        ],
+        "props": {
+            "blockClass": "home-prateleira"
+        }
+    },
+
+    "rich-text#home-prateleira-1": {
+        "title": "TITULO DA VITRINE",
+        "props": {
+            "text": "Para seu dia a dia",
+            "textPosition": "CENTER",
+            "blockClass": "shelf-titles"
+        }
+    },
+
+    // LIST SLIDER
+    "list-context.product-list#home-prateleira-1": {
+        "title": "PRATELEIRA",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#shelf"],
+        "props": {
+            "maxItems": 12,
+            "collection": "137",
+            "skusFilter": "ALL"
+        }
+    }
+}

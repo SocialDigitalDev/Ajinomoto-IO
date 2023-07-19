@@ -1,0 +1,22 @@
+{
+    "flex-layout.row#footer-logo": {
+        "title": "LOGO - FOOTER",
+        "children": ["image#logo-footer"],
+        "props": {
+            "blockClass": "logo-footer",
+            "horizontalAlign": "left"
+            
+        }
+    },
+
+    "image#logo-footer": {
+        "title": "LOGO",
+        "props": {
+            "src": "",
+            "link": {
+                "url": "/"
+            },
+            "blockClass": "logo-footer"
+        }
+    }
+}

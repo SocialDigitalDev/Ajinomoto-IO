@@ -1,0 +1,129 @@
+{
+	"flex-layout.row#menu-produtos-mob": {
+		"children": ["flex-layout.col#menu-produtos-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-produtos-mob": {
+		"children": ["disclosure-layout#menu-produtos-footer"],
+		"props": {
+			"blockClass": "modess--links"
+		}
+	},
+
+	"disclosure-layout#menu-produtos-footer": {
+		"children": [
+			"disclosure-trigger#menu-produtos-footer",
+			"disclosure-content#menu-produtos-footer"
+		],
+		"props": {
+			"blockClass": "modess--produtos"
+		}
+	},
+
+	"disclosure-trigger#menu-produtos-footer": {
+		"children": ["rich-text#title-disclosure_products"],
+		"props": {
+			"blockClass": ["menu-footer","menu-produtos-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_products": {
+        "title": "Título - Produtos [mobile]",
+		"props": {
+			"text": "Produtos",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-produtos-footer": {
+		"children": [
+			"vtex.menu@2.x:menu#menu-produto"
+			// "vtex.menu@2.x:menu#produtos--footer_mob"
+		],
+		"props": {
+			"blockClass": "menu-produtos-footer"
+		}
+	}
+
+	// "vtex.menu@2.x:menu#produtos--footer_mob": {
+	// 	"title": "Links produtos Footer [mobile]",
+	// 	"children": [
+	// 		"menu-item#menu-footer-col-2-slot-1_mob",
+	// 		"menu-item#menu-footer-col-2-slot-2_mob",
+    //         "menu-item#menu-footer-col-2-slot-3_mob",
+    //         "menu-item#menu-footer-col-2-slot-4_mob"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": ["menu-footer", "accordion-footer"]
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-2-slot-1_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-2-slot-1_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+    //             "type": "internal",
+    //             "href": "/absorventes-noturnos",
+    //             "noFollow": false,
+    //             "tagTitle": "Link Absorventes Noturnos",
+    //             "text": "Absorventes noturnos"
+    //         }
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-2-slot-2_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-2-slot-2_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+    //             "type": "internal",
+    //             "href": "/absorventes-diurnos",
+    //             "noFollow": false,
+    //             "tagTitle": "Link Absorventes Diurnos",
+    //             "text": "Absorventes diurnos"
+    //         }
+	// 	}
+	// },
+
+
+    
+	// "menu-item#menu-footer-col-2-slot-3_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-2-slot-3_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+    //             "type": "internal",
+    //             "href": "/proteor-diario",
+    //             "noFollow": false,
+    //             "tagTitle": "Link Proteor Diário",
+    //             "text": "Proteor diário"
+    //         }
+	// 	}
+	// },
+
+    // "menu-item#menu-footer-col-2-slot-4_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-2-slot-3_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+    //             "type": "internal",
+    //             "href": "/calcinha-absorvente",
+    //             "noFollow": false,
+    //             "tagTitle": "Link Calcinha Absorvente",
+    //             "text": "Calcinha absorvente"
+    //         }
+	// 	}
+	// }	
+}

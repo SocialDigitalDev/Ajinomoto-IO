@@ -1,0 +1,58 @@
+{
+	"flex-layout.col#social-links": {
+		"children": [
+			"rich-text#social-links",
+			"flex-layout.row#data-links"
+		],
+		"props": {
+			"blockClass": "bottom-links-footer",
+			"width": "15%"
+		}
+	},
+	"rich-text#social-links": {
+		"title": "Titulo Redes Sociais",
+		"props": {
+			"text": "Siga nossas redes",
+			"blockClass": "titles-bottom"
+		}
+	},
+	"flex-layout.row#data-links": {
+        "title": "Links Redes Sociais",
+		"children": [
+			"link#social-instagram",
+			"link#social-facebook"
+		]
+	},
+
+	"link#social-instagram": {
+        "title": "Link - Instagram",
+		"children": ["image#icon-instagram"],
+		"props": {
+			"href": "https://www.instagram.com/modessbrasil",
+			"target": "_blank"
+		}
+	},
+
+	"image#icon-instagram": {
+        "title": "Logotipo - Instagram",
+		"props": {
+			"src": "assets/svg/ico_instagram-footer.svg"
+		}
+	},
+
+	"link#social-facebook": {
+        "title": "Link - Facebook",
+		"children": ["image#icon-facebook"],
+		"props": {
+			"href": "https://www.facebook.com/modessbrasil",
+			"target": "_blank"
+		}
+	},
+
+	"image#icon-facebook": {
+        "title": "Logotipo - Facebook",
+		"props": {
+			"src": "assets/svg/ico_facebook-footer.svg"
+		}
+	}	
+}

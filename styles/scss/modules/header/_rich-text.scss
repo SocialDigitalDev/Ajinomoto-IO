@@ -1,18 +1,12 @@
-.container {
+.container--text--topbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 12px 0;
 
-	&--text--topbar {
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		padding: 12px 0;
-	}
-}
-
-.paragraph {
-
-	&--text--topbar {
+	.paragraph--text--topbar {
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
@@ -24,5 +18,17 @@
 		font-size: 16px;
 		color: $white;
 		text-align: center;
+	}
+}
+
+.container--client-area-title {
+	padding: 0 18px;
+	.paragraph--client-area-title {
+		color: $gray-2;
+		font-family: $OpenSans;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: $bold;
+		line-height: normal;
 	}
 }
