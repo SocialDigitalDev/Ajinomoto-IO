@@ -1,0 +1,72 @@
+.flex {
+
+	&Row {
+
+		&--header {
+
+			&--topbar {
+				background: $primary;
+
+				:global(.vtex-store-components-3-x-container) {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					max-width: 100%;
+					padding: 0;
+				}
+			}
+
+			&--content {
+				background: $white;
+
+				:global(.vtex-store-components-3-x-container) {
+					width: 100%;
+					max-width: 1170px;
+					padding: 16px 0 31px;
+				}
+			}
+
+		}
+
+		&Content {
+
+			&--header {
+
+				&--container {
+
+					&-top {
+						display: flex;
+						flex-flow: row nowrap;
+						align-items: center;
+						justify-content: space-between;
+						width: 100%;
+						margin-bottom: 15px;
+					}
+				}
+
+				&--infos-client {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: center;
+					justify-content: space-between;
+					gap: 0 20px;
+				}
+			}
+		}
+	}
+
+	&Col {
+		&Child {
+			&--header{
+				&--container{
+					display: none;
+					&:first-child {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

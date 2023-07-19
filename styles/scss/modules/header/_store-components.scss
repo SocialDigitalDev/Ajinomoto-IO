@@ -1,0 +1,37 @@
+.searchBarContainer {
+	padding: 0;
+}
+
+.autoCompleteOuterContainer {
+    :global(.vtex-input-prefix__group) {
+        border-radius: 50px;
+        border: 2px solid $red-3;
+    }
+
+    
+    :global(.vtex-input__prefix) {
+        background: $gray-15;
+        .searchBarIcon--prefix {
+            &::before {
+                content: url(assets/svg/ico_lupa.svg);
+                display: inline-block;
+            }
+            .searchIcon {
+                display: none;
+            }
+        }
+    }
+
+    :global(.vtex-input__suffix) {
+        background: $gray-15;
+        .searchBarIcon--search {
+            .searchIcon{
+                display: none;
+            }
+        }
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+        background: $gray-15;
+    }
+}

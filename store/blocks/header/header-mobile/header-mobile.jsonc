@@ -1,0 +1,24 @@
+{
+	"sticky-layout#header-mobile": {
+		"title": "[ HEADER - MOBILE ]",
+		"children": [
+			"flex-layout.row#topbar-header",
+			"flex-layout.row#header-mobile"
+		],
+		"props": {
+			"blockClass": [
+				"sticky--header",
+				"header-cy--ajinomoto"
+			]
+		}
+	},
+
+	"flex-layout.row#header-mobile": {
+		"children": [
+			"flex-layout.row#header-container-mobile"
+		],
+		"props": {
+			"blockClass": "header--content"
+		}
+	}
+}

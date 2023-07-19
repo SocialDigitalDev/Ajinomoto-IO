@@ -1,0 +1,36 @@
+.wrapper {
+
+	&--sticky {
+
+		&--header {
+			background: $white;
+		}
+	}
+
+	&--header-cy--ajinomoto--stuck {
+		:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label)::before {
+			display: none;
+		}
+
+		:global(.vtex-flex-layout-0-x-flexColChild--header--container) {
+			&:first-child {
+				display: none;
+			}
+
+			&:last-child {
+				display: block;
+			}
+		}
+
+		:global(.vtex-login-2-x-container) {
+			:global(.vtex-button) {
+				width: auto;
+			}
+		}
+
+		//MENU
+		:global(.vtex-menu-2-x-submenuContainer) {
+			top: 176px;
+		}
+	}
+}

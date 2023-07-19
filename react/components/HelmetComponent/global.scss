@@ -19,7 +19,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: $black;
+	background: linear-gradient(90deg, #EE6262 8.71%, #E60012 100%);;
 	border-radius: 10px;
 	border: 1px solid $white;
 }
@@ -28,6 +28,33 @@ ul, ol {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+
+// HEADER
+
+.vtex-flex-layout-0-x-flexRowContent--header--container-top {
+
+	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+		width: initial !important;
+	}
+}
+
+.vtex-flex-layout-0-x-flexRowContent--header--infos-client {
+
+	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+		width: initial !important;
+	}
+}
+
+.vtex-flex-layout-0-x-flexRowContent--header--account {
+
+	.vtex-button__label {
+
+		& > span {
+			margin: 0;
+		}
+	}
 }
 
 

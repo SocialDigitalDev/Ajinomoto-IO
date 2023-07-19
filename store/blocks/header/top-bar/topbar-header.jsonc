@@ -1,0 +1,17 @@
+{
+	"flex-layout.row#topbar-header": {
+		"children": [
+			"rich-text#text-topbar"
+		],
+		"props": {
+			"blockClass": "header--topbar"
+		}
+	},
+
+	"rich-text#text-topbar": {
+		"props": {
+			"text": "Nas compras a partir de R$ 120,00, ganhe de brinde o Ajipanda!",
+			"blockClass": "text--topbar"
+		}
+	}
+}
