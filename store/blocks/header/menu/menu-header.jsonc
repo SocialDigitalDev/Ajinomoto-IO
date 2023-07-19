@@ -154,11 +154,11 @@
 			"type": "custom",
 			"highlight": true,
 			"itemProps": {
-				"text": "Food Service",
+				"text": "Conheça o Food Service",
 				"href": "#",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Food Service"
+				"tagTitle": "Conheça o Food Service"
 			}
 		}
 	},

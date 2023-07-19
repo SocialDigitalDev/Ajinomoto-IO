@@ -329,7 +329,7 @@
     "props": {
       "type": "custom",
       "blockClass": ["ver-todos"],
-      "highlight": true,
+      "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
