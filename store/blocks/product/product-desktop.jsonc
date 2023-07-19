@@ -8,6 +8,7 @@
 
     "responsive-layout.desktop#content-product":  {
         "children": [
+            "flex-layout.row#breadcrumb-product",
 			"flex-layout.row#content-product",
             "flex-layout.row#product-shelf"
         ]

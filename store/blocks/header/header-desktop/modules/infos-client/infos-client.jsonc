@@ -28,7 +28,6 @@
 
 	"flex-layout.row#my-account": {
 		"children": [
-			// "login",
 			"custom-login"
 		],
 		"props": {

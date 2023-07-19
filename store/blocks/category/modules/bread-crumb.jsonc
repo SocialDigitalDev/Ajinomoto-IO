@@ -1,8 +1,6 @@
 {
 	"flex-layout.row#search-breadcrumb": {
-		"title": [
-			"[ Breadcrumb ]"
-		],
+		"title": "Breadcrumb",
 		"children": [
 			"breadcrumb.search"
 		],

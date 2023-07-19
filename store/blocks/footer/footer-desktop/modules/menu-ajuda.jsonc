@@ -1,0 +1,112 @@
+{
+	"flex-layout.col#menu-ajudas": {
+		"children": ["rich-text#title-ajuda", "vtex.menu@2.x:menu#menu-ajuda"],
+		"props": {
+			"blockClass": "links-footer",
+			"verticalAlign": "top"
+		}
+	},
+
+	"rich-text#title-ajuda": {
+		"title": "Título Ajuda - Desktop",
+		"props": {
+			"text": "Precisa de Ajuda",
+			"blockClass": "title-footer"
+		}
+	},
+
+	"vtex.menu@2.x:menu#menu-ajuda": {
+		"title": "Links ajuda Footer [desktop]",
+		"children": [
+			"menu-item#ajuda-1",
+			"menu-item#ajuda-2",
+			"menu-item#ajuda-3",
+			"menu-item#ajuda-4",
+			"menu-item#ajuda-5"
+		],
+        "props": {
+            "orientation": "vertical",
+			"blockClass": ["footer-menu"]
+        }
+	},
+    
+	"menu-item#ajuda-1": {
+		"props": {
+			"id": "menu-item-ajuda-1",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/politica-de-privacidade",
+				"noFollow": false,
+				"tagTitle": "Link Política de Privacidade",
+				"text": "Política de Privacidade"
+			}
+		}
+	},
+
+	"menu-item#ajuda-2": {
+		"props": {
+			"id": "menu-item-ajuda-2",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/politica-de-frete",
+				"noFollow": false,
+				"tagTitle": "Link Política de Frete",
+				"text": "Política de Frete"
+			}
+		}
+	},
+
+	"menu-item#ajuda-3": {
+		"props": {
+			"id": "menu-item-ajuda-3",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/trocas-e-devolucoes",
+				"noFollow": false,
+				"tagTitle": "Link Trocas e Devoluções",
+				"text": "Trocas e Devoluções"
+			}
+		}
+	},
+
+	"menu-item#ajuda-4": {
+		"props": {
+			"id": "menu-item-ajuda-4",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/duvidas-frequentes",
+				"noFollow": false,
+				"tagTitle": "Link Dúvidas Frequentes",
+				"text": "Dúvidas Frequentes"
+			}
+		}
+	},
+
+	"menu-item#ajuda-5": {
+		"props": {
+			"id": "menu-item-ajuda-5",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "external",
+				"href": "https://modess.zendesk.com/hc/pt-br",
+				"noFollow": false,
+				"tagTitle": "Link Contatos",
+				"text": "Contatos"
+			}
+		}
+	}
+}

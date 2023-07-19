@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
+// @ts-ignore  
 import * as Tabs from '@radix-ui/react-tabs'
 import { canUseDOM } from 'vtex.render-runtime'
 
@@ -14,7 +15,7 @@ const MenuMobileListAccount = ({ children = [] }) => {
       }
 
       const NavBar: any = window.document.querySelector(
-        '.vtex-store-drawer-0-x-drawerContent--menu--mobile .js-menuMobileAccount'
+        '.vtex-store-drawer-0-x-drawerContent--menu-mobile .js-menuMobileAccount'
       )
 
       if (NavBar) {
@@ -38,7 +39,7 @@ const MenuMobileListAccount = ({ children = [] }) => {
             <Tabs.Trigger
               key={index}
               className="menuMobileAccount__item"
-              value="teste"
+              value="item"
             >
               {item}
             </Tabs.Trigger>

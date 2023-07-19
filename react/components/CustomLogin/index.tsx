@@ -153,10 +153,10 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
     <div>
       {/*@ts-ignore */}
       {session && session?.namespaces?.profile?.isAuthenticated?.value === "true" ?
-        <>
+        (
           <div className="user-logged" onClick={() => setIsOpenLogged(!isOpenLogged)}>
 		  	<svg xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33" fill="none">
-				<g clip-path="url(#clip0_1130_7750)">
+				<g clipPath="url(#clip0_1130_7750)">
 					<path d="M37.0487 10.3952C36.805 10.0612 36.5515 9.73699 36.2929 9.42243C37.2824 8.3626 39.2264 5.81222 37.9088 3.26669C36.4321 0.416271 31.6938 -0.750029 29.9387 0.50338C28.636 1.40835 27.9797 2.67628 27.6714 3.4651C25.5086 2.74887 23.1369 2.38107 20.5614 2.3714C17.9859 2.38107 15.6192 2.74887 13.4564 3.4651C13.1531 2.67628 12.4918 1.40835 11.1891 0.50338C9.43402 -0.750029 4.69567 0.416271 3.21898 3.26669C1.90139 5.81222 3.84545 8.3626 4.83489 9.42243C4.57634 9.73699 4.32774 10.0612 4.07914 10.3952C1.07106 14.4893 -0.107314 19.3045 0.936813 23.268C1.7572 26.3943 3.93495 28.8672 7.23141 30.4158C10.7267 32.0612 15.2115 32.9323 20.5564 33.0001H20.5813C25.9262 32.9323 30.406 32.0612 33.9064 30.4158C37.2028 28.8672 39.3806 26.3943 40.201 23.268C41.2401 19.3045 40.0667 14.4893 37.0537 10.3952" fill="#E60012"/>
 					<path d="M20.5614 4.04575C14.0928 4.06995 9.02131 6.53322 5.4862 11.3678C2.80627 15.0167 1.70248 19.4157 2.60242 22.8566C3.30348 25.5279 5.11329 27.5653 7.97719 28.9107C11.2438 30.4496 15.48 31.2626 20.5664 31.3304C25.6528 31.2626 29.884 30.4496 33.1506 28.9155C36.0145 27.5702 37.8243 25.5328 38.5253 22.8614C39.4303 19.4206 38.3265 15.0216 35.6465 11.3775C32.1114 6.53805 27.035 4.07479 20.5664 4.05059" fill="white"/>
 					<path d="M20.5714 24.6617C21.7846 24.6617 22.7839 23.9793 22.7839 23.1276C22.7839 22.2758 21.7846 21.5838 20.5714 21.5838C19.3582 21.5838 18.3489 22.2758 18.3489 23.1276C18.3489 23.9793 19.3433 24.6617 20.5714 24.6617Z" fill="#E60012"/>
@@ -174,14 +174,12 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
             {/*@ts-ignore */}
             <div className="login-button-text" onClick={() => window.location.href = '/account'}>Olá <span>{session?.namespaces.profile.email.value}</span></div>
           </div>
-        </>
-
+        )
         :
-
         (
           <div className="user-login" onClick={() => setIsOpen(true)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33" fill="none">
-				<g clip-path="url(#clip0_1130_7750)">
+				<g clipPath="url(#clip0_1130_7750)">
 					<path d="M37.0487 10.3952C36.805 10.0612 36.5515 9.73699 36.2929 9.42243C37.2824 8.3626 39.2264 5.81222 37.9088 3.26669C36.4321 0.416271 31.6938 -0.750029 29.9387 0.50338C28.636 1.40835 27.9797 2.67628 27.6714 3.4651C25.5086 2.74887 23.1369 2.38107 20.5614 2.3714C17.9859 2.38107 15.6192 2.74887 13.4564 3.4651C13.1531 2.67628 12.4918 1.40835 11.1891 0.50338C9.43402 -0.750029 4.69567 0.416271 3.21898 3.26669C1.90139 5.81222 3.84545 8.3626 4.83489 9.42243C4.57634 9.73699 4.32774 10.0612 4.07914 10.3952C1.07106 14.4893 -0.107314 19.3045 0.936813 23.268C1.7572 26.3943 3.93495 28.8672 7.23141 30.4158C10.7267 32.0612 15.2115 32.9323 20.5564 33.0001H20.5813C25.9262 32.9323 30.406 32.0612 33.9064 30.4158C37.2028 28.8672 39.3806 26.3943 40.201 23.268C41.2401 19.3045 40.0667 14.4893 37.0537 10.3952" fill="#E60012"/>
 					<path d="M20.5614 4.04575C14.0928 4.06995 9.02131 6.53322 5.4862 11.3678C2.80627 15.0167 1.70248 19.4157 2.60242 22.8566C3.30348 25.5279 5.11329 27.5653 7.97719 28.9107C11.2438 30.4496 15.48 31.2626 20.5664 31.3304C25.6528 31.2626 29.884 30.4496 33.1506 28.9155C36.0145 27.5702 37.8243 25.5328 38.5253 22.8614C39.4303 19.4206 38.3265 15.0216 35.6465 11.3775C32.1114 6.53805 27.035 4.07479 20.5664 4.05059" fill="white"/>
 					<path d="M20.5714 24.6617C21.7846 24.6617 22.7839 23.9793 22.7839 23.1276C22.7839 22.2758 21.7846 21.5838 20.5714 21.5838C19.3582 21.5838 18.3489 22.2758 18.3489 23.1276C18.3489 23.9793 19.3433 24.6617 20.5714 24.6617Z" fill="#E60012"/>
@@ -214,7 +212,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
               <div className="login-close-button" onClick={handleCloseModal}>
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <h1 className='card-title'>Acessar Conta</h1>
@@ -228,8 +226,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
                 Cadastre-se
                 <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
 
               </button>
@@ -244,7 +242,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                 <div className="login-close-button" onClick={handleCloseModal}>
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <h1 className='card-title'>Acessar Conta</h1>
@@ -284,8 +282,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                     <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       Voltar
                     </button>
@@ -294,8 +292,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       Entrar
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.0065 0C7.66691 0 0.0933238 7.80869 0.00717875 17.4746L0 33.5908C0 37.1304 2.76741 40 6.1809 40H22.028C31.9526 40 40 31.6553 40 21.3641V0H17.0065Z" fill="#A10E11"/>
-                      <path d="M22.8352 12.9183L29.9169 20L22.8352 27.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M10.0834 20H29.7184" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22.8352 12.9183L29.9169 20L22.8352 27.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M10.0834 20H29.7184" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </button>
                   </div>
@@ -306,8 +304,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
                   Cadastre-se
                   <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
                 </button>
@@ -325,7 +323,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                 <div className="login-close-button" onClick={handleCloseModal}>
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
 
@@ -349,15 +347,15 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       Entrar
 
                       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
 
                     <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       Voltar
                     </button>
@@ -369,8 +367,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <button className='sign-in-button'>
                   Cadastre-se
                   <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
                 </button>
@@ -388,7 +386,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                 <div className="login-close-button" onClick={handleCloseModal}>
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
 
@@ -416,8 +414,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                     <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
 
 
@@ -428,8 +426,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       Entrar
 
                       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
 
@@ -444,8 +442,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
                   Cadastre-se
                   <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
                 </button>
@@ -461,7 +459,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="login-close-button-sign-up" onClick={() => setIsOpen(false)}>
 
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
 
 
@@ -498,8 +496,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                     <button className='login-back-button' onClick={() => handleChangePage("put_code_signUp")}>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.41253" stroke="#0A3F40" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="#0A3F40" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.41253" stroke="#0A3F40" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.6252 15L4.58775 15" stroke="#0A3F40" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       Voltar
                     </button>
@@ -507,8 +505,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     <button className='login-submit-button purple' type='submit'>
                       Confirmar
                       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
 
@@ -520,8 +518,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <button className='sign-in-button'>
                   Cadastre-se
                   <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
                 </button>
@@ -541,7 +539,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                   <div className="login-close-button" onClick={() => setIsOpen(false)}>
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
 
@@ -565,8 +563,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                       <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M25.6252 15L4.58775 15" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
 
@@ -577,8 +575,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                         Entrar
 
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M4.0835 14H23.7185" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </button>
 
@@ -593,8 +591,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   <button className='sign-in-button'>
                     Cadastre-se
                     <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
                   </button>
@@ -614,7 +612,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                   <div className="login-close-button" onClick={() => setIsOpen(false)}>
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
 
@@ -637,8 +635,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                       <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M25.6252 15L4.58775 15" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
 
@@ -649,8 +647,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                         Entrar
 
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M4.0835 14H23.7185" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </button>
 
@@ -665,8 +663,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   <button className='sign-in-button'>
                     Cadastre-se
                     <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
                   </button>

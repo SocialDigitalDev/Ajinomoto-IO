@@ -1,8 +1,11 @@
 .menuMobileAccount__item {
-	border: 0;
-	background: transparent;
-	padding: 0;
+	border-radius: 10px;
+    border: 1px solid #EE6262;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(7.5px);
+    padding: 7px 22px 7px 10px;
 	margin-right: 10px;
+	width: 155px;
 }
 
 .js-menuMobileAccount {

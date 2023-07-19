@@ -87,7 +87,7 @@
 	
 	"search-result-layout.desktop": {
 		"children": [
-			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#search-breadcrumb",			
 			"flex-layout.row#category-desktop"
 		],
 		"props": {

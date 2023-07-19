@@ -35,10 +35,9 @@
         "blocks": ["product-summary.shelf"],
         "children": ["slider-layout#shelf"],
         "props": {
-            "maxItems": 12
-            // "collection": "",
-            // "skusFilter": "",
-            // "orderBy": "OrderByReleaseDateDESC"
+            "maxItems": 12,
+            "collection": "137",
+            "skusFilter": "ALL"
         }
     }
 }
