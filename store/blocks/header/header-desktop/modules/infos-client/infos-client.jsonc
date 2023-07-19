@@ -28,7 +28,8 @@
 
 	"flex-layout.row#my-account": {
 		"children": [
-			"login"
+			// "login",
+			"custom-login"
 		],
 		"props": {
 			"blockClass": "header--account"

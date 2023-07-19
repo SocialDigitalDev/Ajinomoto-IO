@@ -13,7 +13,10 @@
 		"props": {
 			"blockClass": "logo-header_desk",
 			"src": "assets/svg/logo-desktop-header.svg",
-			"link": "/",
+			"link":  {
+				"title": "Loja Ajinomoto",
+				"url": "/"
+			},
 			"maxWidth": "93px"
 		}
 	}

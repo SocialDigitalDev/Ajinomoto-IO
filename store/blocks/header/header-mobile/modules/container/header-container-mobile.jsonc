@@ -39,7 +39,8 @@
 			"flex-layout.row#header-right-mobile"
 		],
 		"props": {
-			"blockClass": "header--container-top-mobile"
+			"blockClass": "header--container-top-mobile",
+			"preserveLayoutOnMobile": true
 		}
 	},
 

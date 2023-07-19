@@ -1,0 +1,98 @@
+{
+	"flex-layout.row#img-product": {
+		"children": [
+			"stack-layout#img-product"
+		],
+		"props": {
+			"blockClass": "product--image"
+		}
+	},
+
+	"stack-layout#img-product": {
+		"props": {
+			"blockClass": "product"
+		},
+		"children": [
+			"flex-layout.row#product-row-image"
+		]
+	},
+	
+	"flex-layout.row#product-row-image": {
+		"children": [
+			"flex-layout.col#product-image"            
+		],
+		"props": {
+			"blockClass": "product-row-img"
+		}
+	},
+	
+	"flex-layout.col#product-image": {
+		"children": [
+			"responsive-layout.desktop#product-img",
+			"responsive-layout.tablet#product-img",
+			"responsive-layout.phone#product-img"
+			
+		],
+		"props": {
+			"blockClass": "product-image"
+		}
+	},
+	
+	"responsive-layout.desktop#product-img": {
+		"children": [
+			"product-images#desktop"
+		]
+	},
+	
+	"responsive-layout.tablet#product-img": {
+		"children": [
+			"product-images#tablet"
+		]
+	},
+	
+	"responsive-layout.phone#product-img": {
+		"children": [
+			"product-images#phone"
+		] 
+	},
+	
+	"product-images#desktop": {
+		"title": "Foto Produto [desktop]",
+		"props": {
+			"maxHeight": 463,
+			"zoomMode": "in-place-hover",
+			"zoomFactor": 2,
+			"showPaginationDots": true,
+            "showNavigationArrows": false,
+			"thumbnailVisibility": "visible",
+			"thumbnailsOrientation": "vertical",
+			"thumbnailMaxHeight": 92,
+			"position": "left",
+            "blockClass": "product"
+		}
+	},
+	
+	"product-images#tablet": {
+		"title": "Foto Produto [tablet]",
+		"props": {
+			"maxHeight": 463,
+			"zoomMode": "disabled",
+			"showPaginationDots": true,
+			"showNavigationArrows": false,
+			"thumbnailVisibility": "hidden",
+            "blockClass": "product"
+		}
+	},
+	
+	"product-images#phone": {
+		"title": "Foto Produto [phone]",
+		"props": {
+			"maxHeight": 463,
+			"zoomMode": "disabled",
+			"showPaginationDots": true,
+			"showNavigationArrows": false,
+			"thumbnailVisibility": "hidden",
+            "blockClass": "product"
+		}
+	}
+}

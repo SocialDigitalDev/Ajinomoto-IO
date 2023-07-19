@@ -8,6 +8,7 @@
 	
 	"menu#drawer": {
 		"children": [
+			"flex-layout.row#client-area",
 			"disclosure-layout-group#group-submenu",
 			"menu-item#assinatura",
 			"menu-item#foodService"
@@ -31,8 +32,5 @@
 			"maxVisible": "one",
 			"blockClass": "menu-mobile"
 		}
-	}
-	
-	
-	
+	}	
 }

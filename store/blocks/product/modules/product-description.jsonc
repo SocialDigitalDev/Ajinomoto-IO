@@ -1,0 +1,25 @@
+{
+    "flex-layout.row#description-produc-mobile": {
+        "children": ["flex-layout.col#description-product"],
+        "props": {
+            "blockClass": "description-product"
+         }
+    },
+
+    "flex-layout.col#description-product": {
+        "children": [
+            "product-description",
+            "product-specification-badges#product-description"
+        ],
+        "props": {
+            "blockClass": "description-product"
+         }
+    },
+
+    "product-description": {
+        "props": {
+            "title": "Informações",
+            "blockClass": "product"
+        }
+    }
+}
