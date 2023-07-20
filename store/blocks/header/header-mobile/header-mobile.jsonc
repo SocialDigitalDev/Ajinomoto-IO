@@ -28,7 +28,7 @@
 			"search-bar"
 		],
 		"props": {
-			"blockClass": "header--content"
+			"blockClass": ["header--content", "search-bar"]
 		}
 	}
 }

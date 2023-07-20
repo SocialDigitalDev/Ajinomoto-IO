@@ -1,6 +1,11 @@
 .searchBarContainer {
 	padding: 0;
 
+    .searchBarInnerContainer--opened {
+        height: auto;
+        min-height: 36px;
+    }
+
     @include media("<=tablet"){
         max-width: 456px;
     }
@@ -19,6 +24,10 @@
     :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
         width: auto;
         background: $white;
+        border-radius: 0px 0px 10px 10px;
+        @include media(">phone","<=tablet") {
+            border-radius: 0px 0px 50px 50px;
+        }
     }
 
     :global(.vtex-search-2-x-biggy-autocomplete) {
@@ -27,11 +36,11 @@
         margin: 0 auto;
         border: none;
         box-shadow: none;
-        background: $white;
         @include media("<=tablet") {
             max-width: 456px;
         }
     }
+    
 }
 
 .autoCompleteOuterContainer {

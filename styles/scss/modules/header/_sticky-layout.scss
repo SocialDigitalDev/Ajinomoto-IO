@@ -36,6 +36,10 @@
 			}
 		}
 
+		:global(.vtex-flex-layout-0-x-flexRow--search-bar) {
+			display: none;
+		}
+
 		//MENU
 		:global(.vtex-menu-2-x-submenuContainer) {
 			top: 148px;
