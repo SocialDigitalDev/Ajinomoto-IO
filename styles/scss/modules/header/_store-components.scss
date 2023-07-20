@@ -1,19 +1,36 @@
 .searchBarContainer {
 	padding: 0;
 
+    @include media("<=tablet"){
+        max-width: 456px;
+    }
+
     .portalContainer {
-        position: relative !important;
+        inset: auto 0 !important;
+        @include media(">=tablet") {
+            position: relative !important;
+        }
+
+        @include media("<desktop") {
+            width: 100%;
+        }
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+        width: auto;
+        background: $white;
     }
 
     :global(.vtex-search-2-x-biggy-autocomplete) {
         position: relative;
         max-width: 768px;
+        margin: 0 auto;
         border: none;
         box-shadow: none;
-    }
-
-    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
-        width: auto;
+        background: $white;
+        @include media("<=tablet") {
+            max-width: 456px;
+        }
     }
 }
 
@@ -22,6 +39,9 @@
         border-radius: 50px;
         border: 2px solid $red-3;
         height: 36px;
+        @include media("<=phone") {
+            width: 85%;
+        }
     }
     
     :global(.vtex-input__prefix) {

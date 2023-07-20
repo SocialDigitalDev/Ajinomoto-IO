@@ -25,12 +25,7 @@
 					width: 100%;
 					max-width: 1170px;
 					padding: 16px 0 31px;
-
-					@include media(">=laptop","<desktop") {
-						padding: 16px 16px 31px;
-					}
-					
-					@include media("<=tablet") {
+					@include media("<desktop") {
 						padding: 7px 15px;
 					}
 				}

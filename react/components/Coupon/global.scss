@@ -13,10 +13,11 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
         .coupon-label {
             font-family: $OpenSans;
-            color:#000000;
             font-size: 16px;
+            color:#000;
         }
 
         .coupon-code {
@@ -26,7 +27,7 @@
 
             span {
                 font-family: $OpenSans;
-                color:#000000;
+                color:#000;
                 font-size: 16px;
                 text-decoration: underline;
             }

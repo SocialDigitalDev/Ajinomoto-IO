@@ -8,7 +8,7 @@
 		"props": {
 			"blockClass": [
 				"sticky--header",
-				"header-cy--ajinomoto"
+				"header-desktop--ajinomoto"
 			]
 		}
 	},
