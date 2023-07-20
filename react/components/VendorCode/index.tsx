@@ -8,6 +8,8 @@
 import React, { useState } from 'react'
 import { OrderForm } from 'vtex.order-manager'
 
+import './global.css'
+
 interface VendorData {
   ativo: boolean
   vendedor: string

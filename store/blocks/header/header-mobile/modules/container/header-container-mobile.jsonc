@@ -24,8 +24,7 @@
 
 	"flex-layout.col#header-container-fixed-mobile": {
 		"children": [
-			"flex-layout.row#header--container-top-mobile",
-			"flex-layout.row#header--container-bottom-mobile"
+			"flex-layout.row#header--container-top-mobile"
 		],
 		"props": {
 			"blockClass": "header--container-fixed"
@@ -35,42 +34,12 @@
 	"flex-layout.row#header--container-top-mobile": {
 		"children": [
 			"flex-layout.row#header-left-mobile",
-			"flex-layout.row#logo-header",
+			"flex-layout.row#logo-header-mobile",
 			"flex-layout.row#header-right-mobile"
 		],
 		"props": {
 			"blockClass": "header--container-top-mobile",
 			"preserveLayoutOnMobile": true
-		}
-	},
-
-	"flex-layout.row#header--container-bottom-mobile": {
-		"children": ["flex-layout.row#header--search-fixed-mobile"],
-		"props": {
-			"blockClass": "header--container-bottom-mobile"
-		}
-	},
-
-
-	// SEARCH --- FIXED
-
-	"flex-layout.row#header--search-fixed-mobile": {
-		"children": ["modal-trigger#search-fixed-mobile"],
-		"props": {
-			"blockClass": "header--search-fixed-mobile"
-		}
-	},
-
-	"modal-trigger#search-fixed-mobile": {
-		"children": ["image#search-fixed-mobile", "modal-layout#search-bar"],
-		"props": {
-			"blockClass": ["search-fixed-mobile", "search-trigger-cy--ajinomoto"]
-		}
-	},
-
-	"image#search-fixed-mobile": {
-		"props": {
-			"src": "assets/svg/ico_search-desktop-fixed.svg"
 		}
 	}
 }

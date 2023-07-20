@@ -3,7 +3,7 @@ import {
   OrderShippingProvider
 } from 'vtex.order-shipping/OrderShipping'
 
-import { MinicartInput } from './MinicartInput'
+import { MinicartInput } from '../MinicartInput'
 
 import './global.css'
 

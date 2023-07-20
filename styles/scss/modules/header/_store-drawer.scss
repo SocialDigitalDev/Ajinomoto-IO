@@ -21,6 +21,23 @@
 
 .drawer--menu-mobile {
     @include media("<=phone") {
-        width: 100%;
+        width: 100% !important;
+    }
+}
+
+.openIconContainer--menu-mobile {
+    padding: 0;
+    margin-right: 25px;
+    .menuIcon--menu-mobile {
+        display: none;
+    }
+    &::before {
+        content: "";
+        background-image: url(assets/svg/ico_menu-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 35px;
+        height: 26px;
+        display: inline-block;
     }
 }

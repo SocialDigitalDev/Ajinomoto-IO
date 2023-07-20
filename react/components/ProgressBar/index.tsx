@@ -10,10 +10,10 @@ const ProgressBar = () => {
 
     let total = orderForm?.totalizers[0]?.value
 
-    let restante = (15000 - total)
+    let restante = (5000 - total)
     restante = restante / 100
 
-    let percentual = (total * 100) / 15000;
+    let percentual = (total * 100) / 5000;
 
     let width = percentual;
 
@@ -32,7 +32,7 @@ const ProgressBar = () => {
             <div className="progress-bar--content">
                { (total === 0) || (total === undefined) ? (
                     <div className="free-shipping-text-bar">
-                        <p>Faltam R$ 150,00 para conseguir frete grátis</p>
+                        <p>Faltam R$ 50,00 para conseguir frete grátis</p>
                         <div className="free-shipping-outside-bar"><div className="free-shipping-inside-bar" style={style.freeShippingPercent}></div></div>
                     </div>
                 ) : (restante > 0) ? (
