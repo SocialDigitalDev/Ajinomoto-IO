@@ -209,13 +209,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
         {step === "login_choices" && (
           <div className='login-container'>
             <div className="login-content">
-
-              <div className="login-close-button" onClick={handleCloseModal}>
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <h1 className='card-title'>Acessar Conta</h1>
+              <div className="login-close-button" onClick={handleCloseModal}></div>
+              <h1 className='card-title main-step'>Seja bem-vindo<br />Acesse sua conta</h1>
               <div className="login-button">
                 <button className='login-btn-1' onClick={() => handleChangePage("login_with_password")}>Entrar com e-mail e senha</button>
                 <button className='login-btn-2' onClick={() => handleChangePage("send_code_login")}>Receber chave de acesso rápido por email</button>
@@ -225,11 +220,6 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <button className='sign-up-button'>Não possui uma conta?</button>
               <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
                 Cadastre-se
-                <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-
               </button>
             </div>
           </div>
@@ -239,12 +229,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           <div>
             <div className='login-container'>
               <div className="login-content">
-
-                <div className="login-close-button" onClick={handleCloseModal}>
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
+                <div className="login-close-button" onClick={handleCloseModal}></div>
                 <h1 className='card-title'>Acessar Conta</h1>
                 <span className='login-span-text'>Informe seu e-mail e senha</span>
 
@@ -279,22 +264,11 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                   <span className='forget-password' onClick={() => handleChangePage("send_code_signUp")}>Esqueci a senha</span>
                   <div className="back-and-submit-row">
-
-                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                     
                       Voltar
                     </button>
-
                     <button className='login-submit-button' type='submit'>
-                      Entrar
-                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.0065 0C7.66691 0 0.0933238 7.80869 0.00717875 17.4746L0 33.5908C0 37.1304 2.76741 40 6.1809 40H22.028C31.9526 40 40 31.6553 40 21.3641V0H17.0065Z" fill="#A10E11"/>
-                      <path d="M22.8352 12.9183L29.9169 20L22.8352 27.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M10.0834 20H29.7184" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
+                      Entrar                    
                     </button>
                   </div>
                 </form>
@@ -302,17 +276,10 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
-                  Cadastre-se
-                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
+                  Cadastre-se                 
                 </button>
               </div>
             </div>
-
-
           </div>
         )}
 
@@ -321,13 +288,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
             <div className='login-container'>
               <div className="login-content">
 
-                <div className="login-close-button" onClick={handleCloseModal}>
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-
-                </div>
+                <div className="login-close-button" onClick={handleCloseModal}></div>
                 <h1 className='card-title-fast'>Acesso rápido</h1>
                 <span className='login-span-text'>Informe seu e-mail</span>
 
@@ -345,18 +306,9 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   <div className="back-and-submit-row">
                     <button className='login-submit-button' type='submit'>
                       Entrar
-
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </button>
 
-                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                      
                       Voltar
                     </button>
                   </div>
@@ -365,11 +317,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button'>
-                  Cadastre-se
-                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  Cadastre-se                 
 
                 </button>
               </div>
@@ -383,19 +331,10 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           <div>
             <div className='login-container'>
               <div className="login-content">
-
-                <div className="login-close-button" onClick={handleCloseModal}>
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-
-                </div>
+                <div className="login-close-button" onClick={handleCloseModal}></div>
                 <h1 className='card-title'>Acesso rápido</h1>
                 <span className='login-span-text'>Agora é só informar o código recebido em:</span>
                 <span className='email-text'>{email}</span>
-
-
                 <form
                   className='form-step-container'
                   onSubmit={(e) => {
@@ -404,69 +343,35 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   }}
                 >
                   <div className="form-input-column">
-
                     <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} required />
                   </div>
 
                   <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
 
                   <div className="back-and-submit-row">
-
-                    <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-
-
+                    <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>                     
                       Voltar
                     </button>
-
                     <button className='login-submit-button' type='submit'>
                       Entrar
-
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </button>
-
                   </div>
                 </form>
-
-
               </div>
               {/* {children} */}
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
-                  Cadastre-se
-                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
+                  Cadastre-se                 
                 </button>
               </div>
             </div>
-
-
           </div>
         )}
         {step === "signUp" && (
           <div>
             <div className='login-container'>
-              <div className="login-close-button-sign-up" onClick={() => setIsOpen(false)}>
-
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-
-
-              </div>
-
-              <div className="top-content"></div>
-
+              <div className="login-close-button" onClick={() => setIsOpen(false)}></div>
               <div className="bottom-content">
                 <form
                   className='form-step-container'
@@ -495,32 +400,19 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   <div className="back-and-submit-row">
 
                     <button className='login-back-button' onClick={() => handleChangePage("put_code_signUp")}>
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9624 22.5875L4.3749 15L11.9624 7.41253" stroke="#0A3F40" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M25.6252 15L4.58775 15" stroke="#0A3F40" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                       Voltar
                     </button>
 
                     <button className='login-submit-button purple' type='submit'>
-                      Confirmar
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      Confirmar                     
                     </button>
-
                   </div>
                 </form>
               </div>
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button'>
-                  Cadastre-se
-                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  Cadastre-se                 
 
                 </button>
               </div>
@@ -537,13 +429,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className='login-container'>
                 <div className="login-content">
 
-                  <div className="login-close-button" onClick={() => setIsOpen(false)}>
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-
-
-                  </div>
+                  <div className="login-close-button" onClick={() => setIsOpen(false)}></div>
                   <h1 className='card-title-fast'>Acesso rápido</h1>
                   <span className='login-span-text'>Informe seu e-mail</span>
 
@@ -560,46 +446,25 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     </div>
 
                     <div className="back-and-submit-row">
-
-                      <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-
-
+                      <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                       
                         Voltar
                       </button>
 
                       <button className='login-submit-button' type='submit'>
                         Entrar
-
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
                       </button>
-
                     </div>
                   </form>
-
-
                 </div>
                 {/* {children} */}
                 <div className="sign-up-row">
                   <button className='sign-up-button'>Não possui uma conta?</button>
                   <button className='sign-in-button'>
-                    Cadastre-se
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    Cadastre-se                    
 
                   </button>
                 </div>
               </div>
-
-
             </div>
           )
         }
@@ -609,69 +474,36 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
             <div>
               <div className='login-container'>
                 <div className="login-content">
-
-                  <div className="login-close-button" onClick={() => setIsOpen(false)}>
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.84211 7.84211L11 11M11 11L14.1579 14.1579M11 11L14.1579 7.84211M11 11L7.84211 14.1579M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-
-
-                  </div>
+                  <div className="login-close-button" onClick={() => setIsOpen(false)}></div>
                   <h1 className='card-title'>Acessao rápido</h1>
                   <span className='login-span-text'>Agora é só informar o código recebido em:</span>
-
+                  <span className='email-text'>{email}</span>
                   <form
                     className='form-step-container'
                     onSubmit={(e) => handleChangePage("signUp", e)}
                   >
                     <div className="form-input-column">
-
                       <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} required />
                     </div>
-
                     <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
-
                     <div className="back-and-submit-row">
-
-                      <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.9624 22.5875L4.3749 15L11.9624 7.4125" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M25.6252 15L4.58775 15" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-
-
+                      <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>                       
                         Voltar
                       </button>
-
                       <button className='login-submit-button' type='submit'>
-                        Entrar
-
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.8352 6.91832L23.9169 14L16.8352 21.0816" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M4.0835 14H23.7185" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        Entrar                       
                       </button>
-
                     </div>
                   </form>
-
-
                 </div>
                 {/* {children} */}
                 <div className="sign-up-row">
                   <button className='sign-up-button'>Não possui uma conta?</button>
                   <button className='sign-in-button'>
-                    Cadastre-se
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M10.6442 1L16 6.5L10.6442 12M1 6.49996H15.8497" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-
+                    Cadastre-se                    
                   </button>
                 </div>
               </div>
-
-
             </div>
           )
         }

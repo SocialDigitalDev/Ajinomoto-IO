@@ -72,42 +72,37 @@
 	display: flex;
 	align-items: center;
 	gap: 7px;
-	border-radius: 30px;
-	border: 2px solid #d21e7e;
 	cursor: pointer;
 	position: relative;
-	@include media(">=desktop") {
-		padding-right: 15px;
-		border: 2px solid #d21e7e;
-	}
 }
 
 .login-btn-1 {
-	width: 266px;
-	height: 40px;
-	background-color: #f84548;
-	color: $white;
-	border-radius: 30px;
-	border: 0;
-	cursor: pointer;
+	color: $black;
 	font-family: $OpenSans;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
+	font-size: 14px;
+	font-weight: $regular;
+	border-radius: 20px;
+	border: 1px solid $gray-2;
+	background: $white;
+	width: 100%;
+	max-width: 222px;
+	padding: 8px 20px;
+	cursor: pointer;
 }
 
 .login-btn-2 {
-	width: 266px;
-	height: 56px;
-	background-color: $white;
-	color: #f84548;
-	border-radius: 30px;
-	border: 1px solid #f84548;
-	cursor: pointer;
+	color: $gray-9;
 	font-family: $OpenSans;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
+	font-size: 14px;
+	font-weight: $regular;
+	line-height: 14px;
+	border-radius: 20px;
+	border: 1px solid $gray-2;
+	background: $white;
+	width: 100%;
+	max-width: 222px;
+	padding: 10px 20px;
+	cursor: pointer;
 }
 
 .login-button-text {
@@ -126,7 +121,7 @@
 	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-weight: 400;
+	font-weight: $regular;
 	white-space: nowrap;
 	max-width: 100px;
 }
@@ -142,42 +137,59 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// background-image: url("../../../assets/img/bg-login.png");
-	background-color: #3d1151;
+	background-color: $orange-2;
 	height: 410px;
 	width: 100%;
 	border-radius: 20px 20px 0 0;
 }
 
 .login-close-button {
+	background-image: url(../../../assets/svg/ico_close-login.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 25.687px;
+	height: 25.147px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	right: 0;
-	width: 44px;
-	height: 44px;
-	background-color: #a10e11;
-	border-radius: 0 20px 0 20px;
-	box-shadow: -4px 4px 8px 0px #000400;
+	right: 22px;
+	top: 22px;
 	position: absolute;
-	cursor: pointer;
+	cursor: pointer;	
 }
 
 .card-title {
-	font-family: $OpenSans;
-	font-weight: 600;
-	font-size: 30px;
-	line-height: 45px;
-	color: $white;
 	padding-top: 20px;
+	font-family: $OpenSans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: $extra-bold;
+	line-height: 118.682%;
+	color: $red-3;
+	text-align: center;
+	margin-bottom: 20px;
+	&.main-step {
+		margin-bottom: 52px;
+		margin-top: 15px;
+		&::before {
+			content: "";
+			background-image: url(../../../assets/svg/panda/ico_panda-login.svg) ;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 72px;
+			height: 58px;
+			margin: 0 auto 5px;
+			display: block;
+		}
+	}
 }
 
 .card-title-fast {
+	color: $red-3;
 	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 45px;
-	color: $white;
+	font-weight: $extra-bold;
+	font-size: 20px;
+	line-height: normal;
 	padding-top: 35px;
 }
 
@@ -191,27 +203,35 @@
 .sign-up-row {
 	display: flex;
 	width: 100%;
-	background-color: #ff8c80;
+	background-color: $red-3;
 	border-radius: 20px;
 }
 
 .sign-in-button {
+	color: $black;
 	height: 40px;
-	width: 45%;
-	border-radius: 20px 0 20px 0;
+	width: 160px;
+	font-family: $OpenSans;
+	font-weight: $bold;
+	font-size: 13px;
+	line-height: normal;
 	border: 0;
-	background-color: #f84548;
+	border-radius: 20px 0 20px 0;
+	background-color: $white;
+	padding: 0 20px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 10px;
+	justify-content: space-between;
 	cursor: pointer;
-	
-	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 21px;
-	color: $white;
+	&::after {
+		content: "";
+		background-image: url(../../../assets/svg/ico_arrow-login.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 15px;
+		height: 11px;
+		display: inline-block;
+	}
 }
 
 .sign-up-button {
@@ -219,9 +239,9 @@
 	width: 55%;
 	border-radius: 0 0 0 20px;
 	border: 0;
-	background-color: #ff8c80;
+	background-color: $red-3;
 	font-family: $OpenSans;
-	font-weight: 400;
+	font-weight: $regular;
 	font-size: 14px;
 	line-height: 21px;
 	color: $white;
@@ -235,22 +255,23 @@
 }
 
 .login-span-text {
+	color: $black;
 	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
-	color: $white;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: $bold;
+	line-height: normal;
 	max-width: 80%;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
 .email-text {
+	color: $black;
 	font-family: $OpenSans;
-	font-weight: 400;
+	font-weight: $regular;
 	font-size: 14px;
-	line-height: 21px;
-	color: $white;
-	padding-bottom: 16px;
+	line-height: normal;
 	max-width: 80%;
 	text-align: center;
 	text-decoration: underline;
@@ -267,22 +288,22 @@
 }
 
 .login-form-input {
-	height: 45px;
-	width: 284px;
-	border-radius: 10px;
-	border: 1px solid #d4d4d4;
-	text-align: center;
-	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
 	color: #8d8d8d !important;
-	background-color: #fff !important;
+	font-weight: $regular;
+	font-family: $OpenSans;
+	font-size: 14px;
+	line-height: normal;
+	width: 284px;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid $orange-4;
+	background-color: $white !important;
+	text-align: center;
 }
 
 .login-form-input::placeholder {
 	font-family: $OpenSans;
-	font-weight: 400;
+	font-weight: $regular;
 	font-size: 14px;
 	line-height: 24px;
 	color: #8d8d8d;
@@ -296,10 +317,10 @@
 	display: flex;
 	justify-content: flex-end;
 	font-family: $OpenSans;
-	font-weight: 400;
+	font-weight: $regular;
 	font-size: 14px;
-	line-height: 16px;
-	color: $white;
+	line-height: normal;
+	color: $black;
 	text-decoration: underline;
 	cursor: pointer;
 	margin-top: 10px;
@@ -307,59 +328,72 @@
 
 .back-and-submit-row {
 	display: flex;
+	width: 100%;
+	max-width: 284px;
+	justify-content: space-between;
 	gap: 45px;
 	padding-top: 50px;
 }
 
 .login-back-button {
+	color: $black;
+	font-family: $OpenSans;
+	font-size: 13px;
+	font-weight: $bold;
 	border: 0;
 	display: flex;
 	background-color: transparent;
 	align-items: center;
 	gap: 10px;
+	line-height: normal;
 	cursor: pointer;
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 18.75px;
-	color: $white;
+	&::before {
+		content: "";
+		background-image: url(../../../assets/svg/ico_arrow-login.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 15px;
+		height: 11px;
+		transform: rotate(180deg);
+		display: inline-block;
+	}
 }
 
 .login-submit-button {
-	display: flex;
-	align-items: center;
-	gap: 30px;
-	border-radius: 20px 0 20px 20px;
-	padding: 0;
-	padding-left: 42px;
-	border: 0;
-	color: #a10e11;
+	color: $black;
 	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	cursor: pointer;
+	font-size: 13px;
+	font-weight: $bold;
+	line-height: normal;
+	background: $white;
+	border: 0;
+	border-radius: 20px 0 20px 20px;
+	padding: 0 20px;
 	order: 2;
 	outline: 0;
-}
-
-.login-submit-button svg {
-	background-color: #a10e11;
-	padding: 2px;
-	border-radius: 20px 0 16px 0;
-}
-
-.login-submit-button.purple svg {
-	background-color: #833ea3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
+	width: 120px;
+	cursor: pointer;
+	&::after {
+		content: "";
+		background-image: url(../../../assets/svg/ico_arrow-login.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 15px;
+		height: 11px;
+		display: inline-block;
+	}
 }
 
 .new-code {
-	font-family: "Roboto", sans-serif;
+	color: $black;	
+	font-family: $OpenSans;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 21px;
-	color: $white;
-	
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -372,13 +406,30 @@
 }
 
 .bottom-content {
-	padding-top: 78px;
 	height: 486px;
-	// background-image: url(../../../assets/img/bg-login-sign-up.png);
-	background-color: #f5eaf9;
+	background-color: $orange-2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-radius: 20px 20px 0 0;
+	width: 100%;
+
+	.form-input-column {
+		gap: 8px;
+	}
+		
+	.form-input-column {
+		width: 100%;
+		padding-bottom: 12px;
+	}
+	
+	.login-form-input {
+		margin: 0 auto;
+	}
+	
+	.login-submit-button {
+		width: 140px;
+	}
 }
 
 .login-close-button-sign-up {
@@ -402,37 +453,29 @@
 }
 
 .title-sign-up {
+	color: $red-3;
 	font-family: $OpenSans;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 36px;
-	color: #320845;
-	padding-top: 10px;
+	font-weight: $bold;
+	font-size: 20px;
+	line-height: normal;
+	padding-top: 20px;
+	margin-bottom: 20px;
 }
 
 .login-span-text-sign-up {
+	color: $black;
 	font-family: $OpenSans;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
-	color: #320845;
-	padding-bottom: 16px;
+	font-weight: $bold;
+	font-size: 15px;
+	line-height: normal;
+	margin-bottom: 10px;
 	max-width: 80%;
 	text-align: center;
-}
-
-.bottom-content .form-input-column {
-	gap: 8px;
 }
 
 .requeriments-column {
 	display: flex;
 	width: 85%;
-}
-
-.requeriments-column .forget-password {
-	width: 41%;
-	color: #320845;
 }
 
 .requeriments {
@@ -441,7 +484,7 @@
 
 .requeriments p {
 	font-family: $OpenSans;
-	font-weight: 400;
+	font-weight: $regular;
 	font-size: 12px;
 	line-height: 16px;
 	color: #ff0000;
@@ -454,34 +497,6 @@
 	width: 25px;
 	display: flex;
 	margin-right: 8px;
-}
-
-.bottom-content .form-input-column {
-	width: 100%;
-	padding-bottom: 12px;
-}
-
-.bottom-content .login-form-input {
-	width: 85%;
-	margin: 0 auto;
-	border-radius: 10px;
-	border: 1px solid #9a9a9a;
-	background: $white;
-	height: 45px;
-}
-
-.bottom-content .login-back-button {
-	color: #320845;
-}
-
-.bottom-content .login-back-button svg path {
-	stroke: #320845;
-}
-
-.bottom-content .login-submit-button {
-	color: $white;
-	background-color: #320845;
-	padding-left: 23px;
 }
 
 .sign-up-active {
@@ -509,7 +524,7 @@
 		svg {
 			display: none;
 		}
-
+		
 		.login-button-text {
 			color: $primary;
 			font-family: $OpenSans;
@@ -527,7 +542,7 @@
 		.login-button-text {
 			display: none;
 		}
-
+		
 		.user-login {
 			gap: unset;
 			width: 33px;
