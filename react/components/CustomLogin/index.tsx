@@ -373,9 +373,6 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           <div>
             <div className='login-container'>
               <div className="login-close-button-sign-up" onClick={() => setIsOpen(false)}></div>
-
-              <div className="top-content"></div>
-
               <div className="bottom-content">
                 <form
                   className='form-step-container'
