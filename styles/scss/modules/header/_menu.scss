@@ -10,9 +10,7 @@
 			gap: 0 30px;
 
 			.menuItem {
-
 				.styledLink {
-
 					&Container {
 						padding: 0;
 						margin: 0;
@@ -136,11 +134,26 @@
 			width: 100%;
 			margin: auto;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, 162px);
+			grid-template-columns: repeat(auto-fit, minmax(156px, max-content));
 			gap: 30px 46px;
 			justify-content: flex-start;
 			align-items: flex-start;
 			position: relative;
+			&__second {
+				grid-template-columns: repeat(3, minmax(156px, max-content));
+			}
+			&__third {
+				grid-template-columns: repeat(3, minmax(156px, max-content));
+			}
+			&__fourth {
+				grid-template-columns: repeat(2, minmax(156px, max-content));
+			}
+			&__fifth {
+				grid-template-columns: repeat(2, minmax(156px, max-content));
+			}
+			&__sixth {
+				grid-template-columns: repeat(2, minmax(156px, max-content));
+			}
 
 			.menuItem  {
 				.styledLinkContainer  {
@@ -163,14 +176,6 @@
 							align-items: center;
 							
 						}
-					}
-				}
-
-				&--ver-todos {					
-					@include media(">desktop") {
-						position: absolute;
-						top: 0;
-						right: 5px;
 					}
 				}
 			}

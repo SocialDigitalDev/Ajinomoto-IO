@@ -34,9 +34,20 @@
 			&--infos-client {
 				align-items: center;
 				display: flex;
-			}			
+			}		
+			
+			&--search-mobile {
+				@include media(">phone") {
+					display: none;
+				}
+			}
 		}
-		
+
+		&--search-bar {
+			@include media("<=phone") {
+				display: none;
+			}
+		}
 		
 		&Content {			
 			&--header {				
@@ -65,7 +76,7 @@
 					align-items: center;
 					justify-content: space-between;
 					gap: 0 20px;
-					@include media("<=phone") {
+					@include media("<=tablet") {
 						justify-content: space-between;
 						gap: unset;
 					}

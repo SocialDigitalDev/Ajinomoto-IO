@@ -27,10 +27,7 @@
 
 .openIconContainer--menu-mobile {
     padding: 0;
-    margin-right: 25px;
-    .menuIcon--menu-mobile {
-        display: none;
-    }
+    margin-right: 16px;
     &::before {
         content: "";
         background-image: url(assets/svg/ico_menu-mobile.svg);
@@ -39,5 +36,9 @@
         width: 35px;
         height: 26px;
         display: inline-block;
+    }
+    
+    .menuIcon--menu-mobile {
+        display: none;
     }
 }

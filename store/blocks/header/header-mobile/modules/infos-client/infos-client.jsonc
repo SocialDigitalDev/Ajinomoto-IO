@@ -2,6 +2,7 @@
 	"flex-layout.row#header-left-mobile": {
 		"children": [
 			"drawer#menu-mobile",
+			"flex-layout.row#wishlist",
 			"flex-layout.row#header--searchBar-mobile"
 		],
 		"props": {
@@ -17,7 +18,10 @@
 	},
 
 	"modal-trigger#search-mobile": {
-		"children": ["image#searchBar-mobile", "modal-layout#search-bar"],
+		"children": [
+			"image#searchBar-mobile",
+			"modal-layout#search-bar"
+		],
 		"props": {
 			"blockClass": ["searchBar-mobile", "search-trigger-cy--ajinomoto"]
 		}
@@ -25,7 +29,10 @@
 
 	"image#searchBar-mobile": {
 		"props": {
-			"src": "assets/svg/ico_lupa.svg"
+			"src": "assets/svg/ico_lupa.svg",
+			"maxHeight": "26px",
+			"maxWidth": "26px",
+			"blockClass": "icon-searchBar-mobile"
 		}
 	},
 

@@ -9,7 +9,7 @@
 		"props": {
 			"blockClass": [
 				"sticky--header",
-				"header-phone-ajinomoto"
+				"ajinomoto--header-mobile"
 			]
 		}
 	},

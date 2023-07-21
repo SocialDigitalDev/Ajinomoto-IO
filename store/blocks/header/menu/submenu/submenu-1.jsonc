@@ -21,7 +21,7 @@
       "menu-item#sub-position-item-todos"
     ],
     "props": {
-      "blockClass": "submenu-list"
+      "blockClass": ["submenu-list", "submenu-list__first"]
     }
   },
     

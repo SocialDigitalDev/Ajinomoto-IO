@@ -6,10 +6,11 @@
       "menu-item#sub-position-4-item-1",
       "menu-item#sub-position-4-item-2",
       "menu-item#sub-position-4-item-3",
-      "menu-item#sub-position-4-item-4"
+      "menu-item#sub-position-4-item-4",
+      "menu-item#sub-position-item-todos"
     ],
     "props": {
-      "blockClass": "submenu-list"
+      "blockClass":  ["submenu-list", "submenu-list__fourth"]
     }
   },
   

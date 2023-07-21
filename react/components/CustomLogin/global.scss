@@ -523,7 +523,7 @@
 }
 
 .vtex-flex-layout-0-x-flexRow--header--account {
-	@include media("<=desktop") {
+	@include media("<=tablet") {
 		.login-button-text {
 			display: none;
 		}
