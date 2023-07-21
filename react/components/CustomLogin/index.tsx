@@ -331,7 +331,6 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           <div>
             <div className='login-container'>
               <div className="login-content">
-
                 <div className="login-close-button" onClick={handleCloseModal}></div>
                 <h1 className='card-title'>Acesso rápido</h1>
                 <span className='login-span-text'>Agora é só informar o código recebido em:</span>
@@ -372,7 +371,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
         {step === "signUp" && (
           <div>
             <div className='login-container'>
-              <div className="login-close-button-sign-up" onClick={() => setIsOpen(false)}></div>
+              <div className="login-close-button" onClick={() => setIsOpen(false)}></div>
               <div className="bottom-content">
                 <form
                   className='form-step-container'

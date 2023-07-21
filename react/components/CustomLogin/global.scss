@@ -170,6 +170,7 @@
 	margin-bottom: 20px;
 	&.main-step {
 		margin-bottom: 52px;
+		margin-top: 15px;
 		&::before {
 			content: "";
 			background-image: url(../../../assets/svg/panda/ico_panda-login.svg) ;
@@ -209,7 +210,7 @@
 .sign-in-button {
 	color: $black;
 	height: 40px;
-	width: 45%;
+	width: 160px;
 	font-family: $OpenSans;
 	font-weight: $bold;
 	font-size: 13px;
@@ -410,6 +411,25 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-radius: 20px 20px 0 0;
+	width: 100%;
+
+	.form-input-column {
+		gap: 8px;
+	}
+		
+	.form-input-column {
+		width: 100%;
+		padding-bottom: 12px;
+	}
+	
+	.login-form-input {
+		margin: 0 auto;
+	}
+	
+	.login-submit-button {
+		width: 140px;
+	}
 }
 
 .login-close-button-sign-up {
@@ -435,25 +455,22 @@
 .title-sign-up {
 	color: $red-3;
 	font-family: $OpenSans;
-	font-weight: $extra-bold;
+	font-weight: $bold;
 	font-size: 20px;
 	line-height: normal;
-	padding-top: 10px;
+	padding-top: 20px;
+	margin-bottom: 20px;
 }
 
 .login-span-text-sign-up {
+	color: $black;
 	font-family: $OpenSans;
-	font-weight: $regular;
-	font-size: 18px;
-	line-height: 24px;
-	color: #320845;
-	padding-bottom: 16px;
+	font-weight: $bold;
+	font-size: 15px;
+	line-height: normal;
+	margin-bottom: 10px;
 	max-width: 80%;
 	text-align: center;
-}
-
-.bottom-content .form-input-column {
-	gap: 8px;
 }
 
 .requeriments-column {
@@ -480,21 +497,6 @@
 	width: 25px;
 	display: flex;
 	margin-right: 8px;
-}
-
-.bottom-content {
-	.form-input-column {
-		width: 100%;
-		padding-bottom: 12px;
-	}
-
-	.login-form-input {
-		margin: 0 auto;
-	}
-
-	.login-submit-button {
-		width: 140px;
-	}
 }
 
 .sign-up-active {
