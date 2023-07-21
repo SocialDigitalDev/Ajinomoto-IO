@@ -36,7 +36,6 @@
         "children": ["slider-layout#shelf"],
         "props": {
             "maxItems": 12,
-            "collection": "137",
             "skusFilter": "ALL"
         }
     }
