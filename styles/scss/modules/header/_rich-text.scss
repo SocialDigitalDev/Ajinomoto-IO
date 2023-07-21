@@ -5,6 +5,9 @@
 	justify-content: center;
 	width: 100%;
 	padding: 12px 0;
+	@include media("<=phone") {
+		padding: 4px 0 8px;
+	}
 
 	.paragraph--text--topbar {
 		display: flex;
@@ -18,11 +21,18 @@
 		font-size: 16px;
 		color: $white;
 		text-align: center;
+		@include media("<=phone") {
+			font-family: $OpenSans;
+			font-size: 12px;
+			max-width: 231px;
+		}
 	}
 }
 
 .container--client-area-title {
 	padding: 0 18px;
+	margin: 32px 0 42px;
+
 	.paragraph--client-area-title {
 		color: $gray-2;
 		font-family: $OpenSans;
@@ -30,5 +40,6 @@
 		font-style: normal;
 		font-weight: $bold;
 		line-height: normal;
+		margin: 0;
 	}
 }

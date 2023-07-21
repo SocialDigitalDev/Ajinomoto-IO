@@ -7,7 +7,7 @@
 		}
 	}
 
-	&--header-cy--ajinomoto--stuck {
+	&--sticky--header--stuck  {
 		:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label)::before {
 			display: none;
 		}
@@ -28,9 +28,21 @@
 			}
 		}
 
+		:global(.vtex-flex-layout-0-x-flexRow--header--content) {
+			:global(.vtex-store-components-3-x-container) {
+				@include media(">=desktop") {
+					padding: 16px 0 0;
+				}
+			}
+		}
+
+		:global(.vtex-flex-layout-0-x-flexRow--search-bar) {
+			display: none;
+		}
+
 		//MENU
 		:global(.vtex-menu-2-x-submenuContainer) {
-			top: 176px;
+			top: 148px;
 		}
 	}
 }

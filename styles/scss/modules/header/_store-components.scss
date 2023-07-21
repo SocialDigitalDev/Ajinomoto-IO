@@ -1,20 +1,46 @@
 .searchBarContainer {
 	padding: 0;
 
+    .searchBarInnerContainer--opened {
+        height: auto;
+        min-height: 36px;
+    }
+
+    @include media("<=tablet"){
+        max-width: 456px;
+    }
+
     .portalContainer {
-        position: relative !important;
+        inset: auto 0 !important;
+        @include media(">=tablet") {
+            position: relative !important;
+        }
+
+        @include media("<desktop") {
+            width: 100%;
+        }
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+        width: auto;
+        background: $white;
+        border-radius: 0px 0px 10px 10px;
+        @include media(">phone","<=tablet") {
+            border-radius: 0px 0px 50px 50px;
+        }
     }
 
     :global(.vtex-search-2-x-biggy-autocomplete) {
         position: relative;
         max-width: 768px;
+        margin: 0 auto;
         border: none;
         box-shadow: none;
+        @include media("<=tablet") {
+            max-width: 456px;
+        }
     }
-
-    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
-        width: auto;
-    }
+    
 }
 
 .autoCompleteOuterContainer {
@@ -22,6 +48,9 @@
         border-radius: 50px;
         border: 2px solid $red-3;
         height: 36px;
+        @include media("<=phone") {
+            width: 85%;
+        }
     }
     
     :global(.vtex-input__prefix) {
@@ -54,3 +83,8 @@
     }
 }
 
+
+.imageElementLink--logo-header {
+    display: block;
+    text-align: center;
+}

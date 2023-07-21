@@ -3,15 +3,16 @@
     border: 1px solid #EE6262;
     background: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(7.5px);
-    padding: 7px 22px 7px 10px;
+    padding: 7px 10px;
 	margin-right: 10px;
-	width: 155px;
+	min-width: 155px;
 }
 
 .js-menuMobileAccount {
 	overflow: auto;
 	display: flex;
 	padding: 0 0 0 20px;
+	margin-bottom: 30px;
 
 	&::-webkit-scrollbar {
 		height: 4px;

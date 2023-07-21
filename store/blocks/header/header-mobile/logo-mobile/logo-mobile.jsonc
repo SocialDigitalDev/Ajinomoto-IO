@@ -1,0 +1,23 @@
+{
+	"flex-layout.row#logo-header-mobile": {
+		"title": "[ LOGO AJINOMOTO - MOBILE ]",
+		"children": [
+			"image#logo-header-mobile"
+		],
+		"props": {
+			"blockClass": "header--logo_desk"
+		}
+	},
+
+	"image#logo-header-mobile": {
+		"props": {
+			"blockClass": "logo-header",
+			"src": "assets/svg/logo-mobile-header.svg",
+			"link":  {
+				"title": "Loja Ajinomoto",
+				"url": "/"
+			},
+			"maxWidth": "79px"
+		}
+	}
+}

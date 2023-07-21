@@ -1,5 +1,4 @@
 .trigger {
-
 	&Container {
 
 		&--search-fixed-desktop {
@@ -11,7 +10,6 @@
 		}
 	}
 }
-
 
 .container--modal--search-desktop {
 	align-items: flex-start;
@@ -28,6 +26,10 @@
 		background: #FFF;
 		align-items: flex-start;
 		position: relative;
+		@include media("<=tablet") {
+			padding: 19px 16px;
+			max-width: 500px;
+		}
 	}
 }
 
@@ -38,6 +40,9 @@
 	right: 75px;
 	width: auto;
 	outline: 0;
+	@include media("<=phone") {
+		right: 0;
+	}
 	&:hover {
 		background: none;
 	}
