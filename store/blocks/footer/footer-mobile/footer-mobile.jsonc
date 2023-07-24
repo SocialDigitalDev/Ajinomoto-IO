@@ -4,6 +4,22 @@
             "blockClass": ["footer-mobile", "ajinomoto--footer-mobile"]
         },
         "children": [
+            "responsive-layout.tablet#footer",
+            "responsive-layout.phone#footer"
+        ]
+    },
+    //TABLET
+    "responsive-layout.tablet#footer": {
+        "children": [
+            "flex-layout.row#footer-data-desktop",
+            "flex-layout.row#footer-bottom-desktop",
+            "flex-layout.row#footer-operated"
+        ]
+    },
+
+    //PHONE
+    "responsive-layout.phone#footer": {
+        "children": [
             "flex-layout.row#footer-blog",
             "flex-layout.row#menu-account-mob",
             "flex-layout.row#menu-produtos-mob",

@@ -12,6 +12,10 @@
                     font-style: normal;
                     font-weight: $regular;
                     line-height: normal;
+                    @include media("<=tablet") {
+                        font-family: $OpenSans;
+                        font-size: 15px;
+                    }
                 }
             }
         }

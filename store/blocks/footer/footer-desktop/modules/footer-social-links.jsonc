@@ -20,7 +20,8 @@
         "title": "Links Redes Sociais",
 		"children": [
 			"link#social-instagram",
-			"link#social-facebook"
+			"link#social-facebook",
+			"link#social-youtube"
 		]
 	},
 
@@ -28,7 +29,7 @@
         "title": "Link - Instagram",
 		"children": ["image#icon-instagram"],
 		"props": {
-			"href": "https://www.instagram.com/modessbrasil",
+			"href": "https://www.instagram.com/ajinomotodobrasil/",
 			"target": "_blank"
 		}
 	},
@@ -44,7 +45,7 @@
         "title": "Link - Facebook",
 		"children": ["image#icon-facebook"],
 		"props": {
-			"href": "https://www.facebook.com/modessbrasil",
+			"href": "https://www.facebook.com/AjinomotoDoBrasil/",
 			"target": "_blank"
 		}
 	},
@@ -54,5 +55,21 @@
 		"props": {
 			"src": "assets/svg/ico_facebook-footer.svg"
 		}
-	}	
+	},
+	
+	"link#social-youtube": {
+        "title": "Link - YouTube",
+		"children": ["image#icon-youtube"],
+		"props": {
+			"href": "https://www.youtube.com/@ajinomotodobrasil1933",
+			"target": "_blank"
+		}
+	},
+
+	"image#icon-youtube": {
+        "title": "Logotipo - YouTube",
+		"props": {
+			"src": "assets/svg/ico_youtube-footer.svg"
+		}
+	}
 }

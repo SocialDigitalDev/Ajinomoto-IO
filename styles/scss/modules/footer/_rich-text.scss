@@ -8,6 +8,49 @@
             font-weight: $bold;
             line-height: normal;
             margin: 0 0 10px ;
+
+            @include media("<=tablet") {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.container--title--footer-links-mb {
+    .wrapper--title--footer-links-mb {
+        .paragraph--title--footer-links-mb {
+            color: $gray-2;
+            font-family: $OpenSans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: $regular;
+            line-height: normal;
+            margin: 0;
+
+            &::after {
+                content: "";
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='18' viewBox='0 0 9 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.99696 9.01412C8.99755 9.314 8.89298 9.60463 8.7014 9.83554L2.27615 17.5363C2.05803 17.7984 1.74459 17.9633 1.40479 17.9946C1.06498 18.0259 0.726655 17.921 0.464227 17.7032C0.201798 17.4853 0.0367668 17.1723 0.00543766 16.8329C-0.0258915 16.4935 0.0790475 16.1556 0.29717 15.8935L6.05419 9.01412L0.502778 2.13473C0.396034 2.00344 0.316321 1.85239 0.268219 1.69023C0.220117 1.52808 0.204576 1.35803 0.222489 1.18986C0.240401 1.02169 0.291414 0.858713 0.372595 0.710297C0.453777 0.56188 0.563526 0.430952 0.695535 0.325037C0.827666 0.207497 0.982677 0.118477 1.15086 0.0635547C1.31904 0.0086326 1.49676 -0.0110093 1.67289 0.0058593C1.84903 0.0227279 2.01977 0.0757445 2.17444 0.161587C2.3291 0.247429 2.46435 0.364248 2.57171 0.504724L8.7785 8.20553C8.93979 8.44308 9.01671 8.72777 8.99696 9.01412Z' fill='%233C3C3C'/%3e%3c/svg%3e");
+                width: 9px;
+                height: 18px;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                transition: 0.35s;
+            }
+        }
+    }
+}
+
+.container--titles-bottom {
+    .wrapper--titles-bottom {
+        .paragraph--titles-bottom {
+            color: $black;
+            text-align: center;
+            font-family: $OpenSans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: $regular;
+            line-height: normal;
         }
     }
 }

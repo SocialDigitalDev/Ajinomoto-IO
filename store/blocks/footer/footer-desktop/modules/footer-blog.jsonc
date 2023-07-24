@@ -3,7 +3,7 @@
 		"title": "BLOG - FOOTER",
 		"children": ["info-card#blog-footer"],
 		"props": {
-			"blockClass": "logo-footer",
+			"blockClass": "footer-blog",
 			"horizontalAlign": "left"
 		}
 	},
@@ -12,8 +12,8 @@
 		"title": "BLOG - FOOTER",
 		"children": ["info-card#blog-footer"],
 		"props": {
-			"blockClass": "logo-footer",
-			"horizontalAlign": "left"
+			"blockClass": "footer-blog",
+			"preserveLayoutOnMobile": true
 		}
 	},
 

@@ -10,7 +10,7 @@
     "rich-text#title-sobre": {
       "title": "Título Sobre - Desktop",
         "props": {
-          "text": "Sobre a Modess",
+          "text": "Sobre a Ajinomoto",
           "blockClass": "title-footer"
         }
       },
@@ -48,7 +48,7 @@
             "highlight": false,
             "itemProps": {
                 "type": "external",
-                "href": "https://modess.zendesk.com/hc/pt-br",
+                "href": "",
                 "noFollow": false,
                 "tagTitle": "Link Contatos",
                 "text": "Contatos"
