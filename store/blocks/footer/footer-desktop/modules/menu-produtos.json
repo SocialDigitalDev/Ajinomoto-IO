@@ -22,7 +22,11 @@
             "menu-item#produto-1",
             "menu-item#produto-2",
             "menu-item#produto-3",
-            "menu-item#produto-4"
+            "menu-item#produto-4",
+            "menu-item#produto-5",
+            "menu-item#produto-6",
+            "menu-item#produto-7",
+            "menu-item#produto-8"
         ],
       "props": {
         "orientation": "vertical",
@@ -36,10 +40,10 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/absorventes-noturnos",
+                "href": "/temperos",
                 "noFollow": false,
-                "tagTitle": "Link Absorventes Noturnos",
-                "text": "Absorventes noturnos"
+                "tagTitle": "Temperos",
+                "text": "Temperos"
             }
         }
     },
@@ -51,10 +55,10 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/absorventes-diurnos",
+                "href": "/molhoes-e-azeites",
                 "noFollow": false,
-                "tagTitle": "Link Absorventes Diurnos",
-                "text": "Absorventes diurnos"
+                "tagTitle": "Molhos & Azeites",
+                "text": "Molhos & Azeites"
             }
         }
     },
@@ -66,10 +70,10 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/protetor-diario",
+                "href": "/culinarios",
                 "noFollow": false,
-                "tagTitle": "Link Protetor Diário",
-                "text": "Protetor diário"
+                "tagTitle": "Culinários",
+                "text": "Culinários"
             }
         }
     },
@@ -81,10 +85,70 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/calcinha-absorvente",
+                "href": "/caldos",
                 "noFollow": false,
-                "tagTitle": "Link Calcinha Absorvente",
-                "text": "Calcinha absorvente"
+                "tagTitle": "Caldos",
+                "text": "Caldos"
+            }
+        }
+    },
+
+    "menu-item#produto-5": {
+        "props": {
+            "id": "menu-item-produto-5",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/sopas-e-cremes",
+                "noFollow": false,
+                "tagTitle": "Sopas e Cremes",
+                "text": "Sopas e Cremes"
+            }
+        }
+    },
+
+    "menu-item#produto-6": {
+        "props": {
+            "id": "menu-item-produto-6",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/bebidas",
+                "noFollow": false,
+                "tagTitle": "Bebidas",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#produto-7": {
+        "props": {
+            "id": "menu-item-produto-7",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/colecao-de-sabores",
+                "noFollow": false,
+                "tagTitle": "Coleção de sabores",
+                "text": "Coleção de sabores"
+            }
+        }
+    },
+
+    "menu-item#produto-8": {
+        "props": {
+            "id": "menu-item-produto-8",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ofertas",
+                "noFollow": false,
+                "tagTitle": "Ofertas",
+                "text": "Ofertas"
             }
         }
     }

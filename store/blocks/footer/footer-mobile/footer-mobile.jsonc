@@ -1,10 +1,10 @@
 {
     "footer-layout.mobile": {
         "props": {
-            "blockClass": "footer-mobile"
+            "blockClass": ["footer-mobile", "ajinomoto--footer-mobile"]
         },
         "children": [
-            "flex-layout.row#footer-logo",
+            "flex-layout.row#footer-blog",
             "flex-layout.row#menu-account-mob",
             "flex-layout.row#menu-produtos-mob",
             "flex-layout.row#menusobre-mob",

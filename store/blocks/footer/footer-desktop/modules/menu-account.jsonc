@@ -19,7 +19,8 @@
 		"title": "Links minha conta Footer [desktop]",
 		"children": [
             "menu-item#conta-1",
-            "menu-item#conta-2"
+            "menu-item#conta-2",
+			"menu-item#conta-3"
         ],
 		"props": {
             "orientation": "vertical",
@@ -54,6 +55,22 @@
 				"noFollow": false,
 				"tagTitle": "Link Meus Pedidos",
 				"text": "Meus Pedidos"
+			}
+		}
+	},
+
+	"menu-item#conta-3": {
+		"props": {
+			"id": "menu-item-conta-3",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/account#/wishlist",
+				"noFollow": false,
+				"tagTitle": "Link Favoritos",
+				"text": "Favoritos"
 			}
 		}
 	}

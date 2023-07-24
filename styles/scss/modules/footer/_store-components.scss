@@ -1,0 +1,58 @@
+.infoCardContainer--blog-footer {
+    border-radius: 10px;
+    background: $orange-2;
+    max-width: 252px;
+    flex-shrink: 0;
+    padding: 16px 20px;
+}
+
+.infoCardTextContainer--blog-footer {
+    padding: 0;
+    width: auto !important;
+    .infoCardHeadline--blog-footer {
+        color: #000;
+        font-family: $OpenSans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+        margin: 0 0 10px;
+    }   
+}
+
+.infoCardCallActionContainer--blog-footer {
+    margin: 0;
+    :global(.vtex-button) {
+        border-radius: 5px;
+        border: none;
+        background: $secondary;
+        width: 121px;
+        min-height: 28px;
+        padding: 0;
+
+        :global(.vtex-button__label) {
+            color: $white;
+            text-align: center;
+            font-family: $OpenSans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $bold;
+            line-height: normal;
+            text-transform: capitalize;
+            padding: 0;
+        }
+    }
+}
+
+.infoCardImageContainer--blog-footer {
+    text-align: center;
+    width: 100% !important;
+    max-width: 60px;
+    margin-right: 30px;
+    @include media("<=phone") {
+        max-width: 49px;
+    }
+    .infoCardImage--blog-footer {
+        width: 100%;
+    }
+}
