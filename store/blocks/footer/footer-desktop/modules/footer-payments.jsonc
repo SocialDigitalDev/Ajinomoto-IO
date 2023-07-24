@@ -20,7 +20,7 @@
 	"image#image-payments": {
 		"title": "Imagem - Formas de pagamento",
 		"props": {
-			"title": "Imagem Formas de Pagamento",
+			"title": "Formas de Pagamento",
 			"src": "assets/svg/ico_group-payments.svg"
 		}
 	}
