@@ -3,9 +3,9 @@
         "children": ["flex-layout.col#description-product"],
         "props": {
             "blockClass": "description-product"
-         }
+        }
     },
-
+    
     "flex-layout.col#description-product": {
         "children": [
             "product-description",
@@ -15,20 +15,20 @@
         ],
         "props": {
             "blockClass": "description-product"
-         }
-    },
-
-    "product-specifications#product": {
-        "props": {
-            "shoudCollapseOnTabChange": false,
-            "collapsible": "never"
         }
     },
-
+    
     "product-description": {
         "props": {
             "title": "Informações",
             "blockClass": "product"
+        }
+    },
+    
+    "product-specifications#product": {
+        "props": {
+            "shoudCollapseOnTabChange": false,
+            "collapsible": "never"
         }
     }
 }
