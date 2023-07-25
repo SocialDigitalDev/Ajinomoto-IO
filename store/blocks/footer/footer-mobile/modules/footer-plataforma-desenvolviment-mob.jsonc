@@ -5,7 +5,7 @@
             "flex-layout.col#copyright-footer"
         ],
         "props": {
-            "blockClass": "footer-mobile"
+            "blockClass": "footer-mobile-icon"            
        }
     }
 }

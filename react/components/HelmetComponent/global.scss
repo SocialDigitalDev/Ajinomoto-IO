@@ -1,6 +1,5 @@
 @import "../../../styles/scss/variables/_all.scss";
 
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -24,52 +23,70 @@
 	border: 1px solid $white;
 }
 
-ul, ol {
+ul,
+ol {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-
 // HEADER
 
 .vtex-flex-layout-0-x-flexRowContent--header--container-top {
-
 	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--infos-client {
-
 	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--account {
-
 	.vtex-button__label {
-
 		& > span {
 			margin: 0;
 		}
 	}
 }
 
+//FOOTER
+.vtex-flex-layout-0-x-flexRowContent--footer-bottom {
+	@include media(">phone", "<=tablet") {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 5.3%;
+
+		>.vtex-flex-layout-0-x-stretchChildrenWidth {
+			width: auto !important;
+			&:nth-child(1) {
+				order: 1;
+			}
+			&:nth-child(2) {
+				width: 100% !important;
+				order: 0;
+			}
+			&:nth-child(3) {
+				order: 02;
+			}
+			&:nth-child(4) {
+				order: 3;
+			}
+		}
+	}
+}
 
 // ACCOUNT
 
 .render-route-store-account {
-
 	.vtex-account {
-
-		@include media('<=phone') {
+		@include media("<=phone") {
 			padding-top: 25px;
 		}
 
 		&__order-details {
-
 			& > div > div.w-100.fl.w-60-ns.pv3-ns.pr0 > ul > li:nth-child(2) {
 				display: none;
 			}
@@ -77,21 +94,27 @@ ul, ol {
 	}
 
 	.vtex-account__page {
-
-		@include media('<=phone') {
+		@include media("<=phone") {
 			padding-top: 80px;
 		}
 	}
 
-	& > div > div.vtex-store__template > div > div:nth-child(2) > div > div > div > div > div {
-
-		@include media('>phone') {
+	&
+		> div
+		> div.vtex-store__template
+		> div
+		> div:nth-child(2)
+		> div
+		> div
+		> div
+		> div
+		> div {
+		@include media(">phone") {
 			width: 80%;
 		}
 	}
 
 	.vtex-account_menu-link {
-
 		&.c-on-base {
 			color: $primary;
 		}
@@ -102,7 +125,6 @@ ul, ol {
 	}
 
 	.vtex-slider-layout-0-x-sliderTrackContainer--shelf-wishlist {
-
 		&::-webkit-scrollbar {
 			height: 6px;
 		}
@@ -119,7 +141,6 @@ ul, ol {
 	}
 
 	.vtex-input {
-
 		&__label {
 			font-family: $OpenSans !important;
 		}
@@ -132,7 +153,6 @@ ul, ol {
 	}
 
 	.vtex-dropdown {
-
 		&__label {
 			font-family: $OpenSans !important;
 		}
@@ -154,8 +174,7 @@ ul, ol {
 		font-family: $OpenSans;
 	}
 
-	.vtex-account__create-card{
-
+	.vtex-account__create-card {
 		.vtex-button {
 			background: #000;
 			border-color: #000;
@@ -164,7 +183,6 @@ ul, ol {
 	}
 
 	.vtex-checkbox__inner-container {
-
 		&.bg-action-primary {
 			background: $primary;
 			border: 1px solid $primary;
@@ -172,45 +190,36 @@ ul, ol {
 	}
 }
 
-
 // ORGANIZATION
 
 .styleguide__pageBlock {
-
 	.t-body {
-		@media (max-width: 1199px){
+		@media (max-width: 1199px) {
 			margin: 0;
 			padding: 0 16px;
 		}
 	}
 }
 .vtex-address-form__country {
-
 	.t-body {
-
-		@media (max-width: 1199px){
+		@media (max-width: 1199px) {
 			margin: initial;
 			padding: initial;
 		}
 	}
 }
 
-
 // ORDER PLACED
 
 .vtex-order-placed-2-x-orderPlacedWrapper {
-
 	.vtex-order-placed-2-x-customerInfoListContainer {
-
 		& > li {
 			font-family: $OpenSans;
 		}
 	}
 
 	.vtex-order-placed-2-x-addressContainer {
-
 		.address-summary {
-
 			span {
 				font-family: $OpenSans !important;
 			}

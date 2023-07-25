@@ -11,7 +11,7 @@
     "rich-text#title-platform": {
       "title": "Título Plataforma",
       "props": {
-        "text": "Plataforma",
+        "text": "Plataforma:",
         "blockClass": "titles-bottom"
       }
     },

@@ -12,7 +12,7 @@
 	"rich-text#social-links": {
 		"title": "Titulo Redes Sociais",
 		"props": {
-			"text": "Siga nossas redes",
+			"text": "Redes Sociais:",
 			"blockClass": "titles-bottom"
 		}
 	},
@@ -22,7 +22,11 @@
 			"link#social-instagram",
 			"link#social-facebook",
 			"link#social-youtube"
-		]
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
 	},
 
 	"link#social-instagram": {
@@ -30,7 +34,8 @@
 		"children": ["image#icon-instagram"],
 		"props": {
 			"href": "https://www.instagram.com/ajinomotodobrasil/",
-			"target": "_blank"
+			"target": "_blank",
+			"blockClass": "social-footer"
 		}
 	},
 
@@ -46,7 +51,8 @@
 		"children": ["image#icon-facebook"],
 		"props": {
 			"href": "https://www.facebook.com/AjinomotoDoBrasil/",
-			"target": "_blank"
+			"target": "_blank",
+			"blockClass": "social-footer"
 		}
 	},
 
@@ -62,7 +68,8 @@
 		"children": ["image#icon-youtube"],
 		"props": {
 			"href": "https://www.youtube.com/@ajinomotodobrasil1933",
-			"target": "_blank"
+			"target": "_blank",
+			"blockClass": "social-footer"
 		}
 	},
 

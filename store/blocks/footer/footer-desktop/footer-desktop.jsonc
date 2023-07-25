@@ -29,7 +29,7 @@
             "flex-layout.col#copyright-footer"
         ],
         "props": {
-         "blockClass": "footer-bottom-desktop" 
+         "blockClass": "footer-bottom" 
         }
       },
   

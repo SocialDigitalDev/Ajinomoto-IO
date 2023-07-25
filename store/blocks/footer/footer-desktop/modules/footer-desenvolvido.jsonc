@@ -11,7 +11,7 @@
 	"rich-text#title-copyright": {
 		"title": "Título - Managed By",
 		"props": {
-			"text": "Managed By:",
+			"text": "Managed by:",
 			"blockClass": "titles-bottom"
 		}
 	},

@@ -1,0 +1,9 @@
+{
+	"flex-layout.row#social-links-footer-mob": {
+		"children": ["flex-layout.col#social-links"],
+		"props": {
+			"blockClass": ["footer-mobile-icon", "redes-sociais"],
+			"horizontalAlign": "center"					
+		}
+	}
+}

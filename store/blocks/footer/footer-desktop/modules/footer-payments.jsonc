@@ -12,7 +12,7 @@
 		"title": "Título - Formas de Pagamento",
 		"props": {
 			"blockClass": "titles-bottom",
-			"text": "Pagamento",
+			"text": "Pagamento:",
 			"textAlignment": "CENTER"
 		}
 	},
