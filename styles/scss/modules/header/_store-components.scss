@@ -54,7 +54,7 @@
     }
     
     :global(.vtex-input__prefix) {
-        background: $gray-15;
+        background: $gray-16;
         .searchBarIcon--prefix {
             &::before {
                 content: url(assets/svg/ico_lupa.svg);
@@ -67,7 +67,7 @@
     }
 
     :global(.vtex-input__suffix) {
-        background: $gray-15;
+        background: $gray-16;
         .searchBarIcon--search {
             .searchIcon{
                 display: none;
@@ -77,7 +77,7 @@
 
     :global(.vtex-styleguide-9-x-input) {
         color: $gray-2;
-        background: $gray-15;
+        background: $gray-16;
         font-size: 12px;
         border-radius: 0;
     }
