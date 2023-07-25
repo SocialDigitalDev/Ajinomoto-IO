@@ -1,0 +1,93 @@
+.searchBarContainer {
+	padding: 0;
+
+    .searchBarInnerContainer--opened {
+        height: auto;
+        min-height: 36px;
+    }
+
+    @include media("<=tablet"){
+        max-width: 456px;
+    }
+
+    .portalContainer {
+        inset: auto 0 !important;
+        @include media(">=tablet") {
+            position: relative !important;
+        }
+
+        @include media("<desktop") {
+            width: 100%;
+        }
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+        width: auto;
+        background: $white;
+        border-radius: 0px 0px 10px 10px;
+        @include media(">phone","<=tablet") {
+            border-radius: 0px 0px 50px 50px;
+        }
+    }
+
+    :global(.vtex-search-2-x-biggy-autocomplete) {
+        position: relative;
+        max-width: 768px;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+        @include media("<=tablet") {
+            max-width: 456px;
+        }
+    }
+    
+}
+
+.autoCompleteOuterContainer {
+    :global(.vtex-input-prefix__group) {
+        border-radius: 50px;
+        border: 2px solid $red-3;
+        height: 36px;
+        @include media("<=phone") {
+            width: 85%;
+        }
+    }
+    
+    :global(.vtex-input__prefix) {
+        background: $gray-15;
+        .searchBarIcon--prefix {
+            &::before {
+                content: url(assets/svg/ico_lupa.svg);
+                display: inline-block;
+            }
+            .searchIcon {
+                display: none;
+            }
+        }
+    }
+
+    :global(.vtex-input__suffix) {
+        background: $gray-15;
+        .searchBarIcon--search {
+            .searchIcon{
+                display: none;
+            }
+        }
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+        color: $gray-2;
+        background: $gray-15;
+        font-size: 12px;
+        border-radius: 0;
+    }
+}
+
+.imageElementLink--logo-header {
+    display: block;
+    text-align: center;
+}
+
+.imageElement--icon-searchBar-mobile {
+    width: 25px;
+}

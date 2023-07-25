@@ -1,0 +1,24 @@
+{
+	"sticky-layout#header-desktop": {
+		"title": "[ HEADER - DESKTOP ]",
+		"children": [
+			"flex-layout.row#topbar-header",
+			"flex-layout.row#header-desktop"
+		],
+		"props": {
+			"blockClass": [
+				"sticky--header",
+				"ajinomoto--header-desktop"
+			]
+		}
+	},
+
+	"flex-layout.row#header-desktop": {
+		"children": [
+			"flex-layout.row#header-container"
+		],
+		"props": {
+			"blockClass": "header--content"
+		}
+	}
+}

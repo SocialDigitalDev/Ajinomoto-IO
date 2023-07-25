@@ -1,0 +1,155 @@
+{
+    "flex-layout.col#menu-produtos": {
+      "children": ["rich-text#title-produto",  "vtex.menu@2.x:menu#menu-produto" ],
+      "props": {
+        "blockClass": "links-footer",
+        "verticalAlign": "top"
+      }
+    },
+
+
+    "rich-text#title-produto": {
+        "title": "Título Produtos - Desktop",
+        "props": {
+          "text": "Produtos",
+          "blockClass": "title-footer"
+        }
+      },
+
+    "vtex.menu@2.x:menu#menu-produto": {
+      "title": "Links Produto Footer [desktop]",
+      "children": [
+            "menu-item#produto-1",
+            "menu-item#produto-2",
+            "menu-item#produto-3",
+            "menu-item#produto-4",
+            "menu-item#produto-5",
+            "menu-item#produto-6",
+            "menu-item#produto-7",
+            "menu-item#produto-8"
+        ],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": ["footer-menu"]
+      }
+    },
+    "menu-item#produto-1": {
+        "props": {
+            "id": "menu-item-produto-1",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/temperos",
+                "noFollow": false,
+                "tagTitle": "Temperos",
+                "text": "Temperos"
+            }
+        }
+    },
+
+    "menu-item#produto-2": {
+        "props": {
+            "id": "menu-item-produto-2",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/molhoes-e-azeites",
+                "noFollow": false,
+                "tagTitle": "Molhos & Azeites",
+                "text": "Molhos & Azeites"
+            }
+        }
+    },
+
+    "menu-item#produto-3": {
+        "props": {
+            "id": "menu-item-produto-3",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/culinarios",
+                "noFollow": false,
+                "tagTitle": "Culinários",
+                "text": "Culinários"
+            }
+        }
+    },
+
+    "menu-item#produto-4": {
+        "props": {
+            "id": "menu-item-produto-4",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/caldos",
+                "noFollow": false,
+                "tagTitle": "Caldos",
+                "text": "Caldos"
+            }
+        }
+    },
+
+    "menu-item#produto-5": {
+        "props": {
+            "id": "menu-item-produto-5",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/sopas-e-cremes",
+                "noFollow": false,
+                "tagTitle": "Sopas e Cremes",
+                "text": "Sopas e Cremes"
+            }
+        }
+    },
+
+    "menu-item#produto-6": {
+        "props": {
+            "id": "menu-item-produto-6",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/bebidas",
+                "noFollow": false,
+                "tagTitle": "Bebidas",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#produto-7": {
+        "props": {
+            "id": "menu-item-produto-7",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/colecao-de-sabores",
+                "noFollow": false,
+                "tagTitle": "Coleção de sabores",
+                "text": "Coleção de sabores"
+            }
+        }
+    },
+
+    "menu-item#produto-8": {
+        "props": {
+            "id": "menu-item-produto-8",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ofertas",
+                "noFollow": false,
+                "tagTitle": "Ofertas",
+                "text": "Ofertas"
+            }
+        }
+    }
+}

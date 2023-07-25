@@ -1,0 +1,34 @@
+{
+    "flex-layout.col#platform-footer": {
+      "children": ["rich-text#title-platform", "link#platform" ],
+      "props": {
+        "horizontalAlign": "left",
+        "blockClass": "platform-data",
+        "width": "15%"
+      }
+    },
+
+    "rich-text#title-platform": {
+      "title": "Título Plataforma",
+      "props": {
+        "text": "Plataforma:",
+        "blockClass": "titles-bottom"
+      }
+    },
+
+    "image#image-platform": {
+      "title": "Logotipo Plataforma",
+      "props": {
+        "title": "Plataforma VTEX",
+        "src": "assets/svg/ico_vtex.svg"
+      }
+    },
+
+    "link#platform": {
+      "props": {
+        "href": "https://vtex.com/br-pt/",
+        "target": "_blank"
+      },
+      "children": ["image#image-platform"]
+    }
+}

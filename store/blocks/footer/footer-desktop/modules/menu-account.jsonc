@@ -1,0 +1,77 @@
+{
+	"flex-layout.col#menu-account": {
+        "children": ["rich-text#title-account", "vtex.menu@2.x:menu#menu-conta-footer"],
+        "props": {
+            "blockClass": "links-footer",
+            "verticalAlign": "top"
+        }
+	},
+
+	"rich-text#title-account": {
+		"title": "Título - Minha Conta",
+		"props": {
+			"text": "Minha Conta",
+			"blockClass": "title-footer"
+		}
+	},
+
+	"vtex.menu@2.x:menu#menu-conta-footer": {
+		"title": "Links minha conta Footer [desktop]",
+		"children": [
+            "menu-item#conta-1",
+            "menu-item#conta-2",
+			"menu-item#conta-3"
+        ],
+		"props": {
+            "orientation": "vertical",
+            "blockClass": ["footer-menu"]
+        }
+	},
+	"menu-item#conta-1": {
+		"props": {
+			"id": "menu-item-conta-1",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/account",
+				"noFollow": false,
+				"tagTitle": "Link Minha Conta",
+				"text": "Minha Conta"
+			}
+		}
+	},
+
+	"menu-item#conta-2": {
+		"props": {
+			"id": "menu-item-conta-2",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/account#/orders",
+				"noFollow": false,
+				"tagTitle": "Link Meus Pedidos",
+				"text": "Meus Pedidos"
+			}
+		}
+	},
+
+	"menu-item#conta-3": {
+		"props": {
+			"id": "menu-item-conta-3",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/account#/wishlist",
+				"noFollow": false,
+				"tagTitle": "Link Favoritos",
+				"text": "Favoritos"
+			}
+		}
+	}
+}

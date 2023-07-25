@@ -1,0 +1,117 @@
+{
+  ///////////// SUBMNENU 6
+  "vtex.menu@2.x:submenu#position-6": {
+    "title": "SUBMNENU 6",
+    "children": [
+      "menu-item#sub-position-6-item-1",
+      "menu-item#sub-position-6-item-2",
+      "menu-item#sub-position-6-item-3",
+      "menu-item#sub-position-6-item-4",
+      "menu-item#sub-position-6-item-5",
+      "menu-item#sub-position-item-todos"
+    ],
+    "props": {
+      "blockClass": ["submenu-list", "submenu-list__sixth"]
+    }
+  },
+  
+  "menu-item#sub-position-6-item-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pimenta",
+        "text": "Pimenta"
+      },
+      "iconProps": {
+        "id": "pimenta",
+        "size": 29,
+        "viewBox": "0 0 29 28"
+      },
+      "iconToTheRight": true
+    }
+  }, 
+  
+  "menu-item#sub-position-6-item-2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Legumes",
+        "text": "Legumes"
+      },
+      "iconProps": {
+        "id": "legumes",
+        "size": 31,
+        "viewBox": "0 0 30 31"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-6-item-3": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Vegetais",
+        "text": "Vegetais"
+      },
+      "iconProps": {
+        "id": "vegetais",
+        "size": 32,
+        "viewBox": "0 0 33 33"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-6-item-4": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Manteiga",
+        "text": "Manteiga"
+      },
+      "iconProps": {
+        "id": "manteiga",
+        "size": 32,
+        "viewBox": "0 0 40 27"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-6-item-5": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Carne",
+        "text": "Carne"
+      },
+      "iconProps": {
+        "id": "carne",
+        "size": 32,
+        "viewBox": "0 0 45 33"
+      },
+      "iconToTheRight": true
+    }
+  }
+}

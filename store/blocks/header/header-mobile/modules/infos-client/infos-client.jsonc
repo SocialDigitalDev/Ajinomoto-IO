@@ -1,0 +1,45 @@
+{
+	"flex-layout.row#header-left-mobile": {
+		"children": [
+			"drawer#menu-mobile",
+			"flex-layout.row#wishlist",
+			"flex-layout.row#header--searchBar-mobile"
+		],
+		"props": {
+			"blockClass": "header--infos-client"
+		}
+	},
+
+	"flex-layout.row#header--searchBar-mobile": {
+		"children": ["modal-trigger#search-mobile"],
+		"props": {
+			"blockClass": "header--search-mobile"
+		}
+	},
+
+	"modal-trigger#search-mobile": {
+		"children": [
+			"image#searchBar-mobile",
+			"modal-layout#search-bar"
+		],
+		"props": {
+			"blockClass": ["searchBar-mobile", "search-trigger-cy--ajinomoto"]
+		}
+	},
+
+	"image#searchBar-mobile": {
+		"props": {
+			"src": "assets/svg/ico_lupa.svg",
+			"maxHeight": "26px",
+			"maxWidth": "26px",
+			"blockClass": "icon-searchBar-mobile"
+		}
+	},
+
+	"flex-layout.row#header-right-mobile": {
+		"children": ["flex-layout.row#my-account", "flex-layout.row#minicart"],
+		"props": {
+			"blockClass": "header--infos-client"
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"flex-layout.row#menu-account-mob": {
+		"children": ["flex-layout.col#menu-account-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-account-mob": {
+		"children": ["disclosure-layout#menu-account-footer"],
+		"props": {
+			"blockClass": "ajinomoto--links"
+		}
+	},
+
+	"disclosure-layout#menu-account-footer": {
+		"children": [
+			"disclosure-trigger#menu-account-footer",
+			"disclosure-content#menu-account-footer"
+		],
+		"props": {
+			"blockClass": "ajinomoto--conta"
+		}
+	},
+
+	"disclosure-trigger#menu-account-footer": {
+		"children": ["rich-text#title-disclosure_account"],
+		"props": {
+			"blockClass": ["menu-footer","menu-account-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_account": {
+        "title": "Título - Minha Conta [mobile]",
+		"props": {
+			"text": "Minha Conta",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-account-footer": {
+        "title": "Menu - Minha Conta Mobile",
+		"children": [
+			"vtex.menu@2.x:menu#menu-conta-footer"
+		],
+		"props": {
+			"blockClass": "menu-account-footer"
+		}
+	}
+}

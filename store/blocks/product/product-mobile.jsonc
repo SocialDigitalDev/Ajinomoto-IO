@@ -7,7 +7,6 @@
             "flex-layout.row#prices",
             "condition-layout.product#product-availability",
             "flex-layout.row#description-produc-mobile",
-            "buy-together",
             "flex-layout.row#product-shelf"
         ]
     }

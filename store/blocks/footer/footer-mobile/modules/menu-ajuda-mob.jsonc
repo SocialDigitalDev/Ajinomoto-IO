@@ -1,0 +1,49 @@
+{
+	"flex-layout.row#menu-ajuda-mob": {
+		"children": ["flex-layout.col#menu-ajuda-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-ajuda-mob": {
+		"children": ["disclosure-layout#menu-ajuda-footer"],
+		"props": {
+			"blockClass": "ajinomoto--links"
+		}
+	},
+
+	"disclosure-layout#menu-ajuda-footer": {
+		"children": [
+			"disclosure-trigger#menu-ajuda-footer",
+			"disclosure-content#menu-ajuda-footer"
+		],
+		"props": {
+			"blockClass": "ajinomoto--contatos"
+		}
+	},
+
+	"disclosure-trigger#menu-ajuda-footer": {
+		"children": ["rich-text#title-disclosure_contacts"],
+		"props": {
+			"blockClass": ["menu-footer","menu-ajuda-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_contacts": {
+        "title": "Título - Contatos [mobile]",
+		"props": {
+			"text": "Contatos",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-ajuda-footer": {
+		"children": [
+            "vtex.menu@2.x:menu#menu-ajuda"
+        ],
+		"props": {
+			"blockClass": "menu-ajuda-footer"
+		}
+	}
+}

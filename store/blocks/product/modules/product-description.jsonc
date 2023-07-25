@@ -3,23 +3,32 @@
         "children": ["flex-layout.col#description-product"],
         "props": {
             "blockClass": "description-product"
-         }
+        }
     },
-
+    
     "flex-layout.col#description-product": {
         "children": [
             "product-description",
+            "product-specifications#product",
+            "product-specification-group#table",
             "product-specification-badges#product-description"
         ],
         "props": {
             "blockClass": "description-product"
-         }
+        }
     },
-
+    
     "product-description": {
         "props": {
             "title": "Informações",
             "blockClass": "product"
+        }
+    },
+    
+    "product-specifications#product": {
+        "props": {
+            "shoudCollapseOnTabChange": false,
+            "collapsible": "never"
         }
     }
 }

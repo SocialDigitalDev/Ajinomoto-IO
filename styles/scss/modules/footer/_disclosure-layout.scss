@@ -1,0 +1,44 @@
+.trigger--menu-footer {
+    background: none;
+    border: none;
+    outline: 0;
+    padding: 14px 0;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+
+    &--visible {
+        border: none;
+        :global(.vtex-rich-text-0-x-paragraph--title--footer-links-mb) {
+            &::after {
+                transform: rotate(-90deg);
+                transition: 0.35s;
+            }
+        }
+    }
+}
+
+.content--menu-mobile-content {
+    padding: 15px 0;
+
+    :global(.vtex-menu-2-x-menuItem) {
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+        padding: 0;
+
+        :global(.vtex-menu-2-x-styledLinkContent) {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        :global(.vtex-menu-2-x-styledLinkIcon) {
+            stroke: $primary;
+            margin-right: 10px;
+        }
+    }
+    
+
+}

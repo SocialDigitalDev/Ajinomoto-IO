@@ -8,6 +8,7 @@
 
     "responsive-layout.desktop#content-product":  {
         "children": [
+            "flex-layout.row#breadcrumb-product",
 			"flex-layout.row#content-product",
             "flex-layout.row#product-shelf"
         ]
@@ -40,8 +41,7 @@
             "flex-layout.row#product-name",
             "flex-layout.row#product-fluxo-badges",
             "flex-layout.row#prices",
-            "condition-layout.product#product-availability",
-            "buy-together"
+            "condition-layout.product#product-availability"
         ],
         "props": {
             "blockClass": ["column", "column-right"],

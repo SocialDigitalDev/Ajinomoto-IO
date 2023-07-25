@@ -1,0 +1,23 @@
+{
+	"flex-layout.row#logo-header": {
+		"title": "[ LOGO AJINOMOTO - DESKTOP ]",
+		"children": [
+			"image#logo-header"
+		],
+		"props": {
+			"blockClass": "header--logo_desk"
+		}
+	},
+
+	"image#logo-header": {
+		"props": {
+			"blockClass": "logo-header",
+			"src": "assets/svg/logo-desktop-header.svg",
+			"link":  {
+				"title": "Loja Ajinomoto",
+				"url": "/"
+			},
+			"maxWidth": "93px"
+		}
+	}
+}

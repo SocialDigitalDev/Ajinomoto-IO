@@ -1,0 +1,39 @@
+{
+	"modal-layout#search-bar": {
+		"children": [
+			"modal-actions.close",
+			"search-bar"
+		],
+		"props": {
+			"blockClass": "modal--search-desktop"
+		}
+	},
+	
+	"modal-actions.close": {
+		"props": {
+			"label": "x",
+			"blockClass": "search-bar"
+		}
+	},
+
+	"search-bar":{
+		"blocks": [
+			"autocomplete-result-list.v2"
+		],
+		"props":{
+			"hasIconLeft": true,
+			"openAutocompleteOnFocus": true,
+			"autocompleteFullWidth": true,
+			"placeholder": "O que você procura?"
+		}
+	},
+
+	"autocomplete-result-list.v2": {
+		"blocks": [
+			"product-summary.shelf#shelf-search"
+		],
+		"props": {
+			"maxSuggestedProducts": 3
+		}
+	}
+}

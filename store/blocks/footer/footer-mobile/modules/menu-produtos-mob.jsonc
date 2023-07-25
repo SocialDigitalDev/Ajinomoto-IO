@@ -1,0 +1,49 @@
+{
+	"flex-layout.row#menu-produtos-mob": {
+		"children": ["flex-layout.col#menu-produtos-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-produtos-mob": {
+		"children": ["disclosure-layout#menu-produtos-footer"],
+		"props": {
+			"blockClass": "ajinomoto--links"
+		}
+	},
+
+	"disclosure-layout#menu-produtos-footer": {
+		"children": [
+			"disclosure-trigger#menu-produtos-footer",
+			"disclosure-content#menu-produtos-footer"
+		],
+		"props": {
+			"blockClass": "ajinomoto--produtos"
+		}
+	},
+
+	"disclosure-trigger#menu-produtos-footer": {
+		"children": ["rich-text#title-disclosure_products"],
+		"props": {
+			"blockClass": ["menu-footer","menu-produtos-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_products": {
+        "title": "Título - Produtos [mobile]",
+		"props": {
+			"text": "Produtos",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-produtos-footer": {
+		"children": [
+			"vtex.menu@2.x:menu#menu-produto"
+		],
+		"props": {
+			"blockClass": "menu-produtos-footer"
+		}
+	}
+}

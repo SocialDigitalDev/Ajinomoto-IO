@@ -2,12 +2,12 @@
     "slider-layout#shelf": {
         "props": {
           "itemsPerPage": {
-            "desktop": 6,
-            "tablet": 4,
+            "desktop": 5,
+            "tablet": 3,
             "phone": 2
           },
           "infinite": true,
-          "showNavigationArrows": "desktopOnly",
+          "showNavigationArrows": "always",
           "showPaginationDots": "always",
           "blockClass": "shelf",
           "navigationStep": "page"
