@@ -9,7 +9,7 @@
 	"flex-layout.col#menu-sobre-mob": {
 		"children": ["disclosure-layout#menu-sobre-footer"],
 		"props": {
-			"blockClass": "modess--links"
+			"blockClass": "ajinomoto--links"
 		}
 	},
 
@@ -19,7 +19,7 @@
 			"disclosure-content#menu-sobre-footer"
 		],
 		"props": {
-			"blockClass": "modess--sobre"
+			"blockClass": "ajinomoto--sobre"
 		}
 	},
 
@@ -34,7 +34,7 @@
         "title": "Título - Sobre [mobile]",
 
 		"props": {
-			"text": "Sobre modess",
+			"text": "Sobre a Ajinomoto",
 			"blockClass": "title--footer-links-mb"
 		}
 	},

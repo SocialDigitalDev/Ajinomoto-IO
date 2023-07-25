@@ -1,0 +1,29 @@
+.flexRowContent--footer-blog {
+    .stretchChildrenWidth {
+        @include media("<=phone") {
+            justify-content: flex-start;
+            margin: 20px 0;
+        }
+    }
+}
+
+.flexRow--footer-data {
+    margin-bottom: 40px;
+    .flexRowContent--footer-data {
+        @include media(">phone", "<=tablet") {
+            justify-content: center;
+        }
+        .stretchChildrenWidth:first-child {
+            width: auto !important;
+            margin-right: 2.5%;
+            @include media(">phone", "<=tablet") {
+                margin-right: 3%;
+            }
+        }
+    }
+}
+
+.flexRow--copyright-store {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

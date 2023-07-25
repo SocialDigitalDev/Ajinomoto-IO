@@ -9,7 +9,7 @@
 	"flex-layout.col#menu-account-mob": {
 		"children": ["disclosure-layout#menu-account-footer"],
 		"props": {
-			"blockClass": "modess--links"
+			"blockClass": "ajinomoto--links"
 		}
 	},
 
@@ -19,7 +19,7 @@
 			"disclosure-content#menu-account-footer"
 		],
 		"props": {
-			"blockClass": "modess--conta"
+			"blockClass": "ajinomoto--conta"
 		}
 	},
 
@@ -42,53 +42,9 @@
         "title": "Menu - Minha Conta Mobile",
 		"children": [
 			"vtex.menu@2.x:menu#menu-conta-footer"
-			// "vtex.menu@2.x:menu#conta--footer_mob"
 		],
 		"props": {
 			"blockClass": "menu-account-footer"
 		}
 	}
-
-	// "vtex.menu@2.x:menu#conta--footer_mob": {
-	// 	"title": "Links conta Footer [mobile]",
-	// 	"children": [
-	// 		"menu-item#menu-footer-col-1-slot-1_mob",
-	// 		"menu-item#menu-footer-col-1-slot-2_mob"
-	// 	],
-	// 	"props": {
-	// 		"blockClass": ["menu-footer", "accordion-footer"]
-	// 	}
-	// },
-
-	// "menu-item#menu-footer-col-1-slot-1_mob": {
-	// 	"props": {
-	// 		"type": "custom",
-	// 		"id": "menu-footer-col-1-slot-1_mob",
-	// 		"blockClass": "menu-footer-item",
-	// 		"highlight": false,
-	// 		"itemProps": {
-	// 			"type": "internal",
-	// 			"noFollow": false,
-	// 			"tagTitle": "Minha Conta",
-	// 			"text": "Minha Conta",
-	// 			"href": "/account"
-	// 		}
-	// 	}
-	// },
-
-	// "menu-item#menu-footer-col-1-slot-2_mob": {
-	// 	"props": {
-	// 		"type": "custom",
-	// 		"id": "menu-footer-col-1-slot-2_mob",
-	// 		"blockClass": "menu-footer-item",
-	// 		"highlight": false,
-	// 		"itemProps": {
-	// 			"type": "internal",
-	// 			"noFollow": false,
-	// 			"tagTitle": "Meus Pedidos",
-	// 			"text": "Meus Pedidos",
-	// 			"href": "/account#/orders"
-	// 		}
-	// 	}
-	// }
 }
