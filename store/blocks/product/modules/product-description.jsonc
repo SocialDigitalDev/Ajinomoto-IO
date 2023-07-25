@@ -9,11 +9,20 @@
     "flex-layout.col#description-product": {
         "children": [
             "product-description",
+            "product-specifications#product",
+            "product-specification-group#table",
             "product-specification-badges#product-description"
         ],
         "props": {
             "blockClass": "description-product"
          }
+    },
+
+    "product-specifications#product": {
+        "props": {
+            "shoudCollapseOnTabChange": false,
+            "collapsible": "never"
+        }
     },
 
     "product-description": {
