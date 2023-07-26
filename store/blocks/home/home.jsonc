@@ -3,46 +3,12 @@
 		"blocks": [
 			"flex-layout.row#home-main-banner",
 			"flex-layout.row#home-deals",
-			"flex-layout.row#home-prateleira-1"
+			"flex-layout.row#home-brands",
+			"flex-layout.row#home-prateleira-1",
+			"flex-layout.row#home-core-banner",
+			"flex-layout.row#home-prateleira-2",
+			"flex-layout.row#home-colecao",
+			"flex-layout.row#home-prateleira-3"
 		]
-	},
-
-	"flex-layout.row#home-main-banner": {
-		"children": [
-			"list-context.image-list#main-banner"
-		],
-		"props": {
-			"blockClass": "main-banner"
-		}
-	},
-
-	"list-context.image-list#main-banner": {
-		"children": ["slider-layout#demo-images"],
-		"props": {
-			"preload": true,
-			"height": 300,
-			"images": [
-				{
-					"loading": "eager",
-					"image": "assets/img/home-main-banner-desktop.png"
-				},
-				{
-					"loading": "eager",
-					"image": "assets/img/home-main-banner-desktop.png"
-				}
-			]
-		}
-	},
-
-	"slider-layout#demo-images": {
-		"props": {
-			"itemsPerPage": {
-				"desktop": 1,
-				"tablet": 1,
-				"phone": 1
-			},
-			"infinite": true,
-			"fullWidth": true			
-		}
-	}
+	}	
 }

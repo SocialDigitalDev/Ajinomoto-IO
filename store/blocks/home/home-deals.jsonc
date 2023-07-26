@@ -1,22 +1,27 @@
 {
     "flex-layout.row#home-deals": {
         "title": "HOME DEALS",
-        "props": {
-            "blockClass": "home-deals"
-        },
         "children": [
-            "slider-layout#deals"
-        ]
+            "info-card#deals-1",
+            "info-card#deals-2",
+            "info-card#deals-3",
+            "info-card#deals-4"
+        ],
+        "props": {
+            "blockClass": "home-deals",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
     },
     
     "slider-layout#deals": {
         "props": {
             "itemsPerPage": {
                 "desktop": 4,
-                "tablet": 2,
+                "tablet": 4,
                 "phone": 1
             },
-            "infinite": true,
+            "infinite": false,
             "showNavigationArrows": "never",
             "showPaginationDots": "never",
             "blockClass": "home-deals"
@@ -32,7 +37,7 @@
     "info-card#deals-1": {
         "title": "DEAL 1",
         "props": {
-            "id": "home-deals",
+            "id": "home-deals-1",
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_truck-deals.svg",
@@ -47,7 +52,7 @@
     "info-card#deals-2": {
         "title": "DEAL 2",
         "props": {
-            "id": "home-deals",
+            "id": "home-deals-2",
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_wallet-deals.svg",
@@ -62,7 +67,7 @@
     "info-card#deals-3": {
         "title": "DEAL 3",
         "props": {
-            "id": "home-deals",
+            "id": "home-deals-3",
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_percentage-deals.svg",
@@ -77,7 +82,7 @@
     "info-card#deals-4": {
         "title": "DEAL 4",
         "props": {
-            "id": "home-deals",
+            "id": "home-deals-4",
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_security_deals.svg",

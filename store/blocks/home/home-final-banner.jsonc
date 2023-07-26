@@ -1,0 +1,88 @@
+{
+	"flex-layout.row#home-core-banner": {
+		"children": [
+			"responsive-layout.desktop#final-banner",
+			"responsive-layout.tablet#final-banner",
+			"responsive-layout.phone#final-banner"
+		],
+		"props": {
+			"blockClass": "final-banner",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"experimentalHideEmptyCols": true
+		}
+	},
+
+	//DESKTOP
+	"responsive-layout.desktop#final-banner": {
+		"children": ["list-context.image-list#final-banner-desktop"]
+	},
+
+	"list-context.image-list#final-banner-desktop": {
+		"title": "BANNER FINAL [DESKTOP]",
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-final-banner-desktop.png"
+				}
+			]
+		}
+	},
+
+	//TABLET
+	"responsive-layout.tablet#final-banner": {
+		"children": ["list-context.image-list#final-banner-tablet"]
+	},
+
+	"list-context.image-list#final-banner-tablet": {
+		"title": "BANNER FINAL [TABLET]",
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"preload": true,
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-final-banner-desktop.png"
+				}
+			]
+		}
+	},
+
+	//PHONE
+
+	"responsive-layout.phone#final-banner": {
+		"children": ["list-context.image-list#final-banner-phone"]
+	},
+
+	"list-context.image-list#final-banner-phone": {
+		"title": "BANNER FINAL [PHONE]",
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"preload": true,
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-final-banner-desktop.png"
+				}
+			]
+		}
+	},
+
+	//SLIDER BANNER MIOLO
+	"slider-layout#final-banner": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true
+		}
+	}
+}

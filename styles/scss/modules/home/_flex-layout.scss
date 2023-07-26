@@ -14,12 +14,18 @@
     :global(.vtex-store-components-3-x-container) {
         max-width: 1172px;
         padding: 0;
-    }
-
-    .flexRowContent--home-deals {
         border-radius: 10px;
         background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-        padding: 27.5px 30px;
+        padding: 25px 0;
+    }
+
+    .flexRowContent--home-deals {
+        justify-content: space-between;
+        :last-child {
+            :global(.vtex-store-components-3-x-infoCardContainer--home-deals) {
+                border: none;
+            }
+        }
     }
 }
