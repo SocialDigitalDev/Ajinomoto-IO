@@ -1,0 +1,96 @@
+{
+    "flex-layout.row#home-deals": {
+        "title": "HOME DEALS",
+        "children": [
+            "info-card#deals-1",
+            "info-card#deals-2",
+            "info-card#deals-3",
+            "info-card#deals-4"
+        ],
+        "props": {
+            "blockClass": "home-deals",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    
+    "slider-layout#deals": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 4,
+                "phone": 1
+            },
+            "infinite": false,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "info-card#deals-1",
+            "info-card#deals-2",
+            "info-card#deals-3",
+            "info-card#deals-4"
+        ]
+    },
+    
+    "info-card#deals-1": {
+        "title": "DEAL 1",
+        "props": {
+            "id": "home-deals-1",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/svg/ico_truck-deals.svg",
+            "headline": "Frete grátis",
+            "subhead": "para compras acima de R$ 300,00",
+            "callToActionMode": "none",
+            "blockClass": "home-deals",
+            "textAlignment": "left"
+        }
+    },
+    
+    "info-card#deals-2": {
+        "title": "DEAL 2",
+        "props": {
+            "id": "home-deals-2",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/svg/ico_wallet-deals.svg",
+            "headline": "Parcele",
+            "subhead": "Parcele em até 3x sem juros",
+            "callToActionMode": "none",
+            "blockClass": "home-deals",
+            "textAlignment": "left"
+        }
+    },
+    
+    "info-card#deals-3": {
+        "title": "DEAL 3",
+        "props": {
+            "id": "home-deals-3",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/svg/ico_percentage-deals.svg",
+            "headline": "Economia",
+            "subhead": "Compre os nossos Kits",
+            "callToActionMode": "none",
+            "blockClass": "home-deals",
+            "textAlignment": "left"
+        }
+    },
+    
+    "info-card#deals-4": {
+        "title": "DEAL 4",
+        "props": {
+            "id": "home-deals-4",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/svg/ico_security_deals.svg",
+            "headline": "Compra Segura",
+            "subhead": "Loja com SSL e proteção de dados",
+            "callToActionMode": "none",
+            "blockClass": "home-deals",
+            "textAlignment": "left"
+        }
+    }
+}

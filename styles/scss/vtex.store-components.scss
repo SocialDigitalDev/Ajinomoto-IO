@@ -3,3 +3,9 @@
 @import "./modules/header/store-components";
 
 @import "./modules/footer/store-components";
+
+@import "./modules/home/store-components";
+
+.container  {
+    max-width: 1366px;
+}

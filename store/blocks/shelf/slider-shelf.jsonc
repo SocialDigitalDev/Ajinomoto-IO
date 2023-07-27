@@ -12,5 +12,20 @@
           "blockClass": "shelf",
           "navigationStep": "page"
         }
-    }
+    },
+
+    "slider-layout#shelf-collection": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 3,
+          "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "always",
+        "showPaginationDots": "always",
+        "blockClass": "shelf",
+        "navigationStep": "page"
+      }
+  }
 }
