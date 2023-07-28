@@ -2,23 +2,24 @@
     "slider-layout#shelf": {
         "props": {
           "itemsPerPage": {
-            "desktop": 5,
-            "tablet": 3,
+            "desktop": 6,
+            "tablet": 4.5,
             "phone": 2
           },
           "infinite": true,
-          "showNavigationArrows": "always",
+          "showNavigationArrows": "desktopOnly",
           "showPaginationDots": "always",
           "blockClass": "shelf",
-          "navigationStep": "page"
+          "navigationStep": "page",
+          "arrowSize": 36
         }
     },
 
     "slider-layout#shelf-collection": {
       "props": {
         "itemsPerPage": {
-          "desktop": 5,
-          "tablet": 3,
+          "desktop": 4,
+          "tablet": 2,
           "phone": 2
         },
         "infinite": true,

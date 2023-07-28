@@ -4,7 +4,7 @@
 		"title": "HOME VITRINE 1",
 		"children": ["flex-layout.col#home-prateleira-1"],
 		"props": {
-			"blockClass": "home-prateleira"
+			"blockClass": ["home-prateleira", "home-section"]
 		}
 	},
 
@@ -21,7 +21,7 @@
 	"rich-text#home-prateleira-1": {
 		"title": "TITULO DA VITRINE",
 		"props": {
-			"text": "Nossas Marcas",
+			"text": "## Lançamentos",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
 		}
@@ -62,7 +62,7 @@
 	"rich-text#home-prateleira-2": {
 		"title": "TITULO DA VITRINE",
 		"props": {
-			"text": "Lançamentos",
+			"text": "## Mais vendidos",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
 		}
@@ -103,7 +103,7 @@
 	"rich-text#home-prateleira-3": {
 		"title": "TITULO DA VITRINE",
 		"props": {
-			"text": "Para seu dia a dia",
+			"text": "## Destaques",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
 		}
@@ -116,7 +116,8 @@
 		"children": ["slider-layout#shelf"],
 		"props": {
 			"maxItems": 12,
-			"skusFilter": "ALL"
+			"skusFilter": "ALL",
+			"orderBy": "OrderByScoreDESC"
 		}
 	}
 }

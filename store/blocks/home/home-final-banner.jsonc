@@ -1,15 +1,16 @@
 {
-	"flex-layout.row#home-core-banner": {
+	"flex-layout.row#home-final-banner": {
 		"children": [
 			"responsive-layout.desktop#final-banner",
 			"responsive-layout.tablet#final-banner",
 			"responsive-layout.phone#final-banner"
 		],
 		"props": {
-			"blockClass": "final-banner",
+			"blockClass": ["final-banner"],
 			"preventHorizontalStretch": true,
 			"preventVerticalStretch": true,
-			"experimentalHideEmptyCols": true
+			"experimentalHideEmptyCols": true,
+			"horizontalAlign": "center"
 		}
 	},
 
@@ -42,7 +43,7 @@
 		"children": ["slider-layout#final-banner"],
 		"props": {
 			"preload": true,
-			"height": 300,
+			"height": 280,
 			"images": [
 				{
 					"loading": "lazy",
@@ -67,7 +68,7 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-final-banner-desktop.png"
+					"image": "assets/img/home-final-banner-phone.png"
 				}
 			]
 		}

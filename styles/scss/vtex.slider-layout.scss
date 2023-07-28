@@ -1,5 +1,9 @@
 @import "./variables/all";
 
+@import "./modules/home/slider-layout";
+
+@import "./modules/shelf/slider-layout";
+
 .paginationDotsContainer {
     bottom: -15px;
     .paginationDot {
@@ -13,3 +17,25 @@
         }
     }
 }
+
+.sliderArrows  {
+    margin: 0;
+    &.sliderLeftArrow  {
+        left: -40px;
+    }
+
+    &.sliderRightArrow  {
+        right: -40px;
+    }
+
+    .caretIcon {
+        color: $primary;
+    }
+    
+    &:disabled {
+        .caretIcon {
+            opacity: 0.65;
+        }
+    }
+}
+

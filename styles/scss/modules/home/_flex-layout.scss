@@ -2,17 +2,16 @@
     margin-bottom: 36px;
 }
 
-.flexRow--home-prateleira {
-    margin: 0 0 80px;
+.flexRow--home-section {
+    margin: 0 0 50px;
     :global(.vtex-store-components-3-x-container) {
-        max-width: 1177px;
+        max-width: 1170px;
     }
 }
 
+
 .flexRow--home-deals {
-    margin: 0 0 50px;
     :global(.vtex-store-components-3-x-container) {
-        max-width: 1172px;
         padding: 0;
         border-radius: 10px;
         background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
@@ -28,4 +27,20 @@
             }
         }
     }
+}
+
+.flexRow--home-prateleira {
+    margin: 0 0 80px;
+    :global(.vtex-store-components-3-x-container) {
+        max-width: 1170px;
+    }
+}
+
+.flexRow--core-banner,
+.flexRow--final-banner {
+    margin: 0 0 50px;
+}
+
+.flexRow--home-colecao {
+    background: $orange-2 ;
 }

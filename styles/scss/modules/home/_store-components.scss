@@ -1,36 +1,161 @@
-.infoCardContainer--home-deals {
-    padding: 0 20px 0 20px;
-	border-right: 1px solid $gray-14;
-}
-
-.infoCardTextContainer--home-deals {
-    padding: 0;
-    width: auto;
-	
-	.infoCardHeadline--home-deals {
-		color: $primary;
-		font-family: $OpenSans;
-		font-size: 15px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-        padding: 0;
-        margin: 0;
+.infoCardContainer {
+	&--home-deals {
+		padding: 0 20px 0 20px;
+		border-right: 1px solid $gray-14;
 	}
 
-	.infoCardSubhead--home-deals {
-		color: $gray-4;
-		font-family: $OpenSans;
-		font-size: 15px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
-        padding: 0;
-        margin: 0;
+	&--home-brands {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&--home-colecao {
+		background: $orange-2 
 	}
 }
 
-.infoCardImageContainer--home-deals {
-    width: auto;
-	margin-right: 10px;
+.infoCardTextContainer {
+	&--home-deals {
+		padding: 0;
+		width: auto;
+
+		.infoCardHeadline--home-deals {
+			color: $primary;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			padding: 0;
+			margin: 0;
+		}
+
+		.infoCardSubhead--home-deals {
+			color: $gray-4;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&--home-brands {
+		padding: 0;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+		.container--home-brands {
+			.paragraph--home-brands {
+				margin: 0;
+				color: $primary;
+				font-family: $OpenSans;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				text-decoration-line: underline;
+
+				.link--home-brands {
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	&--home-colecao {
+		padding: 0;
+		min-width: 204px;
+
+		.infoCardHeadline--home-colecao {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 27px;
+			font-style: normal;
+			font-weight: $extra-bold;
+			line-height: normal;
+		}
+
+		.infoCardSubhead--home-colecao {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+
+		.container--home-colecao {
+			.wrapper--home-colecao {
+				.heading--home-colecao {
+					color: $gray-2;
+					font-family: $OpenSans;
+					font-size: 27px;
+					font-style: normal;
+					font-weight: $extra-bold;
+					line-height: normal;
+					margin: 0 0 15px;
+				}
+				.paragraph--home-colecao {
+					color: $gray-2;
+					font-family: $OpenSans;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.infoCardImageContainer {
+	&--home-deals {
+		width: auto;
+		margin-right: 10px;
+	}
+
+	&--home-brands {
+		width: 100%;
+		max-width: 126px;
+		background: $white;
+		height: auto;
+		margin-bottom: 10px;
+		.infoCardImage--home-brands {
+			border-radius: 100%;
+			border: 1px solid $gray-18;
+			background-color: $white;
+		}
+	}
+
+	&--home-colecao {
+		text-align: center;
+		min-width: 108px;
+		margin-right: 20px;
+	}
+}
+
+.infoCardCallActionContainer--home-colecao{
+	margin: 10px 0;
+	:global(.vtex-button) {
+		background: transparent;
+		border-radius: 20px;
+		border: 1px solid $black;
+		width: 173px;
+		height: 40px;
+
+		:global(.vtex-button__label) {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $extra-bold;
+			line-height: normal;
+		}
+	}
 }
