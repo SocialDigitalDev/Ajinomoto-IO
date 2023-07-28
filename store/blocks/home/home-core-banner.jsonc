@@ -6,7 +6,7 @@
 			"responsive-layout.phone#core-banner"
 		],
 		"props": {
-			"blockClass": "core-banner",
+			"blockClass": ["core-banner"],
 			"preventHorizontalStretch": true,
 			"preventVerticalStretch": true,
 			"experimentalHideEmptyCols": true,

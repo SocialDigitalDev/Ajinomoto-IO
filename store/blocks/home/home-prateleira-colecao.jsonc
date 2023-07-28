@@ -3,7 +3,8 @@
 	"flex-layout.row#home-colecao": {
 		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
 		"props": {
-			"blockClass": "home-colecao"
+			"blockClass": ["home-colecao", "home-section"],
+			"preventHorizontalStretch": true
 		}
 	},
 
@@ -14,13 +15,14 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/svg/panda/ico_panda-colecao-home.svg",
-			"headline": "Coleção de Sabores",
-			"subhead": "O Ajipanda fez uma seleção dos melhores kits para você!",
+			"headline": "## Coleção de Sabores",
+			"subhead": "O Ajipanda fez uma seleção dos **melhores kits** para você!",
 			"callToActionMode": "button",
 			"callToActionText": "VER TODOS",
 			"callToActionUrl": "/",
 			"blockClass": "home-colecao",
-			"textAlignment": "left"
+			"textAlignment": "left",
+			"textMode": "rich-text"
 		}
 	},
 

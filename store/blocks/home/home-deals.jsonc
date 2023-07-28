@@ -8,7 +8,7 @@
             "info-card#deals-4"
         ],
         "props": {
-            "blockClass": "home-deals",
+            "blockClass": ["home-deals", "home-section"],
             "preventHorizontalStretch": true,
             "preserveLayoutOnMobile": true
         }

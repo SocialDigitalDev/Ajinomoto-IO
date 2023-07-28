@@ -3,14 +3,14 @@
 		"title": "HOME SOBRE NÓS",
 		"children": ["flex-layout.col#home-sobre"],
 		"props": {
-			"blockClass": "home-prateleira"
+			"blockClass": ["home-sobre", "home-section"]
 		}
 	},
 
 	"flex-layout.col#home-sobre": {
 		"children": ["info-card#home-sobre"],
 		"props": {
-			"blockClass": "home-prateleira"
+			"blockClass": "home-sobre"
 		}
 	},
 

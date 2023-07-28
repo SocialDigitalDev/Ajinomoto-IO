@@ -3,7 +3,7 @@
 		"title": "HOME brands",
 		"children": ["flex-layout.col#home-brands"],
 		"props": {
-			"blockClass": "home-brands"
+			"blockClass": ["home-brands", "home-section"]
 		}
 	},
 
@@ -19,7 +19,7 @@
 
 	"rich-text#home-brands": {
 		"props": {
-			"text": "Nossas Marcas",
+			"text": "## Nossas Marcas",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
 		}
@@ -32,10 +32,11 @@
 				"tablet": 7.5,
 				"phone": 3.5
 			},
-			"infinite": false,
+			"infinite": true,
 			"showNavigationArrows": "always",
 			"showPaginationDots": "never",
-			"blockClass": "home-brands"
+			"blockClass": "home-brands",
+			"arrowSize": 36
 		},
 		"children": [
 			"info-card#brands-1",
@@ -45,7 +46,11 @@
 			"info-card#brands-5",
 			"info-card#brands-6",
 			"info-card#brands-7",
-			"info-card#brands-8"
+			"info-card#brands-8",
+			"info-card#brands-9",
+			"info-card#brands-10",
+			"info-card#brands-11",
+			"info-card#brands-12"
 		]
 	},
 
@@ -54,12 +59,14 @@
 		"props": {
 			"id": "home-brands-1",
 			"isFullModeStyle": false,
-			"textPosition": "right",
+			"textPosition": "left",
 			"imageUrl": "assets/img/marca-ajisal.png",
-			"headline": "Aji-sal",
-			"callToActionMode": "link",
+			"imageActionUrl": "/",
+			"headline": "[Aji-sal](/)",
+			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -70,10 +77,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-receita-de-casa.png",
+			"imageActionUrl": "/",
 			"headline": "Receita de Casa",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -84,10 +93,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-sabor-ami.png",
-			"headline": "Sabor a mi",
+			"imageActionUrl": "/",
+			"headline": "[Sabor a mi](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -98,10 +109,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-vono.png",
-			"headline": "Vono",
+			"imageActionUrl": "/",
+			"headline": "[Vono](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -112,10 +125,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-terrano.png",
-			"headline": "Terrano",
+			"imageActionUrl": "/",
+			"headline": "[Terrano](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -126,10 +141,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-sazon.png",
-			"headline": "Sazón",
+			"imageActionUrl": "/",
+			"headline": "[Sazón](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -140,10 +157,12 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-satis.png",
-			"headline": "Satis!",
+			"imageActionUrl": "/",
+			"headline": "[Satis!](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	},
 
@@ -154,10 +173,76 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/marca-hondashi.png",
-			"headline": "Hondashi",
+			"imageActionUrl": "/",
+			"headline": "[Hondashi](/)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
-			"textAlignment": "left"
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-9": {
+		"title": "DEAL 9",
+		"props": {
+			"id": "home-brands-9 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-hondashi.png",
+			"imageActionUrl": "/",
+			"headline": "[Hondashi](/)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-10": {
+		"title": "DEAL 10",
+		"props": {
+			"id": "home-brands-10 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-hondashi.png",
+			"imageActionUrl": "/",
+			"headline": "[Hondashi](/)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-11": {
+		"title": "DEAL 11",
+		"props": {
+			"id": "home-brands-11 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-hondashi.png",
+			"imageActionUrl": "/",
+			"headline": "[Hondashi](/)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-12": {
+		"title": "DEAL 12",
+		"props": {
+			"id": "home-brands-12 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-hondashi.png",
+			"imageActionUrl": "/",
+			"headline": "[Hondashi](/)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	}
 }

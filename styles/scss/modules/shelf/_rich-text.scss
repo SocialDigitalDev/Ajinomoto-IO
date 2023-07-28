@@ -1,0 +1,14 @@
+.container--shelf-titles {
+    .wrapper--shelf-titles {
+        .heading--shelf-titles,.paragraph--shelf-titles {
+            color: $primary;
+            text-align: center;
+            font-family: $OpenSans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: $bold;
+            line-height: normal;
+            margin: 0 0 20px;
+        }
+    }
+}
