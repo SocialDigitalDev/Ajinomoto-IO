@@ -1,49 +1,37 @@
 {
 	//HOME - PRATELEIRA 1
 	"flex-layout.row#home-colecao": {
-		"title": "HOME VITRINE 1",
-		"children": ["flex-layout.col#home-colecao"],
+		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
 		"props": {
-			"blockClass": "home-prateleira"
+			"blockClass": "home-colecao"
 		}
 	},
 
-	"flex-layout.col#home-colecao": {
-		"children": [
-			"info-card#home-colecao",
-			"list-context.product-list#home-colecao"
-		],
+	"info-card#home-colecao": {
+		"title": "HOME COLEÇÃO",
 		"props": {
-			"blockClass": "home-prateleira"
+			"id": "home-colecao",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/svg/panda/ico_panda-colecao-home.svg",
+			"headline": "Coleção de Sabores",
+			"subhead": "O Ajipanda fez uma seleção dos melhores kits para você!",
+			"callToActionMode": "button",
+			"callToActionText": "VER TODOS",
+			"callToActionUrl": "/",
+			"blockClass": "home-colecao",
+			"textAlignment": "left"
 		}
 	},
-	
-    "info-card#home-colecao": {
-        "title": "DEAL 1",
-        "props": {
-            "id": "home-colecao",
-            "isFullModeStyle": false,
-            "textPosition": "right",
-            "imageUrl": "assets/svg/ico_truck-deals.svg",
-            "headline": "Coleção de Sabores",
-            "subhead": "O Ajipanda fez uma seleção dos melhores kits para você!",
-            "callToActionMode": "button",
-            "callToActionText": "",
-            "callToActionUrl": "/",
-            "blockClass": "home-colecao",
-            "textAlignment": "left"
-        }
-    },
 
-	// LIST SLIDER
 	"list-context.product-list#home-colecao": {
-		"title": "PRATELEIRA",
+		"title": "COLECAO DE SABORES",
 		"blocks": ["product-summary.shelf"],
-		"children": ["slider-layout#shelf"],
+		"children": ["slider-layout#shelf-collection"],
 		"props": {
-			"maxItems": 12,
+			"maxItems": 4,
 			"skusFilter": "ALL",
-            "orderBy": "OrderByReleaseDateDESC"
+			"orderBy": "OrderByTopSaleDESC"
 		}
-	}  
+	}
 }

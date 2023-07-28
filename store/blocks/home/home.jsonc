@@ -8,7 +8,9 @@
 			"flex-layout.row#home-core-banner",
 			"flex-layout.row#home-prateleira-2",
 			"flex-layout.row#home-colecao",
-			"flex-layout.row#home-prateleira-3"
+			"flex-layout.row#home-final-banner",
+			"flex-layout.row#home-prateleira-3",
+			"flex-layout.row#home-sobre"
 		]
 	}	
 }

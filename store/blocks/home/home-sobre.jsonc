@@ -1,0 +1,33 @@
+{
+	"flex-layout.row#home-sobre": {
+		"title": "HOME SOBRE NÓS",
+		"children": ["flex-layout.col#home-sobre"],
+		"props": {
+			"blockClass": "home-prateleira"
+		}
+	},
+
+	"flex-layout.col#home-sobre": {
+		"children": ["info-card#home-sobre"],
+		"props": {
+			"blockClass": "home-prateleira"
+		}
+	},
+
+	"info-card#home-sobre": {
+		"title": "HOME SOBRE NÓS",
+		"props": {
+			"id": "home-sobre",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/home-sobre.png",
+			"headline": "A história da Ajinomoto",
+			"subhead": "A Ajinomoto está no Brasil desde 1956 empenhada em oferecer os melhores produtos para seus consumidores. Saiba mais sobre a nossa história e como estamos mudando o mundo!",
+			"callToActionMode": "button",
+			"callToActionText": "Leia a história",
+			"callToActionUrl": "/",
+			"blockClass": "home-sobre",
+			"textAlignment": "left"
+		}
+	}
+}

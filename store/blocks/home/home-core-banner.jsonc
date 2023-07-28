@@ -9,7 +9,8 @@
 			"blockClass": "core-banner",
 			"preventHorizontalStretch": true,
 			"preventVerticalStretch": true,
-			"experimentalHideEmptyCols": true
+			"experimentalHideEmptyCols": true,
+			"horizontalAlign": "center"
 		}
 	},
 
@@ -42,7 +43,7 @@
 		"children": ["slider-layout#core-banner"],
 		"props": {
 			"preload": true,
-			"height": 300,
+			"height": 280,
 			"images": [
 				{
 					"loading": "lazy",
@@ -67,7 +68,7 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-miolo-banner-desktop.png"
+					"image": "assets/img/home-miolo-banner-phone.png"
 				}
 			]
 		}
