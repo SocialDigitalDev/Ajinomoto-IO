@@ -3,7 +3,8 @@
         "props": {
           "itemsPerPage": {
             "desktop": 6,
-            "tablet": 4.5,
+            "(min-width: 993px) and (max-width:1024px)": 5,
+            "tablet": 4,
             "phone": 2
           },
           "infinite": true,
@@ -19,14 +20,13 @@
       "props": {
         "itemsPerPage": {
           "desktop": 4,
-          "tablet": 2,
+          "tablet": 3,
           "phone": 2
         },
         "infinite": true,
-        "showNavigationArrows": "always",
+        "showNavigationArrows": "never",
         "showPaginationDots": "always",
-        "blockClass": "shelf",
-        "navigationStep": "page"
+        "blockClass": "shelf"
       }
   }
 }

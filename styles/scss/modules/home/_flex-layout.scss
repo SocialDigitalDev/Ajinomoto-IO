@@ -1,5 +1,8 @@
 .flexRow--main-banner {
     margin-bottom: 36px;
+    :global(.vtex-store-components-3-x-container) { 
+        padding: 0;
+    }
 }
 
 .flexRow--home-section {
@@ -9,7 +12,6 @@
     }
 }
 
-
 .flexRow--home-deals {
     :global(.vtex-store-components-3-x-container) {
         padding: 0;
@@ -17,6 +19,16 @@
         background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
         padding: 25px 0;
+        @include media ("<=tablet") {
+            padding: 13px 0;
+        }
+        @media (min-width: 992px) and (max-width: 1024px) {
+            max-width: 854px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            max-width: 750px;
+        }
+
     }
 
     .flexRowContent--home-deals {
@@ -43,6 +55,23 @@
 
 .flexRow--home-colecao {
     background: $orange-2 ;
-    padding: 38px 0;
     align-items: center;
+    display: flex;
+    padding: 38px 14px;
+    @include media("<=phone") {
+        padding: 18px 20px;
+        display: block;
+    }
+    @media (max-width: 320px) {
+        padding: 30px 8px;
+    }
+    
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+}
+
+.flexRowContent--home-sobre {
+    max-width: 900px;
+    margin: 0 auto;
 }
