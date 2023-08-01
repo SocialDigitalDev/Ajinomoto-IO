@@ -19,5 +19,9 @@
 	"custom-login": {
 		"component": "CustomLogin",
 		"composition": "children"
+	},
+
+	"custom-newsletter": {
+		"component": "NewsletterHome"		
 	}
 }

@@ -1,7 +1,10 @@
 .infoCardContainer {
 	&--home-deals {
-		padding: 0 20px 0 20px;
+		padding: 0 20px;
 		border-right: 1px solid $gray-14;
+		@include media("<=tablet") {
+			padding: 0 15px;
+        }
 	}
 
 	&--home-brands {
@@ -11,14 +14,33 @@
 	}
 
 	&--home-colecao {
-		background: $orange-2 
+		background: $orange-2;
+		@include media(">phone","<=tablet") {
+			flex-direction: column ;
+		}
+		@include media("<=phone") {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			margin-bottom: 20px;
+			justify-content: space-between;
+			padding: 0 8px;
+		}
 	}
+	
+	&--home-sobre {
+		align-items: flex-start;
+	}
+
 }
 
 .infoCardTextContainer {
 	&--home-deals {
 		padding: 0;
 		width: auto;
+		@include media(">phone","<=tablet") {
+			width: 113px;
+		}
 
 		.infoCardHeadline--home-deals {
 			color: $primary;
@@ -29,6 +51,9 @@
 			line-height: normal;
 			padding: 0;
 			margin: 0;
+			@include media("<=tablet") {
+				font-size: 13px;
+			}
 		}
 
 		.infoCardSubhead--home-deals {
@@ -40,6 +65,9 @@
 			line-height: normal;
 			padding: 0;
 			margin: 0;
+			@include media("<=tablet") {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -70,6 +98,11 @@
 	&--home-colecao {
 		padding: 0;
 		min-width: 204px;
+		@include media("<=tablet") {
+			max-width: 204px;
+			margin-right: 4px;
+			align-items: center;
+		}		
 
 		.infoCardHeadline--home-colecao {
 			color: $gray-2;
@@ -112,6 +145,51 @@
 			}
 		}
 	}
+
+	&--home-sobre {
+		align-items: flex-start;
+		@include media("<=phone") {
+			align-items: center;
+		}
+		.paragraph--home-sobre {		
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0;			
+			@include media("<=phone") {
+				text-align: center;
+			}
+			.strong--home-sobre {
+				color: $primary;
+				font-size: 20px;
+				font-weight: $bold;
+				text-transform: uppercase;
+			}
+		}
+
+		.headingLevel2--home-sobre {
+			color: $gray-2;
+			leading-trim: both;
+			text-edge: cap;
+			font-family: $OpenSans;
+			font-size: 50px;
+			font-style: normal;
+			font-weight: $bold;
+			line-height: normal;
+			margin: 20px 0 60px;
+			@include media(">phone","<=tablet") {
+				margin: 20px 0 30px;
+			}
+			@include media("<=phone") {
+				font-size: 30px;
+				margin: 20px 0;
+				text-align: center;
+			}
+		}
+	}
 }
 
 .infoCardImageContainer {
@@ -137,25 +215,54 @@
 		text-align: center;
 		min-width: 108px;
 		margin-right: 20px;
+		@include media("<desktop") {
+			margin-right: 0;
+			width: 85px;
+			min-width: 79px;
+			margin-right: 0;
+		}
 	}
 }
 
-.infoCardCallActionContainer--home-colecao{
-	margin: 10px 0;
-	:global(.vtex-button) {
-		background: transparent;
-		border-radius: 20px;
-		border: 1px solid $black;
-		width: 173px;
-		height: 40px;
+.infoCardCallActionContainer {
+	&--home-colecao{
+		margin: 10px 0;
+		:global(.vtex-button) {
+			background: transparent;
+			border-radius: 20px;
+			border: 1px solid $black;
+			width: 173px;
+			height: 40px;
 
-		:global(.vtex-button__label) {
-			color: $black;
-			font-family: $OpenSans;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: $extra-bold;
-			line-height: normal;
+			:global(.vtex-button__label) {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: $extra-bold;
+				line-height: normal;
+			}
+		}
+	}
+
+	&--home-sobre {
+		:global(.vtex-button) {
+			outline: 0;
+			border: none;
+			border-radius: 10px;
+			background: #A53127;
+			width: 200px;
+			height: 40px;
+			padding: 0;
+	
+			:global(.vtex-button__label) {
+				font-family: $Montserrat;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: $medium;
+				line-height: normal;
+				text-transform: none;
+			}
 		}
 	}
 }

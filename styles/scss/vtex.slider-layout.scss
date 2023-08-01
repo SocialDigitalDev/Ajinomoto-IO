@@ -21,11 +21,15 @@
 .sliderArrows  {
     margin: 0;
     &.sliderLeftArrow  {
-        left: -40px;
+        @include media(">=desktop") {
+            left: -40px;
+        }
     }
 
     &.sliderRightArrow  {
-        right: -40px;
+        @include media(">=desktop") {
+            right: -40px;
+        }
     }
 
     .caretIcon {

@@ -29,13 +29,14 @@
 		"props": {
 			"itemsPerPage": {
 				"desktop": 8,
-				"tablet": 7.5,
-				"phone": 3.5
+				"tablet": 5.5,
+				"phone": 2.5
 			},
-			"infinite": true,
-			"showNavigationArrows": "always",
+			"infinite": false,
+			"showNavigationArrows": "desktopOnly",
 			"showPaginationDots": "never",
 			"blockClass": "home-brands",
+			"navigationStep": "page",
 			"arrowSize": 36
 		},
 		"children": [

@@ -1,0 +1,36 @@
+// BOTAO DE COMPRA
+.flexRow--buy-button-shelf {
+    position: relative;
+    
+	:global(.vtex-button) {
+        border: none;
+        height: 40px;
+
+        :global(.vtex-button__label) { 
+            padding: 0 !important;
+        }
+
+        &:disabled {
+            outline: 0;
+			background: $white;
+            cursor: pointer;
+            border-radius: 0 0 10px 10px;
+
+			:global(.vtex-button__label) {
+				:global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+					color: $gray-2;
+					text-align: center;
+					font-family: $OpenSans;
+					font-size: 13px;
+					font-style: normal;
+					font-weight: $semi-bold;
+					line-height: normal;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+
+	&-unavailable {
+	}
+}
