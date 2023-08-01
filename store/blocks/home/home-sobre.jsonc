@@ -21,6 +21,7 @@
 			"isFullModeStyle": false,
 			"textPosition": "right",
 			"imageUrl": "assets/img/home-sobre.png",
+			"mobileImageUrl": "assets/img/home-sobre-tablet.png",
 			"headline": "**Sobre nós** \n ## A história da Ajinomoto",
 			"subhead": "A Ajinomoto está no Brasil desde 1956 empenhada em oferecer os melhores produtos para seus consumidores. Saiba mais sobre a nossa história e como estamos mudando o mundo!",
 			"callToActionMode": "button",
