@@ -28,14 +28,23 @@
         @media (min-width: 768px) and (max-width: 991px) {
             max-width: 750px;
         }
+        @include media ("<=phone") {
+            max-width: 96%;
+            height: 62px;
+        }
 
     }
 
     .flexRowContent--home-deals {
         justify-content: space-between;
-        :last-child {
-            :global(.vtex-store-components-3-x-infoCardContainer--home-deals) {
-                border: none;
+        @include media("<=phone") {
+            justify-content: center;
+        }
+        @include media(">phone"){
+            :last-child {
+                :global(.vtex-store-components-3-x-infoCardContainer--home-deals) {
+                    border: none;
+                }
             }
         }
     }
