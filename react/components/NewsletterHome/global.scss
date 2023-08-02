@@ -23,6 +23,7 @@
 			}
 			@include media("<=phone") {
 				margin-bottom: 16px;
+				margin-right: 6px;
 			}
 
 			&__titulo {
@@ -46,14 +47,24 @@
 		}
 		.icon {
 			flex-basis: 125px;
+			@include media("<=phone") {
+				flex-basis: 82px;
+			}
 			i {
 				background-image: url(../../../assets/svg/panda/ico_panda-newsletter.svg);
 				background-repeat: no-repeat;
-				background-size: auto;
-				width: 100%;
-				max-width: 125px;
+				background-size: 100%;
+				width: 125px;
 				height: 181px;
 				display: block;
+				@include media(">phone", "<desktop") {
+					width: 102px;
+					height: 146px;
+				}
+				@include media("<=phone") {
+					max-width: 82px;
+					height: 118px;
+				}
 			}
 		}
 	}

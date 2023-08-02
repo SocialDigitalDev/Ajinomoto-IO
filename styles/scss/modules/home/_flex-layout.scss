@@ -22,13 +22,6 @@
             max-width: 1366px;
         }
 	}
-
-    .flexRowContent--home-colecao {
-        @include media("<=phone") {
-            display: flex;
-            flex-direction: column;
-        }
-    }
 }
 
 .flexRow--home-deals {
