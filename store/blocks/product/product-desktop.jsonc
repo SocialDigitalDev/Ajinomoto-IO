@@ -8,44 +8,35 @@
 
     "responsive-layout.desktop#content-product":  {
         "children": [
-            "flex-layout.row#breadcrumb-product",
-			"flex-layout.row#content-product",
-            "flex-layout.row#product-shelf"
+            "flex-layout.row#img-product-info",
+            "flex-layout.row#buy-together-desktop",
+            "flex-layout.row#qvvt"
         ]
     },
-	
-	"flex-layout.row#content-product": {
-		"children": [
-			"flex-layout.col#product-left",
-            "flex-layout.col#product-right"
-		],
-		"props": {
-			"blockClass": "product--content"
-		}
-	},
-
-    "flex-layout.col#product-left": {
-        "children": [
-            "flex-layout.row#img-product",
-            "flex-layout.col#description-product"
-        ],
+    
+    "flex-layout.row#buy-together-desktop": {
+        "title": "Compre Junto",
         "props": {
-            "blockClass": ["column", "column-left"],
-            "preventVerticalStretch": true,
-            "width": "65%"
-        }
+            "blockClass": [
+                "ajinomoto--buy-together-desktop",
+                "buy-together"
+            ]
+        },
+        "children": [
+
+        ]
     },
 
-    "flex-layout.col#product-right": {
-        "children": [
-            "flex-layout.row#product-name",
-            "flex-layout.row#product-fluxo-badges",
-            "flex-layout.row#prices",
-            "condition-layout.product#product-availability"
-        ],
+    "flex-layout.row#qvvt": {
+        "title": "Vitrine: Você também pode gostar disso",
         "props": {
-            "blockClass": ["column", "column-right"],
-            "preventVerticalStretch": true
-        }
-    }   
+            "blockClass": [
+                "ajinomoto--qvvt-desktop",
+                "qvvt"
+            ]
+        },
+        "children": [
+
+        ]
+    }
 }

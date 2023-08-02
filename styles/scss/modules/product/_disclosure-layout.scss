@@ -1,0 +1,38 @@
+.trigger{
+
+    &--trigger-spec{
+        width: 100%;
+        border: none;
+        border-top: 1px solid $gray-13;
+        background: none;
+        margin-top: 13px;
+        padding: 13px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after{
+            content: "";
+            background: url('assets/svg/ico_arrow-down-desc.svg') no-repeat;
+            background-size: contain;
+            width: 18px;
+            height: 10px;
+            display: block;
+            transition: .3s all ease;
+        }
+        
+        &--visible{
+
+            &::after{
+                content: "";
+                background: url('assets/svg/ico_arrow-up-desc.svg') no-repeat;
+                background-size: contain;
+                width: 18px;
+                height: 10px;
+                display: block;
+                transition: .3s all ease;
+            }
+        }
+    }
+}

@@ -197,3 +197,13 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* POPPINS (TAMANHO ÚNICO) */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}

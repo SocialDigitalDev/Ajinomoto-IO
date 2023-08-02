@@ -1,0 +1,64 @@
+:global(.vtex-flex-layout-0-x-flexRow--img-product-info){
+    .container{
+        max-width: 1141px;
+        margin: auto;
+    }
+
+    .swiper{
+
+        &PaginationClickable{
+            top: 0px;
+        }
+
+        &Bullet{
+            width: 10px;
+            height: 10px;
+            border: 1px solid $gray-8;
+            background: transparent;
+            opacity: 1;
+            margin: 0 7px;
+
+            &--active{
+                background: $gray-8;
+            }
+        }
+
+        &-pagination{
+            position: relative;
+            padding: 13px 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .product{
+
+        &Description{
+
+            &Container{
+                padding: 13px;
+            }
+
+            &Text{
+                font-size: 15px;
+                font-weight: $regular;
+                line-height: normal;
+                color: $gray-8;
+            }
+        }
+
+        &Name{
+
+            &Container{
+                margin-bottom: 30px;
+                
+                .productBrand{
+                    display: block;
+                    max-width: 273px;
+                    font-size: 25px;
+                    color: $gray-2;
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}
