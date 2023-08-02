@@ -1,0 +1,17 @@
+.sliderArrows--main-banner  {
+    &.sliderLeftArrow--main-banner  {
+        @include media(">=desktop") {
+            left: 15%  !important;
+        }
+    }
+
+    &.sliderRightArrow--main-banner {
+        @include media(">=desktop") {
+            right: 15%  !important;
+        }
+    }
+
+    .caretIcon--main-banner {
+        color: $white !important;
+    }
+}

@@ -1,10 +1,20 @@
 {
 	//HOME - PRATELEIRA 1
 	"flex-layout.row#home-colecao": {
-		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
+		"children": [
+			"flex-layout.row#info-card",
+			"flex-layout.row#list-collection"
+		],
 		"props": {
 			"blockClass": ["home-colecao", "home-section"],
 			"preventHorizontalStretch": true
+		}
+	},
+
+	"flex-layout.row#info-card": {
+		"children": ["info-card#home-colecao"],
+		"props": {
+			"blockClass": "info-card"
 		}
 	},
 
@@ -23,6 +33,13 @@
 			"blockClass": "home-colecao",
 			"textAlignment": "left",
 			"textMode": "rich-text"
+		}
+	},
+
+	"flex-layout.row#list-collection": {
+		"children": ["list-context.product-list#home-colecao"],
+		"props": {
+			"blockClass": "list-collection"
 		}
 	},
 

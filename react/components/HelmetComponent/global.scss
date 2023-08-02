@@ -1,5 +1,11 @@
 @import "../../../styles/scss/variables/_all.scss";
 
+//BODY CONTAINER
+body {
+	max-width: 1920px;
+    margin: 0 auto;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

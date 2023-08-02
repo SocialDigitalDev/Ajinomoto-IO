@@ -6,6 +6,9 @@
 	margin: 0 auto;
 	padding: 40px 14px 26px;
 	min-height: 259px;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
 
 	.texto-container {
 		display: flex;

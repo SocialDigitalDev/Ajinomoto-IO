@@ -2,6 +2,9 @@
 	&--home-deals {
 		padding: 0 20px;
 		border-right: 1px solid $gray-14;
+		@include media(">desktop") {
+			padding: 0 40px;
+		}
 		@include media("<=tablet") {
 			padding: 0 15px;
         }

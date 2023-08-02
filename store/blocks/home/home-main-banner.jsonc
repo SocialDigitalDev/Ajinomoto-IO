@@ -9,7 +9,8 @@
 			"blockClass": "main-banner",
             "preventHorizontalStretch": true,
 			"preventVerticalStretch": true,
-			"experimentalHideEmptyCols": true
+			"experimentalHideEmptyCols": true,
+			"fullWidth": true
 		}
 	},
 
@@ -25,7 +26,7 @@
 		"children": ["slider-layout#main-banner"],
 		"props": {
 			"preload": true,
-			"height": 215,
+			"height": "max-content",
 			"images": [
 				{
 					"loading": "lazy",
@@ -49,7 +50,7 @@
 		"children": ["slider-layout#main-banner"],
 		"props": {
 			"preload": true,
-			"height": 300,
+			"height": "max-content",
 			"images": [
 				{
 					"loading": "lazy",
@@ -73,7 +74,7 @@
 		"children": ["slider-layout#main-banner"],
 		"props": {
 			"preload": true,
-			"height": 400,
+			"height": "max-content",
 			"images": [
 				{
 					"loading": "lazy",
@@ -99,7 +100,8 @@
 			},
 			"showNavigationArrows": "desktopOnly",
 			"infinite": true,
-			"fullWidth": true			
+			"fullWidth": true,
+			"blockClass": "main-banner"		
 		}
 	}
 }
