@@ -20,6 +20,10 @@
         top: 6px;
         right: 6px;
         z-index: 1;
+        @include media ("<=phone") {
+            top: 3px;
+            right: 3px;
+        }
     
         :global(.vtex-button) {
             background: none;
