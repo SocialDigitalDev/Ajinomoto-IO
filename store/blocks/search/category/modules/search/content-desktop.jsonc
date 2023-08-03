@@ -1,0 +1,129 @@
+{
+	"flex-layout.row#category-desktop": {
+		"children": ["flex-layout.col#category-desktop"],
+		"props": {
+			"blockClass": "category--content_desktop"
+		}
+	},
+
+	"flex-layout.col#category-desktop": {
+		"children": [
+			"flex-layout.row#category-banner",
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#category-text",
+			"flex-layout.row#category-main"
+		],
+		"props": {
+			"blockClass": "category--content_desktop"
+		}
+	},
+
+	"flex-layout.row#category-main": {
+		"children": [
+			"flex-layout.row#category--filter",
+			"flex-layout.row#category--shelf"
+		],
+		"props": {
+			"blockClass": "category--main"
+		}
+	},
+
+	"flex-layout.row#category--filter": {
+		"children": ["flex-layout.col#category--filter"],
+		"props": {
+			"blockClass": "category--filter",
+			"width": "22%"
+		}
+	},
+
+	"flex-layout.col#category--filter": {
+		"children": [
+			"total-products.v2", 
+			"order-by.v2", 
+			"filter-navigator.v3"
+		],
+		"props": {
+			"blockClass": "category--filter"
+		}
+	},
+
+	"order-by.v2": {
+		"props": {
+			"showOrderTitle": false
+		}
+	},
+
+	"filter-navigator.v3": {
+		"blocks": ["sidebar-close-button"],
+		"props": {
+			"openFiltersMode": "many",
+			"initiallyCollapsed": false,
+			"fullWidthOnMobile": true,
+			"navigationTypeOnMobile": "collapsible",
+			"facetOrdering": [
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "sabor"
+				},
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "marca"
+				},
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "brand"
+				},
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "category-1"
+				},
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "category-2"
+				},
+				{
+					"orderBy": "name",
+					"order": "ASC",
+					"key": "category-3"
+				}
+			]
+		}
+	},
+
+	"flex-layout.row#category--shelf": {
+		"children": ["flex-layout.col#category--shelf"],
+		"props": {
+			"blockClass": "category--shelf"
+		}
+	},
+
+	"flex-layout.col#category--shelf": {
+		"children": ["flex-layout.row#category-result"],
+		"props": {
+			"blockClass": "category--shelf"
+		}
+	},
+
+	"flex-layout.row#category-result": {
+		"children": ["flex-layout.col#category-result"],
+		"props": {
+			"blockClass": "category--result"
+		}
+	},
+
+	"flex-layout.col#category-result": {
+		"children": [
+			"flex-layout.row#fetchprevious",
+			"flex-layout.row#products",
+			"flex-layout.row#fetchmore"
+		],
+		"props": {
+			"blockClass": "category--result"
+		}
+	}
+}

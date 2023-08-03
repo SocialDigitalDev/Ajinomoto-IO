@@ -1,0 +1,133 @@
+{
+	"store.custom#collection": {
+		"blocks": [
+			"search-result-layout.customQuery"
+		]
+	},
+	
+	"search-result-layout.customQuery": {
+		"title": "Configurações da Página / Coleção",
+		"props": {
+			"querySchema": {
+				"orderByField": "OrderByReleaseDateDESC",
+				"hideUnavailableItems": true,
+				"maxItemsPerPage": 9,
+				"queryField": "",
+				"mapField": "productClusterIds",
+				"skusFilter": "ALL_AVAILABLE",
+				"__unstableProductOriginVtex": true
+			}
+		},
+		"blocks": [
+			"search-result-layout.desktop#collection",
+			"search-result-layout.mobile#collection",
+			"search-not-found-layout"
+		]
+	},
+	
+	"search-result-layout.desktop#collection": {
+		"title": "Configurações Desktop",
+		"children": [
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#category-desktop--collection"
+		],
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": false,
+			"defaultGalleryLayout": "grid"
+		}
+	},
+	
+	"search-result-layout.mobile#collection": {
+		"title": "Configurações Mobile",
+		"children": [
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#category-mobile--collection"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"defaultGalleryLayout": "grid"
+		}
+	},
+	
+	"flex-layout.row#category-desktop--collection": {
+		"children": [
+			"flex-layout.row#category--filter",
+			"flex-layout.row#category--shelf--collection"
+		],
+		"props": {
+			"blockClass": "category--content_desktop"
+		}
+	},
+
+	"flex-layout.row#category--shelf--collection": {
+		"children": [
+			"flex-layout.col#category--shelf--collection"
+		],
+		"props": {
+			"blockClass": "category--shelf"
+		}
+	},
+
+	"flex-layout.col#category--shelf--collection": {
+		"children": [
+			"flex-layout.row#category-banner--collection",
+			"flex-layout.row#category-result"
+		],
+		"props": {
+			"blockClass": "category--shelf"
+		}
+	},
+
+	"flex-layout.row#category-banner--collection": {
+		"title": "Search Banner [DESKTOP]",
+		"children": [
+			"image#bannerCollection"
+		],
+		"props": {
+			"blockClass": "category--banner"
+		}
+	},
+
+	"flex-layout.row#category-mobile--collection": {
+		"children": [
+			"flex-layout.col#category-mobile--collection"
+		],
+		"props": {
+			"blockClass": "category--content_mobile"
+		}
+	},
+
+	"flex-layout.col#category-mobile--collection": {
+		"children": [
+			"flex-layout.row#category--banner--collection_mob",
+			"flex-layout.row#category--filter-mob",
+			"flex-layout.row#category--orderby-mob",
+			"flex-layout.row#category--shelf-mob"
+		],
+		"props": {
+			"blockClass": "category--content_mobile"
+		}
+	},
+
+	"flex-layout.row#category--banner--collection_mob": {
+		"title": "Search Banner [MOBILE]",
+		"children": [
+			"image#bannerCollection"
+		],
+		"props": {
+			"blockClass": "category--banner_mob"
+		}
+	},
+	
+	"image#bannerCollection": {
+		"title": " Banner de Coleção",
+		"props": {
+			"blockClass": "banner--collection"
+		}
+	}
+}

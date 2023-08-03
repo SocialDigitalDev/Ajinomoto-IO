@@ -19,13 +19,13 @@
 	"vtex.product-highlights@2.x:product-highlights#shelf-promotion": {
 		"children": ["product-highlight-text#shelf-promotion"],
 		"props": {
+			"type": "promotion",
 			"blockClass": ["shelf", "shelf-promotion"]
 		}
 	},
 	"product-highlight-text#shelf-promotion": {
 		"props": {
 			"message": "{highlightName}",
-			"type": "promotion",
 			"blockClass": "shelf-promotion"
 		}
 	},
@@ -33,13 +33,13 @@
 	"vtex.product-highlights@2.x:product-highlights#shelf-collection": {
 		"children": ["product-highlight-text#shelf-collection"],
 		"props": {
+			"type": "collection",
 			"blockClass": ["shelf", "shelf-collection"]
 		}
 	},
 	"product-highlight-text#shelf-collection": {
 		"props": {
 			"message": "{highlightName}",
-			"type": "collection",
 			"blockClass": "shelf-collection"
 		}
 	}
