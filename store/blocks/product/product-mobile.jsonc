@@ -1,13 +1,7 @@
 {
     "responsive-layout.mobile#content-product": {
         "children": [
-            "flex-layout.row#img-product",
-            "flex-layout.row#product-name",
-            "flex-layout.row#product-fluxo-badges",
-            "flex-layout.row#prices",
-            "condition-layout.product#product-availability",
-            "flex-layout.row#description-produc-mobile",
-            "flex-layout.row#product-shelf"
+
         ]
     }
 }

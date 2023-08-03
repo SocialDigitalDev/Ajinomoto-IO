@@ -23,5 +23,13 @@
 
 	"custom-newsletter": {
 		"component": "NewsletterHome"		
+	},
+
+	"custom-pdp-characteristics": {
+		"component": "CustomPdpSpecs"
+	},
+
+	"buy-together": {
+		"component": "BuyTogether"
 	}
 }

@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#img-product-info": {
+        "title": "Imagem e Informações do Produto",
+        "props": {
+            "blockClass": [
+                "ajinomoto--img-product-info-desktop",
+                "img-product-info"
+            ]
+        },
+        "children": [
+            "flex-layout.col#image-description-info",
+            "flex-layout.col#product-info-components"
+        ]
+    },
+    
+    "flex-layout.col#image-description-info": {
+        "title": "Coluna: Imagem, Descrição e Informações Nutricionais",
+        "props": {
+            "blockClass": "image-description-info"
+        },
+        "children": [
+            "stack-layout#img-product",
+            "flex-layout.row#disclosure-specifications"
+        ]
+    },
+    
+    "flex-layout.col#product-info-components": {
+        "title": "Coluna: Nome, Preço e Botão comprar",
+        "props": {
+            "blockClass": "product-info-components",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#flag-savings-wishlist",
+            "flex-layout.row#product-name--container",
+            "flex-layout.row#product-price--container",
+            "flex-layout.row#btn-buy",
+            "custom-pdp-characteristics"
+        ]
+    }
+}

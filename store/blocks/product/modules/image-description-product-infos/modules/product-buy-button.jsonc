@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#btn-buy": {
+        "title": "Botão Comprar do Produto",
+        "children": [
+            "product-quantity",
+			"add-to-cart-button#pdpBuy"
+        ],
+        "props": {
+           "blockClass": "product-btn-buy",
+           "colSizing": "auto",
+           "colJustify": "left"
+        }
+    },
+
+    "product-quantity": {
+		"title": "Quantidade",
+		"props": {
+			"selectorType": "stepper"
+		}
+	},
+
+    "add-to-cart-button#pdpBuy": {
+        "title": "Botão Comprar",
+		"props": {
+			"text": "Adicionar",
+			"unavailableText": "Avise-me",
+            "onClickBehavior": "add-to-cart",
+            "customPixelEventId": "add-to-cart-button",
+            "addToCartFeedback": "customEvent"
+		}
+    }
+}

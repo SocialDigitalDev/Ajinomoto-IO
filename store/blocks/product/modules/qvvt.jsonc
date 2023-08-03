@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#qvvt": {
+        "title": "Vitrine: Você também pode gostar disso",
+        "props": {
+            "blockClass": [
+                "ajinomoto--qvvt-desktop",
+                "qvvt"
+            ]
+        },
+        "children": [
+            "shelf.relatedProducts#pdp-qvc"
+        ]
+    },
+	
+	"shelf.relatedProducts#pdp-qvc": {
+		"title": "Prateleira 'Você também pode gostar'",
+		"blocks": [
+			"product-summary.shelf"
+		],
+		"props": {
+			"recommendation": "buy"/*viewandBought*/,
+			"productList": {
+				"titleText": "Você também pode gostar",
+				"itemsPerPage": 5,
+				"minItemsPerPage": 2,
+				"arrows": true,
+				"scroll": "BY_PAGE"
+			},
+			"blockClass": "shelf-pdp-qvc"
+		}
+	}
+}

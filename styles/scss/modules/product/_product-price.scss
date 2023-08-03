@@ -1,0 +1,60 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--img-product-info) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--flag-savings-wishlist-row) {
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            display: flex;
+            align-items: center;
+
+            .savings {
+                margin-right: 100px;
+
+                &--savings-component {
+                    display: flex;
+                    align-items: center;
+                    width: 97px;
+                    height: 27px;
+                    justify-content: center;
+                    background: $primary;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: $bold;
+                    border-radius: 20px;
+
+                    .savingsPercentage {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .currency{
+
+        &Container{
+    
+            &--product-price{
+    
+                &--list-price{
+                    font-size: 14px;
+                    font-weight: $semi-bold;
+                    color: $gray-2;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+                
+                &--selling-price{
+                    color: $gray-2;
+                    font-size: 20px;
+                    font-family: $Poppins;
+                    font-weight: $semi-bold;
+
+                    .currencyCode,
+                    .currencyLiteral{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
