@@ -35,7 +35,8 @@
             "flex-layout.row#flag-savings-wishlist",
             "flex-layout.row#product-name--container",
             "flex-layout.row#product-price--container",
-            "flex-layout.row#btn-buy"
+            "flex-layout.row#btn-buy",
+            "custom-pdp-characteristics"
         ]
     }
 }

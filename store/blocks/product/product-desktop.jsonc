@@ -25,18 +25,5 @@
         "children": [
 
         ]
-    },
-
-    "flex-layout.row#qvvt": {
-        "title": "Vitrine: Você também pode gostar disso",
-        "props": {
-            "blockClass": [
-                "ajinomoto--qvvt-desktop",
-                "qvvt"
-            ]
-        },
-        "children": [
-
-        ]
     }
 }
