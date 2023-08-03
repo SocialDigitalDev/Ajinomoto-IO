@@ -6,6 +6,8 @@
 			
 			&--topbar {
 				background: $primary;
+				max-width: 1920px;
+				margin: 0 auto;
 				
 				:global(.vtex-store-components-3-x-container) {
 					display: flex;
@@ -20,6 +22,8 @@
 			
 			&--content {
 				background: $white;
+				max-width: 1920px;
+				margin: 0 auto;
 				
 				:global(.vtex-store-components-3-x-container) {
 					width: 100%;
@@ -27,6 +31,9 @@
 					padding: 16px 0 31px;
 					@include media("<desktop") {
 						padding: 7px 15px;
+					}
+					@include media(">desktop") {
+						max-width: 1366px;
 					}
 				}
 			}
@@ -59,6 +66,9 @@
 						justify-content: space-between;
 						width: 100%;
 						margin-bottom: 15px;
+						@include media(">desktop") {
+							justify-content: space-around;
+						}
 						
 						&-mobile {
 							justify-content: space-between;
@@ -76,6 +86,9 @@
 					align-items: center;
 					justify-content: space-between;
 					gap: 0 20px;
+					@include media(">desktop") {
+						gap: 0 30px;
+					}
 					@include media("<=tablet") {
 						justify-content: space-between;
 						gap: unset;

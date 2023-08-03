@@ -37,8 +37,18 @@
                 width: 21px;
                 height: 19px;
             }
+
+            &:global(.vtex-wish-list-1-x-fill) {
+                background-image: url(assets/svg/ico_wishlist-shelf.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 21px;
+                height: 19px;
+            }
         }
     }
+
+      
 }
 
 

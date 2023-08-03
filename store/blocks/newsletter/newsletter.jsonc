@@ -2,7 +2,8 @@
 	"flex-layout.row#newsletter": {
 		"children": ["custom-newsletter"],
 		"props": {
-			"blockClass": "newsletter"
+			"blockClass": "newsletter",
+			"fullWidth": true
 		}
 	}
 }
