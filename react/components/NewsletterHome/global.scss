@@ -1,72 +1,71 @@
 @import "../../../styles/scss/variables/all";
 
-.home-newsletter {
-	background-color: linear-gradient(0deg, #ff8c80, #ff8c80), #f84548;
-	border-radius: 30px 0 30px 0;
+.custom-newsletter {
+	background: $orange-2;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 40px 14px 26px;
+	min-height: 259px;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
 
-	.texto-newsletter {
+	.texto-container {
 		display: flex;
-		flex-direction: column;
-		@include media(">phone", "<desktop") {
-			margin-right: 30px;
-		}
-		@include media("<=phone") {
-			margin-bottom: 16px;
-		}
-
-		&__titulo {
-			color: $gray-2;
-			font-family: $OpenSans;
-			font-style: normal;
-			font-weight: $extra-bold;
-			font-size: 19px;
-			line-height: 110%;
+		.texto-newsletter {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-basis: 240px;
+			margin-right: 20px;
+			@include media(">phone", "<desktop") {
+				margin-right: 30px;
+			}
 			@include media("<=phone") {
-				font-weight: 600;
-				text-align: center;
+				margin-bottom: 16px;
+				margin-right: 6px;
 			}
 
-			strong {
-				font-weight: 800;
-				font-size: 64px;
-				line-height: 64px;
+			&__titulo {
+				color: $gray-2;
+				font-family: $OpenSans;
+				font-style: normal;
+				font-weight: $extra-bold;
+				font-size: 19px;
+				line-height: 110%;
+				margin-bottom: 10px;
+			}
+
+			&__subtitulo {
+				color: $gray-2;
+				font-family: $OpenSans;
+				font-weight: $regular;
+				font-size: 12px;
+				line-height: normal;
+				text-align: left;
+			}		
+		}
+		.icon {
+			flex-basis: 125px;
+			@include media("<=phone") {
+				flex-basis: 82px;
+			}
+			i {
+				background-image: url(../../../assets/svg/panda/ico_panda-newsletter.svg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				width: 125px;
+				height: 181px;
 				display: block;
+				@include media(">phone", "<desktop") {
+					width: 102px;
+					height: 146px;
+				}
 				@include media("<=phone") {
-					font-weight: 600;
-					font-size: 24px;
-					line-height: 36px;
-					display: contents;
-				}
-				@media (max-width: 320px) {
-					font-weight: 600;
-					font-size: 20px;
-					line-height: 32px;
-					text-align: center;
+					max-width: 82px;
+					height: 118px;
 				}
 			}
-		}
-
-		&__subtitulo {
-			color: $gray-2;
-			font-family: "Raleway", sans-serif;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 19px;
-			@include media("<=phone") {
-				font-size: 14px;
-				line-height: 16px;
-				text-align: center;
-			}
-		}
-
-		&::after {
-			content: "";
-			background-image: url(../../../assets/svg/panda/ico_panda-newsletter.svg);
-			background-size: 100%;
-			background-repeat: no-repeat;
-			width: 125px;
-			height: 181px;
-			display: inline-block;
 		}
 	}
 
@@ -74,18 +73,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-height: 216px;
-		padding: 35px 50px 18px 60px;
-		@include media("<desktop") {
-			padding: 20px 10px 28px;
-		}
+		max-width: 770px;
+		margin: 0 auto;
+		
 		@include media("<=phone") {
 			flex-direction: column;
 		}
 
 		.container-form {
 			width: 100%;
-			max-width: 608px;
+			max-width: 337px;
 			@include media("<=phone") {
 				display: flex;
 				flex-direction: column;
@@ -93,6 +90,7 @@
 			}
 
 			&__input {
+				margin-bottom: 15px;
 				@include media("<=phone") {
 					order: 1;
 				}
@@ -102,10 +100,12 @@
 					align-items: center;
 					justify-content: flex-start;
 					padding: 9px 22px 8px;
-					border: none;
-					border-radius: 30px;
 					background: $white;
-					margin-bottom: 10px;
+					border: 0.5px solid $gray-2;
+					background: $white;
+					&:first-child {
+						margin-bottom: 10px;
+					}
 					@include media("<=phone") {
 						padding: 8px 12px 8px 12px;
 						margin-bottom: 8px;
@@ -131,10 +131,11 @@
 					}
 
 					input {
-						color: $gray-5;
+						color: $gray-2;
 						font-family: $OpenSans;
-						font-weight: 400;
+						font-weight: $light;
 						font-size: 14px;
+						line-height: normal;
 						border: none;
 						padding-left: 15px;
 						width: 100%;
@@ -147,29 +148,24 @@
 			}
 
 			&__checkbox {
-				margin-bottom: 12px;
+				margin-bottom: 20px;
 				@include media("<=phone") {
 					order: 3;
 				}
 
 				label {
-					color: $white;
+					color: $gray-2;
 					font-family: $OpenSans;
-					font-weight: 400;
-					font-size: 11.5px;
+					font-weight: $light;
+					font-size: 12px;
 					line-height: normal;
 					display: flex;
 					align-items: center;
 					@media (max-width: 320px) {
 						font-size: 11px;
 					}
-
-					strong {
-						font-weight: 600;
-					}
-
 					a {
-						color: $white;
+						color: $gray-2;
 						text-decoration: underline;
 					}
 				}
@@ -180,9 +176,8 @@
 					width: 100%;
 					max-width: 20px;
 					height: 20px;
-					background: transparent;
-					border-radius: 0 5px 0 5px;
-					border: 1px solid $white;
+					background-color: $white;
+					border: 1px solid $gray-2;
 					appearance: none;
 					-webkit-appearance: none;
 					outline: none;
@@ -192,7 +187,7 @@
 					}
 
 					&:checked {
-						background: url(../../../assets/svg/ico_checkbox-correct.svg)
+						background: url(../../../assets/svg/ico_checkbox.svg)
 								no-repeat center center,
 							transparent;
 						background-size: 14px;
@@ -216,23 +211,23 @@
 				button {
 					color: $white;
 					font-family: $OpenSans;
-					font-weight: $medium;
+					font-weight: $regular;
 					font-size: 16px;
 					display: block;
-					width: 200px;
+					width: 100%;
 					height: 36px;
-					background: $red-2;
-					border: none;
+					background: $gray-2;
+					border: 1px solid $gray-2;
 					border-radius: 20px;
 					text-align: center;
-					line-height: 27px;
+					line-height: normal;
 					cursor: pointer;
 					transition: 0.2s ease-in-out;
 					outline: none;
 
 					&:hover {
 						background: $white;
-						color: $red-2;
+						color: $gray-2;
 						transition: 0.2s ease-in-out;
 					}
 
@@ -246,52 +241,33 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				@include media(">phone", "<desktop") {
-					top: auto;
-					bottom: -22px;
-					left: 0;
-					right: 0;
-				}
+				right: 0;
+				background: $orange-2;
+				width: 100%;
 
-				@include media("<=phone") {
-					top: auto;
-					bottom: -83px;
-					left: 0;
-					right: 0;
-				}
-
-				@media (max-width: 320px) {
-					top: auto;
-					bottom: -94px;
-					left: 0;
-					right: 0;
+				p {
+					font-family: $OpenSans;
+					font-weight: $light;
+					font-size: 12px;
+					display: block;
+					text-align: center;
+					padding: 6px;
+					strong {
+						font-weight: $semi-bold;
+					}
 				}
 
 				&--success {
-					display: block;
-					text-align: center;
-					margin: 15px 0 0;
-					font-family: $OpenSans;
-					font-size: 11.5px;
-					color: $white;
+					color: $green-2;
+					font-size: 14px;
 				}
 
 				&--error {
-					display: block;
-					text-align: center;
-					margin: 15px 0 0;
-					font-family: $OpenSans;
-					font-size: 11.5px;
-					color: $white;
+					color: $red-3;
 				}
 
 				&--error-aceite {
-					display: block;
-					text-align: center;
-					margin: 15px 0 0;
-					font-family: $OpenSans;
-					font-size: 11.5px;
-					color: $white;
+					color: $red-3;
 				}
 			}
 		}

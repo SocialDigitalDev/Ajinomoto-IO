@@ -2,29 +2,56 @@
     "flex-layout.row#home-deals": {
         "title": "HOME DEALS",
         "children": [
-            "info-card#deals-1",
-            "info-card#deals-2",
-            "info-card#deals-3",
-            "info-card#deals-4"
+            "responsive-layout.desktop#deals",
+            "responsive-layout.tablet#deals",
+            "responsive-layout.phone#deals"            
         ],
         "props": {
             "blockClass": ["home-deals", "home-section"],
             "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": true
+            "preserveLayoutOnMobile": true,
+            "experimentalHideEmptyCols": true
         }
+    },
+
+    "responsive-layout.desktop#deals": {
+        "title": "HOME DEALS [DESKTOP]",
+        "children": [
+            "info-card#deals-1",
+            "info-card#deals-2",
+            "info-card#deals-3",
+            "info-card#deals-4"
+        ]
+    },
+
+    "responsive-layout.tablet#deals": {
+        "title": "HOME DEALS [TABLET]",
+        "children": [
+            "info-card#deals-1",
+            "info-card#deals-2",
+            "info-card#deals-3",
+            "info-card#deals-4"
+        ]
+    },
+
+    "responsive-layout.phone#deals": {
+        "title": "HOME DEALS [PHONE]",
+        "children": [
+            "slider-layout#deals"
+        ]
     },
     
     "slider-layout#deals": {
+        "title": "SLIDER DEALS",
         "props": {
-            "itemsPerPage": {
-                "desktop": 4,
-                "tablet": 4,
-                "phone": 1
-            },
-            "infinite": false,
+            "itemsPerPage": 1,
+            "infinite": true,
             "showNavigationArrows": "never",
             "showPaginationDots": "never",
-            "blockClass": "home-deals"
+            "blockClass": "home-deals",
+            "autoplay": {
+                "timeout": 3500
+            }
         },
         "children": [
             "info-card#deals-1",

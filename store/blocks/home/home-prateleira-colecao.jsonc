@@ -4,7 +4,7 @@
 		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
 		"props": {
 			"blockClass": ["home-colecao", "home-section"],
-			"preventHorizontalStretch": true
+			"preventHorizontalStretch": false
 		}
 	},
 

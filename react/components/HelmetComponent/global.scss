@@ -1,5 +1,11 @@
 @import "../../../styles/scss/variables/_all.scss";
 
+//BODY CONTAINER
+body {
+	max-width: 1920px;
+    margin: 0 auto;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -245,6 +251,28 @@ ol {
 					width: 35px;
 					height: 32px;
 				}
+			}
+		}
+	}
+}
+
+//HOME
+.vtex-flex-layout-0-x-flexRowContent--home-colecao {
+	>.vtex-flex-layout-0-x-stretchChildrenWidth  {
+		width: auto !important;
+		&:first-child {
+			max-width: 342px;
+			@include media(">phone", "<=tablet") {
+				max-width: 205px;
+			}
+		}
+		&:last-child {
+			max-width: 780px;
+			@media (min-width:820px) and (max-width: 1290px) {
+				max-width: 600px;
+			}
+			@media (min-width: 640px) and (max-width: 768px) {
+				max-width: 540px;
 			}
 		}
 	}

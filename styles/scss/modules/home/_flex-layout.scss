@@ -1,77 +1,105 @@
 .flexRow--main-banner {
-    margin-bottom: 36px;
-    :global(.vtex-store-components-3-x-container) { 
-        padding: 0;
-    }
+	margin-bottom: 36px;
+	:global(.vtex-store-components-3-x-container) {
+		padding: 0;
+	}
+	.flexRowContent--main-banner {
+		max-width: 1920px;
+		margin: 0 auto;
+		justify-content: center;
+	}
 }
 
 .flexRow--home-section {
-    margin: 0 0 50px;
-    :global(.vtex-store-components-3-x-container) {
-        max-width: 1170px;
+	max-width: 1170px;
+	margin: 0 auto 50px;
+    @include media(">desktop") {
+        max-width: 1366px;
     }
+	:global(.vtex-store-components-3-x-container) {
+		max-width: 1170px;
+        @include media(">desktop") {
+            max-width: 1366px;
+        }
+	}
 }
 
 .flexRow--home-deals {
-    :global(.vtex-store-components-3-x-container) {
-        padding: 0;
-        border-radius: 10px;
-        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-        padding: 25px 0;
-        @include media ("<=tablet") {
-            padding: 13px 0;
-        }
-        @media (min-width: 992px) and (max-width: 1024px) {
-            max-width: 854px;
-        }
-        @media (min-width: 768px) and (max-width: 991px) {
-            max-width: 750px;
-        }
+	:global(.vtex-store-components-3-x-container) {
+		padding: 0;
+		border-radius: 10px;
+		background: linear-gradient(0deg, $white 0%, $white 100%), $gray-16;
+		box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+		padding: 25px 0;
+		@include media("<=tablet") {
+			padding: 13px 0;
+		}
+		@media (min-width: 992px) and (max-width: 1024px) {
+			max-width: 854px;
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			max-width: 750px;
+		}
+		@include media("<=phone") {
+			max-width: 96%;
+			height: 62px;
+		}
+	}
 
-    }
+	.flexRowContent--home-deals {
+		justify-content: space-between;
+		@include media("<=phone") {
+			justify-content: center;
+		}
 
-    .flexRowContent--home-deals {
-        justify-content: space-between;
-        :last-child {
-            :global(.vtex-store-components-3-x-infoCardContainer--home-deals) {
-                border: none;
-            }
+        :global(.vtex-flex-layout-0-x-col) {
+            width: 100%;
         }
-    }
+        
+		:global(.vtex-store-components-3-x-infoCardContainer--home-deals) {
+			&:last-child {
+				@include media(">phone") {
+					border: none;
+				}
+			}
+		}
+	}
 }
 
 .flexRow--home-prateleira {
-    margin: 0 0 80px;
-    :global(.vtex-store-components-3-x-container) {
-        max-width: 1170px;
-    }
+	margin: 0 auto 80px;
+	:global(.vtex-store-components-3-x-container) {
+		max-width: 1170px;
+        @include media(">desktop") {
+            max-width: 1366px;
+        }
+	}
 }
 
 .flexRow--core-banner,
 .flexRow--final-banner {
-    margin: 0 0 50px;
+	margin: 0 0 50px;
 }
 
 .flexRow--home-colecao {
-    background: $orange-2 ;
-    align-items: center;
-    display: flex;
-    padding: 38px 14px;
-    @include media("<=phone") {
-        padding: 18px 20px;
-        display: block;
-    }
-    @media (max-width: 320px) {
-        padding: 30px 8px;
-    }
-    
-    :global(.vtex-store-components-3-x-container) {
-        padding: 0;
-    }
+	background: $orange-2;
+	align-items: center;
+	display: flex;
+	padding: 38px 14px;
+	@include media("<=phone") {
+		padding: 18px 20px;
+		display: block;
+	}
+	@media (max-width: 320px) {
+		padding: 30px 8px;
+	}
+
+	:global(.vtex-store-components-3-x-container) {
+		padding: 0;
+	}
 }
 
 .flexRowContent--home-sobre {
-    max-width: 900px;
-    margin: 0 auto;
+	max-width: 900px;
+	margin: 0 auto;
 }

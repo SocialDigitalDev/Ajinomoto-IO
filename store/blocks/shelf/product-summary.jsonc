@@ -80,7 +80,8 @@
 
     "product-summary-price#shelf": {
         "props": {
-            "blockClass": "shelf"
+            "blockClass": "shelf",
+            "showInstallments": false
         }
     },
 
