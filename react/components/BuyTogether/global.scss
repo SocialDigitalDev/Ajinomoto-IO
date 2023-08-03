@@ -1,0 +1,172 @@
+@import "../../../styles/scss/variables/all";
+
+.buy-together{
+
+    &--content{
+        max-width: 926px;
+        height: 393px;
+        margin: auto;
+        padding-top: 34px;
+        padding-bottom: 27px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.10);
+        border-radius: 20px;
+        margin-top: 49.97px;
+    }
+
+    &--title{
+        text-align: center;
+        color: $black;
+        font-size: 26px;
+        font-weight: $bold;
+        margin-bottom: 41px;
+    }
+
+    &--list-products{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        .prod-list{
+            display: flex;
+            align-items: center;
+            
+            .prod-img{
+                max-width: 138px;
+            }
+        }
+    }
+
+    &--prod-name{
+        max-width: 200px;
+        margin-left: 14px;
+        > h3{
+            font-size: 16px;
+            font-weight: $regular;
+        }
+    }
+
+    &--prod-price{
+        margin-left: 14px;
+        
+        .prod-prices{
+            display: flex;
+            flex-flow: column;
+            
+            .preco-de{
+                .lojaajinomoto-store-theme-0-x-currencyContainer{
+                    font-size: 12px;
+                    font-weight: $bold;
+                    color: $gray-22;
+                    text-decoration: line-through;
+                    font-family: $Roboto;
+                }
+            }
+    
+            .preco-por{
+                .lojaajinomoto-store-theme-0-x-currencyContainer{
+                    font-size: 25px;
+                    font-weight: $bold;
+                }
+            }
+        }
+
+        .preco-de{
+            .lojaajinomoto-store-theme-0-x-currencyContainer{
+                font-size: 12px;
+                font-weight: $bold;
+                color: $gray-22;
+                text-decoration: line-through;
+                font-family: $Roboto;
+            }
+        }
+
+        .preco-por{
+            .lojaajinomoto-store-theme-0-x-currencyContainer{
+                font-size: 25px;
+                font-weight: $bold;
+            }
+        }
+
+    }
+
+    &--total{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-top: 10px;
+        border-top: 1px solid $gray-23;
+
+        .value-total{
+            .val-total{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                margin-right: 84px;
+
+                small{
+                    font-size: 15px;
+                    color: $gray-21;
+                }
+
+                .lojaajinomoto-store-theme-0-x-currencyContainer{
+                    font-size: 30px;
+                    font-weight: $bold;
+                    color: $green-3;
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .buy-products{
+            .btn-buy-products{
+                width: 180px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background: $green-2;
+                color: $white;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--pop-up{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.47);
+
+        &-content{
+            background: $white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px $white;
+
+            span{
+                background: $green-3;
+                color: $white;
+                width: 180px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                margin: auto;
+                cursor: pointer;
+            }
+        }
+    }
+}

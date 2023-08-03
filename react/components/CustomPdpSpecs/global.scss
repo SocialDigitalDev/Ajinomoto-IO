@@ -27,7 +27,8 @@
                         margin-bottom: 10px;
                     }
 
-                    &[data-char*="contém derivados de soja"]{
+                    &[data-char*="contém derivados de soja"],
+                    &[data-char*=" pode conter soja, trigo, leite, cevada e ovo"]{
                         max-width: 120px;
                         &::before{
                             content: "";

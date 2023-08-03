@@ -1,0 +1,14 @@
+{
+    "flex-layout.row#buy-together-desktop": {
+        "title": "Compre Junto",
+        "props": {
+            "blockClass": [
+                "ajinomoto--buy-together-desktop",
+                "buy-together"
+            ]
+        },
+        "children": [
+            "buy-together"
+        ]
+    }
+}
