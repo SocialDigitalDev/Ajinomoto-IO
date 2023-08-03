@@ -1,10 +1,8 @@
 .summaryContainer--shelf {
     .quantitySelectorContainer--shelf  {
         margin: 0;
-        padding: 0 29px;
-        @include media("<=phone") {
-            padding: 0 20px;
-        }
+        padding: 0;
+        width: 100%;
     }
     .quantitySelectorTitle--shelf {
         display: none;
@@ -12,13 +10,14 @@
     .quantitySelectorStepper--shelf {
 
         :global(.vtex-numeric-stepper__input) {
-            color: $green-2;
+            color: $gray-2;
             font-family: $OpenSans;
-            font-weight: 500;
+            font-weight: $bold;
             font-size: 20px;
             line-height: normal;
             text-transform: capitalize;
             height: 40px;
+            max-width: 44px;
             border: none;
             background: none;
             @include media("<=phone") {

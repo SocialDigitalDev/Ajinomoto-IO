@@ -1,64 +1,64 @@
 // BOTAO DE COMPRA
+.flexRow--buy-button-shelf {
+	width: 100%;
 
- // BUY BUTTON
- .flexRow--buy-button-shelf {
+	.flexRowContent--available {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.stretchChildrenWidth {
+			&:first-child {
+				max-width: 80px;
+				width: 100% !important;
+				margin: 0 8px;
+			}
+			&:last-child {
+				max-width: 75px;
+				width: 100% !important;
+			}
+		}
+	}
+
 	:global(.vtex-button) {
 		background-color: $green-2;
+		width: 100%;
 		height: 40px;
-		box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
-		border: 1px solid $green-2;
-		outline: 1px solid $green-2;
-		border-radius: 20px 0px 10px 20px;
-		@include media("<=phone") {
-			border-radius: 20px 0px 10px 20px;
-		}
+		border: none;
+		outline: 0;
+		border-radius: 0 0px 10px 0;
 
-		:global(.vtex-button__label ) {
-			padding: 0 14px !important;
-			@include media("<=phone") {
-				padding: 0 !important;
-			}
+		:global(.vtex-button__label) {
+			padding: 0 !important;
 			:global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
-				color: $white;
-				font-family: $OpenSans;
-				font-weight: $regular;
-				font-size: 12px;
-				line-height: 18px;
-				text-transform: none;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				@include media("<desktop") {
-					font-size: 0;
-				}
+				font-size: 0;
+				line-height: normal;
 
 				&::before {
-					content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='24' viewBox='0 0 27 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.5399 0.837075C15.522 0.836024 15.5042 0.836024 15.4863 0.837075C15.3371 0.849891 15.2029 0.932879 15.1249 1.06062C15.047 1.18836 15.0344 1.34552 15.0909 1.48419L17.7472 8.30859H8.60679L11.2633 1.48419H11.2636C11.3241 1.33523 11.3043 1.16567 11.2112 1.03457C11.118 0.903463 10.9646 0.828878 10.8039 0.837069C10.6139 0.844633 10.4471 0.965651 10.3811 1.14403L7.09408 9.60623C7.08169 9.63354 7.07181 9.6619 7.06488 9.69089C6.83712 9.57597 6.74258 9.30031 6.85163 9.06961L7.14766 8.30843H0.94126C0.419786 8.30843 0 8.72821 0 9.24969V9.72031C0 10.2418 0.419786 10.6616 0.94126 10.6616H25.414C25.9355 10.6616 26.3553 10.2418 26.3553 9.72031V9.24969C26.3553 8.72821 25.9355 8.30843 25.414 8.30843H19.2001L19.4961 9.06961C19.5865 9.29295 19.4936 9.54822 19.281 9.66147C19.2755 9.64256 19.2688 9.62408 19.2612 9.60601L15.9742 1.14381C15.9072 0.961025 15.7347 0.838323 15.5401 0.834961L15.5399 0.837075Z' fill='white'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.35309 11.6042L4.67139 21.6472C4.967 22.9278 6.10872 23.835 7.42352 23.835H18.93C20.2448 23.835 21.3866 22.9278 21.6822 21.6472L24.0005 11.6042H2.35309ZM6.82052 14.1853C7.04995 14.1826 7.24808 14.3457 7.28926 14.5715L8.46229 20.4434C8.49359 20.5686 8.47216 20.7014 8.40282 20.8104C8.33349 20.9192 8.22235 20.9951 8.09566 21.0197C7.96896 21.0445 7.83744 21.0161 7.73239 20.9411C7.62713 20.8663 7.55737 20.7514 7.53931 20.6234L6.36461 14.7586C6.33562 14.6289 6.36272 14.493 6.43941 14.3844C6.5161 14.2758 6.63522 14.2047 6.76717 14.1888C6.78503 14.1877 6.80289 14.1877 6.82096 14.1888L6.82052 14.1853ZM10.8062 14.1853C11.0535 14.1763 11.2657 14.3604 11.2915 14.6064L11.9994 20.4782C12.0183 20.6047 11.9853 20.7335 11.9078 20.8352C11.83 20.9369 11.7145 21.0029 11.5873 21.0178C11.4602 21.0327 11.3327 20.9953 11.2335 20.9144C11.1344 20.8335 11.0724 20.7159 11.0617 20.5883L10.3595 14.7165L10.3593 14.7167C10.3257 14.4599 10.5055 14.2242 10.7621 14.1891C10.7768 14.1883 10.7915 14.1883 10.8062 14.1891L10.8062 14.1853ZM19.5255 14.1853C19.6694 14.1837 19.8062 14.2477 19.8969 14.3595C19.9875 14.4715 20.022 14.6186 19.9907 14.7589L18.816 20.6238H18.8158C18.7931 20.7473 18.7216 20.8568 18.6178 20.9274C18.5138 20.9982 18.3861 21.0244 18.2626 21.0005C18.1392 20.9765 18.0306 20.9041 17.9608 20.7996C17.8911 20.695 17.8661 20.5668 17.8911 20.4437L19.0658 14.5719C19.1034 14.3681 19.27 14.2126 19.4759 14.1895C19.4925 14.1884 19.5091 14.1884 19.5257 14.1895L19.5255 14.1853ZM15.5251 14.1853C15.6604 14.1849 15.7897 14.2427 15.8794 14.344C15.9691 14.4454 16.0109 14.5805 15.9939 14.7148L15.2934 20.5866H15.2936C15.2632 20.8461 15.0281 21.0316 14.7686 21.0012C14.5093 20.9707 14.3236 20.7356 14.354 20.4763L15.0635 14.6045H15.0638C15.0879 14.3826 15.2646 14.2085 15.4865 14.187C15.4995 14.1866 15.5123 14.1866 15.5253 14.187L15.5251 14.1853Z' fill='white'/%3e%3c/svg%3e ");
-					width: 22px;
-					height: 27px;
+					content: url(assets/svg/ico_bag-shelf.svg);
+					width: 26px;
+					height: 23px;
 					display: inline-block;
 				}
 			}
 		}
 
 		&:disabled {
-			background-color: $red-4;
-			border: 1px solid $red-1;
-			border-radius: 10px;
+			background-color: $white;
+			border-radius: 0;
 			max-width: none;
 
-			:global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
-				color: $red-1;
+			:global(.vtex-button__label)
+				:global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+				color: $gray-2;
 				font-family: $OpenSans;
-				font-weight: $regular;
-				font-size: 14px;
-				line-height: 21px;
+				font-weight: $semi-bold;
+				font-size: 12px;
+				line-height: normal;
 				text-transform: capitalize;
 				&::before {
 					display: none;
 				}
 			}
 		}
-	   
 	}
 }
