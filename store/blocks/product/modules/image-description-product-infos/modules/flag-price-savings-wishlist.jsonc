@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#flag-savings-wishlist": {
+        "title": "Flags, Desconto e Wishlist",
+        "props": {
+            "blockClass": "flag-savings-wishlist-row",
+            "colSizing": "auto",
+            "colJustify": "left"
+        },
+        "children": [
+            "product-price-savings",
+            "add-to-list-btn"
+        ]
+    },
+
+    "product-price-savings": {
+        "props": {
+            "blockClass": "savings-component",
+            "message": "{savingsPercentage} OFF"
+        }
+    }
+}

@@ -39,20 +39,20 @@ ol {
 // HEADER
 
 .vtex-flex-layout-0-x-flexRowContent--header--container-top {
-	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+	&>.vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--infos-client {
-	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+	&>.vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--account {
 	.vtex-button__label {
-		& > span {
+		&>span {
 			margin: 0;
 		}
 	}
@@ -67,16 +67,20 @@ ol {
 
 		>.vtex-flex-layout-0-x-stretchChildrenWidth {
 			width: auto !important;
+
 			&:nth-child(1) {
 				order: 1;
 			}
+
 			&:nth-child(2) {
 				width: 100% !important;
 				order: 0;
 			}
+
 			&:nth-child(3) {
 				order: 02;
 			}
+
 			&:nth-child(4) {
 				order: 3;
 			}
@@ -93,7 +97,7 @@ ol {
 		}
 
 		&__order-details {
-			& > div > div.w-100.fl.w-60-ns.pv3-ns.pr0 > ul > li:nth-child(2) {
+			&>div>div.w-100.fl.w-60-ns.pv3-ns.pr0>ul>li:nth-child(2) {
 				display: none;
 			}
 		}
@@ -105,16 +109,7 @@ ol {
 		}
 	}
 
-	&
-		> div
-		> div.vtex-store__template
-		> div
-		> div:nth-child(2)
-		> div
-		> div
-		> div
-		> div
-		> div {
+	&>div>div.vtex-store__template>div>div:nth-child(2)>div>div>div>div>div {
 		@include media(">phone") {
 			width: 80%;
 		}
@@ -206,6 +201,7 @@ ol {
 		}
 	}
 }
+
 .vtex-address-form__country {
 	.t-body {
 		@media (max-width: 1199px) {
@@ -219,7 +215,7 @@ ol {
 
 .vtex-order-placed-2-x-orderPlacedWrapper {
 	.vtex-order-placed-2-x-customerInfoListContainer {
-		& > li {
+		&>li {
 			font-family: $OpenSans;
 		}
 	}
@@ -233,6 +229,32 @@ ol {
 	}
 }
 
+// WISH LIST PDP
+
+.vtex-flex-layout-0-x-flexColChild--product-info-components {
+
+	.vtex-wish-list-1-x-wishlistIconContainer {
+
+		.vtex-button {
+
+			&:hover,
+			&:focus-visible {
+				background: none;
+			}
+
+			&__label {
+				padding: 0 !important;
+
+				.vtex-wish-list-1-x-wishlistIcon {
+					background: url('../../../assets/svg/ico_wishlist-outline.svg') no-repeat;
+					background-size: contain;
+					width: 35px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
 
 //HOME
 .vtex-flex-layout-0-x-flexRowContent--home-colecao {
