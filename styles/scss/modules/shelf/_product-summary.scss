@@ -114,4 +114,19 @@
         }
 
     }
+
+    .price_listPrice--shelf {
+        padding: 0;
+        .currencyContainer--shelf {
+            color: $gray-19;
+            font-family: $OpenSans;
+            font-weight: $regular;
+            font-size: 15px;
+            line-height: normal;
+        }
+    }
+
+    .listPriceLabel--shelf, .sellingPriceLabel--shelf{
+        display: none;
+    }
 }
