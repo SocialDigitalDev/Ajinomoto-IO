@@ -1,0 +1,9 @@
+{
+	"search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "sy-banner-category",
+      "horizontalAlignment": "center"
+    }
+  }
+}

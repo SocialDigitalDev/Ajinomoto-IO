@@ -20,6 +20,10 @@
         top: 6px;
         right: 6px;
         z-index: 1;
+        @include media ("<=phone") {
+            top: 3px;
+            right: 3px;
+        }
     
         :global(.vtex-button) {
             background: none;
@@ -113,5 +117,20 @@
             line-height: normal;
         }
 
+    }
+
+    .price_listPrice--shelf {
+        padding: 0;
+        .currencyContainer--shelf {
+            color: $gray-20;
+            font-family: $OpenSans;
+            font-weight: $regular;
+            font-size: 15px;
+            line-height: normal;
+        }
+    }
+
+    .listPriceLabel--shelf, .sellingPriceLabel--shelf{
+        display: none;
     }
 }
