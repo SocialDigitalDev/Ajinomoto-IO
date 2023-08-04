@@ -1,0 +1,9 @@
+{
+    "responsive-layout.tablet#content-product":  {
+        "children": [
+            "flex-layout.row#img-product-info",
+            "flex-layout.row#buy-together-desktop",
+            "flex-layout.row#qvvt"
+        ]
+    }
+}

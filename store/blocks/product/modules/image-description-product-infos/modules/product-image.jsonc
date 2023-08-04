@@ -67,8 +67,8 @@
             "maxHeight": "initial",
             "zoomMode": "disabled",
             "showPaginationDots": true,
-            "showNavigationArrows": true,
-            "thumbnailVisibility": "visible",
+            "showNavigationArrows": false,
+            "thumbnailVisibility": "hidden",
             "width": "1000px",
             "height": "1000px"
         }
@@ -80,7 +80,7 @@
             "maxHeight": "initial",
             "zoomMode": "disabled",
             "showPaginationDots": true,
-            "showNavigationArrows": true,
+            "showNavigationArrows": false,
             "thumbnailVisibility": "hidden",
             "width": "1000px",
             "height": "1000px"

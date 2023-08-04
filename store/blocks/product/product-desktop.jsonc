@@ -2,6 +2,7 @@
 	"store.product": {
 		"children": [
 			"responsive-layout.desktop#content-product",
+            "responsive-layout.tablet#content-product",
             "responsive-layout.mobile#content-product"
 		]
 	},
