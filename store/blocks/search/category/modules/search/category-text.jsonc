@@ -1,20 +1,138 @@
 {
-    "flex-layout.row#category-text": {
+	"flex-layout.row#category-text": {
+		"title": "TEXTO DE APOIO",
 		"children": [
-			"flex-layout.col#searchtitle"			
+			"flex-layout.col#searchtitle",
+			"flex-layout.col#search-ajipanda"
 		],
 		"props": {
-			"blockClass": "category--text"
+			"blockClass": "category--text",
+			"preventVerticalStretch": true
 		}
 	},
 
 	"flex-layout.col#searchtitle": {
-		"children": ["search-title.v2", "rich-text#category-text"]
+		"children": [
+			"search-title.v2",
+			"rich-text#category-text",
+			"flex-layout.col#category-destaques"
+		],
+		"props": {
+			"blockClass": "category--text-content",
+			"preventVerticalStretch": true
+		}
 	},
 
 	"rich-text#category-text": {
+		"title": "TEXTO",
 		"props": {
-			"text": "Experimente nossas irresistíveis sopas e cremes que harmonizam perfeitamente com todos os seus momentos."
+			"text": "Experimente nossas irresistíveis sopas e cremes que harmonizam perfeitamente com todos os seus momentos.",
+			"blockClass": "category-text"
+		}
+	},
+
+	"flex-layout.col#search-ajipanda": {
+		"children": ["image#search-ajipanda"],
+		"props": {
+			"blockClass": "category--text-image",
+			"preventVerticalStretch": true
+		}
+	},
+
+	"image#search-ajipanda": {
+		"title": "ICONE AJIPANDA - CATEGORIA",
+		"props": {
+			"src": "assets/img/panda-categoria.png",
+			"blockClass": "category--text-image-content"
+		}
+	},
+
+	"flex-layout.col#category-destaques": {
+		"children": [
+			"rich-text#category-destaques",
+			"flex-layout.row#category-destaques"
+		],
+		"props": {
+			"blockClass": "category-destaques"
+		}
+	},
+
+	"rich-text#category-destaques": {
+		"props": {
+			"text": "Categorias em destaque",
+			"blockClass": "category-destaques"
+		}
+	},
+
+	"flex-layout.row#category-destaques": {
+		"children": [
+			"info-card#category-destaques-1",
+			"info-card#category-destaques-2",
+			"info-card#category-destaques-3",
+			"info-card#category-destaques-4"
+		],
+		"props": {
+			"blockClass": "category-destaques"
+		}
+	},
+
+	"info-card#category-destaques-1": {
+		"title": "DESTAQUE 1",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/img/marca-ajisal.png",
+			"imageActionUrl": "/",
+			"headline": "[Aji-sal](/)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-2": {
+		"title": "DESTAQUE 2",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/img/marca-ajisal.png",
+			"imageActionUrl": "/",
+			"headline": "[Aji-sal](/)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-3": {
+		"title": "DESTAQUE 3",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/img/marca-ajisal.png",
+			"imageActionUrl": "/",
+			"headline": "[Aji-sal](/)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-4": {
+		"title": "DESTAQUE 4",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/img/marca-ajisal.png",
+			"imageActionUrl": "/",
+			"headline": "[Aji-sal](/)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
 		}
 	}
 }

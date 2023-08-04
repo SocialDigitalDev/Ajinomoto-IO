@@ -1,0 +1,28 @@
+.flexRow--category--text {
+	.flexRowContent--category--text {
+		.stretchChildrenWidth {
+			justify-content: flex-start;
+		}
+	}
+	.flexCol--category--text-content {
+		max-width: 455px;
+		margin-bottom: 40px;
+	}
+}
+
+.flexRow--breadcrumb {
+	margin: 20px 0 40px;
+	@include media(">phone", "<=tablet") {
+		margin: 20px 0;
+	}
+	@include media("<=phone") {
+		margin: 9px 0 20px;
+	}
+}
+
+.flexRow--category--filter {
+	.flexRowContent--category--filter {
+		padding: 20px;
+		border: 1px solid $gray-22;
+	}
+}

@@ -1,62 +1,209 @@
+.searchResultContainer {
+	&:global(.vtex-store-components-3-x-container) {
+		padding-top: 0;
+		margin-bottom: 55px;
+	}
+}
+
 .container--layout {
-    max-width: 1170px;
-    @include media(">desktop") {
-        max-width: 1366px;
-    }
+	max-width: 1170px;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+}
+
+.galleryTitle--layout {
+	color: $gray-2;
+	font-family: $OpenSans;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: $bold;
+	line-height: normal;
+	margin: 0 0 20px;
+}
+
+.totalProducts--layout {
+	color: $gray-21;
+	font-family: $OpenSans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: $regular;
+	line-height: normal;
+	padding: 0;
+	text-align: left;
 }
 
 .filterMessage {
-    color: $black;
-    font-family: $OpenSans;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: $semi-bold;
-    line-height: normal;
+	display: none;
 }
 
-.orderByDropdown  {
-    .orderByButton  {
-        border: none;
-        pointer-events: none;
-        justify-content: flex-start;
-        padding: 0;
-        margin-bottom: 30px;
-        .orderByText {
-            color: $black;
-            font-family: $OpenSans;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: $semi-bold;
-            line-height: normal;
-            &::after {
-                content: ":";
-            }
-        }
-        .filterPopupArrowIcon  {
-            display: none;
-        }
-    }
-    .orderByOptionsContainer  {
-        position: relative;
-        display: block;
-        border: none;
-        box-shadow: none;
-    }
+.orderByDropdown {
+	.orderByButton {
+		border: none;
+		pointer-events: none;
+		justify-content: flex-start;
+		padding: 0;
+		margin-bottom: 30px;
+		.orderByText {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $semi-bold;
+			line-height: normal;
+			&::after {
+				content: ":";
+			}
+		}
+		.filterPopupArrowIcon {
+			display: none;
+		}
+	}
+	.orderByOptionsContainer {
+		position: relative;
+		display: block;
+		border: none;
+		box-shadow: none;
+	}
 
-    .orderByOptionItem {
-        background: none;
-        padding: 0;
-        margin-bottom: 10px;
-        &--selected {
-            color: $primary;
-            font-family: $OpenSans;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: $semi-bold;
-            line-height: normal;
-        }
-        &:hover {
-            background: none;
-        }
+	.orderByOptionItem {
+		background: none;
+		padding: 0;
+		margin-bottom: 10px;
+		&--selected {
+			color: $primary;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $semi-bold;
+			line-height: normal;
+		}
+		&:hover {
+			background: none;
+		}
+	}
+}
+
+.filter__container {
+	border-color: $gray-22;
+	&--sabor {
+		padding-bottom: 10px;
+	}
+
+	&--priceRange {
+		padding-top: 4px;
+		border-bottom: 0;
+		:global(.vtex-slider-container) {
+			width: 100% !important;
+			max-width: 200px !important;
+			margin: 0 10px;
+		}
+	}
+}
+
+.filterAvailable {
+	pointer-events: none;
+}
+
+.filterTitle {
+	.filterTitle {
+		&Span {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $semi-bold;
+			line-height: normal;
+		}
+	}
+	.filterIcon {
+		display: none;
+	}
+}
+
+.filterTemplateOverflow {
+	max-height: 200px;
+	overflow-y: auto;
+	padding-bottom: 16px;
+}
+
+.filter__container--selectedFilters {
+	:global(.vtex-checkbox__line-container) {
+		align-items: baseline;
+		:global(.vtex-checkbox__inner-container) {
+			border-color: #919198;
+			border-width: 1px;
+			background-color: $white;
+
+			:global(.vtex__icon-check) {
+				color: $black;
+			}
+		}
+	}
+	:global(.vtex-checkbox__label) {
+		color: #919198;
+		font-family: $OpenSans;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $regular;
+		line-height: 170.9%;
+		text-transform: math-auto;
+	}
+}
+.filterContent {
+	:global(.vtex-checkbox__line-container) {
+		align-items: baseline;
+		:global(.vtex-checkbox__inner-container) {
+			border-color: #919198;
+			border-width: 1px;
+			background-color: $white;
+
+			:global(.vtex__icon-check) {
+				color: $black;
+			}
+		}
+	}
+	:global(.vtex-checkbox__label) {
+		color: #919198;
+		font-family: $OpenSans;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $regular;
+		line-height: 170.9%;
+		text-transform: math-auto;
+	}
+}
+
+.buttonShowMore--layout {
+    .buttonShowMore {
+        :global(.vtex-button) {
+            margin-top: 50px;
+			border-radius: 10px;
+			background: $secondary;
+			border: none;
+			width: 100%;
+			max-width: 332px;
+			height: 40px;
+			justify-content: center;
+
+			:global(.vtex-button__label) {
+				color: $white;
+				text-align: center;
+				font-family: $Montserrat;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: $medium;
+				line-height: normal;
+			}
+		}
+	}
+}
+
+
+// MARCA
+
+.search-result-layout--brand {
+    :global(.vtex-flex-layout-0-x-flexRowContent--category--text) {
+        
     }
 }

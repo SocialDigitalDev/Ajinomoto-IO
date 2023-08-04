@@ -16,11 +16,11 @@ body {
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-	width: 7px;
+	width: 6px;
 }
 
 *::-webkit-scrollbar-track {
-	background: #c8c8c8;
+	background: $gray-13;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -131,7 +131,8 @@ ol {
 		}
 
 		&::-webkit-scrollbar-track {
-			background: $gray-7;
+			background: $gray-13;
+			border-radius: 10px;
 		}
 
 		&::-webkit-scrollbar-thumb {
