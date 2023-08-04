@@ -1,0 +1,65 @@
+{
+	"flex-layout.row#category-banner": {
+		"children": ["flex-layout.col#category-banner"],
+		"props": {
+			"blockClass": "category--banner"
+		}
+	},
+
+	"flex-layout.col#category-banner": {
+		"children": ["search-banner#banner-category", "image#banner-category"],
+		"props": {
+			"blockClass": "category--banner"
+		}
+	},
+
+	"search-banner#banner-category": {
+		"props": {
+			"area": "banner-category",
+			"blockClass": "category-banner",
+			"horizontalAlignment": "center"
+		}
+	},
+
+	"image#banner-category": {
+		"title": "Imagem do Banner",
+		"props": {
+			"src": "assets/img/banner-categoria-sopa-desktop.png"
+		}
+	},
+
+	// MOBILE
+
+	"flex-layout.row#category--banner_mob": {
+		"title": "Search Banner [MOBILE]",
+		"children": ["flex-layout.col#category-banner_mob"],
+		"props": {
+			"blockClass": "category--banner_mob"
+		}
+	},
+
+	"flex-layout.col#category-banner_mob": {
+		"children": [
+			"search-banner#banner-category_mob",
+			"image#banner-category_mob"
+		],
+		"props": {
+			"blockClass": "category--banner_mob"
+		}
+	},
+
+	"search-banner#banner-category_mob": {
+		"props": {
+			"area": "banner-category",
+			"blockClass": "category-banner",
+			"horizontalAlignment": "center"
+		}
+	},
+
+	"image#banner-category_mob": {
+		"title": "Imagem do Banner [MOBILE]",
+		"props": {
+			"src": "assets/img/banner-categoria-sopa-desktop.png"
+		}
+	}
+}
