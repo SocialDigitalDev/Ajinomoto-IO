@@ -31,5 +31,9 @@
 
 	"buy-together": {
 		"component": "BuyTogether"
+	},
+
+	"similar-products": {
+		"component": "SimilarProducts"
 	}
 }

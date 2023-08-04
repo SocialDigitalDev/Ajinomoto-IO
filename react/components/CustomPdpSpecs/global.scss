@@ -36,7 +36,8 @@
                             background-size: contain;
                         }
                     }
-                    &[data-char=" pode conter leite, ovo, peixe, trigo, cevada, aveia e centeio (contaminação cruzada em fábrica)"]{
+                    &[data-char=" pode conter leite, ovo, peixe, trigo, cevada, aveia e centeio (contaminação cruzada em fábrica)"],
+                    &[data-char=" pode conter leite e ovo"]{
                         &::before{
                             content: "";
                             background: url('../../../assets/svg/caracteristicas/ico_leite-ovo-v2.svg') no-repeat;

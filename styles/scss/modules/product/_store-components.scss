@@ -62,3 +62,22 @@
         }
     }
 }
+
+.product{
+
+    &Image{
+
+        &Tag{
+
+            &--main{
+                max-width: 513px !important;
+                max-height: 513px !important;
+                background: $white;
+            }
+            
+            &--zoom{
+                background: $white;
+            }
+        }
+    }
+}

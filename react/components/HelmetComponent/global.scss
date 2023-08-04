@@ -277,3 +277,14 @@ ol {
 		}
 	}
 }
+
+// IMAGEM SEM ZOOM PDP
+
+.vtex-store-components-3-x-productImage {
+	.relative {
+		> div {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
