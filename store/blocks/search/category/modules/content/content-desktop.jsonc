@@ -38,12 +38,21 @@
 
 	"flex-layout.col#category--filter": {
 		"children": [
-			"total-products.v2", 
-			"order-by.v2", 
+			"total-products.v2",
+			"rich-text#category-filter",
+			"order-by.v2",
 			"filter-navigator.v3"
 		],
 		"props": {
 			"blockClass": "category--filter"
+		}
+	},
+
+	"rich-text#category-filter": {
+		"props": {
+			"text": "Filtrar por",
+			"blockClass": "category--filter",
+			"textAlignment": "LEFT"
 		}
 	},
 
