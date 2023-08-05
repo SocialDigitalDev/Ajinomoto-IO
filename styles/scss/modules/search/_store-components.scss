@@ -1,0 +1,41 @@
+.infoCardContainer--destaque {
+	background: $primary;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0;
+
+	.infoCardTextContainer--destaque {
+		width: auto !important;
+		padding: 0;
+
+		.paragraph--destaque {
+			color: $white;
+			text-align: center;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0;
+
+			.link--destaque {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.infoCardImageContainer--destaque {
+		width: auto !important;
+		margin-bottom: 6px;
+	}
+}
+
+.imageElement--category--text-image-content {
+	max-width: 330px !important;
+	@include media(">phone", "<=tablet") {
+		max-width: 270px !important;
+	}
+}

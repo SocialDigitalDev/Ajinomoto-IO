@@ -2,7 +2,8 @@
 	"flex-layout.row#category-banner": {
 		"children": ["flex-layout.col#category-banner"],
 		"props": {
-			"blockClass": "category--banner"
+			"blockClass": "category--banner",
+			"fullWidth": true
 		}
 	},
 
@@ -17,7 +18,8 @@
 		"props": {
 			"area": "banner-category",
 			"blockClass": "category-banner",
-			"horizontalAlignment": "center"
+			"horizontalAlignment": "center",
+			"fullWidth": true
 		}
 	},
 
@@ -29,12 +31,12 @@
 	},
 
 	// MOBILE
-
 	"flex-layout.row#category--banner_mob": {
 		"title": "Search Banner [MOBILE]",
 		"children": ["flex-layout.col#category-banner_mob"],
 		"props": {
-			"blockClass": "category--banner_mob"
+			"blockClass": "category--banner_mob",
+			"fullWidth": true
 		}
 	},
 

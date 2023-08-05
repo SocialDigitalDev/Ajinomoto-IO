@@ -18,7 +18,7 @@
 				"maxItemsPerPage": 16,
 				"simulationBehavior": "skip"
 			},
-			"blockClass": "search-result-layout--brand"
+			"blockClass": "search-result--brand"
 		}
 	},
 

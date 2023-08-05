@@ -1,7 +1,11 @@
 .searchResultContainer {
 	&:global(.vtex-store-components-3-x-container) {
-		padding-top: 0;
+		padding: 0;
 		margin-bottom: 55px;
+	}
+
+	:global(.vtex-store-components-3-x-container) {
+		padding: 0;
 	}
 }
 
@@ -9,6 +13,12 @@
 	max-width: 1170px;
 	@include media(">desktop") {
 		max-width: 1366px;
+	}
+}
+
+.gallery--grid {
+	@include media("<=tablet") {
+		padding-left: 0;
 	}
 }
 
@@ -33,53 +43,170 @@
 	text-align: left;
 }
 
+.orderByDropdown {
+	@include media("<=tablet") {
+		width: 100%;
+		max-width: 150px;
+		padding: 0;
+	}
+	.orderByButton {
+		@include media("<=tablet") {
+			border-radius: 10px;
+			background: $primary;
+			border: none;
+			padding: 0;
+			width: 150px;
+			height: 40px;
+			flex-direction: row-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+		@include media(">tablet") {
+			border: none;
+			pointer-events: none;
+			justify-content: flex-start;
+			padding: 0;
+			margin-bottom: 16px;
+		}
+		.orderByText {
+			color: $white;
+			text-align: center;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			text-transform: none;
+			display: block;
+			@include media(">tablet") {
+				color: $black;
+				font-size: 18px;
+				font-weight: $semi-bold;
+				&::after {
+					content: ":";
+				}
+			}
+		}
+
+		.filterPopupArrowIcon {
+			padding: 0;
+			margin-right: 10px;
+			@include media(">=desktop") {
+				display: none;
+			}
+			&::before {
+				content: url(assets/svg/icon_orderBy.svg);
+				width: 18px;
+				height: 14px;
+				display: inline-block;
+			}
+
+			.caretIcon {
+				display: none;
+			}
+		}
+	}
+	.orderByOptionsContainer {
+		border: none;
+		@include media("<=tablet") {
+			width: 100%;
+			max-width: 150px;
+			min-width: 150px;
+			top: 36px;
+			border-radius: 0 0 10px 10px;
+			box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+		}
+		@include media(">tablet") {
+			position: relative;
+			display: block;
+			box-shadow: none;
+		}
+	}
+
+	.orderByOptionItem {
+		font-family: $OpenSans;
+		font-style: normal;
+		line-height: normal;
+		background: $white;
+		min-width: 150px;
+		&:hover {
+			background: none;
+		}
+		@include media("<=tablet") {
+			color: $gray-2;
+			font-size: 14px;
+			font-weight: $regular;
+			padding: 10px 0;
+			text-align: center;
+			border-bottom: 1px solid $primary;
+			&:last-child {
+				border: none;
+			}
+			&--selected {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&::before {
+					content: "";
+					width: 8px;
+					height: 30px;
+					border-radius: 0px 5px 5px 0px;
+					background: $primary;
+					display: inline-block;
+					position: absolute;
+					left: 0;
+				}
+			}
+		}
+		@include media(">tablet") {
+			color: #919198;
+			font-size: 18px;
+			font-weight: $regular;
+			margin-bottom: 10px;
+			padding: 0;
+			&--selected {
+				color: $primary;
+			}
+		}
+	}
+}
+
 .filterMessage {
 	display: none;
 }
 
-.orderByDropdown {
-	.orderByButton {
-		border: none;
-		pointer-events: none;
-		justify-content: flex-start;
+.filterPopupButton {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: $primary;
+	padding: 0;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	.filterPopupTitle {
+		margin: 0;
+		color: $white;
+		font-family: $OpenSans;
+		font-size: 14px;
+		font-weight: $regular;
+		line-height: normal;
+		text-transform: none;
+	}
+	.filterPopupArrowIcon {
+		margin: 0;
 		padding: 0;
-		margin-bottom: 30px;
-		.orderByText {
-			color: $black;
-			font-family: $OpenSans;
-			font-size: 18px;
-			font-style: normal;
-			font-weight: $semi-bold;
-			line-height: normal;
-			&::after {
-				content: ":";
-			}
-		}
-		.filterPopupArrowIcon {
+		margin-right: 10px;
+		.filterIcon {
 			display: none;
 		}
-	}
-	.orderByOptionsContainer {
-		position: relative;
-		display: block;
-		border: none;
-		box-shadow: none;
-	}
-
-	.orderByOptionItem {
-		background: none;
-		padding: 0;
-		margin-bottom: 10px;
-		&--selected {
-			color: $primary;
-			font-family: $OpenSans;
-			font-size: 18px;
-			font-style: normal;
-			font-weight: $semi-bold;
-			line-height: normal;
-		}
-		&:hover {
-			background: none;
+		&::before {
+			content: url(assets/svg/ico_filter.svg);
+			width: 21px;
+			height: 22px;
+			display: inline-block;
 		}
 	}
 }
@@ -175,9 +302,9 @@
 }
 
 .buttonShowMore--layout {
-    .buttonShowMore {
-        :global(.vtex-button) {
-            margin-top: 50px;
+	.buttonShowMore {
+		:global(.vtex-button) {
+			margin-top: 50px;
 			border-radius: 10px;
 			background: $secondary;
 			border: none;
@@ -199,11 +326,130 @@
 	}
 }
 
+//SIDEBAR
+.sidebar {
+	width: 100%;
+	max-width: 330px;
+
+	.filterAccordionBreadcrumbs {
+		padding: 0;
+		border: none;
+		.filterBreadcrumbsContent {
+			margin: 0;
+			padding: 0;
+			.filterBreadcrumbsText {
+				font-size: 0;
+				color: $black;
+				font-family: $OpenSans;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				&::after {
+					content: "Filtrar por:";
+					font-size: 28px;
+				}
+			}
+		}
+	}
+
+	.filterAccordionItemBox {
+		padding: 0;
+		.accordionFilterContent {
+			.accordionFilterItemTitle {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+			}
+			.accordionFilterItemTag  {
+				:global(.vtex-tag) {
+					background: $primary;
+				}
+			}
+		}
+		:global(.vtex-checkbox__line-container) {
+			align-items: baseline;
+			:global(.vtex-checkbox__inner-container) {
+				border-color: #919198;
+				border-width: 1px;
+				background-color: $white;
+			}
+			:global(.vtex-checkbox__box-wrapper) {
+				:global(.vtex__icon-check) {
+					color: $black;
+				}
+			}
+		}
+		:global(.vtex-checkbox__label) {
+			color: #919198;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: 170.9%;
+			text-transform: math-auto;
+		}
+	}
+
+	.accordionFilter {
+		padding: 20px 20px 60px;
+	}
+
+	.accordionFilterContainer {
+		padding: 0;
+	}
+	.accordionFilterItemOptions {
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.filterButtonsBox {
+		padding: 0 20px;
+		.filterClearButtonWrapper {
+			:global(.vtex-button) {
+				height: 40px;
+				border: 1px solid $primary;
+				background: $white;
+				outline: 0;
+				border-radius: 10px;
+				:global(.vtex-button__label) {
+					color: $primary;
+					font-family: $OpenSans;
+					font-weight: $semi-bold;
+					text-transform: none;
+				}
+			}
+		}
+		.filterApplyButtonWrapper {
+			:global(.vtex-button) {
+				height: 40px;
+				border: 1px solid $primary;
+				background: $primary;
+				outline: 0;
+				border-radius: 10px;
+				:global(.vtex-button__label) {
+					color: $white;
+					font-family: $OpenSans;
+					font-weight: $semi-bold;
+					text-transform: none;
+				}
+			}
+		}
+	}
+}
 
 // MARCA
 
-.search-result-layout--brand {
-    :global(.vtex-flex-layout-0-x-flexRowContent--category--text) {
-        
-    }
+.container--layout--search-result--brand {
+	:global(.vtex-flex-layout-0-x-flexCol--category-destaques) {
+		display: flex;
+	}
+
+	@include media(">phone") {
+		:global(.vtex-flex-layout-0-x-flexCol--category--text-image) {
+			display: flex;
+		}
+	}
 }
