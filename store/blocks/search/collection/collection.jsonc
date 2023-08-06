@@ -1,17 +1,15 @@
 {
 	"store.custom#collection": {
-		"blocks": [
-			"search-result-layout.customQuery"
-		]
+		"blocks": ["search-result-layout.customQuery"]
 	},
-	
+
 	"search-result-layout.customQuery": {
 		"title": "Configurações da Página / Coleção",
 		"props": {
 			"querySchema": {
-				"orderByField": "OrderByReleaseDateDESC",
-				"hideUnavailableItems": true,
-				"maxItemsPerPage": 9,
+				"orderByField": "OrderByBestDiscountDESC",
+				"hideUnavailableItems": false,
+				"maxItemsPerPage": 16,
 				"queryField": "",
 				"mapField": "productClusterIds",
 				"skusFilter": "ALL_AVAILABLE",
@@ -19,12 +17,12 @@
 			}
 		},
 		"blocks": [
-			"search-result-layout.desktop#collection",
-			"search-result-layout.mobile#collection",
+			"search-result-layout.desktop",
+			"search-result-layout.mobile",
 			"search-not-found-layout"
 		]
 	},
-	
+
 	"search-result-layout.desktop#collection": {
 		"title": "Configurações Desktop",
 		"children": [
@@ -37,7 +35,7 @@
 			"defaultGalleryLayout": "grid"
 		}
 	},
-	
+
 	"search-result-layout.mobile#collection": {
 		"title": "Configurações Mobile",
 		"children": [
@@ -53,7 +51,7 @@
 			"defaultGalleryLayout": "grid"
 		}
 	},
-	
+
 	"flex-layout.row#category-desktop--collection": {
 		"children": [
 			"flex-layout.row#category--filter",
@@ -65,9 +63,7 @@
 	},
 
 	"flex-layout.row#category--shelf--collection": {
-		"children": [
-			"flex-layout.col#category--shelf--collection"
-		],
+		"children": ["flex-layout.col#category--shelf--collection"],
 		"props": {
 			"blockClass": "category--shelf"
 		}
@@ -85,18 +81,14 @@
 
 	"flex-layout.row#category-banner--collection": {
 		"title": "Search Banner [DESKTOP]",
-		"children": [
-			"image#bannerCollection"
-		],
+		"children": ["image#bannerCollection"],
 		"props": {
 			"blockClass": "category--banner"
 		}
 	},
 
 	"flex-layout.row#category-mobile--collection": {
-		"children": [
-			"flex-layout.col#category-mobile--collection"
-		],
+		"children": ["flex-layout.col#category-mobile--collection"],
 		"props": {
 			"blockClass": "category--content_mobile"
 		}
@@ -116,14 +108,12 @@
 
 	"flex-layout.row#category--banner--collection_mob": {
 		"title": "Search Banner [MOBILE]",
-		"children": [
-			"image#bannerCollection"
-		],
+		"children": ["image#bannerCollection"],
 		"props": {
 			"blockClass": "category--banner_mob"
 		}
 	},
-	
+
 	"image#bannerCollection": {
 		"title": " Banner de Coleção",
 		"props": {

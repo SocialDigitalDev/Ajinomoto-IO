@@ -1,0 +1,42 @@
+.container--category--filter {
+	.wrapper--category--filter {
+		.paragraph--category--filter {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: $semi-bold;
+			line-height: normal;
+			margin: 30px 0;
+		}
+	}
+}
+
+.container--category-text {
+	.wrapper--category-text {
+		.paragraph--category-text {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0;
+		}
+	}
+}
+
+.container--category-destaques {
+	margin-left: 10px;
+	.wrapper--category-destaques {
+		.paragraph--category-destaques {
+			color: $white;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: $bold;
+			line-height: normal;
+			margin: 0 0 12px;
+		}
+	}
+}
