@@ -2,34 +2,30 @@
 	"helmet-component": {
 		"component": "HelmetComponent"
 	},
-
 	"progress-bar": {
 		"component": "ProgressBar"
 	},
-	
 	"react-minicart-footer": {
 		"component": "CustomMinicartFooter"
 	},
-
 	"react-list-account-mobile": {
 		"component": "MenuMobileListAccount",
 		"composition": "children"
 	},
-
 	"custom-login": {
 		"component": "CustomLogin",
 		"composition": "children"
 	},
-
 	"custom-newsletter": {
-		"component": "NewsletterHome"		
+		"component": "NewsletterHome"
 	},
-
 	"custom-pdp-characteristics": {
 		"component": "CustomPdpSpecs"
 	},
-
 	"buy-together": {
 		"component": "BuyTogether"
+	},
+	"highlight-menu-institutional": {
+		"component": "HighlightInstitutionalMenu"
 	}
 }
