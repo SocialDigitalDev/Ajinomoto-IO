@@ -2,6 +2,10 @@
     .container{
         max-width: 1330px;
         margin: auto;
+
+        @include media ('<phone'){
+            padding: 0 12px;
+        }
     }
 
     .swiper{
@@ -53,10 +57,23 @@
                 
                 .productBrand{
                     display: block;
-                    max-width: 273px;
-                    font-size: 25px;
                     color: $gray-2;
                     font-weight: $bold;
+                    
+                    @include media ('>=desktop'){
+                        font-size: 25px;
+                        max-width: 273px;
+                    }
+                    
+                    @include media ('<=tablet', '>phone'){
+                        font-size: 28px;
+                        max-width: 100%;
+                    }
+                    @include media ('<phone'){
+                        font-size: 23px;
+                        max-width: 100%;
+                        margin-top: 31px;
+                    }
                 }
             }
         }

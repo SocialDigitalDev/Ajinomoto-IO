@@ -4,34 +4,94 @@
 
     &--content{
         max-width: 926px;
-        height: 393px;
         margin: auto;
         padding-top: 34px;
         padding-bottom: 27px;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.10);
         border-radius: 20px;
-        margin-top: 49.97px;
+        
+        @include media ('>phone'){
+            margin-top: 49.97px;
+            height: 393px;
+        }
+        @include media ('<=phone'){
+            margin: 0 12px;
+            height: auto;
+            padding-bottom: 0px;
+            overflow: hidden;
+        }
     }
 
     &--title{
         text-align: center;
         color: $black;
-        font-size: 26px;
         font-weight: $bold;
         margin-bottom: 41px;
+        @include media ('>phone'){
+            font-size: 26px;
+        }
+        @include media ('<=phone'){
+            font-size: 20px;
+        }
+
+        > h3{
+            @include media ('<=phone'){
+                margin-top: 0px;
+            }
+        }
     }
 
     &--list-products{
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @include media ('<=phone'){
+            flex-flow: column;
+        }
         
         .prod-list{
             display: flex;
             align-items: center;
+
+            @include media ('<=phone'){
+                padding: 0 12px;
+            }
+            
+            .buy-together--right{
+                @include media ('<=phone'){
+                    display: flex;
+                    align-items: center;
+                }
+                @media (max-width: 374px){
+                    align-items: flex-start;
+                    flex-flow: column;
+                }
+            }
             
             .prod-img{
-                max-width: 138px;
+                
+                @include media ('>phone'){
+                    max-width: 138px;
+                }
+                @include media ('<=phone'){
+                    max-width: 103px;
+                }
+            }
+        }
+
+        .plus-ico{
+
+            @include media ('<phone'){
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+
+            > svg {
+                @include media ('<phone'){
+                    max-width: 16px;
+                    max-height: 16px;
+                }
             }
         }
     }
@@ -40,8 +100,14 @@
         max-width: 200px;
         margin-left: 14px;
         > h3{
-            font-size: 16px;
             font-weight: $regular;
+
+            @include media ('>phone'){
+                font-size: 16px;
+            }
+            @include media ('<=phone'){
+                font-size: 14px;
+            }
         }
     }
 
@@ -66,6 +132,7 @@
                 .lojaajinomoto-store-theme-0-x-currencyContainer{
                     font-size: 25px;
                     font-weight: $bold;
+                    font-family: $Roboto;
                 }
             }
         }
@@ -84,6 +151,7 @@
             .lojaajinomoto-store-theme-0-x-currencyContainer{
                 font-size: 25px;
                 font-weight: $bold;
+                font-family: $Roboto;
             }
         }
 
@@ -91,37 +159,70 @@
 
     &--total{
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 100px;
         margin-top: 10px;
         border-top: 1px solid $gray-23;
+        
+        @include media ('>phone'){
+            height: 100px;
+            justify-content: center;
+        }
+        @include media ('<=phone'){
+            height: 85px;
+            justify-content: space-between;
+        }
 
         .value-total{
+
+            @include media ('<=phone'){
+                width: 50%;
+            }
             .val-total{
                 display: flex;
                 flex-flow: column;
                 align-items: center;
-                margin-right: 84px;
+
+                @include media ('>phone'){
+                    margin-right: 84px;
+                }
+                @include media ('<=phone'){
+                    margin-right: 0px;
+                }
 
                 small{
                     font-size: 15px;
                     color: $gray-21;
+
+                    @include media ('>phone'){
+                        font-size: 15px;
+                    }
+                    @include media ('<=phone'){
+                        font-size: 12px;
+                        font-weight: $bold;
+                    }
                 }
 
                 .lojaajinomoto-store-theme-0-x-currencyContainer{
-                    font-size: 30px;
                     font-weight: $bold;
                     color: $green-3;
-                    margin-top: 8px;
+                    
+                    @include media ('>phone'){
+                        font-size: 30px;
+                        margin-top: 8px;
+                    }
+                    @include media ('<=phone'){
+                        font-size: 22px;
+                        margin-top: 0px;
+                    }
                 }
             }
         }
 
         .buy-products{
+            @include media ('<=phone'){
+                width: 50%;
+            }
             .btn-buy-products{
-                width: 180px;
-                height: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -130,8 +231,18 @@
                 color: $white;
                 font-size: 18px;
                 font-weight: bold;
-                border-radius: 10px;
                 cursor: pointer;
+                
+                @include media ('>phone'){
+                    border-radius: 10px;
+                    width: 180px;
+                    height: 40px;
+                }
+                @include media ('<=phone'){
+                    width: auto;
+                    height: 85px;
+                    border-radius: 0px;
+                }
             }
         }
     }

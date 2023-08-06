@@ -37,7 +37,8 @@
                         }
                     }
                     &[data-char=" pode conter leite, ovo, peixe, trigo, cevada, aveia e centeio (contaminação cruzada em fábrica)"],
-                    &[data-char=" pode conter leite e ovo"]{
+                    &[data-char=" pode conter leite e ovo"],
+                    &[data-char=" contém fenilalanina"]{
                         &::before{
                             content: "";
                             background: url('../../../assets/svg/caracteristicas/ico_leite-ovo-v2.svg') no-repeat;
@@ -68,6 +69,10 @@
         &-title{
             font-size: 16px;
             color: $gray-2;
+
+            @include media ('<phone'){
+                margin-top: 30px;
+            }
         }
     }
 }
