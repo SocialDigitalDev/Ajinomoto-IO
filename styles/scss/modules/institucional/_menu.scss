@@ -1,0 +1,18 @@
+.menu{
+
+    &Item{
+
+        &--menu-institucional{
+
+            .styledLinkContainer{
+
+                .styledLink{
+
+                    &Content{
+                        margin-bottom: 15px
+                    }
+                }
+            }
+        }
+    }
+}
