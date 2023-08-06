@@ -10,5 +10,8 @@
     },
     "store.custom#duvidas-frequentes": {
         "path": "/institucional/duvidas-frequentes"
+    },
+    "store.custom#quem-somos": {
+        "path": "/institucional/quem-somos"
     }
 }
