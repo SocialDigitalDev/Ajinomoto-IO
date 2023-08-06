@@ -1,0 +1,12 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+
+.vtex-menu-2-x-styledLinkContent--menu-institucional{
+    &.active{
+        font-weight: $bold;
+        color: $black;
+        border-left: 5px solid $secondary;
+        padding: 5px;
+        padding-left: 10px;
+    }
+}

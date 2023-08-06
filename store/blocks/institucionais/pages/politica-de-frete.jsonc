@@ -1,0 +1,49 @@
+{
+    "store.custom#politica-de-frete":{
+        "blocks": [   
+            "flex-layout.row#pagewrapper-politica-de-frete",
+            "highlight-menu-institutional"
+        ]
+    },
+
+    "flex-layout.row#pagewrapper-politica-de-frete": {
+        "title": "Menu e Texto Wrapper",
+        "props": {
+            "blockClass": "menu-texto-wrapper",
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#menu-institucional-wrapper-politica-de-frete",
+            "flex-layout.row#texto-institucional-wrapper-politica-de-frete"
+        ]
+    },
+
+    "flex-layout.col#menu-institucional-wrapper-politica-de-frete": {
+        "title": "Menu Insitucional Wrapper",
+        "props": {
+            "blockClass": "menu-institucional-wrapper"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#menu-institucional"
+        ]
+    },
+
+    "flex-layout.row#texto-institucional-wrapper-politica-de-frete": {
+        "title": "Texto Insitucional Wrapper",
+        "props": {
+            "blockClass": "texto-institucional-wrapper"
+        },
+        "children": [
+            "rich-text#politica-de-frete"
+        ]
+    },
+
+    "rich-text#politica-de-frete":{
+        "title": "Texto Institucional",
+        "props": {
+            "blockClass": "texto-institucional",
+            "text": "**Lorem Ipsum**\n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum lorem enim. Aliquam rhoncus magna ut feugiat hendrerit. Donec sed ante consequat, dapibus leo eget, sodales mauris. Suspendisse potenti. Praesent erat justo, dignissim in maximus ac, congue quis libero. Aliquam erat volutpat. Aenean eget risus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum lorem enim. Aliquam rhoncus magna ut feugiat hendrerit. Donec sed ante consequat, dapibus leo eget, sodales mauris. Suspendisse potenti. Praesent erat justo, dignissim in maximus ac, congue quis libero. Aliquam erat volutpat. Aenean eget risus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum lorem enim. Aliquam rhoncus magna ut feugiat hendrerit. Donec sed ante consequat, dapibus leo eget, sodales mauris. Suspendisse potenti. Praesent erat justo, dignissim in maximus ac, congue quis libero. Aliquam erat volutpat. Aenean eget risus erat. \n \n **Lorem Ipsum** \n \n Aliquam erat volutpat. Curabitur condimentum quam sed quam faucibus, id finibus diam ultrices. Donec id elementum tortor, et fringilla enim. Mauris rhoncus urna tortor, vitae cursus diam finibus eu. Mauris aliquam convallis nisl sed luctus. Pellentesque porta, turpis in fringilla dignissim, ante nulla ornare sapien, mattis ornare orci erat ut est. Mauris augue neque, facilisis ut massa eget, posuere malesuada mauris."
+            
+        }
+    }
+}
