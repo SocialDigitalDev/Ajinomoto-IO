@@ -91,7 +91,7 @@
 }
 
 .infoCardImageContainer--institucional--origem,
-.infoCardImageContainer--produtos-ajinomoto {
+.infoCardImageContainer--institucional--produtos-ajinomoto  {
 	width: auto;
     text-align: center;
 }
@@ -133,7 +133,7 @@
 	}
 }
 
-.infoCardTextContainer--produtos-ajinomoto {
+.infoCardTextContainer--institucional--produtos-ajinomoto {
     width: auto;
 	max-width: 724px;
 	@include media(">phone", "<=tablet") {
