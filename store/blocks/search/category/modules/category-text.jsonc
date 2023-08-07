@@ -1,9 +1,17 @@
 {
+	"category-highlights#category-destaques": {
+		"children": ["flex-layout.col#category-destaques"]
+	},
+
+	"category-highlights#search-ajipanda": {
+		"children": ["flex-layout.col#search-ajipanda"]
+	},
+
 	"flex-layout.row#category-text": {
 		"title": "TEXTO DE APOIO",
 		"children": [
 			"flex-layout.col#searchtitle",
-			"flex-layout.col#search-ajipanda"
+			"category-highlights#search-ajipanda"
 		],
 		"props": {
 			"blockClass": "category--text",
@@ -16,7 +24,7 @@
 		"children": [
 			"search-title.v2",
 			"rich-text#category-text",
-			"flex-layout.col#category-destaques"
+			"category-highlights#category-destaques"
 		],
 		"props": {
 			"blockClass": "category--text-content",
@@ -104,8 +112,8 @@
 			"isFullModeStyle": false,
 			"textPosition": "left",
 			"imageUrl": "assets/svg/destaques-categoria/ico_frango.svg",
-			"imageActionUrl": "/sazon/frango",
-			"headline": "[Frango](/sazon/frango)",
+			"imageActionUrl": "/galinha?map=category-2",
+			"headline": "[Frango](/galinha?map=category-2)",
 			"callToActionMode": "none",
 			"blockClass": "destaque",
 			"textAlignment": "CENTER",
@@ -119,8 +127,8 @@
 			"isFullModeStyle": false,
 			"textPosition": "left",
 			"imageUrl": "assets/svg/destaques-categoria/ico_carne.svg",
-			"imageActionUrl": "/sazon/carne",
-			"headline": "[Carne](/sazon/carne)",
+			"imageActionUrl": "/carne?map=category-2",
+			"headline": "[Carne](/carne?map=category-2)",
 			"callToActionMode": "none",
 			"blockClass": "destaque",
 			"textAlignment": "CENTER",
@@ -134,8 +142,8 @@
 			"isFullModeStyle": false,
 			"textPosition": "left",
 			"imageUrl": "assets/svg/destaques-categoria/ico_vegetais.svg",
-			"imageActionUrl": "/sazon/vegetais",
-			"headline": "[Vegetais](/sazon/vegetais)",
+			"imageActionUrl": "/legumes?map=category-2",
+			"headline": "[Vegetais](/legumes?map=category-2)",
 			"callToActionMode": "none",
 			"blockClass": "destaque",
 			"textAlignment": "CENTER",
@@ -149,8 +157,8 @@
 			"isFullModeStyle": false,
 			"textPosition": "left",
 			"imageUrl": "assets/svg/destaques-categoria/ico_tempero.svg",
-			"imageActionUrl": "/sazon/temperos-prontos",
-			"headline": "[Tempera & Prepara](/sazon/temperos-prontos)",
+			"imageActionUrl": "/temperos-prontos?map=category-2",
+			"headline": "[Tempera & Prepara](/temperos-prontos?map=category-2)",
 			"callToActionMode": "none",
 			"blockClass": "destaque",
 			"textAlignment": "CENTER",
