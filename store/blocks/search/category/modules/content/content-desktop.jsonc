@@ -10,7 +10,7 @@
 		"children": [
 			"flex-layout.row#category-banner",
 			"flex-layout.row#search-breadcrumb",
-			"flex-layout.row#category-text",
+			"flex-layout.row#category-text",			
 			"flex-layout.row#category-main"
 		],
 		"props": {

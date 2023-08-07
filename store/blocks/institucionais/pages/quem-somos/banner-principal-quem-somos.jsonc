@@ -1,0 +1,80 @@
+{
+    // DESKTOP
+	"responsive-layout.desktop#quem-somos": {
+		"children": [
+			"list-context.image-list#quem-somos-desktop"
+		]
+	},
+
+	"list-context.image-list#quem-somos-desktop": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": ["slider-layout#quem-somos"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/sobre-ajinomoto.png"
+				}
+			]
+		}
+	},
+
+	// TABLET
+	"responsive-layout.tablet#quem-somos": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["list-context.image-list#quem-somos-tablet"]
+	},
+	
+	"list-context.image-list#quem-somos-tablet": {
+		"children": ["slider-layout#quem-somos"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/sobre-ajinomoto.png"
+				}
+			]
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#quem-somos": {
+		"title": "BANNER PRINCIPAL [PHONE]",
+		"children": ["list-context.image-list#quem-somos-phone"]
+	},
+
+	"list-context.image-list#quem-somos-phone": {
+		"children": ["slider-layout#quem-somos"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/sobre-ajinomoto-mobile.png"
+				}
+			]
+		}
+	},
+
+	// SLIDER MAIN BANNER
+
+	"slider-layout#quem-somos": {
+		"title": "SLIDER QUEM SOMOS",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"showNavigationArrows": "desktopOnly",
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "quem-somos"		
+		}
+	}
+}

@@ -32,5 +32,9 @@
 	
 	"highlight-menu-institutional": {
 		"component": "HighlightInstitutionalMenu"
+	},
+	"category-highlights": {
+		"component": "CategoryHighlights",
+		"composition": "children"
 	}
 }
