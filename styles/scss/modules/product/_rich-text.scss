@@ -23,11 +23,17 @@
 
             .paragraph{
                 margin: 0;
-                font-size: 14px;
                 color: $gray-2;
                 border: 1px solid $gray-19;
                 border-radius: 5px;
                 padding: 0px 6px;
+                
+                @media (min-width: 321px){
+                    font-size: 14px;
+                }
+                @media (max-width: 320px){
+                    font-size: 12px;
+                }
                 
                 .strong{
 

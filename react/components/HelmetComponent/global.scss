@@ -241,7 +241,8 @@ ol {
 
 // WISH LIST PDP
 
-.vtex-flex-layout-0-x-flexColChild--product-info-components {
+.vtex-flex-layout-0-x-flexRowContent--flag-savings-wishlist-row {
+
 	.vtex-wish-list-1-x-wishlistIconContainer {
 		.vtex-button {
 			&:hover,
@@ -286,6 +287,16 @@ ol {
 	}
 }
 
+// IMAGEM SEM ZOOM PDP
+
+.vtex-store-components-3-x-productImage {
+	.relative {
+		> div {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
 // FILTRO MOBILE
 .vtex-search-result-3-x-accordionFilter {
 	.ReactCollapse--collapse {

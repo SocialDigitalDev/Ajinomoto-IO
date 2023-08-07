@@ -1,9 +1,12 @@
 {
+    // DESKTOP AND TABLET
+
     "flex-layout.row#img-product-info": {
-        "title": "Imagem e Informações do Produto",
+        "title": "Página de Produto [DESKTOP E TABLET]",
         "props": {
             "blockClass": [
                 "ajinomoto--img-product-info-desktop",
+                "ajinomoto--img-product-info-tablet",
                 "img-product-info"
             ]
         },
@@ -34,9 +37,43 @@
             "flex-layout.row#product-breadcrumb",
             "flex-layout.row#flag-savings-wishlist",
             "flex-layout.row#product-name--container",
+            "similar-products",
             "flex-layout.row#product-price--container",
             "flex-layout.row#btn-buy",
             "custom-pdp-characteristics"
+        ]
+    },
+
+    // MOBILE
+
+    "flex-layout.row#img-product-info-mobile": {
+        "title": "Página de Produto [MOBILE]",
+        "props": {
+            "blockClass": [
+                "ajinomoto--img-product-info-mobile",
+                "img-product-info"
+            ]
+        },
+        "children": [
+            "flex-layout.col#image-description-info-mobile"
+        ]
+    },
+
+    "flex-layout.col#image-description-info-mobile": {
+        "title": "Coluna Única: Página de Produto Completa",
+        "props": {
+            "blockClass": "image-description-info"
+        },
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#flag-savings-wishlist",
+            "stack-layout#img-product",
+            "flex-layout.row#product-name--container",
+            "similar-products",
+            "flex-layout.row#product-price--container",
+            "flex-layout.row#btn-buy",
+            "custom-pdp-characteristics",
+            "flex-layout.row#disclosure-specifications"
         ]
     }
 }
