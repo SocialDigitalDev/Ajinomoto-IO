@@ -1,0 +1,79 @@
+.container{
+
+    &--availability-notify--modal-content{
+        max-width: 601px;         
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+        .paper{
+            max-width: 455px;
+            margin: auto;
+            background: $orange-2;
+            padding: 35px 28px;
+            padding-bottom: 46px;
+            border-radius: 20px;
+            overflow: visible;
+
+            &::after{
+                @include media ('<=phone'){
+                    content: "";
+                    background: url('assets/svg/panda/ico_panda-avise-me.svg') no-repeat;
+                    background-size: contain;
+                    width: 73.67px;
+                    height: 140.86px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 280px;
+                }
+            }
+        }
+
+        &::before{
+            content: "";
+            background: url('assets/svg/panda/ico_panda-avise-me.svg') no-repeat;
+            background-size: contain;
+            width: 151px;
+            height: 293px;
+            display: block;
+
+            @include media ('<=phone'){
+                display: none;
+            }
+        }
+        
+        .closeButton{
+            font-size: 0;
+            background-color: transparent;
+            border: none;
+            
+            @include media ('>phone'){
+                position: absolute;
+                background: url('assets/svg/ico_modal-availability-close.svg') no-repeat;
+                background-size: contain;
+                width: 34px;
+                height: 34px;
+                top: -50px;
+                right: -50px;
+            }
+            @include media ('<=phone'){
+                position: absolute;
+                background: url('assets/svg/ico_modal-availability-close-mobile.svg') no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                top: 19px;
+                right: 24.57px;
+            }
+        }
+    }
+}
+
+.backdrop{
+
+    &--availability-notify--modal-content{
+        background: $black-80;
+    }
+}
