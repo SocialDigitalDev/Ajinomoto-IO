@@ -2,6 +2,7 @@
 	"store.product": {
 		"children": [
 			"responsive-layout.desktop#content-product",
+            "responsive-layout.tablet#content-product",
             "responsive-layout.mobile#content-product"
 		]
 	},
@@ -11,19 +12,6 @@
             "flex-layout.row#img-product-info",
             "flex-layout.row#buy-together-desktop",
             "flex-layout.row#qvvt"
-        ]
-    },
-    
-    "flex-layout.row#buy-together-desktop": {
-        "title": "Compre Junto",
-        "props": {
-            "blockClass": [
-                "ajinomoto--buy-together-desktop",
-                "buy-together"
-            ]
-        },
-        "children": [
-
         ]
     }
 }

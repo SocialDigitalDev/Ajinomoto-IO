@@ -11,6 +11,11 @@
             &--flag-savings-wishlist-row{
                 margin-top: 26px;
                 margin-bottom: 29px;
+                display: flex;
+
+                @include media ('<=tablet'){
+                    justify-content: space-between;
+                }
             }
 
             &--product-price{
@@ -21,21 +26,30 @@
                     padding: 11px 25px;
                     max-width: 375px;
                     height: 100px;
+                    display: flex;
                 }
             }
 
             &--product-btn-buy{
+                display: flex;
+                align-items: center;
                 margin-top: 30px;
 
                 :global(.vtex-button){
                     border: none;
-                    width: 204px;
                     height: 50px;
                     position: relative;
                     left: -5px;
                     z-index: 3;
                     background: $green-2;
                     border-radius: 10px;
+                    
+                    @media (min-width: 321px){
+                        width: 204px;
+                    }
+                    @media (max-width: 320px){
+                        width: 170px;
+                    }
 
                     :global(.vtex-button__label){
                         padding: 0;
@@ -50,6 +64,11 @@
                         }
                     }
                 }
+            }
+
+            &--qvvt{
+                max-width: 1300px;
+                margin: auto;
             }
         }
     }

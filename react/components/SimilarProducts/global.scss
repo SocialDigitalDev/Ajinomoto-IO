@@ -1,0 +1,93 @@
+@import "../../../styles/scss/variables/all";
+
+.content--similar-product{
+    position: relative;
+    .list{
+
+        &-products{
+            
+            &--button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 169px;
+                height: 40px;
+                background: $primary;
+                border: none;
+                border-radius: 10px;
+                color: $white;
+                padding: 0 15px;
+                font-size: 19px;
+                margin-bottom: 43px;
+                cursor: pointer;
+                
+                &.closed{
+
+                    &::after {
+                        content: "";
+                        background: url('../../../assets/svg/ico_arrow-down-sabores.svg') no-repeat;
+                        background-size: contain;
+                        width: 18px;
+                        height: 10px;
+                        display: block;
+                        transition: .3s all ease;
+                    }
+                }
+
+                &.open{
+                    
+                    &::after {
+                        content: "";
+                        background: url('../../../assets/svg/ico_arrow-down-sabores.svg') no-repeat;
+                        background-size: contain;
+                        width: 18px;
+                        height: 10px;
+                        display: block;
+                        transform: rotate(180deg);
+                        transition: .3s all ease;
+                    }
+                }
+            }
+
+            &--list{
+                background: $white;
+                box-shadow: 0px 5px 10px #ccc;
+                width: 100%;
+                max-width: 170px;
+                position: absolute;
+                top: 40px;
+                z-index: 4;
+
+                &.closed{
+                    height: 0;
+                    padding: 0;
+                    max-height: 200px;
+                    overflow: hidden;
+                    transition: .3s all ease;
+                }
+                
+                &.open{
+                    padding: 10px 0;
+                    height: 200px;
+                    overflow-y: auto;
+                    transition: .3s all ease;
+                }
+
+                .sabor-item{
+                    
+                    a{
+                        padding: 3px 10px;
+                        text-decoration: none;
+                        color: $gray-2;
+                        display: block;
+
+                        &:hover{
+                            background: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
