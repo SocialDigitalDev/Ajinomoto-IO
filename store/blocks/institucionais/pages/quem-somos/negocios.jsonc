@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#nossos-negocios": {
+        "children": [
+            "rich-text#nossos-negocios"
+        ],
+        "props": {
+            "blockClass": ["institucional--quem-somos"]
+        }
+    },
+
+    "rich-text#nossos-negocios": {
+        "props": {
+            "text": "## Nossos negócios\n A atuação da Ajinomoto vai muito além de produtos alimentícios. Afinal, somos líderes mundiais na produção de aminoácidos. Quer conhecer mais sobre nossos negócios?",
+            "blockClass": ["institucional", "institucional--negocios"]
+        }
+    }
+}

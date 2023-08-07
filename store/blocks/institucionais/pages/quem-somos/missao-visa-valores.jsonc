@@ -1,0 +1,44 @@
+{
+    "flex-layout.row#misao-visao-valores": {
+        "title": "SECTION - MISSAO VISAO VALORES",
+        "children": [
+            "flex-layout.col#misao-visao-valores"
+        ],
+        "props": {
+            "blockClass": "institucional--quem-somos"
+        }
+    },
+
+    "flex-layout.col#misao-visao-valores": {
+        "children": [
+            "rich-text#missao",
+            "rich-text#visao",
+            "rich-text#valores"
+        ],
+        "props": {
+            "preventVerticalStretch": true
+        }
+    },
+
+    "rich-text#missao": {
+        "title": "MISSAO",
+        "props": {
+            "text": " ## A Missão Ajinomoto\n Contribuir para a alimentação e o bem-estar em todo o mundo e para uma vida melhor no futuro.",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#visao": {
+        "title": "VISAO",
+        "props": {
+            "text": " ## Visão\n Ser uma empresa confiável de alimentos, aminoácidos e seus derivados na América Latina, com soluções inovadoras, baseadas em nossa tecnologia única.",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#valores": {
+        "title": "VALORES",
+        "props": {
+            "text": " ## ASV (The Ajinomoto Group Creating Shared Value)\n Uma empresa precisa gerar lucro, mas, além disso, precisa ser sustentável, com a finalidade de ser útil e agregar valor à sociedade. Esse é o objetivo do ASV (The Ajinomoto Group Creating Shared Value), a Criação de Valor Compartilhado do Grupo Ajinomoto, uma filosofia disseminada no Japão e que se espalha pelas filiais do Grupo pelo mundo.",
+            "blockClass": "institucional"
+        }
+    }
+}

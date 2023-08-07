@@ -1,74 +1,91 @@
 .container {
+	&--title-quem-somos {
+		justify-content: flex-start;
+		.wrapper {
+			.paragraph {
+				font-family: $OpenSans;
+				font-size: 30px;
+				font-weight: $bold;
+				color: $black;
+				width: 100%;
+				line-height: 20px;
+				padding: 25px 0 15px 0;
+				margin: 0;
 
-    &--title-quem-somos {
-        justify-content: flex-start;
-        .wrapper {
-            .paragraph {
-                font-family: $OpenSans;
-                font-size: 30px;
-                font-weight: $bold;
-                color: $black;
-                width: 100%;
-                line-height: 20px;
-                padding: 25px 0 15px 0;
-                margin: 0;
+				@include media("<=desktop") {
+					font-size: 20px;
+					text-align: left;
+					margin: 0;
+					padding: 25px 0 15px 0;
+				}
+			}
+		}
+		:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+			width: 100%;
+		}
+	}
 
-                @include media("<=desktop") {
-                    font-size: 20px;
-                    text-align: left;
-                    margin: 0;
-                    padding: 25px 0 15px 0;
-                }
-            }
+	&--box-about {
+		.wrapper {
+			.paragraph {
+				color: $white;
+				font-size: 18px;
+				text-align: center;
+
+				@include media("<=desktop") {
+					font-size: 12px;
+				}
+
+				:global(.vtex-rich-text-0-x-strong--box-about) {
+					text-transform: uppercase;
+					font-size: 28px;
+					display: block;
+
+					@include media("<=desktop") {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+
+	&--content-quem-somos {
+		.wrapper {
+			.paragraph {
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-weight: $regular;
+				color: $black;
+				width: 100%;
+				line-height: 28px;
+				margin-bottom: 10px;
+
+				@include media("<=desktop") {
+					font-size: 15px;
+					line-height: 24px;
+				}
+			}
+		}
+	}
+
+	&--texto-rodape-imagem {
+        max-width: 1130px;
+        @include media(">phone") {
+            padding: 24px 0;
         }
-        :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
-            width: 100%;
-        }
-    }
-
- 
-    &--box-about{
-        .wrapper{
-            .paragraph{
-                color: $white;
-                font-size: 18px;
-                text-align: center;
-
-                @include media('<=desktop'){
-                    font-size: 12px;
-                }
-
-                :global(.vtex-rich-text-0-x-strong--box-about){
-                    text-transform: uppercase;
-                    font-size: 28px;
-                    display: block;
-
-                    @include media('<=desktop'){
-                        font-size: 18px;
-                    }
-
-                }
-            }
-        }
-    }
-
-    &--content-quem-somos {
-        .wrapper {
-            .paragraph {
-                font-family: $OpenSans;
-                font-size: 18px;
-                font-weight: $regular;
-                color: $black;
-                width: 100%;
-                line-height: 28px;
-                margin-bottom: 10px;
-
-                @include media("<=desktop") {
+		.wrapper {
+			.paragraph {
+				color: $white;
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				margin: 0;
+                @include media("<=phone") {
                     font-size: 15px;
-                    line-height: 24px;
-
                 }
-            }
-        }
-    }
+			}
+		}
+	}
 }

@@ -1,87 +1,171 @@
 :global(.vtex-flex-layout-0-x-flexRow--menu-texto-wrapper) {
-    .container {
-        max-width: 1407px;
-        margin: auto;
-    }
+	.container {
+		max-width: 1407px;
+		margin: auto;
+	}
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--history-brand),
 :global(.vtex-flex-layout-0-x-flexRow--video-content),
 :global(.vtex-flex-layout-0-x-flexRow--items-mission-vision),
-:global(.vtex-flex-layout-0-x-flexRow--content-values){
-    
-    :global(.vtex-store-components-3-x-container) {
-        max-width: 1187px;
-        margin: 0 auto 10px auto;
+:global(.vtex-flex-layout-0-x-flexRow--content-values) {
+	:global(.vtex-store-components-3-x-container) {
+		max-width: 1187px;
+		margin: 0 auto 10px auto;
 
-        @include media('<=desktop') {
-            margin: 0 auto 0px auto;
-        }
-
-    }
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+		}
+	}
 }
 
-:global(.vtex-flex-layout-0-x-flexRow--items-mission-vision){
-    :global(.vtex-store-components-3-x-container) {
-
-        @include media('<=desktop') {
-            margin: 0 auto 0px auto;
-            padding: 0;
-        }
-
-    }
+:global(.vtex-flex-layout-0-x-flexRow--items-mission-vision) {
+	:global(.vtex-store-components-3-x-container) {
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+			padding: 0;
+		}
+	}
 }
 
-:global(.vtex-flex-layout-0-x-flexRow--content-values){
-    :global(.vtex-store-components-3-x-container) {
-
-        @include media('<=desktop') {
-            margin: 0 auto 0px auto;
-            padding: 0;
-        }
-
-    }
+:global(.vtex-flex-layout-0-x-flexRow--content-values) {
+	:global(.vtex-store-components-3-x-container) {
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+			padding: 0;
+		}
+	}
 }
 
+.infoCardContainer--info-card-institucional {
+	width: 100%;
+	height: 500px;
+	max-width: 1920px;
+	text-transform: uppercase;
 
-.infoCardContainer {
-
-    &--info-card-institucional {
-        width: 100%;
-        height: 500px;
-        max-width: 1920px;
-        text-transform: uppercase;
-
-        @include media('<=desktop') {
-            height: 271px;
-        }
-    }
+	@include media("<=desktop") {
+		height: 271px;
+	}
 }
 
 .infoCardCallActionContainer {
-    &--info-card-institucional {
+	&--info-card-institucional {
+		:global(.vtex-button) {
+			position: relative;
+			top: 154px;
+			background: none;
+			appearance: none;
+			border: none;
+			cursor: initial;
+			font-size: 45px;
+			text-align: left;
+			font-weight: $bold;
+			font-family: $OpenSans;
 
-        :global(.vtex-button) {
-            position: relative;
-            top: 154px;
-            background: none;
-            appearance: none;
-            border: none;
-            cursor: initial;
-            font-size: 45px;
-            text-align: left;
-            font-weight: $bold;
-            font-family: $OpenSans;
+			@include media("<=desktop") {
+				top: 90px;
+				font-size: 29px;
+			}
 
-            @include media('<=desktop') {
-                top: 90px;
-                font-size: 29px;
+			:global(.vtex-button__label) {
+				padding: 0 1em 0 0;
+			}
+		}
+	}
+}
 
-            }
+//QUEM SOMOS
+.infoCardContainer--institucional--origem,
+.infoCardContainer--produtos-ajinomoto {
+	justify-content: center;
+	align-items: flex-start;
+	gap: 60px;
+	@include media(">phone", "<=tablet") {
+		gap: 15px;
+	}
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
 
-            :global(.vtex-button__label) {
-                padding: 0 1em 0 0;
-            }
-        }
-    }
+.infoCardImageContainer--institucional--origem,
+.infoCardImageContainer--produtos-ajinomoto {
+	width: auto;
+    text-align: center;
+}
+
+.infoCardTextContainer--institucional--origem {
+	width: auto;
+	max-width: 724px;
+	@include media(">phone", "<=tablet") {
+		max-width: 610px;
+	}
+	.container--institucional--origem {
+		margin: 0;
+
+		.heading--institucional--origem {
+			color: $primary;
+			font-family: $OpenSans;
+			font-size: 40px;
+			font-style: normal;
+			font-weight: $extra-bold;
+			line-height: normal;
+			margin: 0 0 40px;
+			@include media("<=phone") {
+				text-align: center;
+			}
+			@include media("<=tablet") {
+				margin: 0 0 20px;
+			}
+		}
+
+		.paragraph--institucional--origem {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0 0 20px;
+		}
+	}
+}
+
+.infoCardTextContainer--produtos-ajinomoto {
+    width: auto;
+	max-width: 724px;
+	@include media(">phone", "<=tablet") {
+		max-width: 610px;
+	}
+    .container--institucional--produtos-ajinomoto {
+		margin: 0;
+
+		.heading--institucional--produtos-ajinomoto {
+			color: $red-3;
+			font-family: $OpenSans;
+			font-size: 25px;
+			font-style: normal;
+			font-weight: $bold;
+			line-height: normal;
+			margin: 0 0 40px;
+			@include media("<=phone") {
+				text-align: center;
+			}
+			@include media("<=tablet") {
+				margin: 0 0 20px;
+			}
+		}
+
+		.paragraph--institucional--produtos-ajinomoto {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0 0 20px;
+		}
+	}
 }

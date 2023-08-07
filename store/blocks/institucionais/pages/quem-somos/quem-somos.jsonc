@@ -1,23 +1,31 @@
 {
-    "store.custom#quem-somos":{
-        "blocks": [   
-            "responsive-layout.desktop#quem-somos",
+	"store.custom#quem-somos": {
+		"blocks": [
+			"responsive-layout.desktop#quem-somos",
 			"responsive-layout.tablet#quem-somos",
 			"responsive-layout.phone#quem-somos",
-            "flex-layout.row#rodape-banner"
-        ]
-    },
+			"flex-layout.row#rodape-banner",
+			"flex-layout.row#origem",
+            "flex-layout.row#filosofia",
+            "flex-layout.row#misao-visao-valores",
+            "flex-layout.row#produtos-ajinomoto",
+            "flex-layout.row#nossos-negocios"
+		]
+	},
 
-    "flex-layout.row#rodape-banner": {
-        "children": ["rich-text#rodape-banner"]
-    },
-   
-
-    "rich-text#rodape-banner":{
-        "title": "Texto Institucional",
+	"flex-layout.row#rodape-banner": {
+		"children": ["rich-text#rodape-banner"],
         "props": {
-            "blockClass": "texto-rodape-imagem",
-            "text": "Presente no país desde 1956, a Ajinomoto do Brasil se empenha em oferecer produtos de qualidade para o consumidor e insumos para as indústrias alimentícia, cosmética, esportiva, farmacêutica, de nutrição animal e de agronegócios."            
+            "blockClass": ["institucional","institucional--rodape-banner"],
+            "fullWidth": true
         }
-    }
+	},
+
+	"rich-text#rodape-banner": {
+		"title": "Texto Institucional",
+		"props": {
+			"blockClass": "texto-rodape-imagem",
+			"text": "Presente no país desde 1956, a Ajinomoto do Brasil se empenha em oferecer produtos de qualidade para o consumidor e insumos para as indústrias alimentícia, cosmética, esportiva, farmacêutica, de nutrição animal e de agronegócios."
+		}
+	}	
 }

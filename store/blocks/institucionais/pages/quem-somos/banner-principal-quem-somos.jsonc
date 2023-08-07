@@ -1,6 +1,7 @@
 {
     // DESKTOP
 	"responsive-layout.desktop#quem-somos": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
 		"children": [
 			"list-context.image-list#quem-somos-desktop"
 		]
@@ -64,7 +65,7 @@
 	// SLIDER MAIN BANNER
 
 	"slider-layout#quem-somos": {
-		"title": "SLIDER QUEM SOMOS",
+		"title": "SLIDER - BANNER PRINCIPAL",
 		"props": {
 			"itemsPerPage": {
 				"desktop": 1,

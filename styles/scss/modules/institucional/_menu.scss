@@ -6,10 +6,13 @@
 
             .styledLinkContainer{
 
-                .styledLink{
-
-                    &Content{
-                        margin-bottom: 15px
+                &--menu-institucional {
+                    margin-left: 0;
+                    .styledLink{
+    
+                        &Content{
+                            margin-bottom: 15px
+                        }
                     }
                 }
             }
