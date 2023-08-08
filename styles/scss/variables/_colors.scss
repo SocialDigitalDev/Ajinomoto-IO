@@ -48,6 +48,9 @@ $gray-22: #A7A8A9;
 $gray-23: #ECECEC;
 $gray-24: #8C8C8C;
 $gray-25: #CFCFCF;
+$gray-26: #EAEAEA;
+$gray-27: #CECECE;
+$gray-28: #9A9A9A;
 
  
 // Tons de laranja
@@ -66,3 +69,7 @@ $red-4: #EC1B24;
 // Transparências
 
 $black-80: rgba(0, 0, 0, 0.8);
+
+// Degradê
+
+$gradient-red: linear-gradient(90deg, #EE6262 8.71%, #E60012 100%);

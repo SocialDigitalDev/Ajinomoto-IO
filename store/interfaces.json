@@ -2,12 +2,12 @@
 	"helmet-component": {
 		"component": "HelmetComponent"
 	},
-	"progress-bar": {
-		"component": "ProgressBar"
-	},
 	"react-minicart-footer": {
 		"component": "CustomMinicartFooter"
 	},
+	"react-shipping-bar": {
+        "component": "ShippingBar"
+    },
 	"react-list-account-mobile": {
 		"component": "MenuMobileListAccount",
 		"composition": "children"

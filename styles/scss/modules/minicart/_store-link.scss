@@ -1,0 +1,13 @@
+.link{
+
+    &--empty-cart-button{
+        text-decoration: none;
+
+        .label{
+            background: $black;
+            color: $white;
+            padding: 15px 30px;
+            font-size: 20px;
+        }
+    }
+}

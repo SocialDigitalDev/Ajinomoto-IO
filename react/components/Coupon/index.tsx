@@ -131,7 +131,7 @@ export const Coupon: StorefrontFunctionComponent<MinicartInputProps> = ({
               // autoFocus
               onChange={handleCouponChange}
               onBlur={handleBlur}
-              placeholder="Insira seu cupom aqui"
+              placeholder="Cupom de Desconto"
               value={currentCoupon}
             />
           </div>

@@ -1,460 +1,136 @@
-@import "../../../styles/scss/variables/_all.scss";
+@import "../../../styles/scss/variables/all";
 
-.minicart {
-	
-	&-footer {
-		
-		&__container {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			height: 100%;
-		}
-		
-		&__fields {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			justify-content: flex-start;
-			width: 100%;
+.minicart-footer {
+    
+    &__totalizers {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 150%;
+        font-size: 14px;
+        padding: 10px 0;
+        border-top: 1px solid $gray-27;
 
-			@include media('>phone') {
-				padding: 0 37px 0 47px;
-			}
+        &:first-child {
+            border: 0;
+        }
 
-			@include media('<=phone') {
-				padding: 0 20px;
-			}
-		}
-		
-		&__field {
-			
-			&--shipping {
-				display: flex;
-				flex-flow: row nowrap;
-				align-items: center;
-				justify-content: flex-start;
-				width: 100%;
-				
-				.shipping {
-					display: block;
-					width: 100%;
-					padding: 0;
-					margin: 0;
-					
-					&-title {
-						display: none;
-					}
-					
-					&-link {
-						display: block;
-						width: 100%;
-						margin-top: 10px;
-						font-family: $OpenSans;
-						font-weight: $regular;
-						font-size: 12px;
-						color: $gray-7;
-						text-decoration: underline;
-						line-height: 14px;
-					}
-				}
-			}
-			
-			&--coupon {
-				display: flex;
-				flex-flow: row nowrap;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 100%;
-				margin-top: 20px;
-				
-				.coupon {
-					
-					&-custom {
-						display: flex;
-						flex-flow: column nowrap;
-						align-items: flex-start;
-						justify-content: flex-start;
-						width: 100%;
-						
-						&-title {
-							display: block;
-							width: 100%;
-							margin: 0 0 8px;
-							font-family: $OpenSans;
-							font-weight: $medium;
-							font-size: 16px;
-							color:#000;
-							line-height: 24px;
-						}
-						
-						form {
-							display: flex;
-							flex-flow: column nowrap;
-							align-items: flex-start;
-						}
-						
-						fieldset {
-							display: block;
-							width: 100%;
-							padding: 0;
-							margin: 0;
-							border: none;
-							position: relative;
-							
-							.input-group {
-								display: block;
-								width: 100%;
-							}
-							
-							#coupon-input {
-								display: block;
-								width: 100%;
-								height: 45px;
-								background: $white;
-								border: 1px solid $gray-11;
-								border-radius: 50px;
-								font-family: $OpenSans;
-								font-weight: $semi-bold;
-								font-size: 14px;
-								color:#000;
+        &-label {
+            font-weight: $regular;
+            color: $gray-3;
+        }
+        
+        &-value {
+            font-weight: $semi-bold;
+            text-align: right;
+            color: $gray-3;
+        }
 
-								@include media('>=desktop') {
-									padding: 12px 125px 12px 40px;
-								}
+        &--discount{
+            
+            .minicart-footer__totalizers-label {
+                font-weight: $regular;
+                color: $primary;
+            }
+    
+            .minicart-footer__totalizers-value {
+                font-weight: $semi-bold;
+                text-align: right;
+                color: $primary !important;
 
-								@include media('<desktop') {
-									padding: 12px 125px 12px 20px;
-								}
-								
-								&::placeholder {
-									font-weight: $regular;
-									color: $gray-7;
-								}
-							}
-							
-							button {
-								display: block;
-								width: 121px;
-								height: 45px;
-								padding: 0;
-								margin: 0;
-								position: absolute;
-								top: 0;
-								right: 0;
-								background: $white;
-								border: 1px solid#000;
-								border-radius: 50px;
-								font-family: $OpenSans;
-								font-weight: $regular;
-								font-size: 14px;
-								color:#000;
-								text-align: center;
-								cursor: pointer;
-								line-height: 21px;
-							}
-						}
-					}
-					
-					&-message {
-						display: block;
-						width: 100%;
-						margin-top: 6px;
-						font-family: $OpenSans;
-						font-weight: $regular;
-						font-size: 12px;
-						color: $gray-7;
-						text-align: left;
-						line-height: 14px;
-					}
-				}
-			}
-			
-			&--vendor {
-				display: none !important;
-			}
-		}
-		
-		&-shipping {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 100%;
-			gap: 15px 0;
-			margin-top: 15px;
-			
-			&__title-resume {
-				display: block;
-				width: 100%;
-				margin: 0;
-				font-family: $OpenSans;
-				font-weight: $regular;
-				font-size: 14px;
-				color: $gray-1;
-			}
-			
-			&__list {
-				display: flex;
-				flex-flow: column nowrap;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 100%;
-				max-height: 150px;
-				gap: 15px 0;
-				padding: 5px 15px 5px 5px;
-				overflow-y: auto;
-				
-				&::-webkit-scrollbar {
-					height: 3px;
-				}
-				
-				&::-webkit-scrollbar-track {
-					background: #000;					
-				}
-				
-				&::-webkit-scrollbar-thumb {
-					background: $primary;
-					border: none;
-				}
-			}
-			
-			&__item {
-				display: flex;
-				flex-flow: row-reverse nowrap;
-				align-items: center;
-				justify-content: flex-start;
-				min-width: 265px;
-				max-width: 265px;
-				background: #000;
-				border: 1px solid $primary;
-				border-radius: 10px;
-			}
-			
-			&__input {
-				display: none;
-				width: 20px;
-				height: 20px;
-				background: $white;
-				border: 1px solid $gray-11;
-				border-radius: 50%;
-				appearance: none;
-				cursor: pointer;
-				
-				&:checked {
-					border: 5px solid $white;
-					background: $primary;
-				}
-			}
+                &::before{
+                    content: "-";
+                }
+            }
+            
+        }
+        /* TOTAL */
+        &-value.total__value,
+        &-label.total__label {
+            font-family: $OpenSans;
+            font-weight: $medium;
+            font-size: 20px;
+            line-height: 23px;
+            color: $black;
+        }
 
-			&__label {
-				display: flex;
-				flex-flow: row nowrap;
-				align-items: center;
-				justify-content: flex-start;
-				width: 100%;
-				gap: 0 10px;
-			}
+        &--installment{
+            margin: -15px 0 50px;
+            border: 0;
 
-			&__icon {
-				display: block;
-			}
+            .installment__value {
+                font-family: $OpenSans;
+                font-style: normal;
+                font-weight: $regular;
+                font-size: 12px;
+                line-height: 14px;
+                color: $black;
+            }
+        }
+    }
 
-			&__infos {
-				display: flex;
-				flex-flow: column nowrap;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 100%;
-			}
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
 
-			&__name {
-				display: block;
-				width: 100%;
-				margin: 0;
-				font-family: $OpenSans;
-				font-weight: $semi-bold;
-				font-size: 16px;
-				color: #000;
-				text-align: left;
-				line-height: 24px;
-			}
+    &__fields{
+        
+        @media (min-width: 1401px){
+            margin: 63px 0;
+        }
 
-			&__price {
-				display: inline-block;
-				margin: 0;
-				font-family: $OpenSans;
-				font-weight: $regular;
-				font-size: 14px;
-				color: #000;
-				line-height: 21px;
-				text-align: left;
-			}
-		}
-		
-		&__summary {
-			display: flex;
-			flex-flow: row nowrap;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 100%;
+        @media (max-width: 1400px) and (min-width: 1026px){
+            margin: 10px 0;
+        }
 
-			@include media('>phone') {
-				padding: 0 27px;
-			}
+        @include media ('<tablet'){
+            margin: 30px 0;
+        }
+    }
 
-			@include media('<=phone') {
-				padding: 0 20px;
-				margin-top: 30px;
-			}
-			
-			&-content {
-				display: flex;
-				flex-flow: column nowrap;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 100%;
-				padding: 15px 15px 18px;
-				background: #000;
-				border-radius: 20px 20px 0 0;
-				
-				& > span {
-					display: block;
-					width: 100%;
-					margin-bottom: 12px;
-					font-family: $OpenSans;
-					font-weight: $medium;
-					font-size: 20px;
-					color:#000;
-					line-height: 30px;
-				}
-			}
-		}
-		
-		&__totalizers {
-			display: flex;
-			flex-flow: row nowrap;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			padding: 10px 0;
-			border-bottom: 1px solid $gray-10;;
-			
-			&:first-of-type {
-				padding: 0 0 10px;
-			}
-			
-			&-label {
-				display: block;
-				font-family: $OpenSans;
-				font-weight: $regular;
-				font-size: 14px;
-				color: $gray-2;
-				text-align: left;
-				line-height: 21px;
-				
-				&.discount__label {
-					color:#000;
-				}
-				
-				&.total__label {
-					font-weight: $medium;
-					font-size: 20px;
-					color:#000;
-				}
-			}
-			
-			&-value {
-				display: block;
-				font-family: $OpenSans;
-				font-weight: $semi-bold;
-				font-size: 14px;
-				color: $gray-3;
-				text-align: right;
-				line-height: 21px;
-				
-				&.discount__value {
-					color:#000;
-				}
-				
-				&.total__value {
-					font-weight: $semi-bold;
-					font-size: 24px;
-					color:#000;
-				}
-			}
-			
-			&--total {
-				padding: 10px 0 0;
-				border-bottom: none;
-			}
-			
-			&--installment {
-				padding: 0;
-				margin-top: 6px;
-				border: none;
-				
-				.installment__value {
-					font-weight: $regular;
-					font-size: 12px;
-					color:#000;
-					line-height: 18px;
-				}
-			}
-		}
-		
-		&__buttons {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 100%;
-			gap: 14px 0;
-			margin-top: 8px;
-		}
-		
-		&-link {
-			display: block;
-			width: 100%;
-			text-decoration: none;
-		}
-		
-		&-button {
-			display: block;
-			width: 100%;
-			height: 45px;
-			padding: 0;
-			margin: 0;
-			background:#000;
-			border: none;
-			border-radius: 5px;
-			font-family: $OpenSans;
-			font-weight: $regular;
-			font-size: 18px;
-			color: $white;
-			text-align: center;
-			line-height: 27px;
-			cursor: pointer;
-			
-			&--outline {
-				display: block;
-				width: 100%;
-				height: 45px;
-				padding: 0;
-				margin: 0;
-				background: transparent;
-				border: 1px solid#000;
-				border-radius: 5px;
-				font-family: $OpenSans;
-				font-weight: $semi-bold;
-				font-size: 18px;
-				color:#000;
-				text-align: center;
-				cursor: pointer;
-				line-height: 27px;
-			}
-		}
-	}
+    &__totalizers-value{
+
+        &.total__value {
+            font-weight: $semi-bold;
+        }
+
+        &.discount__label,
+        &.discount__value{
+            color: $black;
+        }
+    }
+
+    &-button {
+        background: $black;
+        border-radius: 0px;
+        height: 45px;
+        margin-bottom: 15px;
+        width: 100%;
+        border: 0;
+        color: $white;
+        font-weight: $semi-bold;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
+
+        &--outline {
+            border: 1px solid $primary;
+            border-radius: 0px;
+            width: 100%;
+            height: 45px;
+            color: $primary;
+            background: transparent;
+            font-weight: $semi-bold;
+            font-size: 18px;
+            line-height: 21px;
+            cursor: pointer;
+        }
+    }
+
+    &-link {
+        display: block;
+    }
+    
 }
