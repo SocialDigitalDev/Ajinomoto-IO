@@ -1,17 +1,4 @@
 .flexRow {
-	&--banner-quem-somos {
-		:global(.vtex-store-components-3-x-container) {
-			max-width: 1920px;
-			margin: 0 auto;
-			padding: 0;
-
-			@include media("<=desktop") {
-				margin: 0 auto 10px auto;
-				padding: 0;
-			}
-		}
-	}
-
 	&--items-mission-vision {
 		display: flex;
 	}
@@ -27,6 +14,30 @@
 	}
 
     // QUEM SOMOS
+
+	&--banner-quem-somos {
+		:global(.vtex-store-components-3-x-container) {
+			max-width: 1920px;
+			margin: 0 auto;
+			padding: 0;
+
+			@include media("<=desktop") {
+				margin: 0 auto 10px auto;
+				padding: 0;
+			}
+		}
+	}
+
+    &--institucional--quem-somos  {
+        margin: 50px 0 0;		
+        :global(.vtex-store-components-3-x-container) {
+            max-width: 1170px;
+            @include media(">desktop") {
+                max-width: 1366px;
+            }
+        }
+    }
+
 	&--texto-institucional-wrapper {
 		border-left: 2px solid $secondary;
 		@include media("<=phone") {
@@ -37,22 +48,16 @@
 		}
 	}
 
-    &--institucional--quem-somos  {
-        margin: 50px 0 0;
-        :global(.vtex-store-components-3-x-container) {
-            max-width: 1170px;
-            @include media(">desktop") {
-                max-width: 1366px;
-            }
-        }
-    }
-
 	&--institucional--produtos {
 		background: $orange-2;
 		padding: 50px 0;
 		@include media("<=tablet") {
 			margin: 35px 0;
 		}
+	}
+
+	&--institucional--negocios {
+		margin-bottom: 112px;
 	}
 }
 
@@ -151,6 +156,12 @@
 			margin: 0;
 			text-align: center;
 		}
+	}
+
+	//QUEM SOMOS
+
+	&--institucional--filosofia {
+
 	}
 }
 

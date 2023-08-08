@@ -144,4 +144,76 @@
 			}
 		}
 	}
+
+	&--institucional-valores {
+		.wrapper {
+			.heading--institucional-valores {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 25px;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+			}
+			.paragraph {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: $regular;
+				line-height: normal;
+				@include media("<=phone") {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	&--institucional--negocios {
+		max-width: 778px;
+		.wrapper {
+			.heading--institucional--negocios {
+				color: $red-3;
+				font-family: $OpenSans;
+				font-size: 25px;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+			}
+			.paragraph {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: $regular;
+				line-height: normal;
+				@include media("<=phone") {
+					font-size: 18px;
+				}
+			}
+		}
+
+		&_descubra {
+			.paragraph--institucional--negocios_descubra {
+				.link--institucional--negocios_descubra {
+					color: $white;
+					font-family: $OpenSans;
+					font-size: 20px;
+					font-weight: $semi-bold;
+					text-decoration: none;
+					border-radius: 50px;
+					background: $primary;
+					width: 170px;
+					height: 60px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					@include media("<=phone") {
+						font-size: 16px;
+						height: 42px;
+					}
+				}
+			}
+		}
+	}
 }
