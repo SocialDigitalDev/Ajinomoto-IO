@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#nossos-negocios": {
+        "children": [
+            "flex-layout.col#nossos-negocios"
+        ],
+        "props": {
+            "blockClass": ["institucional--quem-somos", "institucional--negocios"],
+            "preventVerticalStretch": true
+        }
+    },
+
+    "flex-layout.col#nossos-negocios": {
+        "children": [
+            "rich-text#nossos-negocios",
+            "rich-text#nossos-negocios-cta"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center"
+        }
+    },
+
+    "rich-text#nossos-negocios": {
+        "props": {
+            "text": "## Nossos negócios\n A atuação da Ajinomoto vai muito além de produtos alimentícios. Afinal, somos líderes mundiais na produção de aminoácidos. Quer conhecer mais sobre nossos negócios?",
+            "blockClass": ["institucional", "institucional--negocios"]
+        }
+    },
+
+    "rich-text#nossos-negocios-cta": {
+        "props": {
+            "text": "[Descubra](#)",
+            "blockClass": ["institucional", "institucional--negocios_descubra"],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

@@ -1,74 +1,219 @@
 .container {
+	&--title-quem-somos {
+		justify-content: flex-start;
+		.wrapper {
+			.paragraph {
+				font-family: $OpenSans;
+				font-size: 30px;
+				font-weight: $bold;
+				color: $black;
+				width: 100%;
+				line-height: 20px;
+				padding: 25px 0 15px 0;
+				margin: 0;
 
-    &--title-quem-somos {
-        justify-content: flex-start;
-        .wrapper {
-            .paragraph {
-                font-family: $OpenSans;
-                font-size: 30px;
-                font-weight: $bold;
-                color: $black;
-                width: 100%;
-                line-height: 20px;
-                padding: 25px 0 15px 0;
-                margin: 0;
+				@include media("<=desktop") {
+					font-size: 20px;
+					text-align: left;
+					margin: 0;
+					padding: 25px 0 15px 0;
+				}
+			}
+		}
+		:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+			width: 100%;
+		}
+	}
 
-                @include media("<=desktop") {
-                    font-size: 20px;
-                    text-align: left;
-                    margin: 0;
-                    padding: 25px 0 15px 0;
-                }
-            }
-        }
-        :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
-            width: 100%;
-        }
-    }
+	&--box-about {
+		.wrapper {
+			.paragraph {
+				color: $white;
+				font-size: 18px;
+				text-align: center;
 
- 
-    &--box-about{
-        .wrapper{
-            .paragraph{
-                color: $white;
-                font-size: 18px;
-                text-align: center;
+				@include media("<=desktop") {
+					font-size: 12px;
+				}
 
-                @include media('<=desktop'){
-                    font-size: 12px;
-                }
+				:global(.vtex-rich-text-0-x-strong--box-about) {
+					text-transform: uppercase;
+					font-size: 28px;
+					display: block;
 
-                :global(.vtex-rich-text-0-x-strong--box-about){
-                    text-transform: uppercase;
-                    font-size: 28px;
-                    display: block;
+					@include media("<=desktop") {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
 
-                    @include media('<=desktop'){
-                        font-size: 18px;
-                    }
+	&--content-quem-somos {
+		.wrapper {
+			.paragraph {
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-weight: $regular;
+				color: $black;
+				width: 100%;
+				line-height: 28px;
+				margin-bottom: 10px;
 
-                }
-            }
-        }
-    }
+				@include media("<=desktop") {
+					font-size: 15px;
+					line-height: 24px;
+				}
+			}
+		}
+	}
 
-    &--content-quem-somos {
-        .wrapper {
-            .paragraph {
-                font-family: $OpenSans;
-                font-size: 18px;
-                font-weight: $regular;
-                color: $black;
-                width: 100%;
-                line-height: 28px;
-                margin-bottom: 10px;
+	&--texto-rodape-imagem {
+		max-width: 1130px;
+		@include media(">phone") {
+			padding: 24px 0;
+		}
+		.wrapper {
+			.paragraph {
+				color: $white;
+				font-family: $OpenSans;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				margin: 0;
+				@include media("<=phone") {
+					font-size: 15px;
+				}
+			}
+		}
+	}
 
-                @include media("<=desktop") {
-                    font-size: 15px;
-                    line-height: 24px;
+	&--institucional-filosofia--title {
+		justify-content: center;
+		.wrapper {
+			.paragraph {
+				margin-bottom: 10px;
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: $extra-bold;
+				line-height: normal;
+				text-align: left;
+				margin: 0 0 10px;
+				@include media("<=phone") {
+					font-size: 25px;
+				}
+			}
+		}
+	}
 
-                }
-            }
-        }
-    }
+	&--institucional-filosofia--subTitle {
+		justify-content: center;
+		background: $orange-2;
+		padding: 30px 0;
+		@include media("<=phone") {
+			padding: 14px 0;
+		}
+		.wrapper {
+			.paragraph {
+				margin-bottom: 10px;
+				color: $black;
+				font-size: 25px;
+				font-family: $OpenSans;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+				margin: 0;
+				@include media("<=phone") {
+					font-size: 20px;
+				}
+
+				.italic--institucional-filosofia--subTitle {
+					color: $primary;
+					font-family: $OpenSans;
+					font-size: 32px;
+					font-style: italic;
+					font-weight: $bold;
+					line-height: normal;
+					@include media("<=phone") {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	&--institucional-valores {
+		.wrapper {
+			.heading--institucional-valores {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 25px;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+			}
+			.paragraph {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: $regular;
+				line-height: normal;
+				@include media("<=phone") {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	&--institucional--negocios {
+		max-width: 778px;
+		.wrapper {
+			.heading--institucional--negocios {
+				color: $red-3;
+				font-family: $OpenSans;
+				font-size: 25px;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+			}
+			.paragraph {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: $regular;
+				line-height: normal;
+				@include media("<=phone") {
+					font-size: 18px;
+				}
+			}
+		}
+
+		&_descubra {
+			.paragraph--institucional--negocios_descubra {
+				.link--institucional--negocios_descubra {
+					color: $white;
+					font-family: $OpenSans;
+					font-size: 20px;
+					font-weight: $semi-bold;
+					text-decoration: none;
+					border-radius: 50px;
+					background: $primary;
+					width: 170px;
+					height: 60px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					@include media("<=phone") {
+						font-size: 16px;
+						height: 42px;
+					}
+				}
+			}
+		}
+	}
 }

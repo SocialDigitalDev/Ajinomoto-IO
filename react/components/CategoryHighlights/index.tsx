@@ -3,7 +3,7 @@ import {useEffect, useState } from "react";
 const CategoryHighlights = ({ children = [] }) => {
 	const [visibleHightLight, setVisible ] = useState(false);
 	useEffect(() => {
-		if (window.location.pathname.includes("sazon")) {
+		if (window.location.pathname.includes("sazon") || window.location.pathname.includes("sazon/carne")) {
 			setVisible(true)
 		}	
 	}, []);
