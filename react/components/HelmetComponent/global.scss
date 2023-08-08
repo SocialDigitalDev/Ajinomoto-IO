@@ -304,3 +304,98 @@ ol {
 		}
 	}
 }
+
+
+// AVAILABILITY NOTIFY
+
+.vtex-availability-notify-1-x{
+
+	&-title,
+	&-notifyLabel{
+		display: none;
+	}
+	
+	&-content{
+		display: flex;
+		flex-flow: column;
+	}
+
+	&-input{
+
+		.vtex-input{
+			
+			&-prefix__group{
+				border-radius: 10px;
+				max-width: 281px;
+				height: 40px;
+				border: 1px solid $orange-4;
+				
+				.vtex-styleguide-9-x-input::placeholder{
+					color: transparent;
+					font-size: 13px;
+				}
+			}
+		}
+
+		&Name{
+			
+			.vtex-input{
+				
+				&::before{
+					content: "Nome Completo:";
+					font-size: 15px;
+					font-weight: $semi-bold;
+					margin-bottom: 10px;
+					display: block;
+				}
+			}
+		}
+		&Email{
+
+			.vtex-input{
+				
+				&::before{
+					content: "E-mail:";
+					font-size: 15px;
+					font-weight: $semi-bold;
+					margin-bottom: 10px;
+					display: block;
+				}
+				
+				&-prefix__group{
+					
+					@include media ('<=phone'){
+						max-width: 70%;
+					}
+				}
+				
+			}
+		}
+	}
+
+	&-submit{
+
+		.vtex-button{
+			width: 200px;
+			height: 45px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $primary;
+			color: $white;
+			border-radius: 10px;
+			outline: 0;
+			margin-top: 30px;
+			border: none;
+
+			&__label{
+				font-size: 20px;
+				font-weight: $bold;
+			}
+		}
+	}
+
+	&-success{
+		font-weight: $bold;
+	}
+}

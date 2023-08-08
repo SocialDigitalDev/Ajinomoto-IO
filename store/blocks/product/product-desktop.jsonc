@@ -3,7 +3,7 @@
 		"children": [
 			"responsive-layout.desktop#content-product",
             "responsive-layout.tablet#content-product",
-            "responsive-layout.mobile#content-product"
+            "responsive-layout.phone#content-product"
 		]
 	},
 

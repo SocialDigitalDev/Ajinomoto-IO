@@ -1,4 +1,89 @@
 {
+    "condition-layout.product#product-availability": {
+        "props": {
+            "conditions": [
+              {
+                "subject": "isProductAvailable"
+              }
+            ],
+            "Then": "flex-layout.row#buy-btn-prod-price",
+            "Else": "flex-layout.row#availability-notify"
+        }
+    },
+
+    "flex-layout.row#buy-btn-prod-price": {
+        "title": "Botão Comprar e Preço do Produto",
+        "children": [
+            "flex-layout.col#buy-btn-prod-price"
+        ]
+    },
+
+    "flex-layout.col#buy-btn-prod-price": {
+        "children": [
+            "flex-layout.row#product-price--container",
+            "flex-layout.row#btn-buy"
+        ]
+    },
+
+    "flex-layout.row#availability-notify": {
+        "title": "Modal Produto Indisponível",
+        "props": {
+            "blockClass": "availability-notify--modal"
+        },
+        "children": [
+            "modal-trigger#availability-notify"
+        ]
+    },
+
+    "modal-trigger#availability-notify": {
+        "children": [
+            "rich-text#product-unavailable-button",
+            "modal-layout#availability-notify"
+        ]
+    },
+
+    "modal-layout#availability-notify": {
+        "props": {
+            "blockClass": "availability-notify--modal-content"
+        },
+        "children": [
+            "modal-actions.close#availability-notify",
+            "rich-text#availability-notify",
+            "rich-text#availability-notify-sub",
+            "availability-notify"
+        ]
+    },
+
+    "modal-actions.close#availability-notify": {
+        "props": {
+            "label": "fechar"
+        }
+    },
+
+    "rich-text#product-unavailable-button": {
+        "title": "Botão de Produto Indisponível",
+        "props": {
+            "blockClass": "product-unavailable-button",
+            "text": "Avise-me quando chegar"
+        }
+    },
+
+    "rich-text#availability-notify": {
+        "title": "Título do modal",
+        "props": {
+            "blockClass": "availability-notify--modal-title",
+            "text": "**Paciência é uma virtude**, mas sabemos que é difícil esperar por algo tão bom!"
+        }
+    },
+
+    "rich-text#availability-notify-sub": {
+        "title": "Subtítulo do modal",
+        "props": {
+            "blockClass": "availability-notify--modal-subtitle",
+            "text": "Deixe o seu contato para o **Ajipanda** te avisar quando este produto chegar!"
+        }
+    },
+    
     "flex-layout.row#btn-buy": {
         "title": "Botão Comprar do Produto",
         "children": [
@@ -23,7 +108,7 @@
         "title": "Botão Comprar",
 		"props": {
 			"text": "Adicionar",
-			"unavailableText": "Avise-me",
+			"unavailableText": "Produto Indisponível",
             "onClickBehavior": "add-to-cart",
             "customPixelEventId": "add-to-cart-button",
             "addToCartFeedback": "customEvent"
