@@ -36,6 +36,7 @@
             transition: all .15s ease-in-out;
             background: $gradient-red;
             position: relative;
+            max-width: 100%;
             
             &::after{
                 content: "";
