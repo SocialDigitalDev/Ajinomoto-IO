@@ -75,6 +75,38 @@
 }
 
 //QUEM SOMOS
+.infoCardContainer--fullbanner-institucional {
+    width: 100% !important;;
+    height: 100%;
+    min-height: 300px;
+	background-color: $black;
+	@include media(">phone", "<=tablet") {
+		min-height: 215px;
+	}
+	@include media("<=phone") {
+		min-height: 378px;
+	}
+}
+
+.infoCardTextContainer--fullbanner-institucional {
+	.heading--fullbanner-institucional {
+		color: $white;
+		text-align: center;
+		text-shadow: 0px -4px 11px rgba(0, 0, 0, 0.25);
+		font-family: $OpenSans;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+
+		@include media ("<=phone") {
+			font-weight: $bold;
+		}
+
+	}
+}
+
+
 .infoCardContainer--institucional--origem {
 	justify-content: center;
 	align-items: flex-start;

@@ -1,107 +1,113 @@
 {
-    "vtex.menu@2.x:menu#menu-institucional": {
-        "title": "Menu Institucional Lateral",
-        "children": [
-            "menu-item#politica-de-privacidade",
-            "menu-item#politica-de-frete",
-            "menu-item#trocas-e-devolucoes",
-            "menu-item#duvidas-frequentes",
-            "menu-item#duvidas-contatos"
+	"vtex.menu@2.x:menu#menu-institucional": {
+		"title": "Menu Institucional Lateral",
+		"children": [
+			"menu-item#politica-de-privacidade",
+			"menu-item#politica-de-frete",
+			"menu-item#trocas-e-devolucoes",
+			"menu-item#duvidas-frequentes",
+			"menu-item#duvidas-contatos",
+			"menu-item#quem-somos"
+		],
+		"props": {
+			"blockClass": "menu-institucional",
+			"orientation": "vertical"
+		}
+	},
 
-        ],
-        "props": {
-            "blockClass": "menu-institucional",
-            "orientation": "vertical"
-        }
-    },
+	"menu-item#trocas-e-devolucoes": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/trocas-e-devolucoes",
+				"noFollow": false,
+				"tagTitle": "Trocas e Devoluções",
+				"text": "Trocas e Devoluções"
+			}
+		}
+	},
 
-    "menu-item#trocas-e-devolucoes": {
-        "props": {
-            "id": "menu-item-institucional",
-            "type": "custom",
-            "highlight": false,
-            "blockClass": [   
-                "menu-institucional"
-            ],
-            "itemProps": {
-                "type": "internal",
-                "href": "/institucional/trocas-e-devolucoes",
-                "noFollow": false,
-                "tagTitle": "Trocas e Devoluções",
-                "text": "Trocas e Devoluções"
-            }
-        }
-    },
-    
-    "menu-item#politica-de-privacidade": {
-        "props": {
-            "id": "menu-item-institucional",
-            "type": "custom",
-            "highlight": false,
-            "blockClass": [   
-                "menu-institucional"
-            ],
-            "itemProps": {
-                "type": "internal",
-                "href": "/institucional/politica-de-privacidade",
-                "noFollow": false,
-                "tagTitle": "Política de Privacidade",
-                "text": "Política de Privacidade"
-            }
-        }
-    },
+	"menu-item#politica-de-privacidade": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/politica-de-privacidade",
+				"noFollow": false,
+				"tagTitle": "Política de Privacidade",
+				"text": "Política de Privacidade"
+			}
+		}
+	},
 
-    "menu-item#politica-de-frete": {
-        "props": {
-            "id": "menu-item-institucional",
-            "type": "custom",
-            "highlight": false,
-            "blockClass": [   
-                "menu-institucional"
-            ],
-            "itemProps": {
-                "type": "internal",
-                "href": "/institucional/politica-de-frete",
-                "noFollow": false,
-                "tagTitle": "Política de Frete",
-                "text": "Política de Frete"
-            }
-        }
-    },
+	"menu-item#politica-de-frete": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/politica-de-frete",
+				"noFollow": false,
+				"tagTitle": "Política de Frete",
+				"text": "Política de Frete"
+			}
+		}
+	},
 
-    "menu-item#duvidas-frequentes": {
-        "props": {
-            "id": "menu-item-institucional",
-            "type": "custom",
-            "highlight": false,
-            "blockClass": [   
-                "menu-institucional"
-            ],
-            "itemProps": {
-                "type": "internal",
-                "href": "/institucional/duvidas-frequentes",
-                "noFollow": false,
-                "tagTitle": "Dúvidas Frequentes",
-                "text": "Dúvidas Frequentes"
-            }
-        }
-    },
+	"menu-item#duvidas-frequentes": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/duvidas-frequentes",
+				"noFollow": false,
+				"tagTitle": "Dúvidas Frequentes",
+				"text": "Dúvidas Frequentes"
+			}
+		}
+	},
 
-    "menu-item#duvidas-contatos": {
-        "props": {
-            "id": "menu-item-institucional",
-            "type": "custom",
-            "highlight": false,
-            "blockClass": [   
-                "menu-institucional"
-            ],
-            "itemProps": {
-                "type": "external",
-                "href": "https://botafogo.zendesk.com/hc/pt-br",
-                "noFollow": false,
-                "tagTitle": "Contatos",
-                "text": "Contatos"
-            }
-        }
-    }
+	"menu-item#duvidas-contatos": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "external",
+				"href": "https://botafogo.zendesk.com/hc/pt-br",
+				"noFollow": false,
+				"tagTitle": "Contatos",
+				"text": "Contatos"
+			}
+		}
+	},
+
+	"menu-item#quem-somos": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/quem-somos",
+				"noFollow": false,
+				"tagTitle": "Sobre a Ajinomoto",
+				"text": "Sobre a Ajinomoto"
+			}
+		}
+	}
 }
