@@ -1,9 +1,14 @@
+/* eslint-disable object-shorthand */
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-types */
 import React, { useEffect, useState } from 'react'
-import {
-  OrderShippingProvider
-} from 'vtex.order-shipping/OrderShipping'
+import { OrderShippingProvider } from 'vtex.order-shipping/OrderShipping'
 
-import { MinicartInput } from '../MinicartInput'
+import { MinicartInput } from '../../MinicartInput'
 
 import './global.css'
 
@@ -18,8 +23,6 @@ export const MinicartShipping: StorefrontFunctionComponent<
   const [isActive, setIsActive]: any = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [inputValue, setInputValue] = useState('')
-  // const [shippingList, setShippingList] = useState([])
-  // const [selectedSla, setSelectedSla] = useState('')
 
   const fetchOptions: any = {
     headers: {
@@ -46,8 +49,6 @@ export const MinicartShipping: StorefrontFunctionComponent<
 
   const addShipping = (inputCode = '') => {
     setIsLoading(true)
-
-    console.log("oderform >>>", orderForm)
 
     sendShippingAttachment({
       address: !inputCode
@@ -84,32 +85,16 @@ export const MinicartShipping: StorefrontFunctionComponent<
           (item: any) => item?.slas?.length
         )
 
-        const uniqueDeliveryChannels = orderFormResult?.shippingData?.logisticsInfo.reduce((acc: any, cur: any) => {
-          if (!acc[cur.selectedDeliveryChannel]) {
-            acc[cur.selectedDeliveryChannel] = cur
-          }
-
-          return acc
-        }, {});
-
-        const result: any = Object.values(uniqueDeliveryChannels)
-
-        console.log("🚀AA ~ file: index.tsx:107 ~ .then ~ result:", result[0].slas)
+   
 
         if (inputCode && returnCode && hasSlas) {
           callback(transformOrderForm(orderFormResult))
           setIsActive(true)
-          // setShippingList(result[0].slas)
-          // setSelectedSla(result[0].selectedSla)
         } else if (!inputCode) {
           callback(transformOrderForm(orderFormResult))
           setIsActive(false)
-          // setShippingList([])
-          // setSelectedSla('')
         } else {
           setIsActive(null)
-          // setShippingList([])
-          // setSelectedSla('')
         }
 
         return orderFormResult
@@ -186,7 +171,7 @@ export const MinicartShipping: StorefrontFunctionComponent<
           settings={{
             isActiveProp: isActive,
             value: inputValue,
-            placeholder: 'Digite o CEP',
+            placeholder: 'Digite seu CEP',
             loading: isLoading,
             inputError: 'CEP inválido',
             regEx: '^(\\d{5})-?(\\d{3})$',

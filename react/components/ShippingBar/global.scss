@@ -1,0 +1,53 @@
+@import "../../../styles/scss/variables/all";
+
+.shippingBar {
+    font-weight: $regular;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: $gray-2;
+    padding-bottom: 30px;
+    
+    @include media ('>tablet'){
+        margin-bottom: 24px;
+    }
+    
+    &--value{
+        
+        @include media ('>tablet'){
+            font-weight: $bold;
+        }
+        @include media ('<=tablet'){
+            font-weight: $regular;
+        }
+    }
+    
+    @media (min-width: 1026px) {
+        border: 0;
+    }
+    
+    .vtex-styleguide-9-x-progressHeight {
+        background-color: $gray-26;
+        height: 10px;
+        border-radius: 20px;
+        overflow: visible;
+        margin-top: 35px;
+
+        > div {
+            transition: all .15s ease-in-out;
+            background: $gradient-red;
+            position: relative;
+            
+            &::after{
+                content: "";
+                background: url('../../../assets/svg/panda/ico_panda-shipping-bar.svg') no-repeat;
+                background-size: contain;
+                width: 60px;
+                height: 27.27px;
+                display: block;
+                position: absolute;
+                top: -25px;
+                right: -5px;
+            }
+        }
+    }
+}

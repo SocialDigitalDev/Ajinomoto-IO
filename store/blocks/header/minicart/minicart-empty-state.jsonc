@@ -1,0 +1,54 @@
+{
+    "minicart-empty-state": {
+        "children": [
+            "flex-layout.row#empty-state"
+        ]
+    },
+    "flex-layout.row#empty-state": {
+        "title": "Minicart vazio",
+        "children": [
+            "flex-layout.col#empty-state"
+        ]
+    },
+    "flex-layout.col#empty-state": {
+        "children": [
+            // "image#minicart-default-empty-state",
+            "rich-text#minicart-default-empty-state",
+            "rich-text#minicart-default-empty-state-subtext",
+            "link#minicart-default-empty-state"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "rowGap": 5
+        }
+    },
+    // "image#minicart-default-empty-state": {
+    //     "title": "Icone sacola vazia",
+    //     "props": {
+    //         "src": "assets/svg/icon-minicart-header.svg"
+    //     }
+    // },
+    "rich-text#minicart-default-empty-state": {
+        "title": "Titulo sacola vazia",
+        "props": {
+            "blockClass": "empty-cart-title",
+            "text": "Seu carrinho está vazio."
+        }
+    },
+    "rich-text#minicart-default-empty-state-subtext": {
+        "title": "Texto sacola vazia",
+        "props": {
+            "blockClass": "empty-cart-subtext",
+            "text": "Para continuar comprando, navegue pelas categorias e faça uma busca por produtos."
+        }
+    },
+    "link#minicart-default-empty-state": {
+        "title": "Botão sacola vazia",
+        "props": {
+            "blockClass": "empty-cart-button",
+            "href": "/",
+            "label": "Escolher Produtos"
+        }
+    }
+}

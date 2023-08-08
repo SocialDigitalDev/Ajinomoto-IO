@@ -12,10 +12,10 @@ import { OrderShippingProvider } from 'vtex.order-shipping/OrderShipping'
 
 import { schema } from './schema'
 import type { MinicartProps } from './types'
-import { VendorCode } from '../VendorCode'
-import { MinicartShipping } from '../Shipping'
-import { SummaryCoupon } from '../SummaryCoupon'
-import { ListSLA } from '../Shipping/ListSLA'
+import { VendorCode } from './VendorCode'
+import { MinicartShipping } from './Shipping'
+import { SummaryCoupon } from './SummaryCoupon'
+// import { ListSLA } from './Shipping/ListSLA'
 
 import './global.css'
 
@@ -28,7 +28,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
   const [discount, setDiscount] = useState(0)
   const [shipping, setShipping] = useState<number | null>(null)
   const [total, setTotal] = useState(0)
-  const [deliveryOptions, setDeliveryOptions] = useState([])
+  // const [deliveryOptions, setDeliveryOptions] = useState([])
   const [installments, setInstallments] = useState<any>()
   const [cupom, setCupom] = useState<any>()
   const [marketingDataPromotion, setMarketingDataPromotion]: any = useState({});
@@ -86,41 +86,41 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
     setShipping(totalValue)
   }
 
-  const getDeliveryOptions = (updatedOrderForm: any) => {
-    const listDelivery = updatedOrderForm?.shipping?.deliveryOptions
-    // const uniqueDeliveryOptions: any = [];
+  // const getDeliveryOptions = (updatedOrderForm: any) => {
+  //   const listDelivery = updatedOrderForm?.shipping?.deliveryOptions
+  //   // const uniqueDeliveryOptions: any = [];
 
-    // const temp: any = {};
+  //   // const temp: any = {};
 
-    // listDelivery.forEach((option: { id: string }) => {
-    //   if (!temp[option.id]) {
-    //     temp[option.id] = true;
-    //     uniqueDeliveryOptions.push(option);
-    //   }
-    // });
+  //   // listDelivery.forEach((option: { id: string }) => {
+  //   //   if (!temp[option.id]) {
+  //   //     temp[option.id] = true;
+  //   //     uniqueDeliveryOptions.push(option);
+  //   //   }
+  //   // });
 
-    const pricesById = listDelivery.reduce((accumulator: any, item: any) => {
-      if (accumulator[item.id]) {
-        accumulator[item.id].price += item.price;
-      } else {
-        accumulator[item.id] = {
-          id: item.id,
-          deliveryChannel: item.deliveryChannel,
-          price: item.price,
-          estimate: item.estimate,
-          isSelected: item.isSelected,
-          __typename: "DeliveryOption"
-        };
-      }
+  //   const pricesById = listDelivery.reduce((accumulator: any, item: any) => {
+  //     if (accumulator[item.id]) {
+  //       accumulator[item.id].price += item.price;
+  //     } else {
+  //       accumulator[item.id] = {
+  //         id: item.id,
+  //         deliveryChannel: item.deliveryChannel,
+  //         price: item.price,
+  //         estimate: item.estimate,
+  //         isSelected: item.isSelected,
+  //         __typename: "DeliveryOption"
+  //       };
+  //     }
 
-      return accumulator
-    }, {});
+  //     return accumulator
+  //   }, {});
 
-    const pricesArray: any = Object.values(pricesById);
+  //   const pricesArray: any = Object.values(pricesById);
 
-    // setDeliveryOptions(listDelivery);
-    setDeliveryOptions(pricesArray)
-  }
+  //   // setDeliveryOptions(listDelivery);
+  //   setDeliveryOptions(pricesArray)
+  // }
 
   const getInstallments = () => {
     const listInstallments = orderForm?.paymentData?.installmentOptions[0]?.installments
@@ -178,7 +178,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
         orderForm.items = orderFormAttached
         setMarketingDataPromotion(orderForm.marketingData);
         setOrderForm(orderForm)
-        console.log("🚀KK ~ file: index.tsx:23 ~ orderForm:", orderForm)
+        console.log(">> Orderform", orderForm)
       })
   }
 
@@ -193,7 +193,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
     getInstallments()
     getCupons()
     getShipping()
-    getDeliveryOptions(orderForm)
+    // getDeliveryOptions(orderForm)
   }, [orderForm])
 
   return (
@@ -211,7 +211,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
                     />
                   </div>
 
-                  <div className="minicart-footer-shipping">
+                  {/* <div className="minicart-footer-shipping">
                     {deliveryOptions.length ? (
                       <p className='minicart-footer-shipping__title-resume'>
                         Opções de entrega disponíveis para este CEP
@@ -235,7 +235,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
                         })
                       }
                     </div>
-                  </div>
+                  </div> */}
                 </>
               )}
 
@@ -259,85 +259,96 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
 
             <div className="minicart-footer__summary">
 
-              <div className="minicart-footer__summary-content">
-                <span>Resumo do pedido</span>
-                {
-                  shipping || true ? (
-                    <div className="minicart-footer__totalizers minicart-footer__totalizers--shipping">
-                      <span className="shipping__label minicart-footer__totalizers-label">
-                        Frete
-                      </span>
-                      <span className="shipping__value minicart-footer__totalizers-value">
-                        {shipping === null ? "-" : shipping === 0 ? <span className="shipping__free">Grátis</span> : <FormattedCurrency value={shipping ? +shipping : 0} />}
-                      </span>
-                    </div>
-                  ) : ''
-                }
+              {
+                shipping || true ? (
+                  <div className="minicart-footer__totalizers minicart-footer__totalizers--shipping">
+                    <span className="shipping__label minicart-footer__totalizers-label">
+                      Frete
+                    </span>
+                    <span className="shipping__value minicart-footer__totalizers-value">
+                      {shipping === null ? "-" : shipping === 0 ? <span className="shipping__free">Grátis</span> : <FormattedCurrency value={shipping ? +shipping : 0} />}
+                    </span>
+                  </div>
+                ) : ''
+              }
 
-                <div className="minicart-footer__totalizers minicart-footer__totalizers--cupom">
-                  <span className="cupom__label minicart-footer__totalizers-label">
-                    Cupom
-                  </span>
-                  <span className="cupom__value minicart-footer__totalizers-value">
-                    {cupom || '-'}
-                  </span>
-                </div>
+              <div className="minicart-footer__totalizers minicart-footer__totalizers--cupom">
+                <span className="cupom__label minicart-footer__totalizers-label">
+                  Cupom
+                </span>
+                <span className="cupom__value minicart-footer__totalizers-value">
+                  {cupom || '-'}
+                </span>
+              </div>
 
-                {
-                  discount || true ? (
-                    <div className="minicart-footer__totalizers minicart-footer__totalizers--discount">
-                      <span className="discount__label minicart-footer__totalizers-label">
-                        Você economizou
-                      </span>
-                      <span className="discount__value minicart-footer__totalizers-value">
-                        {discount ? <FormattedCurrency value={discount} /> : "-"}
-                      </span>
-                    </div>
-                  ) : ''
-                }
+              {
+                discount || true ? (
+                  <div className="minicart-footer__totalizers minicart-footer__totalizers--discount">
+                    <span className="discount__label minicart-footer__totalizers-label">
+                      Você economizou
+                    </span>
+                    <span className="discount__value minicart-footer__totalizers-value">
+                      {discount ? <FormattedCurrency value={discount} /> : "-"}
+                    </span>
+                  </div>
+                ) : ''
+              }
 
-                <div className="minicart-footer__totalizers minicart-footer__totalizers--subtotal">
-                  <span className="subtotal__label minicart-footer__totalizers-label">
-                    Subtotal
-                  </span>
-                  <span className="subtotal__value minicart-footer__totalizers-value">
-                    <FormattedCurrency value={subTotal} />
-                  </span>
-                </div>
+              <div className="minicart-footer__totalizers minicart-footer__totalizers--subtotal">
+                <span className="subtotal__label minicart-footer__totalizers-label">
+                  Subtotal
+                </span>
+                <span className="subtotal__value minicart-footer__totalizers-value">
+                  <FormattedCurrency value={subTotal} />
+                </span>
+              </div>
 
-                <div className="minicart-footer__totalizers minicart-footer__totalizers--total">
-                  <span className="total__label minicart-footer__totalizers-label">
-                    Total
-                  </span>
-                  <span className="total__value minicart-footer__totalizers-value">
-                    <FormattedCurrency value={total} />
-                  </span>
-                </div>
+              <div className="minicart-footer__totalizers minicart-footer__totalizers--total">
+                <span className="total__label minicart-footer__totalizers-label">
+                  Total
+                </span>
+                <span className="total__value minicart-footer__totalizers-value">
+                  <FormattedCurrency value={total} />
+                </span>
+              </div>
 
-                {
-                  installments ? (
-                    <div className="minicart-footer__totalizers minicart-footer__totalizers--installment">
-                      <span className="installment__label minicart-footer__totalizers-label" />
-                      <span className="installment__value minicart-footer__totalizers-value">
-                        ou <FormattedCurrency value={installments?.value / 100 || 0} /> em {installments?.count}x sem juros
-                      </span>
-                    </div>
-                  ) : ''
-                }
+              {
+                installments ? (
+                  <div className="minicart-footer__totalizers minicart-footer__totalizers--installment">
+                    <span className="installment__label minicart-footer__totalizers-label" />
+                    <span className="installment__value minicart-footer__totalizers-value">
+                      ou <FormattedCurrency value={installments?.value / 100 || 0} /> em {installments?.count}x sem juros
+                    </span>
+                  </div>
+                ) : ''
+              }
 
-                <div className="minicart-footer__buttons">
-                  <a href="/checkout#/email" rel="noopener noreferrer" className="minicart-footer-link">
-                    <button className="minicart-footer-button">
-                      Finalizar compra
-                    </button>
-                  </a>
+              {/* {
+                installments ? (
+                  <div className="minicart-footer__totalizers minicart-footer__totalizers--installment">
+                    <span className="installment__label minicart-footer__totalizers-label" />
+                    <span className="installment__value minicart-footer__totalizers-value">
+                      ou {installments?.count}x sem juros de <FormattedCurrency value={installments?.value / 100 || 0} />
+                    </span>
+                  </div>
+                ) : ''
+              } */}
 
-                  <a href="javascript:void(0)" rel="noopener noreferrer" className="minicart-footer-link">
-                    <button className="minicart-footer-button--outline">
-                      Continuar comprando
-                    </button>
-                  </a>
-                </div>
+              <div className="minicart-footer__buttons">
+                <a
+                  href="/checkout#/cart"
+                  rel="noopener noreferrer"
+                  className="minicart-footer-link"
+                >
+                  <button className="minicart-footer-button">
+                    Finalizar compra
+                  </button>
+                </a>
+              <a href="">
+                <button className="minicart-footer-button--outline">
+                  Continuar comprando
+                </button>
+              </a>
               </div>
 
             </div>

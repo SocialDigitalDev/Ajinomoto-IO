@@ -5,7 +5,7 @@
 import React from 'react'
 import { OrderCoupon } from 'vtex.order-coupon'
 
-import { Coupon } from '../Coupon'
+import { Coupon } from '../../Coupon'
 
 interface MinicartCouponProps {
   callback: Function
@@ -15,10 +15,8 @@ interface MinicartCouponProps {
 
 export const SummaryCoupon: StorefrontFunctionComponent<MinicartCouponProps> = ({
   callback,
-  orderForm,
-  marketingDataPromotion
+  orderForm
 }) => {
-  console.log(">>>>>>>>>", marketingDataPromotion)
 
   return (
     <OrderCoupon.OrderCouponProvider>
