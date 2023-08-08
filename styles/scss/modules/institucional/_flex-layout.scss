@@ -46,6 +46,14 @@
             }
         }
     }
+
+	&--institucional--produtos {
+		background: $orange-2;
+		padding: 50px 0;
+		@include media("<=tablet") {
+			margin: 35px 0;
+		}
+	}
 }
 
 .flexRowContent {

@@ -3,14 +3,15 @@
 		"title": "SECTION - FILOSOFIA",
 		"children": ["flex-layout.col#filosofia"],
         "props": {
-            "fullWidth": true
+            "fullWidth": true,
+            "blockClass": ["institucional--quem-somos"]
         }
 	},
 
 	"flex-layout.col#filosofia": {
 		"children": ["rich-text#title-filosofia", "rich-text#subTitle-filosofia"],
         "props": {
-            "blockClass": "institucional"
+            "blockClass": "institucional--filosofia"
         }
 	},
 
@@ -18,6 +19,8 @@
         "title": "TITULO",
         "props": {
             "text": "Filosofia",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "blockClass": ["institucional", "institucional-filosofia--title"]
         }
     },
@@ -26,6 +29,8 @@
         "title": "SUB TITULO",
         "props": {
             "text": "Mensagem corporativa\n *Alimente-se bem, viva bem.*",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "blockClass": ["institucional", "institucional-filosofia--subTitle"]
         }
     }

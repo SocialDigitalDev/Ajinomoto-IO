@@ -69,10 +69,10 @@
 	}
 
 	&--texto-rodape-imagem {
-        max-width: 1130px;
-        @include media(">phone") {
-            padding: 24px 0;
-        }
+		max-width: 1130px;
+		@include media(">phone") {
+			padding: 24px 0;
+		}
 		.wrapper {
 			.paragraph {
 				color: $white;
@@ -82,9 +82,65 @@
 				font-weight: $semi-bold;
 				line-height: normal;
 				margin: 0;
-                @include media("<=phone") {
-                    font-size: 15px;
-                }
+				@include media("<=phone") {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	&--institucional-filosofia--title {
+		justify-content: center;
+		.wrapper {
+			.paragraph {
+				margin-bottom: 10px;
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: $extra-bold;
+				line-height: normal;
+				text-align: left;
+				margin: 0 0 10px;
+				@include media("<=phone") {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+
+	&--institucional-filosofia--subTitle {
+		justify-content: center;
+		background: $orange-2;
+		padding: 30px 0;
+		@include media("<=phone") {
+			padding: 14px 0;
+		}
+		.wrapper {
+			.paragraph {
+				margin-bottom: 10px;
+				color: $black;
+				font-size: 25px;
+				font-family: $OpenSans;
+				font-style: normal;
+				font-weight: $bold;
+				line-height: normal;
+				margin: 0;
+				@include media("<=phone") {
+					font-size: 20px;
+				}
+
+				.italic--institucional-filosofia--subTitle {
+					color: $primary;
+					font-family: $OpenSans;
+					font-size: 32px;
+					font-style: italic;
+					font-weight: $bold;
+					line-height: normal;
+					@include media("<=phone") {
+						font-size: 20px;
+					}
+				}
 			}
 		}
 	}

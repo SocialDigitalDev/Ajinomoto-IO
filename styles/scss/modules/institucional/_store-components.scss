@@ -75,8 +75,22 @@
 }
 
 //QUEM SOMOS
-.infoCardContainer--institucional--origem,
-.infoCardContainer--produtos-ajinomoto {
+.infoCardContainer--institucional--origem {
+	justify-content: center;
+	align-items: flex-start;
+	gap: 60px;
+	@include media(">phone", "<=tablet") {
+		gap: 15px;
+	}
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+.infoCardContainer--institucional--produtos-ajinomoto {
+	background: $orange-2;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 60px;
@@ -92,8 +106,8 @@
 
 .infoCardImageContainer--institucional--origem,
 .infoCardImageContainer--institucional--produtos-ajinomoto  {
-	width: auto;
     text-align: center;
+	width: auto;
 }
 
 .infoCardTextContainer--institucional--origem {
@@ -136,6 +150,8 @@
 .infoCardTextContainer--institucional--produtos-ajinomoto {
     width: auto;
 	max-width: 724px;
+	justify-content: center;
+    height: 100%;
 	@include media(">phone", "<=tablet") {
 		max-width: 610px;
 	}
@@ -150,9 +166,6 @@
 			font-weight: $bold;
 			line-height: normal;
 			margin: 0 0 40px;
-			@include media("<=phone") {
-				text-align: center;
-			}
 			@include media("<=tablet") {
 				margin: 0 0 20px;
 			}
