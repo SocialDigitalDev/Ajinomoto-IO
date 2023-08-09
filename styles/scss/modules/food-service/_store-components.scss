@@ -1,0 +1,79 @@
+.infoCardContainer--food-Service {
+	background: $red-5;
+    border: 1px solid #FDE9E9;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	border-radius: 20px;
+	align-items: flex-start;
+	max-width: 280px;
+	padding: 0;
+    @include media("<=tablet") {
+        margin: 0 5px;
+    }
+}
+
+.infoCardTextContainer--food-Service {
+	width: 100%;
+	padding: 15px 8px 20px;
+	margin: 0;
+	.paragraph--food-Service {
+		color: $secondary;
+		font-family: $OpenSans;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $regular;
+		line-height: 20px;
+		margin: 0;
+        min-height: 100px;
+        @include media("<=phone") {
+            min-height: 160px;
+        }
+		.strong--food-Service {
+			font-weight: $bold;
+		}
+	}
+}
+
+.infoCardImageContainer--food-Service {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	.infoCardImage--food-Service {
+		border-radius: 20px;
+	}
+}
+
+.infoCardCallActionContainer--food-Service {
+	margin: 20px 0 10px;
+    padding: 0 6px;
+	width: 100%;
+	display: block;
+	:global(.vtex-button) {
+		outline: 0;
+		border-radius: 10px;
+		border: 0px solid $orange-1;
+		background: $green-3;
+		padding: 0;
+        width: 100%;
+
+		:global(.vtex-button__label) {
+			color: $white;
+			font-family: $Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			text-transform: capitalize;
+		}
+	}
+}
+
+.infoCardContainer--fullbanner-food-service {
+	border-radius: 20px;
+	min-height: 411px;
+	@include media("<=phone") {
+		min-height: 524px;
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"store.custom#food-service": {
+		"blocks": [
+			"responsive-layout.desktop#food-service",
+			"responsive-layout.tablet#food-service",
+			"responsive-layout.phone#food-service",
+            "flex-layout.row#food-service-subtitulo",
+			"flex-layout.row#food-service-topSale",
+			"flex-layout.row#food-service-shelf"			
+		]
+	},
+
+	"flex-layout.row#food-service-subtitulo": {
+		"title": "SUBTITULO",
+		"children": ["rich-text#food-service-subtitulo"],
+        "props": {
+            "blockClass": "food-service-subtitulo",
+            "fullWidth": true
+        }
+	},
+
+	"rich-text#food-service-subtitulo": {
+		"title": "Texto Subtitulo BANNER",
+		"props": {
+			"blockClass": "food-service-subtitulo",
+			"text": "Encontre todos os sabores que seu estabelecimento precisa para garantir a melhor experiência para os seus clientes. Descubra uma grande variedade de produtos desenvolvidos para uso profissional no Food Service Ajinomoto. "
+		}
+	}	
+}

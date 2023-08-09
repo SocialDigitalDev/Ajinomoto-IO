@@ -1,0 +1,9 @@
+.list--food-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 180px));
+    justify-content: space-evenly;
+    column-gap: 5px;
+    row-gap: 50px;
+    max-width: 870px;
+    margin: 0 auto;
+}

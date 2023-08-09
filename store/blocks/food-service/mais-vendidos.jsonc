@@ -1,0 +1,111 @@
+{
+	"flex-layout.row#food-service-topSale": {
+		"title": "MAIS VENDIDOS",
+		"children": ["flex-layout.col#food-service-topSale"],
+		"props": {
+			"blockClass": "food-service-topSale"
+		}
+	},
+
+	"flex-layout.col#food-service-topSale": {
+		"children": ["rich-text#topSale", "slider-layout#topSale"],
+		"props": {
+			"blockClass": "food-service-topSale"
+		}
+	},
+
+	"rich-text#topSale": {
+		"title": "TITULO",
+		"props": {
+			"text": "Mais Vendidos",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "title--food-service"
+		}
+	},
+
+	"slider-layout#topSale": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 2.5,
+				"phone": 1.5
+			},
+			"infinite": false,
+			"showNavigationArrows": "never",
+			"showPaginationDots": "never",
+			"blockClass": "food-service-topSale",
+			"navigationStep": 1
+		},
+		"children": [
+			"info-card#food-service-topSale-1",
+			"info-card#food-service-topSale-2",
+			"info-card#food-service-topSale-3",
+			"info-card#food-service-topSale-4"
+		]
+	},
+
+	"info-card#food-service-topSale-1": {
+		"title": "ITEM 1",
+		"props": {
+			"isFullModeStyle": false,
+			"imageUrl": "assets/img/food-service-item-1.png",
+			"headline": "**Satis!® Molho Barbecue Churrasco e Grelhados** é a combinação perfeita do sabor do churrasco americano com refoga de cebola e alho. Versatilidade única.",
+			"blockClass": "food-Service",
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text",
+			"callToActionMode": "button",
+			"callToActionText": "Comprar",
+			"callToActionUrl": "/"
+		}
+	},
+
+	"info-card#food-service-topSale-2": {
+		"title": "ITEM 2",
+		"props": {
+			"isFullModeStyle": false,
+			"imageUrl": "assets/img/food-service-item-2.png",
+			"headline": "**Corretor para molhos de tomate** para mais agilidade e praticidade na padronização das suas receitas. Melhora aparência, textura, brilho, cor e corrige a acidez.",
+			"blockClass": "food-Service",
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text",
+			"callToActionMode": "button",
+			"callToActionText": "Comprar",
+			"callToActionUrl": "/"
+		}
+	},
+
+	"info-card#food-service-topSale-3": {
+		"title": "ITEM 3",
+		"props": {
+			"isFullModeStyle": false,
+			"imageUrl": "assets/img/food-service-item-3.png",
+			"headline": "**Mix para Preparo de Hambúrguer Vegetal Terrano - Sabor Frango** é ideal para o preparo de hambúrguer vegetal com sabor, aroma e textura similares à carne de origem animal.",
+			"blockClass": "food-Service",
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text",
+			"callToActionMode": "button",
+			"callToActionText": "Comprar",
+			"callToActionUrl": "/"
+		}
+	},
+
+	"info-card#food-service-topSale-4": {
+		"title": "ITEM 4",
+		"props": {
+			"isFullModeStyle": false,
+			"imageUrl": "assets/img/food-service-item-4.png",
+			"headline": "**Caldo Sazón® Profissional Legumes** é prático e facilita o preparo por sua rápida diluição. Equilibrado, com sal na medida certa, para trazer muito sabor!",
+			"blockClass": "food-Service",
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text",
+			"callToActionMode": "button",
+			"callToActionText": "Comprar",
+			"callToActionUrl": "/"
+		}
+	}
+}
