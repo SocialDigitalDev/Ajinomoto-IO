@@ -18,8 +18,26 @@
         .wrapper{
 
             .paragraph{
-                font-size: 25px;
+                font-size: 24px;
+                text-align: center;
+                color: $red-3;
+                font-weight: $extra-bold;
                 margin: 0;
+            }
+        }
+    }
+
+    &--empty-cart-funnysubtext{
+
+        .wrapper{
+
+            .paragraph{
+                font-size: 20px;
+                text-align: center;
+                color: $red-3;
+                font-weight: $extra-bold;
+                max-width: 250px;
+                margin-bottom: 0;
             }
         }
     }
@@ -30,8 +48,8 @@
 
             .paragraph{
                 text-align: center;
-                padding: 0 36px;
-                font-size: 20px;
+                max-width: 264px;
+                font-size: 12px;
                 margin-top: 0;
             }
         }
