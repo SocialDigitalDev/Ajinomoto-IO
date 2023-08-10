@@ -10,7 +10,7 @@
 
 	"rich-text#text-topbar": {
 		"props": {
-			"text": "Nas compras a partir de R$ 120,00, ganhe de brinde o Ajipanda!",
+			"text": "Não perca as incríveis ofertas do Mês do Cliente na Loja Ajinomoto! ",
 			"blockClass": "text--topbar"
 		}
 	}

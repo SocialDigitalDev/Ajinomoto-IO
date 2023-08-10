@@ -101,7 +101,10 @@
 			"showNavigationArrows": "desktopOnly",
 			"infinite": true,
 			"fullWidth": true,
-			"blockClass": "main-banner"		
+			"blockClass": "main-banner",
+			"autoplay": {
+				"timeout": 3500
+			}
 		}
 	}
 }

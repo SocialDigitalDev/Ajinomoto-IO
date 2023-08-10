@@ -35,7 +35,7 @@
 	"rich-text#category-text": {
 		"title": "TEXTO",
 		"props": {
-			"text": "Experimente nossas irresistíveis sopas e cremes que harmonizam perfeitamente com todos os seus momentos.",
+			"text": "",
 			"blockClass": "category-text"
 		}
 	},
