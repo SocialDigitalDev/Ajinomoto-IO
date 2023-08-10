@@ -1,5 +1,6 @@
 {
 	"flex-layout.row#category-mobile": {
+		"title": "MOBILE",
 		"children": [
 			"flex-layout.col#category-mobile"
 		],
@@ -11,6 +12,7 @@
 	"flex-layout.col#category-mobile": {
 		"children": [
 			"flex-layout.row#category--banner_mob",
+			"flex-layout.row#search-breadcrumb",
 			"flex-layout.row#category-text",
 			"flex-layout.row#category--orderBy-filter",			
 			"flex-layout.row#category--shelf-mob"
