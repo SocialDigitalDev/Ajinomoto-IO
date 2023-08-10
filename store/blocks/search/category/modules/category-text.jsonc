@@ -1,14 +1,16 @@
 {
 	"category-highlights#category-destaques": {
+		"title": "DESTAQUES ICONES",
 		"children": ["flex-layout.col#category-destaques"]
 	},
 
 	"category-highlights#search-ajipanda": {
+		"title": "DESTAQUES IMAGEM",
 		"children": ["flex-layout.col#search-ajipanda"]
 	},
 
 	"flex-layout.row#category-text": {
-		"title": "TEXTO DE APOIO",
+		"title": "TEXTO DE APOIO / DESTAQUES",
 		"children": [
 			"flex-layout.col#searchtitle",
 			"category-highlights#search-ajipanda"
@@ -33,7 +35,7 @@
 	},
 
 	"rich-text#category-text": {
-		"title": "TEXTO",
+		"title": "TEXTO DE APOIO - PARAGRAFO",
 		"props": {
 			"text": "",
 			"blockClass": "category-text"
@@ -52,6 +54,7 @@
 	},
 
 	"responsive-layout.desktop#search-ajipanda": {
+		"title": "IMAGEM AJIPANDA DESKTOP",
 		"children": ["image#search-ajipanda"]
 	},
 
@@ -65,6 +68,7 @@
 	},
 
 	"responsive-layout.mobile#search-ajipanda": {
+		"title": "IMAGEM AJIPANDA MOBILE",
 		"children": ["image#search-ajipanda-mobile"]
 	},
 
@@ -88,6 +92,7 @@
 	},
 
 	"rich-text#category-destaques": {
+		"title": "TEXTO",
 		"props": {
 			"text": "Categorias em destaque",
 			"blockClass": "category-destaques"

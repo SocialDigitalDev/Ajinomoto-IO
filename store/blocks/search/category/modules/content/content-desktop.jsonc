@@ -1,5 +1,6 @@
 {
 	"flex-layout.row#category-desktop": {
+		"title": "DESKTOP",
 		"children": ["flex-layout.col#category-desktop"],
 		"props": {
 			"blockClass": "category--content_desktop"
