@@ -1,0 +1,63 @@
+{
+    "flex-layout.row#empty-search-error-content": {
+        "title": "Conteúdo Página Busca Vazia",
+        "props": {
+            "blockClass": [
+                "ajinomoto--empty-search-error-content",
+                "empty-search-error-content"
+            ]
+        },
+        "children": [
+            "flex-layout.col#empty-search-error-content-col"
+        ]
+    },
+    
+    "flex-layout.col#empty-search-error-content-col": {
+        "title": "Coluna: Conteúdo Página Busca Vazia",
+        "props": {
+            "blockClass": "empty-search-error-item",
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#empty-search-error-image",
+            "rich-text#empty-search-error-message",
+            "rich-text#empty-search-error-submessage",
+            "flex-layout.row#search-bar-busca-vazia"
+        ]
+    },
+
+    "image#empty-search-error-image": {
+        "title": "Imagem do Erro Busca Vazia",
+        "props": {
+            "blockClass": "empty-search-error-image",
+            "src": "assets/svg/panda/ico_panda-empty-search.svg"
+        }
+    },
+
+    "rich-text#empty-search-error-message": {
+        "title": "Mensagem do Erro Busca Vazia",
+        "props": {
+            "blockClass": "empty-search-error-message",
+            "text": "O Ajipanda não encontrou a sua busca!"
+        }
+    },
+
+    "rich-text#empty-search-error-submessage": {
+        "title": "Mensagem do Erro Busca Vazia",
+        "props": {
+            "blockClass": "empty-search-error-submessage",
+            "text": "Por favor pesquise novamente:"
+        }
+    },
+
+    "flex-layout.row#search-bar-busca-vazia": {
+        "title": "Container Barra de Búsca",
+        "props": {
+            "blockClass": "search-bar-404-container"
+        },
+        "children": [
+            "search-bar#error"
+        ]
+    }
+}
