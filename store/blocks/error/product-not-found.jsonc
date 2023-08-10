@@ -1,0 +1,93 @@
+{
+    "store.not-found#product-error": {
+        "blocks": [
+            "flex-layout.row#product-error-content"
+        ]
+    },
+
+    "flex-layout.row#product-error-content": {
+        "title": "Conteúdo Página 404",
+        "props": {
+            "blockClass": [
+                "ajinomoto--product-error-content",
+                "product-error-content"
+            ]
+        },
+        "children": [
+            "flex-layout.col#product-error-content-col"
+        ]
+    },
+    
+    "flex-layout.col#product-error-content-col": {
+        "title": "Coluna: Conteúdo Página 404",
+        "props": {
+            "blockClass": "product-error-item",
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#product-error-image",
+            "rich-text#product-error-message",
+            "flex-layout.row#search-bar-404",
+            "flex-layout.row#back-button-home-button",
+            "flex-layout.row#error-prateleira"
+        ]
+    },
+
+    "image#product-error-image": {
+        "title": "Imagem do Erro 404",
+        "props": {
+            "blockClass": "product-error-image",
+            "src": "assets/svg/panda/ico_panda-404.svg"
+        }
+    },
+
+    "rich-text#product-error-message": {
+        "title": "Mensagem do Erro 404",
+        "props": {
+            "blockClass": "product-error-message",
+            "text": "O sabor que você está procurando não está nesta página!"
+        }
+    },
+
+    "flex-layout.row#search-bar-404": {
+        "title": "Container Barra de Búsca",
+        "props": {
+            "blockClass": "search-bar-404-container"
+        },
+        "children": [
+            "search-bar#error"
+        ]
+    },
+
+    "search-bar#error": {
+		"props":{
+			"hasIconLeft": true,
+			"openAutocompleteOnFocus": false,
+			"autocompleteFullWidth": true,
+			"placeholder": "O que você está procurando?",
+            "maxWidth": "306",
+            "displayMode": "search-button"
+		}
+	},
+    
+    "flex-layout.row#back-button-home-button": {
+        "title": "Botões voltar e início",
+        "props": {
+            "blockClass": "back-button-home-wrapper"
+        },
+        "children": [
+            "back-button",
+            "link#home-button"
+        ]
+    },
+
+    "link#home-button": {
+        "title": "Botão Voltar",
+        "props": {
+            "blockClass": "home-button",
+            "href": "/",
+            "label": "Início"
+        }
+    }
+}

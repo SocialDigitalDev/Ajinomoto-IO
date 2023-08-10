@@ -1,0 +1,65 @@
+.flex{
+
+    &Row{
+
+        &Content{
+
+            &--search-bar-404-container{
+                margin-bottom: 2em;
+
+                :global(.vtex-input-prefix__group){
+                    flex-wrap: wrap;
+                    height: 40px !important;
+                    width: 306px !important;
+                    border: 1px solid $gray-2 !important;
+                    overflow: visible;
+                    margin-bottom: 0px;
+                    background: transparent;
+                    
+                    :global(.vtex-input__prefix){
+                        background: transparent;
+                    }
+                    
+                    :global(.vtex-styleguide-9-x-input){
+                        width: 253px;
+                        height: 37px;
+                        background: transparent;
+                        font-size: 14px;
+
+                        &::placeholder{
+                            font-size: 14px;
+                            color: $gray-29;
+                        }
+                    }
+                    
+                    :global(.vtex-input__suffix){
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            &--back-button-home-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 306px;
+                margin-top: 25px;
+
+                .stretchChildrenWidth{
+
+                    @include media ('<=phone'){
+                        width: 50% !important;
+                    }
+                }
+            }
+
+            &--ajinomoto--prateleira-erro{
+                max-width: 1366px;
+                margin: auto;
+            }
+        }
+    }
+}
