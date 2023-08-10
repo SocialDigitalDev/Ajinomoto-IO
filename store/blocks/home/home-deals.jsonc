@@ -68,8 +68,8 @@
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_truck-deals.svg",
-            "headline": "Frete grátis",
-            "subhead": "para compras acima de R$ 300,00",
+            "headline": "Entrega",
+            "subhead": "para todas as regiões do Brasil",
             "callToActionMode": "none",
             "blockClass": "home-deals",
             "textAlignment": "left"
@@ -84,7 +84,7 @@
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_wallet-deals.svg",
             "headline": "Parcele",
-            "subhead": "Parcele em até 3x sem juros",
+            "subhead": "em até 3x sem juros",
             "callToActionMode": "none",
             "blockClass": "home-deals",
             "textAlignment": "left"
@@ -99,7 +99,7 @@
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_percentage-deals.svg",
             "headline": "Economia",
-            "subhead": "Compre os nossos Kits",
+            "subhead": "Compre os nossos kits",
             "callToActionMode": "none",
             "blockClass": "home-deals",
             "textAlignment": "left"

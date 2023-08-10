@@ -26,7 +26,7 @@
 			"subhead": "A Ajinomoto está no Brasil desde 1956 empenhada em oferecer os melhores produtos para seus consumidores. Saiba mais sobre a nossa história e como estamos mudando o mundo!",
 			"callToActionMode": "button",
 			"callToActionText": "Leia a história",
-			"callToActionUrl": "/",
+			"callToActionUrl": "/institucional/quem-somos",
 			"blockClass": "home-sobre",
 			"textAlignment": "left",
 			"textMode": "rich-text"

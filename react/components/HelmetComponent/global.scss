@@ -58,6 +58,24 @@ ol {
 	}
 }
 
+.vtex-my-orders-app-3-x-orderCard {
+	.vtex-my-orders-app-3-x-orderBody {
+		a.vtex-my-orders-app-3-x-cancelBtn.myo-cancel-btn {
+			display: none;
+			pointer-events: none;
+		}
+	}
+}
+
+.vtex-account__page-body {
+	ul.list li{
+		a.no-underline[href*="cancel"] {
+			display: none;
+			pointer-events: none;
+		}
+	}
+}
+
 //FOOTER
 .vtex-flex-layout-0-x-flexRowContent--footer-bottom {
 	@include media(">phone", "<=tablet") {
@@ -305,43 +323,37 @@ ol {
 	}
 }
 
-
 // AVAILABILITY NOTIFY
 
-.vtex-availability-notify-1-x{
-
+.vtex-availability-notify-1-x {
 	&-title,
-	&-notifyLabel{
+	&-notifyLabel {
 		display: none;
 	}
-	
-	&-content{
+
+	&-content {
 		display: flex;
 		flex-flow: column;
 	}
 
-	&-input{
-
-		.vtex-input{
-			
-			&-prefix__group{
+	&-input {
+		.vtex-input {
+			&-prefix__group {
 				border-radius: 10px;
 				max-width: 281px;
 				height: 40px;
 				border: 1px solid $orange-4;
-				
-				.vtex-styleguide-9-x-input::placeholder{
+
+				.vtex-styleguide-9-x-input::placeholder {
 					color: transparent;
 					font-size: 13px;
 				}
 			}
 		}
 
-		&Name{
-			
-			.vtex-input{
-				
-				&::before{
+		&Name {
+			.vtex-input {
+				&::before {
 					content: "Nome Completo:";
 					font-size: 15px;
 					font-weight: $semi-bold;
@@ -350,32 +362,27 @@ ol {
 				}
 			}
 		}
-		&Email{
-
-			.vtex-input{
-				
-				&::before{
+		&Email {
+			.vtex-input {
+				&::before {
 					content: "E-mail:";
 					font-size: 15px;
 					font-weight: $semi-bold;
 					margin-bottom: 10px;
 					display: block;
 				}
-				
-				&-prefix__group{
-					
-					@include media ('<=phone'){
+
+				&-prefix__group {
+					@include media("<=phone") {
 						max-width: 70%;
 					}
 				}
-				
 			}
 		}
 	}
 
-	&-submit{
-
-		.vtex-button{
+	&-submit {
+		.vtex-button {
 			width: 200px;
 			height: 45px;
 			display: flex;
@@ -388,14 +395,14 @@ ol {
 			margin-top: 30px;
 			border: none;
 
-			&__label{
+			&__label {
 				font-size: 20px;
 				font-weight: $bold;
 			}
 		}
 	}
 
-	&-success{
+	&-success {
 		font-weight: $bold;
 	}
 }
@@ -409,4 +416,10 @@ ol {
 		font-weight: $semi-bold;
 		font-size: 16px;
 	}
+}
+
+
+//LOADING
+.vtex-render-runtime-8-x-loadingBarAnimation {
+	background-color: $secondary;
 }

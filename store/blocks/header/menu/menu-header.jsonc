@@ -16,7 +16,8 @@
 			"menu-item#position-4",
 			"menu-item#position-5",
 			"menu-item#position-6",
-			"menu-item#foodService"
+			"menu-item#foodService",
+			"menu-item#ofertas"
 			
 		],
 		"props": {
@@ -38,10 +39,11 @@
 				"text": "Bebidas",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Bebidas"
+				"tagTitle": "Bebidas",
+				"href": "/bebidas"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-1"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-1"]
 	},
 	
 	"menu-item#position-2": {
@@ -55,13 +57,13 @@
 			"highlight": false,
 			"itemProps": {
 				"text": "Sopas & Cremes",
-				"href": "#",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Sopas & Cremes"
+				"tagTitle": "Sopas & Cremes",
+				"href": "/sopas-e-cremes"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-2"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-2"]
 	},
 	
 	"menu-item#position-3": {
@@ -75,13 +77,13 @@
 			"highlight": false,
 			"itemProps": {
 				"text": "Caldos",
-				"href": "#",
+				"href": "/caldos#",
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Caldos"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-3"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-3"]
 	},
 	
 	"menu-item#position-4": {
@@ -95,13 +97,13 @@
 			"highlight": false,
 			"itemProps": {
 				"text": "Culinários",
-				"href": "#",
+				"href": "/culinarios",
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Culinários"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-4"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-4"]
 	},
 	
 	"menu-item#position-5": {
@@ -115,13 +117,13 @@
 			"highlight": false,
 			"itemProps": {
 				"text": "Molhos e Azeites",
-				"href": "#",
+				"href": "/molhos-e-azeites",
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Molhos e Azeites"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-5"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-5"]
 	},
 	
 	"menu-item#position-6": {
@@ -135,13 +137,13 @@
 			"highlight": false,
 			"itemProps": {
 				"text": "Temperos",
-				"href": "#",
+				"href": "/temperos-e-condimentos",
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Temperos"
 			}
-		},
-		"blocks": ["vtex.menu@2.x:submenu#position-6"]
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-6"]
 	},
 	
 	"menu-item#foodService": {
@@ -152,13 +154,32 @@
 				"top-menu"
 			],
 			"type": "custom",
-			"highlight": true,
+			"highlight": false,
 			"itemProps": {
 				"text": "Food Service",
 				"href": "/food-service",
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Food Service"
+			}
+		}
+	},
+
+	"menu-item#ofertas": {
+		"props": {
+			"id": "menu-item-position-8",
+			"blockClass": [
+				"top-menu-ofertas",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": true,
+			"itemProps": {
+				"text": "Ofertas",
+				"href": "/ofertas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Ofertas"
 			}
 		}
 	},
