@@ -2,7 +2,8 @@
     "store.custom#duvidas-frequentes":{
         "blocks": [   
             "flex-layout.row#pagewrapper-duvidas-frequentes",
-            "highlight-menu-institutional"
+            "highlight-menu-institutional",
+            "flex-layout.row#newsletter"
         ]
     },
 

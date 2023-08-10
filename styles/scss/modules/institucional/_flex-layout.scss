@@ -7,8 +7,8 @@
 		margin-top: 30px;
 		padding: 0 14px;
 
-		@media (max-width: 500px) {
-			margin-top: 50px;
+		@include media("<=phone") {
+			margin-top: 0;
 			padding: 0 1em;
 		}
 	}
