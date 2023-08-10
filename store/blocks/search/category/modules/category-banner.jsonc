@@ -8,9 +8,13 @@
 	},
 
 	"flex-layout.col#category-banner": {
-		"children": ["search-banner#banner-category", "image#banner-category"],
+		"children": [
+			"search-banner#banner-category",
+			"responsive-layout.desktop#banner-category"
+		],
 		"props": {
-			"blockClass": "category--banner"
+			"blockClass": "category--banner",
+			"preventVerticalStretch": true
 		}
 	},
 
@@ -23,10 +27,24 @@
 		}
 	},
 
-	"image#banner-category": {
-		"title": "Imagem do Banner",
+
+	// DESKTOP
+	"responsive-layout.desktop#banner-category": {
+		"children": ["list-context.image-list#banner-category-desktop"]
+	},
+
+	"list-context.image-list#banner-category-desktop": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": ["slider-layout#banner-category"],
 		"props": {
-			"src": "assets/img/banner-categoria-sopa-desktop.png"
+			"preload": true,
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": ""
+				}
+			]
 		}
 	},
 
@@ -43,7 +61,8 @@
 	"flex-layout.col#category-banner_mob": {
 		"children": [
 			"search-banner#banner-category_mob",
-			"image#banner-category_mob"
+			"responsive-layout.tablet#banner-category",
+			"responsive-layout.phone#banner-category"
 		],
 		"props": {
 			"blockClass": "category--banner_mob"
@@ -58,10 +77,60 @@
 		}
 	},
 
-	"image#banner-category_mob": {
-		"title": "Imagem do Banner [MOBILE]",
+	// TABLET
+	"responsive-layout.tablet#banner-category": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["list-context.image-list#banner-category-tablet"]
+	},
+
+	"list-context.image-list#banner-category-tablet": {
+		"children": ["slider-layout#banner-category"],
 		"props": {
-			"src": "assets/img/banner-categoria-sopa-desktop.png"
+			"preload": true,
+			"height": 215,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": ""
+				}			
+			]
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#banner-category": {
+		"title": "BANNER PRINCIPAL [PHONE]",
+		"children": ["list-context.image-list#banner-category-phone"]
+	},
+
+	"list-context.image-list#banner-category-phone": {
+		"children": ["slider-layout#banner-category"],
+		"props": {
+			"preload": true,
+			"height": 375,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": ""
+				}
+			]
+		}
+	},
+
+		
+	// SLIDER BANNER
+	"slider-layout#banner-category": {
+		"title": "SLIDER BANNER",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"showNavigationArrows": "never",
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "banner-category"
 		}
 	}
 }

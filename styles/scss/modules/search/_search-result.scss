@@ -9,13 +9,6 @@
 	}
 }
 
-.container--layout {
-	max-width: 1170px;
-	@include media(">desktop") {
-		max-width: 1366px;
-	}
-}
-
 .gallery--grid {
 	@include media("<=tablet") {
 		padding-left: 0;

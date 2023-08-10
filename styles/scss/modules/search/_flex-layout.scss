@@ -1,5 +1,10 @@
 .flexRow--breadcrumb {
-	margin: 20px 0 40px;
+	margin: 20px auto 40px;
+	max-width: 1170px;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+
 	@include media("<desktop") {
 		padding: 0 14px;
 	}
@@ -8,7 +13,7 @@
 	}
 	@include media("<=phone") {
 		margin: 9px 0 20px;
-	}
+	}	
 }
 
 .flexRow--category--filter {
@@ -19,6 +24,12 @@
 }
 
 .flexRow--category--text {
+	max-width: 1170px;
+	margin: 0 auto;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+
 	@include media(">phone","<desktop") {
 		padding: 0 14px;
 	}
@@ -43,6 +54,14 @@
 				}
 			}
 		}
+	}
+}
+
+.flexRow--category--main {
+	max-width: 1170px;
+	margin: 0 auto;
+	@include media(">desktop") {
+		max-width: 1366px;
 	}
 }
 

@@ -1,6 +1,6 @@
 :global(.vtex-flex-layout-0-x-flexRow--menu-texto-wrapper) {
 	.container {
-		max-width: 1407px;
+		max-width: 1366px;
 		margin: auto;
 	}
 }
@@ -10,7 +10,7 @@
 :global(.vtex-flex-layout-0-x-flexRow--items-mission-vision),
 :global(.vtex-flex-layout-0-x-flexRow--content-values) {
 	:global(.vtex-store-components-3-x-container) {
-		max-width: 1187px;
+		max-width: 1170px;
 		margin: 0 auto 10px auto;
 
 		@include media("<=desktop") {

@@ -26,7 +26,8 @@
 			"imageUrl": "assets/svg/panda/ico_panda-blog-footer.svg",
 			"headline": "Conheça o nosso blog!",
 			"callToActionText": "Confira",
-			"callToActionUrl": "/",
+			"callToActionUrl": "https://www.saboresajinomoto.com.br/blog",
+			"callToActionLinkTarget": "_blank",
 			"blockClass": "blog-footer",
 			"textAlignment": "left"
 		}
