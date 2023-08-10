@@ -1,7 +1,8 @@
 {
     "store.not-found#product-error": {
         "blocks": [
-            "flex-layout.row#product-error-content"
+            "flex-layout.row#product-error-content",
+            "flex-layout.row#error-prateleira"
         ]
     },
 
@@ -29,8 +30,7 @@
             "image#product-error-image",
             "rich-text#product-error-message",
             "flex-layout.row#search-bar-404",
-            "flex-layout.row#back-button-home-button",
-            "flex-layout.row#error-prateleira"
+            "flex-layout.row#back-button-home-button"
         ]
     },
 

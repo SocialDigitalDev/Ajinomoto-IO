@@ -1,39 +1,43 @@
 {
     "flex-layout.row#error-prateleira": {
-		"title": "Prateleira: Você também por gostar [PÁGINA DE ERRO]",
-		"children": [
-            "flex-layout.col#error-prateleira"
-        ],
+        "title": "Vitrine: Você também pode gostar disso",
+        "props": {
+            "blockClass": [
+                "ajinomoto--prateleira-error-desktop",
+                "qvvt"
+            ]
+        },
+        "children": [
+            "flex-layout.col#error-prateleira"            
+        ]
+    },
+
+    "flex-layout.col#error-prateleira": {
+        "title": "Coluna: Você também pode gostar disso",
+        "props": {
+            "blockClass": "qvvt--column",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#pdp-prateleira-error",
+            "list-context.product-list#pdp-prateleira-error"
+        ]
+    },
+
+    "rich-text#pdp-prateleira-error": {
+		"title": "Título: Você também pode gostar disso",
 		"props": {
+			"text": "## Você também pode gostar disso",
+			"textPosition": "CENTER",
 			"blockClass": [
-                "ajinomoto--prateleira-erro",
-                "prateleira"
+                "shelf-titles",
+                "qvvt--shelf-title"
             ]
 		}
 	},
-
-	"flex-layout.col#error-prateleira": {
-		"children": [
-			"rich-text#error-prateleira",
-			"list-context.product-list#error-prateleira"
-		],
-		"props": {
-			"blockClass": "column-prateleira"
-		}
-	},
-
-	"rich-text#error-prateleira": {
-		"title": "Título da Vitrine",
-		"props": {
-			"text": "## Lançamentos",
-			"textPosition": "CENTER",
-			"blockClass": "shelf-titles"
-		}
-	},
-
-	// LIST SLIDER
-	"list-context.product-list#error-prateleira": {
-		"title": "Prateleira",
+	
+	"list-context.product-list#pdp-prateleira-error": {
+		"title": "Prateleira: Você também pode gostar disso",
 		"blocks": ["product-summary.shelf"],
 		"children": ["slider-layout#shelf"],
 		"props": {
@@ -41,7 +45,5 @@
 			"skusFilter": "ALL",
             "orderBy": "OrderByReleaseDateDESC"
 		}
-	},
-
-    "slider-layout": {}
+	}
 }
