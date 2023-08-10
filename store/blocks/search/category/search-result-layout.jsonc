@@ -102,10 +102,9 @@
 
 	"search-not-found-layout": {
 		"children": [
-			"breadcrumb.search",
-			"rich-text#search-empty",
-			"flex-layout.row#empty-search",
-			"rich-text#search-empty2"
+			"flex-layout.row#empty-search-error-content",
+			"flex-layout.row#error-prateleira",
+            "flex-layout.row#newsletter"
 		]
 	},
 
