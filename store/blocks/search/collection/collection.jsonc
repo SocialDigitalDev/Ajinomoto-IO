@@ -1,10 +1,11 @@
 {
 	"store.custom#collection": {
+		"title": "PAGINA DE COLECAO",
 		"blocks": ["search-result-layout.customQuery"]
 	},
 
 	"search-result-layout.customQuery": {
-		"title": "Configurações da Página / Coleção",
+		"title": "CONFIGURACOES DA  PAGINA",
 		"props": {
 			"querySchema": {
 				"orderByField": "OrderByBestDiscountDESC",
@@ -17,8 +18,8 @@
 			}
 		},
 		"blocks": [
-			"search-result-layout.desktop",
-			"search-result-layout.mobile",
+			"search-result-layout.desktop#collection",
+			"search-result-layout.mobile#collection",
 			"search-not-found-layout"
 		]
 	},
@@ -43,11 +44,7 @@
 			"flex-layout.row#category-mobile--collection"
 		],
 		"props": {
-			"pagination": "show-more",
-			"mobileLayout": {
-				"mode1": "small",
-				"mode2": "normal"
-			},
+			"pagination": "show-more",			
 			"defaultGalleryLayout": "grid"
 		}
 	},

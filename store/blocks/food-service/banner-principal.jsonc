@@ -1,0 +1,87 @@
+{
+	// DESKTOP
+	"responsive-layout.desktop#food-service": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": ["flex-layout.row#banner-food-service"]
+	},
+
+	"flex-layout.row#banner-food-service": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-food-service"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-food-service": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/banner-food-service-desktop.png",
+			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-food-service"],
+			"textPosition": "right",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	},
+
+	//TABLET
+
+	"responsive-layout.tablet#food-service": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["flex-layout.row#banner-food-service-tablet"]
+	},
+
+
+	"flex-layout.row#banner-food-service-tablet": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-food-service-tablet"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-food-service-tablet": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/banner-food-service-tablet.png",
+			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-food-service"],
+			"textPosition": "right",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#food-service": {
+		"title": "BANNER PRINCIPAL [PHONE]",
+		"children": ["flex-layout.row#banner-food-service-phone"]
+	},
+
+	"flex-layout.row#banner-food-service-phone": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-food-service-phone"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-food-service-phone": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/banner-food-service-phone.png",
+			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-food-service"],
+			"textPosition": "center",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	}
+}

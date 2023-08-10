@@ -13,5 +13,8 @@
     },
     "store.custom#quem-somos": {
         "path": "/institucional/quem-somos"
+    },
+    "store.custom#food-service": {
+        "path": "/food-service"
     }
 }
