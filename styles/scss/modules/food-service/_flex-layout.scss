@@ -1,5 +1,18 @@
-.flexRow--food-service-topSale {
+.flexRow--food-service-subtitulo {
     margin: 0 0 50px; 
+    @include media("<=phone") {
+        margin: 0 0 25px;
+    }
+    :global(.vtex-store-components-3-x-container) {
+		max-width: 1170px;
+        @include media(">desktop") {
+            max-width: 1366px;
+        }
+	}
+}
+
+.flexRow--food-service-topSale {
+    margin: 0 0 50px;
     :global(.vtex-store-components-3-x-container) {
 		max-width: 1170px;
         @include media(">desktop") {

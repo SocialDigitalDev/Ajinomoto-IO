@@ -17,7 +17,7 @@
 	"rich-text#topSale": {
 		"title": "TITULO",
 		"props": {
-			"text": "Mais Vendidos",
+			"text": "## Mais Vendidos",
 			"textAlignment": "CENTER",
 			"textPosition": "CENTER",
 			"blockClass": "title--food-service"

@@ -1,15 +1,9 @@
 {
-	// DESKTOP e TABLET
+	// DESKTOP
 	"responsive-layout.desktop#food-service": {
 		"title": "BANNER PRINCIPAL [DESKTOP]",
 		"children": ["flex-layout.row#banner-food-service"]
 	},
-
-	"responsive-layout.tablet#food-service": {
-		"title": "BANNER PRINCIPAL [TABLET]",
-		"children": ["flex-layout.row#banner-food-service"]
-	},
-
 
 	"flex-layout.row#banner-food-service": {
 		"title": "BANNER PRINCIPAL -INFOCARD",
@@ -27,7 +21,37 @@
 			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
 			"callToActionMode": "none",
 			"blockClass": ["fullbanner-food-service"],
-			"textPosition": "center",
+			"textPosition": "right",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	},
+
+	//TABLET
+
+	"responsive-layout.tablet#food-service": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["flex-layout.row#banner-food-service-tablet"]
+	},
+
+
+	"flex-layout.row#banner-food-service-tablet": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-food-service-tablet"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-food-service-tablet": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/banner-food-service-tablet.png",
+			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-food-service"],
+			"textPosition": "right",
 			"textAlignment": "center",
 			"textMode": "rich-text"
 		}

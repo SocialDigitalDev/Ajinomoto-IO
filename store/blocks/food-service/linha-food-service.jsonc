@@ -20,7 +20,7 @@
 	"rich-text#food-service-shelf": {
 		"title": "TITULO",
 		"props": {
-			"text": "Linha Food Service",
+			"text": "## Linha Food Service",
 			"textAlignment": "CENTER",
             "textPosition": "CENTER",
 			"blockClass": "title--food-service"

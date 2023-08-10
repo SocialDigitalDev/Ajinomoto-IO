@@ -1,9 +1,16 @@
 .list--food-service {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 180px));
+    grid-template-columns: repeat(auto-fill, 180px);
     justify-content: space-evenly;
     column-gap: 5px;
     row-gap: 50px;
     max-width: 870px;
     margin: 0 auto;
+    @include media("<=phone") {
+        grid-template-columns: repeat(auto-fill, 160px);
+    }
+    @media (max-width: 320px) {
+        grid-template-columns: repeat(auto-fill, 145px);
+        column-gap: 3px;
+    }
 }
