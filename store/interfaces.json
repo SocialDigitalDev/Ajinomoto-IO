@@ -36,5 +36,9 @@
 	"category-highlights": {
 		"component": "CategoryHighlights",
 		"composition": "children"
+	},
+
+	"back-button": {
+		"component": "BackButton"
 	}
 }

@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+    
+    &--home-button{
+        width: 255px!important;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: $primary;
+
+        .label{
+            color: $white;
+        }
+    }
+}

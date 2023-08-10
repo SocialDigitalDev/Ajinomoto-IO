@@ -1,0 +1,29 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--search-bar-404-container){
+
+    :global(.vtex-input__suffix){
+        background: transparent;
+        
+        .searchBarIcon{
+            width: 306px;
+            padding: 0;
+
+            &::after{
+                content: "Procurar";
+                width: 100%;
+                background: $gray-2;
+                text-align: center;
+                color: $white;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .container{
+        max-width: 1366px;
+        margin: auto;
+    }
+}
