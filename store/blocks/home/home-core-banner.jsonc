@@ -28,7 +28,11 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-miolo-banner-desktop.png"
+					"image":  "assets/img/home-miolo-banner-desktop.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
 				}
 			]
 		}
@@ -48,7 +52,11 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-miolo-banner-desktop.png"
+					"image": "assets/img/home-miolo-banner-desktop.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
 				}
 			]
 		}
@@ -69,7 +77,11 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-miolo-banner-phone.png"
+					"image": "assets/img/home-miolo-banner-phone.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
 				}
 			]
 		}

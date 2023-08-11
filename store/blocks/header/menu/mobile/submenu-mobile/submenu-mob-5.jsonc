@@ -14,7 +14,7 @@
 	"disclosure-trigger#submenu-5": {
 		"title": "TRIGGER SUBMNENU 5",
 		"props": {
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		},
 		"children": ["rich-text#submenu-5"]
 	},
@@ -23,14 +23,14 @@
 		"title": "SUBMENU 5",
 		"props": {
 			"text": "Molhos e Azeites",
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	},
 
 	"disclosure-content#submenu-5": {
 		"title": "ITENS SUBMENU 5",
 		"props": {
-			"blockClass": "menu-mobile-content"
+			"blockClass": "header-menu-mobile"
 		},
 		"children": [
 			"menu-item#sub-position-5-item-1",

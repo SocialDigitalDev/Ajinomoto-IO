@@ -14,7 +14,7 @@
 	"disclosure-trigger#submenu-3": {
 		"title": "TRIGGER SUBMNENU 3",
 		"props": {
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		},
 		"children": ["rich-text#submenu-3"]
 	},
@@ -23,14 +23,14 @@
 		"title": "SUBMENU 3",
 		"props": {
 			"text": "Caldos",
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	},
 
 	"disclosure-content#submenu-3": {
 		"title": "ITENS SUBMENU 3",
 		"props": {
-			"blockClass": "menu-mobile-content"
+			"blockClass": "header-menu-mobilet"
 		},
 		"children": [
 			"menu-item#sub-position-3-item-1",

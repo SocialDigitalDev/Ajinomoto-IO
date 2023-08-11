@@ -3,7 +3,7 @@
 		"title":  "MENU MOBILE",
 		"children": ["menu#drawer"],
 		"props": {
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	},
 	
@@ -23,6 +23,7 @@
 	
 	"disclosure-layout-group#group-submenu": {
 		"children": [
+			"disclosure-layout#submenu-mob-marcas",
 			"disclosure-layout#submenu-mob-1",
 			"disclosure-layout#submenu-mob-2",
 			"disclosure-layout#submenu-mob-3",
@@ -32,7 +33,7 @@
 		],
 		"props": {
 			"maxVisible": "one",
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	}	
 }

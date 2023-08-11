@@ -16,7 +16,7 @@
     "disclosure-trigger#submenu-6": {
         "title": "TRIGGER SUBMNENU 4",
         "props": {
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "rich-text#submenu-6"
@@ -27,14 +27,14 @@
         "title": "submenu 6",
         "props": {
             "text": "Temperos",
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         }
     },
     
     "disclosure-content#submenu-6": {
         "title": "ITENS SUBMENU 3",
         "props": {
-            "blockClass": "menu-mobile-content"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "menu-item#sub-position-6-item-1",
