@@ -1,5 +1,6 @@
 {
 	"flex-layout.row#home-final-banner": {
+		"title": "HOME BANNER FINAL",
 		"children": [
 			"responsive-layout.desktop#final-banner",
 			"responsive-layout.tablet#final-banner",
@@ -16,11 +17,11 @@
 
 	//DESKTOP
 	"responsive-layout.desktop#final-banner": {
+		"title": "BANNER FINAL [DESKTOP]",
 		"children": ["list-context.image-list#final-banner-desktop"]
 	},
 
 	"list-context.image-list#final-banner-desktop": {
-		"title": "BANNER FINAL [DESKTOP]",
 		"children": ["slider-layout#final-banner"],
 		"props": {
 			"height": 300,
@@ -35,11 +36,11 @@
 
 	//TABLET
 	"responsive-layout.tablet#final-banner": {
+		"title": "BANNER FINAL [TABLET]",
 		"children": ["list-context.image-list#final-banner-tablet"]
 	},
 
 	"list-context.image-list#final-banner-tablet": {
-		"title": "BANNER FINAL [TABLET]",
 		"children": ["slider-layout#final-banner"],
 		"props": {
 			"preload": true,
@@ -56,11 +57,11 @@
 	//PHONE
 
 	"responsive-layout.phone#final-banner": {
+		"title": "BANNER FINAL [PHONE]",
 		"children": ["list-context.image-list#final-banner-phone"]
 	},
 
 	"list-context.image-list#final-banner-phone": {
-		"title": "BANNER FINAL [PHONE]",
 		"children": ["slider-layout#final-banner"],
 		"props": {
 			"preload": true,

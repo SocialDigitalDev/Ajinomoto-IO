@@ -8,6 +8,7 @@
 	},
 
 	"flex-layout.col#home-sobre": {
+		"title": "INFO CARD - SOBRE NÓS",
 		"children": ["info-card#home-sobre"],
 		"props": {
 			"blockClass": "home-sobre"
@@ -15,7 +16,6 @@
 	},
 
 	"info-card#home-sobre": {
-		"title": "HOME SOBRE NÓS",
 		"props": {
 			"id": "home-sobre",
 			"isFullModeStyle": false,

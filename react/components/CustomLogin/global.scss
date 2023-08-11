@@ -74,6 +74,9 @@
 	gap: 7px;
 	cursor: pointer;
 	position: relative;
+	@include media("<=tablet") {
+		margin-right: 18px;
+	}
 }
 
 .login-btn-1 {

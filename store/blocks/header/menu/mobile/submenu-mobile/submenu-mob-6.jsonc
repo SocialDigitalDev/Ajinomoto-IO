@@ -2,14 +2,16 @@
     "disclosure-layout#submenu-mob-6": {
         "title": "Menu Mobile 6",
         "children": [
-            "disclosure-trigger#submenu-6",
-            "disclosure-content#submenu-6"
+            "menu-item#position-6"
+            // "disclosure-trigger#submenu-6",
+            // "disclosure-content#submenu-6"
         ],
         "props": {
            
             "blockClass": "submenu"
         }
     },
+
     
     "disclosure-trigger#submenu-6": {
         "title": "TRIGGER SUBMNENU 4",

@@ -1,5 +1,6 @@
 {
 	"drawer#menu-mobile": {
+		"title":  "MENU MOBILE",
 		"children": ["menu#drawer"],
 		"props": {
 			"blockClass": "menu-mobile"
@@ -10,8 +11,9 @@
 		"children": [
 			"flex-layout.row#client-area",
 			"disclosure-layout-group#group-submenu",
-			"menu-item#assinatura",
+			"menu-item#ofertas",
 			"menu-item#foodService"
+			// "menu-item#assinatura",
 		],
 		"props": {
 			"orientation": "vertical",

@@ -1,5 +1,6 @@
 {
 	"store.home": {
+		"title": "HOME",
 		"blocks": [
 			"flex-layout.row#home-main-banner",
 			"flex-layout.row#home-deals",
@@ -13,5 +14,5 @@
 			"flex-layout.row#home-sobre",
 			"flex-layout.row#newsletter"
 		]
-	}	
+	}
 }

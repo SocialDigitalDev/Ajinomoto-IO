@@ -18,7 +18,7 @@
 	},
 
 	"header-layout.desktop": {
-		"title": "Header Desktop",
+		"title": "HEADER DESKTOP",
 		"children": [
 			"helmet-component",
 			"sticky-layout#header-desktop"
@@ -29,9 +29,10 @@
 			"fullWidth": false
 		}
 	},
+	
 
 	"header-layout.mobile": {
-		"title": "Header Mobile",
+		"title": "HEADER MOBILE",
 		"children": [
 			"helmet-component",
 			"sticky-layout#header-mobile"

@@ -1,5 +1,6 @@
 {
 	"flex-layout.col#copyright-footer": {
+		"title": "DESENVOLVIDO POR",
 		"children": ["rich-text#title-copyright", "link#logo-social"],
 		"props": {
 			"horizontalAlign": "left",

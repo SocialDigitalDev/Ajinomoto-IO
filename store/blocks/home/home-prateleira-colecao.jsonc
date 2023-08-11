@@ -1,6 +1,7 @@
 {
 	//HOME - PRATELEIRA 1
 	"flex-layout.row#home-colecao": {
+		"title": "HOME COLEÇÃO",
 		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
 		"props": {
 			"blockClass": ["home-colecao", "home-section"],
@@ -9,7 +10,7 @@
 	},
 
 	"info-card#home-colecao": {
-		"title": "HOME COLEÇÃO",
+		"title": "INFO CARD COLEÇÃO",
 		"props": {
 			"id": "home-colecao",
 			"isFullModeStyle": false,
