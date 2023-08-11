@@ -1,5 +1,6 @@
 {
 	"flex-layout.col#menu-ajudas": {
+		"title": "AJUDA",
 		"children": ["rich-text#title-ajuda", "vtex.menu@2.x:menu#menu-ajuda"],
 		"props": {
 			"blockClass": "links-footer",

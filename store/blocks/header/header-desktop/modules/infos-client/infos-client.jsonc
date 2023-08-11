@@ -51,6 +51,7 @@
 	},
 
 	"flex-layout.row#minicart": {
+		"title": "MINICART",
 		"children": [
 			"minicart.v2"
 		],

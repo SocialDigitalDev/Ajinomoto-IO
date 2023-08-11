@@ -1,5 +1,6 @@
 {
     "footer-layout.mobile": {
+        "title": "FOOTER MOBILE",
         "props": {
             "blockClass": ["footer-mobile", "ajinomoto--footer-mobile"]
         },
@@ -10,6 +11,7 @@
     },
     //TABLET
     "responsive-layout.tablet#footer": {
+        "title": "FOOTER [TABLET]",
         "children": [
             "flex-layout.row#footer-data-desktop",
             "flex-layout.row#footer-bottom-desktop",
@@ -19,6 +21,7 @@
 
     //PHONE
     "responsive-layout.phone#footer": {
+        "title": "FOOTER [PHONE]",
         "children": [
             "flex-layout.row#footer-blog",
             "flex-layout.row#menu-account-mob",

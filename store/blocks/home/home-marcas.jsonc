@@ -1,6 +1,6 @@
 {
 	"flex-layout.row#home-brands": {
-		"title": "HOME brands",
+		"title": "HOME MARCAS",
 		"children": ["flex-layout.col#home-brands"],
 		"props": {
 			"blockClass": ["home-brands", "home-section"]

@@ -1,5 +1,6 @@
 {
 	"flex-layout.col#payments-footer": {
+		"title": "PAGAMENTO",
 		"children": ["rich-text#title-payments", "image#image-payments"],
 		"props": {
 			"horizontalAlign": "center",

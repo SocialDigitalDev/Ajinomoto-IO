@@ -1,5 +1,6 @@
 {
 	"flex-layout.col#menu-account": {
+		"title": "CONTA",
         "children": ["rich-text#title-account", "vtex.menu@2.x:menu#menu-conta-footer"],
         "props": {
             "blockClass": "links-footer",

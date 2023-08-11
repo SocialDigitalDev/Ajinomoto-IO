@@ -12,7 +12,7 @@
 	"image#logo-header-mobile": {
 		"props": {
 			"blockClass": "logo-header",
-			"src": "assets/svg/logo-mobile-header.svg",
+			"src": "assets/img/logo-mobile-aj.png",
 			"link":  {
 				"title": "Loja Ajinomoto",
 				"url": "/"
