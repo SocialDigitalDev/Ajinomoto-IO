@@ -26,4 +26,11 @@
         max-width: 1366px;
         margin: auto;
     }
+
+    .portalContainer,
+    .resultsList{
+        @include media ('<=tablet'){
+            position: absolute !important;
+        }
+    }
 }
