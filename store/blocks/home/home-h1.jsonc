@@ -1,0 +1,15 @@
+{
+	"flex-layout.row#tag-title-h1": {
+		"children": ["rich-text#home-h1"]
+	},
+
+	"rich-text#home-h1": {
+		"props": {
+			"text": "# Benefícios Loja Ajinomoto",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+			"blockClass": "titulo-h1"
+
+		}
+	}
+}

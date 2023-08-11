@@ -1,0 +1,206 @@
+{
+	///////////// SUBMNENU 1
+	"vtex.menu@2.x:submenu#marcas": {
+		"title": "SUBMNENU MARCAS",
+		"children": [
+			"menu-item#sub-marcas-item-1",
+			"menu-item#sub-marcas-item-2",
+			"menu-item#sub-marcas-item-3",
+			"menu-item#sub-marcas-item-4",
+			"menu-item#sub-marcas-item-5",
+			"menu-item#sub-marcas-item-6",
+			"menu-item#sub-marcas-item-7",
+			"menu-item#sub-marcas-item-8",
+			"menu-item#sub-marcas-item-9",
+			"menu-item#sub-marcas-item-10",
+			"menu-item#sub-marcas-item-11",
+			"menu-item#sub-marcas-item-12",
+			"menu-item#sub-marcas-item-13"
+		],
+		"props": {
+			"blockClass": ["submenu-list", "submenu-list__first"]
+		}
+	},
+
+	"menu-item#sub-marcas-item-1": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/aji-sal",
+				"noFollow": false,
+				"tagTitle": "Aji-sal",
+				"text": "Aji-sal"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-2": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/receita-de-casa",
+				"noFollow": false,
+				"tagTitle": "Receitas de Casa",
+				"text": "Receitas de Casa"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-3": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/sabor-a-mir",
+				"noFollow": false,
+				"tagTitle": "Sabor a mi",
+				"text": "Sabor a mi"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-4": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/vono",
+				"noFollow": false,
+				"tagTitle": "Vono",
+				"text": "Vono"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-5": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/terrano",
+				"noFollow": false,
+				"tagTitle": "Terrano",
+				"text": "Terrano"
+			}			
+		}
+	},
+
+	"menu-item#sub-marcas-item-6": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/sazon",
+				"noFollow": false,
+				"tagTitle": "Sazón",
+				"text": "Sazón"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-7": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/satis-",
+				"noFollow": false,
+				"tagTitle": "Satis!",
+				"text": "Satis!"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-8": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/hondashi",
+				"noFollow": false,
+				"tagTitle": "Hondashi",
+				"text": "Hondashi"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-9": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mid-zero-",
+				"noFollow": false,
+				"tagTitle": "MID Zero",
+				"text": "MID Zero"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-10": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mid",
+				"noFollow": false,
+				"tagTitle": "MID",
+				"text": "MID"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-11": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/amino-vital-gold",
+				"noFollow": false,
+				"tagTitle": "Amino vital Gold",
+				"text": "Amino vital Gold"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-12": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/aji-no-moto",
+				"noFollow": false,
+				"tagTitle": "Aji-no-moto",
+				"text": "Aji-no-moto"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-13": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/food-service",
+				"noFollow": false,
+				"tagTitle": "Food Service",
+				"text": "Food Service"
+			}			
+		}
+	}
+}

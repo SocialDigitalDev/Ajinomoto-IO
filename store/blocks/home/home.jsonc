@@ -3,6 +3,7 @@
 		"title": "HOME",
 		"blocks": [
 			"flex-layout.row#home-main-banner",
+			"flex-layout.row#tag-title-h1",
 			"flex-layout.row#home-deals",
 			"flex-layout.row#home-brands",
 			"flex-layout.row#home-prateleira-1",

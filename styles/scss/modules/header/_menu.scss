@@ -8,6 +8,9 @@
 			justify-content: center;
 			width: 100%;
 			gap: 0 30px;
+			@include media(">tablet", "<=desktop") {
+				gap: 0 12px;
+			}
 
 			.menuItem {
 				.styledLink {
