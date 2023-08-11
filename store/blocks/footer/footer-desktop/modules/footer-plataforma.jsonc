@@ -1,5 +1,6 @@
 {
     "flex-layout.col#platform-footer": {
+      "title": "PLATAFORMA",
       "children": ["rich-text#title-platform", "link#platform" ],
       "props": {
         "horizontalAlign": "left",

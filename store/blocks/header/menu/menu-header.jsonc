@@ -1,8 +1,7 @@
 {
 	"flex-layout.row#header-menu": {
-		"children": [
-			"vtex.menu@2.x:menu#category-menu_desk"
-		],
+		"title": "MENU DESKTOP",
+		"children": ["vtex.menu@2.x:menu#category-menu_desk"],
 		"props": {
 			"blockClass": "header--menu"
 		}
@@ -60,7 +59,7 @@
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Sopas & Cremes",
-				"href": "/sopas-e-cremes"
+				"href": "/alimentos-instanteneos/sopas-e-cremes"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-2"]

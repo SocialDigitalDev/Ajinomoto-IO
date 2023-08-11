@@ -1,58 +1,59 @@
 {
-    "flex-layout.col#menu-sobre-nos": {
-      "children": [ "rich-text#title-sobre",  "vtex.menu@2.x:menu#menu-sobre"  ],
-      "props": {
-        "blockClass": "links-footer",
-        "verticalAlign": "top"
-      }
-    },
+	"flex-layout.col#menu-sobre-nos": {
+		"title": "SOBRE",
+		"children": ["rich-text#title-sobre", "vtex.menu@2.x:menu#menu-sobre"],
+		"props": {
+			"blockClass": "links-footer",
+			"verticalAlign": "top"
+		}
+	},
 
-    "rich-text#title-sobre": {
-      "title": "Título Sobre - Desktop",
-        "props": {
-          "text": "Sobre a Ajinomoto",
-          "blockClass": "title-footer"
-        }
-      },
+	"rich-text#title-sobre": {
+		"title": "Título Sobre - Desktop",
+		"props": {
+			"text": "Sobre a Ajinomoto",
+			"blockClass": "title-footer"
+		}
+	},
 
-    "vtex.menu@2.x:menu#menu-sobre": {
-	  "title": "Links Sobre Nós Footer [desktop]",
-      "children": ["menu-item#sobre-1", "menu-item#sobre-2"],
-      "props": {
-        "orientation": "vertical",
-        "blockClass": ["footer-menu"] 
-      }
-    },
+	"vtex.menu@2.x:menu#menu-sobre": {
+		"title": "Links Sobre Nós Footer [desktop]",
+		"children": ["menu-item#sobre-1", "menu-item#sobre-2"],
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["footer-menu"]
+		}
+	},
 
-    "menu-item#sobre-1": {
-        "props": {
-            "id": "menu-item-atendimento-1",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-                "href": "/institucional/quem-somos/",
-                "noFollow": false,
-                "tagTitle": "Link Quem Somos",
-                "text": "Quem Somos"
-            }
-        }
-    },
+	"menu-item#sobre-1": {
+		"props": {
+			"id": "menu-item-atendimento-1",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/quem-somos/",
+				"noFollow": false,
+				"tagTitle": "Link Quem Somos",
+				"text": "Quem Somos"
+			}
+		}
+	},
 
-    "menu-item#sobre-2": {
-        "props": {
-            "id": "menu-item-atendimento-1",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "type": "external",
-                "href": "",
-                "noFollow": false,
-                "tagTitle": "Link Contatos",
-                "text": "Contatos"
-            }
-        }
-    }
+	"menu-item#sobre-2": {
+		"props": {
+			"id": "menu-item-atendimento-1",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "external",
+				"href": "",
+				"noFollow": false,
+				"tagTitle": "Link Contatos",
+				"text": "Contatos"
+			}
+		}
+	}
 }

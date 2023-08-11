@@ -1,8 +1,7 @@
 {
 	"flex-layout.row#topbar-header": {
-		"children": [
-			"rich-text#text-topbar"
-		],
+		"title": "TOP BAR",
+		"children": ["rich-text#text-topbar"],
 		"props": {
 			"blockClass": "header--topbar"
 		}

@@ -1,5 +1,6 @@
 {
 	"flex-layout.row#home-core-banner": {
+		"title": "HOME BANNER MIOLO",
 		"children": [
 			"responsive-layout.desktop#core-banner",
 			"responsive-layout.tablet#core-banner",
@@ -16,11 +17,11 @@
 
 	//DESKTOP
 	"responsive-layout.desktop#core-banner": {
+		"title": "BANNER MIOLO [DESKTOP]",
 		"children": ["list-context.image-list#core-banner-desktop"]
 	},
 
 	"list-context.image-list#core-banner-desktop": {
-		"title": "BANNER MIOLO [DESKTOP]",
 		"children": ["slider-layout#core-banner"],
 		"props": {
 			"height": 300,
@@ -35,11 +36,11 @@
 
 	//TABLET
 	"responsive-layout.tablet#core-banner": {
+		"title": "BANNER MIOLO [TABLET]",
 		"children": ["list-context.image-list#core-banner-tablet"]
 	},
 
 	"list-context.image-list#core-banner-tablet": {
-		"title": "BANNER MIOLO [TABLET]",
 		"children": ["slider-layout#core-banner"],
 		"props": {
 			"preload": true,
@@ -56,11 +57,11 @@
 	//PHONE
 
 	"responsive-layout.phone#core-banner": {
+		"title": "BANNER MIOLO [PHONE]",
 		"children": ["list-context.image-list#core-banner-phone"]
 	},
 
 	"list-context.image-list#core-banner-phone": {
-		"title": "BANNER MIOLO [PHONE]",
 		"children": ["slider-layout#core-banner"],
 		"props": {
 			"preload": true,

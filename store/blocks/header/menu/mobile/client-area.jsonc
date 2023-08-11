@@ -1,5 +1,6 @@
 {
     "flex-layout.row#client-area": {
+		"title": "AREA DO CLIENTE",
 		"children": [
 			"flex-layout.col#client-area"
 		],

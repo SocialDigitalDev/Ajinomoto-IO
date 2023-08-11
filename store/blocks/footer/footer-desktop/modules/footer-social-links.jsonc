@@ -1,5 +1,6 @@
 {
 	"flex-layout.col#social-links": {
+		"title": "REDES SOCIAIS",
 		"children": [
 			"rich-text#social-links",
 			"flex-layout.row#data-links"

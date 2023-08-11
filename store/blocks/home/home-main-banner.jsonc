@@ -1,5 +1,6 @@
 {
     "flex-layout.row#home-main-banner": {
+		"title": "HOME BANNER PRINCIPAL",
 		"children": [
 			"responsive-layout.desktop#main-banner",
 			"responsive-layout.tablet#main-banner",
@@ -16,6 +17,7 @@
 
 	// DESKTOP
 	"responsive-layout.desktop#main-banner": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
 		"children": [
 			"list-context.image-list#main-banner-desktop"
 		]

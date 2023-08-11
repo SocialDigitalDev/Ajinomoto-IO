@@ -1,24 +1,25 @@
 {
     "flex-layout.col#menu-produtos": {
-      "children": ["rich-text#title-produto",  "vtex.menu@2.x:menu#menu-produto" ],
-      "props": {
-        "blockClass": "links-footer",
-        "verticalAlign": "top"
-      }
+        "title": "PRODUTOS",
+        "children": [
+            "rich-text#title-produto",
+            "vtex.menu@2.x:menu#menu-produto"
+        ],
+        "props": {
+            "blockClass": "links-footer",
+            "verticalAlign": "top"
+        }
     },
-
-
     "rich-text#title-produto": {
         "title": "Título Produtos - Desktop",
         "props": {
-          "text": "Produtos",
-          "blockClass": "title-footer"
+            "text": "Produtos",
+            "blockClass": "title-footer"
         }
-      },
-
+    },
     "vtex.menu@2.x:menu#menu-produto": {
-      "title": "Links Produto Footer [desktop]",
-      "children": [
+        "title": "Links Produto Footer [desktop]",
+        "children": [
             "menu-item#produto-1",
             "menu-item#produto-2",
             "menu-item#produto-3",
@@ -28,10 +29,12 @@
             "menu-item#produto-7",
             "menu-item#produto-8"
         ],
-      "props": {
-        "orientation": "vertical",
-        "blockClass": ["footer-menu"]
-      }
+        "props": {
+            "orientation": "vertical",
+            "blockClass": [
+                "footer-menu"
+            ]
+        }
     },
     "menu-item#produto-1": {
         "props": {
@@ -47,7 +50,6 @@
             }
         }
     },
-
     "menu-item#produto-2": {
         "props": {
             "id": "menu-item-produto-2",
@@ -62,7 +64,6 @@
             }
         }
     },
-
     "menu-item#produto-3": {
         "props": {
             "id": "menu-item-produto-3",
@@ -77,7 +78,6 @@
             }
         }
     },
-
     "menu-item#produto-4": {
         "props": {
             "id": "menu-item-produto-4",
@@ -92,7 +92,6 @@
             }
         }
     },
-
     "menu-item#produto-5": {
         "props": {
             "id": "menu-item-produto-5",
@@ -107,7 +106,6 @@
             }
         }
     },
-
     "menu-item#produto-6": {
         "props": {
             "id": "menu-item-produto-6",
@@ -122,7 +120,6 @@
             }
         }
     },
-
     "menu-item#produto-7": {
         "props": {
             "id": "menu-item-produto-7",
@@ -137,7 +134,6 @@
             }
         }
     },
-
     "menu-item#produto-8": {
         "props": {
             "id": "menu-item-produto-8",
