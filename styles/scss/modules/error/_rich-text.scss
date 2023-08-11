@@ -14,6 +14,21 @@
         }
     }
 
+    &--product-error-submessage{
+
+        .wrapper{
+
+            .paragraph{
+                max-width: 200px;
+                font-size: 14px;
+                font-weight: $light;
+                color: $gray-0;
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+    }
+
     &--empty-search-error-message{
         
         .wrapper{

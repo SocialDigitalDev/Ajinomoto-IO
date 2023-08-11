@@ -30,8 +30,15 @@
         "children": [
             "image#product-error-image",
             "rich-text#product-error-message",
+            "responsive-layout.phone#msg-phone-only",
             "flex-layout.row#search-bar-404",
             "flex-layout.row#back-button-home-button"
+        ]
+    },
+
+    "responsive-layout.phone#msg-phone-only": {
+        "children": [
+            "rich-text#product-error-submessage"
         ]
     },
 
@@ -48,6 +55,14 @@
         "props": {
             "blockClass": "product-error-message",
             "text": "O sabor que você está procurando não está nesta página!"
+        }
+    },
+
+    "rich-text#product-error-submessage": {
+        "title": "Mensagem do Erro 404 Somente Mobile",
+        "props": {
+            "blockClass": "product-error-submessage",
+            "text": "Não encontramos essa página. Faça uma nova busca abaixo."
         }
     },
 
