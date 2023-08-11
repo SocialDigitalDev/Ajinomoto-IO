@@ -13,6 +13,7 @@
 		"props": {
 			"blockClass": "logo-header",
 			"src": "assets/svg/logo-desktop-header.svg",
+			"alt": "Ajinomoto",
 			"link":  {
 				"title": "Loja Ajinomoto",
 				"url": "/"

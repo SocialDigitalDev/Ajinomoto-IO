@@ -9,6 +9,7 @@
 	
 	"vtex.menu@2.x:menu#category-menu_desk": {
 		"children": [
+			"menu-item#marcas",
 			"menu-item#position-1",
 			"menu-item#position-2",
 			"menu-item#position-3",
@@ -24,6 +25,28 @@
 		}
 	},
 	
+	"menu-item#marcas": {
+		"props": {
+			"id": "menu-item-marcas",
+			"blockClass": [
+				"top-menu-level-1",
+				"top-menu"
+			],
+			"experimentalOptimizeRendering": true,
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Marcas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Marcas",
+				"href": ""
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#marcas"]
+	},
+
+
 	"menu-item#position-1": {
 		"props": {
 			"id": "menu-item-position-1",
