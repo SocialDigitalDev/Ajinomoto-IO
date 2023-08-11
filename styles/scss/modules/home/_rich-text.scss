@@ -3,14 +3,11 @@
 		.heading--titulo-h1 {
 			color: $primary;
 			font-family: $OpenSans;
-			font-size: 40px;
+			font-size: 25px;
 			font-style: normal;
-			font-weight: $extra-bold;
+			font-weight: $bold;
 			line-height: normal;
 			margin: 20px 0;
-            @include media("<phone") {
-                font-size: 36px;
-            }
 		}
 	}
 }

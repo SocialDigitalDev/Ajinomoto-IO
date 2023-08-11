@@ -23,6 +23,7 @@
 	
 	"disclosure-layout-group#group-submenu": {
 		"children": [
+			"disclosure-layout#submenu-mob-marcas",
 			"disclosure-layout#submenu-mob-1",
 			"disclosure-layout#submenu-mob-2",
 			"disclosure-layout#submenu-mob-3",
