@@ -15,7 +15,7 @@ const MenuMobileListAccount = ({ children = [] }) => {
       }
 
       const NavBar: any = window.document.querySelector(
-        '.vtex-store-drawer-0-x-drawerContent--menu-mobile .js-menuMobileAccount'
+        '.vtex-store-drawer-0-x-drawerContent--header-menu-mobile .js-menuMobileAccount'
       )
 
       if (NavBar) {

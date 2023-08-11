@@ -30,18 +30,39 @@
 }
 
 .modal-logged {
-	margin-top: 10px;
 	background-color: $white;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
-	max-width: 300px;
-	height: 130px;
+	width: 150px;
+	min-height: 105px;
 	right: 0;
 	visibility: hidden;
-	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 10px 10px;
+	top: 40px;
+	padding: 0 6px;
+	z-index: 1;
+	@include media("<=phone") {
+		right: -40px;
+		top: 45px;
+	}
+
+	button {
+		color: $white;
+		background: $primary;
+		border-radius: 10px;
+		border: none;
+		height: 40px;
+
+		&.logout-custom {
+			color: $primary;
+			background: $white;
+			border: 1px solid $primary;
+			margin-top: 10px;
+		}
+	}
 }
 
 .modal-logged-open {

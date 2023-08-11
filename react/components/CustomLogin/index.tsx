@@ -47,16 +47,43 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
   const { session } = useRenderSession();
 
 
-  function handleChangePage(stepPage: Steps, e?: any) {
-    if (e) {
-      e.preventDefault()
-    }
+  const logOutUser = () => {
+    fetch("/api/vtexid/pub/logout?scope=botafogo&returnUrl=", {
+        "headers": {
+            "vtex-id-ui-version": "vtex.login@2.56.1/vtex.react-vtexid@4.53.0"
+        },
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "body": null,
+        "method": "GET",
+        "mode": "cors",
+        "credentials": "omit"
+    });
 
-    setStep(stepPage)
+    fetch("/api/vtexid/pub/logout?scope=botafogo&returnUrl=", {
+        "headers": {
+            "accept": "/",
+            "vtex-id-ui-version": "vtex.login@2.56.1/vtex.react-vtexid@4.53.0"
+        },
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "body": null,
+        "method": "GET",
+        "mode": "cors",
+        "credentials": "include"
+    });
+    setTimeout(() => {
+        window.location.href = "/";
+    }, 1500);
   }
 
 
-  async function handleLoginWithPassword(e: any) {
+  const handleChangePage = (stepPage: Steps, e?: any) => {
+    if (e) {
+      e.preventDefault()
+    }
+    setStep(stepPage)
+  }
+
+  const handleLoginWithPassword = async (e: any) => {
     e.preventDefault();
     try {
       const response = await classicSignIn({
@@ -75,7 +102,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
     }
   }
 
-  async function handleSendVerificationCode(e: any) {
+  const handleSendVerificationCode = async (e: any) => {
     e.preventDefault();
 
     try {
@@ -92,7 +119,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
     }
   }
 
-  async function handleLoginWithCode(e: any) {
+  const handleLoginWithCode =  async (e: any) => {
     e.preventDefault();
     try {
       const response = await vtexAccessKeySignIn({
@@ -112,7 +139,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
   }
 
   // signUp
-  async function handleRegisterNewPassword(e: any) {
+  const handleRegisterNewPassword = async (e: any) => {
     e.preventDefault();
     try {
       console.log("data rodou");
@@ -134,14 +161,18 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
     }
   }
 
-  function handleCloseModal() {
+  const handleCloseModal = ()=> {
     setIsOpen(false)
     handleChangePage("login_choices")
   }
 
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();        
+    }
+}
 
   useEffect(() => {
-
     if (step === "signUp") {
       setSignUpClass(true)
       console.log('step', signUpClass)
@@ -154,26 +185,37 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
       {/*@ts-ignore */}
       {session && session?.namespaces?.profile?.isAuthenticated?.value === "true" ?
         (
+          <>
           <div className="user-logged" onClick={() => setIsOpenLogged(!isOpenLogged)}>
-		  	<svg xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33" fill="none">
-				<g clipPath="url(#clip0_1130_7750)">
-					<path d="M37.0487 10.3952C36.805 10.0612 36.5515 9.73699 36.2929 9.42243C37.2824 8.3626 39.2264 5.81222 37.9088 3.26669C36.4321 0.416271 31.6938 -0.750029 29.9387 0.50338C28.636 1.40835 27.9797 2.67628 27.6714 3.4651C25.5086 2.74887 23.1369 2.38107 20.5614 2.3714C17.9859 2.38107 15.6192 2.74887 13.4564 3.4651C13.1531 2.67628 12.4918 1.40835 11.1891 0.50338C9.43402 -0.750029 4.69567 0.416271 3.21898 3.26669C1.90139 5.81222 3.84545 8.3626 4.83489 9.42243C4.57634 9.73699 4.32774 10.0612 4.07914 10.3952C1.07106 14.4893 -0.107314 19.3045 0.936813 23.268C1.7572 26.3943 3.93495 28.8672 7.23141 30.4158C10.7267 32.0612 15.2115 32.9323 20.5564 33.0001H20.5813C25.9262 32.9323 30.406 32.0612 33.9064 30.4158C37.2028 28.8672 39.3806 26.3943 40.201 23.268C41.2401 19.3045 40.0667 14.4893 37.0537 10.3952" fill="#E60012"/>
-					<path d="M20.5614 4.04575C14.0928 4.06995 9.02131 6.53322 5.4862 11.3678C2.80627 15.0167 1.70248 19.4157 2.60242 22.8566C3.30348 25.5279 5.11329 27.5653 7.97719 28.9107C11.2438 30.4496 15.48 31.2626 20.5664 31.3304C25.6528 31.2626 29.884 30.4496 33.1506 28.9155C36.0145 27.5702 37.8243 25.5328 38.5253 22.8614C39.4303 19.4206 38.3265 15.0216 35.6465 11.3775C32.1114 6.53805 27.035 4.07479 20.5664 4.05059" fill="white"/>
-					<path d="M20.5714 24.6617C21.7846 24.6617 22.7839 23.9793 22.7839 23.1276C22.7839 22.2758 21.7846 21.5838 20.5714 21.5838C19.3582 21.5838 18.3489 22.2758 18.3489 23.1276C18.3489 23.9793 19.3433 24.6617 20.5714 24.6617Z" fill="#E60012"/>
-					<path d="M25.9909 24.4633C25.603 24.2358 25.1009 24.352 24.8622 24.7294C24.8473 24.7488 23.5496 26.7668 20.5614 26.7668C17.5732 26.7668 16.3103 24.8117 16.2606 24.7294C16.0219 24.3568 15.5198 24.2358 15.1319 24.4633C14.7441 24.6956 14.6248 25.1843 14.8585 25.5618C14.9331 25.6731 16.6633 28.359 20.5564 28.359C24.4495 28.359 26.1848 25.6731 26.2544 25.5618C26.493 25.1843 26.3687 24.6956 25.9859 24.4633" fill="#E60012"/>
-					<path d="M17.5931 16.8363C18.7417 15.128 18.5776 12.8777 16.7379 11.8711C16.4297 11.7211 16.0369 11.6485 15.6739 11.5662C15.3458 11.5952 15.0325 11.5662 14.7044 11.6436C13.342 11.9437 12.2731 12.6212 11.1195 13.3762C10.4085 13.8359 9.74229 14.4215 9.13073 14.9538C7.79325 16.1201 7.07231 17.8913 7.46013 19.6868C7.66895 20.6885 8.33521 21.4096 9.23017 21.9371C10.0754 22.4404 11.1643 22.5033 12.0195 22.15C13.3669 21.579 13.9934 20.5627 14.9132 19.5754C15.7833 18.6414 16.8772 17.8865 17.5931 16.8315M13.8293 16.9525C13.8293 16.5411 14.1624 16.212 14.59 16.212C15.0176 16.212 15.3607 16.5411 15.3607 16.9525C15.3607 17.3638 15.0226 17.6929 14.59 17.6929C14.1575 17.6929 13.8293 17.3735 13.8293 16.9525Z" fill="#E60012"/>
-					<path d="M32.0021 14.9538C31.3955 14.4166 30.7243 13.8359 30.0133 13.3762C28.8647 12.6212 27.7908 11.9437 26.4284 11.6436C26.1052 11.5662 25.787 11.5952 25.4589 11.5662C25.0909 11.6485 24.6982 11.7259 24.3949 11.8759C22.5552 12.8825 22.3911 15.1329 23.5347 16.8412C24.2507 17.8962 25.3445 18.6511 26.2146 19.5851C27.1344 20.5675 27.7609 21.5838 29.1083 22.1597C29.9586 22.513 31.0524 22.4501 31.8927 21.9468C32.7876 21.4193 33.4539 20.6982 33.6677 19.6964C34.0605 17.901 33.3346 16.1346 31.9971 14.9635M26.5378 17.7026C26.1052 17.7026 25.7622 17.3832 25.7622 16.9622C25.7622 16.5411 26.1003 16.2217 26.5378 16.2217C26.9753 16.2217 27.2985 16.5508 27.2985 16.9622C27.2985 17.3735 26.9604 17.7026 26.5378 17.7026Z" fill="#E60012"/>
-				</g>
-				<defs>
-					<clipPath id="clip0_1130_7750">
-					<rect width="40" height="33" fill="white" transform="translate(0.563904)"/>
-					</clipPath>
-				</defs>
-			</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33" fill="none">
+              <g clipPath="url(#clip0_1130_7750)">
+                <path d="M37.0487 10.3952C36.805 10.0612 36.5515 9.73699 36.2929 9.42243C37.2824 8.3626 39.2264 5.81222 37.9088 3.26669C36.4321 0.416271 31.6938 -0.750029 29.9387 0.50338C28.636 1.40835 27.9797 2.67628 27.6714 3.4651C25.5086 2.74887 23.1369 2.38107 20.5614 2.3714C17.9859 2.38107 15.6192 2.74887 13.4564 3.4651C13.1531 2.67628 12.4918 1.40835 11.1891 0.50338C9.43402 -0.750029 4.69567 0.416271 3.21898 3.26669C1.90139 5.81222 3.84545 8.3626 4.83489 9.42243C4.57634 9.73699 4.32774 10.0612 4.07914 10.3952C1.07106 14.4893 -0.107314 19.3045 0.936813 23.268C1.7572 26.3943 3.93495 28.8672 7.23141 30.4158C10.7267 32.0612 15.2115 32.9323 20.5564 33.0001H20.5813C25.9262 32.9323 30.406 32.0612 33.9064 30.4158C37.2028 28.8672 39.3806 26.3943 40.201 23.268C41.2401 19.3045 40.0667 14.4893 37.0537 10.3952" fill="#E60012"/>
+                <path d="M20.5614 4.04575C14.0928 4.06995 9.02131 6.53322 5.4862 11.3678C2.80627 15.0167 1.70248 19.4157 2.60242 22.8566C3.30348 25.5279 5.11329 27.5653 7.97719 28.9107C11.2438 30.4496 15.48 31.2626 20.5664 31.3304C25.6528 31.2626 29.884 30.4496 33.1506 28.9155C36.0145 27.5702 37.8243 25.5328 38.5253 22.8614C39.4303 19.4206 38.3265 15.0216 35.6465 11.3775C32.1114 6.53805 27.035 4.07479 20.5664 4.05059" fill="white"/>
+                <path d="M20.5714 24.6617C21.7846 24.6617 22.7839 23.9793 22.7839 23.1276C22.7839 22.2758 21.7846 21.5838 20.5714 21.5838C19.3582 21.5838 18.3489 22.2758 18.3489 23.1276C18.3489 23.9793 19.3433 24.6617 20.5714 24.6617Z" fill="#E60012"/>
+                <path d="M25.9909 24.4633C25.603 24.2358 25.1009 24.352 24.8622 24.7294C24.8473 24.7488 23.5496 26.7668 20.5614 26.7668C17.5732 26.7668 16.3103 24.8117 16.2606 24.7294C16.0219 24.3568 15.5198 24.2358 15.1319 24.4633C14.7441 24.6956 14.6248 25.1843 14.8585 25.5618C14.9331 25.6731 16.6633 28.359 20.5564 28.359C24.4495 28.359 26.1848 25.6731 26.2544 25.5618C26.493 25.1843 26.3687 24.6956 25.9859 24.4633" fill="#E60012"/>
+                <path d="M17.5931 16.8363C18.7417 15.128 18.5776 12.8777 16.7379 11.8711C16.4297 11.7211 16.0369 11.6485 15.6739 11.5662C15.3458 11.5952 15.0325 11.5662 14.7044 11.6436C13.342 11.9437 12.2731 12.6212 11.1195 13.3762C10.4085 13.8359 9.74229 14.4215 9.13073 14.9538C7.79325 16.1201 7.07231 17.8913 7.46013 19.6868C7.66895 20.6885 8.33521 21.4096 9.23017 21.9371C10.0754 22.4404 11.1643 22.5033 12.0195 22.15C13.3669 21.579 13.9934 20.5627 14.9132 19.5754C15.7833 18.6414 16.8772 17.8865 17.5931 16.8315M13.8293 16.9525C13.8293 16.5411 14.1624 16.212 14.59 16.212C15.0176 16.212 15.3607 16.5411 15.3607 16.9525C15.3607 17.3638 15.0226 17.6929 14.59 17.6929C14.1575 17.6929 13.8293 17.3735 13.8293 16.9525Z" fill="#E60012"/>
+                <path d="M32.0021 14.9538C31.3955 14.4166 30.7243 13.8359 30.0133 13.3762C28.8647 12.6212 27.7908 11.9437 26.4284 11.6436C26.1052 11.5662 25.787 11.5952 25.4589 11.5662C25.0909 11.6485 24.6982 11.7259 24.3949 11.8759C22.5552 12.8825 22.3911 15.1329 23.5347 16.8412C24.2507 17.8962 25.3445 18.6511 26.2146 19.5851C27.1344 20.5675 27.7609 21.5838 29.1083 22.1597C29.9586 22.513 31.0524 22.4501 31.8927 21.9468C32.7876 21.4193 33.4539 20.6982 33.6677 19.6964C34.0605 17.901 33.3346 16.1346 31.9971 14.9635M26.5378 17.7026C26.1052 17.7026 25.7622 17.3832 25.7622 16.9622C25.7622 16.5411 26.1003 16.2217 26.5378 16.2217C26.9753 16.2217 27.2985 16.5508 27.2985 16.9622C27.2985 17.3735 26.9604 17.7026 26.5378 17.7026Z" fill="#E60012"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1130_7750">
+                <rect width="40" height="33" fill="white" transform="translate(0.563904)"/>
+                </clipPath>
+              </defs>
+            </svg>
 
             {/*@ts-ignore */}
-            <div className="login-button-text" onClick={() => window.location.href = '/account'}>Olá <span>{session?.namespaces.profile.email.value}</span></div>
+            <div className="login-button-text">Olá <span>{session?.namespaces.profile.email.value}</span></div>
+            <div className="login-button-text login-button-text__mobile" onClick={() => window.location.href = '/account'}>Olá <span>{session?.namespaces.profile.email.value}</span></div>
+            <div className={isOpenLogged ? "modal-logged modal-logged-open" : "modal-logged"}>
+                <button onClick={() => window.location.href = '/account'}>Minha conta</button>
+                <button className="logout-custom" onClick={() => {
+                  window.localStorage.removeItem("vtex.customLogin");
+                  logOutUser();
+                }}
+                >Sair</button>
+            </div>
           </div>
+          </>
         )
         :
         (
@@ -246,6 +288,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                       value={email}
+                      onKeyDown={handleKeyDown}
                     />
                     <input
                       className='login-form-input'
@@ -253,6 +296,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       placeholder='Insira sua senha'
                       onChange={(e) => setPassword(e.target.value)}
                       value={password}
+                      onKeyDown={handleKeyDown}
                     />
 
                     {error && (
@@ -300,7 +344,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   }}
                 >
                   <div className="form-input-column">
-                    <input className='login-form-input' type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                    <input className='login-form-input' type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onKeyDown={handleKeyDown} required />
                   </div>
 
                   <div className="back-and-submit-row">
@@ -343,7 +387,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   }}
                 >
                   <div className="form-input-column">
-                    <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} required />
+                    <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} onKeyDown={handleKeyDown} required />
                   </div>
 
                   <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
@@ -382,8 +426,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                   <div className="form-input-column">
 
-                    <input className='login-form-input' value={email} type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
-                    <input className='login-form-input' type="password" placeholder='Insira sua senha' onChange={(e) => setPassword(e.target.value)} required />
+                    <input className='login-form-input' value={email} type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onKeyDown={handleKeyDown} required />
+                    <input className='login-form-input' type="password" placeholder='Insira sua senha' onChange={(e) => setPassword(e.target.value)} onKeyDown={handleKeyDown} required />
                   </div>
                   <div className="requeriments-column">
                     <div className="requeriments">
@@ -441,8 +485,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     }}
                   >
                     <div className="form-input-column">
-
-                      <input className='login-form-input' type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                      <input className='login-form-input' type="email" placeholder='Insira seu e-mail' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onKeyDown={handleKeyDown} required />
                     </div>
 
                     <div className="back-and-submit-row">
@@ -483,7 +526,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     onSubmit={(e) => handleChangePage("signUp", e)}
                   >
                     <div className="form-input-column">
-                      <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} required />
+                      <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} onKeyDown={handleKeyDown} required />
                     </div>
                     <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
                     <div className="back-and-submit-row">
