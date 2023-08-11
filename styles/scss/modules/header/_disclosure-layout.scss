@@ -1,4 +1,4 @@
-.trigger--menu-mobile {
+.trigger--header-menu-mobile {
     background: none;
     border: 1px solid $gray-8;
     border-width: 0 0 1px 0;
@@ -6,7 +6,7 @@
     padding: 14px 44px 14px 30px;
     position: relative;
 
-    :global(.vtex-rich-text-0-x-paragraph--menu-mobile) {
+    :global(.vtex-rich-text-0-x-paragraph--header-menu-mobile) {
         color: $gray-2;
         font-family: $OpenSans;
         font-size: 18px;
@@ -28,7 +28,7 @@
 
     &--visible {
         border: none;
-        :global(.vtex-rich-text-0-x-paragraph--menu-mobile) {
+        :global(.vtex-rich-text-0-x-paragraph--header-menu-mobile) {
             &::after {
                 transform: rotate(-90deg);
                 transition: 0.35s;
@@ -37,7 +37,7 @@
     }
 }
 
-.content--menu-mobile-content {
+.content--header-menu-mobile {
     padding: 15px 0;
 
     :global(.vtex-menu-2-x-menuItem) {

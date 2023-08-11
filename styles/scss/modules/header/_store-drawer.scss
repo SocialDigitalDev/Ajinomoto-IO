@@ -1,9 +1,9 @@
-.closeIconContainer--menu-mobile {
+.closeIconContainer--header-menu-mobile {
     position: absolute;
     top: 25px;
     right: 20px;
 
-    .closeIconButton--menu-mobile {
+    .closeIconButton--header-menu-mobile {
         padding: 5px;
         &::before {
             content: "";
@@ -14,18 +14,18 @@
         }
     }
 
-    .closeIcon--menu-mobile {
+    .closeIcon--header-menu-mobile {
         display: none;
     }
 }
 
-.drawer--menu-mobile {
+.drawer--header-menu-mobile {
     @include media("<=phone") {
         width: 100% !important;
     }
 }
 
-.openIconContainer--menu-mobile {
+.openIconContainer--header-menu-mobile {
     padding: 0;
     margin-right: 16px;
     &::before {
@@ -38,7 +38,7 @@
         display: inline-block;
     }
     
-    .menuIcon--menu-mobile {
+    .menuIcon--header-menu-mobile {
         display: none;
     }
 }

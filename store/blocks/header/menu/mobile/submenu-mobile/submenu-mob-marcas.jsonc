@@ -13,7 +13,7 @@
     "disclosure-trigger#submenu-marcas": {
         "title": "TRIGGER SUBMNENU MARCAS",
         "props": {
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "rich-text#submenu-marcas"
@@ -24,14 +24,14 @@
         "title": "SUBMENU MARCAS",
         "props": {
             "text": "Marcas", 
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         }
     },
     
     "disclosure-content#submenu-marcas": {
         "title": "Conteúdo do submenu Mobile Marcas",
         "props": {
-            "blockClass": "menu-mobile-content"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "menu-item#sub-marcas-item-1",

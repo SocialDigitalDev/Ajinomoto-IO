@@ -3,7 +3,7 @@
 		"title":  "MENU MOBILE",
 		"children": ["menu#drawer"],
 		"props": {
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	},
 	
@@ -33,7 +33,7 @@
 		],
 		"props": {
 			"maxVisible": "one",
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	}	
 }

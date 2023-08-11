@@ -14,7 +14,7 @@
 	"disclosure-trigger#submenu-2": {
 		"title": "TRIGGER SUBMNENU 2",
 		"props": {
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		},
 		"children": ["rich-text#submenu-2"]
 	},
@@ -23,14 +23,14 @@
 		"title": "SUBMENU 2",
 		"props": {
 			"text": "Sopas & Cremes",
-			"blockClass": "menu-mobile"
+			"blockClass": "header-menu-mobile"
 		}
 	},
 
 	"disclosure-content#submenu-2": {
 		"title": "ITENS SUBMENU 2",
 		"props": {
-			"blockClass": "menu-mobile-content"
+			"blockClass": "header-menu-mobile"
 		},
 		"children": [
 			"menu-item#sub-position-2-item-1",

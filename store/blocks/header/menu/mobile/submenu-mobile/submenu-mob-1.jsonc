@@ -14,7 +14,7 @@
     "disclosure-trigger#submenu-1": {
         "title": "TRIGGER SUBMNENU 1",
         "props": {
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "rich-text#submenu-1"
@@ -25,14 +25,14 @@
         "title": "SUBMENU 1",
         "props": {
             "text": "Bebidas", 
-            "blockClass": "menu-mobile"
+            "blockClass": "header-menu-mobile"
         }
     },
     
     "disclosure-content#submenu-1": {
         "title": "Conteúdo do submenu Mobile 1",
         "props": {
-            "blockClass": "menu-mobile-content"
+            "blockClass": "header-menu-mobile"
         },
         "children": [
             "menu-item#sub-position-1-item-1",
