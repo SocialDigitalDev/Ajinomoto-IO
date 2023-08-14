@@ -46,7 +46,7 @@
 
 	"rich-text#copyright-store": {
 		"props": {
-			"text": "A loja online Ajinomoto é operada pela Social SA CNPJ: 28.511.223/0001-32 / Endereço: R. Fernando Falcão, 1111 - Vila Claudia,\n São Paulo - SP2023 © Copyright AJINOMOTO. Todos os direitos reservados",
+			"text": "A loja online Ajinomoto é operada pela Social SA CNPJ: 28.511.223/0004-85 / Endereço: Avenida Portugal, 46, Galpão 01 Setor C1- Itapevi - SP, CEP: 06696-060,\n São Paulo - SP 2023 ©Copyright AJINOMOTO. Todos os direitos reservados",
 			"textAlignment": "CENTER",
 			"textPosition": "CENTER",
 			"blockClass": "description-footer-bottom"

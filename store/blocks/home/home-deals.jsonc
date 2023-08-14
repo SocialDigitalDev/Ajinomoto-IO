@@ -68,11 +68,12 @@
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_truck-deals.svg",
-            "headline": "Entrega",
+            "headline": "## Entrega",
             "subhead": "para todas as regiões do Brasil",
             "callToActionMode": "none",
             "blockClass": "home-deals",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "textMode": "rich-text"
         }
     },
     
@@ -83,11 +84,12 @@
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_wallet-deals.svg",
-            "headline": "Parcele",
+            "headline": "## Parcele",
             "subhead": "em até 3x sem juros",
             "callToActionMode": "none",
             "blockClass": "home-deals",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "textMode": "rich-text"
         }
     },
     
@@ -98,11 +100,12 @@
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_percentage-deals.svg",
-            "headline": "Economia",
+            "headline": "## Economia",
             "subhead": "Compre os nossos kits",
             "callToActionMode": "none",
             "blockClass": "home-deals",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "textMode": "rich-text"
         }
     },
     
@@ -113,11 +116,12 @@
             "isFullModeStyle": false,
             "textPosition": "right",
             "imageUrl": "assets/svg/ico_security_deals.svg",
-            "headline": "Compra Segura",
+            "headline": "## Compra Segura",
             "subhead": "Loja com SSL e proteção de dados",
             "callToActionMode": "none",
             "blockClass": "home-deals",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "textMode": "rich-text"
         }
     }
 }

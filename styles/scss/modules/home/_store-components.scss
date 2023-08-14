@@ -6,7 +6,7 @@
 			padding: 0 40px;
 		}
 		@include media("<=tablet") {
-			padding: 0 15px;
+			padding: 0 12px;
         }
 		@include media("<=phone") {
 			display: flex;
@@ -54,7 +54,12 @@
 		@include media(">phone","<=tablet") {
 			width: 113px;
 		}
+		
+		.container--home-deals {
+			margin: 0;
+		}
 
+		.heading--home-deals,
 		.infoCardHeadline--home-deals {
 			color: $primary;
 			font-family: $OpenSans;
@@ -65,10 +70,11 @@
 			padding: 0;
 			margin: 0;
 			@include media("<=tablet") {
-				font-size: 13px;
+				font-size: 12px;
 			}
 		}
 
+		.paragraph--home-deals,
 		.infoCardSubhead--home-deals {
 			color: $gray-4;
 			font-family: $OpenSans;
@@ -78,8 +84,9 @@
 			line-height: normal;
 			padding: 0;
 			margin: 0;
+			text-align: left;
 			@include media("<=tablet") {
-				font-size: 13px;
+				font-size: 12px;
 			}
 		}
 	}
