@@ -1,0 +1,93 @@
+@import "../../../styles/scss/variables/all";
+
+.recipe {
+
+    &--container{
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    &--wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &--left-side{
+        width: 50%;
+    }
+
+    &--right-side{
+        width: 50%;
+        padding-left: 40px;
+        border-left: 3px solid $primary;
+    }
+
+    &--call-to-video{
+        font-size: 20px;
+        color: $primary;
+        font-weight: $bold;
+        margin-top: 0;
+    }
+    
+    &--title{
+        font-size: 20px;
+        color: $primary;
+        font-weight: $bold;
+        margin-top: 0;
+    }
+
+    &--data{
+        display: flex;
+    }
+
+    &--preparing{
+        max-width: 220px;
+        margin-right: 31px;
+        &-title{
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: $gray-2;
+
+            &::before{
+                content: "";
+                background: url('../../../assets/svg/ico_preparation-time.svg') no-repeat;
+                background-size: contain;
+                width: 31px;
+                height: 31px;
+                display: block;
+                margin-right: 10px;
+            }
+        }
+
+        &-data{
+            max-width: 200px;
+        }
+    }
+    &--revenue{
+        max-width: 220px;
+        &-title{
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: $gray-2;
+
+            &::before{
+                content: "";
+                background: url('../../../assets/svg/ico_revenue.svg') no-repeat;
+                background-size: contain;
+                width: 9px;
+                height: 31px;
+                display: block;
+                margin-right: 10px;
+            }
+        }
+
+        &-data{
+            max-width: 200px;
+        }
+    }
+}
