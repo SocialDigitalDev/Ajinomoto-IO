@@ -40,5 +40,9 @@
 
 	"back-button": {
 		"component": "BackButton"
+	},
+
+	"focus-search-bar": {
+		"component": "FocusSearchBar"
 	}
 }
