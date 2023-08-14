@@ -8,7 +8,7 @@ const CustomPdpSpecs = () => {
     let alergenicos = product?.properties.find(item => item.name === "Alergênicos")?.values[0];
     
     if (alergenicos?.includes("ALÉRGICOS:")) {
-        alergenicos = alergenicos.replace("ALÉRGICOS:", "");
+        alergenicos = alergenicos.replace("ALÉRGICOS:", "").replace("ALÉGICOS:", "");
     }
 
     alergenicos = alergenicos?.toLowerCase();

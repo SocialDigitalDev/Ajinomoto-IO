@@ -48,7 +48,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
 
   const logOutUser = () => {
-    fetch("/api/vtexid/pub/logout?scope=botafogo&returnUrl=", {
+    fetch("/api/vtexid/pub/logout?scope=lojaajinomoto&returnUrl=", {
         "headers": {
             "vtex-id-ui-version": "vtex.login@2.56.1/vtex.react-vtexid@4.53.0"
         },
@@ -59,7 +59,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
         "credentials": "omit"
     });
 
-    fetch("/api/vtexid/pub/logout?scope=botafogo&returnUrl=", {
+    fetch("/api/vtexid/pub/logout?scope=lojaajinomoto&returnUrl=", {
         "headers": {
             "accept": "/",
             "vtex-id-ui-version": "vtex.login@2.56.1/vtex.react-vtexid@4.53.0"
