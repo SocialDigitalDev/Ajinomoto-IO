@@ -22,7 +22,7 @@
 	"minicart-base-content": {
 		"blocks": ["minicart-empty-state"],
 		"children": [
-			"flex-layout.row#minicart-footer-shipping-bar",
+			// "flex-layout.row#minicart-footer-shipping-bar",
 			"minicart-product-list",
 			"flex-layout.row#minicart-footer-title",
 			"flex-layout.row#minicart-footer"
