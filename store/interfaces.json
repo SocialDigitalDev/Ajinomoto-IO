@@ -44,5 +44,9 @@
 
 	"focus-search-bar": {
 		"component": "FocusSearchBar"
+	},
+	
+	"custom-pdp-recipies": {
+		"component": "CustomPDPRecipies"
 	}
 }
