@@ -58,11 +58,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Bebidas",
+				"text": "Temperos",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Bebidas",
-				"href": "/bebidas"
+				"tagTitle": "Temperos",
+				"href": "/temperos"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-1"]
@@ -78,11 +78,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Sopas & Cremes",
+				"text": "Bebidas",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Sopas & Cremes",
-				"href": "/alimentos-instanteneos/sopas-e-cremes"
+				"tagTitle": "Bebidas",
+				"href": "/bebidas"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-2"]
@@ -98,11 +98,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Caldos",
-				"href": "/caldos#",
+				"text": "Sopas",
+				"href": "/sopas",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Caldos"
+				"tagTitle": "Sopas"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-3"]
@@ -118,11 +118,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Culinários",
-				"href": "/culinarios",
+				"text": "Caldos",
+				"href": "/caldos",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Culinários"
+				"tagTitle": "Caldos"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-4"]
@@ -138,11 +138,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Molhos e Azeites",
-				"href": "/molhos-e-azeites",
+				"text": "Azeites",
+				"href": "/azeites",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Molhos e Azeites"
+				"tagTitle": "Azeites"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-5"]
@@ -158,11 +158,11 @@
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-				"text": "Temperos",
-				"href": "/temperos-e-condimentos",
+				"text": "Molhos",
+				"href": "/molhos",
 				"type": "internal",
 				"noFollow": true,
-				"tagTitle": "Temperos"
+				"tagTitle": "Molhos"
 			}
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-6"]

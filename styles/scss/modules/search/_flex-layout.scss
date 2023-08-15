@@ -105,7 +105,7 @@
 		padding: 0 14px;
 	}
 	@include media("<=phone") {
-		justify-content: center;
+		justify-content: space-evenly;
 		gap: 10px;
 	}
 }
