@@ -1,0 +1,68 @@
+@import "../../../styles/scss/variables/all";
+
+.nutri{
+
+    &--table-wrapper{
+
+        > table{
+            width: 100%;
+            color: $gray-2;
+            font-size: 13px;
+
+            &:first-child{
+                tr {
+                    border-bottom: none;
+
+                    td{
+                        padding-bottom: 0;
+
+                        p{
+                            font-weight: $bold;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            p {
+                margin: 0;
+            }
+
+            tr {
+                border-bottom: 1px solid $gray-30;
+                display: flex;
+                &:first-child{
+                    text-align: center;
+                    td{
+                        padding-top: 0;
+                        justify-content: center;
+                        font-weight: $regular !important;
+                        
+                        p{
+                            margin: 0 5px;
+                        }
+                    }
+                }
+                td{
+                    width: 100%;
+                    display: flex;
+                    padding: 10px 0;
+
+                    &:first-child{
+                        font-weight: $bold;
+                    }
+                    &:last-child,
+                    &:nth-child(2n){
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+
+                &:last-child{
+                    td{
+                        font-weight: $regular !important;
+                    }
+                }
+            }
+        }
+    }
+}
