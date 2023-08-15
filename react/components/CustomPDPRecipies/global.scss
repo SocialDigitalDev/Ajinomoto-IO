@@ -199,6 +199,11 @@
                 color: $primary;
             }
         }
+
+        &.item-title{
+            list-style: none;
+            margin: 20px 0;
+        }
     }
 
     &--preparation-method{
