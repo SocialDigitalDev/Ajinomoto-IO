@@ -21,7 +21,7 @@
 						font-size: 14px;
 						color: $gray-2;
 						&:hover {
-							font-weight: $medium;
+							color: $black;
 						}
 					}
 					&Container {
@@ -35,9 +35,12 @@
 						font-weight: $regular;
 						font-size: 14px;
 						color: $gray-2;
-
 						&:hover {
-							font-weight: $medium;
+							color: $black;
+						}
+
+						&--top-menu-foodService {
+							color: $black;
 						}
 
 						.styledLinkIcon--category-menu_desk {
