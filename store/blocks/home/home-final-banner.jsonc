@@ -28,8 +28,8 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-final-banner-desktop.png",
-					"description": "Plano de Assinatura"
+					"image": "",
+					"description": ""
 				}
 			]
 		}
@@ -49,8 +49,8 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-final-banner-desktop.png",
-					"description": "Plano de Assinatura"
+					"image": "",
+					"description": ""
 				}
 			]
 		}
@@ -71,8 +71,8 @@
 			"images": [
 				{
 					"loading": "lazy",
-					"image": "assets/img/home-final-banner-phone.png",
-					"description": "Plano de Assinatura"
+					"image": "",
+					"description": ""
 				}
 			]
 		}

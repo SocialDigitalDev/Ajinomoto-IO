@@ -8,12 +8,15 @@
 	min-width: 155px;
 }
 
+
 .js-menuMobileAccount {
 	overflow-x: auto;
+	overflow-y: hidden;
 	display: flex;
 	padding: 0 0 0 20px;
 	margin-bottom: 30px;
 	height: 56px;
+	position: relative;
 
 	&::-webkit-scrollbar {
 		height: 4px;
