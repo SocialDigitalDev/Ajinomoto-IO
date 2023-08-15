@@ -11,16 +11,46 @@
     &--wrapper{
         display: flex;
         align-items: flex-start;
+        @include media ('<=tablet', '>phone'){
+            padding: 0 1em;
+        }
+        @include media ('<=phone'){
+            flex-flow: column;
+        }
     }
 
     &--left-side{
-        width: 50%;
+
+        iframe{
+            max-width: 100%;
+            @include media ('<=phone'){
+                border-radius: 10px;
+            }
+        }
+        
+        @include media ('<=tablet', '>phone'){
+            margin-right: 40px;
+        }
+
+        @include media ('>phone'){
+            width: 50%;
+        }
+        @include media ('<=phone'){
+            width: 100%;
+            padding: 0 1em;
+        }
     }
 
     &--right-side{
-        width: 50%;
-        padding-left: 40px;
-        border-left: 3px solid $primary;
+        @include media ('>phone'){
+            width: 50%;
+            padding-left: 40px;
+            border-left: 3px solid $primary;
+        }
+        @include media ('<=phone'){
+            padding: 0 1em;
+            width: 100%;
+        }
     }
 
     &--call-to-video{
@@ -35,10 +65,19 @@
         color: $primary;
         font-weight: $bold;
         margin-top: 0;
+        @include media ('>phone'){
+            margin-top: 0;
+        }
+        @include media ('<=phone'){
+            margin-top: 50px;
+        }
     }
 
     &--data{
         display: flex;
+        @include media ('<=phone'){
+            flex-flow: column;
+        }
     }
 
     &--preparing{
@@ -50,6 +89,9 @@
             align-items: center;
             font-size: 18px;
             color: $gray-2;
+            @include media ('<=phone'){
+                margin-top: 0;
+            }
 
             &::before{
                 content: "";
@@ -64,16 +106,21 @@
 
         &-data{
             max-width: 200px;
+            font-size: 16px;
+            color: $gray-2;
         }
     }
     &--revenue{
         max-width: 220px;
         &-title{
-            margin-bottom: 0;
             display: flex;
             align-items: center;
             font-size: 18px;
             color: $gray-2;
+            margin-bottom: 0;
+            @include media ('<=phone'){
+                margin-top: 0;
+            }
 
             &::before{
                 content: "";
@@ -88,6 +135,86 @@
 
         &-data{
             max-width: 200px;
+            font-size: 16px;
+            color: $gray-2;
+            @include media ('<=phone'){
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    &--ingredients-preparation-wrapper{
+        @include media ('>phone'){
+            max-height: 250px;
+            overflow: auto;
+        }
+
+        &.phone-wrapper{
+
+            .recipe--ingredients,
+            .recipe--preparation-method {
+                display: none;
+
+                &.active{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &--mobile-tab-selector{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .recipe--tab{
+            font-size: 19px;
+            color: $primary;
+            border: 1px solid $primary;
+            font-weight: $bold;
+            padding: 7px 10px;
+            transition: .3s all ease;
+            border-radius: 10px;
+            
+            @media (max-width: 374px) and (min-width: 360px){
+                font-size: 17px;
+            }
+            @media (max-width: 359px){
+                font-size: 15px;
+            }
+            &.active{
+                color: $white;
+                background: $primary;
+                transition: .3s all ease;
+            }
+        }
+    }
+
+    &--ingredient{
+        font-size: 16px;
+        color: $gray-2;
+        list-style: inside;
+        line-height: 25px;
+        &s{
+            &-title{
+                font-size: 20px;
+                font-weight: $bold;
+                color: $primary;
+            }
+        }
+    }
+
+    &--preparation-method{
+
+        &-title{
+            font-size: 20px;
+            font-weight: $bold;
+            color: $primary;
+        }
+
+        &-data{
+            font-size: 16px;
+            color: $gray-2;
+            line-height: 25px;
         }
     }
 }

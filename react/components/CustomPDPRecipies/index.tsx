@@ -1,16 +1,18 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { useDevice } from "vtex.device-detector";
 import { useProduct } from "vtex.product-context";
 
 import "./global.css";
 
 const CustomPDPRecipies = () => {
 
+    const [tab1, setTab1] = useState('active');
+    const [tab2, setTab2] = useState('');
     // Chama o produto da API
     const productProperties = useProduct()?.product?.properties;
-
+    // Chama o detector de dispositivos;
+    const device = useDevice();
     // Usa o produto e cria um objeto contendo os itens da receita
-
     const recipeItems = {
         ingredientes: productProperties?.find(item => item.name === "Ingredientes da Receita")?.values[0],
         tituloReceita: productProperties?.find(item => item.name === "Titulo da receita")?.values[0],
@@ -19,6 +21,26 @@ const CustomPDPRecipies = () => {
         modoPreparo: productProperties?.find(item => item.name === "Modo de Preparo")?.values[0],
         video: productProperties?.find(item => item.name === "Video")?.values[0]?.replace("https://youtu.be/", ""),
         image: productProperties?.find(item => item.name === "Imagem Receita")?.values[0]
+    }
+
+    const arrIngredients = recipeItems.ingredientes?.split(';');
+
+    // Verifica se o split e gera uma variável contendo todos os itens dos ingredientes já formatados em HTML
+    const listIngredients = arrIngredients ? 
+        arrIngredients.map(
+            item => <li className="recipe--ingredient">{item}</li>
+        )
+    // Se não houver ingredientes a lista não será gerada.
+    : null;
+
+    function setTab1Active() {
+        setTab1('active');
+        setTab2('');
+    }
+
+    function setTab2Active() {
+        setTab1('');
+        setTab2('active');
     }
 
     // Verifica se há um título para a Receita e a renderiza.
@@ -51,18 +73,46 @@ const CustomPDPRecipies = () => {
                             <p className="recipe--revenue-data">{recipeItems.rendimento}</p>
                         </div>
                     </div>
-                    <div className="recipe--ingredients">
-                        <h4 className="recipe--ingredients-title">Ingredientes</h4>
-                        <p className="recipe--ingredients-text">
-                            {recipeItems.ingredientes}
-                        </p>
-                    </div>
-                    <div className="recipe--preparation-method">
-                        <h4 className="recipe--preparation-method-title">Modo de Preparo</h4>
-                        <p className="recipe--preparation-method-data">
-                            {recipeItems.modoPreparo}
-                        </p>
-                    </div>
+                    {
+                        device.device === 'desktop' || device.device === 'tablet' ?
+                            <div className="recipe--ingredients-preparation-wrapper">
+                                <div className="recipe--ingredients">
+                                    <h4 className="recipe--ingredients-title">Ingredientes</h4>
+                                    <ul className="recipe--ingredients-text">
+                                        {listIngredients ? listIngredients : null}
+                                    </ul>
+                                </div>
+                                <div className="recipe--preparation-method">
+                                    <h4 className="recipe--preparation-method-title">Modo de Preparo</h4>
+                                    <p className="recipe--preparation-method-data">
+                                        {recipeItems.modoPreparo}
+                                    </p>
+                                </div>
+                            </div>
+                        : null
+                    }
+                    {
+                        device.device === 'phone' ?
+                            <div className="recipe--ingredients-preparation-wrapper phone-wrapper">
+                                <div className="recipe--mobile-tab-selector">
+                                    <span className={`tab-1 recipe--tab ${tab1}`} onClick={setTab1Active}>Ingredientes</span>
+                                    <span className={`tab-2 recipe--tab ${tab2}`} onClick={setTab2Active}>Modo de Preparo</span>
+                                </div>
+                                <div className={`recipe--ingredients ${tab1}`}>
+                                    <h4 className="recipe--ingredients-title">Ingredientes</h4>
+                                    <ul className="recipe--ingredients-text">
+                                        {listIngredients ? listIngredients : null}
+                                    </ul>
+                                </div>
+                                <div className={`recipe--preparation-method ${tab2}`}>
+                                    <h4 className="recipe--preparation-method-title">Modo de Preparo</h4>
+                                    <p className="recipe--preparation-method-data">
+                                        {recipeItems.modoPreparo}
+                                    </p>
+                                </div>
+                            </div>
+                        : null
+                    }
                 </div>
             </div>
         </div>
