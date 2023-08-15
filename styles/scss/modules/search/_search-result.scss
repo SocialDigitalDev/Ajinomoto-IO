@@ -7,6 +7,8 @@
 	:global(.vtex-store-components-3-x-container) {
 		padding: 0;
 	}
+
+	
 }
 
 .gallery--grid {
@@ -254,7 +256,9 @@
 			border-color: #919198;
 			border-width: 1px;
 			background-color: $white;
-
+		}
+		:global(.vtex-checkbox__box) {
+			color: $black;
 			:global(.vtex__icon-check) {
 				color: $black;
 			}
@@ -277,7 +281,9 @@
 			border-color: #919198;
 			border-width: 1px;
 			background-color: $white;
-
+		}
+		:global(.vtex-checkbox__box) {
+			color: $black;
 			:global(.vtex__icon-check) {
 				color: $black;
 			}
@@ -356,7 +362,7 @@
 				font-weight: $semi-bold;
 				line-height: normal;
 			}
-			.accordionFilterItemTag  {
+			.accordionFilterItemTag {
 				:global(.vtex-tag) {
 					background: $primary;
 				}

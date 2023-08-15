@@ -11,7 +11,6 @@ const FocusSearchBar = () => {
 
 		if (inputSearch) {
 			setTimeout(() => {
-				console.log("aqui>>>>>>>");
 				inputSearch.focus();
 			}, 1000);
 		}

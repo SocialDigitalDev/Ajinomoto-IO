@@ -30,14 +30,14 @@
 
 	.user-logged {
 		margin-right: 0;
-	}
-
-	.login-button-text {
-		display: none;
-		&__mobile {
-			display: flex;
+		.login-button-text {
+			display: none;
+			&.login-button-text__mobile {
+				display: flex;
+			}
 		}
 	}
+
 
 	.modal-logged-open  {
 		display: none;
