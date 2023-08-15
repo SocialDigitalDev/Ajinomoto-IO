@@ -1,0 +1,65 @@
+{
+    "flex-layout.row#disclosure-nutritional-info": {
+        "title": "Especficações do Produto",
+        "children": [
+            "flex-layout.col#disclosure-nutritional-info"
+        ],
+        "props": {
+            "blockClass": "disclosure-specifications"
+        }
+    },
+    
+    "flex-layout.col#disclosure-nutritional-info": {
+        "children": [
+            "disclosure-layout#nutritional-info"
+            // "disclosure-layout#details"
+        ],
+        "props": {
+            "blockClass": "disclosure-specifications"
+        }
+    },
+    
+    "disclosure-layout#nutritional-info": {
+        "children": [
+            "disclosure-trigger#trigger-nutritional-info", 
+            "disclosure-content#content-nutritional-info"
+        ],
+        "props": {
+            "blockClass": "description"
+        }
+    },
+    
+    "disclosure-trigger#trigger-nutritional-info": {
+        "children": [
+            "rich-text#nutritional-info"
+        ],
+        "props": {
+            "blockClass": [
+                "trigger-spec",
+                "trigger-description"
+            ]
+        }
+    },
+
+    "disclosure-content#content-nutritional-info": {
+        "children": [
+            "custom-nutritional-info"
+        ],
+        "props": {
+            "blockClass": [
+                "content-spec",
+                "content-description"
+            ]
+        }
+    },
+    
+    "rich-text#nutritional-info": {
+        "props": {
+            "text": "Tabela Nutricional",
+            "blockClass": [
+                "disc-title",
+                "disc-description"
+            ]
+        }
+    }
+}

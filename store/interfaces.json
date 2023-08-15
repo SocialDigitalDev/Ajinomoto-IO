@@ -48,5 +48,9 @@
 	
 	"custom-pdp-recipies": {
 		"component": "CustomPDPRecipies"
+	},
+
+	"custom-nutritional-info": {
+		"component": "CustomNutritionalInfo"
 	}
 }
