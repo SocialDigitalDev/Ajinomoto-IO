@@ -1,23 +1,12 @@
 {
-	"flex-layout.col#minicart": {
-		"props": {
-			"verticalAlign": "middle",
-			"horizontalAlign": "center"
-		},
-		"children": ["minicart.v2"]
-	},
 	"minicart.v2": {
 		"props": {
 			"blockClass": "minicart-v2",
 			"maxDrawerWidth": 900,
-			"quantityDisplay": "always"
+			"quantityDisplay": "always",
+			"customPixelEventName": "addToCart"
 		},
 		"children": ["minicart-base-content"]
-	},
-	"icon-cart#minicart-icon": {
-		"props": {
-			"size": 80
-		}
 	},
 	"minicart-base-content": {
 		"blocks": ["minicart-empty-state"],

@@ -213,6 +213,11 @@ ol {
 			border-color: $black;
 		}
 	}
+
+	.vtex-profile-form-3-x-toggleBusinessButtonWrapper {
+		display: none;
+		pointer-events: none;
+	}
 }
 
 // ORGANIZATION
@@ -418,4 +423,8 @@ ol {
 //LOADING
 .vtex-render-runtime-8-x-loadingBarAnimation {
 	background-color: $secondary;
+}
+
+.vtex-toast {
+	background-color: $black;
 }
