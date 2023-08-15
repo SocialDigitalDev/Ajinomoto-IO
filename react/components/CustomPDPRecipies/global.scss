@@ -23,9 +23,7 @@
 
         iframe{
             max-width: 100%;
-            @include media ('<=phone'){
-                border-radius: 10px;
-            }
+            border-radius: 10px;
         }
         
         @include media ('<=tablet', '>phone'){
