@@ -42,7 +42,7 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "/receita-de-casa",
+				"href": "/receita-de-casa-?map=b",
 				"noFollow": false,
 				"tagTitle": "Receitas de Casa",
 				"text": "Receitas de Casa"
@@ -56,7 +56,7 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "/sabor-a-mir",
+				"href": "/sabor-a-mi",
 				"noFollow": false,
 				"tagTitle": "Sabor a mi",
 				"text": "Sabor a mi"
@@ -140,7 +140,7 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "/mid-zero-",
+				"href": "/mid-zero-?map=b",
 				"noFollow": false,
 				"tagTitle": "MID Zero",
 				"text": "MID Zero"
