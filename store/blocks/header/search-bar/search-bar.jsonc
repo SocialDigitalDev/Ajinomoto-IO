@@ -27,7 +27,7 @@
 	},
 
 	"autocomplete-result-list.v2": {
-		"blocks": ["product-summary.shelf#shelf-search"],
+		"blocks": ["product-summary.shelf"],
 		"props": {
 			"maxSuggestedProducts": 3
 		}

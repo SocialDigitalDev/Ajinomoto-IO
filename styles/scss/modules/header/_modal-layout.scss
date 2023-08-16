@@ -32,7 +32,7 @@
 		position: relative;
 		@include media("<=tablet") {
 			padding: 19px 16px;
-			max-width: 500px;
+			max-width: 530px;
 		}
 	}
 }
@@ -44,7 +44,7 @@
 	right: 75px;
 	width: auto;
 	outline: 0;
-	@include media("<=phone") {
+	@include media("<=tablet") {
 		right: 0;
 	}
 	&:hover {

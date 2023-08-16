@@ -29,10 +29,14 @@
 		"props": {
 			"itemsPerPage": {
 				"desktop": 8,
-				"tablet": 5.5,
-				"phone": 2.5
+				"tablet": 4,
+				"phone": 2
 			},
-			"infinite": false,
+			"centerMode": {
+				"desktop": "disabled",
+				"mobile": "to-the-left"
+			},
+			"infinite": true,
 			"showNavigationArrows": "desktopOnly",
 			"showPaginationDots": "never",
 			"blockClass": "home-brands",
