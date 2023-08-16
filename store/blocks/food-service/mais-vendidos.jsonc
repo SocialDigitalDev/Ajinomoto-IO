@@ -28,10 +28,15 @@
 		"props": {
 			"itemsPerPage": {
 				"desktop": 4,
-				"tablet": 2.5,
-				"phone": 1.5
+				"tablet": 2,
+				"phone": 1
 			},
-			"infinite": false,
+			"centerMode": {
+				"desktop": "disabled",
+				"mobile": "to-the-left"
+			},
+			"centerModeSlidesGap": 10,
+			"infinite": true,
 			"showNavigationArrows": "never",
 			"showPaginationDots": "never",
 			"blockClass": "food-service-topSale",

@@ -2,12 +2,15 @@
 	&--home-deals {
 		padding: 0 20px;
 		border-right: 1px solid $gray-14;
+
 		@include media(">desktop") {
 			padding: 0 40px;
 		}
+
 		@include media("<=tablet") {
 			padding: 0 12px;
-        }
+		}
+
 		@include media("<=phone") {
 			display: flex;
 			flex-direction: row-reverse;
@@ -28,9 +31,11 @@
 
 	&--home-colecao {
 		background: $orange-2;
-		@include media(">phone","<=tablet") {
-			flex-direction: column ;
+
+		@include media(">phone", "<=tablet") {
+			flex-direction: column;
 		}
+
 		@include media("<=phone") {
 			display: flex;
 			width: 100%;
@@ -40,7 +45,7 @@
 			padding: 0 8px;
 		}
 	}
-	
+
 	&--home-sobre {
 		align-items: flex-start;
 	}
@@ -51,10 +56,11 @@
 	&--home-deals {
 		padding: 0;
 		width: auto;
-		@include media(">phone","<=tablet") {
+
+		@include media(">phone", "<=tablet") {
 			width: 113px;
 		}
-		
+
 		.container--home-deals {
 			margin: 0;
 		}
@@ -69,6 +75,7 @@
 			line-height: normal;
 			padding: 0;
 			margin: 0;
+
 			@include media("<=tablet") {
 				font-size: 12px;
 			}
@@ -85,6 +92,7 @@
 			padding: 0;
 			margin: 0;
 			text-align: left;
+
 			@include media("<=tablet") {
 				font-size: 12px;
 			}
@@ -107,9 +115,14 @@
 				font-weight: $semi-bold;
 				line-height: normal;
 				text-decoration-line: underline;
+				@media (max-width: 320px) {
+					font-size: 12px;
+				}
 
 				.link--home-brands {
 					color: $primary;
+					text-align: center;
+					display: block;
 				}
 			}
 		}
@@ -118,11 +131,12 @@
 	&--home-colecao {
 		padding: 0;
 		min-width: 204px;
+
 		@include media("<=tablet") {
 			max-width: 204px;
 			margin-right: 4px;
 			align-items: center;
-		}		
+		}
 
 		.infoCardHeadline--home-colecao {
 			color: $gray-2;
@@ -153,6 +167,7 @@
 					line-height: normal;
 					margin: 0 0 15px;
 				}
+
 				.paragraph--home-colecao {
 					color: $gray-2;
 					font-family: $OpenSans;
@@ -168,20 +183,24 @@
 
 	&--home-sobre {
 		align-items: flex-start;
+
 		@include media("<=phone") {
 			align-items: center;
 		}
-		.paragraph--home-sobre {		
+
+		.paragraph--home-sobre {
 			color: $gray-2;
 			font-family: $OpenSans;
 			font-size: 14px;
 			font-style: normal;
 			font-weight: $regular;
 			line-height: normal;
-			margin: 0;			
+			margin: 0;
+
 			@include media("<=phone") {
 				text-align: center;
 			}
+
 			.strong--home-sobre {
 				color: $primary;
 				font-size: 20px;
@@ -200,9 +219,11 @@
 			font-weight: $bold;
 			line-height: normal;
 			margin: 20px 0 60px;
-			@include media(">phone","<=tablet") {
+
+			@include media(">phone", "<=tablet") {
 				margin: 20px 0 30px;
 			}
+
 			@include media("<=phone") {
 				font-size: 30px;
 				margin: 20px 0;
@@ -224,6 +245,7 @@
 		background: $white;
 		height: auto;
 		margin-bottom: 10px;
+
 		.infoCardImage--home-brands {
 			border-radius: 100%;
 			border: 1px solid $gray-18;
@@ -236,6 +258,7 @@
 		text-align: center;
 		min-width: 108px;
 		margin-right: 20px;
+
 		@include media("<desktop") {
 			margin-right: 0;
 			width: 85px;
@@ -246,8 +269,9 @@
 }
 
 .infoCardCallActionContainer {
-	&--home-colecao{
+	&--home-colecao {
 		margin: 10px 0;
+
 		:global(.vtex-button) {
 			background: transparent;
 			border-radius: 20px;
@@ -275,7 +299,7 @@
 			width: 200px;
 			height: 40px;
 			padding: 0;
-	
+
 			:global(.vtex-button__label) {
 				font-family: $Montserrat;
 				font-size: 16px;
