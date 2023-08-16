@@ -29,7 +29,8 @@
 			"disclosure-layout#submenu-mob-3",
 			"disclosure-layout#submenu-mob-4",
 			"disclosure-layout#submenu-mob-5",
-			"disclosure-layout#submenu-mob-6"
+			"disclosure-layout#submenu-mob-6",
+			"disclosure-layout#submenu-mob-7"
 		],
 		"props": {
 			"maxVisible": "one",
