@@ -16,6 +16,7 @@
 			"menu-item#position-4",
 			"menu-item#position-5",
 			"menu-item#position-6",
+			"menu-item#position-7",
 			"menu-item#foodService",
 			"menu-item#ofertas"
 			
@@ -167,10 +168,30 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-6"]
 	},
+
+	"menu-item#position-7": {
+		"props": {
+			"id": "menu-item-position-7",
+			"blockClass": [
+				"top-menu-level-6",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Culinários",
+				"href": "/culinarios",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Culinários"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-7"]
+	},
 	
 	"menu-item#foodService": {
 		"props": {
-			"id": "menu-item-position-7",
+			"id": "menu-item-foodService",
 			"blockClass": [
 				"top-menu-foodService",
 				"top-menu"
@@ -189,7 +210,7 @@
 
 	"menu-item#ofertas": {
 		"props": {
-			"id": "menu-item-position-8",
+			"id": "menu-item-ofertas",
 			"blockClass": [
 				"top-menu-ofertas",
 				"top-menu"
@@ -208,7 +229,7 @@
 
 	"menu-item#assinatura": {
 		"props": {
-			"id": "menu-item-position-8",
+			"id": "menu-item-assinatura",
 			"blockClass": [
 				"top-menu-assinatura",
 				"top-menu"

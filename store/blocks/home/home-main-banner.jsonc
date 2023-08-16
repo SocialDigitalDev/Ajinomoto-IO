@@ -100,7 +100,7 @@
 				"tablet": 1,
 				"phone": 1
 			},
-			"showNavigationArrows": "never",
+			"showNavigationArrows": "desktopOnly",
 			"infinite": true,
 			"fullWidth": true,
 			"blockClass": "main-banner",
