@@ -107,6 +107,9 @@
 		@include media("<=phone") {
 			min-height: 160px;
 		}
+		@include media(">phone","<=tablet") {
+			min-height: 120px;
+		}
 		.strong--food-Service {
 			font-weight: $bold;
 		}

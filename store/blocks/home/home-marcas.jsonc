@@ -36,11 +36,11 @@
 				"desktop": "disabled",
 				"mobile": "to-the-left"
 			},
-			"infinite": true,
+			"infinite": false,
 			"showNavigationArrows": "desktopOnly",
 			"showPaginationDots": "never",
 			"blockClass": "home-brands",
-			"navigationStep": "page",
+			"navigationStep": 2,
 			"arrowSize": 36
 		},
 		"children": [
