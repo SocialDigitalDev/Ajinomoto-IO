@@ -96,6 +96,11 @@
 
 	:global(.vtex-store-components-3-x-container) {
 		padding: 0;
+		width: 100%;
+	}
+
+	.flexRowContent--home-colecao {
+		justify-content: space-evenly;
 	}
 }
 
