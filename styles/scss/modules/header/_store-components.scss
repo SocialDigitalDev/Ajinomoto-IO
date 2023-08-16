@@ -26,7 +26,9 @@
         background: $white;
         border-radius: 0px 0px 10px 10px;
         @include media(">phone","<=tablet") {
-            border-radius: 0px 0px 50px 50px;
+            border-radius: 0px 0px 30px 30px;
+            max-width: 530px;
+            margin: 0 auto;
         }
     }
 

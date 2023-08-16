@@ -12,3 +12,9 @@
     text-transform: none;
 }
 
+.tileList {
+    @include media("<=tablet") {
+        border: none;
+        padding-bottom: 30px;
+    }
+}
