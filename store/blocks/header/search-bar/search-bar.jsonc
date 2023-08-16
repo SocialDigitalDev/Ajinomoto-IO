@@ -29,7 +29,7 @@
 	"autocomplete-result-list.v2": {
 		"blocks": ["product-summary.shelf"],
 		"props": {
-			"maxSuggestedProducts": 3
+			"maxSuggestedProducts": 2
 		}
 	}
 }
