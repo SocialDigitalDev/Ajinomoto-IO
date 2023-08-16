@@ -36,7 +36,7 @@
 				"mobile": "to-the-left"
 			},
 			"centerModeSlidesGap": 10,
-			"infinite": true,
+			"infinite": false,
 			"showNavigationArrows": "never",
 			"showPaginationDots": "never",
 			"blockClass": "food-service-topSale",
