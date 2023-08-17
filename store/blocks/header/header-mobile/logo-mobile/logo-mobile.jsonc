@@ -1,6 +1,6 @@
 {
 	"flex-layout.row#logo-header-mobile": {
-		"title": "[ LOGO AJINOMOTO - MOBILE ]",
+		"title": "LOGO - MOBILE",
 		"children": [
 			"image#logo-header-mobile"
 		],

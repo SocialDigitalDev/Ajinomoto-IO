@@ -1,16 +1,10 @@
 {
 	"header": {
-		"blocks": [
-			"header-layout.desktop",
-			"header-layout.mobile"
-		]
+		"blocks": ["header-layout.desktop", "header-layout.mobile"]
 	},
 
 	"header.full": {
-		"blocks": [
-			"header-layout.desktop",
-			"header-layout.mobile"
-		],
+		"blocks": ["header-layout.desktop", "header-layout.mobile"],
 		"props": {
 			"sticky": true,
 			"fullWidth": false
@@ -19,24 +13,17 @@
 
 	"header-layout.desktop": {
 		"title": "HEADER DESKTOP",
-		"children": [
-			"helmet-component",
-			"sticky-layout#header-desktop"
-		],
+		"children": ["helmet-component", "sticky-layout#header-desktop"],
 		"props": {
 			"blockClass": "header-desktop",
 			"sticky": true,
 			"fullWidth": false
 		}
 	},
-	
 
 	"header-layout.mobile": {
 		"title": "HEADER MOBILE",
-		"children": [
-			"helmet-component",
-			"sticky-layout#header-mobile"
-		],
+		"children": ["helmet-component", "sticky-layout#header-mobile"],
 		"props": {
 			"blockClass": "header-mobile",
 			"sticky": true,
