@@ -1,6 +1,6 @@
 {
 	"flex-layout.row#logo-header": {
-		"title": "[ LOGO AJINOMOTO - DESKTOP ]",
+		"title": "LOGO - DESKTOP",
 		"children": [
 			"image#logo-header"
 		],

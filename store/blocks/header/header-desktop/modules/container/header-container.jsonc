@@ -1,8 +1,6 @@
 {
 	"flex-layout.row#header-container": {
-		"children": [
-			"flex-layout.col#header-container"
-		],
+		"children": ["flex-layout.col#header-container"],
 		"props": {
 			"blockClass": "header--container"
 		}
@@ -19,9 +17,8 @@
 	},
 
 	"flex-layout.row#header-container-fixed": {
-		"children": [
-			"flex-layout.col#header-container-fixed"
-		],
+		"title": "HEADER - FIXO",
+		"children": ["flex-layout.col#header-container-fixed"],
 		"props": {
 			"blockClass": "header--container-fixed"
 		}
@@ -48,11 +45,8 @@
 		}
 	},
 
-
 	"flex-layout.row#header--container-bottom": {
-		"children": [
-			"flex-layout.row#header-menu"
-		],
+		"children": ["flex-layout.row#header-menu"],
 		"props": {
 			"blockClass": "header--container-bottom"
 		}
@@ -61,9 +55,8 @@
 	// HEADER STICKY
 
 	"flex-layout.row#header-container-sticky": {
-		"children": [
-			"flex-layout.row#header--container-top-sticky"
-		]
+		"title": "HEADER FLUTUANTE",
+		"children": ["flex-layout.row#header--container-top-sticky"]
 	},
 
 	"flex-layout.row#header--container-top-sticky": {
@@ -78,31 +71,25 @@
 		}
 	},
 
-	
 	// SEARCH --- FIXED
 
 	"flex-layout.row#header--search-fixed": {
-		"children": [
-			"modal-trigger#search-fixed-desktop"
-		],
+		"title": "BUSCA",
+		"children": ["modal-trigger#search-fixed-desktop"],
 		"props": {
 			"blockClass": "header--search-fixed"
 		}
 	},
 
 	"modal-trigger#search-fixed-desktop": {
-		"children": [
-			"image#search-fixed",
-			"modal-layout#search-bar"
-		],
+		"children": ["image#search-fixed", "modal-layout#search-bar"],
 		"props": {
-			"blockClass": [
-				"search-fixed-desktop"				
-			]
+			"blockClass": ["search-fixed-desktop"]
 		}
 	},
 
 	"image#search-fixed": {
+		"title": "IMAGEM - BUSCA",
 		"props": {
 			"src": "assets/svg/ico_search-desktop-fixed.svg"
 		}
@@ -110,31 +97,24 @@
 
 	// SEARCH --- STICKY
 	"flex-layout.row#header--search-sticky": {
-		"children": [
-			"modal-trigger#search-sticky-desktop"
-		],
+		"title": "BUSCA ",
+		"children": ["modal-trigger#search-sticky-desktop"],
 		"props": {
 			"blockClass": "header--search-sticky"
 		}
 	},
 
 	"modal-trigger#search-sticky-desktop": {
-		"children": [
-			"image#search-sticky",
-			"modal-layout#search-bar"
-		],
+		"children": ["image#search-sticky", "modal-layout#search-bar"],
 		"props": {
-			"blockClass": [
-				"search-sticky-desktop"
-				
-			]
+			"blockClass": ["search-sticky-desktop"]
 		}
 	},
 
 	"image#search-sticky": {
+		"title": "IMAGEM - BUSCA",
 		"props": {
 			"src": "assets/svg/ico_search-desktop-sticky.svg"
 		}
-	}	
-
+	}
 }

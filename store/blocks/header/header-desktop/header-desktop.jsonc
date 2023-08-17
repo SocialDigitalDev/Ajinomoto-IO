@@ -8,7 +8,7 @@
 			"blockClass": ["sticky--header", "ajinomoto--header-desktop"]
 		}
 	},
-	
+
 
 	"flex-layout.row#header-desktop": {
 		"children": ["flex-layout.row#header-container"],

@@ -14,7 +14,6 @@
 	},
 
 	"info-card#banner-food-service": {
-		"title": "BANNER",
 		"props": {
 			"isFullModeStyle": true,
 			"imageUrl": "assets/img/banner-food-service-desktop.png",
@@ -44,7 +43,6 @@
 	},
 
 	"info-card#banner-food-service-tablet": {
-		"title": "BANNER",
 		"props": {
 			"isFullModeStyle": true,
 			"imageUrl": "assets/img/banner-food-service-tablet.png",
@@ -72,7 +70,6 @@
 	},
 
 	"info-card#banner-food-service-phone": {
-		"title": "BANNER",
 		"props": {
 			"isFullModeStyle": true,
 			"imageUrl": "assets/img/banner-food-service-phone.png",

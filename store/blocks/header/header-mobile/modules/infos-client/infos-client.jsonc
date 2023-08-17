@@ -28,6 +28,7 @@
 	},
 
 	"image#searchBar-mobile": {
+		"title": "iMGEM BUSCA",
 		"props": {
 			"src": "assets/svg/ico_lupa.svg",
 			"maxHeight": "26px",

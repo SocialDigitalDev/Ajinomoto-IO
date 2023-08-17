@@ -1,9 +1,11 @@
 {
 	"flex-layout.row#tag-title-h1": {
+		"title": "TITULO DA PAGINA - H1",
 		"children": ["rich-text#home-h1"]
 	},
 
 	"rich-text#home-h1": {
+		"title": "TITULO",
 		"props": {
 			"text": "# Benefícios Loja Ajinomoto",
             "textAlignment": "CENTER",
