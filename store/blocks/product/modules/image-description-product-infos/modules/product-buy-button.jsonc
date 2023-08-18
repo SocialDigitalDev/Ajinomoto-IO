@@ -109,9 +109,9 @@
 		"props": {
 			"text": "Adicionar",
 			"unavailableText": "Produto Indisponível",
-            "onClickBehavior": "add-to-cart",
-            "customPixelEventId": "add-to-cart-button",
-            "addToCartFeedback": "customEvent"
+            "onClickBehavior": "add-to-cart"
+            // "customPixelEventId": "add-to-cart-button",
+            // "addToCartFeedback": "customEvent"
 		}
     }
 }
