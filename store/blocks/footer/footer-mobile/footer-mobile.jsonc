@@ -23,7 +23,7 @@
     "responsive-layout.phone#footer": {
         "title": "FOOTER [PHONE]",
         "children": [
-            "flex-layout.row#footer-blog",
+            // "flex-layout.row#footer-blog",
             "flex-layout.row#menu-account-mob",
             "flex-layout.row#menu-produtos-mob",
             "flex-layout.row#menusobre-mob",

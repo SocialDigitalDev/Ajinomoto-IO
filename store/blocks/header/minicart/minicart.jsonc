@@ -3,8 +3,8 @@
 		"props": {
 			"blockClass": "minicart-v2",
 			"maxDrawerWidth": 900,
-			"quantityDisplay": "always",
-			"customPixelEventName": "addToCart"
+			"quantityDisplay": "always"
+			// "customPixelEventName": "addToCart"
 		},
 		"children": ["minicart-base-content"]
 	},

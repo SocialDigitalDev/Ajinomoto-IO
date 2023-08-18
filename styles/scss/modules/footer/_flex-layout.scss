@@ -14,7 +14,7 @@
 			justify-content: center;
 		}
 		.stretchChildrenWidth:first-child {
-			width: auto !important;
+			// width: auto !important;
 			margin-right: 2.5%;
 			@include media(">phone", "<=tablet") {
 				margin-right: 3%;

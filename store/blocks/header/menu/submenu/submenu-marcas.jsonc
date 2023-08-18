@@ -3,19 +3,19 @@
 	"vtex.menu@2.x:submenu#marcas": {
 		"title": "SUBMNENU MARCAS",
 		"children": [
+			"menu-item#sub-marcas-item-12",
 			"menu-item#sub-marcas-item-1",
+			"menu-item#sub-marcas-item-11",
+			"menu-item#sub-marcas-item-13",
+			"menu-item#sub-marcas-item-8",
+			"menu-item#sub-marcas-item-10",
+			"menu-item#sub-marcas-item-9",
 			"menu-item#sub-marcas-item-2",
 			"menu-item#sub-marcas-item-3",
-			"menu-item#sub-marcas-item-4",
-			"menu-item#sub-marcas-item-5",
-			"menu-item#sub-marcas-item-6",
 			"menu-item#sub-marcas-item-7",
-			"menu-item#sub-marcas-item-8",
-			"menu-item#sub-marcas-item-9",
-			"menu-item#sub-marcas-item-10",
-			"menu-item#sub-marcas-item-11",
-			"menu-item#sub-marcas-item-12",
-			"menu-item#sub-marcas-item-13"
+			"menu-item#sub-marcas-item-6",
+			"menu-item#sub-marcas-item-5",
+			"menu-item#sub-marcas-item-4"
 		],
 		"props": {
 			"blockClass": ["submenu-list", "submenu-list__first"]

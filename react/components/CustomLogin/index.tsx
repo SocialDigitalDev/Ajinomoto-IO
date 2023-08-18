@@ -204,7 +204,12 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
             </svg>
 
             {/*@ts-ignore */}
-            <div className="login-button-text">Olá <span>{session?.namespaces.profile.email.value}</span></div>
+            { 
+              session?.namespaces.profile.firstName ?
+              <div className="login-button-text">Olá <span>{session?.namespaces.profile.firstName?.value}</span></div>
+              :
+              <div className="login-button-text">Olá <span>{session?.namespaces.profile.email.value}</span></div>
+            }
             <div className="login-button-text login-button-text__mobile" onClick={() => window.location.href = '/account'}>Olá <span>{session?.namespaces.profile.email.value}</span></div>
             <div className={isOpenLogged ? "modal-logged modal-logged-open" : "modal-logged"}>
                 <button onClick={() => window.location.href = '/account'}>Minha conta</button>

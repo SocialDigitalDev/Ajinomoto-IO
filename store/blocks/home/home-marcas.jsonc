@@ -36,7 +36,7 @@
 				"desktop": "disabled",
 				"mobile": "to-the-left"
 			},
-			"infinite": false,
+			"infinite": true,
 			"showNavigationArrows": "desktopOnly",
 			"showPaginationDots": "never",
 			"blockClass": "home-brands",
@@ -54,7 +54,7 @@
 			"info-card#brands-8",
 			"info-card#brands-9",
 			"info-card#brands-10",
-			"info-card#brands-11",
+			// "info-card#brands-11",
 			"info-card#brands-12",
 			"info-card#brands-13"
 		]

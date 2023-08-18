@@ -14,7 +14,7 @@
 	"flex-layout.row#footer-data-desktop": {
 		"title": "FOOTER MENU",
 		"children": [
-			"flex-layout.col#footer-blog",
+			// "flex-layout.col#footer-blog",
 			"flex-layout.col#menu-account",
 			"flex-layout.col#menu-produtos",
 			"flex-layout.col#menu-sobre-nos",
