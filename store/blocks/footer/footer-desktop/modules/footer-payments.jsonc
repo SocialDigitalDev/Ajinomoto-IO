@@ -1,14 +1,17 @@
 {
 	"flex-layout.col#payments-footer": {
 		"title": "PAGAMENTO",
-		"children": ["rich-text#title-payments", "image#image-payments"],
+		"children": [
+			"rich-text#title-payments",
+			// "image#image-payments"
+			"flex-layout.row#image-payments"
+		],
 		"props": {
 			"horizontalAlign": "center",
 			"blockClass": "payments-data",
 			"width": "55%"
 		}
 	},
-
 	"rich-text#title-payments": {
 		"title": "Título - Formas de Pagamento",
 		"props": {
@@ -17,12 +20,79 @@
 			"textAlignment": "CENTER"
 		}
 	},
-
-	"image#image-payments": {
-		"title": "Imagem - Formas de pagamento",
+	
+	"flex-layout.row#image-payments": {
+		"title": "Formas de Pagamento",
 		"props": {
-			"title": "Formas de Pagamento",
-			"src": "assets/svg/ico_group-payments.svg"
+			"blockClass": "payments-wrapper",
+			"colJustify": "between"
+		},
+		"children": [
+			"image#master",
+			"image#diners",
+			"image#visa",
+			"image#amex",
+			"image#hipercard",
+			"image#boleto",
+			"image#elo",
+			"image#pix"
+		]
+	},
+
+	// "image#image-payments": {
+	// 	"title": "Imagem - Formas de pagamento",
+	// 	"props": {
+	// 		"title": "Formas de Pagamento",
+	// 		"src": "assets/svg/ico_group-payments.svg"
+	// 	}
+	// }
+
+	"image#master": {
+		"props": {
+			"title": "Mastercard",
+			"src": "assets/svg/payments/master.svg"
+		}
+	},
+	"image#diners": {
+		"props": {
+			"title": "Diners Club",
+			"src": "assets/svg/payments/diners.svg"
+		}
+	},
+	"image#visa": {
+		"props": {
+			"title": "Visa",
+			"src": "assets/svg/payments/visa.svg"
+		}
+	},
+	"image#amex": {
+		"props": {
+			"title": "American Express",
+			"src": "assets/svg/payments/amex.svg"
+		}
+	},
+	"image#hipercard": {
+		"props": {
+			"title": "Hipercard",
+			"src": "assets/svg/payments/hipercard.svg"
+		}
+	},
+	"image#boleto": {
+		"props": {
+			"title": "Boleto",
+			"src": "assets/svg/payments/boleto.svg"
+		}
+	},
+	"image#elo": {
+		"props": {
+			"title": "Elo",
+			"src": "assets/svg/payments/elo.svg"
+		}
+	},
+	"image#pix": {
+		"props": {
+			"title": "PIX",
+			"src": "assets/svg/payments/pix.svg"
 		}
 	}
 }

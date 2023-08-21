@@ -58,6 +58,12 @@
     }
 }
 
+:global(.vtex-flex-layout-0-x-flexColChild--payments-data){
+    .container{
+        justify-content: center;
+    }
+}
+
 .container--description-footer-bottom {
     .wrapper--description-footer-bottom {
         .paragraph--description-footer-bottom {

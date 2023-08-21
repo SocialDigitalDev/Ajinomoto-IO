@@ -62,7 +62,6 @@
                     
                     @include media ('>=desktop'){
                         font-size: 25px;
-                        max-width: 273px;
                     }
                     
                     @include media ('<=tablet', '>phone'){
