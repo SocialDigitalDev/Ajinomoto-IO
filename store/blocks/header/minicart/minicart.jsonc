@@ -2,7 +2,7 @@
 	"minicart.v2": {
 		"props": {
 			"blockClass": "minicart-v2",
-			"maxDrawerWidth": 900,
+			// "maxDrawerWidth": 900,
 			"quantityDisplay": "always"
 			// "customPixelEventName": "addToCart"
 		},

@@ -193,6 +193,7 @@
 
 .opened--minicart-v2 {
     width: auto !important;
+    max-width: 900px !important;
     @media (max-width: 600px){
         width: 100% !important;
         max-width: 431px !important;
