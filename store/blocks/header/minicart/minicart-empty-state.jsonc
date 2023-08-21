@@ -55,7 +55,7 @@
         "title": "Botão sacola vazia",
         "props": {
             "blockClass": "empty-cart-button",
-            "href": "/",
+            "href": "",
             "label": "Escolher Produtos"
         }
     }
