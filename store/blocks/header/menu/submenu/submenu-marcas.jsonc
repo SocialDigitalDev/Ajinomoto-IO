@@ -5,7 +5,7 @@
 		"children": [
 			"menu-item#sub-marcas-item-12",
 			"menu-item#sub-marcas-item-1",
-			"menu-item#sub-marcas-item-11",
+			// "menu-item#sub-marcas-item-11",
 			"menu-item#sub-marcas-item-13",
 			"menu-item#sub-marcas-item-8",
 			"menu-item#sub-marcas-item-10",
@@ -30,8 +30,8 @@
 				"type": "internal",
 				"href": "/aji-sal",
 				"noFollow": false,
-				"tagTitle": "Aji-sal",
-				"text": "Aji-sal"
+				"tagTitle": "Aji-sal®",
+				"text": "Aji-sal®"
 			}
 		}
 	},
@@ -44,8 +44,8 @@
 				"type": "internal",
 				"href": "/receita-de-casa-?map=b",
 				"noFollow": false,
-				"tagTitle": "Receitas de Casa",
-				"text": "Receitas de Casa"
+				"tagTitle": "Receitas de Casa®",
+				"text": "Receitas de Casa®"
 			}
 		}
 	},
@@ -58,8 +58,8 @@
 				"type": "internal",
 				"href": "/sabor-a-mi",
 				"noFollow": false,
-				"tagTitle": "Sabor a mi",
-				"text": "Sabor a mi"
+				"tagTitle": "Sabor a mi®",
+				"text": "Sabor a mi®"
 			}
 		}
 	},
@@ -72,8 +72,8 @@
 				"type": "internal",
 				"href": "/vono",
 				"noFollow": false,
-				"tagTitle": "Vono",
-				"text": "Vono"
+				"tagTitle": "Vono®",
+				"text": "Vono®"
 			}
 		}
 	},
@@ -86,8 +86,8 @@
 				"type": "internal",
 				"href": "/terrano",
 				"noFollow": false,
-				"tagTitle": "Terrano",
-				"text": "Terrano"
+				"tagTitle": "Terrano®",
+				"text": "Terrano®"
 			}			
 		}
 	},
@@ -100,8 +100,8 @@
 				"type": "internal",
 				"href": "/sazon",
 				"noFollow": false,
-				"tagTitle": "Sazón",
-				"text": "Sazón"
+				"tagTitle": "Sazón®",
+				"text": "Sazón®"
 			}
 		}
 	},
@@ -114,8 +114,8 @@
 				"type": "internal",
 				"href": "/satis-",
 				"noFollow": false,
-				"tagTitle": "Satis!",
-				"text": "Satis!"
+				"tagTitle": "Satis!®",
+				"text": "Satis!®"
 			}
 		}
 	},
@@ -128,8 +128,8 @@
 				"type": "internal",
 				"href": "/hondashi",
 				"noFollow": false,
-				"tagTitle": "Hondashi",
-				"text": "Hondashi"
+				"tagTitle": "Hondashi®",
+				"text": "Hondashi®"
 			}
 		}
 	},
@@ -142,8 +142,8 @@
 				"type": "internal",
 				"href": "/mid-zero-?map=b",
 				"noFollow": false,
-				"tagTitle": "MID Zero",
-				"text": "MID Zero"
+				"tagTitle": "MID Zero®",
+				"text": "MID Zero®"
 			}
 		}
 	},
@@ -156,8 +156,8 @@
 				"type": "internal",
 				"href": "/mid",
 				"noFollow": false,
-				"tagTitle": "MID",
-				"text": "MID"
+				"tagTitle": "MID®",
+				"text": "MID®"
 			}
 		}
 	},
@@ -170,8 +170,8 @@
 				"type": "internal",
 				"href": "/amino-vital-gold",
 				"noFollow": false,
-				"tagTitle": "Amino vital Gold",
-				"text": "Amino vital Gold"
+				"tagTitle": "Amino vital Gold®",
+				"text": "Amino vital Gold®"
 			}
 		}
 	},
@@ -184,8 +184,8 @@
 				"type": "internal",
 				"href": "/aji-no-moto",
 				"noFollow": false,
-				"tagTitle": "Aji-no-moto",
-				"text": "Aji-no-moto"
+				"tagTitle": "Aji-no-moto®",
+				"text": "Aji-no-moto®"
 			}
 		}
 	},

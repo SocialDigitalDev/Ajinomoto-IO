@@ -2,7 +2,7 @@
 	&Row {
 		&Content {
 			&--img-product-info {
-				gap: 31px;
+				gap: 62px;
 			}
 
 			&--flag-savings-wishlist-row {
@@ -17,11 +17,11 @@
 
 			&--product-price {
 				&--container {
-					border: 1px solid $primary;
+					// border: 1px solid $primary;
 					border-radius: 10px;
-					padding: 11px 25px;
-					max-width: 375px;
-					height: 100px;
+					// padding: 11px 25px;
+					// max-width: 375px;
+					// height: 100px;
 					display: flex;
 				}
 			}

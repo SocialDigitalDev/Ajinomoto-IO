@@ -7,8 +7,8 @@
             "colJustify": "left"
         },
         "children": [
-            "flex-layout.col#product-price--column",
-            "rich-text#pix-discount-msg"
+            "flex-layout.col#product-price--column"
+            // "rich-text#pix-discount-msg"
         ]
     },
 

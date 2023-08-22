@@ -141,7 +141,11 @@
 	position: absolute;
     width: 100%;
     left: 0;
-    top: 192px;	
+    top: 192px;
+
+	.styledLinkContent{
+		text-transform: uppercase;
+	}
 
 	.submenuWrapper--submenu-list--isOpen {
 		margin: 0;

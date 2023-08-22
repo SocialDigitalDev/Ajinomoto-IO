@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 180px);
     justify-content: space-evenly;
-    column-gap: 5px;
+    column-gap: 44px;
     row-gap: 50px;
-    max-width: 870px;
+    max-width: 1300px;
     margin: 0 auto;
     @include media("<=phone") {
         grid-template-columns: repeat(auto-fill, 160px);

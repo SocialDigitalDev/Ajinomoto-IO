@@ -7,8 +7,8 @@
             "colJustify": "left"
         },
         "children": [
-            "product-price-savings"
-            // "add-to-list-btn"
+            "product-price-savings",
+            "add-to-list-btn"
         ]
     },
 

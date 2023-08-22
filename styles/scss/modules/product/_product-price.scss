@@ -44,15 +44,15 @@
                 }
                 
                 &--selling-price{
-                    color: $gray-2;
-                    font-size: 20px;
+                    color: $primary;
+                    font-size: 30px;
                     font-family: $Poppins;
-                    font-weight: $semi-bold;
+                    font-weight: $bold;
 
-                    .currencyCode,
-                    .currencyLiteral{
-                        display: none;
-                    }
+                    // .currencyCode,
+                    // .currencyLiteral{
+                    //     display: none;
+                    // }
                 }
             }
         }

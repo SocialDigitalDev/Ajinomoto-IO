@@ -1,9 +1,15 @@
 {
 	"product-summary.shelf": {
-		"children": ["flex-layout.col#shelf"],
+		"children": ["flex-layout.row#shelf-wrapper"],
 		"props": {
 			"blockClass": "shelf"
 		}
+	},
+
+	"flex-layout.row#shelf-wrapper": {
+		"children": [
+			"flex-layout.col#shelf"
+		]
 	},
 
 	"flex-layout.col#shelf": {
@@ -23,7 +29,7 @@
 	"flex-layout.col#shelf-image": {
 		"children": [
 			"flex-layout.row#highlights-shelf",
-            // "add-to-list-btn#shelf",
+            "add-to-list-btn#shelf",
 			"product-summary-image",
 			"product-price-savings#shelf"
 		],

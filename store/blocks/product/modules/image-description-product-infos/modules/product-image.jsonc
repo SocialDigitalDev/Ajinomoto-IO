@@ -55,6 +55,7 @@
             "showPaginationDots": true,
             "showNavigationArrows": false,
             "thumbnailVisibility": "visible",
+            "displayThumbnailsArrows": true,
             "position": "left",
             "width": "1000px",
             "height": "1000px"

@@ -71,6 +71,13 @@
 .flexRow--category-destaques {
 	.flexRowContent--category-destaques {
 		display: flex;
+		@include media("<=phone") {
+			justify-content: center;
+		}
+		.stretchChildrenWidth{
+			padding: 0 5px;
+			max-width: 90px;
+		}
 	}
 }
 

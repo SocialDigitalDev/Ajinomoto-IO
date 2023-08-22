@@ -272,11 +272,17 @@ ol {
 				padding: 0 !important;
 
 				.vtex-wish-list-1-x-wishlistIcon {
-					background: url("../../../assets/svg/ico_wishlist-outline.svg")
-						no-repeat;
+					background: url("../../../assets/svg/ico_wishlist-outline.svg")	no-repeat;
 					background-size: contain;
 					width: 35px;
 					height: 32px;
+
+					&.vtex-wish-list-1-x-fill{
+						background: url("../../../assets/svg/ico_wishlist-header.svg")	no-repeat;
+						background-size: contain;
+						width: 35px;
+						height: 32px;
+					}
 				}
 			}
 		}

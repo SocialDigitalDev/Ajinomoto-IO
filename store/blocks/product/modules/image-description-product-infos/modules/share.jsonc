@@ -1,0 +1,11 @@
+{
+    "share#pdp": {
+        "props": {
+            "blockClass": "share-product--pdp",
+            "social": {
+                "Facebook": true,
+                "WhatsApp": true
+            }
+        }
+    }
+}

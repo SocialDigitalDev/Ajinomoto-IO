@@ -27,7 +27,12 @@
 }
 
 .container--category-destaques {
-	margin-left: 10px;
+	@include media ('>phone'){
+		margin-left: 10px;
+	}
+	@include media ('<=phone'){
+		justify-content: center;
+	}
 	.wrapper--category-destaques {
 		.paragraph--category-destaques {
 			color: $white;
