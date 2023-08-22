@@ -61,3 +61,36 @@
 		justify-content: center;
 	}
 }
+
+.flexRow--payments-wrapper{
+	display: flex;
+    margin: auto;
+	@include media(">phone") {
+		width: 80%;
+	}
+	@include media("<=phone") {
+		width: 100%;
+	}
+	.flexRowContent--payments-wrapper{
+		display: flex;
+		@include media ("<=phone"){
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.stretchChildrenWidth{
+			@include media("<=phone") {
+				width: 12% !important;
+				margin: 5px;
+			}
+		}
+	}
+}
+
+.flexColChild--payments-data{
+	width: 100%;
+	&:last-child{
+		@include media ("<=tablet", ">phone"){
+			margin-bottom: 50px;
+		}
+	}
+}

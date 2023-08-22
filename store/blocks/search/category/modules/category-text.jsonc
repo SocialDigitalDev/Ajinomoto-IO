@@ -107,7 +107,8 @@
 			"info-card#category-destaques-4"
 		],
 		"props": {
-			"blockClass": "category-destaques"
+			"blockClass": "category-destaques",
+			"colSizing": "auto"
 		}
 	},
 

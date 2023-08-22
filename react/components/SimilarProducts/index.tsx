@@ -55,7 +55,7 @@ const SimilarProducts = () => {
     return isLoaded ? (
         <div className="content--similar-product">
             <div className="list-products--similar">
-                <button className={`list-products--button ${openClass}`} onClick={setOpenClose}>Sabores</button>
+                <button className={`list-products--button ${openClass}`} onClick={setOpenClose}>Outros sabores</button>
                 <ul className={`list-products--list ${openClass}`}>
                     {sabor}
                 </ul>

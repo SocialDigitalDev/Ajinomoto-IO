@@ -103,7 +103,7 @@
 	"rich-text#home-prateleira-3": {
 		"title": "TITULO DA VITRINE",
 		"props": {
-			"text": "## Destaques",
+			"text": "## Ofertas",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
 		}

@@ -6,6 +6,11 @@
 			background: $white;
 
 			&--stuck  {
+				
+				.container{
+					box-shadow: 0px 4px 4px 0px $shadow-25;
+				}
+				
 				:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label)::before {
 					display: none;
 				}

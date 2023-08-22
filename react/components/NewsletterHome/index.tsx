@@ -175,7 +175,7 @@ const NewsletterHome = () => {
 									<span>
 										Concordo que a Ajinomoto pode usar meus dados de contato e
 										interações.{" "}
-										<a href="/institucional/politica-privacidade">
+										<a href="/institucional/politica-de-privacidade">
 											Política de privacidade
 										</a>
 										.

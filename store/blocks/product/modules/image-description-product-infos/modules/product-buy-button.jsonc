@@ -107,7 +107,7 @@
     "add-to-cart-button#pdpBuy": {
         "title": "Botão Comprar",
 		"props": {
-			"text": "Adicionar",
+			"text": "Comprar",
 			"unavailableText": "Produto Indisponível",
             "onClickBehavior": "add-to-cart"
             // "customPixelEventId": "add-to-cart-button",

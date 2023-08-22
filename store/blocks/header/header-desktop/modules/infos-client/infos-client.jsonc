@@ -12,7 +12,7 @@
 
 	"flex-layout.row#wishlist": {
 		"children": [
-			// "link#wishlist"
+			"link#wishlist"
 		],
 		"props": {
 			"blockClass": "header--wishlist"

@@ -37,6 +37,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
   const [step, setStep] = useState<Steps>("login_choices");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [newCodeMessage, setNewCodeMessage] = useState("");
   const [code, setCode] = useState("");
   const [classicSignIn] = useMutation(classicSignInMutation);
   const [sendEmailVerificationCode] = useMutation(sendEmailVerificationCodeMutation);
@@ -113,6 +114,27 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
       })
 
       console.log("data", response);
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message)
+    }
+  }
+
+  const handleSendVerificationNewCode = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      const response = await sendEmailVerificationCode({
+        variables: {
+          email
+        }
+      })
+      console.log("data", response);
+      setNewCodeMessage("Um novo código foi enviado. Verifique seu e-mail.");
+      setTimeout(function(){
+        setNewCodeMessage("");
+      }, 5000)
+
     } catch (e) {
       setError(e.message);
       console.log(e.message)
@@ -395,8 +417,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} onKeyDown={handleKeyDown} required />
                   </div>
 
-                  <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
-
+                  <p className='new-code' onClick={handleSendVerificationNewCode} >Solicitar novo código</p>
+                  <p className='new-code-message'>{newCodeMessage}</p>
                   <div className="back-and-submit-row">
                     <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>                     
                       Voltar
@@ -442,6 +464,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       <p><span>!@#</span> 1 caracter especial</p>
                       <p><span>*** </span>No minímo 8 caracteres</p>
                     </div>
+
 
                     <span className='forget-password purple' onClick={() => handleChangePage("send_code_signUp")}>Esqueci a senha</span>
 
@@ -533,7 +556,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     <div className="form-input-column">
                       <input className='login-form-input' type="text" placeholder='Insira o código encaminhado' onChange={(e) => setCode(e.target.value)} onKeyDown={handleKeyDown} required />
                     </div>
-                    <p className='new-code' onClick={handleSendVerificationCode} >Solicitar novo código</p>
+                    <p className='new-code' onClick={handleSendVerificationNewCode} >Solicitar novo código</p>
+                    <p className='new-code-message'>{newCodeMessage}</p>
                     <div className="back-and-submit-row">
                       <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>                       
                         Voltar

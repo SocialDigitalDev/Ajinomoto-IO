@@ -1,5 +1,7 @@
 .orderPlacedWrapper {
 	margin-bottom: 100px;
+	max-width: 1366px;
+	margin: auto;
 }
 
 .section--confirmation {
@@ -16,7 +18,7 @@
 
 .section--notices {
 	.noticesList {
-		background: $orange-2;
+		background: $white;
 		.noticeListItem {
 			border-color: $gray-27;
 			font-family: $OpenSans;
@@ -76,7 +78,7 @@
 }
 
 .orderPlacedMainWrapper {
-	background: $orange-2;
+	background: $white;
 	padding: 30px;
     width: 100%;
     margin-top: 0;
@@ -161,6 +163,7 @@
 			padding-bottom: 5px;
 		}
 		.productInfoColumn {
+			justify-content: flex-start;
 			.productName,
 			.productQuantity {
 				color: $black;
