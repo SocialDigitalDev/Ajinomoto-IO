@@ -38,8 +38,8 @@
 	"react-list-account-mobile": {
 		"children": [
 			"flex-layout.row#client-area-login",
-			"flex-layout.row#client-area-orders"
-			// "flex-layout.row#client-area-wishlist"
+			"flex-layout.row#client-area-orders",
+			"flex-layout.row#client-area-wishlist"
 		],
 		"props": {
 			"blockClass": "client-area-links"
