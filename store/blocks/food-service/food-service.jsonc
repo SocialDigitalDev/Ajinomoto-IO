@@ -6,8 +6,8 @@
 			"responsive-layout.phone#food-service",
             "flex-layout.row#food-service-subtitulo",
 			"flex-layout.row#food-service-topSale",
-			"flex-layout.row#food-service-shelf",
-			"flex-layout.row#newsletter"			
+			"flex-layout.row#food-service-shelf"
+			// "flex-layout.row#newsletter"			
 		]
 	},
 

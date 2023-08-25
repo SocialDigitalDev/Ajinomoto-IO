@@ -2,8 +2,8 @@
     "store.custom#politica-de-frete":{
         "blocks": [   
             "flex-layout.row#pagewrapper-politica-de-frete",
-            "highlight-menu-institutional",
-            "flex-layout.row#newsletter"
+            "highlight-menu-institutional"
+            // "flex-layout.row#newsletter"
         ]
     },
 

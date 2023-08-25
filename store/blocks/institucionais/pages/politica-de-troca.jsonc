@@ -2,8 +2,8 @@
     "store.custom#trocas-e-devolucoes":{
         "blocks": [   
             "flex-layout.row#pagewrapper-trocas-e-devolucoes",
-            "highlight-menu-institutional",
-            "flex-layout.row#newsletter"
+            "highlight-menu-institutional"
+            // "flex-layout.row#newsletter"
         ]
     },
 
