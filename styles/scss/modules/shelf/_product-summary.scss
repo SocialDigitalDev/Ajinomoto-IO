@@ -6,6 +6,7 @@
     position: relative;
     max-width: 180px !important; 
     width: 100%;
+    min-height: 324px;
     @include media("<=phone") {
         max-width: 160px !important; 
     }

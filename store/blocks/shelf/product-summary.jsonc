@@ -28,7 +28,7 @@
 
 	"flex-layout.col#shelf-image": {
 		"children": [
-			"flex-layout.row#highlights-shelf",
+			// "flex-layout.row#highlights-shelf",
             "add-to-list-btn#shelf",
 			"product-summary-image",
 			"product-price-savings#shelf"
@@ -86,7 +86,7 @@
 	"product-price-savings#shelf": {
 		"props": {
 			"markers": ["highlight"],
-			"message": "{savingsPercentage}",
+			"message": "{savingsPercentage} OFF",
 			"minimumPercentage": 3,
 			"percentageStyle": "compact",
 			"blockClass": "shelf-badges"

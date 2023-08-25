@@ -47,6 +47,8 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
   const { session } = useRenderSession();
 
+  let actualUrl = window?.location?.pathname;
+
 
   const logOutUser = () => {
     fetch("/api/vtexid/pub/logout?scope=lojaajinomoto&returnUrl=", {
@@ -283,6 +285,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="login-button">
                 <button className='login-btn-1' onClick={() => handleChangePage("login_with_password")}>Entrar com e-mail e senha</button>
                 <button className='login-btn-2' onClick={() => handleChangePage("send_code_login")}>Receber chave de acesso rápido por email</button>
+                <a className="sso-login-button google-login" href={`/login?oAuthRedirect=Google&returnUrl=${actualUrl}`} target="_parent">Entrar com Google</a>
               </div>
             </div>            
             <div className="sign-up-row">

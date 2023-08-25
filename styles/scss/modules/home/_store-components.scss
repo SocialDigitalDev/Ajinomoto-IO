@@ -114,7 +114,7 @@
 				font-style: normal;
 				font-weight: $semi-bold;
 				line-height: normal;
-				text-decoration-line: underline;
+				text-decoration-line: none;
 				@media (max-width: 320px) {
 					font-size: 12px;
 				}
@@ -123,6 +123,8 @@
 					color: $primary;
 					text-align: center;
 					display: block;
+					text-transform: uppercase;
+					text-decoration: none;
 				}
 			}
 		}

@@ -101,7 +101,8 @@
 	}
 }
 
-.login-btn-1 {
+.login-btn-1,
+.sso-login-button {
 	color: $black;
 	font-family: $OpenSans;
 	font-size: 14px;
@@ -113,6 +114,8 @@
 	max-width: 222px;
 	padding: 8px 20px;
 	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
 
 .login-btn-2 {

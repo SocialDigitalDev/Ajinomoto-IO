@@ -275,6 +275,9 @@
 		text-transform: math-auto;
 	}
 }
+.filter__container--marca{
+	display: none;
+}
 .filterContent {
 	:global(.vtex-checkbox__line-container) {
 		align-items: baseline;
@@ -312,6 +315,7 @@
 			max-width: 332px;
 			height: 40px;
 			justify-content: center;
+			margin-bottom: 20px;
 
 			:global(.vtex-button__label) {
 				color: $white;
