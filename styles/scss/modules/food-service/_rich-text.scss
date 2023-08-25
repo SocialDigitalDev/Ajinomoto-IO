@@ -1,5 +1,6 @@
 .container--food-service-subtitulo {
-    max-width: 755px;
+    max-width: 1300px;
+	text-align: center;
     @include media("<=tablet") {
         padding: 0 20px;
     }
@@ -16,6 +17,9 @@
             @include media("<=phone") {
                 font-size: 16px;
             }
+		}
+		.heading--food-service-subtitulo{
+			margin: 0;
 		}
 	}
 }

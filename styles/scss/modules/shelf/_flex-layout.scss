@@ -6,6 +6,8 @@
 // BOTAO DE COMPRA
 .flexRow--buy-button-shelf {
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 
 	.flexRowContent--available {
 		display: flex;

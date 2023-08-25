@@ -17,6 +17,7 @@
                 content: "Início";
                 font-size: 12px;
                 color: $gray-8;
+                text-transform: uppercase;
             }
         }
 
@@ -52,6 +53,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             max-width: 160px;
+            text-transform: uppercase;
         }
     }
     
@@ -63,5 +65,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 160px;
+        text-transform: uppercase;
     }
 }
