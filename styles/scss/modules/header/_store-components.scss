@@ -61,6 +61,8 @@
             &::before {
                 content: url(assets/svg/ico_lupa.svg);
                 display: inline-block;
+                position: relative;
+                top: 2px;
             }
             .searchIcon {
                 display: none;

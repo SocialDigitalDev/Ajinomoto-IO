@@ -1,84 +1,105 @@
 {
 	// DESKTOP
 	"responsive-layout.desktop#food-service": {
-		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"title": "BANNER FOODSERVICE [DESKTOP]",
 		"children": ["flex-layout.row#banner-food-service"]
 	},
 
 	"flex-layout.row#banner-food-service": {
-		"title": "BANNER PRINCIPAL -INFOCARD",
-		"children": ["info-card#banner-food-service"],
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-desktop"],
 		"props": {
 			"fullWidth": true
 		}
 	},
 
-	"info-card#banner-food-service": {
+	"list-context.image-list#food-service-banner-desktop": {
+		"title": "BANNER FOODSERVICE [DESKTOP]",
+		"children": ["slider-layout#food-service-banner"],
 		"props": {
-			"isFullModeStyle": true,
-			"imageUrl": "assets/img/banner-food-service-desktop.png",
-			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
-			"callToActionMode": "none",
-			"blockClass": ["fullbanner-food-service"],
-			"textPosition": "right",
-			"textAlignment": "center",
-			"textMode": "rich-text"
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service.png"
+				}
+			]
 		}
 	},
 
 	//TABLET
 
 	"responsive-layout.tablet#food-service": {
-		"title": "BANNER PRINCIPAL [TABLET]",
-		"children": ["flex-layout.row#banner-food-service-tablet"]
+		"title": "BANNER FOODSERVICE [TABLET]",
+		"children": ["list-context.image-list#food-service-banner-tablet"]
 	},
 
 
 	"flex-layout.row#banner-food-service-tablet": {
-		"title": "BANNER PRINCIPAL -INFOCARD",
-		"children": ["info-card#banner-food-service-tablet"],
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-tablet"],
 		"props": {
 			"fullWidth": true
 		}
 	},
 
-	"info-card#banner-food-service-tablet": {
+	"list-context.image-list#food-service-banner-tablet": {
+		"title": "BANNER FOODSERVICE [TABLET]",
+		"children": ["slider-layout#food-service-banner"],
 		"props": {
-			"isFullModeStyle": true,
-			"imageUrl": "assets/img/banner-food-service-tablet.png",
-			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
-			"callToActionMode": "none",
-			"blockClass": ["fullbanner-food-service"],
-			"textPosition": "right",
-			"textAlignment": "center",
-			"textMode": "rich-text"
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service-tablet.png"
+				}
+			]
 		}
 	},
 
 	// PHONE
 	"responsive-layout.phone#food-service": {
-		"title": "BANNER PRINCIPAL [PHONE]",
+		"title": "BANNER FOODSERVICE [PHONE]",
 		"children": ["flex-layout.row#banner-food-service-phone"]
 	},
 
 	"flex-layout.row#banner-food-service-phone": {
-		"title": "BANNER PRINCIPAL -INFOCARD",
-		"children": ["info-card#banner-food-service-phone"],
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-mobile"],
 		"props": {
 			"fullWidth": true
 		}
 	},
 
-	"info-card#banner-food-service-phone": {
+	"list-context.image-list#food-service-banner-mobile": {
+		"title": "BANNER FOODSERVICE [PHONE]",
+		"children": ["slider-layout#food-service-banner"],
 		"props": {
-			"isFullModeStyle": true,
-			"imageUrl": "assets/img/banner-food-service-phone.png",
-			"headline": "# Muito mais sabor com o **Food Service Ajinomoto**",
-			"callToActionMode": "none",
-			"blockClass": ["fullbanner-food-service"],
-			"textPosition": "center",
-			"textAlignment": "center",
-			"textMode": "rich-text"
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service-mobile.png"
+				}
+			]
+		}
+	},
+
+	"slider-layout#food-service-banner": {
+		"title": "SLIDER BANNER FOOD SERVICE",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"showNavigationArrows": "desktopOnly",
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "main-banner-food-service"
 		}
 	}
 }
