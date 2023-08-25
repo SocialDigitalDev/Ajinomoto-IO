@@ -2,8 +2,8 @@
     "store.not-found#product-error": {
         "blocks": [
             "flex-layout.row#product-error-content",
-            "flex-layout.row#error-prateleira",
-            "flex-layout.row#newsletter"
+            "flex-layout.row#error-prateleira"
+            // "flex-layout.row#newsletter"
         ]
     },
 
