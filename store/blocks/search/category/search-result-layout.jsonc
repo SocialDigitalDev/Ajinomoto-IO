@@ -102,8 +102,8 @@
 	"search-not-found-layout": {
 		"children": [
 			"flex-layout.row#empty-search-error-content",
-			"flex-layout.row#error-prateleira"
-            // "flex-layout.row#newsletter"
+			"flex-layout.row#error-prateleira",
+            "flex-layout.row#newsletter"
 		]
 	},
 

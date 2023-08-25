@@ -2,8 +2,8 @@
     "store.custom#politica-de-privacidade":{
         "blocks": [   
             "flex-layout.row#pagewrapper-politica-de-privacidade",
-            "highlight-menu-institutional"
-            // "flex-layout.row#newsletter"
+            "highlight-menu-institutional",
+            "flex-layout.row#newsletter"
         ]
     },
 
