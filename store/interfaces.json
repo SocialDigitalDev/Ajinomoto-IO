@@ -52,5 +52,9 @@
 
 	"custom-nutritional-info": {
 		"component": "CustomNutritionalInfo"
+	},
+
+	"whatsapp-floating-button": {
+		"component": "WhatsApp"
 	}
 }

@@ -23,8 +23,8 @@ const HelmetComponent = () => {
 				src="//tag.goadopt.io/injector.js?website_code=d634b0e0-fbb8-4bb8-9efa-bb364f882777"
 				className="adopt-injector"
 			></script>
-			<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-			<script src="https://www.socialdigitalcommerce.com.br/blipchat/blip-chat.js"></script>
+			{/* <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+			<script src="https://www.socialdigitalcommerce.com.br/blipchat/blip-chat.js"></script> */}
 		</Helmet>
 	);
 };
