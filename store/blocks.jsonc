@@ -20,9 +20,14 @@
 	},
 
 	"store.login": {
-		"blocks": ["login-content#default"]
+		"blocks": [
+			"login-content#default",
+			"responsive-layout.desktop#tapume-desktop",
+			"responsive-layout.tablet#tapume-tablet",
+			"responsive-layout.phone#tapume-phone"
+		]
 	},
-
+	
 	"login-content#default": {
 		"props": {
 			"isInitialScreenOptionOnly": false,
