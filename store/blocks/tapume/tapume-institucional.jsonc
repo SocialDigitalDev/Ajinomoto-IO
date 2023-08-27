@@ -1,0 +1,61 @@
+{
+    "store.custom#politica-de-entrega-tapume":{
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.custom#politica-de-frete-tapume":{
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.custom#politica-de-privacidade-tapume":{
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.custom#termos-e-condicoes-tapume":{
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.custom#trocas-e-devolucoes-tapume":{
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    }
+}

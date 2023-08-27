@@ -1,0 +1,13 @@
+{
+	"store.product#tapume": {
+		"children": [
+			"responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+		],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
+	}
+}
