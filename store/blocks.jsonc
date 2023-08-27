@@ -13,7 +13,12 @@
 	},
 
 	"store.account": {
-		"blocks": ["my-account"],
+		"blocks": [
+			"my-account",
+			"responsive-layout.desktop#tapume-desktop",
+			"responsive-layout.tablet#tapume-tablet",
+			"responsive-layout.phone#tapume-phone"
+		],
 		"parent": {
 			"challenge": "challenge.profile"
 		}
