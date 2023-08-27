@@ -14,10 +14,10 @@
 
 	"store.account": {
 		"blocks": [
-			"my-account",
-			"responsive-layout.desktop#tapume-desktop",
-			"responsive-layout.tablet#tapume-tablet",
-			"responsive-layout.phone#tapume-phone"
+			"my-account"
+			// "responsive-layout.desktop#tapume-desktop",
+			// "responsive-layout.tablet#tapume-tablet",
+			// "responsive-layout.phone#tapume-phone"
 		],
 		"parent": {
 			"challenge": "challenge.profile"
@@ -26,10 +26,10 @@
 
 	"store.login": {
 		"blocks": [
-			"login-content#default",
-			"responsive-layout.desktop#tapume-desktop",
-			"responsive-layout.tablet#tapume-tablet",
-			"responsive-layout.phone#tapume-phone"
+			"login-content#default"
+			// "responsive-layout.desktop#tapume-desktop",
+			// "responsive-layout.tablet#tapume-tablet",
+			// "responsive-layout.phone#tapume-phone"
 		]
 	},
 	
