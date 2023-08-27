@@ -1,0 +1,61 @@
+{
+    "store.search#tapume": {
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.search#brand-tapume": {
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.search#department-tapume": {
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.search#category-tapume": {
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    },
+
+    "store.search#subcategory-tapume": {
+        "blocks": [
+            "responsive-layout.desktop#tapume-desktop",
+            "responsive-layout.tablet#tapume-tablet",
+            "responsive-layout.phone#tapume-phone"
+        ],
+        "parent": {
+          "header": "header#empty",
+          "footer": "footer#empty"
+        }
+    }
+}
