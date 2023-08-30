@@ -549,7 +549,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className='login-container'>
                 <div className="login-content">
                   <div className="login-close-button" onClick={() => setIsOpen(false)}></div>
-                  <h1 className='card-title'>Acessao rápido</h1>
+                  <h1 className='card-title'>Acesso rápido</h1>
                   <span className='login-span-text'>Agora é só informar o código recebido em:</span>
                   <span className='email-text'>{email}</span>
                   <form
