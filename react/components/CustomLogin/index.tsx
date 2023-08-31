@@ -95,13 +95,27 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           password
         }
       })
-      console.log("data", response)
 
-      setIsOpen(false)
-      location.reload()
+      if (response?.data?.classicSignIn === "WrongCredentials"){
+        setError("Usuário ou Senha Inválidos");
+        setTimeout(function(){
+          setError("");
+        }, 5000)
+      } else if (response?.data?.classicSignIn === "Success"){
+        setIsOpen(false)
+        location.reload()
+      } else {
+        setError("Ocorreu um erro. Tente novamente mais tarde");
+        setTimeout(function(){
+          setError("");
+        }, 5000)
+      }
+      
     } catch (e) {
       setError(e.message);
-      console.log('data', e.message)
+      setTimeout(function(){
+        setError("");
+      }, 5000)
     }
   }
 
@@ -331,7 +345,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                     {error && (
                       <div style={{ color: "red" }}>
-                        {error === "Password does not follow specified format" ? "A senha deve ter 8 caracteres" : ""}
+                        {error}
                       </div>
                     )}
                   </div>
