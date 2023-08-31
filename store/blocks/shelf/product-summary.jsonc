@@ -28,9 +28,9 @@
 
 	"flex-layout.col#shelf-image": {
 		"children": [
-			// "flex-layout.row#highlights-shelf",
-            "add-to-list-btn#shelf",
+			"add-to-list-btn#shelf",
 			"product-summary-image",
+			"flex-layout.row#highlights-shelf",
 			"product-price-savings#shelf"
 		],
 		"props": {

@@ -1,16 +1,23 @@
 import {useEffect, useState } from "react";
+import { useSearchPage } from "vtex.search-page-context/SearchPageContext";
 
 const CategoryHighlights = ({ children = [] }) => {
+
+	const searchPage = useSearchPage();
+	
 	const [visibleHightLight, setVisible ] = useState(false);
+	
 	useEffect(() => {
-		const categories =  ["sazon", "vono"];
-		categories.map((value)=>{
-			console.log('value', value, window.location.pathname.includes(value))
-			if (window.location.pathname.includes(value)) {
-				setVisible(true)
-			}	
-		})
-	}, []);
+		if (window.location.pathname.includes('sazon') || window.location.pathname.includes('vono') ) {
+			setTimeout(function(){
+				setVisible(true);
+			}, 4000)
+		} else {
+			setTimeout(function(){
+				setVisible(false);
+			}, 4000)
+		}
+	}, [searchPage]);
 
 	return visibleHightLight ? (
 		children.map((item: any) => {
