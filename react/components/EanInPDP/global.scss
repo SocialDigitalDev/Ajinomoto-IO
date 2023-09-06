@@ -1,0 +1,17 @@
+@import "../../../styles/scss/variables/all";
+
+.custom{
+
+    &-ean{
+
+        &-number{
+
+            &--text{
+                margin-top: 0;
+                margin-bottom: 30px;
+                color: $gray-9;
+                font-size: 13px;
+            }
+        }
+    }
+}

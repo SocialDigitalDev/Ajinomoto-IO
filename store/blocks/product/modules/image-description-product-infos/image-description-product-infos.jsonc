@@ -38,6 +38,7 @@
             "flex-layout.row#product-breadcrumb",
             "flex-layout.row#flag-savings-wishlist",
             "flex-layout.row#product-name--container",
+            "custom-ean-number",
             "similar-products",
             "condition-layout.product#product-availability",
             "share#pdp",

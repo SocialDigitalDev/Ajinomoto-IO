@@ -24,6 +24,7 @@
         iframe{
             max-width: 100%;
             border-radius: 10px;
+            width: 95%;
         }
         
         @include media ('<=tablet', '>phone'){
@@ -60,7 +61,8 @@
 
     &--image{
         @include media ('>phone'){
-            max-width: 525px;
+            max-width: 100%;
+            width: 95%;
         }
         @include media ('<=phone'){
             max-width: 100%;

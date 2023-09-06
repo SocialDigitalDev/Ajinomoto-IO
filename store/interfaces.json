@@ -56,5 +56,9 @@
 
 	"whatsapp-floating-button": {
 		"component": "WhatsApp"
+	},
+
+	"custom-ean-number": {
+		"component": "EanInPDP"
 	}
 }
