@@ -1,7 +1,19 @@
 {
 	"store.home": {
+		"title": "HOME",
 		"blocks": [
-			
+			"flex-layout.row#home-main-banner",
+			"flex-layout.row#tag-title-h1",
+			"flex-layout.row#home-deals",
+			"flex-layout.row#home-brands",
+			"flex-layout.row#home-prateleira-2",
+			"flex-layout.row#home-core-banner",
+			"flex-layout.row#home-prateleira-3",
+			"flex-layout.row#home-colecao",
+			"flex-layout.row#home-final-banner",
+			"flex-layout.row#home-prateleira-1",
+			"flex-layout.row#home-sobre",
+			"flex-layout.row#newsletter"
 		]
 	}
 }

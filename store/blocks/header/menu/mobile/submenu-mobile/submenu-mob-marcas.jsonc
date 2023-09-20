@@ -1,0 +1,52 @@
+{
+    "disclosure-layout#submenu-mob-marcas": {
+        "title": "Menu Mobile 1",
+        "children": [
+            "disclosure-trigger#submenu-marcas",
+            "disclosure-content#submenu-marcas"
+        ],
+        "props": {            
+            "blockClass": "submenu"
+        }
+    },
+    
+    "disclosure-trigger#submenu-marcas": {
+        "title": "TRIGGER SUBMNENU MARCAS",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "rich-text#submenu-marcas"
+        ]
+    },
+    
+    "rich-text#submenu-marcas": {
+        "title": "SUBMENU MARCAS",
+        "props": {
+            "text": "Marcas", 
+            "blockClass": "header-menu-mobile"
+        }
+    },
+    
+    "disclosure-content#submenu-marcas": {
+        "title": "Conteúdo do submenu Mobile Marcas",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "menu-item#sub-marcas-item-1",
+			"menu-item#sub-marcas-item-2",
+			"menu-item#sub-marcas-item-3",
+			"menu-item#sub-marcas-item-4",
+			"menu-item#sub-marcas-item-5",
+			"menu-item#sub-marcas-item-6",
+			"menu-item#sub-marcas-item-7",
+			"menu-item#sub-marcas-item-8",
+			"menu-item#sub-marcas-item-9",
+			"menu-item#sub-marcas-item-10",
+			// "menu-item#sub-marcas-item-11",
+			"menu-item#sub-marcas-item-12",
+			"menu-item#sub-marcas-item-13"
+        ]
+    }
+}

@@ -1,0 +1,270 @@
+{
+	"flex-layout.row#home-brands": {
+		"title": "HOME MARCAS",
+		"children": ["flex-layout.col#home-brands"],
+		"props": {
+			"blockClass": ["home-brands", "home-section"]
+		}
+	},
+
+	"flex-layout.col#home-brands": {
+		"title": "HOME brands",
+		"children": ["rich-text#home-brands", "slider-layout#brands"],
+		"props": {
+			"blockClass": "home-brands",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+
+	"rich-text#home-brands": {
+		"props": {
+			"text": "## Nossas Marcas",
+			"textPosition": "CENTER",
+			"blockClass": "shelf-titles"
+		}
+	},
+
+	"slider-layout#brands": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 8,
+				"tablet": 4,
+				"phone": 2
+			},
+			"centerMode": {
+				"desktop": "disabled",
+				"mobile": "to-the-left"
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "never",
+			"blockClass": "home-brands",
+			"navigationStep": 2,
+			"arrowSize": 36
+		},
+		"children": [
+			"info-card#brands-1",
+			"info-card#brands-2",
+			"info-card#brands-3",
+			"info-card#brands-4",
+			"info-card#brands-5",
+			"info-card#brands-6",
+			"info-card#brands-7",
+			"info-card#brands-8",
+			"info-card#brands-9",
+			"info-card#brands-10",
+			// "info-card#brands-11",
+			"info-card#brands-12",
+			"info-card#brands-13"
+		]
+	},
+
+	"info-card#brands-1": {
+		"title": "DEAL 1",
+		"props": {
+			"id": "home-brands-1",
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/img/marca-ajisal.png",
+			"imageActionUrl": "/aji-sal",
+			"headline": "[Aji-sal](/aji-sal)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-2": {
+		"title": "DEAL 2",
+		"props": {
+			"id": "home-brands-2",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-receita-de-casa.png",
+			"imageActionUrl": "/receita-de-casa-?map=b",
+			"headline": "[Receita de Casa](/receita-de-casa-?map=b)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-3": {
+		"title": "DEAL 3",
+		"props": {
+			"id": "home-brands-3",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-sabor-ami.png",
+			"imageActionUrl": "/sabor-a-mi",
+			"headline": "[Sabor a mi](/sabor-a-mi)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-4": {
+		"title": "DEAL 4",
+		"props": {
+			"id": "home-brands-4",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-vono.png",
+			"imageActionUrl": "/vono",
+			"headline": "[Vono](/vono)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-5": {
+		"title": "DEAL 5",
+		"props": {
+			"id": "home-brands-5",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-terrano.png",
+			"imageActionUrl": "/terrano",
+			"headline": "[Terrano](/terrano)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-6": {
+		"title": "DEAL 6",
+		"props": {
+			"id": "home-brands-6",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-sazon.png",
+			"imageActionUrl": "/sazon",
+			"headline": "[Sazón](/sazon)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-7": {
+		"title": "DEAL 7",
+		"props": {
+			"id": "home-brands-7",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-satis.png",
+			"imageActionUrl": "/satis-",
+			"headline": "[Satis!](/satis-)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-8": {
+		"title": "DEAL 8",
+		"props": {
+			"id": "home-brands-8 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-hondashi.png",
+			"imageActionUrl": "/hondashi",
+			"headline": "[Hondashi](/hondashi)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-9": {
+		"title": "DEAL 9",
+		"props": {
+			"id": "home-brands-9 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-mid-zero.png",
+			"imageActionUrl": "/mid-zero-?map=b",
+			"headline": "[MID](/mid-zero-?map=b)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-10": {
+		"title": "DEAL 10",
+		"props": {
+			"id": "home-brands-10 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-mid.png",
+			"imageActionUrl": "/mid",
+			"headline": "[MID](/mid)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-11": {
+		"title": "DEAL 11",
+		"props": {
+			"id": "home-brands-11 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-aminovital.png",
+			"imageActionUrl": "/amino-vital-gold",
+			"headline": "[Amino vital Gold](/amino-vital-gold)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-12": {
+		"title": "DEAL 12",
+		"props": {
+			"id": "home-brands-12 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-aji-no-moto.png",
+			"imageActionUrl": "/aji-no-moto",
+			"headline": "[Aji-no-moto](/aji-no-moto)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-13": {
+		"title": "DEAL 13",
+		"props": {
+			"id": "home-brands-13 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/marca-food-service.png",
+			"imageActionUrl": "/food-service",
+			"headline": "[Food Service](/food-service)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	}
+}

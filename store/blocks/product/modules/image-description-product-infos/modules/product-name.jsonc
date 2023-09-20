@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#product-name--container": {
+        "title": "Título do Produto",
+        "props": {
+            "blockClass": "product-name"
+        },
+        "children": [
+            "vtex.store-components:product-name"
+        ]
+    }
+}

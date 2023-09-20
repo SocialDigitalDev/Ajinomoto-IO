@@ -1,0 +1,20 @@
+.close-btn {
+    display: none;
+}
+
+.itemListTitle, .tileListTitle {
+    color: $black;
+    font-family: $OpenSans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+    text-transform: none;
+}
+
+.tileList {
+    @include media("<=tablet") {
+        border: none;
+        padding-bottom: 30px;
+    }
+}

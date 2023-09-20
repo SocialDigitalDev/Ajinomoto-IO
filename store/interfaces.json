@@ -1,5 +1,64 @@
 {
 	"helmet-component": {
 		"component": "HelmetComponent"
+	},
+	"react-minicart-footer": {
+		"component": "CustomMinicartFooter"
+	},
+	"react-shipping-bar": {
+        "component": "ShippingBar"
+    },
+	"react-list-account-mobile": {
+		"component": "MenuMobileListAccount",
+		"composition": "children"
+	},
+	"custom-login": {
+		"component": "CustomLogin",
+		"composition": "children"
+	},
+	"custom-newsletter": {
+		"component": "NewsletterHome"
+	},
+	"custom-pdp-characteristics": {
+		"component": "CustomPdpSpecs"
+	},
+	"buy-together": {
+		"component": "BuyTogether"
+	},
+
+	"similar-products": {
+		"component": "SimilarProducts"
+	},
+	
+	"highlight-menu-institutional": {
+		"component": "HighlightInstitutionalMenu"
+	},
+	"category-highlights": {
+		"component": "CategoryHighlights",
+		"composition": "children"
+	},
+
+	"back-button": {
+		"component": "BackButton"
+	},
+
+	"focus-search-bar": {
+		"component": "FocusSearchBar"
+	},
+	
+	"custom-pdp-recipies": {
+		"component": "CustomPDPRecipies"
+	},
+
+	"custom-nutritional-info": {
+		"component": "CustomNutritionalInfo"
+	},
+
+	"whatsapp-floating-button": {
+		"component": "WhatsApp"
+	},
+
+	"custom-ean-number": {
+		"component": "EanInPDP"
 	}
 }

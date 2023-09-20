@@ -1,0 +1,59 @@
+.container{
+
+    &--product-error-message{
+
+        .wrapper{
+
+            .paragraph{
+                max-width: 305px;
+                font-size: 17px;
+                font-weight: $bold;
+                color: $gray-2;
+                text-align: center;
+            }
+        }
+    }
+
+    &--product-error-submessage{
+
+        .wrapper{
+
+            .paragraph{
+                max-width: 200px;
+                font-size: 14px;
+                font-weight: $light;
+                color: $gray-0;
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &--empty-search-error-message{
+        
+        .wrapper{
+
+            .paragraph{
+                max-width: 247px;
+                font-size: 20px;
+                font-weight: $extra-bold;
+                color: $red-3;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &--empty-search-error-submessage{
+        
+        .wrapper{
+
+            .paragraph{
+                font-size: 16px;
+                font-weight: $light;
+                color: $black;
+                text-align: center;
+            }
+        }
+    }
+}

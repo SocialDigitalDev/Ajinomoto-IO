@@ -1,0 +1,82 @@
+.container--text--topbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 12px 0;
+	@include media("<=phone") {
+		padding: 4px 0 8px;
+	}
+
+	.paragraph--text--topbar {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 0;
+		font-family: $OpenSans;
+		font-weight: $bold;
+		font-size: 16px;
+		color: $white;
+		text-align: center;
+		@include media("<=phone") {
+			font-family: $OpenSans;
+			font-size: 12px;
+			max-width: 231px;
+		}
+	}
+}
+
+.container--client-area-title {
+	padding: 0 18px;
+	margin: 32px 0 42px;
+
+	.paragraph--client-area-title {
+		color: $gray-2;
+		font-family: $OpenSans;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: $bold;
+		line-height: normal;
+		margin: 0;
+	}
+}
+
+// MENU MOBILE - SOLO
+.container--menu-mobile-solo {
+	background: none;
+	border: 1px solid $gray-8;
+	border-width: 0 0 1px 0;
+	outline: 0;
+	padding: 14px 44px 14px 30px;
+	position: relative;
+	.wrapper--menu-mobile-solo {
+		.paragraph--menu-mobile {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-weight: $regular;
+			line-height: normal;
+			padding: 0;
+			margin: 0;	
+			
+			.link--menu-mobile {
+				color: $gray-2;
+				text-decoration: none;
+				display: block;
+				&::after {
+					content: "";
+					background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='21' viewBox='0 0 10 21' fill='none'%3e%3cpath d='M9.99662 10.9442C9.99727 11.2774 9.88108 11.6003 9.66822 11.8568L2.52905 20.4133C2.2867 20.7045 1.93843 20.8877 1.56087 20.9224C1.18332 20.9572 0.807395 20.8407 0.515808 20.5987C0.22422 20.3566 0.0408521 20.0088 0.0060419 19.6317C-0.0287683 19.2546 0.0878306 18.8791 0.330189 18.5879L6.72688 10.9442L0.558644 3.30039C0.440039 3.15452 0.351468 2.98667 0.298022 2.80651C0.244576 2.62634 0.227308 2.43739 0.24721 2.25054C0.267113 2.06368 0.323794 1.8826 0.413995 1.71769C0.504197 1.55278 0.626141 1.4073 0.772818 1.28962C0.91963 1.15902 1.09186 1.06011 1.27873 0.999084C1.4656 0.938059 1.66307 0.916237 1.85877 0.934978C2.05447 0.953722 2.24419 1.01263 2.41604 1.10801C2.58789 1.20339 2.73817 1.33319 2.85745 1.48927L9.75389 10.0457C9.93311 10.3097 10.0186 10.626 9.99662 10.9442Z' fill='%23EE6262'/%3e%3c/svg%3e");
+					width: 10px;
+					height: 21px;
+					display: inline-block;
+					position: absolute;
+					right: 30px;
+					transition: 0.35s;
+				}
+			}
+		}
+	}
+}

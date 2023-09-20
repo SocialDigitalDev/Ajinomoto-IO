@@ -1,0 +1,16 @@
+{
+	"flex-layout.row#topbar-header": {
+		"title": "TOP BAR",
+		"children": ["rich-text#text-topbar"],
+		"props": {
+			"blockClass": "header--topbar"
+		}
+	},
+
+	"rich-text#text-topbar": {
+		"props": {
+			"text": "Não perca as incríveis ofertas do Mês do Cliente na Loja Ajinomoto! ",
+			"blockClass": "text--topbar"
+		}
+	}
+}

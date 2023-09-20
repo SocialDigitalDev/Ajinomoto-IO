@@ -1,0 +1,214 @@
+{
+	"store.search": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 20,
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#brand": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 16,
+				"simulationBehavior": "skip"
+			},
+			"blockClass": "search-result--brand"
+		}
+	},
+
+	"store.search#department": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 16,
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#category": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 16,
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#subcategory": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 16,
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#collection": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"maxItemsPerPage": 16,
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"search-result-layout": {
+		"blocks": [
+			"search-result-layout.desktop",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+		]
+	},
+
+	"search-result-layout.desktop": {
+		"children": ["flex-layout.row#category-desktop"],
+		"props": {
+			"showFacetQuantity": true,
+			"pagination": "show-more",
+			"preventRouteChange": false,
+			"defaultGalleryLayout": "grid"
+		}
+	},
+
+	"search-result-layout.mobile": {
+		"children": [
+			"flex-layout.row#category-mobile"
+		],
+		"props": {
+			"pagination": "show-more",
+			"showFacetQuantity": true,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"defaultGalleryLayout": "grid"
+		}
+	},
+
+	"search-not-found-layout": {
+		"children": [
+			"flex-layout.row#empty-search-error-content",
+			"flex-layout.row#error-prateleira",
+            "flex-layout.row#newsletter"
+		]
+	},
+
+	"flex-layout.row#empty-search": {
+		"children": ["search-bar"],
+		"props": {
+			"blockClass": "searchbar-emptysearch"
+		}
+	},
+
+	"rich-text#search-empty": {
+		"props": {
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "## Ops, não encontramos resultados para a busca",
+			"blockClass": "emptysearch-title"
+		}
+	},
+
+	"rich-text#search-empty2": {
+		"props": {
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "##### Verifique se a palavra foi digitada corretamente ou tente palavras menos específicas",
+			"blockClass": "emptysearch-subtitle"
+		}
+	},
+
+	"breadcrumb.search": {
+		"props": {
+			"showOnMobile": true
+		}
+	},
+
+	"gallery": {
+		"props": {
+			"layouts": [
+				{
+					"name": "grid",
+					"component": "GridSummary",
+					"itemsPerRow": {
+						"desktop": 4,
+						"tablet": 4,
+						"phone": 2
+					}
+				}
+			],
+			"GridSummary": "product-summary.shelf"
+		}
+	},
+
+	"gallery-layout-option#grid": {
+		"props": {
+			"name": "grid"
+		},
+		"children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
+	},
+
+	"responsive-layout.desktop#textOptionGrid": {
+		"children": ["rich-text#option-grid"]
+	},
+
+	"rich-text#option-grid": {
+		"props": {
+			"text": "Grid",
+			"textColor": "c-auto",
+			"blockClass": "layout-option"
+		}
+	},
+
+	"flex-layout.row#products": {
+		"children": ["search-content"]
+	},
+
+	"search-content": {
+		"blocks": ["gallery", "not-found"]
+	},
+
+	"flex-layout.row#fetchprevious": {
+		"children": ["search-fetch-previous"],
+		"props": {
+			"blockClass": "fetch-previous"
+		}
+	},
+
+	"search-fetch-previous": {
+		"props": {
+			"htmlElementForButton": "a"
+		}
+	},
+
+	"flex-layout.row#fetchmore": {
+		"children": [
+			// "search-products-count-per-page",
+			// "search-products-progress-bar",
+			"search-fetch-more"
+		],
+		"props": {
+			"blockClass": "fetch-more"
+		}
+	},
+
+	"search-fetch-more": {
+		"props": {
+			"htmlElementForButton": "a"
+		}
+	}
+}

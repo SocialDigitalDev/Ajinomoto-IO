@@ -1,0 +1,44 @@
+.closeIconContainer--header-menu-mobile {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+    .closeIconButton--header-menu-mobile {
+        padding: 5px;
+        &::before {
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='31' height='30' viewBox='0 0 31 30' fill='none'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.967266 24.5348L10.7408 15.0332L0.967266 5.46518C-0.322422 4.20261 -0.322422 2.20928 0.967266 0.946926C2.25695 -0.315642 4.2931 -0.315642 5.58257 0.946926L15.3561 10.5149L25.0618 0.946926C26.3515 -0.315642 28.3877 -0.315642 29.6771 0.946926C30.9668 2.2095 30.9668 4.20283 29.6771 5.46518L19.9036 15.0332L29.6771 24.5348C30.9668 25.7974 30.9668 27.7907 29.6771 29.0531C28.4553 30.3156 26.3513 30.3156 25.0618 29.0531L15.3561 19.4851L5.58257 29.0531C4.29288 30.3156 2.25674 30.3156 0.967266 29.0531C-0.322422 27.857 -0.322422 25.7972 0.967266 24.5348Z' fill='%23E60012'/%3e%3c/svg%3e");
+            width: 31px;
+            height: 30px;
+            display: inline-block;
+        }
+    }
+
+    .closeIcon--header-menu-mobile {
+        display: none;
+    }
+}
+
+.drawer--header-menu-mobile {
+    @include media("<=phone") {
+        width: 100% !important;
+    }
+}
+
+.openIconContainer--header-menu-mobile {
+    padding: 0;
+    margin-right: 16px;
+    &::before {
+        content: "";
+        background-image: url(assets/svg/ico_menu-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 35px;
+        height: 26px;
+        display: inline-block;
+    }
+    
+    .menuIcon--header-menu-mobile {
+        display: none;
+    }
+}

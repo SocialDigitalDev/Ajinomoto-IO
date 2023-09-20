@@ -1,0 +1,93 @@
+{
+	"flex-layout.row#home-final-banner": {
+		"title": "HOME BANNER FINAL",
+		"children": [
+			"responsive-layout.desktop#final-banner",
+			"responsive-layout.tablet#final-banner",
+			"responsive-layout.phone#final-banner"
+		],
+		"props": {
+			"blockClass": ["final-banner"],
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"experimentalHideEmptyCols": true,
+			"horizontalAlign": "center"
+		}
+	},
+
+	//DESKTOP
+	"responsive-layout.desktop#final-banner": {
+		"title": "BANNER FINAL [DESKTOP]",
+		"children": ["list-context.image-list#final-banner-desktop"]
+	},
+
+	"list-context.image-list#final-banner-desktop": {
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "",
+					"description": ""
+				}
+			]
+		}
+	},
+
+	//TABLET
+	"responsive-layout.tablet#final-banner": {
+		"title": "BANNER FINAL [TABLET]",
+		"children": ["list-context.image-list#final-banner-tablet"]
+	},
+
+	"list-context.image-list#final-banner-tablet": {
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"preload": true,
+			"height": 280,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "",
+					"description": ""
+				}
+			]
+		}
+	},
+
+	//PHONE
+
+	"responsive-layout.phone#final-banner": {
+		"title": "BANNER FINAL [PHONE]",
+		"children": ["list-context.image-list#final-banner-phone"]
+	},
+
+	"list-context.image-list#final-banner-phone": {
+		"children": ["slider-layout#final-banner"],
+		"props": {
+			"preload": true,
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "",
+					"description": ""
+				}
+			]
+		}
+	},
+
+	//SLIDER BANNER MIOLO
+	"slider-layout#final-banner": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true
+		}
+	}
+}

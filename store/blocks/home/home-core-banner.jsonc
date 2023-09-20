@@ -1,0 +1,102 @@
+{
+	"flex-layout.row#home-core-banner": {
+		"title": "HOME BANNER MIOLO",
+		"children": [
+			"responsive-layout.desktop#core-banner",
+			"responsive-layout.tablet#core-banner",
+			"responsive-layout.phone#core-banner"
+		],
+		"props": {
+			"blockClass": ["core-banner"],
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"experimentalHideEmptyCols": true,
+			"horizontalAlign": "center"
+		}
+	},
+
+	//DESKTOP
+	"responsive-layout.desktop#core-banner": {
+		"title": "BANNER MIOLO [DESKTOP]",
+		"children": ["list-context.image-list#core-banner-desktop"]
+	},
+
+	"list-context.image-list#core-banner-desktop": {
+		"children": ["slider-layout#core-banner"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image":  "assets/img/home-miolo-banner-desktop.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
+				}
+			]
+		}
+	},
+
+	//TABLET
+	"responsive-layout.tablet#core-banner": {
+		"title": "BANNER MIOLO [TABLET]",
+		"children": ["list-context.image-list#core-banner-tablet"]
+	},
+
+	"list-context.image-list#core-banner-tablet": {
+		"children": ["slider-layout#core-banner"],
+		"props": {
+			"preload": true,
+			"height": 280,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-miolo-banner-desktop.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
+				}
+			]
+		}
+	},
+
+	//PHONE
+
+	"responsive-layout.phone#core-banner": {
+		"title": "BANNER MIOLO [PHONE]",
+		"children": ["list-context.image-list#core-banner-phone"]
+	},
+
+	"list-context.image-list#core-banner-phone": {
+		"children": ["slider-layout#core-banner"],
+		"props": {
+			"preload": true,
+			"height": 300,
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-miolo-banner-phone.png",
+					"description": "Vono Sopas cremosas e deliciosas",
+					"link": {
+						"url": "/vono"
+					}
+				}
+			]
+		}
+	},
+
+	//SLIDER BANNER MIOLO
+	"slider-layout#core-banner": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true
+		}
+	}
+}

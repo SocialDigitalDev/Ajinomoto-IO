@@ -1,0 +1,35 @@
+{
+	"modal-layout#search-bar": {
+		"title": "MODAL BARRA DE BUSCA",
+		"children": ["modal-actions.close", "search-bar"],
+		"props": {
+			"blockClass": "modal--search-desktop"
+		}
+	},
+
+	"modal-actions.close": {
+		"title": "BOTAO FECHAR",
+		"props": {
+			"label": "x",
+			"blockClass": "search-bar"
+		}
+	},
+
+	"search-bar": {
+		"title": "SEARCH BAR",
+		"blocks": ["autocomplete-result-list.v2"],
+		"props": {
+			"hasIconLeft": true,
+			"openAutocompleteOnFocus": true,
+			"autocompleteFullWidth": true,
+			"placeholder": "Buscar na Loja Ajinomoto"
+		}
+	},
+
+	"autocomplete-result-list.v2": {
+		"blocks": ["product-summary.shelf"],
+		"props": {
+			"maxSuggestedProducts": 2
+		}
+	}
+}

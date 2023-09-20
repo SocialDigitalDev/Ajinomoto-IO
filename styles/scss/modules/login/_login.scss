@@ -1,0 +1,166 @@
+.contentAlwaysWithOptions {
+	background: #fff0de;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.loginOptionsContainer {
+		.formTitle {
+			color: #e60012;
+			text-align: center;
+			font-family: Open Sans;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 118.682%; /* 23.736px */
+		}
+		.button {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.accessCodeOptionBtn {
+			
+			:global(.vtex-button) {
+				border-radius: 20px;
+				border: 1px solid #3c3c3c;
+				background: #fff;
+				max-width: 264px;
+				margin: 0 auto;
+			}
+			:global(.vtex-button__label) {
+				:first-child {
+					color: #a7a7a7;
+					text-align: center;
+					font-family: $OpenSans;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 16px;
+					text-transform: none;
+				}
+			}
+		}
+		.emailPasswordOptionBtn {
+			:global(.vtex-button) {
+				border-radius: 20px;
+				border: 1px solid #3c3c3c;
+				background: #fff;
+				max-width: 264px;
+				margin: 0 auto;
+			}
+			:global(.vtex-button__label) {
+				:first-child {
+					color: #000;
+					text-align: center;
+					font-family: $OpenSans;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					text-transform: none;
+				}
+			}
+		}
+	}
+
+	.contentForm {
+		max-width: 334px;
+		.formTitle {
+			color: #000;
+			font-family: $OpenSans;
+			font-weight: $bold;
+			line-height: normal;
+		}
+		.inputContainer {
+			:global(.vtex-input-prefix__group) {
+				border: 1px solid #ffd4a1;
+				background-color: white !important;
+				&:focus {
+					border-color: #ffd4a1;
+				}
+
+				:global(.vtex-styleguide-9-x-input) {
+					color: #8d8d8d !important;
+					font-weight: 400;
+					font-family: $OpenSans;
+					font-size: 14px;
+					line-height: normal;
+					height: 40px;
+					text-align: center;
+				}
+			}
+		}
+		.formFooter {
+			.sendButton {
+				:global(.vtex-button) {
+					border-radius: 20px;
+					background: #fff;
+					border: 1px solid #ffd4a1;
+					height: 40px;
+					padding: 0;
+					outline: 0;
+					min-width: 130px;
+				}
+				:global(.vtex-button__label) {
+					:first-child {
+						color: #000;
+						font-family: $OpenSans;
+						font-size: 14px;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+						text-transform: none;
+					}
+				}
+			}
+
+			.backButton {
+				:global(.vtex-button) {
+					height: 40px;
+					padding: 0;
+					outline: 0;
+				}
+				:global(.vtex-button__label) {
+					:first-child {
+						color: #000;
+						font-family: $OpenSans;
+						font-size: 14px;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+						text-transform: none;
+					}
+				}
+			}
+		}
+		.formLinkContainer {
+			.forgotPasswordLink {
+				color: #000;
+				font-family: $OpenSans;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				text-decoration: underline;
+			}
+
+			.dontHaveAccount {
+				color: #fff;
+				font-family: $OpenSans;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				border-radius: 20px;
+				background: #e60012;
+				width: 100%;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.footerLayout {
+	padding: 45px 0 57px;
+	@include media(">phone", "<=tablet") {
+		padding: 40px 0;
+	}
+	@include media("<=phone") {
+		padding: 24px 0 40px;
+	}
+	
+	:global(.vtex-store-components-3-x-container) {
+		max-width: 1170px;
+		@include media(">desktop") {
+			max-width: 1366px;
+		}
+	}
+
+	&--footer-mobile {
+        :global(.vtex-store-components-3-x-container) {
+		    padding: 0 14px;
+        }
+	}
+}

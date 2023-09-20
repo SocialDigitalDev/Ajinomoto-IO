@@ -5,7 +5,6 @@
 			"header-layout.mobile"
 		]
 	},
-
 	"header.full": {
 		"blocks": [
 			"header-layout.desktop",
@@ -16,11 +15,12 @@
 			"fullWidth": false
 		}
 	},
-
 	"header-layout.desktop": {
-		"title": "Header Desktop",
+		"title": "HEADER DESKTOP",
 		"children": [
-			"helmet-component"
+			"helmet-component",
+			"sticky-layout#header-desktop",
+			"whatsapp-floating-button"
 		],
 		"props": {
 			"blockClass": "header-desktop",
@@ -28,11 +28,12 @@
 			"fullWidth": false
 		}
 	},
-
 	"header-layout.mobile": {
-		"title": "Header Mobile",
+		"title": "HEADER MOBILE",
 		"children": [
-			"helmet-component"
+			"helmet-component",
+			"sticky-layout#header-mobile",
+			"whatsapp-floating-button"
 		],
 		"props": {
 			"blockClass": "header-mobile",

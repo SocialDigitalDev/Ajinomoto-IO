@@ -1,0 +1,63 @@
+{
+	// DESKTOP e TABLET
+	"responsive-layout.desktop#quem-somos": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": ["flex-layout.row#banner-intitucional"]
+	},
+
+	"responsive-layout.tablet#quem-somos": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["flex-layout.row#banner-intitucional"]
+	},
+
+
+	"flex-layout.row#banner-intitucional": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-intitucional"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-intitucional": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/sobre-ajinomoto.png",
+			"headline": "# Sobre a Ajinomoto",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-institucional"],
+			"textPosition": "center",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#quem-somos": {
+		"title": "BANNER PRINCIPAL [PHONE]",
+		"children": ["flex-layout.row#banner-intitucional-phone"]
+	},
+
+	"flex-layout.row#banner-intitucional-phone": {
+		"title": "BANNER PRINCIPAL -INFOCARD",
+		"children": ["info-card#banner-intitucional-phone"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"info-card#banner-intitucional-phone": {
+		"title": "BANNER",
+		"props": {
+			"isFullModeStyle": true,
+			"imageUrl": "assets/img/sobre-ajinomoto-mobile.png",
+			"headline": "# Sobre a Ajinomoto",
+			"callToActionMode": "none",
+			"blockClass": ["fullbanner-institucional"],
+			"textPosition": "center",
+			"textAlignment": "center",
+			"textMode": "rich-text"
+		}
+	}
+}

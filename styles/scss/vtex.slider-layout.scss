@@ -1,1 +1,47 @@
 @import "./variables/all";
+
+@import "./modules/home/slider-layout";
+
+@import "./modules/shelf/slider-layout";
+
+@import "./modules/food-service/slider-layout";
+
+.paginationDotsContainer {
+    bottom: -15px;
+    .paginationDot {
+        border-radius: 10px;
+        border: 1px solid $primary;
+        background: $white;
+        height: 10px;
+        width: 10px;
+        &--isActive {
+            background: $primary;
+        }
+    }
+}
+
+.sliderArrows  {
+    margin: 0;
+    &.sliderLeftArrow  {
+        @include media(">=desktop") {
+            left: -40px;
+        }
+    }
+
+    &.sliderRightArrow  {
+        @include media(">=desktop") {
+            right: -40px;
+        }
+    }
+
+    .caretIcon {
+        color: $primary;
+    }
+    
+    &:disabled {
+        .caretIcon {
+            opacity: 0.65;
+        }
+    }
+}
+

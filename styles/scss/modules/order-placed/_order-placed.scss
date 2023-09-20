@@ -1,0 +1,198 @@
+.orderPlacedWrapper {
+	margin-bottom: 100px;
+	max-width: 1366px;
+	margin: auto;
+}
+
+.section--confirmation {
+	:global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons) {
+		:global(.vtex-button) {
+			background: $primary;
+			color: $white;
+			border: none;
+			outline: 0;
+			height: 40px;
+		}
+	}
+}
+
+.section--notices {
+	.noticesList {
+		background: $white;
+		.noticeListItem {
+			border-color: $gray-27;
+			font-family: $OpenSans;
+			:global(.vtex-button) {
+				background: $black;
+				border: none;
+				outline: 0;
+				height: 40px;
+			}
+		}
+	}
+}
+
+.barCodeContainer {
+	.barCodeWrapper {
+		border-color: $primary;
+
+		.barCodeCopyButtonWrapper {
+			border-color: $primary;
+			:global(.vtex-button) {
+				&:hover {
+					background: $primary;
+					:global(.vtex-button__label) {
+						color: $white;
+					}
+				}
+				:global(.vtex-button__label) {
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.printButtonWrapper {
+		:global(.vtex-button) {
+			background: $primary;
+			color: $white;
+			border: none;
+			outline: 0;
+			height: 40px;
+		}
+	}
+}
+
+.bankInvoiceEmbedWrapper {
+	:global(.vtex-button) {
+		&:hover {
+			background: $primary;
+			:global(.vtex-button__label) {
+				color: $white;
+			}
+		}
+		:global(.vtex-button__label) {
+			color: $primary;
+		}
+	}
+}
+
+.orderPlacedMainWrapper {
+	background: $white;
+	padding: 30px;
+    width: 100%;
+    margin-top: 0;
+    @include media("<=phone") {
+        padding: 20px 14px 30px;
+    }
+
+	.orderNumber {
+		color: $black;
+	}
+
+	.orderDatetime {
+		color: $black;
+        font-weight: $medium;
+	}
+
+	.orderSoldBy {
+		color: $gray-2;
+		.orderSeller {
+			color: $black;
+			font-weight: $medium;
+		}
+	}
+
+    .orderOptionsWrapper  {
+        .updateOrderButton, .cancelOrderButton  {
+            display: none;
+        }
+        
+        .myOrdersButton  {
+            :global(.vtex-button) {
+                background: $primary;
+                color: $white;
+                border: none;
+                outline: 0;
+                height: 42px;
+            }
+        }
+    }
+
+	.customerInfoListContainer {
+		.customerInfoListName,
+		.customerInfoListEmail,
+		.customerInfoListDocument,
+		.customerInfoListPhone {
+			color: $gray-2;
+            word-break: break-all;
+		}
+
+		.orderPaymentItem {
+			color: $gray-2;
+			.paymentGroup {
+				color: $black;
+                font-weight: $medium;
+			}
+		}
+	}
+
+	.section--pickupPackages,
+	.section--paymentMethods {
+		border-color: $gray-27;
+	}
+
+	.packageHeaderColumn {
+		.packageDeliveryTitle {
+			color: $black;
+			font-weight: $semi-bold;
+		}
+
+		.packageShippingEstimate,
+		.packageSLA {
+			color: $black;
+		}
+
+		.packageAddressWrapper .addressContainer {
+			color: $gray-2;
+		}
+	}
+
+	.productList {
+		.productListItem {
+			padding-bottom: 5px;
+		}
+		.productInfoColumn {
+			justify-content: flex-start;
+			.productName,
+			.productQuantity {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: $regular;
+				line-height: normal;
+			}
+		}
+		.productPrice {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: $semi-bold;
+			line-height: normal;
+		}
+	}
+
+	.section--deliveryPackages {
+		border-color: $gray-27;
+	}
+
+	.totalListWrapper {
+		.totalListItem--Items,
+		.totalListItem--Discounts,
+		.totalListItem--Shipping {
+			border-bottom: 1px solid $gray-27;
+		}
+	}
+}

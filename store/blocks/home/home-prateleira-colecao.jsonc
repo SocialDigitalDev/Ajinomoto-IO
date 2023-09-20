@@ -1,0 +1,40 @@
+{
+	//HOME - PRATELEIRA 1
+	"flex-layout.row#home-colecao": {
+		"title": "HOME COLEÇÃO",
+		"children": ["info-card#home-colecao", "list-context.product-list#home-colecao"],
+		"props": {
+			"blockClass": ["home-colecao", "home-section"],
+			"preventHorizontalStretch": false
+		}
+	},
+
+	"info-card#home-colecao": {
+		"title": "INFO CARD COLEÇÃO",
+		"props": {
+			"id": "home-colecao",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/svg/panda/ico_panda-colecao-home.svg",
+			"headline": "## Coleção de Sabores",
+			"subhead": "O AjiPanda fez uma seleção dos **melhores kits** para você!",
+			"callToActionMode": "button",
+			"callToActionText": "VER TODOS",
+			"callToActionUrl": "/",
+			"blockClass": "home-colecao",
+			"textAlignment": "left",
+			"textMode": "rich-text"
+		}
+	},
+
+	"list-context.product-list#home-colecao": {
+		"title": "COLECAO DE SABORES",
+		"blocks": ["product-summary.shelf"],
+		"children": ["slider-layout#shelf-collection"],
+		"props": {
+			"maxItems": 4,
+			"skusFilter": "ALL",
+			"orderBy": "OrderByTopSaleDESC"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "flex-layout.row#produtos-ajinomoto": {
+        "title": "SECTION - PRODUTOS AJINOMOTO",
+		"children": ["info-card#produtos-ajinomoto"],
+		"props": {
+			"blockClass": ["institucional--quem-somos","institucional--produtos"]
+		}
+	},
+
+	"info-card#produtos-ajinomoto": {
+		"title": "PRODUTOS",
+		"props": {
+			"isFullModeStyle": false,
+            "imageUrl": "assets/img/sobre-ajinomoto-produtos-ajinomoto.png",
+			"headline": "## Mas, afinal, os produtos AJINOMOTO fazem mal?",
+			"subhead": "Os produtos da Ajinomoto são desenvolvidos por especialistas em nutrição e sabor. Nosso principal produto, o AJI-NO-MOTO®, por exemplo, pode substituir parte do sal nas receitas e reduzir em até 37% o sódio nas refeições, deixando o prato saboroso e sem excesso de sal.",
+			"callToActionMode": "none",
+			"blockClass": ["institucional", "institucional--produtos-ajinomoto"],
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text"
+		}
+	}
+}

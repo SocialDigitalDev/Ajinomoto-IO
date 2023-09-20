@@ -1,0 +1,20 @@
+{
+    "store.custom#politica-de-privacidade": {
+        "path": "/institucional/politica-de-privacidade"
+    },
+    "store.custom#politica-de-frete": {
+        "path": "/institucional/politica-de-frete"
+    },
+    "store.custom#trocas-e-devolucoes": {
+        "path": "/institucional/trocas-e-devolucoes"
+    },
+    "store.custom#duvidas-frequentes": {
+        "path": "/institucional/duvidas-frequentes"
+    },
+    "store.custom#quem-somos": {
+        "path": "/institucional/quem-somos"
+    },
+    "store.custom#food-service": {
+        "path": "/food-service"
+    }
+}

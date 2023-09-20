@@ -1,0 +1,315 @@
+.infoCardContainer {
+	&--home-deals {
+		padding: 0 20px;
+		border-right: 1px solid $gray-14;
+
+		@include media(">desktop") {
+			padding: 0 40px;
+		}
+
+		@include media("<=tablet") {
+			padding: 0 12px;
+		}
+
+		@include media("<=phone") {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: center;
+			width: 89%;
+			padding: 0;
+			height: 36px;
+			overflow: hidden;
+		}
+	}
+
+	&--home-brands {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&--home-colecao {
+		background: $orange-2;
+
+		@include media(">phone", "<=tablet") {
+			flex-direction: column;
+		}
+
+		@include media("<=phone") {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			margin-bottom: 20px;
+			justify-content: space-between;
+			padding: 0 8px;
+		}
+	}
+
+	&--home-sobre {
+		align-items: flex-start;
+	}
+
+}
+
+.infoCardTextContainer {
+	&--home-deals {
+		padding: 0;
+		width: auto;
+
+		@include media(">phone", "<=tablet") {
+			width: 113px;
+		}
+
+		.container--home-deals {
+			margin: 0;
+		}
+
+		.heading--home-deals,
+		.infoCardHeadline--home-deals {
+			color: $primary;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			padding: 0;
+			margin: 0;
+
+			@include media("<=tablet") {
+				font-size: 12px;
+			}
+		}
+
+		.paragraph--home-deals,
+		.infoCardSubhead--home-deals {
+			color: $gray-4;
+			font-family: $OpenSans;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			padding: 0;
+			margin: 0;
+			text-align: left;
+
+			@include media("<=tablet") {
+				font-size: 12px;
+			}
+		}
+	}
+
+	&--home-brands {
+		padding: 0;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+		.container--home-brands {
+			.paragraph--home-brands {
+				margin: 0;
+				color: $primary;
+				font-family: $OpenSans;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: $semi-bold;
+				line-height: normal;
+				text-decoration-line: none;
+				@media (max-width: 320px) {
+					font-size: 12px;
+				}
+
+				.link--home-brands {
+					color: $primary;
+					text-align: center;
+					display: block;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&--home-colecao {
+		padding: 0;
+		min-width: 204px;
+
+		@include media("<=tablet") {
+			max-width: 204px;
+			margin-right: 4px;
+			align-items: center;
+		}
+
+		.infoCardHeadline--home-colecao {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 27px;
+			font-style: normal;
+			font-weight: $extra-bold;
+			line-height: normal;
+		}
+
+		.infoCardSubhead--home-colecao {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+
+		.container--home-colecao {
+			.wrapper--home-colecao {
+				.heading--home-colecao {
+					color: $gray-2;
+					font-family: $OpenSans;
+					font-size: 27px;
+					font-style: normal;
+					font-weight: $extra-bold;
+					line-height: normal;
+					margin: 0 0 15px;
+				}
+
+				.paragraph--home-colecao {
+					color: $gray-2;
+					font-family: $OpenSans;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+
+	&--home-sobre {
+		align-items: flex-start;
+
+		@include media("<=phone") {
+			align-items: center;
+		}
+
+		.paragraph--home-sobre {
+			color: $gray-2;
+			font-family: $OpenSans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0;
+
+			@include media("<=phone") {
+				text-align: center;
+			}
+
+			.strong--home-sobre {
+				color: $primary;
+				font-size: 20px;
+				font-weight: $bold;
+				text-transform: uppercase;
+			}
+		}
+
+		.headingLevel2--home-sobre {
+			color: $gray-2;
+			leading-trim: both;
+			text-edge: cap;
+			font-family: $OpenSans;
+			font-size: 50px;
+			font-style: normal;
+			font-weight: $bold;
+			line-height: normal;
+			margin: 20px 0 60px;
+
+			@include media(">phone", "<=tablet") {
+				margin: 20px 0 30px;
+			}
+
+			@include media("<=phone") {
+				font-size: 30px;
+				margin: 20px 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.infoCardImageContainer {
+	&--home-deals {
+		width: auto;
+		margin-right: 10px;
+	}
+
+	&--home-brands {
+		width: 100%;
+		max-width: 126px;
+		background: $white;
+		height: auto;
+		margin-bottom: 10px;
+
+		.infoCardImage--home-brands {
+			border-radius: 100%;
+			border: 1px solid $gray-18;
+			background-color: $white;
+			box-shadow: 0px 5px 5px 0px $gray-18;
+		}
+	}
+
+	&--home-colecao {
+		text-align: center;
+		min-width: 108px;
+		margin-right: 20px;
+
+		@include media("<desktop") {
+			margin-right: 0;
+			width: 85px;
+			min-width: 79px;
+			margin-right: 0;
+		}
+	}
+}
+
+.infoCardCallActionContainer {
+	&--home-colecao {
+		margin: 10px 0;
+
+		:global(.vtex-button) {
+			background: transparent;
+			border-radius: 20px;
+			border: 1px solid $black;
+			width: 173px;
+			height: 40px;
+
+			:global(.vtex-button__label) {
+				color: $black;
+				font-family: $OpenSans;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: $extra-bold;
+				line-height: normal;
+			}
+		}
+	}
+
+	&--home-sobre {
+		:global(.vtex-button) {
+			outline: 0;
+			border: none;
+			border-radius: 10px;
+			background: #A53127;
+			width: 200px;
+			height: 40px;
+			padding: 0;
+
+			:global(.vtex-button__label) {
+				font-family: $Montserrat;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: $medium;
+				line-height: normal;
+				text-transform: none;
+			}
+		}
+	}
+}

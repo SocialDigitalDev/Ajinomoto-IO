@@ -1,0 +1,105 @@
+{
+	// DESKTOP
+	"responsive-layout.desktop#food-service": {
+		"title": "BANNER FOODSERVICE [DESKTOP]",
+		"children": ["flex-layout.row#banner-food-service"]
+	},
+
+	"flex-layout.row#banner-food-service": {
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-desktop"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"list-context.image-list#food-service-banner-desktop": {
+		"title": "BANNER FOODSERVICE [DESKTOP]",
+		"children": ["slider-layout#food-service-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service.png"
+				}
+			]
+		}
+	},
+
+	//TABLET
+
+	"responsive-layout.tablet#food-service": {
+		"title": "BANNER FOODSERVICE [TABLET]",
+		"children": ["list-context.image-list#food-service-banner-tablet"]
+	},
+
+
+	"flex-layout.row#banner-food-service-tablet": {
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-tablet"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"list-context.image-list#food-service-banner-tablet": {
+		"title": "BANNER FOODSERVICE [TABLET]",
+		"children": ["slider-layout#food-service-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service-tablet.png"
+				}
+			]
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#food-service": {
+		"title": "BANNER FOODSERVICE [PHONE]",
+		"children": ["flex-layout.row#banner-food-service-phone"]
+	},
+
+	"flex-layout.row#banner-food-service-phone": {
+		"title": "BANNER FOODSERVICE - CONTAINER",
+		"children": ["list-context.image-list#food-service-banner-mobile"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+
+	"list-context.image-list#food-service-banner-mobile": {
+		"title": "BANNER FOODSERVICE [PHONE]",
+		"children": ["slider-layout#food-service-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service-mobile.png"
+				}
+			]
+		}
+	},
+
+	"slider-layout#food-service-banner": {
+		"title": "SLIDER BANNER FOOD SERVICE",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"showNavigationArrows": "desktopOnly",
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "main-banner-food-service"
+		}
+	}
+}

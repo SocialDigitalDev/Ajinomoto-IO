@@ -1,0 +1,97 @@
+{
+  ///////////// SUBMNENU 5
+  "vtex.menu@2.x:submenu#position-5": {
+    "title": "SUBMNENU 5",
+    "children": [
+      "menu-item#sub-position-5-item-1",
+      "menu-item#sub-position-5-item-2",
+      "menu-item#sub-position-5-item-3",
+      "menu-item#sub-position-5-item-4",
+      "menu-item#sub-position-item-todos"
+    ],
+    "props": {
+      "blockClass": ["submenu-list", "submenu-list__fifth"]
+    }
+  },
+  
+  "menu-item#sub-position-5-item-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Azeite de Oliva",
+        "text": "Azeite de Oliva"
+      },
+      "iconProps": {
+        "id": "azeite",
+        "size": 32,
+        "viewBox": "0 0 12 47"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  
+  "menu-item#sub-position-5-item-2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tomates",
+        "text": "Tomates"
+      },
+      "iconProps": {
+        "id": "tomate",
+        "size": 32,
+        "viewBox": "0 0 33 34"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-5-item-3": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Molho Shoyu",
+        "text": "Molho Shoyu"
+      },
+      "iconProps": {
+        "id": "shoyu",
+        "size": 32,
+        "viewBox": "0 0 17 35"
+      },
+      "iconToTheRight": true
+    }
+  },
+  
+  "menu-item#sub-position-5-item-4": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Carne",
+        "text": "Carne"
+      },
+      "iconProps": {
+        "id": "carne",
+        "size": 32,
+        "viewBox": "0 0 45 33"
+      },
+      "iconToTheRight": true
+    }
+  }
+}

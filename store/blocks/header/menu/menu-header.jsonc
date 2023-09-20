@@ -1,0 +1,248 @@
+{
+	"flex-layout.row#header-menu": {
+		"title": "MENU DESKTOP",
+		"children": ["vtex.menu@2.x:menu#category-menu_desk"],
+		"props": {
+			"blockClass": "header--menu"
+		}
+	},
+	
+	"vtex.menu@2.x:menu#category-menu_desk": {
+		"children": [
+			"menu-item#marcas",
+			"menu-item#position-1",
+			"menu-item#position-2",
+			"menu-item#position-3",
+			"menu-item#position-4",
+			"menu-item#position-5",
+			"menu-item#position-6",
+			"menu-item#position-7",
+			"menu-item#foodService",
+			"menu-item#ofertas"
+			
+		],
+		"props": {
+			"blockClass": "category-menu_desk"
+		}
+	},
+	
+	"menu-item#marcas": {
+		"props": {
+			"id": "menu-item-marcas",
+			"blockClass": [
+				"top-menu-level-1",
+				"top-menu"
+			],
+			"experimentalOptimizeRendering": true,
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Marcas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Marcas",
+				"href": ""
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#marcas"]
+	},
+
+
+	"menu-item#position-1": {
+		"props": {
+			"id": "menu-item-position-1",
+			"blockClass": [
+				"top-menu-level-1",
+				"top-menu"
+			],
+			"experimentalOptimizeRendering": true,
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Temperos",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Temperos",
+				"href": "/temperos"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-1"]
+	},
+	
+	"menu-item#position-2": {
+		"props": {
+			"id": "menu-item-position-2",
+			"blockClass": [
+				"top-menu-level-2",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Bebidas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Bebidas",
+				"href": "/bebidas"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-2"]
+	},
+	
+	"menu-item#position-3": {
+		"props": {
+			"id": "menu-item-position-3",
+			"blockClass": [
+				"top-menu-level-3",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Sopas",
+				"href": "/sopas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Sopas"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-3"]
+	},
+	
+	"menu-item#position-4": {
+		"props": {
+			"id": "menu-item-position-4",
+			"blockClass": [
+				"top-menu-level-4",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Caldos",
+				"href": "/caldos",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Caldos"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-4"]
+	},
+	
+	"menu-item#position-5": {
+		"props": {
+			"id": "menu-item-position-5",
+			"blockClass": [
+				"top-menu-level-5",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Azeites",
+				"href": "/azeites",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Azeites"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-5"]
+	},
+	
+	"menu-item#position-6": {
+		"props": {
+			"id": "menu-item-position-6",
+			"blockClass": [
+				"top-menu-level-6",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Molhos",
+				"href": "/molhos",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Molhos"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-6"]
+	},
+
+	"menu-item#position-7": {
+		"props": {
+			"id": "menu-item-position-7",
+			"blockClass": [
+				"top-menu-level-6",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Culinários",
+				"href": "/culinarios",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Culinários"
+			}
+		}
+		// "blocks": ["vtex.menu@2.x:submenu#position-7"]
+	},
+	
+	"menu-item#foodService": {
+		"props": {
+			"id": "menu-item-foodService",
+			"blockClass": [
+				"top-menu-foodService",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Food Service",
+				"href": "/food-service",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Food Service"
+			}
+		}
+	},
+
+	"menu-item#ofertas": {
+		"props": {
+			"id": "menu-item-ofertas",
+			"blockClass": [
+				"top-menu-ofertas",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": true,
+			"itemProps": {
+				"text": "Ofertas",
+				"href": "/ofertas",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Ofertas"
+			}
+		}
+	},
+
+	"menu-item#assinatura": {
+		"props": {
+			"id": "menu-item-assinatura",
+			"blockClass": [
+				"top-menu-assinatura",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Plano de Assinatura",
+				"href": "#",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Plano de Assinatura"
+			}
+		}
+	}
+}

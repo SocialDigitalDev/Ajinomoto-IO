@@ -1,0 +1,95 @@
+{
+	"flex-layout.row#menusobre-mob": {
+		"children": ["flex-layout.col#menu-sobre-mob"],
+		"props": {
+			"blockClass": "links-mb"
+		}
+	},
+
+	"flex-layout.col#menu-sobre-mob": {
+		"children": ["disclosure-layout#menu-sobre-footer"],
+		"props": {
+			"blockClass": "ajinomoto--links"
+		}
+	},
+
+	"disclosure-layout#menu-sobre-footer": {
+		"children": [
+			"disclosure-trigger#menu-sobre-footer",
+			"disclosure-content#menu-sobre-footer"
+		],
+		"props": {
+			"blockClass": "ajinomoto--sobre"
+		}
+	},
+
+	"disclosure-trigger#menu-sobre-footer": {
+		"children": ["rich-text#title-disclosure_about"],
+		"props": {
+			"blockClass": ["menu-footer", "menu-sobre-footer"]
+		}
+	},
+
+	"rich-text#title-disclosure_about": {
+        "title": "Título - Sobre [mobile]",
+
+		"props": {
+			"text": "Sobre a Ajinomoto",
+			"blockClass": "title--footer-links-mb"
+		}
+	},
+
+	"disclosure-content#menu-sobre-footer": {
+        "title": "Menu - Sobre Nós Mobile",
+		"children": [
+			"vtex.menu@2.x:menu#menu-sobre"
+			// "vtex.menu@2.x:menu#sobre--footer_mob"
+		],
+		"props": {
+			"blockClass": "menu-sobre-footer"
+		}
+	}
+
+	// "vtex.menu@2.x:menu#sobre--footer_mob": {
+	// 	"title": "Links conta Footer [mobile]",
+	// 	"children": [
+	// 		"menu-item#menu-footer-col-3-slot-1_mob",
+	// 		"menu-item#menu-footer-col-3-slot-2_mob"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": ["menu-footer", "accordion-footer"]
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-3-slot-1_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-3-slot-1_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Quem Somos",
+	// 			"text": "Quem Somos",
+	// 			"href": "/institucional/quem-somos"
+	// 		}
+	// 	}
+	// },
+
+	// "menu-item#menu-footer-col-3-slot-2_mob": {
+	// 	"props": {
+	// 		"type": "custom",
+	// 		"id": "menu-footer-col-3-slot-2_mob",
+	// 		"blockClass": "menu-footer-item",
+	// 		"highlight": false,
+	// 		"itemProps": {
+	// 			"type": "internal",
+	// 			"noFollow": false,
+	// 			"tagTitle": "Contatos",
+	// 			"text": "Contatos",
+	// 			"href": "#"
+	// 		}
+	// 	}
+	// }
+}

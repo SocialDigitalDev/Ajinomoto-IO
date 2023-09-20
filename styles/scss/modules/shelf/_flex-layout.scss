@@ -1,0 +1,79 @@
+.flexRow--shelf-info {
+	// display: flex;
+	// align-items: flex-end;
+	// height: 100%;
+}
+// BOTAO DE COMPRA
+.flexRow--buy-button-shelf {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+
+	.flexRowContent--available {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.stretchChildrenWidth {
+			&:first-child {
+				max-width: 80px;
+				width: 100% !important;
+				margin: 0 8px;
+			}
+			&:last-child {
+				max-width: 75px;
+				width: 100% !important;
+			}
+		}
+	}
+
+	:global(.vtex-button) {
+		background-color: $green-2;
+		width: 100%;
+		height: 40px;
+		border: none;
+		outline: 0;
+		border-radius: 0 0px 10px 0;
+
+		:global(.vtex-button__label) {
+			padding: 0 !important;
+			:global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+				font-size: 0;
+				line-height: normal;
+
+				&::before {
+					content: url(assets/svg/ico_bag-shelf.svg);
+					width: 26px;
+					height: 23px;
+					display: inline-block;
+				}
+			}
+		}
+
+		&:disabled {
+			background-color: $white;
+			border-radius: 0;
+			max-width: none;
+
+			:global(.vtex-button__label)
+				:global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+				color: $gray-2;
+				font-family: $OpenSans;
+				font-weight: $semi-bold;
+				font-size: 12px;
+				line-height: normal;
+				text-transform: capitalize;
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//highlights
+.flexRow--highlights-shelf {
+	position: relative;
+	z-index: 1;
+    width: 100%;
+	min-height: 25px;	
+}

@@ -1,0 +1,48 @@
+{
+	"flex-layout.row#food-service-shelf": {
+        "title": "LINHA FOOD SERVICE",
+		"children": ["flex-layout.col#food-service-shelf"],
+        "props": {
+			"blockClass": "linha-food-service"
+		}
+	},
+
+	"flex-layout.col#food-service-shelf": {
+		"children": [
+			"rich-text#food-service-shelf",
+			"list-context.product-list#topSale"
+		],
+		"props": {
+			"blockClass": "linha-food-service"
+		}
+	},
+
+	"rich-text#food-service-shelf": {
+		"title": "TITULO",
+		"props": {
+			"text": "## Linha Food Service",
+			"textAlignment": "CENTER",
+            "textPosition": "CENTER",
+			"blockClass": "title--food-service"
+		}
+	},
+
+	"list-context.product-list#topSale": {
+		"title": "LISTA DE PRODUTOS",
+		"blocks": ["product-summary.shelf"],
+		"children": ["list-context-renderer#topSale"],
+		"props": {
+			"orderBy": "OrderByTopSaleDESC",
+			"maxItems": 12,
+			"blockClass": "food-service"
+		}
+	},
+
+	"list-context-renderer#topSale": {
+		"props": {
+			"listElement": "ul",
+			"itemElement": "li",
+			"blockClass": "food-service"
+		}
+	}
+}

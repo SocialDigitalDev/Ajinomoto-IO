@@ -1,0 +1,23 @@
+.savings--shelf-badges {
+	background: $primary;
+	border-radius: 10px 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+	font-family: $OpenSans;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;		
+	padding: 0 10px;
+	font-size: 14px;
+	color: $white;
+	position: absolute;
+    top: 0;
+    left: 0;
+	.savingsPercentage--shelf-badges {
+		margin-right: 5px
+	}
+}

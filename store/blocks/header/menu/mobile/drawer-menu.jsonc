@@ -1,0 +1,40 @@
+{
+	"drawer#menu-mobile": {
+		"title":  "MENU MOBILE",
+		"children": ["menu#drawer"],
+		"props": {
+			"blockClass": "header-menu-mobile"
+		}
+	},
+	
+	"menu#drawer": {
+		"children": [
+			"flex-layout.row#client-area",
+			"disclosure-layout-group#group-submenu",
+			"menu-item#ofertas",
+			"menu-item#foodService"
+			// "menu-item#assinatura",
+		],
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "item-mobile"
+		}
+	},
+	
+	"disclosure-layout-group#group-submenu": {
+		"children": [
+			"disclosure-layout#submenu-mob-marcas",
+			"disclosure-layout#submenu-mob-1",
+			"disclosure-layout#submenu-mob-2",
+			"disclosure-layout#submenu-mob-3",
+			"disclosure-layout#submenu-mob-4",
+			"disclosure-layout#submenu-mob-5",
+			"disclosure-layout#submenu-mob-6",
+			"disclosure-layout#submenu-mob-7"
+		],
+		"props": {
+			"maxVisible": "one",
+			"blockClass": "header-menu-mobile"
+		}
+	}	
+}

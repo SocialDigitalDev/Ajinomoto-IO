@@ -1,0 +1,45 @@
+{
+    "disclosure-layout#submenu-mob-4": {
+        "title": "Menu Mobile 4",
+        "children": [
+            "menu-item#position-4"
+            // "disclosure-trigger#submenu-4",
+            // "disclosure-content#submenu-4"
+        ],
+        "props": {
+           
+            "blockClass": "submenu"
+        }
+    },
+
+    "disclosure-trigger#submenu-4": {
+        "title": "TRIGGER SUBMNENU 4",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "rich-text#submenu-4"
+        ]
+    },
+    
+    "rich-text#submenu-4": {
+        "title": "SUBMENU 4",
+        "props": {
+            "text": "Culinários",
+            "blockClass": "header-menu-mobile"
+        }
+    },
+    
+    "disclosure-content#submenu-4": {
+        "title": "ITENS SUBMENU 4",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "menu-item#sub-position-4-item-1",
+            "menu-item#sub-position-4-item-2",
+            "menu-item#sub-position-4-item-3",
+            "menu-item#sub-position-4-item-4"
+        ]
+    }
+}

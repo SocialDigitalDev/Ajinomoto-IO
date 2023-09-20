@@ -1,0 +1,22 @@
+.sliderArrows--main-banner  {
+    height: 34px;
+    width: 34px;
+    background: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 100%;
+    border: 1px solid $white;
+    &.sliderLeftArrow--main-banner  {
+        @include media(">=desktop") {
+            left: 4%  !important;
+        }
+    }
+
+    &.sliderRightArrow--main-banner {
+        @include media(">=desktop") {
+            right: 4%  !important;
+        }
+    }
+
+    .caretIcon--main-banner {
+        color: $white !important;
+    }
+}

@@ -1,0 +1,216 @@
+:global(.vtex-flex-layout-0-x-flexRow--menu-texto-wrapper) {
+	.container {
+		max-width: 1366px;
+		margin: auto;
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--history-brand),
+:global(.vtex-flex-layout-0-x-flexRow--video-content),
+:global(.vtex-flex-layout-0-x-flexRow--items-mission-vision),
+:global(.vtex-flex-layout-0-x-flexRow--content-values) {
+	:global(.vtex-store-components-3-x-container) {
+		max-width: 1170px;
+		margin: 0 auto 10px auto;
+
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+		}
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--items-mission-vision) {
+	:global(.vtex-store-components-3-x-container) {
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+			padding: 0;
+		}
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--content-values) {
+	:global(.vtex-store-components-3-x-container) {
+		@include media("<=desktop") {
+			margin: 0 auto 0px auto;
+			padding: 0;
+		}
+	}
+}
+
+.infoCardContainer--info-card-institucional {
+	width: 100%;
+	height: 500px;
+	max-width: 1920px;
+	text-transform: uppercase;
+
+	@include media("<=desktop") {
+		height: 271px;
+	}
+}
+
+.infoCardCallActionContainer {
+	&--info-card-institucional {
+		:global(.vtex-button) {
+			position: relative;
+			top: 154px;
+			background: none;
+			appearance: none;
+			border: none;
+			cursor: initial;
+			font-size: 45px;
+			text-align: left;
+			font-weight: $bold;
+			font-family: $OpenSans;
+
+			@include media("<=desktop") {
+				top: 90px;
+				font-size: 29px;
+			}
+
+			:global(.vtex-button__label) {
+				padding: 0 1em 0 0;
+			}
+		}
+	}
+}
+
+//QUEM SOMOS
+.infoCardContainer--fullbanner-institucional {
+    width: 100% !important;;
+    height: 100%;
+    min-height: 300px;
+	background-color: $black;
+	@include media(">phone", "<=tablet") {
+		min-height: 215px;
+	}
+	@include media("<=phone") {
+		min-height: 378px;
+	}
+}
+
+.infoCardTextContainer--fullbanner-institucional {
+	.heading--fullbanner-institucional {
+		color: $white;
+		text-align: center;
+		text-shadow: 0px -4px 11px rgba(0, 0, 0, 0.25);
+		font-family: $OpenSans;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+
+		@include media ("<=phone") {
+			font-weight: $bold;
+		}
+
+	}
+}
+
+
+.infoCardContainer--institucional--origem {
+	justify-content: center;
+	align-items: flex-start;
+	gap: 60px;
+	@include media(">phone", "<=tablet") {
+		gap: 15px;
+	}
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+.infoCardContainer--institucional--produtos-ajinomoto {
+	background: $orange-2;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 60px;
+	@include media(">phone", "<=tablet") {
+		gap: 15px;
+	}
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+.infoCardImageContainer--institucional--origem,
+.infoCardImageContainer--institucional--produtos-ajinomoto  {
+    text-align: center;
+	width: auto;
+}
+
+.infoCardTextContainer--institucional--origem {
+	width: auto;
+	max-width: 724px;
+	@include media(">phone", "<=tablet") {
+		max-width: 610px;
+	}
+	.container--institucional--origem {
+		margin: 0;
+
+		.heading--institucional--origem {
+			color: $primary;
+			font-family: $OpenSans;
+			font-size: 40px;
+			font-style: normal;
+			font-weight: $extra-bold;
+			line-height: normal;
+			margin: 0 0 40px;
+			@include media("<=phone") {
+				text-align: center;
+			}
+			@include media("<=tablet") {
+				margin: 0 0 20px;
+			}
+		}
+
+		.paragraph--institucional--origem {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0 0 20px;
+		}
+	}
+}
+
+.infoCardTextContainer--institucional--produtos-ajinomoto {
+    width: auto;
+	max-width: 724px;
+	justify-content: center;
+    height: 100%;
+	@include media(">phone", "<=tablet") {
+		max-width: 610px;
+	}
+    .container--institucional--produtos-ajinomoto {
+		margin: 0;
+
+		.heading--institucional--produtos-ajinomoto {
+			color: $red-3;
+			font-family: $OpenSans;
+			font-size: 25px;
+			font-style: normal;
+			font-weight: $bold;
+			line-height: normal;
+			margin: 0 0 40px;
+			@include media("<=tablet") {
+				margin: 0 0 20px;
+			}
+		}
+
+		.paragraph--institucional--produtos-ajinomoto {
+			color: $black;
+			font-family: $OpenSans;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $regular;
+			line-height: normal;
+			margin: 0 0 20px;
+		}
+	}
+}

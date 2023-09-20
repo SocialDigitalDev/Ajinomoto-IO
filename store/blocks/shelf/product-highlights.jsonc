@@ -1,0 +1,46 @@
+{
+	"flex-layout.row#highlights-shelf": {
+		"children": ["flex-layout.col#highlights-shelf"],
+		"props": {
+			"blockClass": "highlights-shelf"
+		}
+	},
+
+	"flex-layout.col#highlights-shelf": {
+		"children": [
+			"vtex.product-highlights@2.x:product-highlights#shelf-promotion",
+			"vtex.product-highlights@2.x:product-highlights#shelf-collection"
+		],
+		"props": {
+			"blockClass": "highlights-shelf"
+		}
+	},
+
+	"vtex.product-highlights@2.x:product-highlights#shelf-promotion": {
+		"children": ["product-highlight-text#shelf-promotion"],
+		"props": {
+			"type": "promotion",
+			"blockClass": ["shelf", "shelf-promotion"]
+		}
+	},
+	"product-highlight-text#shelf-promotion": {
+		"props": {
+			"message": "{highlightName}",
+			"blockClass": "shelf-promotion"
+		}
+	},
+
+	"vtex.product-highlights@2.x:product-highlights#shelf-collection": {
+		"children": ["product-highlight-text#shelf-collection"],
+		"props": {
+			"type": "collection",
+			"blockClass": ["shelf", "shelf-collection"]
+		}
+	},
+	"product-highlight-text#shelf-collection": {
+		"props": {
+			"message": "{highlightName}",
+			"blockClass": "shelf-collection"
+		}
+	}
+}

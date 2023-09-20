@@ -1,0 +1,27 @@
+{
+	"sticky-layout#header-mobile": {
+		"children": [
+			"flex-layout.row#topbar-header",
+			"flex-layout.row#header-mobile",
+			"flex-layout.row#header-bottom-mobile"
+		],
+		"props": {
+			"blockClass": ["sticky--header", "ajinomoto--header-mobile"]
+		}
+	},
+
+	"flex-layout.row#header-mobile": {
+		"children": ["flex-layout.row#header-container-mobile"],
+		"props": {
+			"blockClass": "header--content"
+		}
+	},
+
+	
+	"flex-layout.row#header-bottom-mobile": {
+		"children": ["search-bar"],
+		"props": {
+			"blockClass": ["header--content", "search-bar"]
+		}
+	}
+}

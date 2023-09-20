@@ -1,0 +1,56 @@
+{
+    "disclosure-layout#submenu-mob-1": {
+        "title": "Menu Mobile 1",
+        "children": [
+            "menu-item#position-1"
+            // "disclosure-trigger#submenu-1",
+            // "disclosure-content#submenu-1"
+        ],
+        "props": {            
+            "blockClass": "submenu"
+        }
+    },
+    
+    "disclosure-trigger#submenu-1": {
+        "title": "TRIGGER SUBMNENU 1",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "rich-text#submenu-1"
+        ]
+    },
+    
+    "rich-text#submenu-1": {
+        "title": "SUBMENU 1",
+        "props": {
+            "text": "Bebidas", 
+            "blockClass": "header-menu-mobile"
+        }
+    },
+    
+    "disclosure-content#submenu-1": {
+        "title": "Conteúdo do submenu Mobile 1",
+        "props": {
+            "blockClass": "header-menu-mobile"
+        },
+        "children": [
+            "menu-item#sub-position-1-item-1",
+            "menu-item#sub-position-1-item-2",
+            "menu-item#sub-position-1-item-3",
+            "menu-item#sub-position-1-item-4",
+            "menu-item#sub-position-1-item-5",
+            "menu-item#sub-position-1-item-6",
+            "menu-item#sub-position-1-item-7",
+            "menu-item#sub-position-1-item-8",
+            "menu-item#sub-position-1-item-9",
+            "menu-item#sub-position-1-item-10",
+            "menu-item#sub-position-1-item-11",
+            "menu-item#sub-position-1-item-12",
+            "menu-item#sub-position-1-item-13",
+            "menu-item#sub-position-1-item-14",
+            "menu-item#sub-position-1-item-15",
+            "menu-item#sub-position-item-todos"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"store.product": {
+		"children": [
+			"responsive-layout.desktop#content-product",
+            "responsive-layout.tablet#content-product",
+            "responsive-layout.phone#content-product"
+		]
+	},
+
+    "responsive-layout.desktop#content-product":  {
+        "children": [
+            "flex-layout.row#img-product-info",
+            "flex-layout.row#buy-together-desktop",
+            "custom-pdp-recipies",
+            "flex-layout.row#qvvt"
+        ]
+    }
+}

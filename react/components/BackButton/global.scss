@@ -1,0 +1,30 @@
+@import "../../../styles/scss/variables/all";
+
+.link{
+    
+    &--back-button{
+        text-decoration: none;
+        width: 255px!important;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $primary;
+        border-radius: 20px;
+        margin-right: 10px;
+        
+        &::before{
+            content: "";
+            background: url('../../../assets/svg/ico_arrow-back-button.svg') no-repeat;
+            background-size: contain;
+            width: 15.83px;
+            height: 13px;
+            display: block;
+            margin-right: 10px;
+        }
+
+        .label{
+            color: $primary;
+        }
+    }
+}

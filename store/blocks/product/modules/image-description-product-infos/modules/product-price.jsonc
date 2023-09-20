@@ -1,0 +1,48 @@
+{
+    "flex-layout.row#product-price--container": {
+        "title": "Preço do Produto",
+        "props": {
+            "blockClass": "product-price--container",
+            "colSizing": "auto",
+            "colJustify": "left"
+        },
+        "children": [
+            "flex-layout.col#product-price--column"
+            // "rich-text#pix-discount-msg"
+        ]
+    },
+
+    "flex-layout.col#product-price--column": {
+        "props": {
+            "blockClass": "product-price--column",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "product-list-price",
+            "product-selling-price"
+            
+        ]
+    },
+
+    "product-list-price": {
+        "props": {
+            "blockClass": "product-price--list-price",
+            "message": "{listPriceValue}"
+        }
+    },
+
+    "product-selling-price": {
+        "props": {
+            "blockClass": "product-price--selling-price",
+            "message": "{sellingPriceValue}"
+        }
+    },
+
+    "rich-text#pix-discount-msg": {
+        "title": "Mensagem de desconto para PIX",
+        "props": {
+            "blockClass": "pix-discount-msg",
+            "text": "**- 10%** com pagamento no **PIX**"
+        }
+    }
+}

@@ -1,0 +1,248 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+@-webkit-keyframes lds-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes lds-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.coupon-custom {
+    padding: 10px 0;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width:1025px) {
+            width: 100%;
+        }
+
+        label {
+            font-family: $OpenSans;
+            font-weight: $regular;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $gray-5;
+            display: none;
+
+            @media (max-width:1024px) {
+                display: none;
+            }
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: flex-start;
+            border-radius: 0px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            width: 100%;
+            @media (max-width:1025px) {
+                width: 100%;
+            }
+
+            &.fieldset-error {
+                border-color: $red-1;
+            }
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                @media (max-width:1025px) {
+                    width: 100%;
+                }
+
+                span {
+                    font-family: $OpenSans;
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: $red-1;
+                }
+            }
+
+            input {
+                height: 45px;
+                border-radius: 0;
+                padding: 0 36px;
+                font-weight: $regular;
+                font-size: 14px;
+                color: $black;
+                
+                @media (min-width:1026px) {
+                    width: 97%;
+                    border: 1px solid $gray-11;
+                }
+                
+                @media (max-width:1025px) {
+                    width: 100%;
+                    border: 1px solid $gray-11;
+                    max-width: 100%;
+                }
+
+                &:autofill,
+                &:-webkit-autofill {
+                    box-shadow: 0 0 0 40px $white inset !important;
+                }
+
+                &::-webkit-input-placeholder,
+                &::-moz-placeholder,
+                &:-ms-input-placeholder,
+                &::-ms-input-placeholder,
+                &::placeholder{
+                    color: $gray-1;
+                }
+            }
+
+            button {
+                padding: 8px 15px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                cursor: pointer;
+                width: 172px;
+                height: 45px;
+                border-radius: 0;
+                transition: all 0.15s ease-in-out;
+                border: 0;
+                background: $gray-1;
+                color: $white;
+            }
+        }
+    }
+
+    .coupon-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+        .coupon-label {
+            font-family: $OpenSans;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $gray-5;
+        }
+
+        .coupon-code {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                font-family: $OpenSans;
+                font-weight: 400;
+                font-size: 14px;
+                color: $gray-13;
+            }
+
+            button {
+                padding: 0;
+                margin: 0;
+                height: auto;
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+
+                i{
+                    display: block
+                }
+            }
+        }
+    }
+
+    .coupon-message {
+        font-family: $OpenSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $gray-1;
+        text-align: left;
+        width: 100%;
+    }
+
+    .error-text {
+        width: 100%;
+        margin-bottom: 10px;
+        color: $red-1;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $black;
+        margin: 0 0 10px;
+
+        @media (min-width: 1026px) {
+            display: none;
+        }
+    }
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 18px;
+
+    div {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        border: 2px solid $white;
+        border-radius: 50%;
+        -webkit-animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
+        animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
+        border-color: $white transparent transparent transparent;
+
+        &:nth-child(1) {
+            -webkit-animation-delay: -.45s;
+            animation-delay: -.45s
+        }
+
+        &:nth-child(2) {
+            -webkit-animation-delay: -.3s;
+            animation-delay: -.3s
+        }
+
+        &:nth-child(3) {
+            -webkit-animation-delay: -.15s;
+            animation-delay: -.15s
+        }
+    }
+}

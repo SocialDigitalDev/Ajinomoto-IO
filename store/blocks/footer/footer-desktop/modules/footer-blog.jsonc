@@ -1,0 +1,35 @@
+{
+	"flex-layout.col#footer-blog": {
+		"title": "BLOG - FOOTER",
+		"children": ["info-card#blog-footer"],
+		"props": {
+			"blockClass": "footer-blog",
+			"horizontalAlign": "left"
+		}
+	},
+
+	"flex-layout.row#footer-blog": {
+		"title": "BLOG - FOOTER",
+		"children": ["info-card#blog-footer"],
+		"props": {
+			"blockClass": "footer-blog",
+			"preserveLayoutOnMobile": true
+		}
+	},
+
+	"info-card#blog-footer": {
+		"title": "BLOG -INFOCARD",
+		"props": {
+			"id": "blog-footer",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/svg/panda/ico_panda-blog-footer.svg",
+			"headline": "Conheça o nosso blog!",
+			"callToActionText": "Confira",
+			"callToActionUrl": "https://www.saboresajinomoto.com.br/blog",
+			"callToActionLinkTarget": "_blank",
+			"blockClass": "blog-footer",
+			"textAlignment": "left"
+		}
+	}
+}

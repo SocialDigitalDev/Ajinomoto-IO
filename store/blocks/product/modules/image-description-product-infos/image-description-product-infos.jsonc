@@ -1,0 +1,81 @@
+{
+    // DESKTOP AND TABLET
+
+    "flex-layout.row#img-product-info": {
+        "title": "Página de Produto [DESKTOP E TABLET]",
+        "props": {
+            "blockClass": [
+                "ajinomoto--img-product-info-desktop",
+                "ajinomoto--img-product-info-tablet",
+                "img-product-info"
+            ]
+        },
+        "children": [
+            "flex-layout.col#image-description-info",
+            "flex-layout.col#product-info-components"
+        ]
+    },
+    
+    "flex-layout.col#image-description-info": {
+        "title": "Coluna: Imagem, Descrição e Informações Nutricionais",
+        "props": {
+            "blockClass": "image-description-info"
+        },
+        "children": [
+            "stack-layout#img-product",
+            "flex-layout.row#disclosure-specifications",
+            "flex-layout.row#disclosure-nutritional-info"
+        ]
+    },
+    
+    "flex-layout.col#product-info-components": {
+        "title": "Coluna: Nome, Preço e Botão comprar",
+        "props": {
+            "blockClass": "product-info-components",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#flag-savings-wishlist",
+            "flex-layout.row#product-name--container",
+            "custom-ean-number",
+            "similar-products",
+            "condition-layout.product#product-availability",
+            "share#pdp",
+            "custom-pdp-characteristics"
+        ]
+    },
+
+    // MOBILE
+
+    "flex-layout.row#img-product-info-mobile": {
+        "title": "Página de Produto [MOBILE]",
+        "props": {
+            "blockClass": [
+                "ajinomoto--img-product-info-mobile",
+                "img-product-info"
+            ]
+        },
+        "children": [
+            "flex-layout.col#image-description-info-mobile"
+        ]
+    },
+
+    "flex-layout.col#image-description-info-mobile": {
+        "title": "Coluna Única: Página de Produto Completa",
+        "props": {
+            "blockClass": "image-description-info"
+        },
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#flag-savings-wishlist",
+            "stack-layout#img-product",
+            "flex-layout.row#product-name--container",
+            "similar-products",
+            "condition-layout.product#product-availability",
+            "custom-pdp-characteristics",
+            "flex-layout.row#disclosure-specifications",
+            "flex-layout.row#disclosure-nutritional-info"
+        ]
+    }
+}

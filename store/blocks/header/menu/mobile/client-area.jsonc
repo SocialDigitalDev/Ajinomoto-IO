@@ -1,0 +1,91 @@
+{
+    "flex-layout.row#client-area": {
+		"title": "AREA DO CLIENTE",
+		"children": [
+			"flex-layout.col#client-area"
+		],
+		"props": {
+			"blockClass": "client-area"
+		}
+	},
+
+	"flex-layout.col#client-area": {
+		"children": [
+			"flex-layout.row#client-area-title",
+			"react-list-account-mobile"
+		],
+		"props": {
+			"blockClass": "client-area"
+		}
+	},
+
+	"flex-layout.row#client-area-title": {
+		"children": [
+			"rich-text#client-area-title"
+		],
+		"props": {
+			"blockClass": "client-area--title"
+		}
+	},
+	
+	"rich-text#client-area-title": {
+		"props": {
+			"text": "Área do cliente",
+			"blockClass": "client-area-title"
+		}
+	},
+
+	"react-list-account-mobile": {
+		"children": [
+			"flex-layout.row#client-area-login",
+			"flex-layout.row#client-area-orders",
+			"flex-layout.row#client-area-wishlist"
+		],
+		"props": {
+			"blockClass": "client-area-links"
+		}
+	},
+	
+	"flex-layout.row#client-area-login": {
+		"children": [
+			"custom-login"
+		],
+		"props": {
+			"blockClass": "client-area-login"
+		}
+	},
+
+    "flex-layout.row#client-area-orders": {
+		"children": [
+			"link#link-orders"
+		],
+		"props": {
+			"blockClass": "client-area-orders"
+		}
+	},
+	
+	"link#link-orders": {
+		"props": {
+			"href": "/account#/orders",
+			"label": "Meus pedidos",
+			"blockClass": "link-my-orders"
+		}
+	},
+
+    "flex-layout.row#client-area-wishlist": {
+		"children": [
+			"link#link-wishlist"
+		],
+		"props": {
+			"blockClass": "client-area-wishlist"
+		}
+	},
+
+	"link#link-wishlist": {
+		"props": {
+			"href": "/account#/wishlist",
+			"label": "Favoritos",
+			"blockClass": "link-wishlist"
+		}
+	}
+}

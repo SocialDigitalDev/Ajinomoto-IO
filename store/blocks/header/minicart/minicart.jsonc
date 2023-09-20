@@ -1,0 +1,94 @@
+{
+	"minicart.v2": {
+		"props": {
+			"blockClass": "minicart-v2",
+			// "maxDrawerWidth": 900,
+			"quantityDisplay": "always"
+			// "customPixelEventName": "addToCart"
+		},
+		"children": ["minicart-base-content"]
+	},
+	"minicart-base-content": {
+		"blocks": ["minicart-empty-state"],
+		"children": [
+			// "flex-layout.row#minicart-footer-shipping-bar",
+			"minicart-product-list",
+			"flex-layout.row#minicart-footer-title",
+			"flex-layout.row#minicart-footer"
+		]
+	},
+	"flex-layout.row#minicart-footer-shipping-bar": {
+		"children": ["flex-layout.col#minicart-footer-shipping-bar"],
+		"props": {
+			"blockClass": "shipping-bar",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#minicart-footer-shipping-bar": {
+		"props": {
+			"blockClass": "shipping-bar"
+		},
+		"children": ["react-shipping-bar"]
+	},
+	"react-shipping-bar": {
+		"props": {
+			"shippingValue": 30000,
+			"initialMessage": "Faltam {valor} para conseguir frete grátis",
+			"successMessage": "Você ganhou Frete Grátis!"
+		}
+	},
+	"flex-layout.row#minicart-footer-title": {
+		"props": {
+			"blockClass": "minicart-footer-title"
+		},
+		"children": ["rich-text#minicart-footer-title"]
+	},
+	"rich-text#minicart-footer-title": {
+		"title": "Título minicart",
+		"props": {
+			"blockClass": "minicart-footer-title",
+			"text": "Resumo do pedido"
+		}
+	},
+	"flex-layout.row#minicart-footer": {
+		"props": {
+			"blockClass": "minicart-footer"
+		},
+		"children": ["flex-layout.col#minicart-footer"]
+	},
+	"flex-layout.col#minicart-footer": {
+		"props": {
+			"blockClass": "minicart-footer"
+		},
+		"children": ["react-minicart-footer"]
+	},
+	"react-minicart-footer": {
+		"title": "Cupons",
+		"props": {
+			"cupomDesconto": true,
+			"cupomVendedor": false,
+			"frete": true
+		}
+	},
+	"minicart-checkout-button": {
+		"props": {
+			"finishShoppingButtonLink": "/checkout/#/cart"
+		}
+	},
+	"minicart-summary": {
+		"blocks": ["checkout-summary.compact#minicart"]
+	},
+	"checkout-summary.compact#minicart": {
+		"children": ["summary-totalizers#minicart"],
+		"props": {
+			"totalizersToShow": ["Items", "Discounts"]
+		}
+	},
+
+	"product-list": {
+		"blocks": ["product-list-content-desktop", "product-list-content-mobile"]
+	},
+	"minicart-product-list": {
+		"blocks": ["product-list#minicart"]
+	}
+}

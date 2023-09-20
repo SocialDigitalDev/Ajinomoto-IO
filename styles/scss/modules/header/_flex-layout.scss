@@ -1,0 +1,111 @@
+.flex {
+	
+	&Row {
+		
+		&--header {
+			
+			&--topbar {
+				background: $primary;
+				max-width: 1920px;
+				margin: 0 auto;
+				
+				:global(.vtex-store-components-3-x-container) {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					max-width: 100%;
+					padding: 0;
+				}
+			}
+			
+			&--content {
+				background: $white;
+				max-width: 1920px;
+				margin: 0 auto;
+				
+				:global(.vtex-store-components-3-x-container) {
+					width: 100%;
+					max-width: 1170px;
+					padding: 16px 0 31px;
+					@include media("<=tablet") {
+						padding: 7px 15px;
+					}
+					@include media(">desktop") {
+						max-width: 1366px;
+					}
+				}
+			}
+			
+			&--infos-client {
+				align-items: center;
+				display: flex;
+			}		
+			
+			&--search-mobile {
+				@include media(">phone") {
+					display: none;
+				}
+			}
+		}
+
+		&--search-bar {
+			@include media("<=phone") {
+				display: none;
+			}
+		}
+		
+		&Content {			
+			&--header {				
+				&--container {					
+					&-top {
+						display: flex;
+						flex-flow: row nowrap;
+						align-items: center;
+						justify-content: space-between;
+						width: 100%;
+						margin-bottom: 15px;
+						@include media(">desktop") {
+							justify-content: space-around;
+						}
+						
+						&-mobile {
+							justify-content: space-between;
+							.stretchChildrenWidth {
+								width: initial !important;
+								text-align: center;
+							}
+						}
+					}
+				}
+				
+				&--infos-client {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: center;
+					justify-content: space-between;
+					gap: 0 15px;
+					@include media(">desktop") {
+						gap: 0 20px;
+					}
+					@include media("<=tablet") {
+						justify-content: space-between;
+						gap: unset;
+					}
+				}
+			}
+		}
+	}
+	
+	&ColChild {
+		&--header{
+			&--container{
+				display: none;
+				&:first-child {
+					display: block;
+				}
+			}
+		}
+	}
+}

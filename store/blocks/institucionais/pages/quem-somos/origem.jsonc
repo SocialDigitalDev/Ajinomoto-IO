@@ -1,0 +1,23 @@
+{
+    "flex-layout.row#origem": {
+		"children": ["info-card#origem"],
+		"props": {
+			"blockClass": "institucional--quem-somos"
+		}
+	},
+
+	"info-card#origem": {
+		"title": "ORIGEM",
+		"props": {
+			"isFullModeStyle": false,
+            "imageUrl": "assets/img/sobre-ajinomoto-origem.png",
+			"headline": "## Origem",
+			"subhead": "Em 1908, o Dr. Kikunae Ikeda, pesquisador e professor da Universidade Imperial de Tóquio, descobriu o quinto gosto do paladar humano a partir de experimentos com algas marinhas. Não era nenhum dos quatro gostos já conhecidos (doce, salgado, azedo e amargo) e ele o batizou de umami, que significa “saboroso” em japonês.\n\n Em 1909, nasce a empresa Ajinomoto com seu primeiro produto, o AJI-NO-MOTO®, que significa “essência do sabor” e é o próprio gosto umami. Hoje, estamos presentes em 36 países, com mais de 120 fábricas e cerca de 33 mil funcionários em todo o mundo.",
+			"callToActionMode": "none",
+			"blockClass": ["institucional--origem"],
+			"textPosition": "right",
+			"textAlignment": "left",
+			"textMode": "rich-text"
+		}
+	}
+}

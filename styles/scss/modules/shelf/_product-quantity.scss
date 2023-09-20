@@ -1,0 +1,57 @@
+.summaryContainer--shelf {
+    .quantitySelectorContainer--shelf  {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .quantitySelectorTitle--shelf {
+        display: none;
+    }
+    .quantitySelectorStepper--shelf {
+
+        :global(.vtex-numeric-stepper__input) {
+            color: $gray-2;
+            font-family: $OpenSans;
+            font-weight: $bold;
+            font-size: 20px;
+            line-height: normal;
+            text-transform: capitalize;
+            height: 40px;
+            max-width: 44px;
+            border: none;
+            background: none;
+            @include media("<=phone") {
+                width: 43px;
+            }
+        }
+        
+        :global(.vtex-numeric-stepper__plus-button),
+        :global(.vtex-numeric-stepper__minus-button) {
+            width: auto !important;
+            height: 40px;
+            border: none;
+            background: none;
+        }
+
+        :global(.vtex-numeric-stepper__minus-button__text) {
+            font-size: 0;
+
+            &::before {
+                content: url(assets/svg/ico_minus-shelf.svg);
+                width: 18px;
+                height: 3px;
+            }
+        }
+
+        :global(.vtex-numeric-stepper__plus-button__text) {
+            font-size: 0;
+
+            &::before {
+                content: url(assets/svg/ico_plus-shelf.svg);
+                width: 18px;
+                height: 18px;
+            }
+        }
+        
+    }
+}

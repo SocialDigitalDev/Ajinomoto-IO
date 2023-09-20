@@ -1,0 +1,118 @@
+.flexRow--breadcrumb {
+	margin: 20px auto 40px;
+	max-width: 1170px;
+	width: 100%;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+	@include media("<desktop") {
+		padding: 0 14px;
+	}
+	@include media(">phone", "<=tablet") {
+		margin: 20px 0;
+	}
+	@include media("<=phone") {
+		margin: 9px 0 20px;
+	}	
+}
+
+.flexRow--category--filter {
+	.flexRowContent--category--filter {
+		padding: 20px;
+		border: 1px solid $gray-22;
+	}
+}
+
+.flexRow--category--text {
+	max-width: 1170px;
+	margin: 0 auto;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+	@include media(">phone","<desktop") {
+		padding: 0 14px;
+	}
+	
+	.flexRowContent--category--text {
+		.stretchChildrenWidth {
+			justify-content: flex-start;
+		}
+	}
+	.flexCol--category--text-content {
+		max-width: 455px;
+		margin-bottom: 40px;
+		@include media("<=tablet") {
+			max-width: 490px;
+			margin-bottom: 0;
+		}
+
+		.flexColChild--category--text-content {
+			@include media("<=phone") {
+				padding: 0 14px;
+				&:last-child {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.flexRow--category--main {
+	max-width: 1170px;
+	margin: 0 auto;
+	@include media(">desktop") {
+		max-width: 1366px;
+	}
+	@include media("<desktop") {
+		padding: 0 14px;
+	}
+}
+
+.flexRow--category-destaques {
+	.flexRowContent--category-destaques {
+		display: flex;
+		@include media("<=phone") {
+			justify-content: center;
+		}
+		.stretchChildrenWidth{
+			padding: 0 5px;
+			max-width: 90px;
+		}
+	}
+}
+
+.flexCol--category-destaques {
+	background: $primary;
+	padding: 15px 15px 24px;
+	border-radius: 20px;
+	margin: 30px 0;
+	height: auto;
+	display: none;
+	@include media("<=tablet") {
+		margin-bottom: 25px;
+	}
+	@include media("<=phone") {
+		border-radius: 0;
+		padding: 15px 6px;
+	}
+}
+
+.flexCol--category--text-image {
+	display: none;
+	@include media(">tablet") {
+		margin-left: 137px;
+	}
+}
+
+.flexRowContent--orderBy-filter {
+	display: flex;
+	margin-bottom: 30px;
+	gap: 30px;
+	@include media("<desktop") {
+		padding: 0 14px;
+	}
+	@include media("<=phone") {
+		justify-content: space-evenly;
+		gap: 10px;
+	}
+}

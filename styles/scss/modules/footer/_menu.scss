@@ -1,0 +1,23 @@
+.menuContainerNav--footer-menu {
+    .menuContainer--footer-menu {
+        .styledLinkContainer {
+            margin: 0 0 10px;
+            padding: 0;
+            .styledLink {
+                display: block;
+                &Content {
+                    color: $gray-7;
+                    font-family: $Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: $regular;
+                    line-height: normal;
+                    @include media("<=tablet") {
+                        font-family: $OpenSans;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

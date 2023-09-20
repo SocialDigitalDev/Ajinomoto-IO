@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#error-prateleira": {
+        "title": "Vitrine: Você também pode gostar disso",
+        "props": {
+            "blockClass": [
+                "ajinomoto--prateleira-error-desktop",
+                "qvvt"
+            ]
+        },
+        "children": [
+            "flex-layout.col#error-prateleira"            
+        ]
+    },
+
+    "flex-layout.col#error-prateleira": {
+        "title": "Coluna: Você também pode gostar disso",
+        "props": {
+            "blockClass": "qvvt--column",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#pdp-prateleira-error",
+            "list-context.product-list#pdp-prateleira-error"
+        ]
+    },
+
+    "rich-text#pdp-prateleira-error": {
+		"title": "Título: Você também pode gostar disso",
+		"props": {
+			"text": "## Você também pode gostar disso",
+			"textPosition": "CENTER",
+			"blockClass": [
+                "shelf-titles",
+                "qvvt--shelf-title"
+            ]
+		}
+	},
+	
+	"list-context.product-list#pdp-prateleira-error": {
+		"title": "Prateleira: Você também pode gostar disso",
+		"blocks": ["product-summary.shelf"],
+		"children": ["slider-layout#shelf"],
+		"props": {
+			"maxItems": 12,
+			"skusFilter": "ALL",
+            "orderBy": "OrderByReleaseDateDESC"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.link{
+
+    &--empty-cart-button{
+        text-decoration: none;
+
+        .label{
+            background: $primary;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+    }
+}

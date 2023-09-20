@@ -1,0 +1,174 @@
+{
+	"category-highlights#category-destaques": {
+		"title": "DESTAQUES ICONES",
+		"children": ["flex-layout.col#category-destaques"]
+	},
+
+	"category-highlights#search-ajipanda": {
+		"title": "DESTAQUES IMAGEM",
+		"children": ["flex-layout.col#search-ajipanda"]
+	},
+
+	"flex-layout.row#category-text": {
+		"title": "TEXTO DE APOIO / DESTAQUES",
+		"children": [
+			"flex-layout.col#searchtitle",
+			"category-highlights#search-ajipanda"
+		],
+		"props": {
+			"blockClass": "category--text",
+			"preventVerticalStretch": true,
+			"preventHorizontalStretch": true
+		}
+	},
+
+	"flex-layout.col#searchtitle": {
+		"children": [
+			"search-title.v2",
+			"rich-text#category-text",
+			"category-highlights#category-destaques"
+		],
+		"props": {
+			"blockClass": "category--text-content",
+			"preventVerticalStretch": true
+		}
+	},
+
+	"rich-text#category-text": {
+		"title": "TEXTO DE APOIO - PARAGRAFO",
+		"props": {
+			"text": "",
+			"blockClass": "category-text"
+		}
+	},
+
+	"flex-layout.col#search-ajipanda": {
+		"children": [
+			"responsive-layout.desktop#search-ajipanda",
+			"responsive-layout.mobile#search-ajipanda"
+		],
+		"props": {
+			"blockClass": "category--text-image",
+			"preventVerticalStretch": true
+		}
+	},
+
+	"responsive-layout.desktop#search-ajipanda": {
+		"title": "IMAGEM AJIPANDA DESKTOP",
+		"children": ["image#search-ajipanda"]
+	},
+
+	"image#search-ajipanda": {
+		"title": "ICONE AJIPANDA - CATEGORIA",
+		"props": {
+			"src": "assets/img/panda-categoria.png",
+			"blockClass": "category--text-image-content",
+			"maxWidth": 315
+		}
+	},
+
+	"responsive-layout.mobile#search-ajipanda": {
+		"title": "IMAGEM AJIPANDA MOBILE",
+		"children": ["image#search-ajipanda-mobile"]
+	},
+
+	"image#search-ajipanda-mobile": {
+		"title": "ICONE AJIPANDA - CATEGORIA",
+		"props": {
+			"src": "assets/img/panda-categoria-mobile.png",
+			"blockClass": "category--text-image-content",
+			"maxWidth": 315
+		}
+	},
+
+	"flex-layout.col#category-destaques": {
+		"children": [
+			"rich-text#category-destaques",
+			"flex-layout.row#category-destaques"
+		],
+		"props": {
+			"blockClass": "category-destaques"
+		}
+	},
+
+	"rich-text#category-destaques": {
+		"title": "TEXTO",
+		"props": {
+			"text": "Categorias em destaque",
+			"blockClass": "category-destaques"
+		}
+	},
+
+	"flex-layout.row#category-destaques": {
+		"children": [
+			"info-card#category-destaques-1",
+			"info-card#category-destaques-2",
+			"info-card#category-destaques-3",
+			"info-card#category-destaques-4"
+		],
+		"props": {
+			"blockClass": "category-destaques",
+			"colSizing": "auto"
+		}
+	},
+
+	"info-card#category-destaques-1": {
+		"title": "DESTAQUE 1",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/svg/destaques-categoria/ico_frango.svg",
+			"imageActionUrl": "/galinha?map=category-2",
+			"headline": "[Frango](/galinha?map=category-2)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-2": {
+		"title": "DESTAQUE 2",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/svg/destaques-categoria/ico_carne.svg",
+			"imageActionUrl": "/carne?map=category-2",
+			"headline": "[Carne](/carne?map=category-2)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-3": {
+		"title": "DESTAQUE 3",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/svg/destaques-categoria/ico_vegetais.svg",
+			"imageActionUrl": "/legumes?map=category-2",
+			"headline": "[Vegetais](/legumes?map=category-2)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#category-destaques-4": {
+		"title": "DESTAQUE 4",
+		"props": {
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "assets/svg/destaques-categoria/ico_tempero.svg",
+			"imageActionUrl": "/temperos-prontos?map=category-2",
+			"headline": "[Tempera & Prepara](/temperos-prontos?map=category-2)",
+			"callToActionMode": "none",
+			"blockClass": "destaque",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	}
+}

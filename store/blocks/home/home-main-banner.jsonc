@@ -1,0 +1,112 @@
+{
+    "flex-layout.row#home-main-banner": {
+		"title": "HOME BANNER PRINCIPAL",
+		"children": [
+			"responsive-layout.desktop#main-banner",
+			"responsive-layout.tablet#main-banner",
+			"responsive-layout.phone#main-banner"
+		],
+		"props": {
+			"blockClass": "main-banner",
+            "preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"experimentalHideEmptyCols": true,
+			"fullWidth": true
+		}
+	},
+
+	// DESKTOP
+	"responsive-layout.desktop#main-banner": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": [
+			"list-context.image-list#main-banner-desktop"
+		]
+	},
+
+	"list-context.image-list#main-banner-desktop": {
+		"title": "BANNER PRINCIPAL [DESKTOP]",
+		"children": ["slider-layout#main-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-desktop.png"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-desktop.png"
+				}
+			]
+		}
+	},
+
+	// TABLET
+	"responsive-layout.tablet#main-banner": {
+		"title": "BANNER PRINCIPAL [TABLET]",
+		"children": ["list-context.image-list#main-banner-tablet"]
+	},
+	
+	"list-context.image-list#main-banner-tablet": {
+		"children": ["slider-layout#main-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-tablet.png"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-tablet.png"
+				}
+			]
+		}
+	},
+
+	// PHONE
+	"responsive-layout.phone#main-banner": {
+		"title": "BANNER PRINCIPAL [PHONE]",
+		"children": ["list-context.image-list#main-banner-phone"]
+	},
+
+	"list-context.image-list#main-banner-phone": {
+		"children": ["slider-layout#main-banner"],
+		"props": {
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-phone.png"
+				},
+				{
+					"loading": "lazy",
+					"image": "assets/img/home-main-banner-phone.png"
+				}
+			]
+		}
+	},
+
+	// SLIDER MAIN BANNER
+
+	"slider-layout#main-banner": {
+		"title": "SLIDER BANNER PRINCIPAL",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"showNavigationArrows": "desktopOnly",
+			"infinite": true,
+			"fullWidth": true,
+			"blockClass": "main-banner",
+			"autoplay": {
+				"timeout": 3500
+			}
+		}
+	}
+}

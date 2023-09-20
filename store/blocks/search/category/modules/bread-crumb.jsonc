@@ -1,0 +1,13 @@
+{
+	"flex-layout.row#search-breadcrumb": {
+		"title": "BREADCRUMB",
+		"children": [
+			"breadcrumb.search"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"blockClass": "breadcrumb"
+		}
+	}
+}

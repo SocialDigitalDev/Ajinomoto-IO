@@ -1,0 +1,45 @@
+{
+	"disclosure-layout#submenu-mob-2": {
+		"title": "Menu Mobile 2",
+		"children": [
+			"menu-item#position-2"
+			// "disclosure-trigger#submenu-2",
+			// "disclosure-content#submenu-2"
+		],
+		"props": {
+			"blockClass": "submenu"
+		}
+	},
+
+	"disclosure-trigger#submenu-2": {
+		"title": "TRIGGER SUBMNENU 2",
+		"props": {
+			"blockClass": "header-menu-mobile"
+		},
+		"children": ["rich-text#submenu-2"]
+	},
+
+	"rich-text#submenu-2": {
+		"title": "SUBMENU 2",
+		"props": {
+			"text": "Sopas & Cremes",
+			"blockClass": "header-menu-mobile"
+		}
+	},
+
+	"disclosure-content#submenu-2": {
+		"title": "ITENS SUBMENU 2",
+		"props": {
+			"blockClass": "header-menu-mobile"
+		},
+		"children": [
+			"menu-item#sub-position-2-item-1",
+			"menu-item#sub-position-2-item-2",
+			"menu-item#sub-position-2-item-3",
+			"menu-item#sub-position-2-item-4",
+			"menu-item#sub-position-2-item-5",
+			"menu-item#sub-position-2-item-6",
+			"menu-item#sub-position-2-item-7"
+		]
+	}
+}

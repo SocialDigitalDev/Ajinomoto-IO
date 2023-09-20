@@ -1,0 +1,75 @@
+{
+  "store.custom#tapume": {
+    "blocks": [
+      "responsive-layout.desktop#tapume-desktop",
+      "responsive-layout.tablet#tapume-tablet",
+      "responsive-layout.phone#tapume-phone"
+    ],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
+  },
+
+  "responsive-layout.desktop#tapume-desktop": {
+    "children": [
+      "flex-layout.row#tapume"
+    ]
+  },
+
+  "responsive-layout.tablet#tapume-tablet": {
+    "children": [
+      "flex-layout.row#tapume-tablet"
+    ]
+  },
+  "responsive-layout.phone#tapume-phone": {
+    "children": [
+      "flex-layout.row#tapume-phone"
+    ]
+  },
+
+  "flex-layout.row#tapume-tablet": {
+    "children": [
+      "image#logo-tapume-tablet"
+    ],
+    "props": {
+      "blockClass": "tapume"
+    }
+  },
+
+  "flex-layout.row#tapume-phone": {
+    "children": [
+      "image#logo-tapume-phone"
+    ],
+    "props": {
+      "blockClass": "tapume"
+    }
+  },
+
+  "flex-layout.row#tapume": {
+    "children": [
+      "image#logo-tapume"
+    ],
+    "props": {
+      "blockClass": "tapume"
+    }
+  },
+
+  "image#logo-tapume": {
+    "props": {
+      "src": "assets/img/tapume-desk-vtex.png"
+    }
+  },
+
+  "image#logo-tapume-tablet": {
+    "props": {
+      "src": "assets/img/tapume-tab-vtex.png"
+    }
+  },
+
+  "image#logo-tapume-phone": {
+    "props": {
+      "src": "assets/img/tapume-phone-vtex.png"
+    }
+  }
+}

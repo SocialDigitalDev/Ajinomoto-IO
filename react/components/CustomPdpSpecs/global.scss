@@ -1,0 +1,83 @@
+@import "../../../styles/scss/variables/all";
+
+.custom {
+	&-characteristics {
+		&-list {
+			display: flex;
+			justify-content: flex-start;
+
+			.alergenico {
+				&-item {
+					display: none;
+					flex-flow: column;
+					align-items: center;
+					font-size: 13px;
+					max-width: 160px;
+					text-align: center;
+					text-transform: capitalize;
+					margin-right: 10px;
+
+					&::before {
+						width: 67.61px;
+						height: 67.61px;
+						display: block;
+						margin-bottom: 10px;
+					}
+
+					&[data-char*="contém derivados de soja"],
+					&[data-char*=" pode conter soja, trigo, leite, cevada e ovo"] {
+						max-width: 120px;
+						display: flex;
+						&::before {
+							content: "";
+							background: url("../../../assets/svg/caracteristicas/ico_derivado-soja.svg")
+								no-repeat;
+							background-size: contain;
+						}
+					}
+					&[data-char=" pode conter leite, ovo, peixe, trigo, cevada, aveia e centeio (contaminação cruzada em fábrica)"],
+					&[data-char=" pode conter leite e ovo"],
+					&[data-char=" contém fenilalanina"] {
+						display: flex;
+						&::before {
+							content: "";
+							background: url("../../../assets/svg/caracteristicas/ico_leite-ovo-v2.svg")
+								no-repeat;
+							background-size: contain;
+						}
+					}
+					&[data-char=" pode conter trigo, leite, cevada e ovo"] {
+						display: flex;
+						&::before {
+							content: "";
+							background: url("../../../assets/svg/caracteristicas/ico_trigo-cevada.svg")
+								no-repeat;
+							background-size: contain;
+						}
+					}
+					&[data-char=" contém glúten"],
+					&[data-char=" contém glútem"],
+					&[data-char="não contém glúten"],
+					&[data-char="contém glúten"] {
+						display: flex;
+						&::before {
+							content: "";
+							background: url("../../../assets/svg/caracteristicas/ico_contem-glutem.svg")
+								no-repeat;
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
+
+		&-title {
+			font-size: 16px;
+			color: $gray-2;
+
+			@include media("<phone") {
+				margin-top: 30px;
+			}
+		}
+	}
+}
