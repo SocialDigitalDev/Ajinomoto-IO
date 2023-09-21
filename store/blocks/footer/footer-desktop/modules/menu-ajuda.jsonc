@@ -23,7 +23,8 @@
 			"menu-item#ajuda-2",
 			"menu-item#ajuda-3",
 			"menu-item#ajuda-4",
-			"menu-item#ajuda-5"
+			"menu-item#ajuda-ajuda",
+			"menu-item#ajuda-6"
 		],
         "props": {
             "orientation": "vertical",
@@ -95,18 +96,34 @@
 		}
 	},
 
-	"menu-item#ajuda-5": {
+	"menu-item#ajuda-ajuda": {
 		"props": {
-			"id": "menu-item-ajuda-5",
+			"id": "menu-item-ajuda-ajuda",
 			"type": "custom",
 			"iconId": null,
 			"highlight": false,
 			"itemProps": {
 				"type": "external",
-				"href": "",
+				"href": "https://ajinomotosdc.zendesk.com/hc/pt-br",
 				"noFollow": false,
-				"tagTitle": "Link Contatos",
-				"text": "Contatos"
+				"tagTitle": "Central de Ajuda",
+				"text": "Central de Ajuda"
+			}
+		}
+	},
+
+	"menu-item#ajuda-6": {
+		"props": {
+			"id": "menu-item-ajuda-6",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/fale-conosco",
+				"noFollow": false,
+				"tagTitle": "Fale Conosco",
+				"text": "Fale Conosco"
 			}
 		}
 	}

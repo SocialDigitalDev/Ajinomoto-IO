@@ -33,6 +33,22 @@
 		align-items: center;
 		justify-content: center;
         margin-bottom: 3px;
+	}	
+}
+
+.productHighlightText--pdp {
+    &-promotion {
+		display: flex;
+		align-items: center;
+		width: 97px;
+		height: 27px;
+		justify-content: center;
+		background: $primary;
+		color: $white;
+		font-size: 14px;
+		font-weight: $bold;
+		border-radius: 20px;
+		padding: 0 10px;
+		margin-right: 10px;
 	}
-	
 }
