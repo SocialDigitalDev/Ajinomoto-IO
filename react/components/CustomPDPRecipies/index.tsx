@@ -29,7 +29,6 @@ const CustomPDPRecipies = () => {
     // Verifica se o split e gera uma variável contendo todos os itens dos ingredientes já formatados em HTML
     const listIngredients:any = arrIngredients ? 
         arrIngredients.map(
-            // NÃO RETIRAR O ESPAÇO ABAIXO!!!
             item => item === "Massa" || item === `\r\n\r\nRecheio` || item === `\r\n\r\nMassa` || item === "Recheio" ? 
                 <li className="recipe--ingredient item-title"><b>{item}</b></li>
             : <li className="recipe--ingredient">{item}</li>
@@ -45,6 +44,7 @@ const CustomPDPRecipies = () => {
         // Se não houver modo de preparo a lista não será gerada.
         : null;
 
+    // Funções de ativação de tabs
     function setTab1Active() {
         setTab1('active');
         setTab2('');
