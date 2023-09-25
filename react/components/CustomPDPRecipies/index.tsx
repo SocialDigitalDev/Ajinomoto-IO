@@ -24,6 +24,7 @@ const CustomPDPRecipies = () => {
     }
 
     const arrIngredients = recipeItems.ingredientes?.split(';');
+    const arrPreparo = recipeItems.modoPreparo?.split('.');
 
     // Verifica se o split e gera uma variável contendo todos os itens dos ingredientes já formatados em HTML
     const listIngredients:any = arrIngredients ? 
@@ -35,7 +36,14 @@ const CustomPDPRecipies = () => {
         )
         // Se não houver ingredientes a lista não será gerada.
         : null;
-    console.log(arrIngredients)
+
+    // Verifica se o split e gera uma variável contendo todos os itens do modo de preparo já formatados em HTML            
+    const listPreparo:any = arrPreparo ? 
+        arrPreparo.map(
+            item => <li className="recipe--preparation-method-item">{item}.</li>
+        )
+        // Se não houver modo de preparo a lista não será gerada.
+        : null;
 
     function setTab1Active() {
         setTab1('active');
@@ -88,9 +96,9 @@ const CustomPDPRecipies = () => {
                                 </div>
                                 <div className="recipe--preparation-method">
                                     <h4 className="recipe--preparation-method-title">Modo de Preparo</h4>
-                                    <p className="recipe--preparation-method-data">
-                                        {recipeItems.modoPreparo}
-                                    </p>
+                                    <ul className="recipe--preparation-method-data">
+                                        {listPreparo ? listPreparo : null}
+                                    </ul>
                                 </div>
                             </div>
                         : null
