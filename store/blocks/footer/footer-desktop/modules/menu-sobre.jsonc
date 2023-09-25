@@ -18,7 +18,7 @@
 
 	"vtex.menu@2.x:menu#menu-sobre": {
 		"title": "Links Sobre Nós Footer [desktop]",
-		"children": ["menu-item#sobre-1", "menu-item#sobre-2"],
+		"children": ["menu-item#sobre-1"],
 		"props": {
 			"orientation": "vertical",
 			"blockClass": ["footer-menu"]
@@ -37,22 +37,6 @@
 				"noFollow": false,
 				"tagTitle": "Link Quem Somos",
 				"text": "Quem Somos"
-			}
-		}
-	},
-
-	"menu-item#sobre-2": {
-		"props": {
-			"id": "menu-item-atendimento-1",
-			"type": "custom",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "external",
-				"href": "",
-				"noFollow": false,
-				"tagTitle": "Link Contatos",
-				"text": "Contatos"
 			}
 		}
 	}

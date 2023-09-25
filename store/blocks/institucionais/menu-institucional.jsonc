@@ -7,6 +7,7 @@
 			"menu-item#trocas-e-devolucoes",
 			"menu-item#duvidas-frequentes",
 			"menu-item#duvidas-contatos",
+			"menu-item#fale-conosco-institucional",
 			"menu-item#quem-somos"
 		],
 		"props": {
@@ -89,8 +90,24 @@
 				"type": "external",
 				"href": "https://botafogo.zendesk.com/hc/pt-br",
 				"noFollow": false,
-				"tagTitle": "Contatos",
-				"text": "Contatos"
+				"tagTitle": "Central de Ajuda",
+				"text": "Central de Ajuda"
+			}
+		}
+	},
+
+	"menu-item#fale-conosco-institucional": {
+		"props": {
+			"id": "menu-item-institucional",
+			"type": "custom",
+			"highlight": false,
+			"blockClass": ["menu-institucional"],
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/fale-conosco",
+				"noFollow": false,
+				"tagTitle": "Fale Conosco",
+				"text": "Fale Conosco"
 			}
 		}
 	},

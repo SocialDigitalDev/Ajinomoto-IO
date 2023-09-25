@@ -230,5 +230,16 @@
             color: $gray-2;
             line-height: 25px;
         }
+
+        &-item{
+            display: list-item;
+            list-style: decimal;
+            margin-left: 20px;
+            margin-bottom: 10px;
+
+            &:last-child{
+                display: none;
+            }
+        }
     }
 }

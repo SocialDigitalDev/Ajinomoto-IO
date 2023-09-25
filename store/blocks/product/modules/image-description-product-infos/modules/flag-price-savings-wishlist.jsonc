@@ -8,6 +8,8 @@
         },
         "children": [
             "product-price-savings",
+            "vtex.product-highlights@2.x:product-highlights#pdp-promotion",
+            "vtex.product-highlights@2.x:product-highlights#shelf-collection",
             "add-to-list-btn"
         ]
     },
@@ -17,5 +19,20 @@
             "blockClass": "savings-component",
             "message": "{savingsPercentage} OFF"
         }
-    }
+    },
+
+    "vtex.product-highlights@2.x:product-highlights#pdp-promotion": {
+		"children": ["product-highlight-text#pdp-promotion"],
+		"props": {
+			"type": "promotion",
+			"blockClass": ["shelf", "shelf-promotion", "pdp-promotion"]
+		}
+	},
+
+	"product-highlight-text#pdp-promotion": {
+		"props": {
+			"message": "{highlightName}",
+			"blockClass": ["shelf", "shelf-promotion", "pdp-promotion"]
+		}
+	}
 }

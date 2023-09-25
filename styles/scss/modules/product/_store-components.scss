@@ -114,3 +114,9 @@
         color: $gray-2;
     }
 }
+
+:global(.vtex-flex-layout-0-x-flexRow--qvvt){
+    .container{
+        max-width: 1170px;
+    }
+}
