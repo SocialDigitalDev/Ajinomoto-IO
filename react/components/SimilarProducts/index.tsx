@@ -56,9 +56,15 @@ const SimilarProducts = () => {
 
     // Lista os similares vindo de um array e pré-renderiza numa variável a lista de produtos similares para uso na renderização.
     const listSimilars = (item: any) => {
-
+        
         let getSabor = item ? item.map(item =>
-
+            item.productName.includes('Menos Sódio') ?
+            <li className="sabor-item">
+                <a href={item.link} >
+                    {item.Sabor[0]} Menos Sódio
+                </a>
+            </li>
+            :
             <li className="sabor-item">
                 <a href={item.link} >
                     {item.Sabor[0]}
