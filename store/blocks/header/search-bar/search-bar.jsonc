@@ -21,6 +21,7 @@
 		"props": {
 			"hasIconLeft": true,
 			"openAutocompleteOnFocus": true,
+			"autoFocus": true,
 			"autocompleteFullWidth": true,
 			"placeholder": "Buscar na Loja Ajinomoto"
 		}
