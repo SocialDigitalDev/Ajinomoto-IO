@@ -7,7 +7,7 @@
 	},
 	"responsive-layout.tablet#bf-banner-principal-tablet": {
 			"children": [
-					"list-context.image-list#bf-banner-principal-tablet"
+				"list-context.image-list#bf-banner-principal-tablet"
 			]
 	},
 	"responsive-layout.phone#bf-banner-principal-phone": {
@@ -31,7 +31,7 @@
 					"preload": true,
 					"images": [
 							{
-									"image": "assets/img/lp-black-friday/banner-principal-bf.jpg"
+								"image": "assets/img/lp-black-friday/banner-principal-bf.jpg"
 							}
 					]
 			}
@@ -39,19 +39,19 @@
 	"list-context.image-list#bf-banner-principal-tablet": {
 			"title": "Banner Principal Tablet",
 			"children": [
-					"slider-layout#bf-banner-principal"
+				"slider-layout#bf-banner-principal"
 			],
 			"props": {
 					"height": 500,
 					"blockClass": [
-							"ajinomoto--banner-principal-bf",
-							"banner-principal-bf",
-							"banner-principal-bf-tablet"
+						"ajinomoto--banner-principal-bf",
+						"banner-principal-bf",
+						"banner-principal-bf-tablet"
 					],
 					"preload": true,
 					"images": [
 							{
-									"image": "assets/img/lp-black-friday/banner-principal-bf.jpg"
+								"image": "assets/img/lp-black-friday/banner-principal-bf-tab.jpg"
 							}
 					]
 			}
@@ -71,7 +71,7 @@
 					"preload": true,
 					"images": [
 							{
-									"image": "assets/img/lp-black-friday/banner-principal-bf-mobile.jpg"
+								"image": "assets/img/lp-black-friday/banner-principal-bf-phone.jpg"
 							}
 					]
 			}
