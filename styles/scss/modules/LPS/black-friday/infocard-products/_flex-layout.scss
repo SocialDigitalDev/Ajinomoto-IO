@@ -1,0 +1,16 @@
+.flex{
+  &Row {
+    &--info-card-products {
+      max-width: 1338px;
+      margin: 0 auto;
+
+    }
+
+    &Content {
+      &--info-card-row {
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+}

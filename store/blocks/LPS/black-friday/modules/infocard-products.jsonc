@@ -22,7 +22,8 @@
 			},
 			"children": [
 					"rich-text#info-card-title",
-					"flex-layout.row#info-card-products"
+					"flex-layout.row#info-card-products",
+					"rich-text#info-card-button"
 			]
 	},
 
@@ -49,6 +50,15 @@
 			}
 	},
 
+	// Botão
+	"rich-text#info-card-button": {
+		"title": "Título: Ver todos os produtos",
+		"props": {
+			"blockClass": "info-card-button",
+			"text": "[VER TODOS OS PRODUTOS](/black-friday-2023)"
+		}
+	},
+
 	// Infocards de produto
 	"info-card#card-produto-1": {
 			"title": "Info Card de Produto 1",
@@ -56,11 +66,11 @@
 					"id": "info-card-produto-1",
 					"isFullModeStyle": false,
 					"textPosition": "left",
-					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
-					"headline": "Para você",
-					"subhead": "Compras até R$ 89,99",
-					"callToActionText": "DISCOVER",
+					"imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+					"subhead": "R$ 89,99",
+					"callToActionText": "",
 					"callToActionUrl": "#",
+					"callToActionMode": "link",
 					"blockClass": [
 							"info-card-produto",
 							"info-card-produto-1"
@@ -73,11 +83,11 @@
 					"id": "info-card-produto-2",
 					"isFullModeStyle": false,
 					"textPosition": "left",
-					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
-					"headline": "Para você",
-					"subhead": "Compras até R$ 89,99",
-					"callToActionText": "DISCOVER",
+					"imageUrl": "assets/img/lp-black-friday/info-prod-2.jpg",
+					"subhead": "R$ 89,99",
+					"callToActionText": "",
 					"callToActionUrl": "#",
+					"callToActionMode": "link",
 					"blockClass": [
 							"info-card-produto",
 							"info-card-produto-2"
@@ -90,11 +100,11 @@
 					"id": "info-card-produto-3",
 					"isFullModeStyle": false,
 					"textPosition": "left",
-					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
-					"headline": "Para você",
-					"subhead": "Compras até R$ 89,99",
-					"callToActionText": "DISCOVER",
+					"imageUrl": "assets/img/lp-black-friday/info-prod-3.jpg",
+					"subhead": "R$ 89,99",
+					"callToActionText": "",
 					"callToActionUrl": "#",
+					"callToActionMode": "link",
 					"blockClass": [
 							"info-card-produto",
 							"info-card-produto-3"
@@ -107,11 +117,11 @@
 					"id": "info-card-produto-4",
 					"isFullModeStyle": false,
 					"textPosition": "left",
-					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
-					"headline": "Para você",
-					"subhead": "Compras até R$ 89,99",
-					"callToActionText": "DISCOVER",
+					"imageUrl": "assets/img/lp-black-friday/info-prod-4.jpg",
+					"subhead": "R$ 89,99",
+					"callToActionText": "",
 					"callToActionUrl": "#",
+					"callToActionMode": "link",
 					"blockClass": [
 							"info-card-produto",
 							"info-card-produto-4"
