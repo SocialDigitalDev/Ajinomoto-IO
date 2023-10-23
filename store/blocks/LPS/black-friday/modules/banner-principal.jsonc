@@ -1,0 +1,109 @@
+{
+	// Índices do responsive Layout
+	"responsive-layout.desktop#bf-banner-principal-desktop": {
+			"children": [
+					"list-context.image-list#bf-banner-principal"
+			]
+	},
+	"responsive-layout.tablet#bf-banner-principal-tablet": {
+			"children": [
+					"list-context.image-list#bf-banner-principal-tablet"
+			]
+	},
+	"responsive-layout.phone#bf-banner-principal-phone": {
+			"children": [
+					"list-context.image-list#bf-banner-principal-phone"
+			]
+	},
+	// Blocos de lista de imagem para os três tipos de dispositivo
+	"list-context.image-list#bf-banner-principal": {
+			"title": "Banner Principal Desktop",
+			"children": [
+					"slider-layout#bf-banner-principal"
+			],
+			"props": {
+					"height": 500,
+					"blockClass": [
+							"ajinomoto--banner-principal-bf",
+							"banner-principal-bf",
+							"banner-principal-bf-desktop"
+					],
+					"preload": true,
+					"images": [
+							{
+									"image": "assets/img/lp-black-friday/banner-principal-bf.jpg"
+							}
+					]
+			}
+	},
+	"list-context.image-list#bf-banner-principal-tablet": {
+			"title": "Banner Principal Tablet",
+			"children": [
+					"slider-layout#bf-banner-principal"
+			],
+			"props": {
+					"height": 500,
+					"blockClass": [
+							"ajinomoto--banner-principal-bf",
+							"banner-principal-bf",
+							"banner-principal-bf-tablet"
+					],
+					"preload": true,
+					"images": [
+							{
+									"image": "assets/img/lp-black-friday/banner-principal-bf.jpg"
+							}
+					]
+			}
+	},
+	"list-context.image-list#bf-banner-principal-phone": {
+			"title": "Banner Principal Mobile",
+			"children": [
+					"slider-layout#bf-banner-principal-mobile"
+			],
+			"props": {
+					"height": 500,
+					"blockClass": [
+							"ajinomoto--banner-principal-bf",
+							"banner-principal-bf",
+							"banner-principal-bf-phone"
+					],
+					"preload": true,
+					"images": [
+							{
+									"image": "assets/img/lp-black-friday/banner-principal-bf-mobile.jpg"
+							}
+					]
+			}
+	},
+	// Blocos de slider layout para desktop e mobile/tablet
+	"slider-layout#bf-banner-principal": {
+			"props": {
+					"itemsPerPage": {
+							"desktop": 1,
+							"tablet": 1,
+							"phone": 1
+					},
+					"infinite": true,
+					"showNavigationArrows": "always",
+					"showNavigationDots": "always",
+					"blockClass": "slider-principal"
+			}
+	},
+	"slider-layout#bf-banner-principal-mobile": {
+			"props": {
+					"itemsPerPage": {
+							"desktop": 1,
+							"tablet": 1,
+							"phone": 1
+					},
+					"infinite": true,
+					"showNavigationArrows": "always",
+					"showNavigationDots": "always",
+					"blockClass": [
+							"slider-principal",
+							"slider-principal-mobile"
+					]
+			}
+	}
+}

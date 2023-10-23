@@ -1,0 +1,15 @@
+{
+	"store.custom#lp-black-friday": {
+		"blocks": [
+			"responsive-layout.desktop#bf-banner-principal-desktop",
+			"responsive-layout.tablet#bf-banner-principal-tablet",
+			"responsive-layout.phone#bf-banner-principal-phone",
+			"flex-layout.row#seo-text-lp-black-friday",
+			"flex-layout.row#newsletter-black-friday",
+			"flex-layout.row#info-card-container",
+			"responsive-layout.desktop#bf-banner-central-desktop",
+			"responsive-layout.tablet#bf-banner-central-tablet",
+			"responsive-layout.phone#bf-banner-central-phone"
+		]
+	}
+}

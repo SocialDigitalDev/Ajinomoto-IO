@@ -1,0 +1,121 @@
+{
+	// Container dos infocards
+	"flex-layout.row#info-card-container": {
+			"title": "Container dos infocards de produto",
+			"props": {
+					"blockClass": [
+							"ajinomoto--info-card-products",
+							"info-card-products"
+					]
+			},
+			"children": [
+					"flex-layout.col#info-card-wrapper"
+			]
+	},
+
+	// Coluna juntando título e infocards
+	"flex-layout.col#info-card-wrapper": {
+			"title": "Coluna de Título e Conteúdo",
+			"props": {
+					"blockClass": "info-card-row-wrapper",
+					"preventVerticalStretch": true
+			},
+			"children": [
+					"rich-text#info-card-title",
+					"flex-layout.row#info-card-products"
+			]
+	},
+
+	// Linha dos infocards
+	"flex-layout.row#info-card-products": {
+			"title": "Linha dos Infocards",
+			"props": {
+					"blockClass": "info-card-row"
+			},
+			"children": [
+					"info-card#card-produto-1",
+					"info-card#card-produto-2",
+					"info-card#card-produto-3",
+					"info-card#card-produto-4"
+			]
+	},
+
+	// Título
+	"rich-text#info-card-title": {
+			"title": "Título: Descontos de até",
+			"props": {
+					"blockClass": "info-card-title",
+					"text": "Descontos de até"
+			}
+	},
+
+	// Infocards de produto
+	"info-card#card-produto-1": {
+			"title": "Info Card de Produto 1",
+			"props": {
+					"id": "info-card-produto-1",
+					"isFullModeStyle": false,
+					"textPosition": "left",
+					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
+					"headline": "Para você",
+					"subhead": "Compras até R$ 89,99",
+					"callToActionText": "DISCOVER",
+					"callToActionUrl": "#",
+					"blockClass": [
+							"info-card-produto",
+							"info-card-produto-1"
+					]
+			}
+	},
+	"info-card#card-produto-2": {
+			"title": "Info Card de Produto 2",
+			"props": {
+					"id": "info-card-produto-2",
+					"isFullModeStyle": false,
+					"textPosition": "left",
+					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
+					"headline": "Para você",
+					"subhead": "Compras até R$ 89,99",
+					"callToActionText": "DISCOVER",
+					"callToActionUrl": "#",
+					"blockClass": [
+							"info-card-produto",
+							"info-card-produto-2"
+					]
+			}
+	},
+	"info-card#card-produto-3": {
+			"title": "Info Card de Produto 3",
+			"props": {
+					"id": "info-card-produto-3",
+					"isFullModeStyle": false,
+					"textPosition": "left",
+					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
+					"headline": "Para você",
+					"subhead": "Compras até R$ 89,99",
+					"callToActionText": "DISCOVER",
+					"callToActionUrl": "#",
+					"blockClass": [
+							"info-card-produto",
+							"info-card-produto-3"
+					]
+			}
+	},
+	"info-card#card-produto-4": {
+			"title": "Info Card de Produto 4",
+			"props": {
+					"id": "info-card-produto-4",
+					"isFullModeStyle": false,
+					"textPosition": "left",
+					"imageUrl": "assets/img/lp-black-friday/info-card-dummy.jpg",
+					"headline": "Para você",
+					"subhead": "Compras até R$ 89,99",
+					"callToActionText": "DISCOVER",
+					"callToActionUrl": "#",
+					"blockClass": [
+							"info-card-produto",
+							"info-card-produto-4"
+					]
+			}
+	}
+}
