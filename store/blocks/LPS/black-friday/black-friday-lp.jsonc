@@ -1,6 +1,23 @@
 {
 	"store.custom#lp-black-friday": {
 		"blocks": [
+			"flex-layout.row#lp-black-friday-wrapper"
+		]
+	},
+
+	"flex-layout.row#lp-black-friday-wrapper": {
+		"props": {
+			"blockClass": [
+				"lp-black-friday-wrapper"
+			]
+		},
+		"children": [
+			"flex-layout.col#lp-black-friday-wrapper"
+		]
+	},
+
+	"flex-layout.col#lp-black-friday-wrapper": {
+		"children": [
 			"responsive-layout.desktop#bf-banner-principal-desktop",
 			"responsive-layout.tablet#bf-banner-principal-tablet",
 			"responsive-layout.phone#bf-banner-principal-phone",

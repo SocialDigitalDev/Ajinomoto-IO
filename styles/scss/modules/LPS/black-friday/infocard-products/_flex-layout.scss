@@ -3,7 +3,6 @@
     &--info-card-products {
       max-width: 1338px;
       margin: 0 auto;
-
     }
 
     &Content {
@@ -11,6 +10,10 @@
         display: flex;
         gap: 30px;
       }
+    }
+
+    &--lp-black-friday-wrapper {
+      background: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/d0bd7cdc-50e9-482b-b9eb-9436804a43cf___c87160de47178e1e1d908817d202a010.jpg');
     }
   }
 }
