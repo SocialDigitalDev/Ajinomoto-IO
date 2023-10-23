@@ -1,26 +1,38 @@
-.whatsapp{
+@import "../../../styles/scss/variables/all";
 
-    &-floating{
+.whatsapp {
+	&-floating {
+		&-button {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 9;
 
-        &-button{
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 9;
+			&-link {
+				display: flex;
+				flex-flow: column;
+				align-items: flex-end;
+				text-decoration: none;
+				color: $gray-31;
+			}
 
-            &-link{
-                display: flex;
-                flex-flow: column;
-                align-items: flex-end;
-                text-decoration: none;
-                color: #4f4f4f;
-            }
+			&-message {
+				background: $gray-17;
+				padding: 10px 15px;
+				border-radius: 25px;
+				@include media("<=phone") {
+					padding: 8px 12px;
+					font-size: 14px;
+					margin: 0 0 5px;
+				}
+			}
 
-            &-message{
-                background: #f2f2f2;
-                padding: 10px 15px;
-                border-radius: 25px;
-            }
-        }
-    }
+			svg {
+				@include media("<=phone") {
+					max-width: 40px;
+					max-height: 40px;
+				}
+			}
+		}
+	}
 }
