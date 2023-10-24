@@ -26,7 +26,8 @@
 			"flex-layout.row#info-card-container",
 			"responsive-layout.desktop#bf-banner-central-desktop",
 			"responsive-layout.tablet#bf-banner-central-tablet",
-			"responsive-layout.phone#bf-banner-central-phone"
+			"responsive-layout.phone#bf-banner-central-phone",
+			"flex-layout.row#category-list"
 		]
 	}
 }
