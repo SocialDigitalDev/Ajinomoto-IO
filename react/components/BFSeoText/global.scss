@@ -1,0 +1,51 @@
+@import "../../../styles/scss/variables/all";
+
+.BFSeoText-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1367px;
+  padding: 0 8px;
+  margin: 50px 0;
+
+  color: $gray-14;
+  font-family: $OpenSans;
+
+  .BFSeoText-title {
+    font-size: 25px;
+    color: $primary;
+    font-weight: $bold;
+  }
+
+  .BFSeoText-content {
+    font-size: 14px;
+    position: relative;
+    line-height: 160%;
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent 1%, $black 100%);
+    }
+
+    .BFSeoText-main.hide-text {
+      height: 60px;
+      overflow: hidden;
+    }
+
+    .BFSeoText-ver-mais {
+      font-weight: $bold;
+      cursor: pointer;
+      padding: 4px 8px;
+
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

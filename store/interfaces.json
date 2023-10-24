@@ -63,5 +63,9 @@
 
 	"custom-ean-number": {
 		"component": "EanInPDP"
+	},
+
+	"custom-seo-block": {
+		"component": "BFSeoText"
 	}
 }
