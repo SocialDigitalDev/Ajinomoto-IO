@@ -27,7 +27,8 @@
 			"responsive-layout.desktop#bf-banner-central-desktop",
 			"responsive-layout.tablet#bf-banner-central-tablet",
 			"responsive-layout.phone#bf-banner-central-phone",
-			"flex-layout.row#category-list"
+			"flex-layout.row#category-list",
+			"flex-layout.row#ofertas-marcas"
 		]
 	}
 }

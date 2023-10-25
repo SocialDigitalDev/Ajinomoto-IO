@@ -1,0 +1,56 @@
+{
+  "flex-layout.row#ofertas-marcas": {
+    "children": ["flex-layout.col#ofertas-marcas"]
+  },
+
+  "flex-layout.col#ofertas-marcas": {
+    "props": {
+      "blockClass": "ofertas-container"
+    },
+    "children": [
+      "rich-text#ofertas-titulo",
+      "slider-layout#slider-ofertas"
+    ]
+  },
+
+  "rich-text#ofertas-titulo": {
+    "title": "Titulo slider",
+    "props": {
+      "blockClass": ["ofertas-titulo"],
+      "text": "Confira as ofertas da sua marca preferida",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "slider-layout#slider-ofertas": {
+    "props": {
+      "blockClass": ["slider-ofertas"],
+      "infinite": true,
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      }
+    },
+    "children": [
+      "link#slider-prod-1"
+    ]
+  },
+
+  "link#slider-prod-1": { "children": ["info-card#card-prod-1"] },
+
+  "info-card#card-prod-1": {
+    "title": "Info Card de Produto 1",
+    "props": {
+      "id": "info-card-produto-1",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+      "headline": "AJI-NO-MOTO®",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "blockClass": [
+        "info-card-produto"
+      ]
+    }
+  }
+}
