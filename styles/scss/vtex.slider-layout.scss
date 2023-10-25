@@ -6,6 +6,8 @@
 
 @import "./modules/food-service/slider-layout";
 
+@import "./modules/LPS/black-friday/ofertas-marcas/slider-layout";
+
 .paginationDotsContainer {
     bottom: -15px;
     .paginationDot {
@@ -33,7 +35,7 @@
     .caretIcon {
         color: $primary;
     }
-    
+
     &:disabled {
         .caretIcon {
             opacity: 0.65;

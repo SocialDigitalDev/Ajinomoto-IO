@@ -1,5 +1,8 @@
 {
   "flex-layout.row#ofertas-marcas": {
+    "props": {
+      "blockClass": ["ofertas-marcas"]
+    },
     "children": ["flex-layout.col#ofertas-marcas"]
   },
 
@@ -27,29 +30,97 @@
       "blockClass": ["slider-ofertas"],
       "infinite": true,
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       }
     },
     "children": [
-      "link#slider-prod-1"
+      "link#slider-marca-1",
+      "link#slider-marca-2",
+      "link#slider-marca-3",
+      "link#slider-marca-4",
+      "link#slider-marca-5"
     ]
   },
 
-  "link#slider-prod-1": { "children": ["info-card#card-prod-1"] },
+  "link#slider-marca-1": { "children": ["info-card#card-marca-1"] },
+  "link#slider-marca-2": { "children": ["info-card#card-marca-2"] },
+  "link#slider-marca-3": { "children": ["info-card#card-marca-3"] },
+  "link#slider-marca-4": { "children": ["info-card#card-marca-4"] },
+  "link#slider-marca-5": { "children": ["info-card#card-marca-5"] },
 
-  "info-card#card-prod-1": {
-    "title": "Info Card de Produto 1",
+  "info-card#card-marca-1": {
+    "title": "Info Card de marca 1",
     "props": {
-      "id": "info-card-produto-1",
+      "id": "info-card-marca-1",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
       "headline": "AJI-NO-MOTO®",
       "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
       "blockClass": [
-        "info-card-produto"
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-2": {
+    "title": "Info Card de marca 2",
+    "props": {
+      "id": "info-card-marca-2",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/refrescoMid.png",
+      "headline": "MID®",
+      "subhead": "O MID® é a solução perfeita para quem busca praticidade sem abrir mão do sabor. O MID® é a escolha inteligente para quem busca otimizar o tempo sem abrir mão do prazer do verdadeiro sabor da fruta.",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-3": {
+    "title": "Info Card de marca 3",
+    "props": {
+      "id": "info-card-marca-3",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/sopaVono.png",
+      "headline": "VONO®",
+      "subhead": "O VONO® é a escolha perfeita quando você busca aconchego e simplicidade. Nossos caldos e sopas têm o poder de aquecer seu dia e proporcionar o conforto de uma refeição caseira, mesmo nos momentos mais corridos.",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-4": {
+    "title": "Info Card de marca 4",
+    "props": {
+      "id": "info-card-marca-4",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/caldoSazon.png",
+      "headline": "SAZÓN®",
+      "subhead": "Quando se trata de trazer sabor para suas receitas, o SAZÓN® é a resposta. Nossos temperos foram cuidadosamente criados para tornar seus pratos irresistíveis, oferecendo uma combinação equilibrada de sabores que eleva qualquer refeição.",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-5": {
+    "title": "Info Card de marca 5",
+    "props": {
+      "id": "info-card-marca-5",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/azeiteTerrano.png",
+      "headline": "TERRANO®",
+      "subhead": "TERRANO® é a chave para trazer os sabores autênticos do mundo para a sua cozinha. Nossa linha de azeites traz autenticidade às suas receitas, tornando cada prato uma jornada gastronômica única.",
+      "blockClass": [
+        "info-card-marca"
       ]
     }
   }
