@@ -42,6 +42,7 @@
 		"props": {
       "blockClass": ["slider-products"],
       "infinite": true,
+			"showNavigationArrows": "desktopOnly",
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,

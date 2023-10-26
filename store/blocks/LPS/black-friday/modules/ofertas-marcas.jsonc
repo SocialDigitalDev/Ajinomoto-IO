@@ -30,6 +30,7 @@
     "props": {
       "blockClass": ["slider-ofertas"],
       "infinite": true,
+      "showNavigationArrows": "desktopOnly",
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
