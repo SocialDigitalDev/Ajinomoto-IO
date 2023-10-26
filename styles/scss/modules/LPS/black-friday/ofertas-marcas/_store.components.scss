@@ -1,0 +1,47 @@
+.infoCardContainer {
+  &--info-card-marca {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    background: transparent;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    padding: 17px 22px;
+    height: 550px;
+
+    .infoCardImageContainer {
+      width: 206px;
+      height: 206px;
+      border-radius: 50%;
+      border: 2px solid $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .infoCardTextContainer {
+      width: 100%;
+
+      .infoCardHeadline, .infoCardSubhead {
+        color: $white;
+      }
+
+      .infoCardHeadline {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-weight: $bold;
+        font-size: 20px;
+      }
+
+      .infoCardSubhead {
+        font-size: 14px;
+        line-height: 160%;
+      }
+
+      .infoCardCallActionContainer {
+        display: none;
+      }
+    }
+  }
+}
