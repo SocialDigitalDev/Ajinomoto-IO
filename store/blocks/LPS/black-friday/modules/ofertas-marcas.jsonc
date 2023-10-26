@@ -19,7 +19,8 @@
   "rich-text#ofertas-titulo": {
     "title": "Titulo slider",
     "props": {
-      "blockClass": ["ofertas-titulo"],
+      "blockClass": "ofertas-titulo",
+      "textPosition": "CENTER",
       "text": "Confira as ofertas da sua marca preferida",
       "textAlignment": "CENTER"
     }
