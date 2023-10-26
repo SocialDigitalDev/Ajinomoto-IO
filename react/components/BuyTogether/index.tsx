@@ -13,6 +13,7 @@ const BuyTogether = () => {
     const [listProduct, setProduct] = useState<any>([])
     const [show, setShow] = useState(false);
     const productContext = useContext(ProductContext)
+    // @ts-ignore
     const product = productContext?.product
     const prodID = product?.productId
 
@@ -66,7 +67,7 @@ const BuyTogether = () => {
                 return resp.json()
             })
             .then((response) => {
-                console.log('deu bom?', response)
+                console.log('success', response)
                 setShow(currentShow => !currentShow)
             })
             .catch(err => {
