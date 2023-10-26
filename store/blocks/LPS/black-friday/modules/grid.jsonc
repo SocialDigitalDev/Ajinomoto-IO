@@ -9,81 +9,95 @@
   },
 
   "flex-layout.col#grid-col": {
+    "title": "Container grid",
+    "props": {
+      "blockClass": "image-grid"
+    },
     "children": [
-      "responsive-layout#desktop-grid",
-      "responsive-layout#tablet-grid",
-      "responsive-layout#mobile-grid"
+      "slider-layout-group#slider-group"
     ]
   },
 
-  "responsive-layout#desktop-grid": {
-    "blocks": [
-      "image#image-grid-1",
-      "image#image-grid-2",
-      "image#image-grid-3",
-      "image#image-grid-4",
-      "image#image-grid-5",
-      "image#image-grid-6"
+  "slider-layout-group#slider-group": {
+    "children": [
+      "slider-layout#slider-grid-top",
+      "slider-layout#slider-grid-bot"
     ]
   },
 
-  "responsive-layout#tablet-grid": {
-    "blocks": [
-      "slider-layout#slider-grid",
-      "image#image-grid-1",
-      "image#image-grid-2",
-      "image#image-grid-3",
-      "image#image-grid-4",
-      "image#image-grid-5",
-      "image#image-grid-6"
-    ]
-  },
-
-  "responsive-layout#mobile-grid": {
-    "blocks": [
-      "slider-layout#slider-grid"
-    ]
-  },
-
-  "slider-layout#slider-grid": {
+  "slider-layout#slider-grid-top": {
+    "props": {
+      "blockClass": "slider-grid-top",
+      "showNavigationArrows": "never",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      }
+    },
     "children": [
       "image#image-grid-1",
-      "image#image-grid-2",
-      "image#image-grid-3",
-      "image#image-grid-4",
       "image#image-grid-5",
-      "image#image-grid-6"
+      "image#image-grid-2"
+    ]
+  },
+
+  "slider-layout#slider-grid-bot": {
+    "props": {
+      "showNavigationArrows": "never",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      }
+    },
+    "children": [
+      "image#image-grid-3",
+      "image#image-grid-6",
+      "image#image-grid-4"
     ]
   },
 
   "image#image-grid-1": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-1.jpg"
     }
   },
   "image#image-grid-2": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-2.jpg"
     }
   },
   "image#image-grid-3": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-3.jpg"
     }
   },
   "image#image-grid-4": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-4.jpg"
     }
   },
   "image#image-grid-5": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-5.jpg"
     }
   },
   "image#image-grid-6": {
     "props": {
-      "blockClass": "image-item"
+      "blockClass": "image-item",
+      "maxHeight": 436,
+      "src": "assets/img/lp-black-friday/grid-img-6.jpg"
     }
   }
 }
