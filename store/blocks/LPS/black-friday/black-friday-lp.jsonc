@@ -29,7 +29,10 @@
 			"responsive-layout.phone#bf-banner-central-phone",
 			"flex-layout.row#category-list",
 			"flex-layout.row#grid-container",
-			"flex-layout.row#ofertas-marcas"
+			"flex-layout.row#ofertas-marcas",
+			"responsive-layout.desktop#bf-banner-inferior-desktop",
+			"responsive-layout.tablet#bf-banner-inferior-tablet",
+			"responsive-layout.phone#bf-banner-inferior-phone"
 		]
 	}
 }
