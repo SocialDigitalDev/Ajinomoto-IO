@@ -1,27 +1,73 @@
 import React, { useState } from "react"
 
 import './global.css'
-import categoriesList from "./categories"
 
-const BFCategoryList = () => {
-  const [categories] = useState(categoriesList)
-  const [selectedCategory, setSelectedCategory] = useState(categories[0])
+type Category = {
+  name: string
+  body: string
+  img: string
+  link: string
+}
+
+type BFCategoryListProps = {
+  categoria_1: Category
+  categoria_2: Category
+  categoria_3: Category
+  categoria_4: Category
+}
+
+const defaultCategory = {
+  name: 'Categoria',
+  body: 'Texto promocional da categoria',
+  img: '/',
+  link: '/black-friday-2023'
+}
+
+const BFCategoryList = ({
+  categoria_1 = defaultCategory,
+  categoria_2 = defaultCategory,
+  categoria_3 = defaultCategory,
+  categoria_4 = defaultCategory
+}: BFCategoryListProps) => {
+  const [selectedCategory, setSelectedCategory] = useState(categoria_1)
 
   return (
     <div className="categories-container">
       <div className="categories-list">
-        {categories.map((category) => (
-          <div className={`outer-category ${category.name === selectedCategory.name ? 'active' : ''}`}>
-            <div className="category-name" onClick={() => setSelectedCategory(category)}>
-              {category.name}
-            </div>
+
+        {/* Categoria 1 */}
+        <div className={`outer-category ${categoria_1.name === selectedCategory.name ? 'active' : ''}`}>
+          <div className="category-name" onClick={() => setSelectedCategory(categoria_1)}>
+            {categoria_1.name}
           </div>
-        ))}
+        </div>
+
+        {/* Categoria 2 */}
+        <div className={`outer-category ${categoria_2.name === selectedCategory.name ? 'active' : ''}`}>
+          <div className="category-name" onClick={() => setSelectedCategory(categoria_2)}>
+            {categoria_2.name}
+          </div>
+        </div>
+
+        {/* Categoria 3 */}
+        <div className={`outer-category ${categoria_3.name === selectedCategory.name ? 'active' : ''}`}>
+          <div className="category-name" onClick={() => setSelectedCategory(categoria_3)}>
+            {categoria_3.name}
+          </div>
+        </div>
+
+        {/* Categoria 4 */}
+        <div className={`outer-category ${categoria_4.name === selectedCategory.name ? 'active' : ''}`}>
+          <div className="category-name" onClick={() => setSelectedCategory(categoria_4)}>
+            {categoria_4.name}
+          </div>
+        </div>
+
       </div>
       <div className="category-display">
         <div className="details">
-          <p className="description">{selectedCategory.description}</p>
-          <a href={selectedCategory.ctaUrl} className="cta">
+          <p className="description">{selectedCategory.body}</p>
+          <a href={selectedCategory.link} className="cta">
             <span>Confira agora</span>
             <i>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
@@ -32,11 +78,128 @@ const BFCategoryList = () => {
             </i>
           </a>
         </div>
-        <img src={selectedCategory.imgUrl} alt="" />
+        <img src={selectedCategory.img} alt="" />
 
       </div>
     </div>
   )
+}
+
+BFCategoryList.schema = {
+  title: "Categorias",
+  description: "configuração das categorias: texto, imagem e link",
+  type: 'object',
+  properties: {
+    categoria_1: {
+      title: 'Categoria 1',
+      description: 'Categoria 1',
+      type: 'object',
+      properties: {
+        name: {
+          title: 'Nome',
+          type: 'string',
+          default: 'Temperos e Sopas'
+        },
+        body: {
+          title: 'Corpo',
+          type: 'string',
+          default: 'Se você adora dar um toque de sabor único às suas refeições, não pode perder as promoções de temperos&caldos e sopas&cremes da AjinoFriday. Aproveite descontos imperdíveis em produtos que vão realçar o sabor de suas receitas.'
+        },
+        img: {
+          title: 'Url da imagem',
+          type: 'string',
+          default: 'https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/1fe45427-ebfe-40e3-bd7a-e482f02f971b___175faebf1348c1c10448da4ac4f024b3.jpg'
+        },
+        link: {
+          title: 'link',
+          type: 'string',
+          default: '/black-friday-2023'
+        }
+      }
+    },
+    categoria_2: {
+      title: 'Categoria 2',
+      description: 'Categoria 2',
+      type: 'object',
+      properties: {
+        name: {
+          title: 'Nome',
+          type: 'string',
+          default: 'Bebidas'
+        },
+        body: {
+          title: 'Corpo',
+          type: 'string',
+          default: 'Desfrute de bebidas refrescantes e saborosas com descontos exclusivos durante a AjinoFriday. Procure um novo sabor ou compre os seus favoritos. Estamos prontos para oferecer o sabor da fruta pelos menores preços.'
+        },
+        img: {
+          title: 'Url da imagem',
+          type: 'string',
+          default: 'https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/1fe45427-ebfe-40e3-bd7a-e482f02f971b___175faebf1348c1c10448da4ac4f024b3.jpg'
+        },
+        link: {
+          title: 'link',
+          type: 'string',
+          default: '/black-friday-2023'
+        }
+      }
+    },
+    categoria_3: {
+      title: 'Categoria 3',
+      description: 'Categoria 3',
+      type: 'object',
+      properties: {
+        name: {
+          title: 'Nome',
+          type: 'string',
+          default: 'Molhos e Azeites'
+        },
+        body: {
+          title: 'Corpo',
+          type: 'string',
+          default: 'Adicione um toque especial às suas receitas com nossas promoções em molhos e azeites. Encontre as melhores ofertas em azeites de alta qualidade e molhos que vão melhorar muito as suas receitas, na AjinoFriday 2023.'
+        },
+        img: {
+          title: 'Url da imagem',
+          type: 'string',
+          default: 'https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/1fe45427-ebfe-40e3-bd7a-e482f02f971b___175faebf1348c1c10448da4ac4f024b3.jpg'
+        },
+        link: {
+          title: 'link',
+          type: 'string',
+          default: '/black-friday-2023'
+        }
+      }
+    },
+    categoria_4: {
+      title: 'Categoria 4',
+      description: 'Categoria 4',
+      type: 'object',
+      properties: {
+        name: {
+          title: 'Nome',
+          type: 'string',
+          default: 'Culinários'
+        },
+        body: {
+          title: 'Corpo',
+          type: 'string',
+          default: 'Confira uma variedade de produtos essenciais para o preparo de receitas ainda mais gostosas. Aproveite os descontos exclusivos em produtos culinários de alta qualidade na AjinoFriday 2023.'
+        },
+        img: {
+          title: 'Url da imagem',
+          type: 'string',
+          default: 'https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/1fe45427-ebfe-40e3-bd7a-e482f02f971b___175faebf1348c1c10448da4ac4f024b3.jpg'
+        },
+        link: {
+          title: 'link',
+          type: 'string',
+          default: '/black-friday-2023'
+        }
+      }
+    },
+  }
+
 }
 
 export default BFCategoryList
