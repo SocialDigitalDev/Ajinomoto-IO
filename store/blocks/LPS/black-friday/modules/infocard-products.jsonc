@@ -34,11 +34,26 @@
 					"blockClass": "info-card-row"
 			},
 			"children": [
-					"info-card#card-produto-1",
-					"info-card#card-produto-2",
-					"info-card#card-produto-3",
-					"info-card#card-produto-4"
+				"slider-layout#slider-products"
 			]
+	},
+
+	"slider-layout#slider-products": {
+		"props": {
+      "blockClass": ["slider-products"],
+      "infinite": true,
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      }
+    },
+    "children": [
+			"info-card#card-produto-1",
+			"info-card#card-produto-2",
+			"info-card#card-produto-3",
+			"info-card#card-produto-4"
+    ]
 	},
 
 	// Título

@@ -1,0 +1,89 @@
+{
+  "flex-layout.row#grid-container": {
+    "props": {
+      "blockClass": "grid-container"
+    },
+    "children": [
+      "flex-layout.col#grid-col"
+    ]
+  },
+
+  "flex-layout.col#grid-col": {
+    "children": [
+      "responsive-layout#desktop-grid",
+      "responsive-layout#tablet-grid",
+      "responsive-layout#mobile-grid"
+    ]
+  },
+
+  "responsive-layout#desktop-grid": {
+    "blocks": [
+      "image#image-grid-1",
+      "image#image-grid-2",
+      "image#image-grid-3",
+      "image#image-grid-4",
+      "image#image-grid-5",
+      "image#image-grid-6"
+    ]
+  },
+
+  "responsive-layout#tablet-grid": {
+    "blocks": [
+      "slider-layout#slider-grid",
+      "image#image-grid-1",
+      "image#image-grid-2",
+      "image#image-grid-3",
+      "image#image-grid-4",
+      "image#image-grid-5",
+      "image#image-grid-6"
+    ]
+  },
+
+  "responsive-layout#mobile-grid": {
+    "blocks": [
+      "slider-layout#slider-grid"
+    ]
+  },
+
+  "slider-layout#slider-grid": {
+    "children": [
+      "image#image-grid-1",
+      "image#image-grid-2",
+      "image#image-grid-3",
+      "image#image-grid-4",
+      "image#image-grid-5",
+      "image#image-grid-6"
+    ]
+  },
+
+  "image#image-grid-1": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  },
+  "image#image-grid-2": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  },
+  "image#image-grid-3": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  },
+  "image#image-grid-4": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  },
+  "image#image-grid-5": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  },
+  "image#image-grid-6": {
+    "props": {
+      "blockClass": "image-item"
+    }
+  }
+}
