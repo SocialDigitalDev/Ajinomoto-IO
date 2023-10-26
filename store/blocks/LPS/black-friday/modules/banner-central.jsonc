@@ -82,7 +82,7 @@
 					"preload": true,
 					"images": [
 							{
-									"image": "assets/img/lp-black-friday/banner-middle-desktop.jpg"
+									"image": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/3a7f31f9-2067-4231-877b-9e5102060005___08c29ceb61d993023dc3de95a7ddef3f.jpg"
 							}
 					]
 			}
