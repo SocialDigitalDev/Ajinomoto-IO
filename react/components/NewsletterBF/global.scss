@@ -13,7 +13,6 @@
 		}
 
 		@include media("<desktop") {
-			// max-width: 854px;
 			padding: 15px 51px 15px 51px;
 			margin: 0 16px;
 		}
@@ -43,7 +42,7 @@
 					font-family: $OpenSans;
 					font-style: normal;
 					font-weight: $bold;
-					font-size: 26px;
+					font-size: 20px;
 					text-align: center;
 				}
 			}
