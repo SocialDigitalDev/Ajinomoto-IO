@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { canUseDOM } from "vtex.render-runtime";
 
-import { defaultProps } from "./defaultProps";
-import { schemaEditor } from "./schemaEditor";
+// import { schemaEditor } from "./schemaEditor";
 
 import "./global.css";
 
-const NewsletterBF = () => {
+type NewsletterBFProps = {
+	tituloNL: string
+	textoBotao: string
+}
+
+const NewsletterBF = ({ tituloNL, textoBotao }: NewsletterBFProps) => {
+	console.log({tituloNL, textoBotao});
+
+
 	const [email, setEmail] = useState("");
 	const [nome, setName] = useState("");
 	const [aceite, setAceite] = useState(false);
@@ -106,7 +113,7 @@ const NewsletterBF = () => {
 						<div className="texto-container">
 							<div className="texto-newsletter">
 								<span className="texto-newsletter__titulo">
-									{defaultProps.title}
+									{tituloNL}
 								</span>
 							</div>
 						</div>
@@ -183,7 +190,7 @@ const NewsletterBF = () => {
 									)}
 								</div>
 								<button className="container-newsletter-form__button">
-									{defaultProps.button}
+									{textoBotao}
 								</button>
 								<div className="container-form__checkbox">
 								<label htmlFor="aceite" className="txt-termos-condicoes">
@@ -221,7 +228,24 @@ const NewsletterBF = () => {
 	);
 };
 
-NewsletterBF.defaultProps = defaultProps;
-NewsletterBF.schemaEditor = schemaEditor;
+// NewsletterBF.schemaEditor = schemaEditor;
+
+NewsletterBF.schema = {
+  title: "NewsletterBF",
+	description: "descrição",
+  type: "object",
+  properties: {
+    tituloNL: {
+      title: "Título da sessão",
+      type: "string",
+      default: "Lorem ipsum dolor sit amet consectetur. Nunc felis in odio."
+    },
+    textoBotao: {
+      title: "Texto do botão",
+      type: "string",
+      default: "Confira agora"
+    },
+  }
+}
 
 export default NewsletterBF;
