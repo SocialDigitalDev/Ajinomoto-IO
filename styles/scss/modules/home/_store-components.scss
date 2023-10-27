@@ -251,6 +251,7 @@
 		.infoCardImage--home-brands {
 			border-radius: 100%;
 			border: 1px solid $gray-18;
+			aspect-ratio: 1 / 1;
 			background-color: $white;
 			box-shadow: 0px 5px 5px 0px $gray-18;
 		}
