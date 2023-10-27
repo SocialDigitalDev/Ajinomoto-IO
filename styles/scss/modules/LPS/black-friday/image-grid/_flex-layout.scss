@@ -1,0 +1,12 @@
+.flex{
+  &Row {
+    &--grid-container {
+      max-width: 1338px;
+      margin: 0 auto;
+    }
+  }
+
+  &Col--image-grid {
+    margin: 60px 0;
+  }
+}

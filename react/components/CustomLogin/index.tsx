@@ -110,7 +110,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
           setError("");
         }, 5000)
       }
-      
+
     } catch (e) {
       setError(e.message);
       setTimeout(function(){
@@ -206,7 +206,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
   const handleKeyDown = (e) => {
     if (e.keyCode === 13) {
-        e.preventDefault();        
+        e.preventDefault();
     }
 }
 
@@ -242,12 +242,16 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
             </svg>
 
             {/*@ts-ignore */}
-            { 
+            {
+              /*@ts-ignore */
               session?.namespaces.profile.firstName ?
+              /*@ts-ignore */
               <div className="login-button-text">Olá <span>{session?.namespaces.profile.firstName?.value}</span></div>
               :
+              /*@ts-ignore */
               <div className="login-button-text">Olá <span>{session?.namespaces.profile.email.value}</span></div>
             }
+            {/*@ts-ignore */}
             <div className="login-button-text login-button-text__mobile" onClick={() => window.location.href = '/account'}>Olá <span>{session?.namespaces.profile.email.value}</span></div>
             <div className={isOpenLogged ? "modal-logged modal-logged-open" : "modal-logged"}>
                 <button onClick={() => window.location.href = '/account'}>Minha conta</button>
@@ -281,7 +285,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
 			<div className="login-button-text">Entrar <span>ou cadastrar</span></div>
 
-            
+
           </div>
         )
       }
@@ -302,7 +306,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <a className="sso-login-button google-login" href={`/login?oAuthRedirect=Google&returnUrl=${actualUrl}`} target="_parent">Entrar com Google</a>
                 <a className="sso-login-button facebook-login" href={`/login?oAuthRedirect=Facebook&returnUrl=${actualUrl}`} target="_parent">Entrar com Facebook</a>
               </div>
-            </div>            
+            </div>
             <div className="sign-up-row">
               <button className='sign-up-button'>Não possui uma conta?</button>
               <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
@@ -353,11 +357,11 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
 
                   <span className='forget-password' onClick={() => handleChangePage("send_code_signUp")}>Esqueci a senha</span>
                   <div className="back-and-submit-row">
-                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                     
+                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                       Voltar
                     </button>
                     <button className='login-submit-button' type='submit'>
-                      Entrar                    
+                      Entrar
                     </button>
                   </div>
                 </form>
@@ -365,7 +369,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
-                  Cadastre-se                 
+                  Cadastre-se
                 </button>
               </div>
             </div>
@@ -397,7 +401,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                       Entrar
                     </button>
 
-                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                      
+                    <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                       Voltar
                     </button>
                   </div>
@@ -406,7 +410,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button'>
-                  Cadastre-se                 
+                  Cadastre-se
 
                 </button>
               </div>
@@ -438,7 +442,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                   <p className='new-code' onClick={handleSendVerificationNewCode} >Solicitar novo código</p>
                   <p className='new-code-message'>{newCodeMessage}</p>
                   <div className="back-and-submit-row">
-                    <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>                     
+                    <button className='login-back-button' onClick={() => handleChangePage("send_code_login")}>
                       Voltar
                     </button>
                     <button className='login-submit-button' type='submit'>
@@ -451,7 +455,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button' onClick={() => handleChangePage("send_code_signUp")}>
-                  Cadastre-se                 
+                  Cadastre-se
                 </button>
               </div>
             </div>
@@ -494,7 +498,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     </button>
 
                     <button className='login-submit-button purple' type='submit'>
-                      Confirmar                     
+                      Confirmar
                     </button>
                   </div>
                 </form>
@@ -502,7 +506,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
               <div className="sign-up-row">
                 <button className='sign-up-button'>Não possui uma conta?</button>
                 <button className='sign-in-button'>
-                  Cadastre-se                 
+                  Cadastre-se
 
                 </button>
               </div>
@@ -535,7 +539,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     </div>
 
                     <div className="back-and-submit-row">
-                      <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>                       
+                      <button className='login-back-button' onClick={() => handleChangePage("login_choices")}>
                         Voltar
                       </button>
 
@@ -549,7 +553,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <div className="sign-up-row">
                   <button className='sign-up-button'>Não possui uma conta?</button>
                   <button className='sign-in-button'>
-                    Cadastre-se                    
+                    Cadastre-se
 
                   </button>
                 </div>
@@ -577,11 +581,11 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                     <p className='new-code' onClick={handleSendVerificationNewCode} >Solicitar novo código</p>
                     <p className='new-code-message'>{newCodeMessage}</p>
                     <div className="back-and-submit-row">
-                      <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>                       
+                      <button className='login-back-button' onClick={() => handleChangePage("send_code_signUp")}>
                         Voltar
                       </button>
                       <button className='login-submit-button' type='submit'>
-                        Entrar                       
+                        Entrar
                       </button>
                     </div>
                   </form>
@@ -590,7 +594,7 @@ const CustomLogin: StorefrontFunctionComponent<any> = () => {
                 <div className="sign-up-row">
                   <button className='sign-up-button'>Não possui uma conta?</button>
                   <button className='sign-in-button'>
-                    Cadastre-se                    
+                    Cadastre-se
                   </button>
                 </div>
               </div>

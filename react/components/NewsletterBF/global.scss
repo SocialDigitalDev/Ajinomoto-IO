@@ -1,0 +1,265 @@
+@import "../../../styles/scss/variables/all";
+.vtex-flex-layout-0-x-flexRow--custom-newsletter-bf {
+	.custom-newsletter {
+		background: $primary;
+		margin: 60px auto;
+		padding: 12px 65px 12px 75px;
+		border-radius: 10px;
+
+		display: flex;
+
+		@include media(">desktop") {
+			max-width: 1366px;
+		}
+
+		@include media("<desktop") {
+			padding: 15px 51px 15px 51px;
+			margin: 0 16px;
+		}
+
+		.texto-container {
+			max-width: 420px;
+			margin-right: 100px;
+			display: flex;
+			align-items: center;
+
+			@include media("<desktop") {
+				margin-right: 20px;
+			}
+
+			.texto-newsletter {
+				text-align: center;
+				@include media(">phone", "<desktop") {
+					margin-right: 30px;
+				}
+				@include media("<=phone") {
+					margin-bottom: 16px;
+					margin-right: 6px;
+				}
+
+				&__titulo {
+					color: $white;
+					font-family: $OpenSans;
+					font-style: normal;
+					font-weight: $bold;
+					font-size: 20px;
+					text-align: center;
+				}
+			}
+		}
+
+		.container-newsletter {
+			display: flex;
+			width: 100%;
+
+			@include media("<=phone") {
+				flex-direction: column;
+			}
+
+			.container-form {
+				display: flex;
+				gap: 20px;
+
+				@include media("<=tablet") {
+					flex-direction: column;
+					gap: 12px;
+				}
+
+				@include media("<=phone") {
+					display: flex;
+					flex-direction: column;
+					padding-bottom: 10px;
+				}
+
+				&__input {
+					flex-basis: 100%;
+
+					@include media("<=phone") {
+						order: 1;
+					}
+
+					&--group {
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						padding: 9px 16px 8px;
+						background: $white;
+						border: 1px solid $gray-8;
+						border-radius: 8px;
+						background: $white;
+						&:first-child {
+							margin-bottom: 10px;
+						}
+						@include media("<=phone") {
+							padding: 8px 12px 8px 12px;
+							margin-bottom: 8px;
+						}
+
+						i {
+							min-width: 24px;
+							background-position: center;
+							background-repeat: no-repeat;
+							display: inline-block;
+							position: relative;
+							&.icon__user {
+								background-image: url(../../../assets/svg/ico_user-newsletter-bf.svg);
+								width: 14px;
+								height: 17px;
+							}
+
+							&.icon__letter {
+								background-image: url(../../../assets/svg/ico_letter-newsletter-bf.svg);
+								width: 24px;
+								height: 18px;
+							}
+						}
+
+						input {
+							color: $gray-2;
+							font-family: $OpenSans;
+							font-weight: $light;
+							font-size: 14px;
+							line-height: normal;
+							border: none;
+							padding-left: 5px;
+							width: 100%;
+							@include media("<=phone") {
+								text-align: center;
+								padding-left: 5px;
+							}
+						}
+					}
+				}
+
+				&__checkbox {
+					@include media("<=phone") {
+						order: 3;
+					}
+
+					label {
+						color: $white;
+						font-family: $OpenSans;
+						font-size: 12px;
+						display: flex;
+						align-items: center;
+						@media (max-width: 320px) {
+							font-size: 11px;
+						}
+
+						a {
+							color: $white;
+							text-decoration: underline;
+						}
+					}
+
+					.aceite {
+						color: $white;
+						position: relative;
+						margin-right: 6px;
+						border-radius: 3px;
+						width: 100%;
+						max-width: 20px;
+						height: 20px;
+						background-color: $white;
+						appearance: none;
+						-webkit-appearance: none;
+						outline: none;
+						cursor: pointer;
+						@media (max-width: 320px) {
+							margin-right: 5px;
+						}
+
+						&:checked {
+							background: url(../../../assets/svg/ico_checkbox.svg)
+									no-repeat center center, $white;
+							background-size: 14px;
+						}
+					}
+				}
+
+				&__footer {
+					display: flex;
+					color: $white;
+					flex-direction: column-reverse;
+					position: relative;
+
+					@include media(">desktop") {
+						width: 50%;
+						flex-direction: column;
+					}
+
+					@include media("<=phone") {
+						order: 2;
+						margin-bottom: 18px;
+					}
+					@media (max-width: 320px) {
+						margin-bottom: 10px;
+					}
+
+					button {
+						color: $white;
+						background: $black;
+						font-family: $OpenSans;
+						font-weight: $regular;
+						font-size: 18px;
+						height: 36px;
+						margin-bottom: 10px;
+						border: 1px solid $gray-2;
+						border-radius: 20px;
+						text-align: center;
+						line-height: normal;
+						cursor: pointer;
+						transition: 0.2s ease-in-out;
+						outline: none;
+
+						&:hover {
+							background: $gray-2;
+							color: $white;
+							transition: 0.2s ease-in-out;
+						}
+
+						@include media("<desktop") {
+							border-radius: 5px;
+							margin-bottom: 0;
+							margin-top: 12px;
+						}
+					}
+				}
+
+				&__messages {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					background: $orange-2;
+					width: 100%;
+
+					p {
+						font-family: $OpenSans;
+						font-weight: $light;
+						font-size: 12px;
+						display: block;
+						text-align: center;
+						padding: 6px;
+						strong {
+							font-weight: $semi-bold;
+						}
+					}
+
+					&--success {
+						color: $green-2;
+						font-size: 14px;
+					}
+
+					&--error {
+						color: $red-3;
+					}
+
+					&--error-aceite {
+						color: $red-3;
+					}
+				}
+			}
+		}
+	}
+}
