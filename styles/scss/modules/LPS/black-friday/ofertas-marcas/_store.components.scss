@@ -4,16 +4,19 @@
     flex-direction: column-reverse;
     justify-content: flex-end;
     background: transparent;
-    border: 2px solid $primary;
+    border: 1px solid $primary;
     border-radius: 10px;
     padding: 17px 22px;
-    height: 600px;
+    height: 630px;
+    @include media ('<=phone'){
+      margin-left: 20px;
+    }
 
     .infoCardImageContainer {
       width: 206px;
       height: 206px;
       border-radius: 50%;
-      border: 2px solid $primary;
+      border: 1px solid $primary;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,8 +42,21 @@
         line-height: 160%;
       }
 
-      .infoCardCallActionContainer {
-        display: none;
+      .infoCardCallActionContainer--info-card-marca {
+        background: $primary;
+        margin: 15px 0 0;
+        align-self: center;
+        padding: 12px 15px;
+        text-decoration: none;
+        position: absolute;
+        bottom: 20px;
+        border-radius: 5px;
+        .infoCardCallActionText--info-card-marca{
+          margin: 0;
+          text-decoration: none;
+          color: $white;
+          font-weight: $semi-bold;
+        }
       }
     }
   }

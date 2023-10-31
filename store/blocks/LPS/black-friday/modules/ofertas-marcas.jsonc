@@ -42,7 +42,13 @@
       "link#slider-marca-2",
       "link#slider-marca-3",
       "link#slider-marca-4",
-      "link#slider-marca-5"
+      "link#slider-marca-5",
+      "link#slider-marca-6",
+      "link#slider-marca-7",
+      "link#slider-marca-8",
+      "link#slider-marca-9",
+      "link#slider-marca-10",
+      "link#slider-marca-11"
     ]
   },
 
@@ -51,6 +57,12 @@
   "link#slider-marca-3": { "children": ["info-card#card-marca-3"] },
   "link#slider-marca-4": { "children": ["info-card#card-marca-4"] },
   "link#slider-marca-5": { "children": ["info-card#card-marca-5"] },
+  "link#slider-marca-6": { "children": ["info-card#card-marca-6"] },
+  "link#slider-marca-7": { "children": ["info-card#card-marca-7"] },
+  "link#slider-marca-8": { "children": ["info-card#card-marca-8"] },
+  "link#slider-marca-9": { "children": ["info-card#card-marca-9"] },
+  "link#slider-marca-10": { "children": ["info-card#card-marca-10"] },
+  "link#slider-marca-11": { "children": ["info-card#card-marca-11"] },
 
   "info-card#card-marca-1": {
     "title": "Info Card de marca 1",
@@ -61,6 +73,8 @@
       "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
       "headline": "AJI-NO-MOTO®",
       "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
       "blockClass": [
         "info-card-marca"
       ]
@@ -76,6 +90,8 @@
       "imageUrl": "assets/img/lp-black-friday/refrescoMid.png",
       "headline": "MID®",
       "subhead": "O MID® é a solução perfeita para quem busca praticidade sem abrir mão do sabor. O MID® é a escolha inteligente para quem busca otimizar o tempo sem abrir mão do prazer do verdadeiro sabor da fruta.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
       "blockClass": [
         "info-card-marca"
       ]
@@ -91,6 +107,8 @@
       "imageUrl": "assets/img/lp-black-friday/sopaVono.png",
       "headline": "VONO®",
       "subhead": "O VONO® é a escolha perfeita quando você busca aconchego e simplicidade. Nossos caldos e sopas têm o poder de aquecer seu dia e proporcionar o conforto de uma refeição caseira, mesmo nos momentos mais corridos.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
       "blockClass": [
         "info-card-marca"
       ]
@@ -106,6 +124,8 @@
       "imageUrl": "assets/img/lp-black-friday/caldoSazon.png",
       "headline": "SAZÓN®",
       "subhead": "Quando se trata de trazer sabor para suas receitas, o SAZÓN® é a resposta. Nossos temperos foram cuidadosamente criados para tornar seus pratos irresistíveis, oferecendo uma combinação equilibrada de sabores que eleva qualquer refeição.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
       "blockClass": [
         "info-card-marca"
       ]
@@ -121,6 +141,110 @@
       "imageUrl": "assets/img/lp-black-friday/azeiteTerrano.png",
       "headline": "TERRANO®",
       "subhead": "TERRANO® é a chave para trazer os sabores autênticos do mundo para a sua cozinha. Nossa linha de azeites traz autenticidade às suas receitas, tornando cada prato uma jornada gastronômica única.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-6": {
+    "title": "Info Card de marca 6",
+    "props": {
+      "id": "info-card-marca-6",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Aji-sal",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-7": {
+    "title": "Info Card de marca 7",
+    "props": {
+      "id": "info-card-marca-7",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Sabor a MI",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-8": {
+    "title": "Info Card de marca 8",
+    "props": {
+      "id": "info-card-marca-8",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Receita de casa",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-9": {
+    "title": "Info Card de marca 9",
+    "props": {
+      "id": "info-card-marca-9",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Satis!",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-10": {
+    "title": "Info Card de marca 10",
+    "props": {
+      "id": "info-card-marca-10",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Hondashi",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
+      "blockClass": [
+        "info-card-marca"
+      ]
+    }
+  },
+
+  "info-card#card-marca-11": {
+    "title": "Info Card de marca 11",
+    "props": {
+      "id": "info-card-marca-11",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/lp-black-friday/ajinomotoFrasco.png",
+      "headline": "Food Service",
+      "subhead": "Um clássico na culinária mundial, o AJI-NO-MOTO® é o tempero que realça o sabor das suas receitas. Desde pratos simples do dia a dia até preparações mais elaboradas, nosso produto é conhecido por sua capacidade de aprimorar o sabor de qualquer prato. Seja qual for a sua culinária, o AJI-NO-MOTO® é um aliado essencial na sua cozinha.",
+      "callToActionMode": "link",
+      "callToActionText": "Confira agora",
       "blockClass": [
         "info-card-marca"
       ]
