@@ -2,8 +2,7 @@
 	// Índices do responsive Layout
 	"responsive-layout.desktop#bf-banner-central-desktop": {
 			"children": [
-					"list-context.image-list#bf-banner-central",
-					"rich-text#bf-banner-central-button"
+					"list-context.image-list#bf-banner-central"
 			]
 	},
 	"responsive-layout.tablet#bf-banner-central-tablet": {
@@ -36,15 +35,6 @@
 							}
 					]
 			}
-	},
-
-	// Bloco do botão abaixo do banner
-	"rich-text#bf-banner-central-button": {
-		"title": "Título: Ver todos os kits",
-		"props": {
-			"blockClass": "bf-banner-central-button",
-			"text": "[VER TODOS OS KITS](/black-friday-2023)"
-		}
 	},
 
 	"list-context.image-list#bf-banner-central-tablet": {
