@@ -15,7 +15,7 @@
                     width: 97px;
                     height: 27px;
                     justify-content: center;
-                    background: $primary;
+                    background: $gray-0;
                     color: $white;
                     font-size: 14px;
                     font-weight: $bold;
@@ -32,9 +32,9 @@
     .currency{
 
         &Container{
-    
+
             &--product-price{
-    
+
                 &--list-price{
                     font-size: 14px;
                     font-weight: $semi-bold;
@@ -42,7 +42,7 @@
                     margin-bottom: 5px;
                     display: block;
                 }
-                
+
                 &--selling-price{
                     color: $primary;
                     font-size: 30px;
