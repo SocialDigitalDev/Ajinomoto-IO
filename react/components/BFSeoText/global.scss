@@ -9,6 +9,9 @@
   margin: 50px 0;
   color: $gray-14;
   font-family: $OpenSans;
+  @include media ('<=phone'){
+    padding: 0 20px;
+  }
 
   .BFSeoText{
     &-title {

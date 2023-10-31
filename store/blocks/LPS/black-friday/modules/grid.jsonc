@@ -44,6 +44,7 @@
 
   "slider-layout#slider-grid-bot": {
     "props": {
+      "blockClass": "slider-grid-bot",
       "showNavigationArrows": "never",
       "itemsPerPage": {
         "desktop": 3,
