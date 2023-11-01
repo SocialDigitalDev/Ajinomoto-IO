@@ -1,0 +1,155 @@
+@import "../../../styles/scss/variables/all";
+
+.categories-container {
+  display: flex;
+  font-family: $OpenSans;
+  max-width: 1360px;
+
+  @include media('<=tablet'){
+    flex-direction: column;
+  }
+
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include media('<=tablet'){
+      flex-direction: row;
+      gap: 8px;
+      overflow-x: auto;
+    }
+
+    .outer-category {
+      border-radius: 10px;
+
+      @include media('>tablet'){
+        transform: translateX(15px);
+      }
+
+      &.active {
+        @include media('>tablet'){
+          background: $primary;
+        }
+
+        .category-name {
+          background: $primary;
+          border: 3px solid $primary;
+        }
+      }
+
+      .category-name {
+        width: 400px;
+        padding: 30px 0;
+        margin-right: 30px;
+        border: 2px solid $white;
+        border-radius: 10px;
+        cursor: pointer;
+
+        color: $white;
+        font-size: 24px;
+        font-weight: $semi-bold;
+        text-align: center;
+
+        @include media('<=tablet'){
+          margin: 0;
+          padding: 12px 0;
+          margin-bottom: 20px;
+          width: 150px;
+
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .category-display {
+    flex: 1;
+    display: flex;
+    gap: 33px;
+
+    background: $primary;
+    border-radius: 10px;
+    padding: 25px;
+
+    @include media('<=tablet'){
+      flex-direction: column-reverse;
+      gap: 16px;
+    }
+
+    .details {
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .description {
+        color: $white;
+        font-size: 20px;
+        line-height: 160%;
+
+        @include media('<=tablet'){
+          font-size: 14px;
+        }
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        background: $white;
+        text-decoration: none;
+        color: $bf-gray;
+        border-radius: 6px;
+        padding: 6px 8px 6px 13px;
+        margin-bottom: 12px;
+        font-size: 24px;
+        transition: 0.2s;
+
+        @include media('<=tablet'){
+          padding: 3px 4px 3px 6px;
+          margin-bottom: 0;
+          margin-top: 12px;
+          font-size: 16px;
+        }
+
+        i {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 4px;
+          margin-left: 20px;
+          border-radius: 5px;
+          background: $bf-gray;
+          width: 32px;
+          height: 32px;
+
+          @include media('<=tablet'){
+            width: 28px;
+            height: 28px;
+          }
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    img {
+      width: 408px;
+      height: 375px;
+
+      @include media('<=tablet'){
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

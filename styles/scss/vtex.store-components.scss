@@ -18,9 +18,13 @@
 
 @import "./modules/food-service/store-components";
 
+@import "./modules/LPS/black-friday/infocard-products/store-components";
+
+@import "./modules/LPS/black-friday/ofertas-marcas/store.components";
+
 .container  {
     max-width: 1920px;
-    margin: 0 auto;                
+    margin: 0 auto;
     @include media("<=desktop") {
         max-width: 1366px;
     }

@@ -1,14 +1,14 @@
 .flex {
-	
+
 	&Row {
-		
+
 		&--header {
-			
+
 			&--topbar {
-				background: $primary;
+				background: $gray-0;
 				max-width: 1920px;
 				margin: 0 auto;
-				
+
 				:global(.vtex-store-components-3-x-container) {
 					display: flex;
 					flex-flow: row nowrap;
@@ -19,12 +19,12 @@
 					padding: 0;
 				}
 			}
-			
+
 			&--content {
 				background: $white;
 				max-width: 1920px;
 				margin: 0 auto;
-				
+
 				:global(.vtex-store-components-3-x-container) {
 					width: 100%;
 					max-width: 1170px;
@@ -37,12 +37,12 @@
 					}
 				}
 			}
-			
+
 			&--infos-client {
 				align-items: center;
 				display: flex;
-			}		
-			
+			}
+
 			&--search-mobile {
 				@include media(">phone") {
 					display: none;
@@ -55,10 +55,10 @@
 				display: none;
 			}
 		}
-		
-		&Content {			
-			&--header {				
-				&--container {					
+
+		&Content {
+			&--header {
+				&--container {
 					&-top {
 						display: flex;
 						flex-flow: row nowrap;
@@ -69,7 +69,7 @@
 						@include media(">desktop") {
 							justify-content: space-around;
 						}
-						
+
 						&-mobile {
 							justify-content: space-between;
 							.stretchChildrenWidth {
@@ -79,7 +79,7 @@
 						}
 					}
 				}
-				
+
 				&--infos-client {
 					display: flex;
 					flex-flow: row nowrap;
@@ -97,7 +97,7 @@
 			}
 		}
 	}
-	
+
 	&ColChild {
 		&--header{
 			&--container{

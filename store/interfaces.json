@@ -19,6 +19,9 @@
 	"custom-newsletter": {
 		"component": "NewsletterHome"
 	},
+	"custom-newsletter-bf": {
+		"component": "NewsletterBF"
+	},
 	"custom-pdp-characteristics": {
 		"component": "CustomPdpSpecs"
 	},
@@ -29,7 +32,7 @@
 	"similar-products": {
 		"component": "SimilarProducts"
 	},
-	
+
 	"highlight-menu-institutional": {
 		"component": "HighlightInstitutionalMenu"
 	},
@@ -45,7 +48,7 @@
 	"focus-search-bar": {
 		"component": "FocusSearchBar"
 	},
-	
+
 	"custom-pdp-recipies": {
 		"component": "CustomPDPRecipies"
 	},
@@ -60,5 +63,13 @@
 
 	"custom-ean-number": {
 		"component": "EanInPDP"
+	},
+
+	"custom-seo-block": {
+		"component": "BFSeoText"
+	},
+
+	"custom-bf-category-list": {
+		"component": "BFCategoryList"
 	}
 }

@@ -9,6 +9,7 @@ const SimilarProducts = () => {
     const [sabor, setSabor] = useState<any>();
     const [openClass, setOpenClass] = useState("closed");
     const productContext = useContext(ProductContext);
+    // @ts-ignore
     const prodID = productContext?.product?.productId;
     const wrapperRef = useRef(null);
 

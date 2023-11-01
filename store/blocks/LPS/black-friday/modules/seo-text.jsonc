@@ -1,0 +1,14 @@
+{
+	"flex-layout.row#seo-text-lp-black-friday": {
+		"title": "Texto de SEO da página",
+		"props": {
+			"blockClass": [
+				"ajinomoto--page-seo-text",
+				"page-seo-text"
+			]
+		},
+		"children": [
+			"custom-seo-block"
+		]
+	}
+}

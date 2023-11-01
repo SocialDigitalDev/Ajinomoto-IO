@@ -1,0 +1,73 @@
+{
+	// Layout das Tabs, contém a lista de tabs e seus conteúdos
+	"tab-layout#favoritos-black-friday": {
+			"title": "Tabs de Favoritos",
+			"props": {
+					"blockClass": [
+							"ajinomoto--favoritos-black-friday",
+							"favoritos-black-friday"
+					],
+					"defaultActiveTabId": "tab-1"
+			},
+			"children": [
+					"tab-list#favoritos-black-friday"
+			]
+	},
+
+	// Indice e itens da lista de tabs
+	"tab-list#favoritos-black-friday": {
+			"title": "Container das tabs",
+			"props": {
+					"blockClass": "tablist-favoritos-black-friday"
+			},
+			"children": [
+					"tab-list.item#tab-1",
+					"tab-list.item#tab-2",
+					"tab-list.item#tab-3",
+					"tab-list.item#tab-4"
+			]
+	},
+	"tab-list.item#tab-1":{
+			"title": "Tab 1",
+			"props": {
+					"blockClass": "tablist-item-bf",
+					"tabId": "tab1",
+					"label": "Categoria",
+					"defaultActiveTab": true
+			}
+	},
+	"tab-list.item#tab-2":{
+			"title": "Tab 2",
+			"props": {
+					"blockClass": "tablist-item-bf",
+					"tabId": "tab2",
+					"label": "Categoria"
+			}
+	},
+	"tab-list.item#tab-3":{
+			"title": "Tab 3",
+			"props": {
+					"blockClass": "tablist-item-bf",
+					"tabId": "tab3",
+					"label": "Categoria"
+			}
+	},
+	"tab-list.item#tab-4":{
+			"title": "Tab 4",
+			"props": {
+					"blockClass": "tablist-item-bf",
+					"tabId": "tab4",
+					"label": "Categoria"
+			}
+	},
+
+	// Índice e conteúdos da lista de tabs
+	"tab-content#favoritos-black-friday": {
+			"title": "Container dos conteúdos",
+			"props": {
+					"blockClass": "tabcontent-favoritos-black-friday"
+
+					// CONTINUAR DAQUI!!!
+			}
+	}
+}
