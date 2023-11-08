@@ -1,0 +1,51 @@
+@import "../../../styles/scss/variables/all";
+
+.custom-product-size {
+
+    &__wrapper{
+        margin-bottom: 27px;
+    }
+    
+    &__available-text {
+        font-family: $OpenSans;
+        font-size: 19px;
+        font-weight: $regular;
+        margin-top: 0;
+        margin-bottom: 17px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__actual {
+
+        .item-size {
+            margin: 0 20px 10px 0;
+            padding: 6.5px 12px;
+            border: 1px solid $primary;
+            background: $primary;
+            color: $white;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: $bold;
+        }
+    }
+
+    &__bound{
+
+        .item-size {
+            margin: 0 20px 10px 0;
+            padding: 6.5px 12px;
+            border: 1px solid $primary;
+            background: transparent;
+            color: $primary;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: $bold;
+            display: block;
+            text-decoration: none;        
+        }
+    }
+}
