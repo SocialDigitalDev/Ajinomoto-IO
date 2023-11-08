@@ -1,0 +1,15 @@
+@import "../../../styles/scss/variables/all";
+
+.custom-pix-price{
+
+    &__text{
+        font-size: 15px;
+        font-weight: $regular;
+    }
+
+    &__bold{
+        font-size: 18px;
+        font-weight: $semi-bold;
+        color: $primary
+    }
+}
