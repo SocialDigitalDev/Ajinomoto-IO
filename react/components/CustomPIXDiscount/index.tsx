@@ -4,7 +4,7 @@ import { FormattedCurrency } from "vtex.format-currency";
 import { schema } from './schema';
 import './global.css';
 
-const CustomPIXDiscount = ({ enableComponent = true, percentualValue }: any) => {
+const CustomPIXDiscount = ({ enableComponent = false, percentualValue }: any) => {
 
     // Variáveis
     const { product } = useProduct();
