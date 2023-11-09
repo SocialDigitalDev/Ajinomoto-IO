@@ -75,5 +75,9 @@
 
 	"custom-product-size": {
 		"component": "CustomProductSize"
+	},
+
+	"custom-pix-price": {
+		"component": "CustomPIXDiscount"
 	}
 }
