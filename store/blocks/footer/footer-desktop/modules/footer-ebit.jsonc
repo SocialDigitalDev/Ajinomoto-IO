@@ -1,0 +1,11 @@
+{
+  "flex-layout.col#footer-ebit": {
+		"title": "Medalha ebit",
+		"children": ["custom-ebit-medal"],
+		"props": {
+			"horizontalAlign": "left",
+			"blockClass": "medalha-ebit",
+			"width": "10%"
+		}
+	}
+}
