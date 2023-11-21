@@ -5,6 +5,7 @@
 		margin: 60px auto;
 		padding: 12px 65px 12px 75px;
 		border-radius: 10px;
+		min-height: fit-content;
 
 		display: flex;
 
@@ -29,6 +30,8 @@
 
 			.texto-newsletter {
 				text-align: center;
+				flex-basis: content;
+
 				@include media(">phone", "<desktop") {
 					margin-right: 30px;
 				}
@@ -51,6 +54,7 @@
 		.container-newsletter {
 			display: flex;
 			width: 100%;
+			max-width: none;
 
 			@include media("<=phone") {
 				flex-direction: column;
@@ -59,6 +63,7 @@
 			.container-form {
 				display: flex;
 				gap: 20px;
+				max-width: none;
 
 				@include media("<=tablet") {
 					flex-direction: column;
@@ -73,6 +78,7 @@
 
 				&__input {
 					flex-basis: 100%;
+					margin-bottom: 0;
 
 					@include media("<=phone") {
 						order: 1;
@@ -132,6 +138,8 @@
 				}
 
 				&__checkbox {
+					margin-bottom: 0;
+
 					@include media("<=phone") {
 						order: 3;
 					}
@@ -179,12 +187,12 @@
 
 				&__footer {
 					display: flex;
-					color: $white;
 					flex-direction: column-reverse;
+					justify-content: space-between;
+					color: $white;
 					position: relative;
 
 					@include media(">desktop") {
-						width: 50%;
 						flex-direction: column;
 					}
 
