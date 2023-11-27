@@ -92,7 +92,7 @@
             -webkit-line-clamp: 2;
             line-clamp: 2; 
             -webkit-box-orient: vertical;
-            min-height: 38px;
+            min-height: 35px;
             @include media("<=phone") {
                 font-size: 12px;
             }

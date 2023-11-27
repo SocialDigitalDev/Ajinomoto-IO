@@ -1,0 +1,12 @@
+{
+	"flex-layout.row#newsletter-black-friday": {
+		"title": "Newsletter Black-Friday",
+		"props": {
+			"blockClass": "custom-newsletter-bf",
+			"fullWidth": true
+		},
+		"children": [
+			"custom-newsletter-bf"
+		]
+	}
+}

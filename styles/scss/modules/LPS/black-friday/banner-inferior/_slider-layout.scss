@@ -1,0 +1,18 @@
+.sliderLayoutContainer{
+  &--slider-inferior {
+    max-width: 1366px;
+    margin: 60px auto;
+    :global(.vtex-store-components-3-x-imageElement--slider-inferior){
+      border: 1px solid $primary;
+      border-radius: 10px;
+      @include media ('<=phone'){
+        border: none;
+        border-radius: unset;
+      }
+    }
+  }
+  &--slider-ofertas
+  .paginationDotsContainer {
+    bottom: -30px;
+  }
+}

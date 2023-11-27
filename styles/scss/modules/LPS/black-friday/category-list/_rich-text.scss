@@ -1,0 +1,14 @@
+.container {
+  &--category-list-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .paragraph--category-list-title {
+    color: $gray-14;
+    font-size: 26px;
+    font-weight: $bold;
+
+    margin-bottom: 20px;
+  }
+}

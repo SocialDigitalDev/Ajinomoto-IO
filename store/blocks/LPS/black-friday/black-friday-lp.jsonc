@@ -1,0 +1,38 @@
+{
+	"store.custom#lp-black-friday": {
+		"blocks": [
+			"flex-layout.row#lp-black-friday-wrapper"
+		]
+	},
+
+	"flex-layout.row#lp-black-friday-wrapper": {
+		"props": {
+			"blockClass": [
+				"lp-black-friday-wrapper"
+			]
+		},
+		"children": [
+			"flex-layout.col#lp-black-friday-wrapper"
+		]
+	},
+
+	"flex-layout.col#lp-black-friday-wrapper": {
+		"children": [
+			"responsive-layout.desktop#bf-banner-principal-desktop",
+			"responsive-layout.tablet#bf-banner-principal-tablet",
+			"responsive-layout.phone#bf-banner-principal-phone",
+			"flex-layout.row#seo-text-lp-black-friday",
+			"flex-layout.row#newsletter-black-friday",
+			"flex-layout.row#info-card-container",
+			"responsive-layout.desktop#bf-banner-central-desktop",
+			"responsive-layout.tablet#bf-banner-central-tablet",
+			"responsive-layout.phone#bf-banner-central-phone",
+			"flex-layout.row#category-list",
+			"flex-layout.row#grid-container",
+			"flex-layout.row#ofertas-marcas",
+			"responsive-layout.desktop#bf-banner-inferior-desktop",
+			"responsive-layout.tablet#bf-banner-inferior-tablet",
+			"responsive-layout.phone#bf-banner-inferior-phone"
+		]
+	}
+}

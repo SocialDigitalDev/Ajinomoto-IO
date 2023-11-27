@@ -40,6 +40,7 @@
             "flex-layout.row#product-name--container",
             "custom-ean-number",
             "similar-products",
+            "custom-product-size",
             "condition-layout.product#product-availability",
             "share#pdp",
             "custom-pdp-characteristics"
@@ -72,6 +73,7 @@
             "stack-layout#img-product",
             "flex-layout.row#product-name--container",
             "similar-products",
+            "custom-product-size",
             "condition-layout.product#product-availability",
             "custom-pdp-characteristics",
             "flex-layout.row#disclosure-specifications",

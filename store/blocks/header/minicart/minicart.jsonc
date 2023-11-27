@@ -2,16 +2,14 @@
 	"minicart.v2": {
 		"props": {
 			"blockClass": "minicart-v2",
-			// "maxDrawerWidth": 900,
 			"quantityDisplay": "always"
-			// "customPixelEventName": "addToCart"
 		},
 		"children": ["minicart-base-content"]
 	},
 	"minicart-base-content": {
 		"blocks": ["minicart-empty-state"],
 		"children": [
-			// "flex-layout.row#minicart-footer-shipping-bar",
+			"flex-layout.row#minicart-footer-shipping-bar",
 			"minicart-product-list",
 			"flex-layout.row#minicart-footer-title",
 			"flex-layout.row#minicart-footer"
@@ -32,8 +30,8 @@
 	},
 	"react-shipping-bar": {
 		"props": {
-			"shippingValue": 30000,
-			"initialMessage": "Faltam {valor} para conseguir frete grátis",
+			"shippingValue": 19900,
+			"initialMessage": "Faltam {valor} para conseguir frete grátis \n *Válido apenas para sul e sudeste",
 			"successMessage": "Você ganhou Frete Grátis!"
 		}
 	},

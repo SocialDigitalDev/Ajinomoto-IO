@@ -19,8 +19,8 @@
         },
         "children": [
             "product-list-price",
-            "product-selling-price"
-            
+            "product-selling-price",
+            "custom-pix-price"
         ]
     },
 
