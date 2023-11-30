@@ -9,13 +9,11 @@ import { OrderQueueProvider } from 'vtex.order-manager/OrderQueue'
 import { OrderFormProvider, useOrderForm } from 'vtex.order-manager/OrderForm'
 import { FormattedCurrency } from 'vtex.format-currency'
 import { OrderShippingProvider } from 'vtex.order-shipping/OrderShipping'
-
 import { schema } from './schema'
 import type { MinicartProps } from './types'
 import { VendorCode } from './VendorCode'
 import { MinicartShipping } from './Shipping'
 import { SummaryCoupon } from './SummaryCoupon'
-// import { ListSLA } from './Shipping/ListSLA'
 
 import './global.css'
 
@@ -28,8 +26,6 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
   const [discount, setDiscount] = useState(0)
   const [shipping, setShipping] = useState<number | null>(null)
   const [total, setTotal] = useState(0)
-  // const [deliveryOptions, setDeliveryOptions] = useState([])
-  const [installments, setInstallments] = useState<any>()
   const [cupom, setCupom] = useState<any>()
   const [marketingDataPromotion, setMarketingDataPromotion]: any = useState({});
 
@@ -86,50 +82,6 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
     setShipping(totalValue)
   }
 
-  // const getDeliveryOptions = (updatedOrderForm: any) => {
-  //   const listDelivery = updatedOrderForm?.shipping?.deliveryOptions
-  //   // const uniqueDeliveryOptions: any = [];
-
-  //   // const temp: any = {};
-
-  //   // listDelivery.forEach((option: { id: string }) => {
-  //   //   if (!temp[option.id]) {
-  //   //     temp[option.id] = true;
-  //   //     uniqueDeliveryOptions.push(option);
-  //   //   }
-  //   // });
-
-  //   const pricesById = listDelivery.reduce((accumulator: any, item: any) => {
-  //     if (accumulator[item.id]) {
-  //       accumulator[item.id].price += item.price;
-  //     } else {
-  //       accumulator[item.id] = {
-  //         id: item.id,
-  //         deliveryChannel: item.deliveryChannel,
-  //         price: item.price,
-  //         estimate: item.estimate,
-  //         isSelected: item.isSelected,
-  //         __typename: "DeliveryOption"
-  //       };
-  //     }
-
-  //     return accumulator
-  //   }, {});
-
-  //   const pricesArray: any = Object.values(pricesById);
-
-  //   // setDeliveryOptions(listDelivery);
-  //   setDeliveryOptions(pricesArray)
-  // }
-
-  const getInstallments = () => {
-    const listInstallments = orderForm?.paymentData?.installmentOptions[0]?.installments
-
-    const lastItemFromArray = listInstallments && listInstallments[listInstallments.length - 1] || false
-
-    setInstallments(lastItemFromArray)
-  }
-
   const getCupons = () => {
     const listCupom = orderForm?.marketingData?.coupon
 
@@ -137,8 +89,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
   }
 
   const updateOrderForm = (orderFormReceived: any) => {
-    setOrderForm(orderFormReceived)
-    console.log("🚀 ~ file: index.tsx:134 ~ updateOrderForm ~ orderFormReceived:", orderFormReceived)
+    setOrderForm(orderFormReceived);
   }
 
   const getOrderForm = () => {
@@ -177,8 +128,7 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
 
         orderForm.items = orderFormAttached
         setMarketingDataPromotion(orderForm.marketingData);
-        setOrderForm(orderForm)
-        console.log(">> Orderform", orderForm)
+        setOrderForm(orderForm);
       })
   }
 
@@ -190,10 +140,8 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
     getSubTotal()
     getDiscount(orderForm)
     getTotal()
-    getInstallments()
     getCupons()
     getShipping()
-    // getDeliveryOptions(orderForm)
   }, [orderForm])
 
   return (
@@ -210,38 +158,11 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
                       orderForm={orderForm}
                     />
                   </div>
-
-                  {/* <div className="minicart-footer-shipping">
-                    {deliveryOptions.length ? (
-                      <p className='minicart-footer-shipping__title-resume'>
-                        Opções de entrega disponíveis para este CEP
-                      </p>
-                    ) : ''}
-                    <div className="minicart-footer-shipping__list">
-                      {
-                        deliveryOptions?.map((item: any, index: number) => {
-                          return (
-                            <ListSLA
-                              key={index}
-                              index={index}
-                              name={item.id}
-                              price={item.price}
-                              deliveryEstimate={item.estimate}
-                              itemSelected={item.isSelected}
-                              callback={getOrderForm}
-                              orderForm={orderForm}
-                            />
-                          )
-                        })
-                      }
-                    </div>
-                  </div> */}
                 </>
               )}
 
               {cupomDesconto && (
                 <div className="minicart-footer__field minicart-footer__field--coupon">
-                  {/* <SummaryCoupon /> */}
                   <SummaryCoupon
                     callback={updateOrderForm}
                     orderForm={orderForm}
@@ -311,28 +232,6 @@ export const CustomMinicartFooter: StorefrontFunctionComponent<
                   <FormattedCurrency value={total} />
                 </span>
               </div>
-
-              {
-                installments ? (
-                  <div className="minicart-footer__totalizers minicart-footer__totalizers--installment">
-                    <span className="installment__label minicart-footer__totalizers-label" />
-                    <span className="installment__value minicart-footer__totalizers-value">
-                      ou <FormattedCurrency value={installments?.value / 100 || 0} /> em {installments?.count}x sem juros
-                    </span>
-                  </div>
-                ) : ''
-              }
-
-              {/* {
-                installments ? (
-                  <div className="minicart-footer__totalizers minicart-footer__totalizers--installment">
-                    <span className="installment__label minicart-footer__totalizers-label" />
-                    <span className="installment__value minicart-footer__totalizers-value">
-                      ou {installments?.count}x sem juros de <FormattedCurrency value={installments?.value / 100 || 0} />
-                    </span>
-                  </div>
-                ) : ''
-              } */}
 
               <div className="minicart-footer__buttons">
                 <a
