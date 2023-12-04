@@ -25,7 +25,7 @@ const CustomProductSize = () => {
     }, [])
     
     // Verificação básica de existência de dados antes de renderizar.
-    return renderData ? (
+    return actualProductSize ? (
         <div className="custom-product-size__wrapper">
             <p className="custom-product-size__available-text">Disponível em:</p>    
             <div className="custom-product-size__content">
