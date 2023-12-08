@@ -1,0 +1,118 @@
+@import "../../../styles/scss/variables/all";
+
+.seo{
+
+  &-custom{
+
+    &-block{
+      display: flex;
+      flex-flow: column;
+
+      &.ver{
+
+        &-mais{
+          transition: .3s all ease;
+
+          @media (min-width: 1201px){
+            max-height: 215px;
+          }
+
+          @media (max-width: 1200px) and (min-width: 1025px){
+            max-height: 245px;
+          }
+
+          @media (max-width: 1024px) and (min-width: 821px){
+            max-height: 215px;
+          }
+
+          @media (max-width: 820px) and (min-width: 769px){
+            max-height: 240px;
+          }
+
+          @media (max-width: 768px) and (min-width: 578px){
+            max-height: 235px;
+          }
+
+          @media (max-width: 577px) and (min-width: 375px){
+            max-height: 275px;
+          }
+
+          @media (max-width: 374px){
+            max-height: 263px;
+          }
+        }
+
+        &-menos{
+          max-height: 100%;
+          transition: .3s all ease;
+        }
+      }
+    }
+
+    &-title{
+      font-family: $Montserrat;
+      font-size: 22px;
+      line-height: 160%;
+      font-weight: $regular;
+    }
+
+    &-text{
+      line-height: 160%;
+
+      > h2 {
+        font-size: 18px;
+        font-weight: $bold;
+        margin: 5px 0;
+      }
+
+      > p {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 8px;
+
+        a {
+          color: $black;
+
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+
+      &.ver{
+
+        &-mais,
+        &-menos{
+          overflow: hidden;
+        }
+      }
+    }
+
+    &-see-more-less{
+      margin: 8px 0;
+      display: block;
+      font-size: 16px;
+      border: none;
+      background: none;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 0;
+      box-shadow: 0px -20px 20px 18px $white;
+
+    }
+  }
+}
+
+.shadowless {
+  box-shadow: none;
+}
+.render-route-vtex-store-2-x-store-custom-oktoberfest{
+
+  .vtex-flex-layout-0-x-flexRow--category--seo{
+
+    .vtex-store-components-3-x-container{
+      max-width: 1366px;
+      margin: auto;
+    }
+  }
+}

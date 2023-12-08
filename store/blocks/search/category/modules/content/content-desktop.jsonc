@@ -11,7 +11,7 @@
 		"children": [
 			"flex-layout.row#category-banner",
 			"flex-layout.row#search-breadcrumb",
-			"flex-layout.row#category-text",			
+			"flex-layout.row#category-text",
 			"flex-layout.row#category-main"
 		],
 		"props": {
@@ -130,10 +130,21 @@
 		"children": [
 			"flex-layout.row#fetchprevious",
 			"flex-layout.row#products",
-			"flex-layout.row#fetchmore"
+			"flex-layout.row#fetchmore",
+			"flex-layout.row#custom-seo-block"
 		],
 		"props": {
 			"blockClass": "category--result"
+		}
+	},
+
+	"flex-layout.row#custom-seo-block": {
+		"title": "Texto da categoria",
+		"children": [
+			"custom-seo-block"
+		],
+		"props": {
+			"blockClass": "category--text"
 		}
 	}
 }

@@ -65,7 +65,7 @@
 		"component": "EanInPDP"
 	},
 
-	"custom-seo-block": {
+	"custom-bf-seo-block": {
 		"component": "BFSeoText"
 	},
 
@@ -79,5 +79,9 @@
 
 	"custom-pix-price": {
 		"component": "CustomPIXDiscount"
+	},
+
+	"custom-seo-block": {
+		"component": "SeoTextBlock"
 	}
 }
