@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { schema } from "./schema";
 import './global.css';
 
-const SeoTextBlock = ({ enableComponent = false, seoTitle, seoText }: any) => {
+const SeoTextBlock = ({ enableComponent = false, seoText }: any) => {
     const [ seeMore, setSeeMore ] = useState('ver-mais');
     const [ textSeeMore, setTextSeeMore] = useState('Ver Mais');
 
@@ -20,7 +20,6 @@ const SeoTextBlock = ({ enableComponent = false, seoTitle, seoText }: any) => {
         <>
             {enableComponent && (
                 <div className={`seo-custom-block ${seeMore}`}>
-                    <h1 className="seo-custom-title" dangerouslySetInnerHTML={{__html: seoTitle }} />
                     <div className={`seo-custom-text ${seeMore}`} dangerouslySetInnerHTML={{__html: seoText }} />
                     <button
                         className={`seo-custom-see-more-less ${seeMore === 'ver-menos' ? 'shadowless' : ''}`}
