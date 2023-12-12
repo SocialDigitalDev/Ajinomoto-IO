@@ -9,15 +9,6 @@ export const schema = {
             description: 'Esconde e Mostra o Componente',
             default: false,
         },
-        seoTitle: {
-            type: "string",
-            default: "Texto de SEO Padrão",
-            description: "Título do Texto de SEO",
-            title: "Título SEO",
-            widget: {
-                'ui:widget': 'textarea'
-            }
-        },
         seoText: {
             type: "string",
             default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
