@@ -22,8 +22,7 @@
 			},
 			"children": [
 					"rich-text#info-card-title",
-					"flex-layout.row#info-card-products",
-					"rich-text#info-card-button"
+					"flex-layout.row#info-card-products"
 			]
 	},
 
@@ -64,15 +63,6 @@
 					"blockClass": "info-card-title",
 					"text": "Descontos de até"
 			}
-	},
-
-	// Botão
-	"rich-text#info-card-button": {
-		"title": "Título: Ver todos os produtos",
-		"props": {
-			"blockClass": "info-card-button",
-			"text": "[VER TODOS OS PRODUTOS](/black-friday-2023)"
-		}
 	},
 
 	// Infocards de produto
