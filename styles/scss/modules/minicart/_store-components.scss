@@ -4,3 +4,13 @@
         width: 180px;
     }
 }
+
+.image {
+	&Element {
+		&--minicart--icon {
+			width: 34px;
+			height: 33px;
+			display: block;
+		}
+	}
+}
