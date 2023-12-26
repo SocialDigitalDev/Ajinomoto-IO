@@ -225,14 +225,25 @@
 	padding-left: 0;
 
 	&::before {
-		content: "Entrar";
-		font-size: 12px;
-		font-weight: $semi-bold;
+		background: none;
+		display: none;
 	}
 
-	&::after {
-		content: "ou cadastrar";
-		font-size: 12px;
+	@include media(">laptop") {
+		&::before {
+			content: "Entrar";
+			display: block;
+			font-size: 12px;
+			font-weight: $semi-bold;
+			height: auto;
+			padding-left: 10px;
+		}
+
+		&::after {
+			content: "ou cadastrar";
+			font-size: 12px;
+			padding-left: 10px;
+		}
 	}
 }
 

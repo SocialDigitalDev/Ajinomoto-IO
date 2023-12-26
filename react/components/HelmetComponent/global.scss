@@ -446,15 +446,33 @@ ol {
 .login-header {
 	&::before {
 		content: "";
-		background-image: url("/assets/svg/ico_panda-header.svg");
+		background: url("../../../assets/svg/ico_panda-header.svg");
+		background-repeat: no-repeat;
 		display: block;
-		width: 41px;
-		height: 33px;
+
+		@include media(">laptop") {
+			width: 41px;
+			height: 33px;
+		}
+
+		@include media("<=laptop") {
+			width: 33px;
+			height: 25px;
+			background-size: contain;
+			margin-right: 25px;
+		}
 	}
 
 	svg {
 		display: none;
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+
+.vtex-login-2-x-buttonLink {
+	div {
+		margin: 0;
+		padding: 0 !important;
 	}
 }
