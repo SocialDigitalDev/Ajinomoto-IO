@@ -53,26 +53,10 @@
 	"flex-layout.row#minicart": {
 		"title": "MINICART",
 		"children": [
-			// "minicart.v2",
-			"link#mnicart"
+			"minicart.v2"
 		],
 		"props": {
 			"blockClass": "header--minicart"
-		}
-	},
-
-	"link#mnicart": {
-		"props": {
-			"href": "/checkout/#/cart",
-			"blockClass": ["minicart--link"]
-		},
-		"children": ["image#minicart"]
-	},
-
-	"image#minicart": {
-		"props": {
-			"src": "assets/svg/ico_cart-header.svg",
-			"blockClass": ["minicart--icon"]
 		}
 	}
 }

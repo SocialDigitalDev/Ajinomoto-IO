@@ -2,9 +2,9 @@
 	"minicart.v2": {
 		"props": {
 			"blockClass": "minicart-v2",
-			"quantityDisplay": "always"
-		},
-		"children": ["minicart-base-content"]
+			"quantityDisplay": "always",
+			"variation": "link"
+		}
 	},
 	"minicart-base-content": {
 		"blocks": ["minicart-empty-state"],
