@@ -21,7 +21,7 @@
 			display: flex;
 		}
 		.accessCodeOptionBtn {
-			
+
 			:global(.vtex-button) {
 				border-radius: 20px;
 				border: 1px solid #3c3c3c;
@@ -163,4 +163,97 @@
 			}
 		}
 	}
+}
+
+.content {
+	&Container {
+		border-radius: 20px;
+		background-color: $orange-2;
+	}
+
+	&--loginOptions {
+		border-radius: 20px;
+		background-color: $orange-2;
+	}
+}
+
+.form {
+	&Title {
+		font-family: $OpenSans;
+		font-weight: $extra-bold;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: $red-3;
+	}
+}
+
+.options {
+	&List {
+		&Item {
+			:global(.vtex-button) {
+				border: 1px solid $gray-2;
+				background-color: $white;
+				color: $black;
+				font-size: 14px;
+				line-height: 19px;
+				font-family: $OpenSans;
+				border-radius: 20px;
+			}
+		}
+	}
+}
+
+.button {
+	&Link {
+		:global(.vtex-button) {
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.label {
+	font-size: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: $OpenSans;
+	color: $primary;
+	text-align: left;
+	text-transform: none;
+	padding-left: 0;
+
+	&::before {
+		background: none;
+		display: none;
+	}
+
+	@include media(">laptop") {
+		&::before {
+			content: "Entrar";
+			display: block;
+			font-size: 12px;
+			font-weight: $semi-bold;
+			height: auto;
+			padding-left: 10px;
+		}
+
+		&::after {
+			content: "ou cadastrar";
+			font-size: 12px;
+			padding-left: 10px;
+		}
+	}
+}
+
+.optionsListItem {
+	max-width: 264px;
+	margin-inline: auto;
+}
+
+.facebookOptionBtn {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
 }

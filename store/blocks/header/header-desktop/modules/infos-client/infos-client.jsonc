@@ -28,7 +28,7 @@
 
 	"flex-layout.row#my-account": {
 		"children": [
-			"custom-login"
+			"login"
 		],
 		"props": {
 			"blockClass": "header--account"
@@ -37,26 +37,42 @@
 
 	"login": {
 		"props": {
-			"optionsTitle": "Acesse sua conta",
+			"labelClasses": ["login-header"],
+			"optionsTitle": "Seja bem-vindo \n Acesse sua conta",
 			"emailAndPasswordTitle": "Acesse sua conta",
 			"accessCodeTitle": "Acesso rápido",
 			"emailPlaceholder": "Insira seu e-mail",
 			"passwordPlaceholder": "Insira sua senha",
-			"acessCodePlaceholder": "Insira o código encaminhado",
+			"accessCodePlaceholder": "Insira o código encaminhado",
 			"showPasswordVerificationIntoTooltip": true,
-			"showIconProfile": false,
-			"accountOptionsButtonBehavior": "link",
-			"termsAndConditions": "Ao logar, você aceita os [termos e condições](/institucional/termos-e-condicoes) da Ajinomoto"
+			"showIconProfile": true,
+			"logInButtonBehavior": "link"
 		}
 	},
 
 	"flex-layout.row#minicart": {
 		"title": "MINICART",
 		"children": [
-			"minicart.v2"
+			// "minicart.v2",
+			"link#mnicart"
 		],
 		"props": {
 			"blockClass": "header--minicart"
+		}
+	},
+
+	"link#mnicart": {
+		"props": {
+			"href": "/checkout/#/cart",
+			"blockClass": ["minicart--link"]
+		},
+		"children": ["image#minicart"]
+	},
+
+	"image#minicart": {
+		"props": {
+			"src": "assets/svg/ico_cart-header.svg",
+			"blockClass": ["minicart--icon"]
 		}
 	}
 }
