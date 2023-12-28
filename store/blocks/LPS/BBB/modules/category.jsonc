@@ -1,0 +1,105 @@
+{
+  "flex-layout.row#category": {
+    "props": {
+      "blockClass": [
+        "ajinomoto--categories",
+        "categories-section"
+      ]
+    },
+    "children": [
+      "flex-layout.col#category"
+    ]
+  },
+
+  "flex-layout.col#category": {
+    "children": [
+      "rich-text#category-header",
+      "slider-layout#infocards"
+    ]
+  },
+
+  "rich-text#category-header": {
+    "title": "Categorias título",
+    "props": {
+      "text": "Sabores em destaque",
+      "blockClass": "bbb-category-title"
+    }
+  },
+
+  "slider-layout#infocards": {
+    "title": "Categorias slider",
+    "props": {
+      "blockClass": "categories-slider",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showNavigationDots": "always"
+    },
+    "children": [
+      "info-card#category-1",
+      "info-card#category-2",
+      "info-card#category-3",
+      "info-card#category-4"
+    ]
+  },
+
+  "info-card#category-1": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "",
+      "imageUrl": "assets/img/lp-bbb/category-1.png",
+      "headline": "Temperos",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/temperos",
+      "callToActionMode": "link",
+      "blockClass": "bbb-info-card-category",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#category-2": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "",
+      "imageUrl": "assets/img/lp-bbb/category-2.png",
+      "headline": "Temperos para pipoca",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "callToActionMode": "link",
+      "blockClass": "bbb-info-card-category",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#category-3": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "",
+      "imageUrl": "assets/img/lp-bbb/category-3.png",
+      "headline": "Tempera & prepara",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "callToActionMode": "link",
+      "blockClass": "bbb-info-card-category",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#category-4": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "",
+      "imageUrl": "assets/img/lp-bbb/category-4.png",
+      "headline": "Caldos",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/caldos",
+      "callToActionMode": "link",
+      "blockClass": "bbb-info-card-category",
+      "textAlignment": "center"
+    }
+  }
+}

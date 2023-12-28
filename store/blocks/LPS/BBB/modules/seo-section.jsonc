@@ -1,0 +1,152 @@
+{
+  "flex-layout.row#seo-section": {
+    "title": "Seo Section",
+    "props": {
+      "blockClass": [
+        "ajinomoto--seo-section",
+        "bbb-seo-section"
+      ]
+    },
+    "children": [ "flex-layout.col#seo-section" ]
+  },
+
+  "flex-layout.col#seo-section": {
+    "props": {
+      "blockClass": ["bbb-seo-section"]
+    },
+    "children": [
+      "flex-layout.row#seo-main",
+      "responsive-layout.desktop#seo-section-banner-desktop",
+      "responsive-layout.tablet#seo-section-banner-tablet",
+      "responsive-layout.phone#seo-section-banner-phone"
+    ]
+  },
+
+  "flex-layout.row#seo-main": {
+    "props": {
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#seo-header",
+      "list-context.image-list#seo-section-robot",
+      "custom-bbb-seo-block"
+    ]
+  },
+
+  "flex-layout.col#seo-header": {
+    "title": "Seo Header",
+    "props": {
+      "blockClass": ["seo-header"]
+    },
+    "children": [
+      "rich-text#seo-subtitle",
+      "rich-text#seo-title"
+    ]
+  },
+
+  "rich-text#seo-subtitle": {
+    "title": "Subtitle",
+    "props": {
+      "text": "SAZÓN® e BBB 2024",
+      "blockClass": ["seo-header-subtitle"]
+    }
+  },
+
+  "rich-text#seo-title": {
+    "title": "Title",
+    "props": {
+      "text": "Um Encontro de Sabores Inesquecíveis!",
+      "blockClass": ["seo-header-title"]
+    }
+  },
+
+  "list-context.image-list#seo-section-robot": {
+    "title": "Seo section Robot",
+    "children": ["slider-layout#bbb-robot-seo-section"],
+    "props": {
+      "preload": true,
+      "height": 234,
+      "images": [{
+          "image": "assets/img/lp-bbb/bbb-robot-seo-section.png",
+          "width": "234px"
+        }]
+    }
+  },
+  "slider-layout#bbb-robot-seo-section": {
+    "props": {
+      "blockClass": "seo-robot",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showNavigationDots": "always"
+    }
+  },
+
+  // RESPONSIVE LAYOUT
+
+  // DESKTOP
+  "responsive-layout.desktop#seo-section-banner-desktop": {
+    "children": ["list-context.image-list#bbb-seo-section-banner-desktop"]
+  },
+  "list-context.image-list#bbb-seo-section-banner-desktop": {
+    "title": "[desktop] banner",
+    "children": ["slider-layout#bbb-seo-section-banner"],
+    "props": {
+      "preload": true,
+      "height": 250,
+      "images": [{
+          "image": "assets/img/lp-bbb/seo-section-banner-desktop.png"
+        }]
+    }
+  },
+
+  // TABLET
+  "responsive-layout.tablet#seo-section-banner-tablet": {
+    "children": ["list-context.image-list#bbb-seo-section-banner-tablet"]
+  },
+  "list-context.image-list#bbb-seo-section-banner-tablet": {
+    "title": "[tablet] banner",
+    "children": ["slider-layout#bbb-seo-section-banner"],
+    "props": {
+      "preload": true,
+      "height": 250,
+      "images": [{
+          "image": "assets/img/lp-bbb/seo-section-banner-tablet.png"
+        }]
+    }
+  },
+
+  // PHONE
+  "responsive-layout.phone#seo-section-banner-phone": {
+    "children": ["list-context.image-list#bbb-seo-section-banner-phone"]
+  },
+  "list-context.image-list#bbb-seo-section-banner-phone": {
+    "title": "[phone] banner",
+    "children": ["slider-layout#bbb-seo-section-banner"],
+    "props": {
+      "preload": true,
+      "height": 335,
+      "images": [{
+          "image": "assets/img/lp-bbb/seo-section-banner-phone.png"
+        }]
+    }
+  },
+
+  "slider-layout#bbb-seo-section-banner": {
+    "props": {
+      "blockClass": "seo-banner-slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showNavigationDots": "always"
+    }
+  }
+}

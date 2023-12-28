@@ -1,0 +1,26 @@
+.flexRow--ajinomoto--seo-section {
+  margin: 80px 0;
+  position: relative;
+  .flex {
+    &Col{
+      &--seo-header {
+        width: fit-content;
+        max-width: 450px;
+
+        .flexColChild--seo-header {
+          height: fit-content !important;
+        }
+      }
+
+      &--bbb-seo-section {
+        width: 1240px;
+      }
+    }
+  }
+}
+
+.flexRow--ajinomoto--categories {
+  max-width: 1240px;
+  margin: 0 auto;
+
+}

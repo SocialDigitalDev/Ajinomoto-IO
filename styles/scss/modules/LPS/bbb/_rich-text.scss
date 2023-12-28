@@ -1,0 +1,15 @@
+.paragraph {
+    &--bbb-shelf-card-subtitle {
+        font-family: $OpenSans;
+        font-size: 20px;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+    &--bbb-shelf-card-title {
+        font-family: $OpenSans;
+        font-size: 32px;
+        font-weight: $semi-bold;
+        margin: 0;
+    }
+}

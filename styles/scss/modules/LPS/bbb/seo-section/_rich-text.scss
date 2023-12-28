@@ -1,0 +1,37 @@
+.paragraph {
+  &--seo-header-subtitle {
+    color: $bbb-red;
+    font-family: $OpenSans;
+    font-size: 20px;
+    width: 450px;
+    margin: 0;
+    margin-bottom: 14px;
+  }
+
+  &--seo-header-title {
+    color: $bbb-red;
+    font-family: $OpenSans;
+    font-size: 36px;
+    font-weight: $semi-bold;
+    // width: 450px;
+    min-width: 428px;
+
+    @include media('<=phone') {
+      min-width: fit-content;
+    }
+    margin: 0;
+  }
+
+  &--bbb-category-title {
+    color: $black;
+    font-family: $OpenSans;
+    font-size: 26px;
+    font-weight: $bold;
+  }
+}
+
+.container {
+  &--bbb-category-title {
+    justify-content: center;
+  }
+}

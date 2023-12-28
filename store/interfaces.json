@@ -83,5 +83,9 @@
 
 	"custom-seo-block": {
 		"component": "SeoTextBlock"
+	},
+
+	"custom-bbb-seo-block": {
+		"component": "BBBSeoText"
 	}
 }

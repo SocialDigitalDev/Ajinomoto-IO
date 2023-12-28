@@ -1,0 +1,95 @@
+.imageElement {
+  &--seo-robot {
+    @include media('<=tablet') {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &--seo-banner-slider {
+    border-radius: 10px;
+  }
+}
+
+.infoCard {
+  &Container {
+    &--bbb-info-card-category {
+      overflow: visible;
+      flex-direction: column-reverse;
+      border-radius: 10px;
+      box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 60.99%, $white 100%), url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/cd278582-a98b-4d57-819b-78ce5496d481___191a84cd37271fee4e93ca06a7864346.png') no-repeat;
+    }
+  }
+
+  &Image {
+    &Container {
+      &--bbb-info-card-category {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    &--bbb-info-card-category {
+      width: 272px;
+      height: 350px;
+    }
+  }
+
+  &CallActionContainer {
+    &--bbb-info-card-category {
+      width: 100%;
+      background: $bbb-orange;
+      border-radius: 5px;
+      text-decoration: none;
+
+      padding: 8px 10px;
+      margin-top: 14px;
+      margin-bottom: 20px;
+      transition: 0.2s;
+
+      &:hover {
+        background: darken($bbb-orange, 5%);
+        color: darken($white, 5%);
+      }
+
+      .infoCardCallActionText {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+
+        text-decoration: none;
+        color: $white;
+        font-family: $OpenSans;
+        font-size: 25px;
+        font-weight: $medium;
+        text-transform: lowercase;
+
+        &::after {
+          content: "";
+          width: 32px;
+          height: 32px;
+          display: block;
+          background-image: url("data:image/svg+xml,%3Csvg width='34' height='33' viewBox='0 0 34 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_92_61)'%3E%3Cpath d='M4.36107 15.9011L25.1492 15.9011L16.0672 25.2273C15.3414 25.9727 15.3414 27.1958 16.0672 27.9411C16.2394 28.1183 16.4439 28.2588 16.669 28.3547C16.8942 28.4506 17.1355 28.5 17.3792 28.5C17.623 28.5 17.8643 28.4506 18.0895 28.3547C18.3146 28.2588 18.5191 28.1183 18.6913 27.9411L30.9557 15.3469C31.1283 15.1701 31.2651 14.9601 31.3585 14.7289C31.4519 14.4977 31.5 14.2499 31.5 13.9996C31.5 13.7493 31.4519 13.5015 31.3585 13.2703C31.2651 13.0391 31.1283 12.8291 30.9557 12.6523L18.6913 0.0580791C18.519 -0.118855 18.3144 -0.259204 18.0893 -0.354959C17.8642 -0.450715 17.6229 -0.5 17.3792 -0.5C17.1356 -0.5 16.8943 -0.450715 16.6692 -0.35496C16.444 -0.259204 16.2395 -0.118855 16.0672 0.0580789C15.8949 0.235013 15.7582 0.445066 15.665 0.676241C15.5717 0.907416 15.5237 1.15519 15.5237 1.40541C15.5237 1.65563 15.5717 1.9034 15.665 2.13458C15.7582 2.36575 15.8949 2.57581 16.0672 2.75274L25.1492 12.0789L4.36107 12.0789C3.33748 12.0789 2.5 12.9389 2.5 13.99C2.5 15.0411 3.33748 15.9011 4.36107 15.9011Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_92_61'%3E%3Crect width='33' height='33' fill='white' transform='translate(33.5 33) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+  }
+
+  &Headline {
+    &--bbb-info-card-category {
+      color: $bbb-orange;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+
+  &TextContainer {
+    &--bbb-info-card-category {
+      width: 100%;
+    }
+  }
+}

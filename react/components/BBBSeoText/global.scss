@@ -1,0 +1,55 @@
+@import "../../../styles/scss/variables/all";
+
+.seo-section-text {
+  max-width: 595px;
+  display: flex;
+  flex-direction: column;
+
+  .text-area {
+    position: relative;
+    overflow: hidden;
+
+    p {
+      color: $bbb-red;
+      font-family: $OpenSans;
+      font-size: 15px;
+    }
+
+    @include media('<=phone') {
+      p.retracted {
+        max-height: 80px;
+        overflow: hidden;
+      }
+    }
+
+    .fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      display: none;
+      background: linear-gradient(180deg, rgba(255, 201, 141, 0.00) 0%, rgba(255, 201, 144, 0.00) 0.01%, #FFC98D 100%);
+
+      @include media('<=phone') {
+        display: block;
+      }
+    }
+  }
+
+  .toggle-text {
+    display: none;
+    background: none;
+    border: none;
+    padding: 16px;
+
+    text-decoration: underline;
+    font-family: $OpenSans;
+    font-size: 13px;
+    font-weight: $bold;
+    color: $bbb-red;
+
+    @include media('<=phone') {
+      display: block;
+    }
+  }
+}

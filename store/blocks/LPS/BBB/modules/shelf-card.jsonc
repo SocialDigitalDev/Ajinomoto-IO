@@ -1,0 +1,120 @@
+{
+    "flex-layout.row#bbb-shelf-card": {
+        "title": "Painel prateleira",
+        "props": {
+            "blockClass": [
+                "ajinomoto--bbb-shelf-card",
+                "bbb-shelf-card"
+            ]
+        },
+        "children": [
+            "flex-layout.row#main-shelf-card"
+        ]
+    },
+    "flex-layout.row#main-shelf-card": {
+        "props": {
+            "blockClass": "bbb-main-shelf-card",
+            "colSizing": "auto"
+        },
+        "children": [
+            "image#shelf-banner",
+            "flex-layout.col#shelf-content"
+        ]
+    },
+    "flex-layout.col#shelf-content": {
+        "title": "Seção de produtos",
+        "props": {
+            "blockClass": "bbb-shelf-card-content",
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#shelf-header",
+            "list-context.product-list#sazon-product-list",
+            "flex-layout.col#outline"
+        ]
+    },
+
+    "flex-layout.col#outline": {
+        "props": {
+            "blockClass": "outline",
+            "preventVerticalStretch": true
+        }
+    },
+
+    "image#shelf-banner": {
+        "title": "IMAGEM DO BANNER",
+        "props": {
+            "blockClass": "shelf-banner-image",
+            "src": "assets/img/lp-bbb/bbb-shelf-banner.png"
+        }
+    },
+
+    "slider-layout#bbb-shelf-card-slider": {
+        "props": {
+            "blockClass": "bbb-shelf-card-slider",
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showNavigationDots": "always"
+        }
+    },
+    "flex-layout.col#shelf-header": {
+        "title": "Header",
+        "props": {
+            "blockClass": "bbb-shelf-card-header"
+        },
+        "children": [
+            "rich-text#shelf-subtitle",
+            "rich-text#shelf-title"
+        ]
+    },
+    "rich-text#shelf-subtitle": {
+        "title": "Subtítulo",
+        "props": {
+            "text": "Sazón em evidência",
+            "blockClass": [
+                "bbb-shelf-card-subtitle"
+            ]
+        }
+    },
+    "rich-text#shelf-title": {
+        "title": "Título",
+        "props": {
+            "text": "A explosão de sabor que conquistou o Big Brother Brasil",
+            "blockClass": [
+                "bbb-shelf-card-title"
+            ]
+        }
+    },
+
+    "list-context.product-list#sazon-product-list": {
+        "title": "PRATELEIRA SAZÓN",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-products"
+        ],
+        "props": {
+            "maxItems": 3
+        }
+    },
+
+    "slider-layout#shelf-products": {
+        "props": {
+            "blockClass": "bbb-shelf-card-products-slider",
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showNavigationDots": "always"
+        }
+    }
+}
