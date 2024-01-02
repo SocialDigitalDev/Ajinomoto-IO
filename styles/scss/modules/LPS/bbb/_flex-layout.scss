@@ -1,9 +1,10 @@
 .flex {
   &Row {
-    &--bbb-shelf-card {
-      max-width: 1240px;
-      margin: 64px auto;
-      position: relative;
+    &Container {
+      &--bbb-bg-wrapper {
+        margin: 0;
+        padding: 0;
+      }
     }
 
     &Content {
@@ -13,9 +14,28 @@
         position: relative;
       }
     }
+
+    &--bbb-shelf-card {
+      max-width: 1240px;
+      margin: 120px auto;
+      position: relative;
+    }
+
+    &--bbb-shelf {
+      max-width: 1240px;
+      margin: 0 auto;
+      margin-bottom: 120px;
+    }
   }
 
   &Col {
+    &--bbb-bg {
+      background: url('assets/img/lp-bbb/bbb-bg.jpg') no-repeat;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
     &Child {
       &--bbb-shelf-card-content {
         padding-top: 24px;
@@ -38,13 +58,12 @@
       &::after {
         content: '';
         position: absolute;
-        top: -70px;
+        top: -170px;
         right: -200px;
-        width: 414.373px;
-        height: 276.249px;
+        width: 425px;
+        height: 300px;
         transform: rotate(-5.889deg);
-        background: url('assets/img/lp-bbb/shelf-robot.png') cover no-repeat;
-        box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.25);
+        background: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ce073bc9-c7bf-4d91-8c90-5b9a9b499081___14fee9f96c7b8e38e36f9c23ebdc9661.png') no-repeat;
       }
     }
   }

@@ -32,7 +32,7 @@
       "blockClass": "categories-slider",
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 1
       },
       "infinite": true,

@@ -48,20 +48,6 @@
             "src": "assets/img/lp-bbb/bbb-shelf-banner.png"
         }
     },
-
-    "slider-layout#bbb-shelf-card-slider": {
-        "props": {
-            "blockClass": "bbb-shelf-card-slider",
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            },
-            "infinite": true,
-            "showNavigationArrows": "always",
-            "showNavigationDots": "always"
-        }
-    },
     "flex-layout.col#shelf-header": {
         "title": "Header",
         "props": {
@@ -97,14 +83,14 @@
             "product-summary.shelf"
         ],
         "children": [
-            "slider-layout#shelf-products"
+            "slider-layout#bbb-shelf-card-products"
         ],
         "props": {
             "maxItems": 3
         }
     },
 
-    "slider-layout#shelf-products": {
+    "slider-layout#bbb-shelf-card-products": {
         "props": {
             "blockClass": "bbb-shelf-card-products-slider",
             "itemsPerPage": {

@@ -1,12 +1,33 @@
 {
 	"store.custom#lp-bbb": {
 		"blocks": [
-      "responsive-layout.desktop#lp-top-banner-desktop",
-      "responsive-layout.tablet#lp-top-banner-tablet",
-      "responsive-layout.phone#lp-top-banner-phone",
-      "flex-layout.row#seo-section",
-      "flex-layout.row#category",
-      "flex-layout.row#bbb-shelf-card"
+         "responsive-layout.desktop#lp-top-banner-desktop",
+         "responsive-layout.tablet#lp-top-banner-tablet",
+         "responsive-layout.phone#lp-top-banner-phone",
+         "flex-layout.row#bbb-bg"
 		]
-	}
+	},
+
+   "flex-layout.row#bbb-bg": {
+      "props": {
+         "blockClass": "bbb-bg-wrapper"
+      },
+      "children": [
+         "flex-layout.col#bbb-bg"
+      ]
+   },
+
+   "flex-layout.col#bbb-bg": {
+      "props": {
+         "blockClass": [
+            "bbb-bg"
+         ]
+      },
+      "children": [
+         "flex-layout.row#seo-section",
+         "flex-layout.row#category",
+         "flex-layout.row#bbb-shelf-card",
+         "flex-layout.row#bbb-shelf"
+      ]
+   }
 }
