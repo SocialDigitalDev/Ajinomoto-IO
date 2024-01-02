@@ -224,12 +224,16 @@
 	text-transform: none;
 	padding-left: 0;
 
+	@include media(">phone") {
+		margin-right: 5px;
+	}
+
 	&::before {
 		background: none;
 		display: none;
 	}
 
-	@include media(">laptop") {
+	@include media(">phone") {
 		&::before {
 			content: "Entrar";
 			display: block;

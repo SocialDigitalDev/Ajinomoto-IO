@@ -450,12 +450,12 @@ ol {
 		background-repeat: no-repeat;
 		display: block;
 
-		@include media(">laptop") {
+		@include media(">phone") {
 			width: 41px;
 			height: 33px;
 		}
 
-		@include media("<=laptop") {
+		@include media("<=phone") {
 			width: 33px;
 			height: 25px;
 			background-size: contain;
