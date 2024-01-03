@@ -1,5 +1,6 @@
 {
   "flex-layout.row#category": {
+    "title": "Categorias",
     "props": {
       "blockClass": [
         "ajinomoto--categories",
@@ -36,8 +37,8 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
-      "showNavigationDots": "always"
+      "showNavigationArrows": "desktopOnly",
+      "showNavigationDots": "desktopOnly"
     },
     "children": [
       "info-card#category-1",

@@ -45,7 +45,7 @@
         "title": "IMAGEM DO BANNER",
         "props": {
             "blockClass": "shelf-banner-image",
-            "src": "assets/img/lp-bbb/bbb-shelf-banner.png"
+            "src": "assets/img/lp-bbb/bbb-shelf-banner-tablet.png"
         }
     },
     "flex-layout.col#shelf-header": {
@@ -99,7 +99,7 @@
                 "phone": 1
             },
             "infinite": true,
-            "showNavigationArrows": "always",
+            "showNavigationArrows": "desktopOnly",
             "showNavigationDots": "always"
         }
     }

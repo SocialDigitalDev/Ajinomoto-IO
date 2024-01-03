@@ -1,11 +1,16 @@
 .flexRow--ajinomoto--seo-section {
-  margin: 80px 0;
+  margin: 20px 0;
   position: relative;
   .flex {
     &Col{
       &--seo-header {
         width: fit-content;
         max-width: 450px;
+
+        @include media('<=phone') {
+          width: 100%;
+          max-width: none;
+        }
 
         .flexColChild--seo-header {
           height: fit-content !important;
@@ -14,6 +19,10 @@
 
       &--bbb-seo-section {
         width: 1240px;
+
+        @include media('<=phone') {
+          width: 100%;
+        }
       }
     }
   }

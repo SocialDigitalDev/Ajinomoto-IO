@@ -12,5 +12,17 @@
             left: -190px;
             bottom: 400px;
         }
+
+        @include media('<=phone') {
+            display: none;
+        }
+    }
+}
+
+.slider {
+    &TrackerContainer {
+        &--categories-slider {
+            overflow: hidden;
+        }
     }
 }

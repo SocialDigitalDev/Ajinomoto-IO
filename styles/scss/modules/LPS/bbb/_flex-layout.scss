@@ -1,70 +1,112 @@
 .flex {
-  &Row {
-    &Container {
-      &--bbb-bg-wrapper {
-        margin: 0;
-        padding: 0;
-      }
+    &Row {
+        &--bbb-bg-wrapper {
+            background: url('assets/img/lp-bbb/bbb-bg.jpg') no-repeat;
+            margin: 0;
+            padding: 0;
+
+            @include media("<=tablet") {
+                overflow: hidden;
+            }
+        }
+
+        &Content {
+            &--bbb-main-shelf-card {
+                border-radius: 20px;
+                box-shadow: 10px 10px 0px 0px #16C4FF, 20px 20px 0px 0px #675FED;
+                position: relative;
+            }
+
+            &--bbb-seo-main {
+                gap: 16px;
+            }
+        }
+
+        &--bbb-main-shelf-card {
+            border-radius: 20px;
+        }
+
+        &--bbb-shelf-card {
+            max-width: 1240px;
+            margin: 80px auto;
+            margin-bottom: 40px;
+            position: relative;
+            border-radius: 20px;
+            background: $white;
+
+            @include media ('<=phone') {
+                margin: 80px 16px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &--bbb-shelf {
+            max-width: 1240px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+
+            @include media("<=phone") {
+                margin-bottom: 50px;
+            }
+        }
     }
 
-    &Content {
-      &--bbb-main-shelf-card {
-        border-radius: 20px;
-        box-shadow: 10px 10px 0px 0px #16C4FF, 20px 20px 0px 0px #675FED;
-        position: relative;
-      }
-    }
+    &Col {
+        &--bbb-bg {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
 
-    &--bbb-shelf-card {
-      max-width: 1240px;
-      margin: 120px auto;
-      position: relative;
-    }
+            @include media("<=tablet") {
+                overflow: visible;
+            }
+        }
 
-    &--bbb-shelf {
-      max-width: 1240px;
-      margin: 0 auto;
-      margin-bottom: 120px;
-    }
-  }
+        &Child {
+            &--bbb-shelf-card-content {
+                padding-top: 24px;
+            }
+        }
 
-  &Col {
-    &--bbb-bg {
-      background: url('assets/img/lp-bbb/bbb-bg.jpg') no-repeat;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
+        &--bbb-shelf-card-content {
+            width: 707px !important;
+            padding: 36px 20px;
 
-    &Child {
-      &--bbb-shelf-card-content {
-        padding-top: 24px;
-      }
-    }
+            @include media("<=tablet") {
+                width: 100% !important;
+                padding: 30px 14px;
+                min-width: 420px;
+                max-width: 420px;
+            }
 
-    &--bbb-shelf-card-content {
-      width: 707px !important;
-      padding: 36px 20px;
-    }
+            @include media("<=phone") {
+                min-width: 0;
+            }
+        }
 
-    &--outline {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border-radius: 20px;
-      border: 4px solid #FF01FC;
-      pointer-events: none;
+        &--outline {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            border-radius: 20px;
+            border: 4px solid #FF01FC;
+            pointer-events: none;
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: -170px;
-        right: -200px;
-        width: 425px;
-        height: 300px;
-        transform: rotate(-5.889deg);
-        background: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ce073bc9-c7bf-4d91-8c90-5b9a9b499081___14fee9f96c7b8e38e36f9c23ebdc9661.png') no-repeat;
-      }
+            @include media('<=phone') {
+                top: -10px;
+                left: -10px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -170px;
+                right: -200px;
+                width: 425px;
+                height: 300px;
+                transform: rotate(-5.889deg);
+                background: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ce073bc9-c7bf-4d91-8c90-5b9a9b499081___14fee9f96c7b8e38e36f9c23ebdc9661.png') no-repeat;
+            }
+        }
     }
-  }
 }

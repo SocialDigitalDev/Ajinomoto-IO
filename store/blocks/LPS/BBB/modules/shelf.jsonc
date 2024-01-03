@@ -51,10 +51,10 @@
             "itemsPerPage": {
                 "desktop": 5,
                 "tablet": 3,
-                "phone": 1
+                "phone": 2
             },
             "infinite": true,
-            "showNavigationArrows": "always",
+            "showNavigationArrows": "desktopOnly",
             "showNavigationDots": "always"
         }
     }

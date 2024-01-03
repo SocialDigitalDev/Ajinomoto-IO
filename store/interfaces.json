@@ -22,6 +22,9 @@
 	"custom-newsletter-bf": {
 		"component": "NewsletterBF"
 	},
+	"custom-newsletter-bbb": {
+		"component": "NewsletterBBB"
+	},
 	"custom-pdp-characteristics": {
 		"component": "CustomPdpSpecs"
 	},
@@ -87,5 +90,9 @@
 
 	"custom-bbb-seo-block": {
 		"component": "BBBSeoText"
+	},
+
+	"custom-embed-video": {
+		"component": "CustomEmbedVideo"
 	}
 }

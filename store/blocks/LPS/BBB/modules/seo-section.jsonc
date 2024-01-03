@@ -24,7 +24,8 @@
 
   "flex-layout.row#seo-main": {
     "props": {
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "blockClass": "bbb-seo-main"
     },
     "children": [
       "flex-layout.col#seo-header",
@@ -64,6 +65,7 @@
     "title": "Seo section Robot",
     "children": ["slider-layout#bbb-robot-seo-section"],
     "props": {
+      "blockClass": "seo-robot",
       "preload": true,
       "height": 234,
       "images": [{
@@ -81,7 +83,7 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "desktopOnly",
       "showNavigationDots": "always"
     }
   },
@@ -145,7 +147,7 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "desktopOnly",
       "showNavigationDots": "always"
     }
   }

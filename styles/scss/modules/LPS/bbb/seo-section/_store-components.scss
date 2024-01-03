@@ -9,16 +9,29 @@
   &--seo-banner-slider {
     border-radius: 10px;
   }
+
+  &--shelf-banner-image {
+    border-radius: 20px 0 0 20px;
+
+    @include media("<=phone") {
+      border-radius: 20px 0 0 0px;
+    }
+  }
 }
 
 .infoCard {
   &Container {
     &--bbb-info-card-category {
+      display: flex;
       overflow: visible;
       flex-direction: column-reverse;
       border-radius: 10px;
       box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 60.99%, $white 100%), url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/cd278582-a98b-4d57-819b-78ce5496d481___191a84cd37271fee4e93ca06a7864346.png') no-repeat;
+
+      @include media('<=phone') {
+        // flex-direction: column;
+      }
     }
   }
 
