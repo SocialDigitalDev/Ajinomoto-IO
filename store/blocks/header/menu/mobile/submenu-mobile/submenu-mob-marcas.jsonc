@@ -5,11 +5,11 @@
             "disclosure-trigger#submenu-marcas",
             "disclosure-content#submenu-marcas"
         ],
-        "props": {            
+        "props": {
             "blockClass": "submenu"
         }
     },
-    
+
     "disclosure-trigger#submenu-marcas": {
         "title": "TRIGGER SUBMNENU MARCAS",
         "props": {
@@ -19,15 +19,15 @@
             "rich-text#submenu-marcas"
         ]
     },
-    
+
     "rich-text#submenu-marcas": {
         "title": "SUBMENU MARCAS",
         "props": {
-            "text": "Marcas", 
+            "text": "Marcas",
             "blockClass": "header-menu-mobile"
         }
     },
-    
+
     "disclosure-content#submenu-marcas": {
         "title": "Conteúdo do submenu Mobile Marcas",
         "props": {
@@ -35,7 +35,7 @@
         },
         "children": [
             "menu-item#sub-marcas-item-1",
-			"menu-item#sub-marcas-item-2",
+			// "menu-item#sub-marcas-item-2",
 			"menu-item#sub-marcas-item-3",
 			"menu-item#sub-marcas-item-4",
 			"menu-item#sub-marcas-item-5",
