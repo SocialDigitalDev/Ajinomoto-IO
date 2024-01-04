@@ -45,7 +45,6 @@
 		},
 		"children": [
 			"info-card#brands-1",
-			// "info-card#brands-2",
 			"info-card#brands-3",
 			"info-card#brands-4",
 			"info-card#brands-5",
@@ -54,7 +53,6 @@
 			"info-card#brands-8",
 			"info-card#brands-9",
 			"info-card#brands-10",
-			// "info-card#brands-11",
 			"info-card#brands-12",
 			"info-card#brands-13"
 		]
