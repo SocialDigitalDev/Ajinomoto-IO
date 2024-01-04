@@ -1,0 +1,41 @@
+.paragraph {
+  &--seo-header-subtitle {
+    color: $bbb-red;
+    font-family: $OpenSans;
+    font-size: 20px;
+    width: 450px;
+    margin: 0;
+    margin-bottom: 14px;
+  }
+
+  &--seo-header-title {
+    color: $bbb-red;
+    font-family: $OpenSans;
+    font-size: 36px;
+    font-weight: $semi-bold;
+    min-width: 428px;
+    margin: 0;
+
+    @include media('<=phone') {
+      min-width: fit-content;
+    }
+  }
+
+  &--bbb-category-title {
+    color: $black;
+    font-family: $OpenSans;
+    font-size: 26px;
+    font-weight: $bold;
+
+    @include media("<=phone") {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.container {
+  &--bbb-category-title {
+    justify-content: center;
+  }
+}
