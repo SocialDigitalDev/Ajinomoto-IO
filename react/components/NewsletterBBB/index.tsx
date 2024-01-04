@@ -24,6 +24,8 @@ const NewsletterBBB = () => {
 
     const regex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    const regexName = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/
+
     const requestOptions = {
         method: "POST",
         headers: {
@@ -38,7 +40,7 @@ const NewsletterBBB = () => {
     };
 
     const requestNewsletter = () => {
-        if (nome !== "" && email !== "" && regex.test(email) && aceite == true) {
+        if (nome !== "" && email !== "" && regex.test(email) && regexName.test(nome) && aceite == true) {
             setErrorMessage(false);
             fetch(`/api/dataentities/NL/documents`, requestOptions)
                 .then(res => res.json())
@@ -86,6 +88,7 @@ const NewsletterBBB = () => {
             nome !== "" &&
             email !== "" &&
             regex.test(email) &&
+            regexName.test(nome) &&
             aceite == false
         ) {
             setSuccessMessage(false);
