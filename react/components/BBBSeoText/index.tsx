@@ -13,9 +13,7 @@ const BBBSeoText = ({ textoSEO }: BBBSeoTextProps) => {
   return (
     <section className="seo-section-text">
       <div className="text-area">
-        <p className={isTextShown ? 'extended' : 'retracted'}>
-          {textoSEO}
-        </p>
+        <p className={isTextShown ? 'extended' : 'retracted'} dangerouslySetInnerHTML={{__html: textoSEO}}></p>
         { !isTextShown && (
           <div className="fade" />
         )}
