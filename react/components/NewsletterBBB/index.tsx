@@ -113,11 +113,10 @@ const NewsletterBBB = () => {
                         <div className="texto-container">
                             <div className="texto-newsletter">
                                 <span className="texto-newsletter__titulo">
-                                    Inscreva-se agora e não perca nenhum sabor!
+                                    Inscreva-se agora e não perca nenhuma novidade!
                                 </span>
                                 <span className="texto-newsletter__subtitulo">
-                                    Receba em primeira mão
-surpresas culinárias e os deliciosos temperos SAZÓN® no BBB 24.
+                                    Receba em primeira mão surpresas culinárias e os deliciosos temperos SAZÓN® no BBB 24.
                                 </span>
                             </div>
                         </div>
