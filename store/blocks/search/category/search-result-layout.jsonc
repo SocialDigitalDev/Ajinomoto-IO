@@ -5,7 +5,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 20,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			}
 		}
 	},
@@ -16,7 +16,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 16,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			},
 			"blockClass": "search-result--brand"
 		}
@@ -28,7 +28,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 16,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			}
 		}
 	},
@@ -39,7 +39,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 16,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			}
 		}
 	},
@@ -50,7 +50,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 16,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			}
 		}
 	},
@@ -61,7 +61,7 @@
 			"context": {
 				"skusFilter": "ALL",
 				"maxItemsPerPage": 16,
-				"simulationBehavior": "skip"
+				"simulationBehavior": "default"
 			}
 		}
 	},
