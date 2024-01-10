@@ -1,0 +1,35 @@
+.flexRow--ajinomoto--seo-section {
+  margin: 20px 0;
+  position: relative;
+  .flex {
+    &Col{
+      &--seo-header {
+        width: fit-content;
+        max-width: 450px;
+
+        @include media('<=phone') {
+          width: 100%;
+          max-width: none;
+        }
+
+        .flexColChild--seo-header {
+          height: fit-content !important;
+        }
+      }
+
+      &--bbb-seo-section {
+        width: 1240px;
+
+        @include media('<=phone') {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.flexRow--ajinomoto--categories {
+  max-width: 1240px;
+  margin: 0 auto;
+
+}

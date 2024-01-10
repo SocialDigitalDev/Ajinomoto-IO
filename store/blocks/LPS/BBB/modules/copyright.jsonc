@@ -1,0 +1,9 @@
+{
+  "rich-text#copyright-text": {
+    "title": "Copyright",
+    "props": {
+      "blockClass": "bbb-copyright",
+      "text": "© 2024 TM Endemol Shine Group B.V sob licença Globo"
+    }
+  }
+}

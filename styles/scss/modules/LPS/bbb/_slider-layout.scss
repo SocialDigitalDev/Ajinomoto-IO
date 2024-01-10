@@ -1,0 +1,28 @@
+.sliderLayoutContainer--bbb-shelf-products-slider {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -80px;
+        left: -270px;
+        width: 245px;
+        height: 209px;
+        background: url('assets/img/lp-bbb/orange-robot-shelf.png') no-repeat;
+
+        @include media('<=tablet') {
+            left: -190px;
+            bottom: 400px;
+        }
+
+        @include media('<=phone') {
+            display: none;
+        }
+    }
+}
+
+.slider {
+    &TrackerContainer {
+        &--categories-slider {
+            overflow: hidden;
+        }
+    }
+}

@@ -101,7 +101,7 @@ ol {
 			}
 		}
 	}
-	
+
 	.vtex-account__page-body {
 		ul.list li{
 			a.no-underline[href*="cancel"] {
@@ -118,7 +118,7 @@ ol {
 			}
 		}
 	}
-	
+
 
 	&> div> div.vtex-store__template> div> div:nth-child(2)> div> div> div> div> div {
 		@include media(">phone") {
@@ -433,4 +433,46 @@ ol {
 
 .vtex-toast {
 	background-color: $black;
+}
+
+.vtex-login-2-x-optionsListItem {
+	&:nth-child(3) {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.login-header {
+	&::before {
+		content: "";
+		background: url("../../../assets/svg/ico_panda-header.svg");
+		background-repeat: no-repeat;
+		display: block;
+
+		@include media(">phone") {
+			width: 41px;
+			height: 33px;
+		}
+
+		@include media("<=phone") {
+			width: 33px;
+			height: 25px;
+			background-size: contain;
+			margin-right: 25px;
+		}
+	}
+
+	svg {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.vtex-login-2-x-buttonLink {
+	div {
+		margin: 0;
+		padding: 0 !important;
+	}
 }

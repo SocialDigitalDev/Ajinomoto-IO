@@ -1,0 +1,61 @@
+@import "../../../styles/scss/variables/all";
+
+.render-route-vtex-store-2-x-store-custom-sazon-no-bbb {
+    .vtex-flex-layout-0-x-flexRow--header--topbar {
+        display: none;
+    }
+}
+
+.seo-section-text {
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+
+    .text-area {
+        position: relative;
+        overflow: hidden;
+
+        p {
+            color: $bbb-red;
+            font-family: $OpenSans;
+            font-size: 15px;
+        }
+
+        @include media('<=phone') {
+            p.retracted {
+                max-height: 80px;
+                overflow: hidden;
+            }
+        }
+
+        .fade {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            display: none;
+            background: linear-gradient(rgba(0, 0, 0, 0), $bbb-orange-light);
+
+            @include media('<=phone') {
+                display: block;
+            }
+        }
+    }
+
+    .toggle-text {
+        display: none;
+        background: none;
+        border: none;
+        padding: 16px;
+
+        text-decoration: underline;
+        font-family: $OpenSans;
+        font-size: 13px;
+        font-weight: $bold;
+        color: $bbb-red;
+
+        @include media('<=phone') {
+            display: block;
+        }
+    }
+}

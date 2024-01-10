@@ -1,0 +1,11 @@
+.flex{
+  &Row {
+    &--lp-bbb-wrapper {
+      margin-bottom: 75px;
+
+      :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+      }
+    }
+  }
+}

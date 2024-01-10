@@ -1,0 +1,96 @@
+{
+  "responsive-layout.desktop#lp-top-banner-desktop": {
+    "children": [
+      "list-context.image-list#bbb-top-banner-desktop"
+    ]
+  },
+
+  "responsive-layout.tablet#lp-top-banner-tablet": {
+    "children": [
+      "list-context.image-list#bbb-top-banner-tablet"
+    ]
+  },
+
+  "responsive-layout.phone#lp-top-banner-phone": {
+    "children": [
+      "list-context.image-list#bbb-top-banner-phone"
+    ]
+  },
+
+  "list-context.image-list#bbb-top-banner-desktop": {
+    "title": "Banner topo desktop",
+    "children": [
+      "slider-layout#bbb-banner-top"
+    ],
+    "props": {
+      "height": 500,
+      "blockClass": [
+        "ajinomoto--banner-top",
+        "banner-top",
+        "banner-top-desktop"
+      ],
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/lp-bbb/top-banner-desktop.jpg"
+        }
+      ]
+    }
+  },
+
+  "list-context.image-list#bbb-top-banner-tablet": {
+    "title": "Banner topo tablet",
+    "children": [
+      "slider-layout#bbb-banner-top"
+    ],
+    "props": {
+      "height": 500,
+      "blockClass": [
+        "ajinomoto--banner-top",
+        "banner-top",
+        "banner-top-tablet"
+      ],
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/lp-bbb/top-banner-tablet.jpg"
+        }
+      ]
+    }
+  },
+
+  "list-context.image-list#bbb-top-banner-phone": {
+    "title": "Banner topo mobile",
+    "children": [
+      "slider-layout#bbb-banner-top"
+    ],
+    "props": {
+      "height": 500,
+      "blockClass": [
+        "ajinomoto--banner-top",
+        "banner-top",
+        "banner-top-phone"
+      ],
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/lp-bbb/top-banner-phone.jpg"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#bbb-banner-top": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showNavigationDots": "always",
+      "blockClass": ["slider-top"]
+    }
+  }
+}

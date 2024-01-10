@@ -22,6 +22,9 @@
 	"custom-newsletter-bf": {
 		"component": "NewsletterBF"
 	},
+	"custom-newsletter-bbb": {
+		"component": "NewsletterBBB"
+	},
 	"custom-pdp-characteristics": {
 		"component": "CustomPdpSpecs"
 	},
@@ -65,7 +68,7 @@
 		"component": "EanInPDP"
 	},
 
-	"custom-seo-block": {
+	"custom-bf-seo-block": {
 		"component": "BFSeoText"
 	},
 
@@ -79,5 +82,17 @@
 
 	"custom-pix-price": {
 		"component": "CustomPIXDiscount"
+	},
+
+	"custom-seo-block": {
+		"component": "SeoTextBlock"
+	},
+
+	"custom-bbb-seo-block": {
+		"component": "BBBSeoText"
+	},
+
+	"custom-embed-video": {
+		"component": "CustomEmbedVideo"
 	}
 }
