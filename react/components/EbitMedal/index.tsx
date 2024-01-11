@@ -3,8 +3,9 @@ import React from 'react'
 const EbitMedal = () => {
 	return (
 		<>
-			<a id="seloEbit" href="http://www.ebit.com.br/124583" target="_blank" data-noop="redir(this.href);"></a> <script type="text/javascript" id="getSelo"
-	src="https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?124583"> </script>
+			<a id="seloEbit" href="http://www.ebit.com.br/124583" target="_blank" data-noop="redir(this.href);">
+				<img src="https://newimgebit-a.akamaihd.net/ebitBR/selo/img_124583.png" />
+			</a>
 		</>
 	)
 };
