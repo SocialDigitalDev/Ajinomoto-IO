@@ -1,11 +1,21 @@
 {
-  "flex-layout.col#footer-ebit": {
-		"title": "Medalha ebit",
-		"children": ["custom-ebit-medal"],
+	"flex-layout.col#ebit-medal": {
+		"title": "EBIT Medal",
 		"props": {
-			"horizontalAlign": "left",
-			"blockClass": "medalha-ebit",
-			"width": "10%"
+			"blockClass": "ebit-medal",
+			"width": "15%"
+		},
+		"children": [
+			"sandbox#footer"
+		]
+	},
+
+	"sandbox#footer": {
+		"props": {
+			"width": "70px",
+			"height": "95px",
+			"initialContent": "<a id='seloEbit' href='http://www.ebit.com.br/124583' target='_blank' data-noop='redir(this.href);'></a> <script type='text/javascript' id='getSelo' src='https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?124583'> </script>",
+			"allowCookies": true
 		}
 	}
 }

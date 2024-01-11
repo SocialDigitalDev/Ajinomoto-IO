@@ -28,9 +28,9 @@
 		"children": [
 			"flex-layout.col#social-links",
 			"flex-layout.col#payments-footer",
+			"flex-layout.col#ebit-medal",
 			"flex-layout.col#platform-footer",
-			"flex-layout.col#copyright-footer",
-			"flex-layout.col#footer-ebit"
+			"flex-layout.col#copyright-footer"
 		],
 		"props": {
 			"blockClass": "footer-bottom"

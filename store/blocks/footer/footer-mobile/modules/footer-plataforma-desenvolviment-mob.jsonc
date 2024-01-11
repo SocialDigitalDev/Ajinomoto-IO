@@ -2,10 +2,11 @@
     "flex-layout.row#platform-managed-mob": {
         "children": [
             "flex-layout.col#platform-footer",
-            "flex-layout.col#copyright-footer"
+            "flex-layout.col#copyright-footer",
+            "flex-layout.col#ebit-medal"
         ],
         "props": {
-            "blockClass": "footer-mobile-icon"            
+            "blockClass": "footer-mobile-icon"
        }
     }
 }
