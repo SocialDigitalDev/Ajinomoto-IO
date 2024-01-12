@@ -1,7 +1,7 @@
 {
   "vendor": "lojaajinomoto",
   "name": "store-theme",
-  "version": "0.1.132",
+  "version": "0.1.133",
   "builders": {
     "styles": ">=2.x",
     "store": "0.x",
@@ -91,7 +91,8 @@
     "vtex.category-menu": "2.x",
     "vtex.session-client": "1.x",
     "vtex.list-context": "0.x",
-    "vtex.search-page-context": "0.x"
+    "vtex.search-page-context": "0.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",

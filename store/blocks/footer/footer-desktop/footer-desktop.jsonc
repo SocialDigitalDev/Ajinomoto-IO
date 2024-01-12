@@ -28,6 +28,7 @@
 		"children": [
 			"flex-layout.col#social-links",
 			"flex-layout.col#payments-footer",
+			"flex-layout.col#ebit-medal",
 			"flex-layout.col#platform-footer",
 			"flex-layout.col#copyright-footer"
 		],
