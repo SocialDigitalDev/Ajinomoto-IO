@@ -33,7 +33,7 @@
 	.flexRowContent--footer-mobile-icon {
 		display: flex;
 		padding: 15px 0 0;
-		margin-bottom: 12px;		
+		margin-bottom: 12px;
 	}
     &.flexRow--redes-sociais {
         margin-top: 35px;
@@ -92,5 +92,12 @@
 		@include media ("<=tablet", ">phone"){
 			margin-bottom: 50px;
 		}
+	}
+}
+
+.flexColChild--ebit-medal{
+	@include media("<=phone") {
+		display: flex;
+		justify-content: center;
 	}
 }
