@@ -79,9 +79,5 @@
 
 	"custom-pix-price": {
 		"component": "CustomPIXDiscount"
-	},
-
-	"custom-ebit-medal": {
-		"component": "EbitMedal"
 	}
 }
