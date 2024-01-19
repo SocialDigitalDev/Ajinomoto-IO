@@ -1,0 +1,57 @@
+.paragraph {
+    &--bbb-shelf-card-subtitle {
+        font-family: $OpenSans;
+        font-size: 20px;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+    &--bbb-shelf-card-title {
+        font-family: $OpenSans;
+        font-size: 32px;
+        font-weight: $semi-bold;
+        margin: 0;
+
+        @include media("<=tablet") {
+            font-size: 26px;
+        }
+    }
+    &--bbb-shelf-heading {
+        font-family: $OpenSans;
+        font-size: 32px;
+        font-weight: $bold;
+        color: $white;
+    }
+
+    &--bbb-copyright {
+        color: $white;
+        font-family: $OpenSans;
+        font-size: 14px;
+    }
+}
+
+.container {
+    &--bbb-shelf-heading {
+        justify-content: center;
+    }
+
+    &--bbb-shelf-card-subtitle {
+        @include media('<=phone') {
+            justify-content: center;
+        }
+    }
+
+    &--bbb-shelf-card-title {
+        @include media('<=phone') {
+            text-align: center;
+        }
+    }
+
+}
+
+.wrapper {
+    &--bbb-copyright {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+}

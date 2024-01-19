@@ -1,0 +1,61 @@
+{
+    "flex-layout.row#bbb-shelf": {
+        "title": "Prateleira",
+        "props": {
+            "blockClass": [
+                "ajinomoto--bbb-shelf",
+                "bbb-shelf"
+            ]
+        },
+        "children": [
+            "flex-layout.col#bbb-shelf"
+        ]
+    },
+    "flex-layout.col#bbb-shelf": {
+        "props": {
+            "blockClass": [
+                "ajinomoto--bbb-shelf",
+                "bbb-shelf"
+            ]
+        },
+        "children": [
+            "rich-text#bbb-shelf-heading",
+            "list-context.product-list#bbb-shelf-product-list"
+        ]
+    },
+    "rich-text#bbb-shelf-heading": {
+        "title": "Título da prateleira",
+        "props": {
+            "text": "Magia do sabor Sazón",
+            "blockClass": [
+                "bbb-shelf-heading"
+            ]
+        }
+    },
+    "list-context.product-list#bbb-shelf-product-list": {
+        "title": "PRATELEIRA SAZÓN",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#bbb-shelf-products"
+        ],
+        "props": {
+            "maxItems": 3
+        }
+    },
+
+    "slider-layout#bbb-shelf-products": {
+        "props": {
+            "blockClass": "bbb-shelf-products-slider",
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showNavigationDots": "always"
+        }
+    }
+}

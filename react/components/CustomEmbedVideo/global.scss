@@ -1,0 +1,26 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+.custom-embed-video {
+  margin: 40px auto;
+  max-width: 1260px;
+
+  @include media("<=phone") {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  iframe {
+    border: none;
+    border-radius: 10px;
+
+    @include media("<=tablet") {
+      width: 100%;
+      height: 470px;
+    }
+
+    @include media("<=phone") {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
