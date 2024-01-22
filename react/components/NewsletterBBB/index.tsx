@@ -124,7 +124,7 @@ const NewsletterBBB = () => {
                             <img src={pinkRobot} />
                         </div>
                         <form
-                            className="container-form"
+                            className="container-form form-moengage"
                             onSubmit={event => {
                                 event.preventDefault();
                                 requestNewsletter();
