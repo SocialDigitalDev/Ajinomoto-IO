@@ -443,7 +443,7 @@ ol {
 	}
 }
 
-.login-header {
+.login-header:not(.vtex-login-2-x-profile) {
 	&::before {
 		content: "";
 		background: url("../../../assets/svg/ico_panda-header.svg");
@@ -467,6 +467,14 @@ ol {
 		display: none;
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+
+.vtex-login-2-x-profile{
+	color: $primary;
+	text-transform: none;
+	&:hover{
+		background: none;
 	}
 }
 
