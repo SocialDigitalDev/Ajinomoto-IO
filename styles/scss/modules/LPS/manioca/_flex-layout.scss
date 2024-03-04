@@ -1,0 +1,165 @@
+
+.flexRow{
+    &--lp-manioca-wrapper{
+        .flexCol{
+            &--lp-manioca-banner{
+                max-width: 1920px;
+                margin: 0 auto;
+                .flexColChild{
+                    &--lp-manioca-banner{
+                        display: flex;
+                        justify-content: center;
+                        :global(.vtex-store-components-3-x-imageElement--lp-manioca-banner-img){
+                            max-width: 100%;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .flexRow{
+                &--lp-manioca-content{
+                    &-top{
+                        background: $manioca-green;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        &::after{
+                            background: url('assets/img/lp-manioca/union.png');
+                            content: "";
+                            height: 76px;
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            bottom: -66px;
+                            background-position: left;
+                            background-repeat: no-repeat;
+                        }
+                        .flexRowContent{
+                            &--lp-manioca-content{
+                                &-top{
+                                    display: flex;
+                                    flex-direction: column;
+                                    max-width: 1240px;
+                                    justify-content: center;
+                                    padding: 60px 0;
+                                    .stretchChildrenWidth{
+                                        width: auto!important;
+                                        .flexRowContent{
+                                            &--lp-top-content-imgs{
+                                                justify-content: space-between;
+                                            }
+                                        }
+                                        :global(.vtex-rich-text-0-x-container--lp-top-content-imgs-text){
+                                            :global(.vtex-rich-text-0-x-paragraph--lp-top-content-imgs-text){
+                                                color: $manioca-gray;
+                                                font-weight: $medium;
+                                                font-size: 18px;
+                                                line-height: 24px;
+                                                text-align: justify;
+                                                margin: 20px 0 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-linhas-wrapper{
+                        background-color: $manioca-gray-2;
+                        .flexRowContent{
+                            &--lp-manioca-content-linhas-wrapper{
+                                flex-direction: column;
+                                padding: 75px 0 0;
+                                max-width: 1240px;
+                                margin: 0 auto;
+                                .stretchChildrenWidth{
+                                    width: auto!important;
+                                    :global(.vtex-rich-text-0-x-container--title-linhas){
+                                        justify-content: center;
+                                        font-size: 26px;
+                                        font-weight: $bold;
+                                        line-height: 35px;
+                                        color: $manioca-green;
+                                    }
+                                    .flexRow{
+                                        &--lp-content-linhas{
+                                            .stretchChildrenWidth{
+                                                width: 25%!important;
+                                            } 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &--shelf-banner-manioca-wrapper{
+        background-image: url('assets/img/lp-manioca/bg-lp-manioca.png');
+        display: flex;
+        background-color: $manioca-gray-2;
+        width: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -75px;
+        background-position-x: 0;
+        .flexRowContent{
+            &--shelf-banner-manioca-wrapper{
+                max-width: 1240px;
+                padding: 80px 0;
+                margin: 0 auto;
+                .stretchChildrenWidth{
+                    justify-content: flex-end;
+                    align-items: center;
+                    
+                    :global(.vtex-slider-layout-0-x-paginationDot--product-carousel-manioca){
+                        border: 1px solid $black;
+                    }
+                    :global(.vtex-slider-layout-0-x-paginationDot--isActive){
+                        background: #000;
+                    }
+                    :global(.vtex-slider-layout-0-x-paginationDotsContainer){
+                        bottom: -25px;
+                    }
+                }
+            }
+        }
+    }
+    &--shelf-manioca-wrapper{
+        background-image: url('assets/img/lp-manioca/manioca_ppt_capa.png');
+        background-size: cover;
+        position: relative;
+        &::before{
+            background: url('assets/img/lp-manioca/union-bottom.png');
+            content: "";
+            height: 76px;
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: -62px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .flexCol--shelf-manioca-content{
+            max-width: 1240px;
+            padding: 40px 0 80px;
+            :global(.vtex-rich-text-0-x-paragraph--shelf-manioca-title){
+                font-weight: $bold;
+                color: $manioca-gray;
+                font-size: 26px;
+                line-height: 35px;
+                margin: 0 0 40px;
+            }
+        }
+    }
+    &--custom-newsletter-manioca{
+        background-color: $manioca-orange;
+    }
+}

@@ -1,0 +1,71 @@
+:global(.vtex-flex-layout-0-x-flexRow--lp-manioca-wrapper){
+    .infoCardContainer--item-linha{
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
+        position: relative;
+        margin: 0 15px;
+        padding: 20px 15px 80px; 
+        border-radius: 10px;
+        background-size: cover;
+        box-shadow: 0 0 25px rgba(0,0,0,0.3);
+        &-1{
+           background-image: url('assets/img/lp-manioca/linha1-bg.png');
+        } 
+        &-2{
+            background-image: url('assets/img/lp-manioca/linha2-bg.png');
+        } 
+        &-3{
+            background-image: url('assets/img/lp-manioca/linha3-bg.png');
+        } 
+        &-4{
+            background-image: url('assets/img/lp-manioca/linha4-bg.png');
+        }   
+        .infoCardTextContainer--item-linha{
+            width: auto!important;
+            padding: 0;
+            .infoCard{
+                &Headline--item-linha{
+                    font-size: 18px;
+                    font-weight: $bold;
+                    line-height: 24px;
+                    margin: 0;
+                    color: $manioca-green;
+                }
+                &Subhead--item-linha{
+                    font-size: 16px;
+                    font-weight: $medium;
+                    line-height: 22px;
+                    text-align: center;
+                    color: $manioca-green;
+                    margin: 20px 0 40px;
+                    min-height: 110px;
+                }
+                &CallActionContainer--item-linha{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 0 15px;
+                    :global(.vtex-button){
+                        width: 100%;
+                        background: $manioca-gray-2;
+                        color: $black;
+                        border: none;
+                        border-radius: 74px;
+                        :global(.vtex-button__label){
+                            text-align: left;
+                            justify-content: start;
+                            text-transform: none;
+                            font-size: 16px;
+                            color: $manioca-green;
+                            font-weight: $medium;
+                        }
+                    }
+                }
+            }
+        }
+        .infoCardImageContainer--item-linha{
+            width: auto;
+        }
+    }
+}

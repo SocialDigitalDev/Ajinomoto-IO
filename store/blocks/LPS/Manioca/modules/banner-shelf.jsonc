@@ -1,0 +1,39 @@
+{
+    "flex-layout.row#banner-shelf": {
+		"title": "[ Prateleira com Banner ]",
+		"props": {
+			"blockClass": "shelf-banner-manioca-wrapper"
+		},
+		"children": ["list-context.product-list#product-collection-manioca", "image#banner-manioca-shelf"]
+	},
+    "list-context.product-list#product-collection-manioca": {
+		"title": "[ Prateleira com banner - Conteúdo ]",
+		"blocks": ["product-summary.shelf"],
+		"children": ["slider-layout#manioca-product-carousel"],
+		"props": {
+			"collection": "244"
+		}
+	},
+    "slider-layout#manioca-product-carousel": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"showPaginationDots": "always",
+			"blockClass": ["product-carousel", "product-carousel-manioca"]
+		}
+	},
+    "image#banner-manioca-shelf": {
+		"title": "[ Prateleira com Banner - Imagem]",
+		"props": {
+			"blockClass": "banner-manioca-image",
+			"maxHeight": "300px",
+			"maxWidth": "520px",
+			"src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/541d0970-e7fc-478f-a5ef-a939bf713a6f___41c7a71fac9cbe61ed2e710c0e0870f9.png"
+		}
+	}
+}

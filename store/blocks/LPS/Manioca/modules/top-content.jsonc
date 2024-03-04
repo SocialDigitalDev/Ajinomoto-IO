@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#manioca-top-content":{
+        "children": [
+            "flex-layout.row#top-imgs",
+            "rich-text#intro-text"
+        ],
+        "props": {
+            "blockClass": "lp-manioca-content-top"
+        },
+        "title": "[CONTEÚDO DA LP - Topo]"
+    },
+    "flex-layout.row#top-imgs": {
+        "children": [
+          "image#top-content-img-1",
+          "image#top-content-img-2"
+        ],
+        "props": {
+          "blockClass": "lp-top-content-imgs"
+        },
+        "title": "[Conteúdo Topo - Imagens]"
+    },
+
+    "image#top-content-img-1": {
+        "props": {
+          "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/c9791fc2-b38f-4fa7-8d43-62d6f170e6cf___694e6cfe93654d31a15fb8b7deddf8ea.png",
+          "blockClass": "lp-top-content-imgs-img"
+        },
+        "title": "Imagem topo 1"
+    },
+
+    "image#top-content-img-2": {
+        "props": {
+          "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ad6327b6-293b-4f50-ae4b-cc1ed8acc867___a8b988ec0e6fa3b74795d686c0dc1582.png",
+          "blockClass": "lp-top-content-imgs-img"
+        },
+        "title": "Imagem topo 2"
+    },
+
+    "rich-text#intro-text": {
+        "props": {
+          "text": "Descubra o universo de sabores e sustentabilidade com os produtos Manioca. Em cada criação, mergulhamos na riqueza da Amazônia, explorando ingredientes autênticos como Tucupi, Semente de Puxuri e Cumaru para transformá-los em deliciosos temperos, molhos, granolas, farinhas e farofas. Feitos artesanalmente, os produtos Manioca também impulsionam a economia das comunidades locais e contribuem para a preservação da floresta. Deixe-se envolver pelos sabores autênticos da Amazônia e faça parte desse movimento por um estilo de vida mais consciente.",
+          "blockClass": "lp-top-content-imgs-text"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+	// Índices do responsive Layout
+	"responsive-layout.desktop#manioca-banner-principal-desktop": {
+			"children": [
+        "flex-layout.col#lp-banner-desktop"
+			]
+	},
+	"responsive-layout.tablet#manioca-banner-principal-tablet": {
+			"children": [
+				"image#lp-banner-tablet"
+			],
+      "props": {
+        "blockClass": "lp-manioca-banner"
+      }
+	},
+	"responsive-layout.phone#manioca-banner-principal-phone": {
+			"children": [
+        "image#lp-banner-mobile"
+			],
+      "props": {
+        "blockClass": "lp-manioca-banner"
+      }
+	},
+
+  "flex-layout.col#lp-banner-desktop": {
+    "children": [
+      "image#lp-banner-desktop"
+    ],
+    "props": {
+      "blockClass": "lp-manioca-banner"
+    },
+    "title": "[Banner Principal Desktop]"
+  },
+
+  "image#lp-banner-desktop": {
+      "props": {
+        "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/a210e055-263e-4d62-9ec5-e6dfd9235288___322da4d91d511e9d68059b601bb6dc27.png",
+        "blockClass": "lp-manioca-banner-img"
+      },
+      "title": "[Imagem Desktop ]"
+  },
+  "image#lp-banner-tablet": {
+      "props": {
+        "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/c06db965-5c25-4e2a-89d5-b27ebf7802a5___e859c5f2d5fee9a77f76950328cc673a.png",
+        "blockClass": "lp-manioca-banner-img"
+      },
+      "title": "[ Banner principal Tablet ]"
+  },
+  "image#lp-banner-mobile": {
+      "props": {
+        "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/dc4504e7-b64d-404b-af4f-11341a4a6930___59bdd912d573388ee5bcf5d8d73669d4.png",
+        "blockClass": "lp-manioca-banner-img"
+      },
+      "title": "[ Banner principal Mobile ]"
+  }
+}
