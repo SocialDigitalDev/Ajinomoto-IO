@@ -60,6 +60,10 @@
 		"component": "CustomNutritionalInfo"
 	},
 
+	"custom-how-to-use": {
+		"component": "CustomHowToUse"
+	},
+
 	"whatsapp-floating-button": {
 		"component": "WhatsApp"
 	},

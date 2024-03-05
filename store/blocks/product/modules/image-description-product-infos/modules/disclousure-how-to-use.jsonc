@@ -1,0 +1,83 @@
+{
+    "flex-layout.row#disclosure-how-to-use": {
+        "title": "Especficações do Produto",
+        "children": [
+            "condition-layout.product#manioca-brand-validator"
+        ],
+        "props": {
+            "blockClass": "disclosure-specifications"
+        }
+    },
+    "condition-layout.product#manioca-brand-validator":{
+        "props":{
+            "conditions": [
+                {
+                    "subject": "brandId",
+                    "arguments": {
+                      "id": "2097153890"
+                    }
+                }
+            ],
+          "matchType":"any",
+          "Else": "flex-layout.col#disclosure-how-to-use-empty",
+          "Then": "flex-layout.col#disclosure-how-to-use"
+        }
+    },
+
+    "flex-layout.col#disclosure-how-to-use-empty": {
+        "children": []
+    },
+    
+    "flex-layout.col#disclosure-how-to-use": {
+        "children": [
+            "disclosure-layout#how-to-use"
+        ],
+        "props": {
+            "blockClass": "disclosure-specifications"
+        }
+    },
+    
+    "disclosure-layout#how-to-use": {
+        "children": [
+            "disclosure-trigger#trigger-how-to-use", 
+            "disclosure-content#content-how-to-use"
+        ],
+        "props": {
+            "blockClass": "description"
+        }
+    },
+    
+    "disclosure-trigger#trigger-how-to-use": {
+        "children": [
+            "rich-text#how-to-use"
+        ],
+        "props": {
+            "blockClass": [
+                "trigger-spec",
+                "trigger-description"
+            ]
+        }
+    },
+
+    "disclosure-content#content-how-to-use": {
+        "children": [
+            "custom-how-to-use"
+        ],
+        "props": {
+            "blockClass": [
+                "content-spec",
+                "content-description"
+            ]
+        }
+    },
+    
+    "rich-text#how-to-use": {
+        "props": {
+            "text": "Modo de Usar",
+            "blockClass": [
+                "disc-title",
+                "disc-description"
+            ]
+        }
+    }
+}
