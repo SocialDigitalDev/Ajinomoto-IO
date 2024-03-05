@@ -24,7 +24,8 @@
         "children": [
             "stack-layout#img-product",
             "flex-layout.row#disclosure-specifications",
-            "flex-layout.row#disclosure-nutritional-info"
+            "flex-layout.row#disclosure-nutritional-info",
+            "flex-layout.row#disclosure-how-to-use"
         ]
     },
     
@@ -77,7 +78,8 @@
             "condition-layout.product#product-availability",
             "custom-pdp-characteristics",
             "flex-layout.row#disclosure-specifications",
-            "flex-layout.row#disclosure-nutritional-info"
+            "flex-layout.row#disclosure-nutritional-info",
+            "flex-layout.row#disclosure-how-to-use"
         ]
     }
 }
