@@ -9,7 +9,7 @@
     min-height: 259px;
     border-radius: 20px;
     background-position: right;
-
+    max-width: 831px;
     @include media(">desktop") {
         max-width: 1240px;
     }
@@ -19,11 +19,15 @@
     }
 
     @include media("<=phone") {
-        margin-bottom: 35px;
+        margin: 0 20px 35px;
     }
 
     .texto-container {
         width: 60%;
+        @include media("<=phone") {
+            width: 100%;
+            margin-bottom: 35px;
+        }
         .texto-newsletter {
             display: flex;
             flex-direction: column;
@@ -36,8 +40,7 @@
             }
 
             @include media("<=phone") {
-                margin-bottom: 16px;
-                margin-right: 6px;
+                margin-bottom: 0;
             }
 
             &__titulo {
@@ -45,7 +48,8 @@
                 font-weight: $semi-bold;
                 font-size: 32px;
                 margin-bottom: 16px;
-                max-width: 65%;
+                max-width: 70%;
+                font-family: $Poppins;
 
                 @include media("<=tablet") {
                     font-size: 24px;
@@ -53,6 +57,9 @@
 
                 @include media("<=phone") {
                     font-size: 20px;
+                    max-width: 100%;
+                    line-height: 30px;
+                    text-align: center;
                 }
             }
 
@@ -60,6 +67,7 @@
                 color: $white;
                 font-family: $OpenSans;
                 font-size: 24px;
+                font-weight: $medium;
 
                 @include media("<=tablet") {
                     font-size: 20px;
@@ -67,6 +75,8 @@
 
                 @include media("<=phone") {
                     font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
                 }
             }
         }
@@ -101,6 +111,7 @@
         .container-form {
             width: 40%;
             @include media("<=phone") {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 10px;
@@ -234,8 +245,8 @@
                 position: relative;
 
                 @include media("<=phone") {
-                    order: 2;
-                    margin-bottom: 18px;
+                    order: 3;
+                    
                 }
 
                 @media (max-width: 320px) {

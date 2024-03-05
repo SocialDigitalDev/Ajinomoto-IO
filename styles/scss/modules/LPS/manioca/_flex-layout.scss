@@ -45,11 +45,23 @@
                                     max-width: 1240px;
                                     justify-content: center;
                                     padding: 60px 0;
+                                    @include media ('>phone', '<=tablet'){
+                                        padding: 60px;
+                                    }
+                                    @include media ('<=phone'){
+                                        padding: 55px 20px 10px;
+                                    }
                                     .stretchChildrenWidth{
                                         width: auto!important;
                                         .flexRowContent{
                                             &--lp-top-content-imgs{
                                                 justify-content: space-between;
+                                                align-items: center;
+                                                @include media ('<=phone'){
+                                                    :global(.vtex-store-components-3-x-imageElement--lp-top-content-imgs-img-2){
+                                                        margin-top: 20px;
+                                                    }
+                                                }
                                             }
                                         }
                                         :global(.vtex-rich-text-0-x-container--lp-top-content-imgs-text){
@@ -60,6 +72,10 @@
                                                 line-height: 24px;
                                                 text-align: justify;
                                                 margin: 20px 0 0;
+                                                @include media ('<=phone'){
+                                                    text-align: center;
+                                                    margin: 45px 0 0;
+                                                }
                                             }
                                         }
                                     }
@@ -75,20 +91,22 @@
                                 padding: 75px 0 0;
                                 max-width: 1240px;
                                 margin: 0 auto;
+                                @include media ('>phone','<=tablet') {
+                                    padding: 75px 60px 0;
+                                }
                                 .stretchChildrenWidth{
                                     width: auto!important;
+                                    @include media ('<=desktop'){
+                                        width: 100%!important;
+                                    }
                                     :global(.vtex-rich-text-0-x-container--title-linhas){
                                         justify-content: center;
                                         font-size: 26px;
                                         font-weight: $bold;
                                         line-height: 35px;
                                         color: $manioca-green;
-                                    }
-                                    .flexRow{
-                                        &--lp-content-linhas{
-                                            .stretchChildrenWidth{
-                                                width: 25%!important;
-                                            } 
+                                        @include media ('<=phone'){
+                                            text-align: center;
                                         }
                                     }
                                 }
@@ -114,18 +132,72 @@
                 max-width: 1240px;
                 padding: 80px 0;
                 margin: 0 auto;
+                @include media ('>phone','<=tablet') {
+                    gap: 15px;
+                    padding: 80px 60px;
+                }
+                @include media ('<=phone'){
+                    display: flex;
+                    flex-direction: column;
+                    padding: 80px 0 95px;
+                }
                 .stretchChildrenWidth{
                     justify-content: flex-end;
                     align-items: center;
+                    @include media ('>phone','<=tablet') {
+                        &:last-child{
+                            :global(.vtex-store-components-3-x-imageElement--banner-manioca-image){
+                                max-width: 100%!important;
+                            }
+                        }
+                    }
+                    
+                    @include media ('<=phone'){
+                        &:first-child{
+                            order: 1;
+                            .flexRow--buy-button-shelf{
+                                .stretchChildrenWidth{
+                                    order: unset;
+                                   padding: unset;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            order: 0;
+                            padding: 0 20px;
+                            margin-bottom: 25px;
+                            max-width: 100%!important;
+                            :global(.vtex-store-components-3-x-imageElement--banner-manioca-image){
+                                border-top-right-radius: 10px;
+                                border-top-left-radius: 10px;
+                                max-width: 100%!important;
+                            }
+                            .flexRow--buy-button-shelf{
+                                left: 5px;
+                                .flexRowContent--buy-button-shelf{
+                                    gap: 5px;
+                                }
+                                .stretchChildrenWidth{
+                                    order: unset;
+                                    padding: unset;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                    
                     
                     :global(.vtex-slider-layout-0-x-paginationDot--product-carousel-manioca){
                         border: 1px solid $black;
                     }
                     :global(.vtex-slider-layout-0-x-paginationDot--isActive){
-                        background: #000;
+                        background: $black;
                     }
                     :global(.vtex-slider-layout-0-x-paginationDotsContainer){
                         bottom: -25px;
+                        @include media ('<phone'){
+                            bottom: -40px;
+                        }
                     }
                 }
             }

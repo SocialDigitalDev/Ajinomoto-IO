@@ -20,10 +20,7 @@
 
     "flex-layout.row#linhas": {
         "children": [
-            "info-card#linha-1",
-            "info-card#linha-2",
-            "info-card#linha-3",
-            "info-card#linha-4"
+            "slider-layout#slider-linhas"
         ],
         "props": {
           "blockClass": "lp-content-linhas"
@@ -31,6 +28,25 @@
         "title": "[ Lista de cards ]"
     },
 
+	"slider-layout#slider-linhas": {
+		"props": {
+            "blockClass": ["slider-linhas"],
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            }
+        },
+        "children": [
+            "info-card#linha-1",
+            "info-card#linha-2",
+            "info-card#linha-3",
+            "info-card#linha-4"
+        ]
+	},
+    
     "info-card#linha-1": {
         "props": {
           "isFullModeStyle": false,

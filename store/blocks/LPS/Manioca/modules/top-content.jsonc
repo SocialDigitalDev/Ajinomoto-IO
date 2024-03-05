@@ -12,7 +12,10 @@
     "flex-layout.row#top-imgs": {
         "children": [
           "image#top-content-img-1",
-          "image#top-content-img-2"
+          "responsive-layout.phone#top-content-img-2-phone",
+          "responsive-layout.tablet#top-content-img-2-tablet",
+          "responsive-layout.desktop#top-content-img-2-desktop"
+
         ],
         "props": {
           "blockClass": "lp-top-content-imgs"
@@ -28,13 +31,45 @@
         "title": "Imagem topo 1"
     },
 
-    "image#top-content-img-2": {
+    "image#top-content-img-2-desktop": {
         "props": {
           "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ad6327b6-293b-4f50-ae4b-cc1ed8acc867___a8b988ec0e6fa3b74795d686c0dc1582.png",
-          "blockClass": "lp-top-content-imgs-img"
+          "blockClass": "lp-top-content-imgs-img-2"
         },
-        "title": "Imagem topo 2"
+        "title": "Imagem topo 2 - desktop"
     },
+    "image#top-content-img-2-tablet": {
+      "props": {
+        "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ad6327b6-293b-4f50-ae4b-cc1ed8acc867___a8b988ec0e6fa3b74795d686c0dc1582.png",
+        "blockClass": "lp-top-content-imgs-img-2"
+      },
+      "title": "Imagem topo 2 - tablet"
+  },
+  "image#top-content-img-2-phone": {
+    "props": {
+      "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ad6327b6-293b-4f50-ae4b-cc1ed8acc867___a8b988ec0e6fa3b74795d686c0dc1582.png",
+      "blockClass": "lp-top-content-imgs-img-2"
+    },
+    "title": "Imagem topo 2 - mobile"
+},
+
+    "responsive-layout.desktop#top-content-img-2-desktop": {
+      "children": [
+          "image#top-content-img-2-desktop"
+      ]
+    },
+
+    "responsive-layout.tablet#top-content-img-2-tablet": {
+      "children": [
+          "image#top-content-img-2-tablet"
+      ]
+    },
+
+    "responsive-layout.phone#top-content-img-2-phone": {
+      "children": [
+          "image#top-content-img-2-phone"
+      ]
+    }, 
 
     "rich-text#intro-text": {
         "props": {
