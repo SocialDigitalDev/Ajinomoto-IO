@@ -2,23 +2,25 @@
 
 .custom-manioca-newsletter {
     background-image: url(../../../assets/img/lp-manioca/bg-nl-manioca.png);
-    margin: 0 auto 64px;
     min-height: 259px;
     border-radius: 20px;
     background-position: right;
-    max-width: 831px;
+   
     @include media(">desktop") {
         max-width: 1240px;
     }
-
+    @include media("<=desktop") {
+        max-width: 831px;
+    }
     @include media(">tablet") {
         padding: 28px 46px;
     }
-
     @include media(">phone","<=tablet") {
         padding: 27px 30px;
     }
-
+    @include media(">phone") {
+        margin: 0 auto 64px;
+    }
     @include media("<=phone") {
         margin: 0 20px 35px;
         padding: 20px;
@@ -38,9 +40,11 @@
             flex-direction: column;
             justify-content: center;
             flex-basis: 240px;
-            margin-right: 20px;
-
-            @include media(">phone", "<desktop") {
+           
+            @include media(">desktop") {
+                margin-right: 20px;
+            }
+            @include media(">phone", "<=desktop") {
                 margin-right: 30px;
             }
 
@@ -52,13 +56,19 @@
             &__titulo {
                 color: $white;
                 font-weight: $semi-bold;
-                font-size: 32px;
                 margin-bottom: 16px;
-                max-width: 70%;
                 font-family: $Poppins;
+
+                @include media (">tablet"){
+                    font-size: 32px;
+                }
 
                 @include media(">phone","<=tablet") {
                     font-size: 24px;
+                }
+
+                @include media(">phone") {
+                    max-width: 70%;
                 }
 
                 @include media("<=phone") {
@@ -118,7 +128,10 @@
         }
 
         .container-form {
-            width: 40%;
+            
+            @include media(">phone") {
+                width: 40%;
+            }
             @include media("<=phone") {
                 width: 100%;
                 display: flex;
@@ -137,13 +150,14 @@
                     
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
-                    padding: 9px 22px 8px;
+                    justify-content: flex-start;                    
                     background: rgba($white, 0.5);
                     border: 0.5px solid $white;
                     border-radius: 30px;
 
-                   
+                    @include media(">phone") {
+                        padding: 9px 22px 8px;
+                    }
                     @include media("<=phone") {
                         padding: 8px 12px 8px 12px;
                         margin-bottom: 8px;
@@ -179,10 +193,11 @@
                         font-size: 14px;
                         line-height: normal;
                         border: none;
-                        padding-left: 15px;
                         width: 100%;
                         background: transparent;
-
+                        @include media(">phone") {
+                            padding-left: 15px;
+                        }
                         @include media("<=phone") {
                             text-align: center;
                             padding-left: 5px;
