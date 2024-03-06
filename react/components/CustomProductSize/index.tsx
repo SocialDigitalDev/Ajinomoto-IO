@@ -4,7 +4,7 @@ import axios from "axios";
 import './global.css';
 
 const CustomProductSize = () => {
-
+    //@ts-ignore
     const { product } = useProduct();
     const productId = product?.productId;
     const [renderData, setRenderData] = useState<any>();

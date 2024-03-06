@@ -26,6 +26,7 @@ export const Coupon: StorefrontFunctionComponent<MinicartInputProps> = ({
   callback,
   orderForm
 }) => {
+  //@ts-ignore
   const { coupon, insertCoupon } = useOrderCoupon()
 
   const getOrderForm = () => {

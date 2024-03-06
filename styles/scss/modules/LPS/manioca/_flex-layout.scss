@@ -114,6 +114,7 @@
                                         line-height: 35px;
                                         color: $manioca-green;
                                         @include media ('<=phone'){
+                                            margin-top: 50px;
                                             text-align: center;
                                         }
                                     }
