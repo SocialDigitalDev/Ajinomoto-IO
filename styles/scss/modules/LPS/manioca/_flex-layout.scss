@@ -44,7 +44,9 @@
                                     flex-direction: column;
                                     max-width: 1240px;
                                     justify-content: center;
-                                    padding: 60px 0;
+                                    @include media ('>tablet'){
+                                        padding: 60px 0;
+                                    }
                                     @include media ('>phone', '<=tablet'){
                                         padding: 60px;
                                     }
@@ -70,8 +72,10 @@
                                                 font-weight: $medium;
                                                 font-size: 18px;
                                                 line-height: 24px;
-                                                text-align: justify;
-                                                margin: 20px 0 0;
+                                                @include media ('>phone'){
+                                                    text-align: justify;
+                                                    margin: 20px 0 0;
+                                                }
                                                 @include media ('<=phone'){
                                                     text-align: center;
                                                     margin: 45px 0 0;
@@ -88,14 +92,18 @@
                         .flexRowContent{
                             &--lp-manioca-content-linhas-wrapper{
                                 flex-direction: column;
-                                padding: 75px 0 0;
                                 max-width: 1240px;
                                 margin: 0 auto;
+                                @include media ('>tablet') {
+                                    padding: 75px 0 0;
+                                }
                                 @include media ('>phone','<=tablet') {
                                     padding: 75px 60px 0;
                                 }
                                 .stretchChildrenWidth{
-                                    width: auto!important;
+                                    @include media ('>desktop'){
+                                        width: auto!important;
+                                    }
                                     @include media ('<=desktop'){
                                         width: 100%!important;
                                     }
@@ -130,8 +138,11 @@
         .flexRowContent{
             &--shelf-banner-manioca-wrapper{
                 max-width: 1240px;
-                padding: 80px 0;
+                
                 margin: 0 auto;
+                @include media ('>tablet') {
+                    padding: 80px 0;
+                }
                 @include media ('>phone','<=tablet') {
                     gap: 15px;
                     padding: 80px 60px;
@@ -194,8 +205,10 @@
                         background: $black;
                     }
                     :global(.vtex-slider-layout-0-x-paginationDotsContainer){
-                        bottom: -25px;
-                        @include media ('<phone'){
+                        @include media ('>phone'){
+                            bottom: -25px;
+                        }
+                        @include media ('<=phone'){
                             bottom: -40px;
                         }
                     }

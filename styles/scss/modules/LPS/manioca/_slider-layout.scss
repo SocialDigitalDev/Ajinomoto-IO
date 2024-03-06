@@ -1,7 +1,9 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--shelf-banner-manioca-wrapper){
     
     .sliderLayoutContainer--product-carousel-manioca{
-        right: -40px;
+        @include media ('>desktop'){
+            right: -40px;
+        }
         @include media ('<=desktop'){
             right: unset;
         }
@@ -36,8 +38,10 @@
                     background: $black;
                 }
                 &sContainer{
-                    bottom: -25px;
-                    @include media ('<phone'){
+                    @include media ('>phone'){
+                        bottom: -25px;
+                    }
+                    @include media ('<=phone'){
                         bottom: -40px;
                     }
                 }
@@ -67,8 +71,10 @@
                     background: $white;
                 }
                 &sContainer{
-                    bottom: -25px;
-                    @include media ('<phone'){
+                    @include media ('>phone'){
+                        bottom: -25px;
+                    }
+                    @include media ('<=phone'){
                         bottom: -40px;
                     }
                 }

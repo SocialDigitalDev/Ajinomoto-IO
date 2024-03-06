@@ -9,11 +9,13 @@
         gap: 0;
         justify-content: start;
         position: relative;
-        margin: 0 15px;
         padding: 20px 15px 80px; 
         border-radius: 10px;
         background-size: cover;
         box-shadow: 0 0 25px rgba(0,0,0,0.3);
+        @include media ('>tablet'){
+            margin: 0 15px;
+        }
         @include media ('>phone','<=tablet'){
             margin: 25px 15px;
         }
@@ -46,8 +48,10 @@
                     line-height: 22px;
                     text-align: center;
                     color: $manioca-green;
-                    margin: 20px 0 40px;
                     min-height: 110px;
+                    @include media ('>phone'){
+                        margin: 20px 0 40px;
+                    }
                     @include media ('<=phone'){
                         margin: 20px 0 0px;
                     }

@@ -7,6 +7,7 @@ import './global.css';
 const CustomPIXDiscount = ({ enableComponent = false, percentualValue }: any) => {
 
     // Variáveis
+    //@ts-ignore
     const { product } = useProduct();
     const sellingPrice = product?.priceRange?.sellingPrice?.highPrice;
     const discount = sellingPrice * percentualValue;
