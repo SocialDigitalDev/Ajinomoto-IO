@@ -12,8 +12,10 @@ const CustomHowToUse = () => {
 
 
     return productBrandId == '2097153890' ? (
+        //@ts-ignore
         <div className="how-to-use-info-wrappers" dangerouslySetInnerHTML={{__html: howToUseHTML}} />
     ) : null;
 }
 
 export default CustomHowToUse;
+
