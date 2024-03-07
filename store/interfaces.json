@@ -22,6 +22,9 @@
 	"custom-newsletter-bf": {
 		"component": "NewsletterBF"
 	},
+	"custom-newsletter-manioca": {
+		"component": "NewsletterManioca"
+	},
 	"custom-newsletter-bbb": {
 		"component": "NewsletterBBB"
 	},

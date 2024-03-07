@@ -1,0 +1,84 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--shelf-banner-manioca-wrapper){
+    
+    .sliderLayoutContainer--product-carousel-manioca{
+        @include media ('>desktop'){
+            right: -40px;
+        }
+        @include media ('<=desktop'){
+            right: unset;
+        }
+        
+        .sliderLeftArrow--product-carousel, .sliderRightArrow--product-carousel{
+            background-image: url('assets/img/lp-manioca/arrow-slider-manioca.png')!important;
+            height: 38px;
+            width: 39px;
+            @include media ('<=desktop'){
+                display: none;
+            }
+            .caretIcon--product-carousel-manioca{
+                display: none;
+            }
+        }
+        .sliderLeftArrow--product-carousel{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--lp-manioca-wrapper){
+
+    .sliderLayoutContainer{
+        &--slider-linhas{
+            .paginationDot{
+                background-color: transparent;
+                &--slider-linhas{
+                    border: 1px solid $black;
+                }
+                &--isActive{
+                    background: $black;
+                }
+                &sContainer{
+                    @include media ('>phone'){
+                        bottom: -25px;
+                    }
+                    @include media ('<=phone'){
+                        bottom: -40px;
+                    }
+                }
+            }
+        }
+        &--product-carousel-manioca{
+            .sliderLeftArrow--product-carousel, .sliderRightArrow--product-carousel{
+                background-image: url('assets/img/lp-manioca/arrow-slider-manioca-bottom.png')!important;
+                height: 38px;
+                width: 38px;
+                @include media ('<=desktop'){
+                    display: none;
+                }
+                .caretIcon--product-carousel-manioca{
+                    display: none;
+                }
+            }
+            .sliderLeftArrow--product-carousel{
+                transform: rotate(180deg);
+            }
+            .paginationDot{
+                background-color: transparent;
+                &--product-carousel-manioca{
+                    border: 1px solid $white;
+                }
+                &--isActive{
+                    background: $white;
+                }
+                &sContainer{
+                    @include media ('>phone'){
+                        bottom: -25px;
+                    }
+                    @include media ('<=phone'){
+                        bottom: -40px;
+                    }
+                }
+            }
+        }
+    }
+}

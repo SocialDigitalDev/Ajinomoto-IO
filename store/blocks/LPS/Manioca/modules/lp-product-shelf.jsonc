@@ -1,0 +1,63 @@
+{
+	"flex-layout.row#manioca-shelf": {
+		"title": "[ Lista de produtos Manióca ]",
+		"children": [
+			"flex-layout.col#manioca-shelf"
+		],
+		"props": {
+			"blockClass": "shelf-manioca-wrapper"
+		}
+	},
+
+	"flex-layout.col#manioca-shelf": {
+		"children": [
+			"rich-text#manioca-shelf",
+			"list-context.product-list#manioca"
+		],
+		"props": {
+			"blockClass": "shelf-manioca-content"
+		}
+	},
+
+	"rich-text#manioca-shelf": {
+		"title": "TITULO",
+		"props": {
+			"text": "Uma jornada de sabores com a Manioca",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "shelf-manioca-title"
+		}
+	},
+
+	"list-context.product-list#manioca": {
+		"title": "LISTA DE PRODUTOS",
+		"blocks": [
+			"product-summary.shelf"
+		],
+		"children": [
+			"slider-layout#manioca-product-carousel-bottom"
+		],
+		"props": {
+			"orderBy": "OrderByTopSaleDESC",
+			"maxItems": 12,
+			"blockClass": "shelf-manioca"
+		}
+	},
+	
+	"slider-layout#manioca-product-carousel-bottom": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 6,
+				"tablet": 4,
+				"phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"showPaginationDots": "always",
+			"blockClass": [
+				"product-carousel",
+				"product-carousel-manioca"
+			]
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+    "flex-layout.row#manioca-linhas": {
+        "children": [
+            "rich-text#title-linhas",
+            "flex-layout.row#linhas"
+        ],
+        "props": {
+            "blockClass": "lp-manioca-content-linhas-wrapper"
+        },
+        "title": "[ Cards de informação ]"
+    },
+
+    "rich-text#title-linhas": {
+        "props": {
+            "text": "Conheça a família de produtos MANIOCA",
+            "blockClass": "title-linhas"
+        }
+    },
+
+    "flex-layout.row#linhas": {
+        "children": [
+            "slider-layout#slider-linhas"
+        ],
+        "props": {
+            "blockClass": "lp-content-linhas"
+        },
+        "title": "[ Lista de cards ]"
+    },
+
+    "slider-layout#slider-linhas": {
+        "props": {
+            "blockClass": [
+                "slider-linhas"
+            ],
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            }
+        },
+        "children": [
+            "info-card#linha-1",
+            "info-card#linha-2",
+            "info-card#linha-3",
+            "info-card#linha-4"
+        ]
+    },
+
+    "info-card#linha-1": {
+        "props": {
+            "isFullModeStyle": false,
+            "textPosition": "center",
+            "imageUrl": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ea6e7b76-9f7d-49d1-bf87-16699a5579ba___27cc3930d2cf7f0b10014a3ffbfe0645.png",
+            "headline": "Farinhas, Granolas e Grãos",
+            "subhead": "Nutrição e sabor se unem em nossa variedade de farinhas, granolas e grãos, trazendo a riqueza da Amazônia para a sua mesa.",
+            "callToActionText": "Ver mais",
+            "blockClass": [
+                "item-linha",
+                "item-linha-1"
+            ],
+            "textAlignment": "center"
+        }
+    },
+
+    "info-card#linha-2": {
+        "props": {
+            "isFullModeStyle": false,
+            "textPosition": "center",
+            "imageUrl": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ea6e7b76-9f7d-49d1-bf87-16699a5579ba___27cc3930d2cf7f0b10014a3ffbfe0645.png",
+            "headline": "Especiarias",
+            "subhead": "Desperte seus sentidos com nossas especiarias amazônicas, um toque autêntico que transforma cada prato em uma experiência única.",
+            "callToActionText": "Ver mais",
+            "blockClass": [
+                "item-linha",
+                "item-linha-2"
+            ],
+            "textAlignment": "center"
+        }
+    },
+
+    "info-card#linha-3": {
+        "props": {
+            "isFullModeStyle": false,
+            "textPosition": "center",
+            "imageUrl": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ea6e7b76-9f7d-49d1-bf87-16699a5579ba___27cc3930d2cf7f0b10014a3ffbfe0645.png",
+            "headline": "Molhos e Temperos",
+            "subhead": "Desfrute de molhos e temperos artesanais da Amazônia que transformam suas refeições com simplicidade e autenticidade.",
+            "callToActionText": "Ver mais",
+            "blockClass": [
+                "item-linha",
+                "item-linha-3"
+            ],
+            "textAlignment": "center"
+        }
+    },
+    
+    "info-card#linha-4": {
+        "props": {
+            "isFullModeStyle": false,
+            "textPosition": "center",
+            "imageUrl": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/ea6e7b76-9f7d-49d1-bf87-16699a5579ba___27cc3930d2cf7f0b10014a3ffbfe0645.png",
+            "headline": "Farofas",
+            "subhead": "Crocante e irresistível, nossa farofa artesanal é o complemento perfeito para suas refeições, levando o sabor da Amazônia ao seu paladar.",
+            "callToActionText": "Ver mais",
+            "blockClass": [
+                "item-linha",
+                "item-linha-4"
+            ],
+            "textAlignment": "center"
+        }
+    }
+}

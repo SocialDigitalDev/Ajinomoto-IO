@@ -1,0 +1,32 @@
+{
+	"store.custom#lp-manioca": {
+		"blocks": [
+			"flex-layout.row#lp-manioca-wrapper"
+		]
+	},
+
+	"flex-layout.row#lp-manioca-wrapper": {
+		"props": {
+			"blockClass": [
+				"lp-manioca-wrapper"
+			]
+		},
+		"children": [
+			"flex-layout.col#lp-manioca-wrapper"
+		]
+	},
+
+	"flex-layout.col#lp-manioca-wrapper": {
+		"children": [
+			"responsive-layout.desktop#manioca-banner-principal-desktop",
+			"responsive-layout.tablet#manioca-banner-principal-tablet",
+			"responsive-layout.phone#manioca-banner-principal-phone",
+			"flex-layout.row#manioca-top-content",
+			"flex-layout.row#manioca-linhas",
+			"flex-layout.row#banner-shelf",
+			"flex-layout.row#manioca-shelf",
+			"flex-layout.row#newsletter-manioca"
+
+		]
+	}
+}
