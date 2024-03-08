@@ -116,6 +116,7 @@
                                         @include media ('<=phone'){
                                             margin-top: 50px;
                                             text-align: center;
+                                            padding: 0 15px;
                                         }
                                     }
                                 }
@@ -166,6 +167,7 @@
                     @include media ('<=phone'){
                         &:first-child{
                             order: 1;
+                            padding: 0 15px;
                             .flexRow--buy-button-shelf{
                                 .stretchChildrenWidth{
                                     order: unset;
@@ -220,6 +222,7 @@
         background-image: url('assets/img/lp-manioca/manioca_ppt_capa.png');
         background-size: cover;
         position: relative;
+
         &::before{
             background: url('assets/img/lp-manioca/union-bottom.png');
             content: "";
@@ -234,7 +237,8 @@
         }
         .flexCol--shelf-manioca-content{
             max-width: 1240px;
-            padding: 40px 0 80px;
+            padding: 40px 40px 80px;
+            background-image: linear-gradient(to bottom, transparent, #db8900);
             :global(.vtex-rich-text-0-x-paragraph--shelf-manioca-title){
                 font-weight: $bold;
                 color: $manioca-gray;
@@ -242,9 +246,15 @@
                 line-height: 35px;
                 margin: 0 0 40px;
             }
+            :global(.vtex-product-summary-2-x-container--shelf){
+                margin: 10px;
+                max-width: unset!important;
+            }
         }
     }
     &--custom-newsletter-manioca{
         background-color: $manioca-orange;
+        padding-top: 5px;
+        margin-top: -5px;
     }
 }

@@ -1,7 +1,10 @@
 :global(.vtex-flex-layout-0-x-flexRow--lp-manioca-wrapper){
     .container{
-        @media only screen and (max-width: 1366px) {
-            padding: 0;
+        padding: 0;
+    }
+    .imageElement--lp-manioca-banner-img{
+        @include media ('<=phone'){
+            width: 100%;
         }
     }
     .infoCardContainer--item-linha{
@@ -14,7 +17,7 @@
         background-size: cover;
         box-shadow: 0 0 15px rgba(0,0,0,0.3);
         @include media ('>tablet'){
-            margin: 15px;
+            margin: 15px 20px;
         }
         @include media ('>phone','<=tablet'){
             margin: 25px 15px;
@@ -44,6 +47,13 @@
                     line-height: 24px;
                     margin: 0;
                     color: $manioca-green;
+                    height: 48px;
+                    @include media ('>phone'){
+                        height: 48px;
+                    }
+                    @include media ('<=phone'){
+                        height: auto;
+                    }
                 }
                 &Subhead--item-linha{
                     font-size: 16px;
@@ -51,12 +61,18 @@
                     line-height: 22px;
                     text-align: center;
                     color: $manioca-green;
-                    min-height: 110px;
+                    @include media ('>desktop'){
+                        min-height: 110px;
+                    }
+                    @include media ('>phone', '<=desktop'){
+                        min-height: 132px;
+                    }
                     @include media ('>phone'){
                         margin: 20px 0 40px;
                     }
                     @include media ('<=phone'){
                         margin: 20px 0 0px;
+                        min-height: 110px;
                     }
                 }
                 &CallActionContainer--item-linha{

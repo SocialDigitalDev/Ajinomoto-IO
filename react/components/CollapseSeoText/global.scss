@@ -1,0 +1,49 @@
+@import "../../../styles/scss/variables/all";
+
+.CollapseSeoText-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1367px;
+  padding: 0;
+  margin: 45px 0 35px;
+  font-family: $OpenSans;
+  color: $manioca-gray;
+
+  .CollapseSeoText{
+    &-content {
+      position: relative;
+      font-size: 18px;
+      font-weight: $medium;
+      line-height: 24px;
+      text-align: center;
+      .shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, transparent, $manioca-green);
+      }
+  
+      .CollapseSeoText{
+        &-main.hide-text {
+          height: 75px;
+          overflow: hidden;
+        }
+        &-ver-mais {
+          font-weight: $bold;
+          cursor: pointer;
+          padding: 4px 8px;
+          position: absolute;
+          bottom: 15px;
+          left: 50%;
+          transform: translateX(-50%);
+          &.open{
+            bottom: -20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
     background-image: url(../../../assets/img/lp-manioca/bg-nl-manioca.png);
     min-height: 259px;
     border-radius: 20px;
-    background-position: right;
+   
    
     @include media(">desktop") {
         max-width: 1240px;
@@ -20,10 +20,14 @@
     }
     @include media(">phone") {
         margin: 0 auto 64px;
+        background-position-x: right;
+        background-position-y: center;
     }
     @include media("<=phone") {
         margin: 0 20px 35px;
         padding: 20px;
+        background-position-x: 45%;
+        background-position-y: bottom;
     }
 
     .texto-container {
@@ -313,12 +317,11 @@
 
                 p {
                     font-family: $OpenSans;
-                    font-weight: $light;
-                    font-size: 12px;
+                    font-size: 14px;
                     display: block;
                     text-align: center;
                     padding: 6px;
-
+                    font-weight: $medium;
                     strong {
                         font-weight: $semi-bold;
                     }
