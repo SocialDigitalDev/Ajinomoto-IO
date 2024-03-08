@@ -64,6 +64,11 @@
                                                         margin-top: 20px;
                                                     }
                                                 }
+                                                @include media ('>phone'){
+                                                    :global(.vtex-store-components-3-x-imageElement--lp-top-content-imgs-img-1){
+                                                        transform: translateX(-50px);
+                                                    }
+                                                }
                                             }
                                         }
                                         :global(.vtex-rich-text-0-x-container--lp-top-content-imgs-text){
