@@ -8,7 +8,8 @@
     width: 100%;
     min-height: 324px;
     @include media("<=phone") {
-        max-width: 160px !important; 
+        max-width: 100% !important;
+        margin: 0 7px;
     }
 
     .element--shelf {

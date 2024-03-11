@@ -7,6 +7,12 @@
         @include media ('<=desktop'){
             right: unset;
         }
+       
+        :global(.vtex-product-summary-2-x-container--shelf){
+            @include media ('>767px', '<=900px'){
+                max-width: 145px!important;
+            }
+        }
         
         .sliderLeftArrow--product-carousel, .sliderRightArrow--product-carousel{
             background-image: url('assets/img/lp-manioca/arrow-slider-manioca.png')!important;

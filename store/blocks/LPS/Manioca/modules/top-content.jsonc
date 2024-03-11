@@ -2,7 +2,9 @@
   "flex-layout.row#manioca-top-content": {
     "children": [
       "flex-layout.row#top-imgs",
-      "rich-text#intro-text"
+      "responsive-layout.desktop#intro-text",
+      "responsive-layout.tablet#intro-text",
+      "responsive-layout.phone#intro-text"
     ],
     "props": {
       "blockClass": "lp-manioca-content-top"
@@ -12,7 +14,9 @@
 
   "flex-layout.row#top-imgs": {
     "children": [
-      "image#top-content-img-1",
+      "responsive-layout.phone#top-content-img-1-phone",
+      "responsive-layout.tablet#top-content-img-1-tablet",
+      "responsive-layout.desktop#top-content-img-1-desktop",
       "responsive-layout.phone#top-content-img-2-phone",
       "responsive-layout.tablet#top-content-img-2-tablet",
       "responsive-layout.desktop#top-content-img-2-desktop"
@@ -31,6 +35,49 @@
     "title": "Imagem topo 1"
   },
 
+  "responsive-layout.phone#top-content-img-1-phone": {
+    "children": [
+      "image#top-content-img-1-phone"
+    ]
+  },
+
+  "image#top-content-img-1-phone": {
+    "props": {
+      "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/f9666fe8-635a-41b7-9d21-fe632e56868c___fff51cc5a7e1a566f26a7f4f69a50e69.png",
+      "blockClass": "lp-top-content-imgs-img-1"
+    },
+    "title": "Imagem topo 1 - mobile"
+  },
+
+  "responsive-layout.tablet#top-content-img-1-tablet": {
+    "children": [
+      "image#top-content-img-1-tablet"
+    ]
+  },
+
+  "image#top-content-img-1-tablet": {
+    "props": {
+      "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/b0f6b2a7-a4da-4135-b63b-c1bfb2d48d7c___630d332460aaab268c9ff03609e2a761.png",
+      "blockClass": "lp-top-content-imgs-img-1"
+    },
+    "title": "Imagem topo 1 - tablet"
+  },
+
+  "responsive-layout.desktop#top-content-img-1-desktop": {
+    "children": [
+      "image#top-content-img-1-desktop"
+    ]
+  },
+
+  "image#top-content-img-1-desktop": {
+    "props": {
+      "src": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/b0f6b2a7-a4da-4135-b63b-c1bfb2d48d7c___630d332460aaab268c9ff03609e2a761.png",
+      "blockClass": "lp-top-content-imgs-img-1"
+    },
+    "title": "Imagem topo 1 - desktop"
+  },
+
+  
   "responsive-layout.phone#top-content-img-2-phone": {
     "children": [
       "image#top-content-img-2-phone"
@@ -73,6 +120,24 @@
     "title": "Imagem topo 2 - desktop"
   },
   
+  "responsive-layout.desktop#intro-text":{
+    "children": [
+      "rich-text#intro-text"
+    ]
+  },
+
+  "responsive-layout.tablet#intro-text":{
+    "children": [
+      "rich-text#intro-text"
+    ]
+  },
+  
+  "responsive-layout.phone#intro-text":{
+    "children": [
+      "custom-collapse-seo-block"
+    ]
+  },
+
   "rich-text#intro-text": {
     "props": {
       "text": "Descubra o universo de sabores e sustentabilidade com os produtos Manioca. Em cada criação, mergulhamos na riqueza da Amazônia, explorando ingredientes autênticos como Tucupi, Semente de Puxuri e Cumaru para transformá-los em deliciosos temperos, molhos, granolas, farinhas e farofas. Feitos artesanalmente, os produtos Manioca também impulsionam a economia das comunidades locais e contribuem para a preservação da floresta. Deixe-se envolver pelos sabores autênticos da Amazônia e faça parte desse movimento por um estilo de vida mais consciente.",

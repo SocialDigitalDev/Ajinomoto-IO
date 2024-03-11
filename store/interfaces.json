@@ -79,6 +79,10 @@
 		"component": "BFSeoText"
 	},
 
+	"custom-collapse-seo-block": {
+		"component": "CollapseSeoText"
+	},
+
 	"custom-bf-category-list": {
 		"component": "BFCategoryList"
 	},
