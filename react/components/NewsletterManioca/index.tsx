@@ -119,9 +119,9 @@ const NewsletterManioca = () => {
                                 </span>
                             </div>
                         </div>
-                       
+
                         <form
-                            className="container-form form-moengage"
+                            className="container-form form-moengage form-manioca"
                             onSubmit={event => {
                                 event.preventDefault();
                                 requestNewsletter();
