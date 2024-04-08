@@ -43,6 +43,11 @@
 							color: $black;
 						}
 
+						&--top-menu-manioca {
+							color: $manioca-green-3;
+							font-weight: $bold;
+						}
+
 						.styledLinkIcon--category-menu_desk {
 							display: none;
 						}
@@ -156,7 +161,7 @@
 		box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.50) inset;
 		height: 270px;
 		border: none ;
-	
+
 		.submenu--submenu-list {
 			max-width: 1170px;
 			width: 100%;
@@ -196,7 +201,7 @@
 						display: flex;
 						justify-content: flex-start;
 						align-items: center;
-						
+
 
 						.styledLinkIcon {
 							margin-right: 10px;
