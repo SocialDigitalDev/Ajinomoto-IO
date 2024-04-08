@@ -1,5 +1,5 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--shelf-banner-manioca-wrapper){
-    
+
     .sliderLayoutContainer--product-carousel-manioca{
         @include media ('>desktop'){
             right: -40px;
@@ -7,13 +7,13 @@
         @include media ('<=desktop'){
             right: unset;
         }
-       
+
         :global(.vtex-product-summary-2-x-container--shelf){
             @include media ('>767px', '<=900px'){
                 max-width: 145px!important;
             }
         }
-        
+
         .sliderLeftArrow--product-carousel, .sliderRightArrow--product-carousel{
             background-image: url('assets/img/lp-manioca/arrow-slider-manioca.png')!important;
             height: 38px;
@@ -35,6 +35,15 @@
 
     .sliderLayoutContainer{
         &--slider-linhas{
+
+            .sliderTrackContainer--slider-linhas {
+                padding: 8px 0;
+
+                .sliderTrack--slider-linhas {
+                    gap: 20px;
+                }
+            }
+
             .paginationDot{
                 background-color: transparent;
                 &--slider-linhas{

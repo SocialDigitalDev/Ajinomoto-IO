@@ -103,7 +103,10 @@
                                     padding: 75px 0 0;
                                 }
                                 @include media ('>phone','<=tablet') {
-                                    padding: 75px 60px 0;
+                                    padding: 75px 0 0;
+                                }
+                                @include media ('<=phone') {
+                                    padding: 75px 20px 0;
                                 }
                                 .stretchChildrenWidth{
                                     @include media ('>desktop'){
@@ -168,7 +171,7 @@
                             }
                         }
                     }
-                    
+
                     @include media ('<=phone'){
                         &:first-child{
                             order: 1;
@@ -203,8 +206,8 @@
                             }
                         }
                     }
-                    
-                    
+
+
                     :global(.vtex-slider-layout-0-x-paginationDot--product-carousel-manioca){
                         border: 1px solid $black;
                     }
