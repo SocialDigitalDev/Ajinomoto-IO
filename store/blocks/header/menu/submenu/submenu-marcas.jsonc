@@ -15,7 +15,8 @@
 			"menu-item#sub-marcas-item-7",
 			"menu-item#sub-marcas-item-6",
 			"menu-item#sub-marcas-item-5",
-			"menu-item#sub-marcas-item-4"
+			"menu-item#sub-marcas-item-4",
+			"menu-item#sub-marcas-item-14"
 		],
 		"props": {
 			"blockClass": ["submenu-list", "submenu-list__first"]
@@ -200,6 +201,20 @@
 				"noFollow": false,
 				"tagTitle": "Food Service",
 				"text": "Food Service"
+			}
+		}
+	},
+
+	"menu-item#sub-marcas-item-14": {
+		"props": {
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/manioca",
+				"noFollow": false,
+				"tagTitle": "Manioca",
+				"text": "Manioca"
 			}
 		}
 	}
