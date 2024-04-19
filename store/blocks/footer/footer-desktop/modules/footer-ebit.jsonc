@@ -6,11 +6,11 @@
 			"width": "15%"
 		},
 		"children": [
-			"sandbox#footer"
+			"sandbox#ebit-footer"
 		]
 	},
 
-	"sandbox#footer": {
+	"sandbox#ebit-footer": {
 		"props": {
 			"width": "70px",
 			"height": "95px",
