@@ -12,6 +12,7 @@
             "flex-layout.row#img-product-info",
             "flex-layout.row#buy-together-desktop",
             "custom-pdp-recipies",
+            "product-reviews",
             "flex-layout.row#qvvt"
         ]
     }
