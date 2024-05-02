@@ -1,6 +1,6 @@
 {
 	"flex-layout.col#trustvox-medal": {
-		"title": "EBIT Medal",
+		"title": "Trustvox Medal",
 		"props": {
 			"blockClass": "trustvox-medal",
 			"width": "15%"
