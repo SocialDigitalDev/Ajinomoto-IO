@@ -93,7 +93,7 @@
     "vtex.list-context": "0.x",
     "vtex.search-page-context": "0.x",
     "vtex.sandbox": "0.x",
-    "lojaajinomoto.trustvox": "0.x"
+    "lojaajinomoto.trustvox": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
