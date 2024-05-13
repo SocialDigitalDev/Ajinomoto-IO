@@ -4,6 +4,13 @@
 
 		&--header {
 
+            &--topbar-rs {
+                background: $primary;
+				max-width: 1920px;
+				margin: 0 auto;
+                width: 100%;
+            }
+
 			&--topbar {
 				background: $primary;
 				max-width: 1920px;

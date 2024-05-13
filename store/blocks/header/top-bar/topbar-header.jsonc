@@ -1,4 +1,19 @@
 {
+	"flex-layout.row#topbar-rs-header": {
+		"title": "TOP BAR CHUVAS",
+		"children": ["rich-text#text-topbar-rs"],
+		"props": {
+			"blockClass": "header--topbar-rs"
+		}
+	},
+
+    "rich-text#text-topbar-rs": {
+        "props": {
+            "text": "Devido às chuvas no RS, a estimativa de entrega pode ser impactada. Qualquer dúvida, entre em contato conosco!",
+            "blockClass": "text--topbar-rs"
+        }
+    },
+
 	"flex-layout.row#topbar-header": {
 		"title": "TOP BAR",
 		"children": ["rich-text#text-topbar"],
