@@ -1,84 +1,83 @@
 {
-	"name": "lojaajinomoto",
-	"private": true,
-	"license": "ISC",
-	"scripts": {
-		"lint": "eslint --ext js,jsx,ts,tsx .",
-		"format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
-		"sass": "npx sass  --watch --no-source-map styles/scss:styles/css",
-		"deploy-sass": "npx sass --no-source-map styles/scss:styles/css react/components:react/components",
-		"react-sass": "npx sass --watch --no-source-map react/components:react/components",
-		"watch": "concurrently \"npx sass --watch --no-source-map styles/scss:styles/css\" \"vtex link\"",
-		"checkout": "npx sass --watch --no-source-map checkout/:checkout/",
-		"vu": "vtex unlink --verbose",
-		"vi": "vtex install",
-		"vun": "vtex uninstall",
-		"vwr": "vtex workspace reset",
-		"release": "node release.js",
-		"publish": "vtex publish",
-		"deploy": "vtex deploy -f",
-		"promote": "vtex use prod --production && vtex update && vtex promote",
-		"resetcss": "bash resetcss.sh",
-		"rollback": "vtex use master && vtex deprecated"
-	},
-	"lint-staged": {
-		"*.{ts,js,tsx,jsx}": [
-			"eslint --fix",
-			"prettier --write"
-		],
-		"*.{json,graphql,gql}": [
-			"prettier --write"
-		]
-	},
-	"devDependencies": {
-		"@vtex/prettier-config": "0.1.4",
-		"axios": "^0.27.2",
-		"console-error": "0.0.4",
-		"console-info": "0.0.5",
-		"console-warn": "0.0.4",
-		"edit-json-file": "^1.6.2",
-		"editorconfig": "^0.15.3",
-		"eslint": "7.12.1",
-		"eslint-config-vtex": "12.3.2",
-		"eslint-config-vtex-react": "6.3.2",
-		"html-webpack-plugin": "^5.5.0",
-		"lint-staged": "10.1.1",
-		"node-sass": "^7.0.0",
-		"postcss-scss": "^4.0.2",
-		"prettier": "2.0.2",
-		"pretty-quick": "^3.1.2",
-		"prompt-confirm": "^2.0.4",
-		"react-xml-parser": "^1.1.8",
-		"sass": "1.43.5",
-		"sass-loader": "^8.0.2",
-		"typescript": "3.8.3",
-		"webpack": "^4.42.1"
-	},
-	"version": "1.8.1",
-	"description": "",
-	"prettier": {
-		"arrowParens": "avoid",
-		"bracketSpacing": true,
-		"singleQuote": false,
-		"endOfLine": "lf"
-	},
-	"main": "index.js",
-	"directories": {
-		"doc": "docs"
-	},
-	"dependencies": {
-		"@types/react": "^18.0.18",
-		"concurrently": "^7.5.0",
-		"global": "^4.4.0",
-		"npm": "^7.20.3",
-		"react": "^18.2.0",
-		"react-helmet": "^6.1.0",
-		"react-router-dom": "^6.3.0",
-		"vtex": "^3.0.0"
-	},
-	"engines": {
-		"node": ">=16",
-		"npm": "please-use-yarn",
-		"yarn": ">=1.22.10"
-	}
+  "name": "lojaajinomoto",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "sass": "npx sass  --watch --no-source-map styles/scss:styles/css",
+    "deploy-sass": "npx sass --no-source-map styles/scss:styles/css react/components:react/components",
+    "react-sass": "npx sass --watch --no-source-map react/components:react/components",
+    "watch": "concurrently \"npx sass --watch --no-source-map styles/scss:styles/css\" \"vtex link\"",
+    "checkout": "npx sass --watch --no-source-map checkout/:checkout/",
+    "vu": "vtex unlink --verbose",
+    "vi": "vtex install",
+    "vun": "vtex uninstall",
+    "vwr": "vtex workspace reset",
+    "release": "node release.js",
+    "publish": "vtex publish",
+    "deploy": "vtex deploy -f",
+    "promote": "vtex use prod --production && vtex update && vtex promote",
+    "resetcss": "bash resetcss.sh",
+    "rollback": "vtex use master && vtex deprecated"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "0.1.4",
+    "axios": "^0.27.2",
+    "console-error": "0.0.4",
+    "console-info": "0.0.5",
+    "console-warn": "0.0.4",
+    "edit-json-file": "^1.6.2",
+    "editorconfig": "^0.15.3",
+    "eslint": "7.12.1",
+    "eslint-config-vtex": "12.3.2",
+    "eslint-config-vtex-react": "6.3.2",
+    "html-webpack-plugin": "^5.5.0",
+    "lint-staged": "10.1.1",
+    "postcss-scss": "^4.0.2",
+    "prettier": "2.0.2",
+    "pretty-quick": "^3.1.2",
+    "prompt-confirm": "^2.0.4",
+    "react-xml-parser": "^1.1.8",
+    "sass": "1.43.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "3.8.3",
+    "webpack": "^4.42.1"
+  },
+  "version": "1.8.1",
+  "description": "",
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "singleQuote": false,
+    "endOfLine": "lf"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.18",
+    "concurrently": "^7.5.0",
+    "global": "^4.4.0",
+    "npm": "^7.20.3",
+    "react": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0",
+    "vtex": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.10"
+  }
 }
