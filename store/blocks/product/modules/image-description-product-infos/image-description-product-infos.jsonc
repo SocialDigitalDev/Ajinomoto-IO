@@ -15,7 +15,7 @@
             "flex-layout.col#product-info-components"
         ]
     },
-    
+
     "flex-layout.col#image-description-info": {
         "title": "Coluna: Imagem, Descrição e Informações Nutricionais",
         "props": {
@@ -28,7 +28,7 @@
             "flex-layout.row#disclosure-how-to-use"
         ]
     },
-    
+
     "flex-layout.col#product-info-components": {
         "title": "Coluna: Nome, Preço e Botão comprar",
         "props": {
@@ -39,6 +39,7 @@
             "flex-layout.row#product-breadcrumb",
             "flex-layout.row#flag-savings-wishlist",
             "flex-layout.row#product-name--container",
+            "product-rating-summary",
             "custom-ean-number",
             "similar-products",
             "custom-product-size",
@@ -73,6 +74,7 @@
             "flex-layout.row#flag-savings-wishlist",
             "stack-layout#img-product",
             "flex-layout.row#product-name--container",
+            "product-rating-summary",
             "similar-products",
             "custom-product-size",
             "condition-layout.product#product-availability",

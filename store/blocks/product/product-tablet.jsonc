@@ -1,39 +1,10 @@
 {
     "responsive-layout.tablet#content-product":  {
         "children": [
-            "condition-layout.product#manioca-tablet-validator"
-        ]
-    },
-    "condition-layout.product#manioca-tablet-validator":{
-        "props":{
-            "conditions": [
-                {
-                    "subject": "brandId",
-                    "arguments": {
-                      "id": "2097153890"
-                    }
-                }
-            ],
-          "matchType":"any",
-          "Else": "responsive-layout.tablet#content-product-inner",
-          "Then": "responsive-layout.tablet#content-product-manioca-inner"
-        }
-    },
-    "responsive-layout.tablet#content-product-inner":  {
-        "children": [
             "flex-layout.row#img-product-info",
             "flex-layout.row#buy-together-desktop",
             "custom-pdp-recipies",
-            "flex-layout.row#qvvt"
-        ]
-    },
-
-    "responsive-layout.tablet#content-product-manioca-inner":  {
-        "children": [
-            "flex-layout.row#img-product-info",
-            "flex-layout.row#buy-together-desktop",
-            "custom-pdp-recipies",
-            "flex-layout.row#manioca-banner",
+            "product-reviews",
             "flex-layout.row#qvvt"
         ]
     }

@@ -12,51 +12,52 @@
         gap: 0;
         justify-content: start;
         position: relative;
-        padding: 20px 15px 80px; 
+        padding: 20px 15px 80px;
         border-radius: 10px;
         background-size: cover;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        @include media ('>tablet'){
-            margin: 15px 20px;
-        }
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        background-repeat: no-repeat;
+
         @include media ('>phone','<=tablet'){
-            margin: 25px 15px;
+            background-position-y: 60px;
+            height: 100%;
         }
         @include media ('<=phone'){
-            margin: 15px;
+            background-position-y: 16px;
         }
+
         &-1{
+           background-color: #FFBA00;
            background-image: url('assets/img/lp-manioca/linha1-bg.png');
-        } 
+        }
         &-2{
+            background-color: #D9DA00;
             background-image: url('assets/img/lp-manioca/linha2-bg.png');
-        } 
+        }
         &-3{
+            background-color: #92CEC3;
             background-image: url('assets/img/lp-manioca/linha3-bg.png');
-        } 
+        }
         &-4{
+            background-color: #DC5904;
             background-image: url('assets/img/lp-manioca/linha4-bg.png');
-        }   
+        }
         .infoCardTextContainer--item-linha{
             width: auto!important;
             padding: 0;
+            flex: 1;
+
             .infoCard{
                 &Headline--item-linha{
                     font-size: 18px;
                     font-weight: $bold;
-                    line-height: 24px;
+                    line-height: 20px;
                     margin: 0;
                     color: $manioca-green;
-                    @include media ('>phone'){
-                        height: 48px;
-                    }
-                    @include media ('<=phone'){
-                        height: auto;
-                    }
                 }
                 &Subhead--item-linha{
                     font-size: 16px;
-                    font-weight: $medium;
+                    font-weight: $semi-bold;
                     line-height: 22px;
                     text-align: center;
                     color: $manioca-green;

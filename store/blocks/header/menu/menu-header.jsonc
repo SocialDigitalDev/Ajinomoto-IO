@@ -6,7 +6,7 @@
 			"blockClass": "header--menu"
 		}
 	},
-	
+
 	"vtex.menu@2.x:menu#category-menu_desk": {
 		"children": [
 			"menu-item#marcas",
@@ -18,14 +18,15 @@
 			"menu-item#position-6",
 			"menu-item#position-7",
 			"menu-item#foodService",
+			// "menu-item#manioca",
 			"menu-item#ofertas"
-			
+
 		],
 		"props": {
 			"blockClass": "category-menu_desk"
 		}
 	},
-	
+
 	"menu-item#marcas": {
 		"props": {
 			"id": "menu-item-marcas",
@@ -68,7 +69,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-1"]
 	},
-	
+
 	"menu-item#position-2": {
 		"props": {
 			"id": "menu-item-position-2",
@@ -88,7 +89,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-2"]
 	},
-	
+
 	"menu-item#position-3": {
 		"props": {
 			"id": "menu-item-position-3",
@@ -108,7 +109,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-3"]
 	},
-	
+
 	"menu-item#position-4": {
 		"props": {
 			"id": "menu-item-position-4",
@@ -128,7 +129,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-4"]
 	},
-	
+
 	"menu-item#position-5": {
 		"props": {
 			"id": "menu-item-position-5",
@@ -148,7 +149,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-5"]
 	},
-	
+
 	"menu-item#position-6": {
 		"props": {
 			"id": "menu-item-position-6",
@@ -188,7 +189,7 @@
 		}
 		// "blocks": ["vtex.menu@2.x:submenu#position-7"]
 	},
-	
+
 	"menu-item#foodService": {
 		"props": {
 			"id": "menu-item-foodService",
@@ -204,6 +205,25 @@
 				"type": "internal",
 				"noFollow": true,
 				"tagTitle": "Food Service"
+			}
+		}
+	},
+
+	"menu-item#manioca": {
+		"props": {
+			"id": "menu-item-manioca",
+			"blockClass": [
+				"top-menu-manioca",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Manioca",
+				"href": "/manioca",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Manioca"
 			}
 		}
 	},

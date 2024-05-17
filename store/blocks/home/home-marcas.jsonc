@@ -55,6 +55,7 @@
 			"info-card#brands-10",
 			"info-card#brands-12",
 			"info-card#brands-13"
+			// "info-card#brands-14"
 		]
 	},
 
@@ -259,6 +260,22 @@
 			"imageUrl": "assets/img/marca-food-service.png",
 			"imageActionUrl": "/food-service",
 			"headline": "[Food Service](/food-service)",
+			"callToActionMode": "none",
+			"blockClass": "home-brands",
+			"textAlignment": "CENTER",
+			"textMode": "rich-text"
+		}
+	},
+
+	"info-card#brands-14": {
+		"title": "DEAL 14",
+		"props": {
+			"id": "home-brands-14 ",
+			"isFullModeStyle": false,
+			"textPosition": "right",
+			"imageUrl": "assets/img/manioca.png",
+			"imageActionUrl": "/manioca",
+			"headline": "[Manioca](/manioca)",
 			"callToActionMode": "none",
 			"blockClass": "home-brands",
 			"textAlignment": "CENTER",

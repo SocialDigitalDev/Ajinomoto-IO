@@ -1,0 +1,21 @@
+{
+	"flex-layout.col#trustvox-medal": {
+		"title": "Trustvox Medal",
+		"props": {
+			"blockClass": "trustvox-medal",
+			"width": "15%"
+		},
+		"children": [
+			"sandbox#trustvox-footer"
+		]
+	},
+
+	"sandbox#trustvox-footer": {
+		"props": {
+			"width": "70px",
+			"height": "95px",
+			"initialContent": "<script type='text/javascript' src='https://certificate.trustvox.com.br/widget.js'></script>",
+			"allowCookies": true
+		}
+	}
+}
