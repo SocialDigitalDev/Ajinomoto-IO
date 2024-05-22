@@ -26,16 +26,6 @@ const CustomPDPRecipies = () => {
     const arrIngredients = recipeItems.ingredientes?.split(';');
     const arrPreparo = recipeItems.modoPreparo?.split('.');
 
-    // Verifica se o split e gera uma variável contendo todos os itens dos ingredientes já formatados em HTML
-    const listIngredients:any = arrIngredients ? 
-        arrIngredients.map(
-            item => item === "Massa" || item === `\r\n\r\nRecheio` || item === `\r\n\r\nMassa` || item === "Recheio" ? 
-                <li className="recipe--ingredient item-title"><b>{item}</b></li>
-            : <li className="recipe--ingredient">{item}</li>
-        )
-        // Se não houver ingredientes a lista não será gerada.
-        : null;
-
     // Verifica se o split e gera uma variável contendo todos os itens do modo de preparo já formatados em HTML            
     const listPreparo:any = arrPreparo ? 
         arrPreparo.map(
@@ -91,7 +81,9 @@ const CustomPDPRecipies = () => {
                                 <div className="recipe--ingredients">
                                     <h4 className="recipe--ingredients-title">Ingredientes</h4>
                                     <ul className="recipe--ingredients-text">
-                                        {listIngredients ? listIngredients : null}
+                                        {arrIngredients && arrIngredients.map((listItem) => {
+                                            return <li className="recipe--ingredient" dangerouslySetInnerHTML={{__html: listItem}} />
+                                        })}
                                     </ul>
                                 </div>
                                 <div className="recipe--preparation-method">
@@ -113,7 +105,9 @@ const CustomPDPRecipies = () => {
                                 <div className={`recipe--ingredients ${tab1}`}>
                                     <h4 className="recipe--ingredients-title">Ingredientes</h4>
                                     <ul className="recipe--ingredients-text">
-                                        {listIngredients ? listIngredients : null}
+                                        {arrIngredients && arrIngredients.map((listItem) => {
+                                            return <li className="recipe--ingredient" dangerouslySetInnerHTML={{__html: listItem}} />
+                                        })}
                                     </ul>
                                 </div>
                                 <div className={`recipe--preparation-method ${tab2}`}>
