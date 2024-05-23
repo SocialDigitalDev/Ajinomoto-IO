@@ -45,9 +45,33 @@
             "custom-product-size",
             "condition-layout.product#product-availability",
             "share#pdp",
-            "custom-pdp-characteristics"
+            "custom-pdp-characteristics",
+			"condition-layout.product#manioca-image"
         ]
     },
+
+		"condition-layout.product#manioca-image": {
+			"title": "Condição de layout",
+			"props": {
+				"conditions": [
+					{
+						"subject": "brandId",
+						"arguments": {
+							"id": "2097153890"
+						}
+					}
+				],
+				"Then": "image#manioca-caracs"
+			}
+		},
+
+		"image#manioca-caracs": {
+			"title": "Imagem de Características - Manioca",
+			"props": {
+				"src": "assets/img/manioca-caracs.png",
+				"blockClass": ["manioca-caracs"]
+			}
+		},
 
     // MOBILE
 
