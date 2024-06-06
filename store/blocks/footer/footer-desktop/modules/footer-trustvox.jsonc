@@ -6,6 +6,7 @@
 			"width": "15%"
 		},
 		"children": [
+			"certificate-ratrustvox",
 			"sandbox#trustvox-footer"
 		]
 	},
