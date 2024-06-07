@@ -490,3 +490,8 @@ ol {
 		padding-inline: 20px;
 	}
 }
+
+.vtex-flex-layout-0-x-flexRowContent--footer-bottom > .vtex-flex-layout-0-x-stretchChildrenWidth:nth-child(3) {
+	width: fit-content !important;
+	margin-right: 20px;
+}
