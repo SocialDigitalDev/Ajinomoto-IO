@@ -1,3 +1,11 @@
 :global(.vtex-reviews-and-ratings-3-x-stars) {
     color: $tv-star;
 }
+
+:global(.vtex-reviews-and-ratings-3-x-summaryContainer),
+:global(.vtex-reviews-and-ratings-3-x-inlineContainer),
+:global(.vtex-reviews-and-ratings-3-x-container) {
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
