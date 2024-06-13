@@ -13,8 +13,8 @@
 
 	"sandbox#trustvox-footer": {
 		"props": {
-			"width": "70px",
-			"height": "95px",
+			"width": "0",
+			"height": "0",
 			"initialContent": "<script type='text/javascript' src='https://certificate.trustvox.com.br/widget.js'></script>",
 			"allowCookies": true
 		}
