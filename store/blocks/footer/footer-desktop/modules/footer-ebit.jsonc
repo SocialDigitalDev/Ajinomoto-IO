@@ -12,8 +12,8 @@
 
 	"sandbox#ebit-footer": {
 		"props": {
-			"width": "70px",
-			"height": "95px",
+			"width": "0",
+			"height": "0",
 			"initialContent": "<a id='seloEbit' href='http://www.ebit.com.br/124583' target='_blank' data-noop='redir(this.href);'></a> <script type='text/javascript' id='getSelo' src='https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?124583'> </script>",
 			"allowCookies": true
 		}
