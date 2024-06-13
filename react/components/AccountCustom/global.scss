@@ -131,6 +131,7 @@
 	.vtex-my-account-1-x-newsletterBoxContainer {
 		.vtex-checkbox__label {
 			font-size: 0;
+			margin-bottom: 4px;
 			&::before {
 				content: "Sim, quero receber!";
 				font-size: 16px;
@@ -140,5 +141,6 @@
 }
 
 .text-lgpd {
+	font-size: 14px;
 	margin-top: 8px;
 }

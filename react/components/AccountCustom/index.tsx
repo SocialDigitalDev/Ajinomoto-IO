@@ -12,11 +12,12 @@ const AccountCustom = () => {
 					".vtex-my-account-1-x-newsletterBoxContainer .vtex-my-account-1-x-passwordBox"
 				) as HTMLElement;
 				const node = document.createElement("span");
+				node.className = "text-lgpd";
 				node.innerHTML =
-					"Concordo que a Ajinomoto pode usar meus dados de contato e interações.<a class='text-lgpd' href='/institucional/politica-de-privacidade' target='_blank'>Política de privacidade</a>";
+					"Concordo que a Ajinomoto pode usar meus dados de contato e interações. <a href='/institucional/politica-de-privacidade' target='_blank'>Política de privacidade</a>";
 				el.appendChild(node);
 			}
-		}, 2300);
+		}, 3000);
 	};
 
 	useEffect(() => {
