@@ -13,17 +13,7 @@
 			"flex-layout.row#buy-together-desktop",
 			"custom-pdp-recipies",
 			"product-reviews",
-			"flex-layout.row#qvvt",
-			"sandbox#ga4-trustvox"
+			"flex-layout.row#qvvt"
 		]
-	},
-
-	"sandbox#ga4-trustvox": {
-		"props": {
-			"width": "0",
-			"height": "0",
-			"initialContent": "<script type='text/javascript'>window._trustvox = [];gtagAccounts = [{ id: 'G-58J0H69T9P' },];_trustvox.push(['_gtag', gtagAccounts]);</script>",
-			"allowCookies": true
-		}
 	}
 }
