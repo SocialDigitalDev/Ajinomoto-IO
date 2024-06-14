@@ -19,7 +19,7 @@
 		}
 
 		&__page-body {
-			ul.list li{
+			ul.list li {
 				a.no-underline[href*="cancel"] {
 					display: none;
 					pointer-events: none;
@@ -49,8 +49,16 @@
 		}
 	}
 
-
-	&> div> div.vtex-store__template> div> div:nth-child(2)> div> div> div> div> div {
+	&
+		> div
+		> div.vtex-store__template
+		> div
+		> div:nth-child(2)
+		> div
+		> div
+		> div
+		> div
+		> div {
 		@include media(">phone") {
 			width: 80%;
 		}
@@ -126,6 +134,15 @@
 	.vtex-profile-form-3-x-toggleBusinessButtonWrapper {
 		display: none;
 		pointer-events: none;
+	}
+
+	.vtex-my-account-1-x-newsletterContainerMessage {
+		font-size: 0;
+		margin-bottom: 4px;
+		&::before {
+			content: "Deseja receber nossas comunicações com promoções?";
+			font-size: 16px;
+		}
 	}
 
 	.vtex-my-account-1-x-newsletterBoxContainer {
