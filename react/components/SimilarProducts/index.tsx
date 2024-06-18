@@ -38,7 +38,7 @@ const SimilarProducts = () => {
     // Esta função seta e limpa um evento de clique para tudo que não for parametrizado por ela.
     function useOutsideAlerter(ref:any) {
         useEffect(() => {
- 
+
             function handleClickOutside(event:any) {
                 if (ref.current && !ref.current.contains(event.target)) {
                     setOpenClass("closed");
@@ -57,7 +57,7 @@ const SimilarProducts = () => {
 
     // Lista os similares vindo de um array e pré-renderiza numa variável a lista de produtos similares para uso na renderização.
     const listSimilars = (item: any) => {
-        
+
         let getSabor = item ? item.map(sku =>
             sku?.productName?.includes('Menos Sódio') ?
             <li className="sabor-item">
@@ -75,7 +75,7 @@ const SimilarProducts = () => {
         ) : null;
 
         setSabor(getSabor);
-        
+
         // Verifica se o item existe e se tem conteúdo, e seta o carregamento do componente como verdadeiro.
         if (item.length > 0) {
             setIsLoaded(true)

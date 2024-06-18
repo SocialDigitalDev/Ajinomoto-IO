@@ -31,9 +31,11 @@
 
 .flexRow--footer-mobile-icon {
 	.flexRowContent--footer-mobile-icon {
+		gap: 20px;
 		display: flex;
 		padding: 15px 0 0;
 		margin-bottom: 12px;
+		flex-direction: column;
 	}
     &.flexRow--redes-sociais {
         margin-top: 35px;

@@ -1,0 +1,163 @@
+@import "../../../styles/scss/variables/_all.scss";
+
+// ACCOUNT
+.render-route-store-account {
+	.vtex-my-orders-app-3-x-orderCard {
+		.vtex-my-orders-app-3-x-orderBody {
+			a.vtex-my-orders-app-3-x-cancelBtn.myo-cancel-btn {
+				display: none;
+				pointer-events: none;
+			}
+		}
+	}
+
+	.vtex-account {
+		&__order-details {
+			& > div > div.w-100.fl.w-60-ns.pv3-ns.pr0 > ul > li:nth-child(2) {
+				display: none;
+			}
+		}
+
+		&__page-body {
+			ul.list li {
+				a.no-underline[href*="cancel"] {
+					display: none;
+					pointer-events: none;
+				}
+			}
+		}
+
+		&_menu-link {
+			&:hover {
+				border-color: $primary;
+			}
+			&.c-on-base {
+				color: $primary;
+			}
+
+			&.b--action-primary {
+				border-color: $primary;
+			}
+		}
+
+		&__create-card {
+			.vtex-button {
+				background: #000;
+				border-color: #000;
+				color: $white;
+			}
+		}
+	}
+
+	&
+		> div
+		> div.vtex-store__template
+		> div
+		> div:nth-child(2)
+		> div
+		> div
+		> div
+		> div
+		> div {
+		@include media(">phone") {
+			width: 80%;
+		}
+	}
+
+	.vtex-slider-layout-0-x-sliderTrackContainer--shelf-wishlist {
+		&::-webkit-scrollbar {
+			height: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: $gray-13;
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary;
+			border-radius: 10px;
+			border: 1px solid $white;
+		}
+	}
+
+	.vtex-input {
+		&__label {
+			font-family: $OpenSans !important;
+		}
+
+		&-prefix__group {
+			input {
+				font-family: $OpenSans;
+			}
+		}
+	}
+
+	.vtex-dropdown {
+		&__label {
+			font-family: $OpenSans !important;
+		}
+
+		&__caption {
+			font-family: $OpenSans;
+		}
+
+		select {
+			font-family: $OpenSans;
+
+			option {
+				font-family: $OpenSans !important;
+			}
+		}
+	}
+
+	.vtex-my-orders-app-3-x-font {
+		font-family: $OpenSans;
+	}
+
+	.vtex-checkbox__inner-container {
+		&.bg-action-primary {
+			background: $primary;
+			border: 1px solid $primary;
+		}
+	}
+
+	.vtex-my-account-1-x-menuLinks > div {
+		&.vtex-my-account-1-x-menuLink:last-child {
+			color: $black;
+			font-size: 18px;
+			font-weight: $semi-bold;
+			border-color: $black;
+		}
+	}
+
+	.vtex-profile-form-3-x-toggleBusinessButtonWrapper {
+		display: none;
+		pointer-events: none;
+	}
+
+	.vtex-my-account-1-x-newsletterContainerMessage {
+		font-size: 0;
+		margin-bottom: 4px;
+		&::before {
+			content: "Deseja receber nossas comunicações com promoções?";
+			font-size: 16px;
+		}
+	}
+
+	.vtex-my-account-1-x-newsletterBoxContainer {
+		.vtex-checkbox__label {
+			font-size: 0;
+			margin-bottom: 4px;
+			&::before {
+				content: "Sim, quero receber!";
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.text-lgpd {
+	font-size: 14px;
+	margin-top: 8px;
+}

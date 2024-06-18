@@ -48,6 +48,7 @@
 	"flex-layout.col#shelf-info": {
 		"children": [
 			"product-summary-name#shelf",
+			"product-rating-inline",
 			"product-summary-price#shelf",
 			"condition-layout.product#availability"
 		],
@@ -129,7 +130,7 @@
 	"add-to-cart-button#shelf": {
 		"props": {
 			"blockClass": "shelf",
-			"unavailableText": "Produto indisponivel"	
+			"unavailableText": "Produto indisponivel"
 		}
 	}
 }

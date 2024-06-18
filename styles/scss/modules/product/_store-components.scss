@@ -54,16 +54,16 @@
 
             &Container{
                 margin-bottom: 30px;
-                
+
                 .productBrand{
                     display: block;
                     color: $gray-2;
                     font-weight: $bold;
-                    
+
                     @include media ('>=desktop'){
                         font-size: 25px;
                     }
-                    
+
                     @include media ('<=tablet', '>phone'){
                         font-size: 28px;
                         max-width: 100%;
@@ -90,7 +90,7 @@
                 max-height: 513px !important;
                 background: $white;
             }
-            
+
             &--zoom{
                 background: $white;
             }
@@ -119,4 +119,13 @@
     .container{
         max-width: 1170px;
     }
+}
+
+.image {
+	&Element {
+		&--manioca-caracs {
+			margin-top: 64px;
+			max-width: 420px;
+		}
+	}
 }
