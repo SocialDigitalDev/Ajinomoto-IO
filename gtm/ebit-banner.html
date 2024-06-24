@@ -1,0 +1,112 @@
+<script>
+  var orderWrapper = document.querySelector('.vtex-order-placed-2-x-orderWrapper');
+  var paymentTypes = '14';
+  
+  switch ({{SDC | ebit | objData-paymentType}}) {
+    case 'Mastercard':
+      paymentTypes = '05';
+      break;
+    case 'Pix':
+      paymentTypes = '90';
+      break;
+    case 'Visa':
+      paymentTypes = '05';
+      break;
+    case 'Boleto Bancário':
+      paymentTypes = '08';
+      break;
+    case 'American Express':
+      paymentTypes = '05';
+      break;
+    case 'Mastercard, Vale':
+      paymentTypes = '05';
+      break;
+    case 'Mastercard, Visa':
+      paymentTypes = '05';
+      break;
+    case 'Pix, Vale':
+      paymentTypes = '90';
+      break;
+    default:
+      paymentTypes = '14';
+  }
+
+  var paramString = "storeId=124583&platform=1&email=" + {{SDC | ebit | objData-email}} + "&man= &ean="+ {{SDC | ebit | eans}} +"&sku="+ {{SDC | ebit | skus}} +"&l5="+ {{SDC | ebit | categories}} +"&brd="+ {{SDC | ebit | brands}} +"&brds= &zipCode=" + {{SDC | ebit | objData-zipCode}} + "&parcels=" + {{SDC | ebit | objData-parcels}} + "&productCondition=1&deliveryTax=" + {{SDC | ebit | objData-deliveryTax}} + "&deliveryTime=" + {{SDC | ebit | objData-deliveryTime}} + "&mktSaleId=1&totalSpent=" + {{SDC | ebit | objData-totalSpent}} + "&value=" + {{SDC | ebit | objData-value}} + "&quantity=" + {{SDC | ebit | objData-quantity}} + "&productName=" + {{SDC | ebit | objData-productName}} + "&transactionId=" + {{SDC | ebit | objData-transactionId}} + "&paymentType=" + paymentTypes + "";
+  
+  var elDiv = document.createElement("div");
+  elDiv.classList.add("ebit-banner");
+  
+  var elAnchor = document.createElement("a");
+  elAnchor.id = "bannerEbit";
+  
+  var elParam = document.createElement("param");
+  elParam.value = paramString;
+  elParam.id = "ebitParam";
+
+  
+  var elScript = document.createElement("script");
+  elScript.type = "text/javascript";
+  elScript.id = "getSelo";
+  elScript.src = "https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?124583&lightbox=true"
+  
+  elDiv.appendChild(elParam);
+  elDiv.appendChild(elAnchor);
+  elDiv.appendChild(elScript);
+  
+  orderWrapper.appendChild(elDiv);
+  
+</script>
+
+<script>
+  var orderWrapper = document.querySelector('.vtex-order-placed-2-x-orderWrapper');
+  var paymentTypes = '14';
+  
+  switch ({{SDC | ebit | objData-paymentType}}) {
+    case 'Mastercard':
+      paymentTypes = '05';
+      break;
+    case 'Pix':
+      paymentTypes = '90';
+      break;
+    case 'Visa':
+      paymentTypes = '05';
+      break;
+    case 'Boleto Bancário':
+      paymentTypes = '08';
+      break;
+    case 'American Express':
+      paymentTypes = '05';
+      break;
+    case 'Mastercard, Vale':
+      paymentTypes = '05';
+      break;
+    case 'Mastercard, Visa':
+      paymentTypes = '05';
+      break;
+    case 'Pix, Vale':
+      paymentTypes = '90';
+      break;
+    case 'Vale presente':
+      paymentTypes = '90';
+      break;
+    default:
+      paymentTypes = '14';
+  }
+  
+  var paramString = "storeId=124583&platform=1&email=" + {{SDC | ebit | objData-email}} + "&man= &ean="+ {{SDC | ebit | eans}} +"&sku="+ {{SDC | ebit | skus}} +"&l5="+ {{SDC | ebit | categories}} +"&brd="+ {{SDC | ebit | brands}} +"&brds= &zipCode=" + {{SDC | ebit | objData-zipCode}} + "&parcels=" + {{SDC | ebit | objData-parcels}} + "&productCondition=1&deliveryTax=" + {{SDC | ebit | objData-deliveryTax}} + "&deliveryTime=" + {{SDC | ebit | objData-deliveryTime}} + "&mktSaleId=1&totalSpent=" + {{SDC | ebit | objData-totalSpent}} + "&value=" + {{SDC | ebit | objData-value}} + "&quantity=" + {{SDC | ebit | objData-quantity}} + "&productName=" + {{SDC | ebit | objData-productName}} + "&transactionId=" + {{SDC | ebit | objData-transactionId}} + "&paymentType=" + paymentTypes + "";
+  
+  var elDiv = document.createElement("div");
+  elDiv.classList.add("ebit-banner");
+
+  
+  
+  var htmlString = "";
+  htmlString += "<param id='ebitParam' value='"+ paramString +"' />";
+  htmlString += "<a id='bannerEbit'></a>";
+  htmlString += "<script type='text/javascript' id='getSelo' src='https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?124583&lightbox=true'><\/script>";
+  
+  elDiv.appendChild(htmlString);
+  
+  orderWrapper.appendChild(elDiv);
+
+</script>
