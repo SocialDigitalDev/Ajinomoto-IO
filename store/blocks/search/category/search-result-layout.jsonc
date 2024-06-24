@@ -174,8 +174,8 @@
 		}
 	},
 
-	"flex-layout.row#products": {
-		"children": ["search-content"]
+	"flex-layout.col#products": {
+		"children": ["tag-search-linx", "search-content"]
 	},
 
 	"search-content": {
@@ -197,8 +197,6 @@
 
 	"flex-layout.row#fetchmore": {
 		"children": [
-			// "search-products-count-per-page",
-			// "search-products-progress-bar",
 			"search-fetch-more"
 		],
 		"props": {

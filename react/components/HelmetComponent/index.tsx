@@ -23,6 +23,7 @@ const HelmetComponent = () => {
 				className="adopt-injector"
 			></script>
 			<meta name="google-site-verification" content="fS2gDf41Ex76LzXW3u7bCcDZP17Wjr9Y9Z8AUEDQm-U" />
+			<script async defer src="//suite.linximpulse.net/impulse/impulse.js" data-apikey="loja-ajinomoto"></script>
 			{/* <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
 			<script src="https://www.socialdigitalcommerce.com.br/blipchat/blip-chat.js"></script> */}
 		</Helmet>

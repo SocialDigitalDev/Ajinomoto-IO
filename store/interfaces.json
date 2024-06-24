@@ -106,7 +106,28 @@
 	"custom-embed-video": {
 		"component": "CustomEmbedVideo"
 	},
+
 	"custom-account": {
 		"component": "AccountCustom"
+	},
+
+	"search-input-linx": {
+		"component": "SearchInputLinx"
+	},
+
+	"shelf-top-linx": {
+		"component": "ShelfTopLinx"
+	},
+
+	"shelf-middle-linx": {
+		"component": "ShelfMiddleLinx"
+	},
+
+	"shelf-bottom-linx": {
+		"component": "ShelfBottomLinx"
+	},
+
+	"tag-search-linx": {
+		"component": "TagSearchLinx"
 	}
 }
