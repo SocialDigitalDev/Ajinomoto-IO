@@ -5,6 +5,7 @@ const SearchInputLinx = () => {
     useEffect(() => {
         const htmlCustom = document.createElement("impulse-autocomplete");
 
+        if (!document.querySelector("form[data-search-impulse-linx] > impulse-autocomplete"))
         document.querySelector("form[data-search-impulse-linx]")?.append(htmlCustom);
     }, [])
 
