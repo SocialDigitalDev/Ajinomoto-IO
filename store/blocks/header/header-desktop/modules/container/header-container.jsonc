@@ -75,7 +75,7 @@
 
 	"flex-layout.row#header--search-fixed": {
 		"title": "BUSCA",
-		"children": ["modal-trigger#search-fixed-desktop", "search-input-linx"],
+		"children": ["modal-trigger#search-fixed-desktop"],
 		"props": {
 			"blockClass": "header--search-fixed"
 		}

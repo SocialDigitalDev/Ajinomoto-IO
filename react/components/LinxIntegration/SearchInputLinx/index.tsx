@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
+import waitForEl from "../../../utils/waitForEl";
 
 const SearchInputLinx = () => {
 
     useEffect(() => {
         const htmlCustom = document.createElement("impulse-autocomplete");
 
-        if (!document.querySelector("form[data-search-impulse-linx] > impulse-autocomplete"))
-        document.querySelector("form[data-search-impulse-linx]")?.append(htmlCustom);
+        waitForEl(".vtex-store-components-3-x-searchBarInnerContainer", () => {
+            if (!document.querySelector(".vtex-store-components-3-x-searchBarContainer impulse-autocomplete")) {
+                var element: any = document.querySelector(".vtex-store-components-3-x-searchBarInnerContainer");
+                let parent : any = element.parentNode;
+                parent.replaceChild(htmlCustom, element);
+                htmlCustom.appendChild(element);
+            }
+        })
     }, [])
 
-    return (
-        <>
-            {/* <!-- Linx TOP --> */}
-            <form data-search-impulse-linx className="search">
-                <input className="input-field" />
-            </form>
-        </>
-    );
+    return <></>
 
 }
 

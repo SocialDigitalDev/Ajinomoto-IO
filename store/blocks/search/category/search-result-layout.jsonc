@@ -175,7 +175,11 @@
 	},
 
 	"flex-layout.col#products": {
-		"children": ["tag-search-linx", "search-content"]
+		"children": [
+			"shelf-top-linx", 
+			"search-content",
+			"shelf-bottom-linx"
+		]
 	},
 
 	"search-content": {

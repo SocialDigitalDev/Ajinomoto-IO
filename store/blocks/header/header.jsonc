@@ -19,6 +19,7 @@
 		"title": "HEADER DESKTOP",
 		"children": [
 			"helmet-component",
+			"search-input-linx",
 			"sticky-layout#header-desktop",
 			"whatsapp-floating-button"
 		],
