@@ -105,5 +105,8 @@
 
 	"custom-embed-video": {
 		"component": "CustomEmbedVideo"
+	},
+	"custom-trustvox-carousel": {
+		"component": "TrustvoxCarousel"
 	}
 }

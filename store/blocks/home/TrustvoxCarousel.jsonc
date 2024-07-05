@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#TrustvoxCarousel": {
+        "children": [
+            "custom-trustvox-carousel"
+        ],
+        "props": {
+            "blockclass": "TrustvoxCarousel"
+        }
+    }
+}
