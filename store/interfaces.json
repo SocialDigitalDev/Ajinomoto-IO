@@ -108,5 +108,8 @@
 	},
 	"custom-trustvox-carousel": {
 		"component": "TrustvoxCarousel"
+  },
+	"custom-account": {
+		"component": "AccountCustom"
 	}
 }
