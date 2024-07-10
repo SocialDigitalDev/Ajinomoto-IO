@@ -106,11 +106,12 @@
 	"custom-embed-video": {
 		"component": "CustomEmbedVideo"
 	},
-
+	"custom-trustvox-carousel": {
+		"component": "TrustvoxCarousel"
+  	},
 	"custom-account": {
 		"component": "AccountCustom"
 	},
-
 	"search-input-linx": {
 		"component": "SearchInputLinx"
 	},

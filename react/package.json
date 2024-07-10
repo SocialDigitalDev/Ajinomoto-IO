@@ -57,7 +57,7 @@
     "apollo-client": "^2.6.8",
     "graphql": "^14.6.0",
     "jest": "^27.0.6",
-    "lojaajinomoto.store-theme": "http://lojaajinomoto.vtexassets.com/_v/public/typings/v1/lojaajinomoto.store-theme@0.1.186/public/@types/lojaajinomoto.store-theme",
+    "lojaajinomoto.store-theme": "http://lojaajinomoto.vtexassets.com/_v/public/typings/v1/lojaajinomoto.store-theme@0.1.180/public/@types/lojaajinomoto.store-theme",
     "lojaajinomoto.trustvox": "http://lojaajinomoto.vtexassets.com/_v/public/typings/v1/lojaajinomoto.trustvox@1.0.0/public/@types/lojaajinomoto.trustvox",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
