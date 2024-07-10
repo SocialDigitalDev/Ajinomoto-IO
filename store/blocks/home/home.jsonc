@@ -13,6 +13,7 @@
 			"flex-layout.row#home-final-banner",
 			"flex-layout.row#home-prateleira-1",
 			"flex-layout.row#home-sobre",
+			"flex-layout.row#TrustvoxCarousel",
 			"flex-layout.row#newsletter"
 		]
 	}
