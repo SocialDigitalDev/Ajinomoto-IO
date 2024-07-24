@@ -130,5 +130,9 @@
 
 	"tag-search-linx": {
 		"component": "TagSearchLinx"
+	},
+
+	"metodo-add-to-cart": {
+		"component": "AddToCartLinx"
 	}
 }
