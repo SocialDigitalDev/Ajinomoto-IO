@@ -163,5 +163,17 @@
 }
 
 .vtex-slider-layout-0-x-sliderLayoutContainer--shelf-wishlist{
-	max-width: 1200px
+	max-width: 1200px;
+
+	@media (max-width: 350px) {
+		max-width: 260px
+	}
+
+	@media (min-width:351px) and (max-width: 390px) {
+		max-width: 300px
+	}
+
+	@media (min-width: 391px) and (max-width: 767px) {
+		max-width: 330px
+	}
 }
