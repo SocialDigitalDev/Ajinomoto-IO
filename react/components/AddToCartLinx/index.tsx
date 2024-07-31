@@ -10,13 +10,9 @@ const AddToCartLinx = () => {
 
     useEffect(()=> {
         if (!window.addItens) {
-            window.addItens = function(skus: any, qty: any) {
-                const SKU_ITEM = {
-                    id: skus,
-                    seller: "1",
-                    quantity: qty,
-                };
-                addItems([SKU_ITEM]);
+            window.addItens = function(items: any) {
+                
+                addItems(items);
                 let element: HTMLElement = document?.querySelector(".vtex-minicart-2-x-openIconContainer .vtex-button") as HTMLElement;
 
                 setTimeout(() => {
