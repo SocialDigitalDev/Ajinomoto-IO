@@ -10,10 +10,13 @@
 	"responsive-layout.desktop#content-product": {
 		"children": [
 			"flex-layout.row#img-product-info",
+			"shelf-top-linx",
 			"flex-layout.row#buy-together-desktop",
+			"shelf-middle-linx",
 			"custom-pdp-recipies",
 			"product-reviews",
-			"flex-layout.row#qvvt"
+			"flex-layout.row#qvvt",
+			"shelf-bottom-linx"
 		]
 	}
 }

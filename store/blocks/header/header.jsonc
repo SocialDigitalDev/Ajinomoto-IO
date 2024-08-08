@@ -19,6 +19,8 @@
 		"title": "HEADER DESKTOP",
 		"children": [
 			"helmet-component",
+			"search-input-linx",
+			"metodo-add-to-cart",
 			"sticky-layout#header-desktop",
 			"whatsapp-floating-button"
 		],
@@ -32,6 +34,8 @@
 		"title": "HEADER MOBILE",
 		"children": [
 			"helmet-component",
+			"search-input-linx",
+			"metodo-add-to-cart",
 			"sticky-layout#header-mobile",
 			"whatsapp-floating-button"
 		],
