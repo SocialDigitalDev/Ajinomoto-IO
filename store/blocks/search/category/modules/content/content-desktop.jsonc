@@ -129,7 +129,7 @@
 	"flex-layout.col#category-result": {
 		"children": [
 			"flex-layout.row#fetchprevious",
-			"flex-layout.row#products",
+			"flex-layout.col#products",
 			"flex-layout.row#fetchmore",
 			"flex-layout.row#custom-seo-block"
 		],

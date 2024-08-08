@@ -16,5 +16,8 @@
     },
     "store.custom#food-service": {
         "path": "/food-service"
+    },
+    "store.custom#busca-linx": {
+        "path": "/busca"
     }
 }
