@@ -1,0 +1,7 @@
+{
+    "store.custom#busca-linx": {
+		"blocks": [
+            "tag-search-linx"
+		]
+	}
+}
