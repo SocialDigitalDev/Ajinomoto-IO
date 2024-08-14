@@ -13,7 +13,7 @@
 
 	.vtex-account {
 		&__order-details {
-			& > div > div.w-100.fl.w-60-ns.pv3-ns.pr0 > ul > li:nth-child(2) {
+			&>div>div.w-100.fl.w-60-ns.pv3-ns.pr0>ul>li:nth-child(2) {
 				display: none;
 			}
 		}
@@ -31,6 +31,7 @@
 			&:hover {
 				border-color: $primary;
 			}
+
 			&.c-on-base {
 				color: $primary;
 			}
@@ -49,16 +50,7 @@
 		}
 	}
 
-	&
-		> div
-		> div.vtex-store__template
-		> div
-		> div:nth-child(2)
-		> div
-		> div
-		> div
-		> div
-		> div {
+	&>div>div.vtex-store__template>div>div:nth-child(2)>div>div>div>div>div {
 		@include media(">phone") {
 			width: 80%;
 		}
@@ -122,7 +114,7 @@
 		}
 	}
 
-	.vtex-my-account-1-x-menuLinks > div {
+	.vtex-my-account-1-x-menuLinks>div {
 		&.vtex-my-account-1-x-menuLink:last-child {
 			color: $black;
 			font-size: 18px;
@@ -139,6 +131,7 @@
 	.vtex-my-account-1-x-newsletterContainerMessage {
 		font-size: 0;
 		margin-bottom: 4px;
+
 		&::before {
 			content: "Deseja receber nossas comunicações com promoções?";
 			font-size: 16px;
@@ -149,6 +142,7 @@
 		.vtex-checkbox__label {
 			font-size: 0;
 			margin-bottom: 4px;
+
 			&::before {
 				content: "Sim, quero receber!";
 				font-size: 16px;
@@ -162,7 +156,7 @@
 	margin-top: 8px;
 }
 
-.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-wishlist{
+.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-wishlist {
 	max-width: 1200px;
 
 	@media (max-width: 350px) {
@@ -175,5 +169,14 @@
 
 	@media (min-width: 391px) and (max-width: 767px) {
 		max-width: 330px
+	}
+
+}
+
+.vtex-account {
+
+	&__page-body.wish-list {
+		display: flex;
+		justify-content: center;
 	}
 }
