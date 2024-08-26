@@ -20,6 +20,7 @@
 		"children": [
 			"helmet-component",
 			"metodo-add-to-cart",
+			"flex-layout.row#topbar-header",
 			"sticky-layout#header-desktop",
 			"whatsapp-floating-button"
 		],
