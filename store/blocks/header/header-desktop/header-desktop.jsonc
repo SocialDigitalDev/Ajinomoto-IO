@@ -1,8 +1,6 @@
 {
 	"sticky-layout#header-desktop": {
 		"children": [
-            "flex-layout.row#topbar-rs-header",
-			"flex-layout.row#topbar-header",
 			"flex-layout.row#header-desktop"
 		],
 		"props": {
