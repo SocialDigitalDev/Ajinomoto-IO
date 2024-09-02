@@ -1,0 +1,73 @@
+.paragraph {
+
+  &--amino-text-title {
+    font-size: 60px;
+    font-family: $Inter;
+    font-weight: $extra-bold;
+    color: $white;
+    padding-top: 44px;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+
+  &--amino-text {
+    font-size: 28px;
+    font-family: $Inter;
+    color: $white;
+    font-weight: $light;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &--text-top-message {
+    color: #091056;
+    font-family: $Roboto;
+    font-size: 54px;
+    font-weight: $extra-bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+  }
+
+  &--item-text-lp {
+    color: white;
+    font-family: $Inter;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.wrapper {
+
+  &--amino-text-title {}
+
+  &--amino-text {}
+}
+
+.container {
+
+  &--amino-text-title {
+    height: 73px;
+
+    @media (max-width: 767px) {
+      height: 27px;
+    }
+  }
+
+    &--amino-text {
+      height: 238px;
+      margin-top: 20px;
+
+      @media (min-width: 768px){
+        height: auto;
+    }
+  }
+
+  &--text-top-message {
+    background-color: F6C06E;
+  }
+}

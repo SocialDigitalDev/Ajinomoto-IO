@@ -207,3 +207,21 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* INTER (NORMAL E LIGHT) */
+
+@font-face {
+	font-family: 'Inter';
+	src: url(assets/fonts/Inter-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(assets/fonts/Inter-Normal.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,33 @@
+{
+  "responsive-layout.desktop#main-banner-lp": {
+    "children": [
+      "image#background-mainbanner"
+    ]
+  },
+  "responsive-layout.tablet#main-banner-lp": {
+    "children": [
+      "image#background-mainbanner"
+    ]
+  },
+  "responsive-layout.phone#main-banner-lp": {
+    "children": [
+      "image#background-mainbanner-mobile"
+    ]
+  },
+  "image#background-mainbanner": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/main-banner-aminovital.png",
+      "maxWidth": 1920,
+      "maxHeight": 630,
+      "blockClass": "main-banner-desktop"
+    }
+  },
+  "image#background-mainbanner-mobile": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/main-banner-mobile.jpg",
+      "maxWidth": 1920,
+      "maxHeight": 630,
+      "blockClass": "main-banner-mobile"
+    }
+  }
+}

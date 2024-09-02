@@ -1,0 +1,32 @@
+.flexRow {
+    &--text-wrap {
+        background-color: #071D49;
+        height: 439px;
+        align-items: center;
+        display: flex;
+        padding-top: 44px;
+        padding-bottom: 64px;
+    }
+
+    &--top-message{
+        background-color: #F6C06E;
+        width: 100%;
+        max-width: 1920px;
+        height: 73px;
+    }
+
+    &--wrapper-for-who-lpp{
+        background-color: #091056;
+    }
+}
+
+.flexCol {
+    &--text-section  {
+        padding-left: 277px;
+        padding-right: 288px;
+
+        @media (max-width: 768px){
+            padding: 0 15px
+        }
+    }
+}

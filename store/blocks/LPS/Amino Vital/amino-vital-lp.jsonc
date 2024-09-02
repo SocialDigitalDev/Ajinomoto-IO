@@ -1,0 +1,15 @@
+{
+  "store.custom#amino-vital": {
+    "blocks": [
+      "responsive-layout.desktop#main-banner-lp",
+      "responsive-layout.tablet#main-banner-lp",
+      "responsive-layout.phone#main-banner-lp",
+      "responsive-layout.desktop#seo-text-section",
+      "responsive-layout.tablet#seo-text-section",
+      "responsive-layout.phone#seo-text-section",
+      "responsive-layout.desktop#for-who-section",
+      "responsive-layout.tablet#for-who-section",
+      "responsive-layout.phone#for-who-section"
+    ]
+  }
+}
