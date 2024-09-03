@@ -31,6 +31,10 @@
     margin-top: 0px;
     margin-bottom: 0px;
     font-style: italic;
+
+    @media(max-width: 767px){
+      font-size: 20px;
+    }
   }
 
   &--item-text-lp {
@@ -38,6 +42,7 @@
     font-family: $Inter;
     font-size: 24px;
     font-weight: 400;
+    text-align: left
   }
 }
 
@@ -69,5 +74,9 @@
 
   &--text-top-message {
     background-color: F6C06E;
+  }
+
+  &--item-text-lp{
+    justify-content: flex-start;
   }
 }

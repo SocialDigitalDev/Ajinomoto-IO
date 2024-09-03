@@ -1,0 +1,48 @@
+.sliderTrackContainer {
+  &--carousel {
+    background-color: #0F1339;
+    padding-bottom: 63px
+  }
+}
+
+.paginationDotsContainer {
+  &--carousel {
+    bottom: 33px !important
+  }
+}
+
+.sliderLayoutContainer {
+  &--shelf-amino-vital {
+    padding-left: 287px;
+
+    @media (max-width: 767px) {
+      padding-left: 0px
+    }
+  }
+}
+
+.sliderRightArrow {
+  &--shelf-amino-vital {
+    right: -17px !important;
+  }
+}
+
+.sliderLeftArrow {
+  &--shelf-amino-vital {
+    left: 260px !important
+  }
+}
+
+.paginationDotsContainer {
+  &--shelf-amino-vital {
+    left: 250px !important;
+
+    @media(max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      left: 0px!important;
+      bottom: -20px!important
+    }
+  }
+}

@@ -1,32 +1,143 @@
-.flexRow {
+.flex {
+  &Row {
+
+    &--amino-vital-shelf-container{
+      padding-top: 44px;
+      width: 100%;
+      padding-bottom: 40px;
+    }
+    &--mobile-column-for-who{
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+
+    &--mobile-second-column-for-who{
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+
     &--text-wrap {
-        background-color: #071D49;
-        height: 439px;
+      background-color: #071D49;
+      height: 439px;
+      align-items: center;
+      display: flex;
+      padding-top: 44px;
+      padding-bottom: 64px;
+    }
+
+    &--top-message {
+      background-color: #F6C06E;
+      width: 100%;
+      max-width: 1920px;
+      height: 73px;
+
+      @media (max-width: 767px){
+        height: 26px;
+        max-width: 767px;
+      }
+    }
+
+    &--wrapper-for-who-lpp {
+      background-color: #091056;
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+
+    &--image-check-amino {
+      width: 65px !important;
+      height: 65px
+    }
+
+    &--golden-bar {
+      width: 100%;
+      max-width: 1920px;
+      height: 22px;
+      background-color: #F6C06E;
+    }
+
+    &Content {
+
+      &--amino-vital-shelf-container .stretchChildrenWidth{
+        width: 100% !important;
+      }
+
+      &--amino-image-shelf{
+        padding-right: 277px;
+        padding-left: 78px;
+
+        @media (max-width: 767px){
+          display:none;
+        }
+      }
+
+      &--item-row-lp {
+        gap: 20px;
         align-items: center;
+
+        @media (max-width: 767px) {
+          display: flex;
+          max-width: 266px;
+        }
+
+        .stretchChildrenWidth {
+          &:first-child {
+            height: 65px;
+            width: 65px !important;
+          }
+
+          &:last-child {
+            width: 100% !important;
+            max-width: 530px;
+          }
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--text-section {
+      padding-left: 277px;
+      padding-right: 288px;
+
+      @media (max-width: 768px) {
+        padding: 0 15px
+      }
+    }
+
+    &Child {
+      &--cols-for-who {
+        justify-content: flex-start;
         display: flex;
-        padding-top: 44px;
-        padding-bottom: 64px;
+        padding-left: 334px;
+
+        @media (max-width: 767px) {
+          padding-left: 0px;
+        }
+      }
     }
 
-    &--top-message{
-        background-color: #F6C06E;
-        width: 100%;
-        max-width: 1920px;
-        height: 73px;
-    }
+    &--cols-for-who-second {
+      justify-content: flex-start;
+      display: flex;
+      padding-right: 334px;
+      padding-left: 100px;
 
-    &--wrapper-for-who-lpp{
-        background-color: #091056;
+      @media (max-width: 767px) {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
     }
+  }
 }
 
-.flexCol {
-    &--text-section  {
-        padding-left: 277px;
-        padding-right: 288px;
-
-        @media (max-width: 768px){
-            padding: 0 15px
-        }
-    }
+.sliderLayoutContainer {
+  &--carousel {
+    background-color: #0F1339;
+  }
 }

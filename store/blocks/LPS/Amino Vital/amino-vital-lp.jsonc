@@ -9,7 +9,8 @@
       "responsive-layout.phone#seo-text-section",
       "responsive-layout.desktop#for-who-section",
       "responsive-layout.tablet#for-who-section",
-      "responsive-layout.phone#for-who-section"
+      "responsive-layout.phone#for-who-section",
+      "flex-layout.row#shelf-section"
     ]
   }
 }

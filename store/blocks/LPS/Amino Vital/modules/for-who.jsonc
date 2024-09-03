@@ -2,18 +2,23 @@
   "responsive-layout.desktop#for-who-section": {
     "children": [
       "flex-layout.row#top-message",
-      "flex-layout.row#wrapper-who-amino"
+      "flex-layout.row#wrapper-who-amino",
+      "flex-layout.row#golden-bar"
     ]
   },
   "responsive-layout.tablet#for-who-section": {
     "children": [
       "flex-layout.row#top-message",
-      "flex-layout.row#wrapper-who-amino"
+      "flex-layout.row#wrapper-who-amino",
+      "flex-layout.row#golden-bar"
     ]
   },
   "responsive-layout.phone#for-who-section": {
     "children": [
-      "custom-collapse-seo-block"
+      "flex-layout.row#top-message",
+      "slider-layout#text-test",
+      "flex-layout.row#golden-bar"
+
     ]
   },
   "flex-layout.row#top-message": {
@@ -26,7 +31,7 @@
   },
   "rich-text#top-message-amino": {
     "props": {
-      "text": "",
+      "text": "INDICADO PARA:",
       "blockClass": "text-top-message",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
@@ -172,5 +177,45 @@
       "maxWidth": "65",
       "blockClass": "image-check"
     }
-  }
+  },
+"flex-layout.row#golden-bar": {
+    "props": {
+      "blockClass": [
+        "golden-bar"
+      ]
+    }
+  },
+"slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["flex-layout.row#for-who-column-mobile", "flex-layout.row#for-who-second-column-mobile"]
+  },
+  "flex-layout.row#for-who-column-mobile": {
+    "children": [
+      "flex-layout.col#first-col-who"
+    ],
+    "props": {
+      "blockClass": [
+        "mobile-column-for-who"
+      ]
+    }
+  },
+  "flex-layout.row#for-who-second-column-mobile": {
+    "children": [
+      "flex-layout.col#second-col-who"
+    ],
+    "props": {
+      "blockClass": [
+        "mobile-second-column-for-who"
+      ]
+    }
+  }  
 }
