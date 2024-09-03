@@ -1,0 +1,214 @@
+{
+  "responsive-layout.desktop#about-brand": {
+    "children": [
+      "flex-layout.row#about-brand"
+    ]
+  },
+  "responsive-layout.tablet#about-brand": {
+    "children": [
+      "flex-layout.row#about-brand"
+    ]
+  },
+  "responsive-layout.mobile#about-brand": {
+    "children": [
+      "flex-layout.row#about-brand"
+    ]
+  },
+  "flex-layout.row#about-brand": {
+    "props": {
+      "blockClass": "about-brand"
+    },
+    "children": [
+      "flex-layout.col#image-about-brand",
+      "flex-layout.col#brand-col"
+    ]
+  },
+  "flex-layout.col#image-about-brand": {
+    "props": {
+      "blockClass": "image-about-brand"
+    },
+    "children": [
+      "image#left-image"
+    ]
+  },
+  "image#left-image": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/avancini .png",
+      "blockClass": "image-left-amino"
+    }
+  },
+    "flex-layout.col#brand-col": {
+    "props": {
+      "blockClass": "brand-col"
+    },
+    "children": [
+      "flex-layout.row#section-title",
+      "flex-layout.row#line-about-brand-1",
+      "flex-layout.row#line-about-brand-2",
+      "flex-layout.row#line-about-brand-3",
+      "flex-layout.row#line-about-brand-4",
+      "flex-layout.row#line-about-brand-5",
+      "flex-layout.row#line-about-brand-6"
+    ]
+  },
+  "flex-layout.row#section-title": {
+    "props": {
+      "blockClass": "section-title"
+    },
+    "children": [
+      "rich-text#text-title-brand-amino"
+    ]
+  },
+  "rich-text#text-title-brand-amino": {
+    "props": {
+      "blockClass": "text-title",
+      "text": "DIFERENCIAIS DA MARCA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#line-about-brand-1": {
+    "props": {
+      "blockClass": "line-about-brand-1"
+    },
+    "children": [
+      "image#icon-brand-lp-1",
+      "rich-text#brand-text-1"
+    ]
+  },
+  "flex-layout.row#line-about-brand-2": {
+    "props": {
+      "blockClass": "line-about-brand-2"
+    },
+    "children": [
+      "image#icon-brand-lp-2",
+      "rich-text#brand-text-2"
+    ]
+  },
+  "flex-layout.row#line-about-brand-3": {
+    "props": {
+      "blockClass": "line-about-brand-3"
+    },
+    "children": [
+      "image#icon-brand-lp-3",
+      "rich-text#brand-text-3"
+    ]
+  },
+  "flex-layout.row#line-about-brand-4": {
+    "props": {
+      "blockClass": "line-about-brand-4"
+    },
+    "children": [
+      "image#icon-brand-lp-4",
+      "rich-text#brand-text-4"
+    ]
+  },
+  "flex-layout.row#line-about-brand-5": {
+    "props": {
+      "blockClass": "line-about-brand-5"
+    },
+    "children": [
+      "image#icon-brand-lp-5",
+      "rich-text#brand-text-5"
+    ]
+  },
+  "flex-layout.row#line-about-brand-6": {
+    "props": {
+      "blockClass": "line-about-brand-6"
+    },
+    "children": [
+      "image#icon-brand-lp-6",
+      "rich-text#brand-text-6"
+    ]
+  },
+  "image#icon-brand-lp-1": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/a-brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-1"
+    }
+  },
+  "image#icon-brand-lp-2": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/b-brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-2"
+    }
+  },
+  "image#icon-brand-lp-3": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/c-brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-3"
+    }
+  },
+  "image#icon-brand-lp-4": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/d- brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-4"
+    }
+  },
+  "image#icon-brand-lp-5": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/e- brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-5"
+    }
+  },
+  "image#icon-brand-lp-6": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/f- brand.png",
+      "maxWidth": 84,
+      "maxHeight": 84,
+      "blockClass": "brand-image-6"
+    }
+  },
+  "rich-text#brand-text-1": {
+    "props": {
+      "blockClass": "brand-text-1",
+      "text": "Líder mundial em aminoácidos de origem não animal",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#brand-text-2": {
+    "props": {
+      "blockClass": "brand-text-2",
+      "text": "Criado em colaboração de atletas olímpicos japoneses e brasileiro",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#brand-text-3": {
+    "props": {
+      "blockClass": "brand-text-3",
+      "text": "Produtos práticos para o consumo",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#brand-text-4": {
+    "props": {
+      "blockClass": "brand-text-4",
+      "text": "Aminoácidos de alta pureza",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#brand-text-5": {
+    "props": {
+      "blockClass": "brand-text-5",
+      "text": "Rapida absorção (Aprox. 25 min)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#brand-text-6": {
+    "props": {
+      "blockClass": "brand-text-6",
+      "text": "Formula Clean e ideal",
+      "textAlignment": "CENTER"
+    }
+  }
+}

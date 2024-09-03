@@ -1,12 +1,24 @@
 .flex {
   &Row {
 
-    &--amino-vital-shelf-container{
+    &--section-title {
+      background-color: #F6C06E;
+      height: 72px;
+      width: 100%;
+    }
+
+    &--about-brand {
+      background: rgb(15, 19, 57);
+      background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
+    }
+
+    &--amino-vital-shelf-container {
       padding-top: 44px;
       width: 100%;
       padding-bottom: 40px;
     }
-    &--mobile-column-for-who{
+
+    &--mobile-column-for-who {
       justify-content: center;
       display: flex;
       width: 100%;
@@ -14,7 +26,7 @@
       padding-right: 54px;
     }
 
-    &--mobile-second-column-for-who{
+    &--mobile-second-column-for-who {
       justify-content: center;
       display: flex;
       width: 100%;
@@ -37,7 +49,7 @@
       max-width: 1920px;
       height: 73px;
 
-      @media (max-width: 767px){
+      @media (max-width: 767px) {
         height: 26px;
         max-width: 767px;
       }
@@ -63,16 +75,127 @@
 
     &Content {
 
-      &--amino-vital-shelf-container .stretchChildrenWidth{
+      &--line-about-brand-1{
+        align-items: center;
+      }
+
+      &--line-about-brand-2{
+        align-items: center;
+      }
+
+      &--line-about-brand-3{
+        align-items: center;
+      }
+
+      &--line-about-brand-4{
+        align-items: center;
+      }
+
+      &--line-about-brand-5{
+        align-items: center;
+      }
+
+      &--line-about-brand-6{
+        align-items: center;
+      }
+
+      &--line-about-brand{
+        align-items: center;
+      }
+
+      &--line-about-brand-1 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 515px;
+          max-width: 584px
+        }
+      }
+
+      &--line-about-brand-2 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 703px;
+        }
+      }
+
+      &--line-about-brand-3 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 703px;
+        }
+      }
+
+      &--line-about-brand-4 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 703px;
+        }
+      }
+
+      &--line-about-brand-5 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 703px;
+        }
+      }
+
+      &--line-about-brand-6 .stretchChildrenWidth {
+        &:first-child {
+          width: 84px !important;
+          height: 84px;
+        }
+
+        &:last-child{
+          padding-left:31px;
+          width: 100%!important;
+          max-width: 703px;
+        }
+      }
+
+      &--section-title {
+        max-height: 63px;
+      }
+
+      &--amino-vital-shelf-container .stretchChildrenWidth {
         width: 100% !important;
       }
 
-      &--amino-image-shelf{
+      &--amino-image-shelf {
         padding-right: 277px;
         padding-left: 78px;
 
-        @media (max-width: 767px){
-          display:none;
+        @media (max-width: 767px) {
+          display: none;
         }
       }
 
@@ -111,6 +234,13 @@
     }
 
     &Child {
+
+      &--brand-col {
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+      }
+
       &--cols-for-who {
         justify-content: flex-start;
         display: flex;
