@@ -1,5 +1,58 @@
 .imageElement {
 
+  &--image-amino-vital {
+    position: relative;
+    z-index: 10
+  }
+
+  &--brand-image-1 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
+  &--brand-image-2 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
+  &--brand-image-3 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
+  &--brand-image-4 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
+  &--brand-image-5 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
+  &--brand-image-6 {
+
+    @media (max-width: 767px) {
+      max-width:57px!important;
+      max-height: 57px!important;
+    }
+  }
+
   &--main-banner-desktop {
     @media (max-width: 767px) {
       display: none;

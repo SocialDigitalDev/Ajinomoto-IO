@@ -1,5 +1,43 @@
 .paragraph {
 
+  &--text-1-quality{
+    font-family: $Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &--text-2-quality{
+    font-family: $Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &--text-3-quality{
+    font-family: $Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &--text-4-quality{
+    font-family: $Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &--text-aminoacid{
+    font-family: $Inter;
+    font-size: 20px;
+    font-weight: 400;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+
   &--text-title{
     font-family: $Roboto;
     color: #091056;
@@ -7,6 +45,11 @@
     font-style: italic;
     max-height: 63px;
     font-weight: $extra-bold;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      max-height: 23px;
+    }
   }
 
   &--brand-text-1{
@@ -14,7 +57,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--brand-text-2{
@@ -22,7 +71,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--brand-text-3{
@@ -30,7 +85,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--brand-text-4{
@@ -38,7 +99,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--brand-text-5{
@@ -46,7 +113,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--brand-text-6{
@@ -54,7 +127,13 @@
     font-family: $Inter;
     font-weight: 400;
     font-size: 35px;
-    text-align: left
+    text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px
+    }
   }
 
   &--amino-text-title {
@@ -112,6 +191,10 @@
 
 .container {
 
+  &--title-information-about {
+    background-color: #F8C169
+  }
+
   &--amino-text-title {
     height: 73px;
 
@@ -135,5 +218,33 @@
 
   &--item-text-lp{
     justify-content: flex-start;
+  }
+}
+
+.strong {
+
+  &--title-aminoacid {
+    font-family: $Inter;
+    color: #E0040B;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 48px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.italic {
+
+  &--title-aminoacid {
+    font-family: $Inter;
+    font-size: 24px;
+    font-weight: 300;
+
+    @media (max-width: 767px) {
+      font-size: 16px
+    }
   }
 }

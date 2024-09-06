@@ -1,3 +1,15 @@
+.slideChildrenContainer {
+
+  &--carousel-amino-brand {
+
+    @media (max-width: 767px) {
+      padding-left: 24px;
+      padding-right: 109px;
+    }
+  }
+
+}
+
 .sliderTrackContainer {
   &--carousel {
     background-color: #0F1339;
@@ -8,6 +20,12 @@
 .paginationDotsContainer {
   &--carousel {
     bottom: 33px !important
+  }
+
+  &--carousel-amino-brand {
+    @media (max-width: 767px) {
+      bottom: 0px!important
+    }
   }
 }
 

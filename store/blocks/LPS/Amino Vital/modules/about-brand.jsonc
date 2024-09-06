@@ -1,17 +1,21 @@
 {
   "responsive-layout.desktop#about-brand": {
     "children": [
-      "flex-layout.row#about-brand"
+      "flex-layout.row#about-brand",
+      "flex-layout.row#golden-bar"
     ]
   },
   "responsive-layout.tablet#about-brand": {
     "children": [
-      "flex-layout.row#about-brand"
+      "flex-layout.row#about-brand",
+      "flex-layout.row#golden-bar"
     ]
   },
   "responsive-layout.mobile#about-brand": {
     "children": [
-      "flex-layout.row#about-brand"
+      "flex-layout.row#section-title",
+      "flex-layout.row#about-brand-mobile",
+      "flex-layout.row#golden-bar"
     ]
   },
   "flex-layout.row#about-brand": {
@@ -22,6 +26,79 @@
       "flex-layout.col#image-about-brand",
       "flex-layout.col#brand-col"
     ]
+  },
+  "flex-layout.row#about-brand-mobile": {
+    "props": {
+      "blockClass": "about-brand-mobile"
+    },
+    "children": [
+      "slider-layout#amino-brand",
+      "flex-layout.row#image-brand-slider"
+    ]
+  },
+  "slider-layout#amino-brand": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "carousel-amino-brand"
+    },
+    "children": [
+      "flex-layout.row#testing-brand-1",
+      "flex-layout.row#testing-brand-2"
+    ]
+  },
+  "flex-layout.row#testing-brand-1": {
+    "children": [
+      "flex-layout.col#lines-brand-mobile-1"
+    ]
+  },
+  "flex-layout.row#testing-brand-2": {
+    "children": [
+      "flex-layout.col#lines-brand-mobile-2"
+    ]
+  },
+  "flex-layout.col#lines-brand-mobile-1": {
+    "children": [
+      "flex-layout.row#line-about-brand-1",
+      "flex-layout.row#line-about-brand-2",
+      "flex-layout.row#line-about-brand-3"
+    ],
+    "props": {
+      "blockClass": [
+        "lines-brand-mobile"
+      ]
+    }
+  },
+  "flex-layout.row#image-brand-slider": {
+    "children": [
+      "image#image-carousel-brand"
+    ],
+    "props": {
+      "blockClass": "image-slider-amino-vital"
+    }
+  },
+  "image#image-carousel-brand": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/avancin-mobile.png",
+      "blockClass": "image-slider-amino-brand"
+    }
+  },
+  "flex-layout.col#lines-brand-mobile-2": {
+    "children": [
+      "flex-layout.row#line-about-brand-4",
+      "flex-layout.row#line-about-brand-5",
+      "flex-layout.row#line-about-brand-6"
+    ],
+    "props": {
+      "blockClass": [
+        "lines-brand-mobile-second"
+      ]
+    }
   },
   "flex-layout.col#image-about-brand": {
     "props": {
@@ -37,7 +114,7 @@
       "blockClass": "image-left-amino"
     }
   },
-    "flex-layout.col#brand-col": {
+  "flex-layout.col#brand-col": {
     "props": {
       "blockClass": "brand-col"
     },

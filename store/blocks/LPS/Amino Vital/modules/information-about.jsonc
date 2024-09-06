@@ -1,0 +1,53 @@
+{
+    "flex-layout.row#section-information": {
+        "props": {
+            "blockClass": "section-information"
+        },
+        "children": [
+            "flex-layout.col#text-information-col",
+            "image#products-image-amino-vital"
+        ]
+    },
+    "flex-layout.col#text-information-col": {
+        "props": {
+            "blockClass": "text-information-col"
+        },
+        "children": [
+            "flex-layout.row#golden-title",
+            "rich-text#title-information-about",
+            "rich-text#title-text-information-about-1",
+            "rich-text#title-text-information-about-2"
+        ]
+    },
+    "flex-layout.row#golden-title": {
+        "props": {
+            "blockClass": "golden-title"
+        }
+    },
+    "rich-text#title-information-about": {
+        "props": {
+            "blockClass": "title-information-about",
+            "text": "O que são os aminoácidos essenciais?"
+        }
+    },
+    "rich-text#title-text-information-about-1": {
+        "props": {
+            "blockClass": "text-information-about",
+            "text": "Os 9 aminoácidos essenciais são as unidades básicas que formam as proteínas e que o corpo humano não é capaz de produzir, por isso devem ser ingeridos por meio da alimentação ou suplementação."
+        }
+    },
+    "rich-text#title-text-information-about-2": {
+        "props": {
+            "blockClass": "text-information-about",
+            "text": "Estimulam a síntese muscular \n Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n Interação positiva com exercícios de força e aeróbicos \n Contribui com o bom estado nutricional do atleta"
+        }
+    },
+    "image#products-image-amino-vital": {
+        "props": {
+            "blockClass": "image-amino-vital",
+            "maxHeight": "250",
+            "maxWidth": "622",
+            "src": "assets/img/lp-amino-vital/amino-vital-products.png"
+        }
+    }
+}
