@@ -1,11 +1,40 @@
 {
+  "responsive-layout.desktop#benefits-desktop-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-section"
+    ]
+  },
+  "responsive-layout.tablet#benefits-tablet-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-section"
+    ]
+  },
+  "responsive-layout.phone#benefits-mobile-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-first-section-mobile"
+    ]
+  },
   "flex-layout.row#benefits-section": {
     "props": {
       "blockClass": "benefits-section"
     },
     "children": [
       "flex-layout.col#benefits-first-section",
-      "image#second-side-image-benefits"
+      "flex-layout.row#right-image"
+    ]
+  },
+  "flex-layout.row#benefits-first-section-mobile": {
+    "props": {
+      "blockClass": "benefits-first-section-mobile"
+    },
+    "children": [
+      "rich-text#title-benefits",
+      "flex-layout.row#icons-benefits",
+      "rich-text#text-benefits",
+      "flex-layout.row#row-icons-benefits"
     ]
   },
   "flex-layout.col#benefits-first-section": {
@@ -170,13 +199,13 @@
   "image#second-icon-benefit-2": {
     "props": {
       "blockClass": "second-icon-benefit-2",
-      "src": "assets/img/lp-amino-vital/zero-gordura 1.png"
+      "src": "assets/img/lp-amino-vital/zero-gordura.png"
     }
   },
   "image#second-icon-benefit-3": {
     "props": {
       "blockClass": "second-icon-benefit-3",
-      "src": "assets/img/lp-amino-vital/zero-lactose 1.png"
+      "src": "assets/img/lp-amino-vital/zero-lactose.png"
     }
   },
   "image#second-icon-benefit-4": {
@@ -220,6 +249,12 @@
       "blockClass": "second-text-icon-benefits-5",
       "text": "BAIXA CALORIA"
     }
+  },
+  "flex-layout.row#right-image": {
+    "props": {
+      "blockClass": "right-image"
+    },
+    "children": ["image#second-side-image-benefits"]
   },
   "image#second-side-image-benefits": {
     "props": {

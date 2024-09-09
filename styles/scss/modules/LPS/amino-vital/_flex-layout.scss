@@ -1,7 +1,47 @@
 .flex {
   &Row {
 
-    &--section-information{
+    &--benefits-first-section-mobile {
+      padding-top: 10px;
+    }
+
+    &--benefits-first-section-mobile {
+      background: rgb(15, 19, 57);
+      background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
+    }
+
+    &--row-icons-benefits{
+    top: 646px;
+    position: absolute;
+    left: 294px;
+
+    @media (max-width: 767px) {
+      position: initial;
+      padding-left: 20px;
+      margin-bottom: 40px;
+    }
+    }
+
+    &--icons-benefits {
+      position: absolute;
+      left: 294px;
+      top: 185px;
+
+      @media (max-width: 767px) {
+        position: initial;
+        padding-top: 30px;
+        padding-left: 42px;
+        padding-right: 39px;
+      }
+    }
+
+    &--benefits-section {
+      background: rgb(15, 19, 57);
+      background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
+      height: 835px
+    }
+
+    &--section-information {
       height: 630px;
       position: relative;
 
@@ -104,6 +144,37 @@
     }
 
     &Content {
+
+      &--icons-benefits {
+
+        @media (max-width: 767px) {
+          display: flex;
+        }
+      }
+
+      &--benefits-first-section-mobile .stretchChildrenWidth{
+        &:first-child{
+          width: 100%;
+          justify-content: flex-start;
+        }
+      }
+
+      &--row-icons-benefits .stretchChildrenWidth{
+        width: 100%!important;
+        justify-content: center;
+        display: flex;
+        gap: 40px;
+
+        @media (max-width: 767px){
+          display: flex
+        }
+      }
+
+      &--right-image{
+        position: absolute;
+        right: 0;
+        max-width: 723px;
+      }
 
       &--section-information {
         flex-flow: column;
@@ -412,6 +483,11 @@
   }
 
   &Col {
+
+    &--benefits-first-section{
+      position: relative;
+    }
+
     &--text-section {
       padding-left: 277px;
       padding-right: 288px;
@@ -422,6 +498,95 @@
     }
 
     &Child {
+
+      &--col-second-icon-benefit-1{
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          height: 100%;
+          max-width: 41px;
+          max-height: 41px;
+        }
+      }
+
+      &--col-second-icon-benefit-2{
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          height: 100%;
+          max-width: 41px;
+          max-height: 41px;
+        }
+      }
+
+      &--col-second-icon-benefit-3{
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          height: 100%;
+          max-width: 41px;
+          max-height: 41px;
+        }
+      }
+
+      &--col-second-icon-benefit-4{
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          height: 100%;
+          max-width: 41px;
+          max-height: 41px;
+        }
+      }
+
+      &--col-second-icon-benefit-5{
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          height: 100%;
+          max-width: 41px;
+          max-height: 41px;
+        }
+      }
+
+      &--col-icon-benefit-1{
+        height: 100%;
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          align-items: center
+        }
+      }
+
+      &--col-icon-benefit-2{
+        height: 100%;
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          align-items: center
+        }
+      }
+
+      &--col-icon-benefit-3{
+        height: 100%;
+        justify-content: center;
+        display: flex;
+
+        @media (max-width: 767px) {
+          align-items: center
+        }
+      }
+
+      &--benefits-first-section{
+        padding-top: 57px;
+      }
 
       &--text-information-col{
 

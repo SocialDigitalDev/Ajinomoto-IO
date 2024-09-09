@@ -1,5 +1,20 @@
 .imageElement {
 
+  &--icon-benefit-1 {
+    max-width: 43px;
+    max-height: 43px;
+  }
+
+  &--icon-benefit-2 {
+    max-width: 43px;
+    max-height: 43px;
+  }
+
+  &--icon-benefit-3 {
+    max-width: 43px;
+    max-height: 43px;
+  }
+
   &--image-amino-vital {
     position: relative;
     z-index: 10;
@@ -84,6 +99,12 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--section-information){
+  .container{
+    padding: 0;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--benefits-first-section-mobile){
   .container{
     padding: 0;
   }
