@@ -11,6 +11,7 @@
       "responsive-layout.tablet#for-who-section",
       "responsive-layout.phone#for-who-section",
       "flex-layout.row#shelf-section",
+      "flex-layout.row#benefits-section",
       "responsive-layout.desktop#about-brand",
       "responsive-layout.tablet#about-brand",
       "responsive-layout.mobile#about-brand",

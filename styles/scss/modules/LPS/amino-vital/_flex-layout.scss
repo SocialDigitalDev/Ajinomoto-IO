@@ -2,7 +2,12 @@
   &Row {
 
     &--section-information{
-      height: 630px
+      height: 630px;
+      position: relative;
+
+      @media (max-width: 767px) {
+        height: 750px
+      }
     }
 
     &--selo-section {
@@ -107,7 +112,11 @@
         background: rgb(14,62,156);
         background: radial-gradient(circle, rgba(14,62,156,1) 0%, rgba(7,29,73,1) 100%);
         display: flex;
-        flex-flow: row
+        flex-flow: row;
+
+        @media (max-width: 767px) {
+          flex-flow: column;
+        }
       }
 
       &--section-information {
@@ -122,6 +131,13 @@
               position: absolute;
               border-radius: 50%;
               bottom: -120%;
+
+              @media (max-width: 767px) {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+                bottom: -33%
+              }
             }
           }
         }
@@ -406,6 +422,13 @@
     }
 
     &Child {
+
+      &--text-information-col{
+
+        @media (max-width: 767px){
+          padding-top: 24px;
+        }
+      }
 
       &--col-images-quality-1 {
         max-width: 125px;

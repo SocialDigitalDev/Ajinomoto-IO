@@ -27,19 +27,19 @@
     "rich-text#title-information-about": {
         "props": {
             "blockClass": "title-information-about",
-            "text": "O que são os aminoácidos essenciais?"
+            "text": "O QUE SÃO OS AMINOÁCIDOS ESSENCIAIS?"
         }
     },
     "rich-text#title-text-information-about-1": {
         "props": {
-            "blockClass": "text-information-about",
+            "blockClass": "text-information-about-1",
             "text": "Os 9 aminoácidos essenciais são as unidades básicas que formam as proteínas e que o corpo humano não é capaz de produzir, por isso devem ser ingeridos por meio da alimentação ou suplementação."
         }
     },
     "rich-text#title-text-information-about-2": {
         "props": {
-            "blockClass": "text-information-about",
-            "text": "Estimulam a síntese muscular \n Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n Interação positiva com exercícios de força e aeróbicos \n Contribui com o bom estado nutricional do atleta"
+            "blockClass": "text-information-about-2",
+            "text": " \bullet Estimulam a síntese muscular \n Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n Interação positiva com exercícios de força e aeróbicos \n Contribui com o bom estado nutricional do atleta"
         }
     },
     "image#products-image-amino-vital": {

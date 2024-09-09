@@ -2,7 +2,11 @@
 
   &--image-amino-vital {
     position: relative;
-    z-index: 10
+    z-index: 10;
+
+    @media (max-width: 767px) {
+      max-width: 239px;
+    }
   }
 
   &--brand-image-1 {
@@ -76,5 +80,11 @@
   &--image-left-amino{
     max-width: 888px;
     width: 100%;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--section-information){
+  .container{
+    padding: 0;
   }
 }
