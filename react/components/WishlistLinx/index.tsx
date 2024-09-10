@@ -55,8 +55,8 @@ const WishlistLinx = () => {
         ssr: false
     })
 
-    console.log(data, "data - ViewLists");
-    data && localStore.setItem("wishlist_wishlisted", JSON.stringify(data.viewLists[0].data));
+    data && console.log(data, "data - ViewLists");
+    data && localStore.setItem("wishlist_wishlisted", JSON.stringify(data?.viewLists[0]?.data));
 
     
     console.log("WishlistLinx");
@@ -87,10 +87,6 @@ const WishlistLinx = () => {
     
     
     useEffect(()=> {
-        // const isAuthenticated = window?.localStorage.getItem("wishlist_isAuthenticated");
-        // const shopperId = window?.localStorage.getItem("wishlist_shopperId");
-        if (window?.location.pathname !== "/account") {
-        }
 
         if (isAuthenticated) {
             if (!window.addWishlist) {
