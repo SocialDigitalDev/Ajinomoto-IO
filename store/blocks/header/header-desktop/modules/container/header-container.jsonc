@@ -75,46 +75,18 @@
 
 	"flex-layout.row#header--search-fixed": {
 		"title": "BUSCA",
-		"children": ["modal-trigger#search-fixed-desktop"],
+		"children": ["search-bar"],
 		"props": {
 			"blockClass": "header--search-fixed"
-		}
-	},
-
-	"modal-trigger#search-fixed-desktop": {
-		"children": ["image#search-fixed", "modal-layout#search-bar"],
-		"props": {
-			"blockClass": ["search-fixed-desktop"]
-		}
-	},
-
-	"image#search-fixed": {
-		"title": "IMAGEM - BUSCA",
-		"props": {
-			"src": "assets/svg/ico_search-desktop-fixed.svg"
 		}
 	},
 
 	// SEARCH --- STICKY
 	"flex-layout.row#header--search-sticky": {
 		"title": "BUSCA ",
-		"children": ["modal-trigger#search-sticky-desktop"],
+		"children": ["search-bar"],
 		"props": {
 			"blockClass": "header--search-sticky"
-		}
-	},
-
-	"modal-trigger#search-sticky-desktop": {
-		"children": ["image#search-sticky", "modal-layout#search-bar"],
-		"props": {
-			"blockClass": ["search-sticky-desktop"]
-		}
-	},
-
-	"image#search-sticky": {
-		"title": "IMAGEM - BUSCA",
-		"props": {
-			"src": "assets/svg/ico_search-desktop-sticky.svg"
 		}
 	}
 }

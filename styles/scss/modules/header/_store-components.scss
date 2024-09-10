@@ -1,6 +1,10 @@
 .searchBarContainer {
 	padding: 0;
 
+    @include media(">=tablet"){
+        width: 791px !important;
+    }
+
     .searchBarInnerContainer--opened {
         height: auto;
         min-height: 36px;

@@ -24,7 +24,8 @@
 
 	"flex-layout.col#header-container-fixed-mobile": {
 		"children": [
-			"flex-layout.row#header--container-top-mobile"
+			"flex-layout.row#header--container-top-mobile",
+			"flex-layout.row#header--container-search-bar-mobile"
 		],
 		"props": {
 			"blockClass": "header--container-fixed"
@@ -39,6 +40,15 @@
 		],
 		"props": {
 			"blockClass": "header--container-top-mobile",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.row#header--container-search-bar-mobile": {
+		"children": [
+			"flex-layout.row#header--search-fixed"
+		],
+		"props": {
+			"blockClass": "header--container-search-bar-mobile",
 			"preserveLayoutOnMobile": true
 		}
 	}
