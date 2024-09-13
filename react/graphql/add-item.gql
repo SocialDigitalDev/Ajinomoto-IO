@@ -1,0 +1,6 @@
+mutation AddToList(
+  $listItem: ListItemInputType!
+  $shopperId: String!
+) {
+  addToList(listItem: $listItem, shopperId: $shopperId, name: "Wishlist")
+}
