@@ -43,7 +43,7 @@ const WishlistLinx = () => {
         isAuthenticated = isAuthenticated ? isAuthenticated :
         sessionResponse?.namespaces?.profile?.isAuthenticated?.value;
     
-        shopperId = shopperId ? shopperId :  sessionResponse?.namespaces?.profile?.id?.value ?? null;
+        shopperId = sessionResponse?.namespaces?.profile?.email?.value ? sessionResponse?.namespaces?.profile?.email?.value : shopperId;
 
     }
 
@@ -55,11 +55,7 @@ const WishlistLinx = () => {
         ssr: false
     })
 
-    data && console.log(data, "data - ViewLists");
     data && localStore.setItem("wishlist_wishlisted", JSON.stringify(data?.viewLists[0]?.data));
-
-    
-    console.log("WishlistLinx");
 
     const [ wishAddItem ] = useMutation(AddToList);
 
@@ -97,7 +93,7 @@ const WishlistLinx = () => {
     
             if (!window.setWishlist) {
                 window.setWishlist = function() {
-                    const list: any = window?.sessionStorage.getItem("wishlist_wishlisted")
+                    const list: any = localStore.getItem("wishlist_wishlisted")
                     return JSON.parse(list);
                 };
             };
