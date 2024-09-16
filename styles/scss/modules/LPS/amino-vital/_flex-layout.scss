@@ -145,6 +145,13 @@
 
     &Content {
 
+      &--row-icons-benefits {
+        
+        @media (max-width: 767px){
+          display: flex
+        }
+      }
+
       &--icons-benefits {
 
         @media (max-width: 767px) {
@@ -164,10 +171,6 @@
         justify-content: center;
         display: flex;
         gap: 40px;
-
-        @media (max-width: 767px){
-          display: flex
-        }
       }
 
       &--right-image{

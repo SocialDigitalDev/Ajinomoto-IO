@@ -80,6 +80,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    padding-bottom: 15px;
 
     @media (max-width: 767px) {
       font-size: 14px;
@@ -114,6 +115,8 @@
     font-family: $Roboto;
     color: #0C0264;
     font-weight: $extra-bold;
+    font-size: 54px;
+    margin: 0;
 
     @media(max-width: 767px) {
       font-size: 20px;

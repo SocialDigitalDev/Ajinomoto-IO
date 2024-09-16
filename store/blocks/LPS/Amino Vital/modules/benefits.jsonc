@@ -51,7 +51,7 @@
   "rich-text#title-benefits": {
     "props": {
       "blockClass": "title-benefits",
-      "text": "Benefícios AminoVITAL®"
+      "text": "BENEFÍCIOS AMINOVITAL®"
     }
   },
   "flex-layout.row#icons-benefits": {
