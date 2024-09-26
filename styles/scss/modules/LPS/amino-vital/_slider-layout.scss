@@ -33,7 +33,7 @@
   &--shelf-amino-vital {
     padding-left: 287px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 969px) {
       padding-left: 0px
     }
   }
@@ -61,6 +61,16 @@
       width: 100%;
       left: 0px!important;
       bottom: -20px!important
+    }
+  }
+}
+
+.slide{
+
+  &--carousel-amino-brand--visible{
+
+    @media (min-width: 767px) and (max-width: 969px) {
+      width: 0%!important
     }
   }
 }
