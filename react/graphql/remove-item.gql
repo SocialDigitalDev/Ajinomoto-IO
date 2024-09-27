@@ -1,0 +1,6 @@
+mutation RemoveFromList(
+  $id: ID!
+  $shopperId: String!
+) {
+  removeFromList(id: $id, shopperId: $shopperId, name: "Wishlist")
+}

@@ -1,0 +1,12 @@
+query ViewLists($shopperId: String!) {
+  viewLists(shopperId: $shopperId) @context(provider: "vtex.wish-list") {
+    name,
+    public
+		data {
+    	id,
+      sku,
+      title,
+      productId
+  	}
+  }
+}
