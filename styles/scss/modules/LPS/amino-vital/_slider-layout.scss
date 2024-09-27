@@ -2,7 +2,7 @@
 
   &--carousel-amino-brand {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       padding-left: 24px;
       padding-right: 109px;
     }
@@ -23,7 +23,7 @@
   }
 
   &--carousel-amino-brand {
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       bottom: 0px!important
     }
   }
@@ -35,6 +35,13 @@
 
     @media (max-width: 969px) {
       padding-left: 0px
+    }
+  }
+
+  &--carousel-amino-brand{
+    @media (max-width: 1025px){
+      display: flex;
+      flex-flow: column;
     }
   }
 }
@@ -55,12 +62,39 @@
   &--shelf-amino-vital {
     left: 250px !important;
 
-    @media(max-width: 767px) {
+    @media(max-width: 1025px) {
       display: flex;
       justify-content: center;
       width: 100%;
       left: 0px!important;
       bottom: -20px!important
+    }
+  }
+  
+  &--carousel-amino-brand{
+    @media (max-width: 1025px){
+      margin: 10px auto;
+      position: initial;
+    }
+  }
+}
+.paginationDot {
+  &--carousel,
+  &--carousel-amino-brand{
+    border-color: #F6C06E !important;
+    background: transparent !important;
+    &--isActive{
+      border-color: #F6C06E !important;
+      background: #F6C06E !important;
+    }
+  }
+
+  &--shelf-amino-vital {
+    border-color: #0C0265 !important;
+    background: transparent !important;
+    &--isActive{
+      border-color: #0C0265 !important;
+      background: #0C0265 !important;
     }
   }
 }
@@ -69,7 +103,7 @@
 
   &--carousel-amino-brand--visible{
 
-    @media (min-width: 767px) and (max-width: 969px) {
+    @media (min-width: 768px) and (max-width: 1025px) {
       width: 0%!important
     }
   }

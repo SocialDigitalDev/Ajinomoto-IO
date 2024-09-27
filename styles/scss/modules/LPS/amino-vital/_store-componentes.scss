@@ -19,14 +19,14 @@
     position: relative;
     z-index: 10;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width: 239px;
     }
   }
 
   &--brand-image-1 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
@@ -34,7 +34,7 @@
 
   &--brand-image-2 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
@@ -42,7 +42,7 @@
 
   &--brand-image-3 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
@@ -50,7 +50,7 @@
 
   &--brand-image-4 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
@@ -58,7 +58,7 @@
 
   &--brand-image-5 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
@@ -66,14 +66,14 @@
 
   &--brand-image-6 {
 
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       max-width:57px!important;
       max-height: 57px!important;
     }
   }
 
   &--main-banner-desktop {
-    @media (max-width: 767px) {
+    @media (max-width: 1025px) {
       display: none;
       width: 0px;
 
@@ -95,6 +95,10 @@
   &--image-check{
     width: 65px;
     height: 65px;
+    @media (max-width: 1025px){
+      width: 43px;
+      height: 43px;
+    }
   }
 
   &--image-left-amino{

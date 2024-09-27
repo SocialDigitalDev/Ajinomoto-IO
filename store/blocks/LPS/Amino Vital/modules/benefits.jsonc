@@ -112,7 +112,7 @@
   "rich-text#title-icons-benefits-1": {
     "props": {
       "blockClass": "title-icons-benefits-1",
-      "text": "Retarda a fadiga"
+      "text": "Retarda a \n fadiga"
     }
   },
   "rich-text#title-icons-benefits-2": {

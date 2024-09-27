@@ -45,6 +45,7 @@
       },
       "infinite": true,
       "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "never",
       "blockClass": "carousel-amino-brand"
     },
     "children": [
@@ -224,7 +225,7 @@
   },
   "image#icon-brand-lp-4": {
     "props": {
-      "src": "assets/img/lp-amino-vital/d- brand.png",
+      "src": "assets/img/lp-amino-vital/d-brand-v2.png",
       "maxWidth": 84,
       "maxHeight": 84,
       "blockClass": "brand-image-4"
@@ -232,7 +233,7 @@
   },
   "image#icon-brand-lp-5": {
     "props": {
-      "src": "assets/img/lp-amino-vital/e- brand.png",
+      "src": "assets/img/lp-amino-vital/e-brand-v2.png",
       "maxWidth": 84,
       "maxHeight": 84,
       "blockClass": "brand-image-5"

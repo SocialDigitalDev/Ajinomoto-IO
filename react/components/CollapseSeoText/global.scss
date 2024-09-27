@@ -28,9 +28,15 @@
       }
 
       .CollapseSeoText {
-        &-main.hide-text {
-          height: 75px;
-          overflow: hidden;
+        &-main {
+          &.hide-text {
+            height: 75px;
+            overflow: hidden;
+          }
+          &.false{
+            height: auto;
+            margin-bottom: 45px;
+          }
         }
 
         &-ver-mais {

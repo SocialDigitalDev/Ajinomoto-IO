@@ -6,7 +6,7 @@
   },
   "responsive-layout.tablet#seo-text-section": {
     "children": [
-      "flex-layout.row#wrapper-text-know-amino"
+      "custom-collapse-seo-block"
     ]
   },
   "responsive-layout.phone#seo-text-section": {
