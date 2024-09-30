@@ -9,7 +9,7 @@
   "responsive-layout.tablet#for-who-section": {
     "children": [
       "flex-layout.row#top-message",
-      "flex-layout.row#wrapper-who-amino",
+      "slider-layout#text-test",
       "flex-layout.row#golden-bar"
     ]
   },

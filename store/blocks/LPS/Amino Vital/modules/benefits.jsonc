@@ -8,7 +8,7 @@
   "responsive-layout.tablet#benefits-tablet-section": {
     "children": [
       "flex-layout.row#golden-bar",
-      "flex-layout.row#benefits-section"
+      "flex-layout.row#benefits-first-section-mobile"
     ]
   },
   "responsive-layout.phone#benefits-mobile-section": {

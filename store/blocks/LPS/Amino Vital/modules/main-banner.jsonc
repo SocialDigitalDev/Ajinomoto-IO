@@ -23,7 +23,6 @@
   "image#background-mainbanner-mobile": {
     "props": {
       "src": "assets/img/lp-amino-vital/main-banner-mobile.jpg",
-      "maxHeight": 630,
       "blockClass": "main-banner-mobile"
     }
   }

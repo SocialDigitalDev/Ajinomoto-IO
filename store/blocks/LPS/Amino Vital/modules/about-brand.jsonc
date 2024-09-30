@@ -7,11 +7,12 @@
   },
   "responsive-layout.tablet#about-brand": {
     "children": [
-      "flex-layout.row#about-brand",
+      "flex-layout.row#section-title",
+      "flex-layout.row#about-brand-mobile",
       "flex-layout.row#golden-bar"
     ]
   },
-  "responsive-layout.mobile#about-brand": {
+  "responsive-layout.phone#about-brand": {
     "children": [
       "flex-layout.row#section-title",
       "flex-layout.row#about-brand-mobile",

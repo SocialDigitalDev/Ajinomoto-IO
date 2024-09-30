@@ -16,7 +16,7 @@
       "responsive-layout.phone#benefits-mobile-section",
       "responsive-layout.desktop#about-brand",
       "responsive-layout.tablet#about-brand",
-      "responsive-layout.mobile#about-brand",
+      "responsive-layout.phone#about-brand",
       "flex-layout.row#pure-aminoacid-section",
       "flex-layout.row#section-information"
     ]

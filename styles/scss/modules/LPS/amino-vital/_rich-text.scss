@@ -352,9 +352,6 @@
 .container {
 
   &--text-benefits {
-    position: absolute;
-    top: 352px;
-    left: 294px;
     max-width: 893px;
     width: 100%;
 
@@ -380,26 +377,22 @@
   }
 
   &--text-information-about-1 {
-    position: absolute;
-    top: 158px;
-    max-width: 733px;
-    left: 293px;
 
     @media (max-width: 1025px) {
       position: initial;
+      max-width: 100%;
       padding-left: 15px;
       padding-right: 15px
     }
   }
 
   &--text-information-about-2 {
-    position: absolute;
-    top: 254px;
-    max-width: 622px;
-    left: 293px;
-
+    
     @media (max-width: 1025px) {
-      position: initial
+      position: initial;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -432,7 +425,7 @@
     height: 238px;
     margin-top: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1026px) {
       height: auto;
     }
   }

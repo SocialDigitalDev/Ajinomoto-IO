@@ -2,16 +2,8 @@
   &Row {
 
     &--selo-aminoacid {
-      @media (max-width: 1025px) {
-        display: flex;
-        align-items: center;
-      }
-    }
-
-    &--image-slider-amino-vital {
-      @media (min-width: 767px) and (max-width: 1025px) {
-        display: none
-      }
+      display: flex;
+      align-items: center;
     }
 
     &--benefits-first-section-mobile {
@@ -22,9 +14,6 @@
     }
 
     &--row-icons-benefits {
-      top: 646px;
-      position: absolute;
-      left: 294px;
 
       @media (min-width: 1600px) and (max-width: 1800px) {
         padding-top: 50px;
@@ -32,15 +21,12 @@
 
       @media (max-width: 1025px) {
         position: initial;
-        padding-left: 20px;
+        padding: 0 20px;
         margin-bottom: 40px;
       }
     }
 
     &--icons-benefits {
-      position: absolute;
-      left: 294px;
-      top: 185px;
 
       @media (max-width: 1025px) {
         position: initial;
@@ -66,6 +52,12 @@
 
       @media (max-width: 1025px) {
         height: 750px
+      }
+
+      .stretchChildrenWidth{
+        @media (max-width: 1025px) {
+          width: 100% !important;
+        }
       }
     }
 
@@ -167,20 +159,6 @@
 
     &Content {
 
-      &--about-brand-mobile .stretchChildrenWidth {
-        &:first-child {
-          @media(min-width: 767px) and (max-width: 1025px) {
-            width: 100% !important
-          }
-        }
-
-        &:last-child {
-          @media(min-width: 767px) and (max-width: 1025px) {
-            width: 0px !important
-          }
-        }
-      }
-
       &--row-icons-benefits {
 
         @media (max-width: 1025px) {
@@ -195,11 +173,25 @@
         }
       }
 
-      &--benefits-first-section-mobile .stretchChildrenWidth {
-        &:first-child {
-          width: 100%;
-          justify-content: flex-start;
-          align-items: center;
+      &--benefits-first-section-mobile {
+        display: flex;
+
+        @media (max-width: 1025px) {
+          flex-flow: column;
+        }
+
+        .stretchChildrenWidth {
+          @media (max-width: 1025px) {
+            width: 100% !important;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &:first-child {
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+          }
         }
       }
 
@@ -289,28 +281,19 @@
           justify-content: center;
           padding-top: 38px
         }
-
-        @media (min-width: 768px) and (max-width: 1025px) {
-          justify-content: center;
-          display: flex
-        }
       }
 
       &--section-selos {
-        padding-left: 295px;
+        max-width: 1324px;
+        margin: auto; 
+        display: flex;
+
+        @media (max-width: 1366px){
+          padding: 0 32px;
+        }
 
         @media (max-width: 1025px) {
-          padding-left: 32px;
-          padding-right: 32px;
-        }
-
-        @media (min-width: 768px) and (max-width: 1025px) {
           flex-flow: column;
-          padding-left: 0px
-        }
-
-        .stretchChildrenWidth {
-          width: 100% !important
         }
       }
 
@@ -319,11 +302,20 @@
         &:first-child {
           max-width: 125px;
 
+          @media (max-width: 1025px){
+            max-width: 100%;
+            padding: 0 30px;
+          }
         }
 
         &:last-child {
           max-width: 211px;
-          padding-left: 60px
+          padding-left: 60px;
+
+          @media (max-width: 1025px){
+            max-width: 100%;
+            padding: 0 30px;
+          }
         }
       }
 
@@ -499,15 +491,11 @@
         }
       }
 
-      &--amino-vital-shelf-container .stretchChildrenWidth {
-        width: 100% !important;
-      }
-
       &--amino-image-shelf {
         padding-right: 277px;
         padding-left: 78px;
 
-        @media (min-width: 768px) and (max-width: 1800px) {
+        @media (min-width: 1026px) and (max-width: 1800px) {
           padding-right: 0px;
           padding-left: 0px;
         }
@@ -523,7 +511,6 @@
 
         @media (max-width: 1025px) {
           display: flex;
-          max-width: 266px;
         }
 
         .stretchChildrenWidth {
@@ -572,66 +559,26 @@
 
     &Child {
 
-      &--image-about-brand {
+      &--col-second-icon-benefit {
 
-        @media(min-width: 768px) and (max-width: 1065) {
-          align-items: flex-end;
-          display: flex
-        }
-      }
+        &-1,
+        &-2,
+        &-3,
+        &-4,
+        &-5 {
+          justify-content: center;
+          display: flex;
 
-      &--col-second-icon-benefit-1 {
-        justify-content: center;
-        display: flex;
+          &:first-child{
 
-        @media (max-width: 1025px) {
-          height: 100%;
-          max-width: 41px;
-          max-height: 41px;
-        }
-      }
-
-      &--col-second-icon-benefit-2 {
-        justify-content: center;
-        display: flex;
-
-        @media (max-width: 1025px) {
-          height: 100%;
-          max-width: 41px;
-          max-height: 41px;
-        }
-      }
-
-      &--col-second-icon-benefit-3 {
-        justify-content: center;
-        display: flex;
-
-        @media (max-width: 1025px) {
-          height: 100%;
-          max-width: 41px;
-          max-height: 41px;
-        }
-      }
-
-      &--col-second-icon-benefit-4 {
-        justify-content: center;
-        display: flex;
-
-        @media (max-width: 1025px) {
-          height: 100%;
-          max-width: 41px;
-          max-height: 41px;
-        }
-      }
-
-      &--col-second-icon-benefit-5 {
-        justify-content: center;
-        display: flex;
-
-        @media (max-width: 1025px) {
-          height: 100%;
-          max-width: 41px;
-          max-height: 41px;
+            :global(.vtex-store-components-3-x-imageElement){
+              @media (max-width: 1025px){
+                max-width: 41px;
+                max-height: 41px;
+                margin: auto;
+              }
+            }
+          }
         }
       }
 
@@ -666,7 +613,16 @@
       }
 
       &--benefits-first-section {
+        padding-left: 294px;
         padding-top: 57px;
+
+        &:first-child{
+          padding-left: 0;
+        }
+
+        @media (max-width: 1025px){
+          padding-left: 0;
+        }
       }
 
       &--text-information-col {
@@ -716,6 +672,34 @@
         display: flex
       }
 
+      &--col-images{
+
+        &-quality{
+
+          &-1,
+          &-2,
+          &-3,
+          &-4{
+            @media (max-width: 1025px){
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      &--item{
+        &-quality{
+          &-1,
+          &-2,
+          &-3,
+          &-4{
+            @media (max-width: 1025px){
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
       &--brand-col {
         justify-content: flex-start;
         display: flex;
@@ -730,10 +714,6 @@
         @media (max-width: 1025px) {
           padding-left: 0px;
         }
-
-        @media (min-width: 768px) and (max-width: 1200px) {
-          padding-left: 0px
-        }
       }
     }
 
@@ -746,10 +726,6 @@
       @media (max-width: 1025px) {
         padding-right: 0px;
         padding-left: 0px;
-      }
-
-      @media (min-width: 768px) and (max-width: 1200px) {
-        padding-right: 0px
       }
     }
   }
