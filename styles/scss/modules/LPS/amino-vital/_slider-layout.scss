@@ -33,7 +33,9 @@
   &--shelf-amino-vital {
     padding-left: 287px;
 
-    @media (max-width: 969px) {
+    
+
+    @media (min-width: 400px) and (max-width: 1800px) {
       padding-left: 0px
     }
   }

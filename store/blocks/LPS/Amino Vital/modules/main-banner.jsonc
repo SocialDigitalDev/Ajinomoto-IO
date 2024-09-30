@@ -17,7 +17,6 @@
   "image#background-mainbanner": {
     "props": {
       "src": "assets/img/lp-amino-vital/main-banner-aminovital.png",
-      "maxHeight": 630,
       "blockClass": "main-banner-desktop"
     }
   },

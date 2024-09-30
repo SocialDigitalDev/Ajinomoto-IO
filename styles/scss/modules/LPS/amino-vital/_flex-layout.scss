@@ -1,8 +1,8 @@
 .flex {
   &Row {
 
-    &--selo-aminoacid{
-      @media (max-width: 1025px){
+    &--selo-aminoacid {
+      @media (max-width: 1025px) {
         display: flex;
         align-items: center;
       }
@@ -13,7 +13,7 @@
         display: none
       }
     }
-    
+
     &--benefits-first-section-mobile {
       padding-top: 10px;
       background: url('assets/img/lp-amino-vital/bg-image-mobile-v2.png');
@@ -25,6 +25,10 @@
       top: 646px;
       position: absolute;
       left: 294px;
+
+      @media (min-width: 1600px) and (max-width: 1800px) {
+        padding-top: 50px;
+      }
 
       @media (max-width: 1025px) {
         position: initial;
@@ -49,7 +53,11 @@
     &--benefits-section {
       background: rgb(15, 19, 57);
       background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
-      height: 835px
+      height: 835px;
+
+      @media (min-width: 1600px) and (max-width: 1800px) {
+        padding-right: 300px
+      }
     }
 
     &--section-information {
@@ -499,6 +507,11 @@
         padding-right: 277px;
         padding-left: 78px;
 
+        @media (min-width: 768px) and (max-width: 1800px) {
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+
         @media (max-width: 1025px) {
           display: none;
         }
@@ -540,9 +553,32 @@
       @media (max-width: 768px) {
         padding: 0 15px
       }
+
+      @media (min-width: 1066px) and (max-width:1275px) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      @media (min-width: 1276px) and (max-width:1355px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media (min-width: 1356px) and (max-width:1755px) {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
     }
 
     &Child {
+
+      &--image-about-brand {
+
+        @media(min-width: 768px) and (max-width: 1065) {
+          align-items: flex-end;
+          display: flex
+        }
+      }
 
       &--col-second-icon-benefit-1 {
         justify-content: center;
