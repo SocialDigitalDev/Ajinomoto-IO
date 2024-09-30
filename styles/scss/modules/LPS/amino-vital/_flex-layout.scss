@@ -1,6 +1,11 @@
 .flex {
   &Row {
 
+    &--right-image {
+      display: flex;
+      justify-content: flex-end
+    }
+
     &--selo-aminoacid {
       display: flex;
       align-items: center;
@@ -15,6 +20,8 @@
 
     &--row-icons-benefits {
 
+      padding-top: 57px;
+
       @media (min-width: 1600px) and (max-width: 1800px) {
         padding-top: 50px;
       }
@@ -28,6 +35,8 @@
 
     &--icons-benefits {
 
+      padding-top: 91px;
+
       @media (max-width: 1025px) {
         position: initial;
         padding-top: 30px;
@@ -39,11 +48,6 @@
     &--benefits-section {
       background: rgb(15, 19, 57);
       background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
-      height: 835px;
-
-      @media (min-width: 1600px) and (max-width: 1800px) {
-        padding-right: 300px
-      }
     }
 
     &--section-information {
@@ -159,6 +163,12 @@
 
     &Content {
 
+      &--benefits-section .stretchChildrenWidth{
+        &:first-child {
+          width: 80% !important
+        }
+      }
+
       &--row-icons-benefits {
 
         @media (max-width: 1025px) {
@@ -168,8 +178,11 @@
 
       &--icons-benefits {
 
+        max-width: 450px;
+
         @media (max-width: 1025px) {
           display: flex;
+          max-width: initial;
         }
       }
 
@@ -203,9 +216,8 @@
       }
 
       &--right-image {
-        position: absolute;
-        right: 0;
         max-width: 723px;
+        justify-content: flex-end
       }
 
       &--section-information {
@@ -614,7 +626,6 @@
 
       &--benefits-first-section {
         padding-left: 294px;
-        padding-top: 57px;
 
         &:first-child{
           padding-left: 0;

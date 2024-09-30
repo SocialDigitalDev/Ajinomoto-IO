@@ -65,7 +65,7 @@
     font-size: 28px;
     font-family: $Inter;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 35px;
 
     @media (max-width: 1025px) {
       font-size: 15px;
@@ -354,6 +354,7 @@
   &--text-benefits {
     max-width: 893px;
     width: 100%;
+    padding-top: 30px;
 
     @media (max-width: 1025px) {
       position: initial;

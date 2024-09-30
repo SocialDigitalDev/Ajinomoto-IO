@@ -1,18 +1,25 @@
 .imageElement {
 
   &--icon-benefit-1 {
-    max-width: 43px;
-    max-height: 43px;
+
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
   }
 
   &--icon-benefit-2 {
-    max-width: 43px;
-    max-height: 43px;
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
   }
 
   &--icon-benefit-3 {
-    max-width: 43px;
-    max-height: 43px;
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
   }
 
   &--image-amino-vital {
