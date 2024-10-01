@@ -21,11 +21,6 @@
     "resetcss": "bash resetcss.sh",
     "rollback": "vtex use master && vtex deprecated"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
       "eslint --fix",
@@ -47,7 +42,6 @@
     "eslint-config-vtex": "12.3.2",
     "eslint-config-vtex-react": "6.3.2",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "4.2.3",
     "lint-staged": "10.1.1",
     "postcss-scss": "^4.0.2",
     "prettier": "2.0.2",
