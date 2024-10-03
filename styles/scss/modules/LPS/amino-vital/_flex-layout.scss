@@ -163,12 +163,6 @@
 
     &Content {
 
-      &--benefits-section .stretchChildrenWidth{
-        &:first-child {
-          width: 80% !important
-        }
-      }
-
       &--row-icons-benefits {
 
         @media (max-width: 1025px) {

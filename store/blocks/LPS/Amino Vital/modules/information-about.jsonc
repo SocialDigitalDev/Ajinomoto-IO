@@ -5,7 +5,7 @@
         },
         "children": [
             "flex-layout.col#text-information-col",
-            "image#products-image-amino-vital"
+             "flex-layout.row#image-float-vital"
         ]
     },
     "flex-layout.col#text-information-col": {
@@ -41,6 +41,12 @@
             "blockClass": "text-information-about-2",
             "text": " \bullet Estimulam a síntese muscular \n Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n Interação positiva com exercícios de força e aeróbicos \n Contribui com o bom estado nutricional do atleta"
         }
+    },
+    "flex-layout.row#image-float-vital": {
+        "props": {
+            "blockClass": "image-float-vital"
+        },
+        "children": ["image#products-image-amino-vital"]
     },
     "image#products-image-amino-vital": {
         "props": {
