@@ -22,8 +22,7 @@
 			"metodos-wishilist",
 			"metodo-add-to-cart",
 			"flex-layout.row#topbar-header",
-			"sticky-layout#header-desktop",
-			"whatsapp-floating-button"
+			"sticky-layout#header-desktop"
 		],
 		"props": {
 			"blockClass": "header-desktop",
@@ -37,8 +36,7 @@
 			"helmet-component",
 			"metodos-wishilist",
 			"metodo-add-to-cart",
-			"sticky-layout#header-mobile",
-			"whatsapp-floating-button"
+			"sticky-layout#header-mobile"
 		],
 		"props": {
 			"blockClass": "header-mobile",
