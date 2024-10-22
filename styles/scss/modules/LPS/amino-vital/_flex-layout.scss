@@ -516,6 +516,17 @@
         }
       }
 
+      &--wrapper-for-who-lpp {
+
+        @media (max-width: 1500px) {
+          max-width: 1200px;
+        }
+
+        @media (max-width: 1200px) {
+          max-width: 1000px;
+        }
+      }
+
       &--item-row-lp {
         gap: 20px;
         align-items: center;
@@ -545,8 +556,6 @@
     }
 
     &--text-section {
-      padding-left: 277px;
-      padding-right: 288px;
 
       @media (max-width: 768px) {
         padding: 0 15px
@@ -562,9 +571,8 @@
         padding-right: 30px;
       }
 
-      @media (min-width: 1356px) and (max-width:1755px) {
-        padding-left: 100px;
-        padding-right: 100px;
+      @media (min-width: 1356px) {
+        max-width: 1324px;
       }
     }
 
@@ -731,7 +739,6 @@
       &--cols-for-who {
         justify-content: flex-start;
         display: flex;
-        padding-left: 334px;
 
         @media (max-width: 1025px) {
           padding-left: 0px;
