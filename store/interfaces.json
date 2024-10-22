@@ -112,6 +112,12 @@
 	"custom-account": {
 		"component": "AccountCustom"
 	},
+	"description-amino-vital": {
+		"component": "DescriptionAminoVital"
+	},
+	"how-to-use-amino-vital": {
+		"component": "HowToUseAminoVital"
+	},
 	"search-input-linx": {
 		"component": "SearchInputLinx"
 	},

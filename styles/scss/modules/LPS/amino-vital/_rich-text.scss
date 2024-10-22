@@ -7,7 +7,7 @@
     text-align: center;
     font-family: $Roboto;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1280px) {
       font-size: 14px
     }
   }
@@ -19,7 +19,7 @@
     text-align: center;
     font-family: $Roboto;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1280px) {
       font-size: 14px
     }
   }
@@ -31,7 +31,7 @@
     text-align: center;
     font-family: $Roboto;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1280px) {
       font-size: 14px
     }
   }
@@ -43,7 +43,7 @@
     text-align: center;
     font-family: $Roboto;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1280px) {
       font-size: 14px
     }
   }
@@ -55,7 +55,7 @@
     text-align: center;
     font-family: $Roboto;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1280px) {
       font-size: 14px
     }
   }
@@ -128,6 +128,10 @@
     font-size: 24px;
     color: white;
     line-height: 25px;
+    
+    @media (max-width: 1427px) {
+      font-size: 20px;
+    }
 
     @media (max-width: 1025px) {
       font-size: 16px;
@@ -160,6 +164,14 @@
     @media (max-width: 1025px) {
       font-size: 17px;
       letter-spacing: -1px;
+    }
+
+    @media (max-width: 1850px) {
+      font-size: 39px;
+    }
+
+    @media (max-width: 1650px) {
+      font-size: 34px;
     }
   }
 
@@ -343,8 +355,50 @@
     font-weight: 400;
     text-align: left;
 
-    @media (max-width: 1025px){
+    @media (max-width: 1427px) {
       font-size: 20px;
+    }
+  }
+
+  // pdp
+  &--benefits-amino-vital-titles {
+    font-size: 16px;
+    font-family: $OpenSans;
+  }
+  
+  &--benefits-col-amino-vital-titles {
+    font-size: 14px;
+    font-family: $Roboto;
+    font-style: italic;
+    color: #03005A;
+    text-align: center;
+    margin: 0;
+    margin-top: 4px;
+  }
+}
+
+.list {
+  list-style: inside;
+}
+
+.listItem {
+  &--text-information-about-2 {
+    font-family: $Roboto;
+    font-weight: $light;
+    font-size: 24px;
+    color: white;
+    line-height: 72px;
+    
+    @media (max-width: 1427px) {
+      line-height: 45px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 1025px) {
+      font-size: 16px;
+      padding-left: 26px;
+      padding-right: 26px;
+      text-align: center;
     }
   }
 }
@@ -396,6 +450,11 @@
       justify-content: center;
     }
   }
+  
+  &--text-information-about-1,
+  &--text-information-about-2 {
+    padding-left: 12%;
+  }
 
   &--title-information-about {
     background-color: #F8C169;
@@ -411,6 +470,18 @@
       max-height: 33px;
       width: 100%;
       max-width: 341px;
+    }
+
+    @media (max-width: 1850px) {
+      width: 950px;
+    }
+
+    @media (max-width: 1650px) {
+      width: 870px;
+    }
+
+    @media (max-width: 1550px) {
+      width: 770px;
     }
   }
 

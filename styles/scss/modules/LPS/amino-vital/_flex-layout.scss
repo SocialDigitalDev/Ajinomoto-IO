@@ -241,6 +241,11 @@
               border-radius: 50%;
               bottom: -120%;
 
+              @media (max-width: 1320px) {
+                height: 905px;
+                width: 785px;
+              }
+
               @media (max-width: 1025px) {
                 height: 400px;
                 width: 400px;
@@ -625,6 +630,18 @@
           padding-left: 0;
         }
 
+        @media (max-width: 1650px){
+          padding-left: 150px;
+        }
+
+        @media (max-width: 1540px){
+          padding-left: 95px;
+        }
+
+        @media (max-width: 1450px){
+          padding-left: 35px;
+        }
+
         @media (max-width: 1025px){
           padding-left: 0;
         }
@@ -739,5 +756,19 @@
 .sliderLayoutContainer {
   &--carousel {
     background-color: #0F1339;
+  }
+}
+
+// pdp
+
+.flexRowContent--aminovital--wrapper-benefits {
+
+}
+.flexRowContent--aminovital--wrap-benefits {
+  justify-content: start;
+  gap: 26px;
+
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    max-width: 106px;
   }
 }

@@ -38,7 +38,7 @@
   },
   "rich-text#title-know-amino": {
     "props": {
-      "text": "",
+      "text": "Conheça a marca aminoVITAL®",
       "blockClass": "amino-text-title",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
@@ -46,7 +46,7 @@
   },
   "rich-text#know-amino": {
     "props": {
-      "text": "",
+      "text": "aminoVITAL® é a marca de suplementos da Ajinomoto, líder mundial em aminoácidos ao redor do mundo.\nOs produtos são cuidadosamente formulados com evidência cientifica para garantir eficácia e segurança de seus princípios ativos.\nDesenvolvido em parceria com o comitê olímpico japonês, testado e aprovado por atletas brasileiros atualmente a linha conta com aminoVITAL® GOLD e aminoVITAL® GOLD DRINK MIX",
       "blockClass": "amino-text",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"

@@ -39,7 +39,7 @@
     "rich-text#title-text-information-about-2": {
         "props": {
             "blockClass": "text-information-about-2",
-            "text": " \bullet Estimulam a síntese muscular \n Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n Interação positiva com exercícios de força e aeróbicos \n Contribui com o bom estado nutricional do atleta"
+            "text": " * Estimulam a síntese muscular \n * Promovem ganho de massa e qualidade muscular, gerando melhorias na performance \n * Interação positiva com exercícios de força e aeróbicos \n * Contribui com o bom estado nutricional do atleta"
         }
     },
     "flex-layout.row#image-float-vital": {
