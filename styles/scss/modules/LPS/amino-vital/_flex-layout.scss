@@ -739,6 +739,7 @@
       &--cols-for-who {
         justify-content: flex-start;
         display: flex;
+        padding-left: 334px;
 
         @media (max-width: 1025px) {
           padding-left: 0px;
