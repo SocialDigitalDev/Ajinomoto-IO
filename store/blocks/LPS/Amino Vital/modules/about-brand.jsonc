@@ -112,7 +112,7 @@
   },
   "image#left-image": {
     "props": {
-      "src": "assets/img/lp-amino-vital/avancini .png",
+      "src": "assets/img/lp-amino-vital/avancini2.png",
       "blockClass": "image-left-amino"
     }
   },

@@ -211,7 +211,11 @@
 
       &--right-image {
         max-width: 723px;
-        justify-content: flex-end
+        justify-content: flex-end;
+
+        @media (max-width: 1600px) {
+            max-width: unset;
+        }
       }
 
       &--section-information {
@@ -517,12 +521,17 @@
       }
 
       &--wrapper-for-who-lpp {
+        margin: 0 auto;
+
+        @media (min-width: 1501px) {
+          max-width: 1324px;
+        }
 
         @media (max-width: 1500px) {
           max-width: 1200px;
         }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1250px) {
           max-width: 1000px;
         }
       }
@@ -739,7 +748,6 @@
       &--cols-for-who {
         justify-content: flex-start;
         display: flex;
-        padding-left: 334px;
 
         @media (max-width: 1025px) {
           padding-left: 0px;
@@ -750,13 +758,17 @@
     &--cols-for-who-second {
       justify-content: flex-start;
       display: flex;
-      padding-right: 334px;
       padding-left: 100px;
 
       @media (max-width: 1025px) {
         padding-right: 0px;
         padding-left: 0px;
       }
+    }
+
+    &--image-about-brand {
+      display: block;
+      position: relative;
     }
   }
 }

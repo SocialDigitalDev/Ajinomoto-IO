@@ -103,8 +103,19 @@
   }
 
   &--image-left-amino {
-    max-width: 888px;
+    display: block;
+    position: absolute;
+    max-width: 650px;
     width: 100%;
+    height: auto;
+    max-height: 793px;
+    bottom: 0;
+    
+    @media (min-width: 1590px) {
+      max-height: 765px;
+      max-width: 888px;
+      width: 100%;
+    }
   }
 
   // pdp
