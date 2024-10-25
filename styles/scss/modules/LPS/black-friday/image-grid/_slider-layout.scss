@@ -1,0 +1,21 @@
+.slide--slider-grid-top, .slide--slider-grid-bot{
+    margin: 0 7px;
+    @include media ('<=phone'){
+      margin: 0;
+    }
+  }
+  .sliderLayoutContainer--slider-grid-top{
+    @include media ('<=phone'){
+      margin-bottom: 30px!important;
+    }
+  }
+  .sliderLayoutContainer--slider-grid-top, .sliderLayoutContainer--slider-grid-bot {
+    margin-bottom: 14px;
+    :global(.vtex-store-components-3-x-imageElementLink--image-item){
+      border: 1px solid $primary;
+      border-radius: 10px;
+      :global(.vtex-store-components-3-x-imageElement--image-item){
+        border-radius: 10px;
+      }
+    }
+  }
