@@ -1,0 +1,100 @@
+{
+	"responsive-layout.desktop#bf-banner-inferior-desktop": {
+		"children": [
+			"list-context.image-list#bf-banner-inferior"
+		]
+	},
+	"responsive-layout.tablet#bf-banner-inferior-tablet": {
+		"children": [
+			"list-context.image-list#bf-banner-inferior-tablet"
+		]
+	},
+	"responsive-layout.phone#bf-banner-inferior-phone": {
+		"children": [
+			"list-context.image-list#bf-banner-inferior-phone"
+		]
+	},
+	"list-context.image-list#bf-banner-inferior": {
+		"title": "Banner inferior Desktop",
+		"children": [
+			"slider-layout#bf-banner-inferior"
+		],
+		"props": {
+			"height": 500,
+			"blockClass": [
+				"ajinomoto--banner-inferior-bf",
+				"banner-inferior-bf",
+				"banner-inferior-bf-desktop"
+			],
+			"preload": true,
+			"images": [{
+				"image": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/c9afd8aa-bb73-4ee1-851a-fb80ccac6cd1___d439750d36c21447244421615f5c4412.jpg"
+			}]
+		}
+	},
+	"list-context.image-list#bf-banner-inferior-tablet": {
+		"title": "Banner inferior Tablet",
+		"children": [
+			"slider-layout#bf-banner-inferior"
+		],
+		"props": {
+			"height": 500,
+			"blockClass": [
+				"ajinomoto--banner-inferior-bf",
+				"banner-inferior-bf",
+				"banner-inferior-bf-tablet"
+			],
+			"preload": true,
+			"images": [{
+				"image": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/50ba3700-f175-4a51-bfdb-de4efeecaa4e___65f5ad09ce0459e10003f4ba49021821.jpg"
+			}]
+		}
+	},
+	"list-context.image-list#bf-banner-inferior-phone": {
+		"title": "Banner inferior Mobile",
+		"children": [
+			"slider-layout#bf-banner-inferior-mobile"
+		],
+		"props": {
+			"height": 500,
+			"blockClass": [
+				"ajinomoto--banner-inferior-bf",
+				"banner-inferior-bf",
+				"banner-inferior-bf-phone"
+			],
+			"preload": true,
+			"images": [{
+				"image": "https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/fb71e132-be95-478c-84a4-942aaed7aae6___08c29ceb61d993023dc3de95a7ddef3f.jpg"
+			}]
+		}
+	},
+	"slider-layout#bf-banner-inferior": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"showNavigationDots": "always",
+			"blockClass": "slider-inferior"
+		}
+	},
+	"slider-layout#bf-banner-inferior-mobile": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"showNavigationDots": "always",
+			"blockClass": [
+				"slider-inferior",
+				"slider-inferior-mobile"
+			]
+		}
+	}
+}
