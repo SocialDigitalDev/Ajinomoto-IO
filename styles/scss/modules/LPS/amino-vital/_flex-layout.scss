@@ -3,7 +3,7 @@
 
     &--right-image {
       display: flex;
-      justify-content: flex-end
+      justify-content: flex-end;
     }
 
     &--selo-aminoacid {
@@ -20,12 +20,6 @@
 
     &--row-icons-benefits {
 
-      padding-top: 57px;
-
-      @media (min-width: 1600px) and (max-width: 1800px) {
-        padding-top: 50px;
-      }
-
       @media (max-width: 1025px) {
         position: initial;
         padding: 0 20px;
@@ -34,12 +28,10 @@
     }
 
     &--icons-benefits {
-
-      padding-top: 91px;
+      padding-top: 60px;
 
       @media (max-width: 1025px) {
         position: initial;
-        padding-top: 30px;
         padding-left: 42px;
         padding-right: 39px;
       }
@@ -48,6 +40,12 @@
     &--benefits-section {
       background: rgb(15, 19, 57);
       background: linear-gradient(180deg, rgba(15, 19, 57, 1) 47%, rgba(42, 53, 159, 1) 100%);
+
+      @media (min-width: 1025px) {
+        :global(.vtex-store-components-3-x-container) {
+          padding: 0 !important;
+        }
+      }
     }
 
     &--section-information {
@@ -180,6 +178,10 @@
         }
       }
 
+      &--benefits-section {
+        max-height: 773px;
+      }
+
       &--benefits-first-section-mobile {
         display: flex;
 
@@ -202,11 +204,15 @@
         }
       }
 
-      &--row-icons-benefits .stretchChildrenWidth {
-        width: 100% !important;
-        justify-content: center;
-        display: flex;
-        gap: 40px;
+      &--row-icons-benefits {
+        margin-top: 35px;
+
+        .stretchChildrenWidth {
+          width: 100% !important;
+          justify-content: center;
+          display: flex;
+          gap: 40px;
+        }
       }
 
       &--right-image {
@@ -214,7 +220,11 @@
         justify-content: flex-end;
 
         @media (max-width: 1600px) {
-            max-width: unset;
+          max-width: unset;
+        }
+
+        .stretchChildrenWidth {
+          justify-content: flex-end !important;
         }
       }
 
@@ -580,7 +590,12 @@
         padding-right: 30px;
       }
 
-      @media (min-width: 1356px) {
+
+      @media (min-width: 1581px) {
+        max-width: 1580px;
+      }
+
+      @media (min-width: 1356px) and (max-width: 1579px) {
         max-width: 1324px;
       }
     }
@@ -642,6 +657,7 @@
 
       &--benefits-first-section {
         padding-left: 294px;
+        height: fit-content !important;
 
         &:first-child{
           padding-left: 0;

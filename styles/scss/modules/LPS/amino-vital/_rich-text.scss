@@ -62,7 +62,7 @@
 
   &--text-benefits {
     color: white;
-    font-size: 28px;
+    font-size: 22px;
     font-family: $Inter;
     font-weight: 500;
     line-height: 35px;
@@ -78,7 +78,7 @@
     color: white;
     font-family: $Inter;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     
     @media (max-width: 1025px) {
@@ -90,7 +90,7 @@
     color: white;
     font-family: $Inter;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
     @media (max-width: 1025px) {
@@ -102,7 +102,7 @@
     color: white;
     font-family: $Inter;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
     @media (max-width: 1025px) {
@@ -114,7 +114,7 @@
     font-family: $Roboto;
     color: #0C0264;
     font-weight: $extra-bold;
-    font-size: 54px;
+    font-size: 40px;
     margin: 0;
 
     @media(max-width: 1025px) {
@@ -328,6 +328,14 @@
     font-family: $Inter;
     color: $white;
     font-weight: $light;
+    
+    @media (max-width: 1505px) {
+      font-size: 22px;
+    }
+    
+    @media (max-width: 1310px) {
+      font-size: 18px;
+    }
 
     @media (max-width: 768px) {
       font-size: 14px;
@@ -408,7 +416,6 @@
   &--text-benefits {
     max-width: 893px;
     width: 100%;
-    padding-top: 30px;
 
     @media (max-width: 1025px) {
       position: initial;
