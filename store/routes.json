@@ -19,5 +19,8 @@
     },
     "store.custom#busca-linx": {
         "path": "/busca"
+    },
+    "store.custom#lp-one-piece": {
+        "path": "/ajinomoto-one-piece"
     }
 }
