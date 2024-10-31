@@ -23,8 +23,7 @@
 			"children": [
 					"rich-text#info-card-title",
 					"flex-layout.row#info-card-products",
-					"rich-text#info-card-button",
-					"flex-layout.row#info-card-products"
+					"rich-text#info-card-button"
 			]
 	},
 
