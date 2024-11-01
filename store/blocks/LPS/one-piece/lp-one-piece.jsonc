@@ -1,7 +1,8 @@
 {
-    "store.custom#lp-one-piece": {
-        "blocks": [
-            
-        ]
-    }
+  "store.custom#lp-one-piece": {
+    "blocks": [
+      "flex-layout.row#banner-principal-op",
+      "flex-layout.row#middle-text"
+    ]
+  }
 }

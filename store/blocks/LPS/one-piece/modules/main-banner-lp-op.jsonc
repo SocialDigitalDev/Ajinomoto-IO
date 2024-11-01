@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#banner-principal-op": {
+    "children": [
+      "image#banner-principal-op"
+    ],
+    "props": {
+      "blockclass": "banner-principal-op"
+    }
+  },
+  "image#banner-principal-op": {
+    "props": {
+      "src": "assets/img/lp-one-piece/main-banner.png",
+      "blockClass": "main-banner-op"
+    }
+  }
+}
