@@ -2,7 +2,8 @@
   "store.custom#lp-one-piece": {
     "blocks": [
       "flex-layout.row#banner-principal-op",
-      "flex-layout.row#middle-text"
+      "flex-layout.row#middle-text",
+      "flex-layout.row#lp-op-prateleira"
     ]
   }
 }

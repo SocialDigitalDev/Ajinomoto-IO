@@ -2,13 +2,63 @@
 
   &--middle-text-section-op {
     background-image: url("assets/img/lp-one-piece/bg-middle-text.png");
-    padding: 0 276px;
+    padding: 86px 276px 0 276px;
+    background-color: #642B1D;
+    
+    @media (max-width: 1028px) {
+      padding: unset
+    }
   }
 
   &Content {
-    
+
+    &--second-text-op {
+      max-width: 586px!important;
+    }
+
+    &--first-text-op {
+
+      @media (max-width: 1028px) {
+        display:flex
+      }
+    }
+
     &--middle-text-section-op {
       align-items: center;
     }
+
+    &--first-text-op .stretchChildrenWidth {
+      &:first-child {
+        max-width: 381px;
+        width: 100% !important;
+        align-items: center;
+        }
+      }
+
+      &:nth-child(2n) {
+        max-width: 160px;
+        width: 100% !important;
+        align-items: center;
+        padding-left: 8px
+      }
+
+      &:nth-child(3n) {
+        max-width: 160px;
+        width: 100% !important;
+        align-items: center;
+      }
+    }
+
+    &--middle-text-section-op .stretchChildrenWidth {
+
+      &:first-child {
+        max-width: 744px;
+        width: 100%!important
+      }
+
+      &:last-child {
+        width: 100% !important;
+        padding-left: 36px;
+      }
+    }
   }
-}

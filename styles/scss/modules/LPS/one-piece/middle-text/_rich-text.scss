@@ -1,15 +1,21 @@
 .paragraph {
 
     &--first-text-lp-op {
-        font-family: open-sans;
+        font-family: $OpenSans;
         font-weight: 800;
         font-size: 36px;
         line-height: 49px;
         color: white;
+        margin: unset;
+
+        @media (max-width: 1028px) {
+            font-size: 23px;
+            line-height: 31px;
+        }
     }
 
     &--second-text-lp-op {
-        font-family: open-sans;
+        font-family: $OpenSans;
         font-weight: 600;
         font-size: 18px;
         line-height: 25px;
