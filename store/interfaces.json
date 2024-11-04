@@ -118,6 +118,9 @@
 	"how-to-use-amino-vital": {
 		"component": "HowToUseAminoVital"
 	},
+	"ingredients-amino-vital": {
+		"component": "IngredientsAminoVital"
+	},
 	"search-input-linx": {
 		"component": "SearchInputLinx"
 	},
