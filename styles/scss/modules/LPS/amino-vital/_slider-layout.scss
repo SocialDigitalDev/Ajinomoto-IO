@@ -1,0 +1,106 @@
+.slideChildrenContainer {
+
+  &--carousel-amino-brand {
+
+    @media (max-width: 1025px) {
+      padding: 10px 24px;
+    }
+  }
+
+}
+
+.sliderTrackContainer {
+  &--carousel {
+    background-color: #0F1339;
+    padding-bottom: 63px
+  }
+}
+
+.paginationDotsContainer {
+  &--carousel {
+    bottom: 33px !important
+  }
+
+  &--carousel-amino-brand {
+    @media (max-width: 1025px) {
+      bottom: 0px!important
+    }
+  }
+}
+
+.sliderLayoutContainer {
+  &--shelf-amino-vital {
+    padding-left: 287px;
+
+    
+
+    @media (min-width: 400px) and (max-width: 1800px) {
+      padding-left: 0px
+    }
+  }
+
+  &--carousel-amino-brand{
+    @media (max-width: 1025px){
+      display: flex;
+      flex-flow: column;
+    }
+  }
+}
+
+.sliderRightArrow {
+  &--shelf-amino-vital {
+    right: -17px !important;
+  }
+}
+
+.sliderLeftArrow {
+  &--shelf-amino-vital {
+    left: 260px !important
+  }
+}
+
+.paginationDotsContainer {
+  &--shelf-amino-vital {
+    left: 250px !important;
+
+    @media(max-width: 1025px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      left: 0px!important;
+      bottom: -20px!important
+    }
+  }
+  
+  &--carousel-amino-brand{
+    @media (max-width: 1025px){
+      margin: 10px auto;
+      position: initial;
+    }
+  }
+}
+.paginationDot {
+  &--carousel,
+  &--carousel-amino-brand{
+    border-color: #F6C06E !important;
+    background: transparent !important;
+    &--isActive{
+      border-color: #F6C06E !important;
+      background: #F6C06E !important;
+    }
+  }
+
+  &--shelf-amino-vital {
+    border-color: #0C0265 !important;
+    background: transparent !important;
+    &--isActive{
+      border-color: #0C0265 !important;
+      background: #0C0265 !important;
+    }
+  }
+}
+
+// pdp
+.sliderLayoutContainer--slide-banner-middle-amino {
+  margin: 10px 0;
+}

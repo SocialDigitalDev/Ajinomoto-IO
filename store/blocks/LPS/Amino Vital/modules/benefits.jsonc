@@ -1,0 +1,265 @@
+{
+  "responsive-layout.desktop#benefits-desktop-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-section"
+    ]
+  },
+  "responsive-layout.tablet#benefits-tablet-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-first-section-mobile"
+    ]
+  },
+  "responsive-layout.phone#benefits-mobile-section": {
+    "children": [
+      "flex-layout.row#golden-bar",
+      "flex-layout.row#benefits-first-section-mobile"
+    ]
+  },
+  "flex-layout.row#benefits-section": {
+    "props": {
+      "blockClass": "benefits-section"
+    },
+    "children": [
+      "flex-layout.col#benefits-first-section",
+      "flex-layout.row#right-image"
+    ]
+  },
+  "flex-layout.row#benefits-first-section-mobile": {
+    "props": {
+      "blockClass": "benefits-first-section-mobile"
+    },
+    "children": [
+      "rich-text#title-benefits",
+      "flex-layout.row#icons-benefits",
+      "rich-text#text-benefits",
+      "flex-layout.row#row-icons-benefits"
+    ]
+  },
+  "flex-layout.col#benefits-first-section": {
+    "props": {
+      "blockClass": "benefits-first-section"
+    },
+    "children": [
+      "rich-text#title-benefits",
+      "flex-layout.row#icons-benefits",
+      "rich-text#text-benefits",
+      "flex-layout.row#row-icons-benefits"
+    ]
+  },
+  "rich-text#title-benefits": {
+    "props": {
+      "blockClass": "title-benefits",
+      "text": "BENEFÍCIOS AMINOVITAL®"
+    }
+  },
+  "flex-layout.row#icons-benefits": {
+    "props": {
+      "blockClass": "icons-benefits"
+    },
+    "children": [
+      "flex-layout.col#col-icon-benefit-1",
+      "flex-layout.col#col-icon-benefit-2",
+      "flex-layout.col#col-icon-benefit-3"
+    ]
+  },
+  "flex-layout.col#col-icon-benefit-1": {
+    "props": {
+      "blockClass": "col-icon-benefit-1"
+    },
+    "children": [
+      "image#icon-benefit-1",
+      "rich-text#title-icons-benefits-1"
+    ]
+  },
+  "flex-layout.col#col-icon-benefit-2": {
+    "props": {
+      "blockClass": "col-icon-benefit-2"
+    },
+    "children": [
+      "image#icon-benefit-2",
+      "rich-text#title-icons-benefits-2"
+    ]
+  },
+  "flex-layout.col#col-icon-benefit-3": {
+    "props": {
+      "blockClass": "col-icon-benefit-3"
+    },
+    "children": [
+      "image#icon-benefit-3",
+      "rich-text#title-icons-benefits-3"
+    ]
+  },
+  "image#icon-benefit-1": {
+    "props": {
+      "blockClass": "icon-benefit-1",
+      "src": "assets/img/lp-amino-vital/icon-1.png"
+    }
+  },
+  "image#icon-benefit-2": {
+    "props": {
+      "blockClass": "icon-benefit-2",
+      "src": "assets/img/lp-amino-vital/icon-2.png"
+    }
+  },
+  "image#icon-benefit-3": {
+    "props": {
+      "blockClass": "icon-benefit-3",
+      "src": "assets/img/lp-amino-vital/icon-3.png"
+    }
+  },
+  "rich-text#title-icons-benefits-1": {
+    "props": {
+      "blockClass": "title-icons-benefits-1",
+      "text": "Retarda a \n fadiga"
+    }
+  },
+  "rich-text#title-icons-benefits-2": {
+    "props": {
+      "blockClass": "title-icons-benefits-2",
+      "text": "Evita perda de massa"
+    }
+  },
+  "rich-text#title-icons-benefits-3": {
+    "props": {
+      "blockClass": "title-icons-benefits-3",
+      "text": "Recuperação muscular"
+    }
+  },
+  "rich-text#text-benefits": {
+    "props": {
+      "blockClass": "text-benefits",
+      "text": "Para manter a integridade dos músculos, promover a recuperação muscular e aumentar o desempenho esportivo, novas proteínas musculares devem ser sinteizadas através de novos aminoácidos, nas quantidades certas. aminoVITAL® Gold, que oferece TODOS aminoácidos essenciais necessários com alto teor de leucina."
+    }
+  },
+  "flex-layout.row#row-icons-benefits": {
+    "props": {
+      "blockClass": "row-icons-benefits"
+    },
+    "children": [
+      "flex-layout.col#col-second-icon-benefit-1",
+      "flex-layout.col#col-second-icon-benefit-2",
+      "flex-layout.col#col-second-icon-benefit-3",
+      "flex-layout.col#col-second-icon-benefit-4",
+      "flex-layout.col#col-second-icon-benefit-5"
+    ]
+  },
+  "flex-layout.col#col-second-icon-benefit-1": {
+    "props": {
+      "blockClass": "col-second-icon-benefit-1"
+    },
+    "children": [
+      "image#second-icon-benefit-1",
+      "rich-text#second-text-icon-benefits-1"
+    ]
+  },
+  "flex-layout.col#col-second-icon-benefit-2": {
+    "props": {
+      "blockClass": "col-second-icon-benefit-2"
+    },
+    "children": [
+      "image#second-icon-benefit-2",
+      "rich-text#second-text-icon-benefits-2"
+    ]
+  },
+  "flex-layout.col#col-second-icon-benefit-3": {
+    "props": {
+      "blockClass": "col-second-icon-benefit-3"
+    },
+    "children": [
+      "image#second-icon-benefit-3",
+      "rich-text#second-text-icon-benefits-3"
+    ]
+  },
+  "flex-layout.col#col-second-icon-benefit-4": {
+    "props": {
+      "blockClass": "col-second-icon-benefit-4"
+    },
+    "children": [
+      "image#second-icon-benefit-4",
+      "rich-text#second-text-icon-benefits-4"
+    ]
+  },
+  "flex-layout.col#col-second-icon-benefit-5": {
+    "props": {
+      "blockClass": "col-second-icon-benefit-5"
+    },
+    "children": [
+      "image#second-icon-benefit-5",
+      "rich-text#second-text-icon-benefits-5"
+    ]
+  },
+  "image#second-icon-benefit-1": {
+    "props": {
+      "blockClass": "second-icon-benefit-1",
+      "src": "assets/img/lp-amino-vital/zero-acucar.png"
+    }
+  },
+  "image#second-icon-benefit-2": {
+    "props": {
+      "blockClass": "second-icon-benefit-2",
+      "src": "assets/img/lp-amino-vital/zero-gordura.png"
+    }
+  },
+  "image#second-icon-benefit-3": {
+    "props": {
+      "blockClass": "second-icon-benefit-3",
+      "src": "assets/img/lp-amino-vital/zero-lactose.png"
+    }
+  },
+  "image#second-icon-benefit-4": {
+    "props": {
+      "blockClass": "second-icon-benefit-4",
+      "src": "assets/img/lp-amino-vital/plant-based 1.png"
+    }
+  },
+  "image#second-icon-benefit-5": {
+    "props": {
+      "blockClass": "second-icon-benefit-5",
+      "src": "assets/img/lp-amino-vital/baixa-caloria 1.png"
+    }
+  },
+  "rich-text#second-text-icon-benefits-1": {
+    "props": {
+      "blockClass": "second-text-icon-benefits-1",
+      "text": "ZERO AÇÚCAR"
+    }
+  },
+  "rich-text#second-text-icon-benefits-2": {
+    "props": {
+      "blockClass": "second-text-icon-benefits-2",
+      "text": "ZERO GORDURA"
+    }
+  },
+  "rich-text#second-text-icon-benefits-3": {
+    "props": {
+      "blockClass": "second-text-icon-benefits-3",
+      "text": "ZERO LACTOSE"
+    }
+  },
+  "rich-text#second-text-icon-benefits-4": {
+    "props": {
+      "blockClass": "second-text-icon-benefits-4",
+      "text": "PLANT BASED"
+    }
+  },
+  "rich-text#second-text-icon-benefits-5": {
+    "props": {
+      "blockClass": "second-text-icon-benefits-5",
+      "text": "BAIXA CALORIA"
+    }
+  },
+  "flex-layout.row#right-image": {
+    "props": {
+      "blockClass": "right-image"
+    },
+    "children": ["image#second-side-image-benefits"]
+  },
+  "image#second-side-image-benefits": {
+    "props": {
+      "blockClass": "side-image-benefits",
+      "src": "assets/img/lp-amino-vital/side-image.png"
+    }
+  }
+}

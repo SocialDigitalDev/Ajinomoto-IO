@@ -207,3 +207,47 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* INTER (NORMAL E LIGHT) */
+
+@font-face {
+	font-family: 'Inter';
+	src: url(assets/fonts/Inter-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(assets/fonts/Inter-Normal.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ROBOTO */
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(assets/fonts/Roboto-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(assets/fonts/Roboto-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(assets/fonts/RobotoCondensed-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
