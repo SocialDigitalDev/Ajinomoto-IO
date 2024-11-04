@@ -1,0 +1,33 @@
+.flexRow {
+
+    &--information-brand {
+        padding: 50px 378px 0 378px
+
+    }
+
+    &Content {
+
+        &--information-brand{
+            background-image: url('assets/img/lp-one-piece/Papiro.png');
+            height: 821px
+        }
+    }
+}
+
+.flexCol {
+
+    &--information-title-brand{
+        padding-top: 101px;
+    }
+
+    &Child {
+        &--information-title-brand{
+            display: flex;
+            justify-content: center;
+
+        }
+        &--text-sodio-lp-op{
+            padding-left: 127px;
+        }
+    }
+}
