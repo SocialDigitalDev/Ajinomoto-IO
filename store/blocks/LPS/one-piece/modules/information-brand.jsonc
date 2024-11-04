@@ -1,0 +1,35 @@
+{
+    "flex-layout.row#information-brand": {
+        "props":{
+            "blockClass": "information-brand",
+        },
+        "children": "flex-layout.col#column-brand"
+    },
+    "flex-layout.col#column-brand": {
+        "props":{
+            "blockClass": "column-brand",
+        },
+        "children": "flex-layout.col#title-brand"
+    },
+    "flex-layout.col#title-brand": {
+        "props":{
+            "blockClass": "information-title-brand",
+        },
+        "children": [
+        "image#title-brand-op",
+        "rich-text##subtitletitle-brand"
+    ]
+    },
+    "image#title-brand-op": {
+        "props": {
+            "blockClass": "image-title-brand-op",
+            "src": "assets/img/lp-one-piece/title-brand.png"
+        }
+    },
+    "rich-text##subtitletitle-brand": {
+        "props":{
+            "blockClass": "information-subtitle-brand",
+            "text": "AJI-NO-MOTO® é produzido a partir da fermentação do melaço da cana-de-açúcar. Esse é um processo muito comum, também utilizado na fabricação de outros alimentos, como queijo, vinho e iogurte."
+        }
+    }
+}
