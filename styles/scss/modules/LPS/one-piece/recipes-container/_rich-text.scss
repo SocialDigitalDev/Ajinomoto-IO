@@ -1,0 +1,19 @@
+.paragraph {
+    &--title-section-op {
+        font-family: $OpenSans;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 34.05px;
+        text-align: center;
+        color: #642B1D
+    }
+
+    &--subtitle-section-op {
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: center;
+        color: #642B1D
+    }
+}

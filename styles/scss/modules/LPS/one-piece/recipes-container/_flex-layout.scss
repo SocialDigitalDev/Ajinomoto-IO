@@ -1,0 +1,19 @@
+.flexRow {
+    &--recipes-container {
+        padding: 0 145px
+    }
+
+    &Content {
+        &--recipes-container {
+            background-image: url('assets/img/lp-one-piece/papiro-recipes.png')
+        }
+    }
+}
+
+.flexCol{
+    &Child{
+        &--recipes-wrapper {
+            padding: 0 299px
+        }
+    }
+}

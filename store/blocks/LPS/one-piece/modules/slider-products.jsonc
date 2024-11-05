@@ -22,7 +22,7 @@
     "rich-text#lp-op-prateleira": {
         "title": "TITULO DA VITRINE",
         "props": {
-            "text": "## Produtos",
+            "text": "Escolha seus personagens favoritos:",
             "textPosition": "CENTER",
             "blockClass": "shelf-titles-lp-op"
         }

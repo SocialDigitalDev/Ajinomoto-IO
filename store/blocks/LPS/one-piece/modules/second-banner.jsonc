@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#second-banner-lp-op": {
+        "props": {
+            "blockClass": "second-banner-lp-op"
+        },
+        "children": [
+            "image#second-banner-op-lp"
+        ]
+    },
+    "image#second-banner-op-lp": {
+        "props": {
+            "src": "assets/img/lp-one-piece/second-banner.png",
+            "blockClass": "second-banner-image"
+        }
+}
+}

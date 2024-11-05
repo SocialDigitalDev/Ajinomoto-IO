@@ -1,0 +1,197 @@
+{
+    // Container dos infocards
+    "flex-layout.row#info-card-container-lp-op": {
+        "title": "Container dos infocards de produto",
+        "props": {
+            "blockClass": [
+                "ajinomoto--info-card-products-lp-op"
+            ]
+        },
+        "children": [
+            "flex-layout.col#info-card-wrapper-lp-op"
+        ]
+    },
+    // Coluna juntando título e infocards
+    "flex-layout.col#info-card-wrapper-lp-op": {
+        "title": "Coluna de Título e Conteúdo",
+        "props": {
+            "blockClass": "info-card-row-wrapper-lp-op",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#title-inforcards-op",
+            "flex-layout.row#info-card-op-lp"
+        ]
+    },
+    "rich-text#title-inforcards-op": {
+        "props": {
+            "blockClass": "title-inforcards-op",
+            "text": "Escolha seus personagens favoritos:"
+        }
+    },
+    // Linha dos infocards
+    "flex-layout.row#info-card-op-lp": {
+        "title": "Linha dos Infocards",
+        "props": {
+            "blockClass": "info-card-row-lp-op"
+        },
+        "children": [
+            "slider-layout#slider-lp-op"
+        ]
+    },
+    //PRODUCTS-CARDS
+    "slider-layout#slider-lp-op": {
+        "props": {
+            "blockClass": [
+                "slider-lp-op"
+            ],
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            }
+        },
+        "children": [
+            "flex-layout.row#wrapper-inforcard-op-1",
+            "flex-layout.row#wrapper-inforcard-op-2",
+            "flex-layout.row#wrapper-inforcard-op-3",
+            "flex-layout.row#wrapper-inforcard-op-4",
+            "flex-layout.row#wrapper-inforcard-op-5",
+            "flex-layout.row#wrapper-inforcard-op-6"
+        ]
+    },
+    "rich-text#title-infocard-lp-op": {
+        "props": {
+            "text": "Personagem",
+            "blockClass": "title-infocard-lp-op"
+        }
+    },
+    "flex-layout.row#wrapper-inforcard-op-1": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-1"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-1"
+        ]
+    },
+    "flex-layout.row#wrapper-inforcard-op-2": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-2"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-2"
+        ]
+    },
+    "flex-layout.row#wrapper-inforcard-op-3": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-3"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-3"
+        ]
+    },
+    "flex-layout.row#wrapper-inforcard-op-4": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-4"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-4"
+        ]
+    },
+    "flex-layout.row#wrapper-inforcard-op-5": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-5"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-5"
+        ]
+    },
+    "flex-layout.row#wrapper-inforcard-op-6": {
+        "props": {
+            "blockClass": "wrapper-inforcard-op-6"
+        },
+        "children": [
+            "rich-text#title-infocard-lp-op",
+            "info-card#infocard-op-6"
+        ]
+    },
+    "info-card#infocard-op-1": {
+        "props": {
+            "id": "info-card-produto-1",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/img/lp-one-piece/luffy-product.png",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-1"
+        }
+    },
+    "info-card#infocard-op-2": {
+        "props": {
+            "id": "info-card-produto-2",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/zoro-product.png",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-2"
+        }
+    },
+    "info-card#infocard-op-3": {
+        "props": {
+            "id": "info-card-produto-3",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/nami-product.png",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-3"
+        }
+    },
+    "info-card#infocard-op-4": {
+        "props": {
+            "id": "info-card-produto-4",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/usopp-product.png",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-4"
+        }
+    },
+    "info-card#infocard-op-5": {
+        "props": {
+            "id": "info-card-produto-5",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-5"
+        }
+    },
+    "info-card#infocard-op-6": {
+        "props": {
+            "id": "info-card-produto-6",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+            "callToActionText": "saiba mais",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-op-6"
+        }
+    }
+}
