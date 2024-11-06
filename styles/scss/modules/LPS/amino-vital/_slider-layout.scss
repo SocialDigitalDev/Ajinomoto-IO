@@ -55,7 +55,11 @@
 
 .sliderLeftArrow {
   &--shelf-amino-vital {
-    left: 260px !important
+    left: 260px !important;
+
+    @media (max-width: 1800px) {
+      left: 0px !important;
+    }
   }
 }
 
