@@ -428,4 +428,9 @@ ol {
 .render-route-store-custom-lp-one-piece .vtex-flex-layout-0-x-flexRow--header--content {
 	height: 147px!important;
 	padding-top: 16px;
+
+	@media (max-width: 1025px) {
+		height: auto!important;
+		padding-top: 0;
+	}
 }
