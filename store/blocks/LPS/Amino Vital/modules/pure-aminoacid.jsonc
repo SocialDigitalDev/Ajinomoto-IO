@@ -1,0 +1,168 @@
+{
+  "flex-layout.row#pure-aminoacid-section": {
+    "props": {
+      "blockClass": "section-selos"
+    },
+    "children": [
+      "flex-layout.col#col-pure-aminoacid-1",
+      "flex-layout.row#images-quality"
+    ]
+  },
+  "flex-layout.col#col-pure-aminoacid-1": {
+    "props": {
+      "blockClass": [
+        "col-pure-aminoacid-1"
+      ]
+    },
+    "children": [
+      "flex-layout.row#selo-section",
+      "rich-text#text-aminoacid"
+    ]
+  },
+  "flex-layout.row#selo-section": {
+    "props": {
+      "blockClass": "selo-section"
+    },
+    "children": [
+      "flex-layout.row#image-selo",
+      "rich-text#title-selo-aminoacid"
+    ]
+  },
+  "flex-layout.row#image-selo": {
+    "props": {
+      "blockClass": "selo-aminoacid"
+    },
+    "children": [
+      "image#selo-pure-aminoacid"
+    ]
+  },
+  "image#selo-pure-aminoacid": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/selo-aminoacid.png",
+      "blockClass": "image-selo-aminoacid"
+    }
+  },
+  "rich-text#title-selo-aminoacid": {
+    "props": {
+      "blockClass": "title-aminoacid",
+      "text": "**SELO PURE AMINOACID** \n *Você conhece o Selo Pure Amino Acid by Ajinomoto Co.® ?*"
+    }
+  },
+  "rich-text#text-aminoacid": {
+    "props": {
+      "blockClass": "text-aminoacid",
+      "text": "A Ajinomoto é líder Global na produção de aminoácidos, eles são produzidos a partir de um processo biotecnológico de fermentação, que utiliza matérias-primas naturais e renováveis, como cana-de-açúcar, mandioca, milho e beterraba, resultando em um produto isento de ingredientes de origem animal. O Selo PURE AMINO ACID by Ajinomoto Co.® é referência quando o assunto é segurança e qualidade dos aminoácidos. Com ele, é possível identificar suplementos e outros produtos que tenham os aminoácidos da Ajinomoto, com tecnologia que garante:"
+    }
+  },
+  "flex-layout.row#images-quality": {
+    "props": {
+      "blockClass": "section-quality-images"
+    },
+    "children": [
+      "flex-layout.col#col-images-quality 1",
+      "flex-layout.col#col-images-quality 2"
+    ]
+  },
+  "flex-layout.col#col-images-quality 1": {
+    "props": {
+      "blockClass": "col-images-quality-1"
+    },
+    "children": [
+      "flex-layout.col#item-quality-1",
+      "flex-layout.col#item-quality-2"
+    ]
+  },
+  "flex-layout.col#col-images-quality 2": {
+    "props": {
+      "blockClass": "col-images-quality-2"
+    },
+    "children": [
+      "flex-layout.col#item-quality-3",
+      "flex-layout.col#item-quality-4"
+    ]
+  },
+  "flex-layout.col#item-quality-1": {
+    "props": {
+      "blockClass": "item-quality-1"
+    },
+    "children": [
+      "image#quality-images-1",
+      "rich-text#under-text-quality-1"
+    ]
+  },
+  "flex-layout.col#item-quality-2": {
+    "props": {
+      "blockClass": "item-quality-2"
+    },
+    "children": [
+      "image#quality-images-2",
+      "rich-text#under-text-quality-2"
+    ]
+  },
+  "flex-layout.col#item-quality-3": {
+    "props": {
+      "blockClass": "item-quality-3"
+    },
+    "children": [
+      "image#quality-images-3",
+      "rich-text#under-text-quality-3"
+    ]
+  },
+  "flex-layout.col#item-quality-4": {
+    "props": {
+      "blockClass": "item-quality-4"
+    },
+    "children": [
+      "image#quality-images-4",
+      "rich-text#under-text-quality-4"
+    ]
+  },
+  "image#quality-images-1": {
+    "props": {
+      "blockClass": "leaf-image",
+      "src": "assets/img/lp-amino-vital/leaf.png"
+    }
+  },
+  "image#quality-images-2": {
+    "props": {
+      "blockClass": "water-image",
+      "src": "assets/img/lp-amino-vital/water.png"
+    }
+  },
+  "image#quality-images-3": {
+    "props": {
+      "blockClass": "check-image",
+      "src": "assets/img/lp-amino-vital/check.png"
+    }
+  },
+  "image#quality-images-4": {
+    "props": {
+      "blockClass": "cube-image",
+      "src": "assets/img/lp-amino-vital/cube.png"
+    }
+  },
+  "rich-text#under-text-quality-1": {
+    "props": {
+      "blockClass": "text-1-quality",
+      "text": "Origem 100% não animal"
+    }
+  },
+  "rich-text#under-text-quality-2": {
+    "props": {
+      "blockClass": "text-2-quality",
+      "text": "Elevado grau de pureza"
+    }
+  },
+  "rich-text#under-text-quality-3": {
+    "props": {
+      "blockClass": "text-3-quality",
+      "text": "Qualidade consistente lote a lote"
+    }
+  },
+  "rich-text#under-text-quality-4": {
+    "props": {
+      "blockClass": "text-4-quality",
+      "text": "Rastreabilidade total"
+    }
+  }
+}

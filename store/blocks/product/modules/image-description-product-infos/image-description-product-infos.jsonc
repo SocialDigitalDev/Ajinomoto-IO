@@ -44,34 +44,35 @@
             "similar-products",
             "custom-product-size",
             "condition-layout.product#product-availability",
-            "share#pdp",
+            "condition-layout.product#benefits-features",
             "custom-pdp-characteristics",
+            "share#pdp",
 			"condition-layout.product#manioca-image"
         ]
     },
+    
+    "condition-layout.product#manioca-image": {
+        "title": "Condição de caracteristicas amino vital ou produto comum",
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": "2097153890"
+                    }
+                }
+            ],
+            "Then": "image#manioca-caracs"
+        }
+    },
 
-		"condition-layout.product#manioca-image": {
-			"title": "Condição de layout",
-			"props": {
-				"conditions": [
-					{
-						"subject": "brandId",
-						"arguments": {
-							"id": "2097153890"
-						}
-					}
-				],
-				"Then": "image#manioca-caracs"
-			}
-		},
-
-		"image#manioca-caracs": {
-			"title": "Imagem de Características - Manioca",
-			"props": {
-				"src": "assets/img/manioca-caracs.png",
-				"blockClass": ["manioca-caracs"]
-			}
-		},
+    "image#manioca-caracs": {
+        "title": "Imagem de Características - Manioca",
+        "props": {
+            "src": "assets/img/manioca-caracs.png",
+            "blockClass": ["manioca-caracs"]
+        }
+    },
 
     // MOBILE
 
@@ -102,6 +103,7 @@
             "similar-products",
             "custom-product-size",
             "condition-layout.product#product-availability",
+            "condition-layout.product#benefits-features",
             "custom-pdp-characteristics",
             "flex-layout.row#disclosure-specifications",
             "flex-layout.row#disclosure-nutritional-info",

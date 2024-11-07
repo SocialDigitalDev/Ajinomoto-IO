@@ -17,6 +17,9 @@
     "store.custom#food-service": {
         "path": "/food-service"
     },
+    "store.custom#amino-vital": {
+        "path": "/lp-amino-vital"
+    },
     "store.custom#busca-linx": {
         "path": "/busca"
     }

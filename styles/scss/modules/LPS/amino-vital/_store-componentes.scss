@@ -1,0 +1,138 @@
+.imageElement {
+
+  &--icon-benefit-1 {
+
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
+  }
+
+  &--icon-benefit-2 {
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
+  }
+
+  &--icon-benefit-3 {
+    @media (max-width: 1025px) {
+      max-width: 43px;
+      max-height: 43px;
+    }
+  }
+
+  &--image-amino-vital {
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 1025px) {
+      max-width: 239px;
+    }
+  }
+
+  &--brand-image-1 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--brand-image-2 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--brand-image-3 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--brand-image-4 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--brand-image-5 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--brand-image-6 {
+
+    @media (max-width: 1025px) {
+      max-width: 57px !important;
+      max-height: 57px !important;
+    }
+  }
+
+  &--main-banner-desktop {
+    margin-bottom: -7px;
+
+    @media (min-width: 1026px) and (max-width: 1200px) {
+      width: 100%;
+      max-width: initial !important
+    }
+  }
+
+  &--main-banner-mobile {
+    width: 100%;
+  }
+
+  &--image-check {
+    width: 65px;
+    height: 65px;
+
+    @media (max-width: 1025px) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &--image-left-amino {
+    display: block;
+    position: absolute;
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    max-height: 793px;
+    bottom: 0;
+    
+    @media (min-width: 1590px) {
+      max-height: 765px;
+      max-width: 888px;
+      width: 100%;
+    }
+  }
+
+  // pdp
+  &--amino-vital-benefits-img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--section-information) {
+  .container {
+    padding: 0;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--benefits-first-section-mobile) {
+  .container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "responsive-layout.desktop#for-who-section": {
+    "children": [
+      "flex-layout.row#top-message",
+      "flex-layout.row#wrapper-who-amino",
+      "flex-layout.row#golden-bar"
+    ]
+  },
+  "responsive-layout.tablet#for-who-section": {
+    "children": [
+      "flex-layout.row#top-message",
+      "slider-layout#text-test",
+      "flex-layout.row#golden-bar"
+    ]
+  },
+  "responsive-layout.phone#for-who-section": {
+    "children": [
+      "flex-layout.row#top-message",
+      "slider-layout#text-test",
+      "flex-layout.row#golden-bar"
+
+    ]
+  },
+  "flex-layout.row#top-message": {
+    "children": [
+      "rich-text#top-message-amino"
+    ],
+    "props": {
+      "blockClass": "top-message"
+    }
+  },
+  "rich-text#top-message-amino": {
+    "props": {
+      "text": "INDICADO PARA:",
+      "blockClass": "text-top-message",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#wrapper-who-amino": {
+    "props": {
+      "blockClass": "wrapper-for-who-lpp"
+    },
+    "children": [
+      "flex-layout.col#first-col-who",
+      "flex-layout.col#second-col-who"
+    ]
+  },
+  "flex-layout.col#first-col-who": {
+    "children": [
+      "flex-layout.row#lp-amino-1",
+      "flex-layout.row#lp-amino-2",
+      "flex-layout.row#lp-amino-3"
+    ],
+    "props": {
+      "blockClass": "cols-for-who"
+    }
+  },
+  "flex-layout.col#second-col-who": {
+    "children": [
+      "flex-layout.row#lp-amino-4",
+      "flex-layout.row#lp-amino-5"
+    ],
+    "props": {
+      "blockClass": "cols-for-who-second"
+    }
+  },
+  "flex-layout.row#lp-amino-1": {
+    "children": [
+      "flex-layout.row#image-check",
+      "rich-text#lp-amino-text-1"
+    ],
+    "props": {
+      "blockClass": [
+        "item-row-lp"
+      ]
+    }
+  },
+  "flex-layout.row#lp-amino-2": {
+    "children": [
+      "flex-layout.row#image-check",
+      "rich-text#lp-amino-text-2"
+    ],
+    "props": {
+      "blockClass": [
+        "item-row-lp"
+      ]
+    }
+  },
+  "flex-layout.row#lp-amino-3": {
+    "children": [
+      "flex-layout.row#image-check",
+      "rich-text#lp-amino-text-3"
+    ],
+    "props": {
+      "blockClass": [
+        "item-row-lp"
+      ]
+    }
+  },
+  "flex-layout.row#lp-amino-4": {
+    "children": [
+      "flex-layout.row#image-check",
+      "rich-text#lp-amino-text-4"
+    ],
+    "props": {
+      "blockClass": [
+        "item-row-lp"
+      ]
+    }
+  },
+  "flex-layout.row#lp-amino-5": {
+    "children": [
+      "flex-layout.row#image-check",
+      "rich-text#lp-amino-text-5"
+    ],
+    "props": {
+      "blockClass": [
+        "item-row-lp"
+      ]
+    }
+  },
+  "rich-text#lp-amino-text-1": {
+    "props": {
+      "text": "Atletas e praticante de atividade física",
+      "blockClass": "item-text-lp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#lp-amino-text-2": {
+    "props": {
+      "text": "Pessoas em dieta de emagracimento",
+      "blockClass": "item-text-lp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#lp-amino-text-3": {
+    "props": {
+      "text": "Pacientes Pós-Cirúrgico",
+      "blockClass": "item-text-lp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#lp-amino-text-4": {
+    "props": {
+      "text": "Para quem busca complementar a ingestão de proteína",
+      "blockClass": "item-text-lp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#lp-amino-text-5": {
+    "props": {
+      "text": "Idosos",
+      "blockClass": "item-text-lp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#image-check": {
+    "children": [
+      "image#icon-lp-amino"
+    ],
+    "props": {
+      "blockClass": [
+        "image-check-amino"
+      ]
+    }
+  },
+  "image#icon-lp-amino": {
+    "props": {
+      "src": "assets/img/check.png",
+      "maxHeight": "65",
+      "maxWidth": "65",
+      "blockClass": "image-check"
+    }
+  },
+"flex-layout.row#golden-bar": {
+    "props": {
+      "blockClass": [
+        "golden-bar"
+      ]
+    }
+  },
+"slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["flex-layout.row#for-who-column-mobile", "flex-layout.row#for-who-second-column-mobile"]
+  },
+  "flex-layout.row#for-who-column-mobile": {
+    "children": [
+      "flex-layout.col#first-col-who"
+    ],
+    "props": {
+      "blockClass": [
+        "mobile-column-for-who"
+      ]
+    }
+  },
+  "flex-layout.row#for-who-second-column-mobile": {
+    "children": [
+      "flex-layout.col#second-col-who"
+    ],
+    "props": {
+      "blockClass": [
+        "mobile-second-column-for-who"
+      ]
+    }
+  }  
+}

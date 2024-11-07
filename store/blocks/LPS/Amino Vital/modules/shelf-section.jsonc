@@ -1,0 +1,58 @@
+{
+  "flex-layout.row#shelf-section": {
+    "children": [
+      "list-context.product-list#shelf-lp-amino-vital",
+      "flex-layout.row#amino-shelf-image"
+    ],
+    "props": {
+      "blockClass": "amino-vital-shelf-container"
+    }
+  },
+  "list-context.product-list#shelf-lp-amino-vital": {
+    "title": "Amino Vital",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#amino-vital"
+    ],
+    "props": {
+      "maxItems": 12,
+      "skusFilter": "ALL",
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#amino-vital": {
+    "title": "SLIDER COLECAO",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "mobile": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": [
+        "shelf-amino-vital"
+      ],
+      "navigationStep": "page"
+    }
+  },
+  "flex-layout.row#amino-shelf-image": {
+    "children": [
+      "image#amino-shelf-section"
+    ],
+    "props": {
+      "blockClass": "amino-image-shelf"
+    }
+  },
+  "image#amino-shelf-section": {
+    "props": {
+      "src": "assets/img/lp-amino-vital/shelf-section.png",
+      "maxWidth": 600,
+      "maxHeight": 330,
+      "blockClass": "image-shelf-section"
+    }
+  }
+}
