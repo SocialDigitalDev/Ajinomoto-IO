@@ -1,0 +1,72 @@
+{
+    "responsive-layout.desktop#third-slider-op": {
+        "children": [
+            "flex-layout.row#third-slider-image"
+        ]
+    },
+    "responsive-layout.tablet#third-slider-op": {
+        "children": [
+            "flex-layout.row#third-slider-image-mobile"
+        ]
+    },
+    "responsive-layout.mobile#third-slider-op": {
+        "children": [
+            "flex-layout.row#third-slider-image-mobile"
+        ]
+    },
+    "flex-layout.row#third-slider-image": {
+        "props": {
+            "blockClass": "third-slider-image"
+        },
+        "children": [
+            "image#third-slider-image-lp-op",
+            "flex-layout.row#third-slider-lp-op-section"
+        ]
+    },
+    "flex-layout.row#third-slider-image-mobile": {
+        "props": {
+            "blockClass": "third-slider-image-mobile"
+        },
+        "children": [
+            "flex-layout.row#third-slider-lp-op-section"
+        ]
+    },
+    "image#third-slider-image-lp-op": {
+        "props": {
+            "src": "assets/img/lp-one-piece/image-slider.png",
+            "blockClass": "third-slider-image-lp-op"
+        }
+    },
+    "flex-layout.row#third-slider-lp-op-section": {
+        "title": "HOME VITRINE 1",
+        "children": [
+            "flex-layout.col#third-slider-products"
+        ],
+        "props": {
+            "blockClass": "third-slider-lp-op-section"
+        }
+    },
+    "flex-layout.col#third-slider-products": {
+        "children": [
+            "list-context.product-list#third-slider-context"
+        ],
+        "props": {
+            "blockClass": "third-slider-products"
+        }
+    },
+    // LIST SLIDER
+    "list-context.product-list#third-slider-context": {
+        "title": "PRATELEIRA",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-collection"
+        ],
+        "props": {
+            "maxItems": 12,
+            "skusFilter": "ALL",
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    }
+}

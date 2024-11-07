@@ -1,0 +1,54 @@
+.flexRow {
+    &--video-section-op {
+        max-width: 1247px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        @media (max-width: 1025px) {
+            padding: 0 20px;
+            margin: 59px 0 50px 0
+        }
+    }
+
+    &Content {
+        &--video-section-op {
+            background-image: url('assets/img/lp-one-piece/background-video.png');
+            padding: 45px 70px;
+
+            @media (max-width: 1025px) {
+                background-image: url('assets/img/lp-one-piece/background-mobile-video.png');
+                padding: 0;
+                padding: 16px 10px;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+                background-size: cover
+            }
+        }
+
+        &--text-image-video {
+            align-items: center;
+
+            @media (max-width: 1025px) {
+                display: flex
+            }
+
+            .stretchChildrenWidth {
+
+                &:first-child {
+                    width: 75% !important;
+                }
+
+                &:last-child {
+                    justify-content: unset;
+                    width: max-content !important
+                }
+            }
+        }
+    }
+}
+
+.flexCol {
+    &--title-area-op {
+        max-width: 401px
+    }
+}

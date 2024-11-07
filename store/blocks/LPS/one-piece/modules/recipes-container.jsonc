@@ -1,10 +1,33 @@
 {
+    "responsive-layout.desktop#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container"
+        ]
+    },
+    "responsive-layout.tablet#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container-mobile"
+        ]
+    },
+    "responsive-layout.mobile#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container-mobile"
+        ]
+    },
     "flex-layout.row#recipes-container": {
         "props": {
             "blockClass": "recipes-container"
         },
         "children": [
             "flex-layout.col#recipes-wrapper"
+        ]
+    },
+    "flex-layout.row#recipes-container-mobile": {
+        "props": {
+            "blockClass": "recipes-container-mobile"
+        },
+        "children": [
+            "flex-layout.col#text-section-op-mobile"
         ]
     },
     "flex-layout.col#recipes-wrapper": {
@@ -25,6 +48,16 @@
             "image#sanji"
         ]
     },
+    "flex-layout.col#text-section-op-mobile": {
+        "props": {
+            "blockClass": "text-section-op-mobile"
+        },
+        "children": [
+            "flex-layout.row#title-subtitle-op-mobile",
+            "rich-text#subtitle-section-op",
+            "flex-layout.row#info-card-recipes-op-lp"
+        ]
+    },
     "flex-layout.col#title-subtitle-op": {
         "props": {
             "blockClass": "title-subtitle-op"
@@ -32,6 +65,15 @@
         "children": [
             "rich-text#title-section-op",
             "rich-text#subtitle-section-op"
+        ]
+    },
+    "flex-layout.row#title-subtitle-op-mobile": {
+        "props": {
+            "blockClass": "title-subtitle-op-mobile"
+        },
+        "children": [
+            "rich-text#title-section-op",
+            "image#sanji"
         ]
     },
     "rich-text#title-section-op": {
@@ -62,9 +104,7 @@
             "slider-layout#slider-recipes-op"
         ]
     },
-
     //Infocards
-
     "slider-layout#slider-recipes-op": {
         "props": {
             "blockClass": [
@@ -84,7 +124,6 @@
             "info-card#infocard-recipe-3"
         ]
     },
-
     "info-card#infocard-recipe-1": {
         "props": {
             "id": "info-card-recipe-1",

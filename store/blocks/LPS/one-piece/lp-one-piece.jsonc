@@ -6,8 +6,14 @@
       "flex-layout.row#lp-op-prateleira",
       "flex-layout.row#information-brand",
       "flex-layout.row#info-card-container-lp-op",
-      "flex-layout.row#second-banner-lp-op",
-      "flex-layout.row#recipes-container"
+      "responsive-layout.desktop#second-banner",
+      "responsive-layout.mobile#second-banner",
+      "responsive-layout.desktop#recipes-op",
+      "responsive-layout.mobile#recipes-op",
+      "responsive-layout.desktop#third-slider-op",
+      "responsive-layout.mobile#third-slider-op",
+      "flex-layout.row#video-section-op",
+      "flex-layout.row#newsletter"
     ]
   }
 }

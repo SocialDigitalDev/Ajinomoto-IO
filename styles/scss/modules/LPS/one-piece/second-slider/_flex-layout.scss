@@ -1,56 +1,81 @@
 .flexRowContent {
-    &--wrapper-inforcard-op-1{
+    &--wrapper-inforcard-op-1 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
-    &--wrapper-inforcard-op-2{
+
+    &--wrapper-inforcard-op-2 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
-    &--wrapper-inforcard-op-3{
+
+    &--wrapper-inforcard-op-3 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
-    &--wrapper-inforcard-op-4{
+
+    &--wrapper-inforcard-op-4 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
-    &--wrapper-inforcard-op-5{
+
+    &--wrapper-inforcard-op-5 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
-    &--wrapper-inforcard-op-6{
+
+    &--wrapper-inforcard-op-6 {
         display: flex;
         flex-flow: column;
         height: 495px;
     }
+
     &--wrapper-inforcard-op-1 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
+
     &--wrapper-inforcard-op-2 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
+
     &--wrapper-inforcard-op-3 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
+
     &--wrapper-inforcard-op-4 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
+
     &--wrapper-inforcard-op-5 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
+
     &--wrapper-inforcard-op-6 .stretchChildrenWidth {
-        width: 100%!important
+        width: 100% !important
     }
 }
 
-.flexColChild{
+.flexColChild {
     &--info-card-row-wrapper-lp-op {
-        padding: 0 290px 49px 290px
+        padding: 0 290px 49px 290px;
+
+        @media (max-width: 1025px) {
+            padding: 0 0 20px 0
+            
+        }
+    }
+}
+
+.flexRow {
+    &--ajinomoto {
+        &--info-card-products-lp-op {
+            padding-left: 23px;
+            padding-right: 23px;
+        }
     }
 }

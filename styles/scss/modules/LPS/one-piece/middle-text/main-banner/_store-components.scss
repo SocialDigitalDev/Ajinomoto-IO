@@ -1,6 +1,10 @@
 .imageElement{
 
     &--main-banner-op-mobile{
-        width: 100%
+        width: 100%;
+
+        @media (max-width: 1025px) {
+            margin-top: 20px;
+        }
     }
 }

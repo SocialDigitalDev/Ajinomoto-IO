@@ -1,19 +1,108 @@
 .flexRow {
+
+    &--info-card-recipes-op-lp {
+        padding-bottom: 107px
+    }
+
     &--recipes-container {
-        padding: 0 145px
+        padding: 0;
+
+        @media (max-width: 1025px) {
+            padding: 0
+        }
+    }
+
+    &--recipes-container-mobile {
+        padding-bottom: 50px
     }
 
     &Content {
+
+        &--title-subtitle-op-mobile {
+            justify-content: center;
+
+            @media (max-width: 1025px) {
+                align-items: center
+            }
+        }
+
+        &--title-subtitle-op-mobile .stretchChildrenWidth {
+
+            &:first-child {
+                max-width: 224px
+            }
+
+            &:last-child {
+                max-width: 99px;
+                max-height: 174px;
+            }
+        }
+
+        &--text-section-op {
+            align-items: center;
+        }
+
         &--recipes-container {
-            background-image: url('assets/img/lp-one-piece/papiro-recipes.png')
+            background-image: url('assets/img/lp-one-piece/papiro-recipes.png');
+            margin: 0 auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 75px;
+            background-position: center;
+        }
+
+        &--recipes-container-mobile {
+            @media (max-width: 1025px) {
+                background-image: url('assets/img/lp-one-piece/papiro-recipe-mobile.png') !important;
+                height: 720px;
+            }
+        }
+
+        &--title-subtitle-op-mobile {
+            @media (max-width: 1025px) {
+                display: flex;
+            }
+        }
+
+        &--text-section-op .stretchChildrenWidth {
+
+            &:first-child {
+                max-width: 775px !important;
+                width: 100% !important
+            }
+
+            &:last-child {
+                width: 100%;
+                max-width: 90px;
+                max-height: 154px;
+            }
         }
     }
 }
 
-.flexCol{
-    &Child{
+.flexCol {
+
+    &--text-section-op-mobile {
+        padding-top: 20px
+    }
+
+    &Child {
+
+        &--title-subtitle-op {
+        }
         &--recipes-wrapper {
-            padding: 0 299px
+            justify-content: center;
+            display: flex;
+
+            @media(max-width: 1025px) {
+                padding: 0
+            }
+        }
+
+        &--text-section-op-mobile {
+            @media(max-width: 1025px) {
+                padding: 0 20px;
+            }
         }
     }
 }

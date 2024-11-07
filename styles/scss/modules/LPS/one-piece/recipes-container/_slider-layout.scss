@@ -1,0 +1,13 @@
+.sliderTrack {
+    &--slider-recipes-op {
+        gap: 15px
+    }
+}
+
+.slide {
+    &--slider-recipes-op {
+        &--visible {
+            max-height: 324px;
+        }
+    }
+}

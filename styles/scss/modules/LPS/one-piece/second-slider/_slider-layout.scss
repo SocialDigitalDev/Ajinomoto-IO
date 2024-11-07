@@ -1,6 +1,40 @@
-.slideChildrenContainer{
+.slideChildrenContainer {
     &--slider-lp-op {
         background-image: url('assets/img/lp-one-piece/papiro-infocard.png');
         max-width: 276px
+    }
+}
+
+.sliderArrows {
+    &--slider-lp-op {
+        background: white !important;
+        border: solid;
+        border-radius: 50%;
+        border-color: white;
+        width: 37px;
+        height: 37px;
+    }
+}
+
+.caretIcon {
+    &--slider-lp-op {
+        color: black !important;
+    }
+}
+
+.paginationDot {
+    &--slider-lp-op--isActive {
+        background-color: white !important;
+    }
+
+    &--slider-lp-op {
+        background: transparent !important;
+        border: 1px solid white !important;
+    }
+}
+
+.paginationDotsContainer {
+    &--slider-lp-op {
+        bottom:-25px!important
     }
 }

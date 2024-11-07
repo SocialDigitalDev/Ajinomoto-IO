@@ -6,25 +6,21 @@
 	margin: 0 auto;
 	padding: 40px 14px 26px;
 	min-height: 259px;
-
 	@include media(">desktop") {
 		max-width: 1366px;
 	}
 
 	.texto-container {
 		display: flex;
-
 		.texto-newsletter {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			flex-basis: 240px;
 			margin-right: 20px;
-
 			@include media(">phone", "<desktop") {
 				margin-right: 30px;
 			}
-
 			@include media("<=phone") {
 				margin-bottom: 16px;
 				margin-right: 6px;
@@ -47,16 +43,13 @@
 				font-size: 12px;
 				line-height: normal;
 				text-align: left;
-			}
+			}		
 		}
-
 		.icon {
 			flex-basis: 125px;
-
 			@include media("<=phone") {
 				flex-basis: 82px;
 			}
-
 			i {
 				background-image: url(../../../assets/svg/panda/ico_panda-newsletter.svg);
 				background-repeat: no-repeat;
@@ -64,12 +57,10 @@
 				width: 125px;
 				height: 181px;
 				display: block;
-
 				@include media(">phone", "<desktop") {
 					width: 102px;
 					height: 146px;
 				}
-
 				@include media("<=phone") {
 					max-width: 82px;
 					height: 118px;
@@ -84,7 +75,7 @@
 		justify-content: space-between;
 		max-width: 770px;
 		margin: 0 auto;
-
+		
 		@include media("<=phone") {
 			flex-direction: column;
 		}
@@ -92,7 +83,6 @@
 		.container-form {
 			width: 100%;
 			max-width: 337px;
-
 			@include media("<=phone") {
 				display: flex;
 				flex-direction: column;
@@ -101,7 +91,6 @@
 
 			&__input {
 				margin-bottom: 15px;
-
 				@include media("<=phone") {
 					order: 1;
 				}
@@ -114,11 +103,9 @@
 					background: $white;
 					border: 0.5px solid $gray-2;
 					background: $white;
-
 					&:first-child {
 						margin-bottom: 10px;
 					}
-
 					@include media("<=phone") {
 						padding: 8px 12px 8px 12px;
 						margin-bottom: 8px;
@@ -130,7 +117,6 @@
 						background-repeat: no-repeat;
 						display: inline-block;
 						position: relative;
-
 						&.icon__user {
 							background-image: url(../../../assets/svg/ico_user-newsletter.svg);
 							width: 14px;
@@ -153,7 +139,6 @@
 						border: none;
 						padding-left: 15px;
 						width: 100%;
-
 						@include media("<=phone") {
 							text-align: center;
 							padding-left: 5px;
@@ -164,7 +149,6 @@
 
 			&__checkbox {
 				margin-bottom: 20px;
-
 				@include media("<=phone") {
 					order: 3;
 				}
@@ -177,11 +161,9 @@
 					line-height: normal;
 					display: flex;
 					align-items: center;
-
 					@media (max-width: 320px) {
 						font-size: 11px;
 					}
-
 					a {
 						color: $gray-2;
 						text-decoration: underline;
@@ -200,13 +182,13 @@
 					-webkit-appearance: none;
 					outline: none;
 					cursor: pointer;
-
 					@media (max-width: 320px) {
 						margin-right: 5px;
 					}
 
 					&:checked {
-						background: url(../../../assets/svg/ico_checkbox.svg) no-repeat center center,
+						background: url(../../../assets/svg/ico_checkbox.svg)
+								no-repeat center center,
 							transparent;
 						background-size: 14px;
 					}
@@ -218,12 +200,10 @@
 				justify-content: flex-end;
 				align-items: center;
 				position: relative;
-
 				@include media("<=phone") {
 					order: 2;
 					margin-bottom: 18px;
 				}
-
 				@media (max-width: 320px) {
 					margin-bottom: 10px;
 				}
@@ -272,7 +252,6 @@
 					display: block;
 					text-align: center;
 					padding: 6px;
-
 					strong {
 						font-weight: $semi-bold;
 					}
@@ -291,27 +270,6 @@
 					color: $red-3;
 				}
 			}
-		}
-	}
-}
-
-.render-route-store-custom-lp-one-piece {
-	.custom-newsletter {
-		max-width: 1920px;
-		margin: 0 auto;
-
-		.texto-container {
-
-			.icon {
-				i {
-					background-image: url(../../../assets/img/lp-one-piece/chopper-character.png);
-
-					@media (max-width: 1025px) {
-						background-size: cover!important;
-					}
-				}
-			}
-
 		}
 	}
 }

@@ -13,9 +13,17 @@
       "blockClass": "first-text-op"
     },
     "children": [
-      "rich-text#first-text-lp-op",
-      "image#nami-op",
-      "image#usopp-op"
+     "flex-layout.row#first-text-op-apoio",
+     "image#usopp-op"
+    ]
+  },
+  "flex-layout.row#first-text-op-apoio": {
+    "props": {
+      "blockClass": "first-text-op-apoio"
+    },
+    "children": [
+     "rich-text#first-text-lp-op",
+      "image#nami-op"
     ]
   },
   "rich-text#first-text-lp-op": {

@@ -274,3 +274,14 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+//LP One Piece
+
+:global(.vtex-flex-layout-0-x-flexColChild--wrapper-videos) :global(.videoEl){
+	min-height: 380px;
+
+	@media (max-width: 1025px) {
+		min-height: unset;
+		max-height: 174px
+	}
+}

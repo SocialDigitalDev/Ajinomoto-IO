@@ -1,0 +1,67 @@
+{
+    "flex-layout.row#video-section-op": {
+        "props": {
+            "blockClass": "video-section-op"
+        },
+        "children": [
+             "flex-layout.col#title-area-op",
+             "flex-layout.col#wrapper-videos"
+        ]
+    },
+    "flex-layout.col#title-area-op": {
+        "props": {
+            "blockClass": "title-area-op"
+        },
+        "children": [
+            "flex-layout.row#text-image-video",
+            "rich-text#second-text-video-op"
+        ]
+    },
+    "flex-layout.row#text-image-video": {
+        "props": {
+            "blockClass": "text-image-video"
+        },
+        "children": [
+            "rich-text#text-video-op",
+            "image#zoro-character"
+        ]
+    },
+    "rich-text#text-video-op": {
+        "props": {
+            "text": "Uma experiência única como essa, nem o Zoro vai perder!",
+            "blockClass": "text-video-op"
+        }
+    },
+    "image#zoro-character": {
+        "props": {
+            "src": "assets/img/lp-one-piece/zoro-character.png",
+            "blockClass":"zoro-character"
+        }
+    },
+    "rich-text#second-text-video-op": {
+        "props": {
+            "text": "Assista ao vídeo e veja como o **espadachim e o restante da tripulação** se uniram para trazer sabor e **aventura à sua mesa**.\n Embarque agora nessa jornada épica!",
+            "blockClass": "second-text-video-op"
+        }
+    },
+    "flex-layout.col#wrapper-videos": {
+        "props": {
+            "blockClass": "wrapper-videos"
+        },
+        "children": [
+            "iframe#lp-op"
+        ]
+    },
+    "iframe#lp-op": {
+        "props": {
+          "width": "100%",
+          "src": "https://www.youtube.com/embed/2_VOkf92WkQ?si=2TyEK6WbEjWp07Dg?showinfo=0&amp;controls=2&amp;rel=0",
+          "className": "videoEl",
+          "title": "video-op",
+          "height": "100%"
+        }
+      }
+}
+
+//<iframe width="560" height="315" src="https://www.youtube.com/embed/xfG5hRMGe7E?si=v4pQG_v09lo1JOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+//<iframe width="560" height="315" src="https://www.youtube.com/embed/2_VOkf92WkQ?si=2TyEK6WbEjWp07Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

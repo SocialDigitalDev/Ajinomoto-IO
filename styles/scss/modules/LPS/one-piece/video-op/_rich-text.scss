@@ -1,0 +1,35 @@
+.paragraph {
+    &--text-video-op {
+        font-family: $OpenSans;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 32.68px;
+        text-align: left;
+        margin: 0;
+
+        @media (max-width: 1025px) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    &--second-text-video-op {
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: center;
+        margin-bottom: 0;
+
+        @media (max-width: 1025px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+.container {
+    &--second-text-video-op {
+        margin-bottom: 10px
+    }
+}

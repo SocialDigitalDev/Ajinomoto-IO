@@ -6,6 +6,11 @@
         line-height: 43.58px;
         text-align: center;
         color: white;
+
+        @media (max-width: 1025px) {
+            font-size: 26px;
+            line-height: 35.41px;
+        }
     }
 
     &--title-infocard-lp-op {
@@ -21,6 +26,7 @@
     &--title-inforcards-op {
         justify-content: center;
     }
+
     &--title-infocard-lp-op {
         justify-content: center;
         display: flex

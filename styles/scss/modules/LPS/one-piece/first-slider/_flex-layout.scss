@@ -3,7 +3,12 @@
     &Child {
 
         &--lp-op-col-prateleira {
-            padding: 0 338px
+            max-width: 1234px;
+            margin: 0 auto;
+
+            @media (max-width: 1025px) {
+            padding: unset
+            }
         }
     }
 }

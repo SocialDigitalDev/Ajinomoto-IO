@@ -1,23 +1,196 @@
 .infoCardHeadline {
+    &--infocard-recipe-1::before {
+        content: url('assets/img/lp-one-piece/luffy-symbol.png')
+    }
+
+    &--infocard-recipe-2::before {
+        content: url('assets/img/lp-one-piece/sanji-symbol.png')
+    }
+
+    &--infocard-recipe-3::before {
+        content: url('assets/img/lp-one-piece/zoro-symbol.png')
+    }
+
     &--infocard-recipe-1 {
         font-family: Open Sans;
         font-size: 16px;
         font-weight: 700;
         line-height: 21.79px;
         text-align: center;
+        margin: unset !important;
+        display: flex;
+        flex-flow: column;
     }
+
     &--infocard-recipe-2 {
         font-family: Open Sans;
         font-size: 16px;
         font-weight: 700;
         line-height: 21.79px;
         text-align: center;
+        margin: unset !important
     }
+
     &--infocard-recipe-3 {
         font-family: Open Sans;
         font-size: 16px;
         font-weight: 700;
         line-height: 21.79px;
         text-align: center;
+        margin: unset !important
+    }
+}
+
+.infoCardContainer {
+    &--infocard-recipe-1 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+
+        @media (max-width: 1025px) {
+            display: flex;
+            max-width: 324px;
+        }
+    }
+
+    &--infocard-recipe-2 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+
+        @media (max-width: 1025px) {
+            display: flex;
+            max-width: 324px;
+        }
+    }
+
+    &--infocard-recipe-3 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+
+        @media (max-width: 1025px) {
+            display: flex;
+            max-width: 324px;
+        }
+    }
+}
+
+.infoCardSubhead {
+    &--infocard-recipe-1 {
+        font-family: $OpenSans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: center;
+    }
+
+    &--infocard-recipe-2 {
+        font-family: $OpenSans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: center;
+    }
+
+    &--infocard-recipe-3 {
+        font-family: $OpenSans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: center;
+    }
+}
+
+.infoCardCallActionContainer {
+    &--infocard-recipe-1 {
+        max-width: 154px;
+        max-height: 36px;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: white;
+        background-color: white;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 100%
+    }
+
+    &--infocard-recipe-2 {
+        max-width: 154px;
+        max-height: 36px;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: white;
+        background-color: white;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 100%
+    }
+
+    &--infocard-recipe-3 {
+        max-width: 154px;
+        max-height: 36px;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: white;
+        background-color: white;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 100%
+    }
+}
+
+.infoCardCallActionText {
+    &--infocard-recipe-1 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: #E60012;
+    }
+
+    &--infocard-recipe-2 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: #E60012;
+    }
+
+    &--infocard-recipe-3 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: #E60012;
+    }
+}
+
+.infoCardImage {
+    &--infocard-recipe-1 {
+        width: 100% !important
+    }
+
+    &--infocard-recipe-2 {
+        width: 100% !important
+    }
+
+    &--infocard-recipe-3 {
+        width: 100% !important
     }
 }

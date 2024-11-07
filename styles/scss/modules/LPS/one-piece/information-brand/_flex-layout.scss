@@ -1,33 +1,65 @@
 .flexRow {
 
     &--information-brand {
-        padding: 50px 378px 0 378px
 
+        max-width: 1166px;
+        margin: 0 auto;
+
+        @media (max-width: 1025px) {
+            padding: 35px 0 0 0
+        }
     }
 
     &Content {
 
-        &--information-brand{
+        &--information-brand {
             background-image: url('assets/img/lp-one-piece/Papiro.png');
-            height: 821px
+            height: 821px;
+
+            @media (max-width: 1025px) {
+                background-image: url('assets/img/lp-one-piece/Papiromobile.png')!important;
+            }
+        }
+
+        &--lp-op-information-sugar {
+            padding: 0 127px 0 153px;
+
+            @media (max-width: 1025px) {
+                padding: unset
+            }
         }
     }
 }
 
 .flexCol {
 
-    &--information-title-brand{
+    &--information-title-brand {
         padding-top: 101px;
+
+        @media (max-width: 1025px) {
+            max-width: 318px;
+            padding-top: 71px;
+        }
     }
 
     &Child {
-        &--information-title-brand{
+        &--information-title-brand {
             display: flex;
             justify-content: center;
-
         }
-        &--text-sodio-lp-op{
-            padding-left: 127px;
+
+        &--column-brand {
+
+            @media (max-width: 1025px) {
+                height: 100%;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        &--text-sodio-lp-op {
+            justify-content: center;
+            display: flex;
         }
     }
 }

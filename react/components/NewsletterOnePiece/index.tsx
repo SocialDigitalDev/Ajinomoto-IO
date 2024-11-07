@@ -6,7 +6,7 @@ import { schemaEditor } from "./schemaEditor";
 
 import "./global.css";
 
-const NewsletterHome = ({title = defaultProps.title, subtitle = defaultProps.subtitle, button = defaultProps.button}) => {
+const NewsletterOnePiece = () => {
 	const [email, setEmail] = useState("");
 	const [nome, setName] = useState("");
 	const [aceite, setAceite] = useState(false);
@@ -101,15 +101,15 @@ const NewsletterHome = ({title = defaultProps.title, subtitle = defaultProps.sub
 	return (
 		<>
 			{canUseDOM && (
-				<div className="custom-newsletter">
+				<div className="custom-newsletter-op">
 					<div className="container-newsletter">
 						<div className="texto-container">
 							<div className="texto-newsletter">
 								<span className="texto-newsletter__titulo">
-									{title}
+									{defaultProps.title}
 								</span>
 								<span className="texto-newsletter__subtitulo">
-									{subtitle}
+									{defaultProps.subtitle}
 								</span>
 							</div>
 							<div className="icon">
@@ -217,7 +217,7 @@ const NewsletterHome = ({title = defaultProps.title, subtitle = defaultProps.sub
 									)}
 								</div>
 								<button className="container-newsletter-form__button">
-									{button}
+									{defaultProps.button}
 								</button>
 							</div>
 						</form>
@@ -228,7 +228,7 @@ const NewsletterHome = ({title = defaultProps.title, subtitle = defaultProps.sub
 	);
 };
 
-NewsletterHome.defaultProps = defaultProps;
-NewsletterHome.schema = schemaEditor;
+NewsletterOnePiece.defaultProps = defaultProps;
+NewsletterOnePiece.schemaEditor = schemaEditor;
 
-export default NewsletterHome;
+export default NewsletterOnePiece;

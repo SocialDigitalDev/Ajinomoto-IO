@@ -1,64 +1,102 @@
 .flexRow {
 
   &--middle-text-section-op {
-    background-image: url("assets/img/lp-one-piece/bg-middle-text.png");
-    padding: 86px 276px 0 276px;
+    background-image: url(https://lojaajinomoto.vtexassets.com/assets/vtex/assets-builder/lojaajinomoto.store-theme/0.1.214/img/lp-one-piece/bg-middle-text___cf5cbe0a500a4450d2a0dd6d6fae001c.png);
+    padding: 86px 0 0 0;
     background-color: #642B1D;
-    
+    max-width: 1639px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+
     @media (max-width: 1028px) {
-      padding: unset
+      padding: 46px 21px 0 21px
     }
   }
 
   &Content {
 
+    &--first-text-op-apoio {
+      gap: 8px;
+
+      @media (max-width: 1025px) {
+        display: flex;
+        gap: unset;
+        flex-flow: row-reverse !important
+      }
+    }
+
+    &--first-text-op .stretchChildrenWidth {
+      &:last-child {
+        width: fit-content !important;
+
+        @media(max-width: 1025px) {
+          width: 91px;
+          height: 92px;
+        }
+      }
+
+    }
+
     &--second-text-op {
-      max-width: 586px!important;
+      max-width: 586px !important;
     }
 
     &--first-text-op {
 
+      gap: 35px;
+
       @media (max-width: 1028px) {
-        display:flex
+        display: flex;
+        gap: unset
       }
     }
 
     &--middle-text-section-op {
       align-items: center;
+      gap: 39px;
+
+      @media (max-width: 1025px) {
+        gap: 52px;
+        display: flex;
+        flex-flow: column;
+      }
     }
 
-    &--first-text-op .stretchChildrenWidth {
+    &--first-text-op-apoio .stretchChildrenWidth {
       &:first-child {
         max-width: 381px;
-        width: 100% !important;
+        width: 380px !important;
         align-items: center;
+
+        @media (max-width: 1025px) {
+          width: 100% !important
         }
       }
 
-      &:nth-child(2n) {
-        max-width: 160px;
-        width: 100% !important;
-        align-items: center;
-        padding-left: 8px
-      }
-
-      &:nth-child(3n) {
-        max-width: 160px;
-        width: 100% !important;
-        align-items: center;
-      }
-    }
-
-    &--middle-text-section-op .stretchChildrenWidth {
-
-      &:first-child {
-        max-width: 744px;
-        width: 100%!important
-      }
-
       &:last-child {
-        width: 100% !important;
-        padding-left: 36px;
+        align-items: center;
+        width: fit-content !important;
+
+        @media (max-width: 1025px) {
+          width: 87px !important;
+          height: 92px;
+        }
       }
     }
   }
+
+  &--middle-text-section-op .stretchChildrenWidth {
+
+    &:first-child {
+      flex: 1;
+      width: max-content !important;
+
+      @media (max-width: 1025px) {
+        width: initial !important
+      }
+    }
+
+    &:last-child {}
+  }
+}
