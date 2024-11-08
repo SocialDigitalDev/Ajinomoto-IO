@@ -12,6 +12,8 @@
 
 .flexRow {
     &--third-slider-image {
-        padding-top: 50px
+        padding-top: 50px;
+        max-width: 1428px;
+        margin: 0 auto;
     }
 }

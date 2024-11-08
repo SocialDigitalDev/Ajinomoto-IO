@@ -17,21 +17,36 @@
             height: 821px;
 
             @media (max-width: 1025px) {
-                background-image: url('assets/img/lp-one-piece/Papiromobile.png')!important;
+                background-image: url('assets/img/lp-one-piece/Papiromobile.png') !important;
             }
         }
 
         &--lp-op-information-sugar {
-            padding: 0 127px 0 153px;
+            max-width: 929px;
+            margin: 0 auto;
+            height: 456px;
 
             @media (max-width: 1025px) {
                 padding: unset
+            }
+        }
+
+        &--lp-op-information-sugar .stretchChildrenWidth {
+            &:last-child {
+                width: 100%;
+                max-width: 456px;
+                max-height: 343px;
+                height: 100%;
             }
         }
     }
 }
 
 .flexCol {
+
+    &--text-sodio-lp-op {
+        padding-top: 35px;
+    }
 
     &--information-title-brand {
         padding-top: 101px;
@@ -58,8 +73,26 @@
         }
 
         &--text-sodio-lp-op {
-            justify-content: center;
-            display: flex;
+            &:first-child {
+                justify-content: center;
+                display: flex;
+                height: 100%;
+                max-height: 66px;
+                margin-bottom: 20px;
+
+                @media(max-width: 1025px) {
+                    height: unset;
+                    margin-bottom: unset;
+                }
+            }
+
+            &:nth-child(2n) {
+                max-height: 108px;
+            }
+
+            &:last-child {
+                max-height: 107px;
+            }
         }
     }
 }

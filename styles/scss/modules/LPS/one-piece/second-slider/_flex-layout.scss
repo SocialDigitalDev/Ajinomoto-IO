@@ -62,11 +62,17 @@
 
 .flexColChild {
     &--info-card-row-wrapper-lp-op {
-        padding: 0 290px 49px 290px;
 
-        @media (max-width: 1025px) {
-            padding: 0 0 20px 0
-            
+        &:first-child {
+            padding: 0 290px 49px 290px;
+        }
+
+        &:last-child {
+            padding: 0 290px 94px 290px;
+
+            @media (max-width: 1025px) {
+                padding: 0 0 20px 0
+            }
         }
     }
 }
@@ -74,8 +80,7 @@
 .flexRow {
     &--ajinomoto {
         &--info-card-products-lp-op {
-            padding-left: 23px;
-            padding-right: 23px;
+            padding: 50px 23px 0 23px
         }
     }
 }

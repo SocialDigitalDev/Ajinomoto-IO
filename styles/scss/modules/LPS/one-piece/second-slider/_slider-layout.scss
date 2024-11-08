@@ -22,19 +22,25 @@
     }
 }
 
-.paginationDot {
-    &--slider-lp-op--isActive {
-        background-color: white !important;
+.paginationDotsContainer {
+    .paginationDot {
+        &--slider-lp-op {
+            &--isActive {
+                background-color: white !important;
+            }
+        }
     }
+}
 
+.paginationDot {
     &--slider-lp-op {
-        background: transparent !important;
-        border: 1px solid white !important;
+        background-color: transparent!important;
+        border-color: white!important
     }
 }
 
 .paginationDotsContainer {
     &--slider-lp-op {
-        bottom:-25px!important
+        bottom: -25px !important
     }
 }

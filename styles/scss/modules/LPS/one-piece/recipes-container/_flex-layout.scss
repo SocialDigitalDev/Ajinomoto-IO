@@ -5,7 +5,8 @@
     }
 
     &--recipes-container {
-        padding: 0;
+        max-width: 1629px;
+        margin: 0 auto;
 
         @media (max-width: 1025px) {
             padding: 0

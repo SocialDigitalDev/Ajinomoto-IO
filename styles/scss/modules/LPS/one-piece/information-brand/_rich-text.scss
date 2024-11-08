@@ -41,9 +41,12 @@
         font-size: 20px;
         line-height: 27px;
         text-align: center;
+        padding-top: 20px;
+        color: black;
 
         @media (max-width: 1025px) {
             display: none;
+            padding:unset
         }
     }
 }
@@ -60,9 +63,5 @@
     &--sodio-url {
         justify-content: center;
         display: flex;
-    }
-
-    &--sodio-content {
-        max-width: 315px;
     }
 }

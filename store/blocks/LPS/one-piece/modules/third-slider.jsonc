@@ -61,12 +61,30 @@
             "product-summary.shelf"
         ],
         "children": [
-            "slider-layout#shelf-collection"
+            "slider-layout#third-slider-op"
         ],
         "props": {
             "maxItems": 12,
             "skusFilter": "ALL",
             "orderBy": "OrderByReleaseDateDESC"
+        }
+    },
+    "slider-layout#third-slider-op": {
+        "title": "SLIDER OP",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "mobile": 2
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "blockClass": [
+                "shelf",
+                "shelf-collection"
+            ],
+            "navigationStep": "page"
         }
     }
 }

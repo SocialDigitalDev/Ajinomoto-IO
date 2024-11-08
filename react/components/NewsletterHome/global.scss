@@ -307,11 +307,25 @@
 					background-image: url(../../../assets/img/lp-one-piece/chopper-character.png);
 
 					@media (max-width: 1025px) {
-						background-size: cover!important;
+						background-size: cover !important;
 					}
 				}
 			}
 
+		}
+	}
+
+	.custom-newsletter {
+		.texto-container {
+			.texto-newsletter {
+				.texto-newsletter__subtitulo {
+					font-family: $OpenSans;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 19.07px;
+					text-align: left;
+				}
+			}
 		}
 	}
 }

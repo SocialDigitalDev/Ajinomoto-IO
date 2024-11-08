@@ -28,7 +28,9 @@
         font-weight: 700;
         line-height: 21.79px;
         text-align: center;
-        margin: unset !important
+        margin: unset !important;
+        display: flex;
+        flex-flow: column
     }
 
     &--infocard-recipe-3 {
@@ -46,6 +48,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+        padding: 0;
 
         @media (max-width: 1025px) {
             display: flex;
@@ -57,6 +60,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+        padding: 0;
 
         @media (max-width: 1025px) {
             display: flex;
@@ -68,6 +72,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('https://lojaajinomoto.vtexassets.com/assets/vtex.file-manager-graphql/images/8fef8c46-35b0-4faf-8d58-677db72d0dba___70fd54337b5c02e915f7bad652de6d0c.png') !important;
+        padding: 0;
 
         @media (max-width: 1025px) {
             display: flex;
@@ -83,6 +88,8 @@
         font-weight: 400;
         line-height: 16.34px;
         text-align: center;
+        padding: 20px 0;
+        margin-top: 0
     }
 
     &--infocard-recipe-2 {
@@ -91,6 +98,8 @@
         font-weight: 400;
         line-height: 16.34px;
         text-align: center;
+        padding: 20px 0;
+        margin-top: 0
     }
 
     &--infocard-recipe-3 {
@@ -99,6 +108,7 @@
         font-weight: 400;
         line-height: 16.34px;
         text-align: center;
+        margin-top: 27px;
     }
 }
 
@@ -116,7 +126,8 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 100%
+        width: 100%;
+        margin: 0 auto
     }
 
     &--infocard-recipe-2 {
@@ -132,7 +143,8 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 100%
+        width: 100%;
+        margin: 0 auto
     }
 
     &--infocard-recipe-3 {
@@ -148,7 +160,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -192,5 +204,22 @@
 
     &--infocard-recipe-3 {
         width: 100% !important
+    }
+}
+
+.infoCardTextContainer {
+    &--infocard-recipe-1 {
+        margin: 0 10px;
+        padding: 0
+    }
+
+    &--infocard-recipe-2 {
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    &--infocard-recipe-3 {
+        margin: 0 10px;
+        padding: 15px 0 0 0;
     }
 }

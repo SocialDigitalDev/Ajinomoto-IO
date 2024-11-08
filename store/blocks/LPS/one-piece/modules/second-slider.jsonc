@@ -26,7 +26,7 @@
     "rich-text#title-inforcards-op": {
         "props": {
             "blockClass": "title-inforcards-op",
-            "text": "Escolha seus personagens favoritos:"
+            "text": "Escolha seus \n personagens favoritos:"
         }
     },
     // Linha dos infocards
@@ -175,7 +175,7 @@
             "id": "info-card-produto-5",
             "isFullModeStyle": false,
             "textPosition": "left",
-            "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+            "imageUrl": "assets/img/lp-one-piece/sanji-product.png",
             "callToActionText": "saiba mais",
             "callToActionUrl": "#",
             "callToActionMode": "link",
@@ -187,7 +187,7 @@
             "id": "info-card-produto-6",
             "isFullModeStyle": false,
             "textPosition": "left",
-            "imageUrl": "assets/img/lp-black-friday/info-prod-1.jpg",
+            "imageUrl": "assets/img/lp-one-piece/chopper-product.png",
             "callToActionText": "saiba mais",
             "callToActionUrl": "#",
             "callToActionMode": "link",
