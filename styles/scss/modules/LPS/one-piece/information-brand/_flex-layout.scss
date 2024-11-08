@@ -37,6 +37,25 @@
                 max-width: 456px;
                 max-height: 343px;
                 height: 100%;
+
+                @media (max-width: 1025px) {
+                    max-width: 311px;
+                    max-height: 230px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-flow: column-reverse;
+                    gap: 13px;
+                }
+            }
+        }
+
+        &--lp-op-information-sugar .stretchChildrenWidth {
+            &:last-child::before {
+
+                @media (max-width: 1025px){
+                    content: "Saiba Mais";
+                    margin: 0 auto
+                }
             }
         }
     }
@@ -45,7 +64,7 @@
 .flexCol {
 
     &--text-sodio-lp-op {
-        padding-top: 35px;
+        gap: 40px
     }
 
     &--information-title-brand {

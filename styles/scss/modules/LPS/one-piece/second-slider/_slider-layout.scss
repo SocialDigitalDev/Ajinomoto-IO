@@ -34,13 +34,21 @@
 
 .paginationDot {
     &--slider-lp-op {
-        background-color: transparent!important;
-        border-color: white!important
+        background-color: transparent !important;
+        border-color: white !important
     }
 }
 
 .paginationDotsContainer {
     &--slider-lp-op {
         bottom: -25px !important
+    }
+}
+
+.slide {
+    &--slider-lp-op {
+        &--visible {
+            justify-content: center
+        }
     }
 }

@@ -65,6 +65,10 @@
 
         &:first-child {
             padding: 0 290px 49px 290px;
+
+            @media (max-width: 1025px) {
+                padding: 0 0 18px 0
+            }
         }
 
         &:last-child {
