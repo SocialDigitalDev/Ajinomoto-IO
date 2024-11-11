@@ -194,7 +194,7 @@
     },
 
     // banner
-    "condition-layout.product#amino-vital-banner": {
+    "condition-layout.product#aminovital-banner": {
         "props": {
             "conditions": [
                 {
