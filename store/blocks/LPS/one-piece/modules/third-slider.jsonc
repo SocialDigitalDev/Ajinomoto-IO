@@ -4,14 +4,9 @@
             "flex-layout.row#third-slider-image"
         ]
     },
-    "responsive-layout.tablet#third-slider-op": {
-        "children": [
-            "flex-layout.row#third-slider-image-mobile"
-        ]
-    },
     "responsive-layout.mobile#third-slider-op": {
         "children": [
-            "flex-layout.row#third-slider-image-mobile"
+            "flex-layout.row#third-slider-image-mobile-wrapper"
         ]
     },
     "flex-layout.row#third-slider-image": {
@@ -23,11 +18,21 @@
             "flex-layout.row#third-slider-lp-op-section"
         ]
     },
-    "flex-layout.row#third-slider-image-mobile": {
+    "flex-layout.row#third-slider-image-mobile-wrapper": {
+        "props": {
+            "blockClass": "third-slider-image-mobile-wrapper"
+        },
+        "children": [
+            "image#third-slider-image-lp-op",
+            "flex-layout.row#third-slider-lp-op-section"
+        ]
+    },
+    "flex-layout.col#third-slider-image-mobile": {
         "props": {
             "blockClass": "third-slider-image-mobile"
         },
         "children": [
+            "image#third-slider-image-lp-op",
             "flex-layout.row#third-slider-lp-op-section"
         ]
     },

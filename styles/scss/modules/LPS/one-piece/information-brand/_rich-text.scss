@@ -17,7 +17,9 @@
         color: #B51F23;
 
         @media (max-width: 1025px) {
-            margin: unset !important
+            margin: unset !important;
+            font-size: 20px;
+            line-height: 27px;
         }
     }
 
@@ -43,7 +45,6 @@
         text-align: center;
 
         @media (max-width: 1025px) {
-            display: none;
             padding: unset
         }
     }

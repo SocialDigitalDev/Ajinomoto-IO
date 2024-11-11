@@ -1,4 +1,14 @@
 {
+    "responsive-layout.desktop#information-brand": {
+        "children": [
+            "flex-layout.row#information-brand"
+        ]
+    },
+    "responsive-layout.mobile#information-brand-mobile": {
+        "children": [
+            "flex-layout.row#column-brand-mobile"
+        ]
+    },
     "flex-layout.row#information-brand": {
         "props": {
             "blockClass": "information-brand"
@@ -13,7 +23,7 @@
         },
         "children": [
             "flex-layout.col#title-brand",
-             "flex-layout.row#lp-op-information-sugar"
+            "flex-layout.row#lp-op-information-sugar"
         ]
     },
     "flex-layout.col#title-brand": {
@@ -78,5 +88,46 @@
             "blockClass": "sodio-url",
             "text": "Saiba mais"
         }
+    },
+
+
+
+
+    "flex-layout.row#column-brand-mobile": {
+        "props": {
+            "blockClass": "column-brand-mobile-row"
+        },
+        "children": [
+            "flex-layout.col#title-brand",
+            "flex-layout.col#lp-op-information-sugar-mobile"
+        ]
+    },
+    "flex-layout.col#text-sodio-lp-op-mobile": {
+        "props": {
+            "blockClass": "text-sodio-lp-op-mobile"
+        },
+        "children": [
+            "rich-text##sodio-title",
+            "rich-text##sodio-content"
+        ]
+    },
+    "flex-layout.col#lp-op-information-sugar-mobile": {
+        "props": {
+            "blockClass": "lp-op-information-sugar-mobile"
+        },
+        "children": [
+            "flex-layout.col#text-sodio-lp-op-mobile",
+            "image#steps-sugar",
+            "rich-text##sodio-url"
+        ]
+    },
+    "flex-layout.col#column-brand-mobile": {
+        "props": {
+            "blockClass": "column-brand-mobile"
+        },
+        "children": [
+            "flex-layout.col#title-brand",
+            "flex-layout.col#lp-op-information-sugar-mobile"
+        ]
     }
 }

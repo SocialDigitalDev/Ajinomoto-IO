@@ -8,6 +8,10 @@
         @media (max-width: 1025px) {
             padding: 35px 0 0 0
         }
+
+        &--lp-op-prateleira {
+            margin-bottom: 40px;
+        }
     }
 
     &Content {
@@ -52,11 +56,27 @@
         &--lp-op-information-sugar .stretchChildrenWidth {
             &:last-child::before {
 
-                @media (max-width: 1025px){
+                @media (max-width: 1025px) {
                     content: "Saiba Mais";
                     margin: 0 auto
                 }
             }
+        }
+
+        &--column-brand-mobile-row {
+            background-image: url('assets/img/lp-one-piece/papiro-brand.png') !important;
+            max-width: 836px;
+            margin: 0 auto;
+            background-size: cover;
+            min-height: 910px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-flow: column;
+        }
+
+        &--column-brand-mobile-row .stretchChildrenWidth {
+            max-width: 318px;
+            margin: 0 auto
         }
     }
 }
@@ -72,7 +92,7 @@
 
         @media (max-width: 1025px) {
             max-width: 318px;
-            padding-top: 71px;
+            padding-top: 110px;
         }
     }
 

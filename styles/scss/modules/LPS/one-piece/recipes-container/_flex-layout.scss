@@ -84,13 +84,15 @@
 .flexCol {
 
     &--text-section-op-mobile {
-        padding-top: 20px
+        padding-top: 20px;
+
+        @media (max-width: 1025px) {
+            padding-top: 40px;
+        }
     }
 
     &Child {
 
-        &--title-subtitle-op {
-        }
         &--recipes-wrapper {
             justify-content: center;
             display: flex;

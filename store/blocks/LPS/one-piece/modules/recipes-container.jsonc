@@ -85,7 +85,7 @@
     "rich-text#subtitle-section-op": {
         "props": {
             "blockClass": "subtitle-section-op",
-            "text": "Você vai aprender a cozinhar as receitas mais amadas pelos Chapéus de Palha, todas recomendadas pela nossa tripulação. Use Aji-no-moto® para elevar o sabor dessas delícias e transforme suas refeições em verdadeiras aventuras gastronômicas!"
+            "text": "Você vai aprender a cozinhar as receitas mais amadas pelos Chapéus de Palha, todas recomendadas pela nossa tripulação. \n \n Use Aji-no-moto® para elevar o sabor dessas delícias e transforme suas refeições em verdadeiras aventuras gastronômicas!"
         }
     },
     "image#sanji": {

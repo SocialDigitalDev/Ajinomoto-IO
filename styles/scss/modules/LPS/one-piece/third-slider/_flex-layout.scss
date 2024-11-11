@@ -8,6 +8,26 @@
             max-width: 773px !important
         }
     }
+
+    &--third-slider-image-mobile-wrapper {
+        gap: 50px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    &--third-slider-image-mobile-wrapper .stretchChildrenWidth{
+
+        &:first-child {
+            max-width: 374px;
+            margin: 0 auto;
+        }
+
+        &:last-child {
+            width: 100%!important;
+            max-width: 678px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .flexRow {
