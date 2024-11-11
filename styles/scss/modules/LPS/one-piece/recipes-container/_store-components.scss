@@ -127,7 +127,8 @@
         flex-flow: column;
         justify-content: center;
         width: 100%;
-        margin: 0 auto
+        margin: 0 auto;
+        text-decoration:none
     }
 
     &--infocard-recipe-2 {
@@ -144,7 +145,8 @@
         flex-flow: column;
         justify-content: center;
         width: 100%;
-        margin: 0 auto
+        margin: 0 auto;
+        text-decoration:none
     }
 
     &--infocard-recipe-3 {
@@ -161,6 +163,7 @@
         flex-flow: column;
         justify-content: center;
         width: 100%;
+        text-decoration:none
     }
 }
 
@@ -172,6 +175,7 @@
         line-height: 21.79px;
         text-align: left;
         color: #E60012;
+        text-decoration: none
     }
 
     &--infocard-recipe-2 {
@@ -181,6 +185,7 @@
         line-height: 21.79px;
         text-align: left;
         color: #E60012;
+        text-decoration: none
     }
 
     &--infocard-recipe-3 {
@@ -190,43 +195,67 @@
         line-height: 21.79px;
         text-align: left;
         color: #E60012;
+        text-decoration: none
     }
 }
 
 .infoCardImage {
     &--infocard-recipe-1 {
-        width: 100% !important
+        width: 100% !important;
+        max-height: 264px
     }
 
     &--infocard-recipe-2 {
-        width: 100% !important
+        width: 100% !important;
+        max-height: 264px
     }
 
     &--infocard-recipe-3 {
-        width: 100% !important
+        width: 100% !important;
+        max-height: 264px
     }
 }
 
 .infoCardTextContainer {
     &--infocard-recipe-1 {
         margin: 0 10px;
-        padding: 0
+        padding: 0;
+        max-width: 162px;
+        width: 100%
     }
 
     &--infocard-recipe-2 {
         margin: 0 10px;
         padding: 0;
+        max-width: 162px;
+        width: 100%
     }
 
     &--infocard-recipe-3 {
         margin: 0 10px;
         padding: 15px 0 0 0;
+        max-width: 162px;
+        width: 100%
     }
 }
 
 .imageElement {
     &--sanji-op {
-        width: 99px;
-        height: 174px;
+        width: 90px;
+        height: 154px;
+    }
+}
+
+.infoCardImageContainer {
+    &--infocard-recipe-1 {
+        max-height: 264px
+    }
+
+    &--infocard-recipe-2 {
+        max-height: 264px
+    }
+
+    &--infocard-recipe-3 {
+        max-height: 264px
     }
 }

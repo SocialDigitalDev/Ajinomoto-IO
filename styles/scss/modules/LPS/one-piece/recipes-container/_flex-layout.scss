@@ -34,8 +34,8 @@
             }
 
             &:last-child {
-                max-width: 99px;
-                max-height: 174px;
+                max-width: 90px;
+                max-height: 154px;
             }
         }
 
@@ -94,6 +94,7 @@
         &--recipes-wrapper {
             justify-content: center;
             display: flex;
+            padding-top: 20px;
 
             @media(max-width: 1025px) {
                 padding: 0

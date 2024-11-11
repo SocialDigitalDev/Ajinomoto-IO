@@ -5,20 +5,26 @@
         font-weight: 800;
         line-height: 34.05px;
         text-align: center;
-        color: #642B1D
-    }
-
-    &--subtitle-section-op {
-        font-family: $OpenSans;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21.79px;
-        text-align: center;
         color: #642B1D;
-        margin: 15px 0;
 
         @media (max-width: 1025px) {
-            margin: 15px 0 0 0
+            font-size: 18px;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        &--subtitle-section-op {
+            font-family: $OpenSans;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21.79px;
+            text-align: center;
+            color: #642B1D;
+            margin: 15px 0;
+
+            @media (max-width: 1025px) {
+                margin: 15px 0 0 0
+            }
         }
     }
 }
