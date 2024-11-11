@@ -13,9 +13,9 @@
         "children": [
             "disclosure-layout#description",
             // "disclosure-layout#details",
-            "condition-layout.product#amino-vital-description",
-            "condition-layout.product#amino-vital-how-to-use",
-            "condition-layout.product#amino-vital-ingredients"
+            "condition-layout.product#aminovital-description",
+            "condition-layout.product#aminovital-how-to-use",
+            "condition-layout.product#aminovital-ingredients"
         ],
         "props": {
             "blockClass": "disclosure-specifications"
@@ -74,7 +74,7 @@
     },
 
     // description amino vital
-    "condition-layout.product#amino-vital-description": {
+    "condition-layout.product#aminovital-description": {
         "props": {
             "conditions": [
                 {
@@ -182,7 +182,7 @@
         }
     },
 
-    "condition-layout.product#amino-vital-how-to-use": {
+    "condition-layout.product#aminovital-how-to-use": {
         "props": {
             "conditions": [
                 {
@@ -290,7 +290,7 @@
         }
     },
 
-    "condition-layout.product#amino-vital-ingredients": {
+    "condition-layout.product#aminovital-ingredients": {
         "props": {
             "conditions": [
                 {

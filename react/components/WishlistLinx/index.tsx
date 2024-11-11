@@ -35,7 +35,7 @@ const WishlistLinx = () => {
     }
 
     let isAuthenticated = JSON.parse(String(localStore.getItem('wishlist_isAuthenticated'))) ?? false;
-    let shopperId = localStore.getItem('wishlist_shopperId') ?? null;
+    let shopperId = localStore?.getItem('wishlist_shopperId') ?? null;
 
     const sessionResponse: any = useSessionResponse()
 
@@ -55,7 +55,7 @@ const WishlistLinx = () => {
         ssr: false
     })
 
-    data && localStore.setItem("wishlist_wishlisted", JSON.stringify(data?.viewLists[0]?.data));
+    data ? localStore?.setItem("wishlist_wishlisted", JSON.stringify(data?.viewLists[0]?.data)) : "";
 
     const [ wishAddItem ] = useMutation(AddToList);
 
@@ -66,7 +66,7 @@ const WishlistLinx = () => {
         wishAddItem({
             variables: {
                 listItem: listItems,
-                shopperId: shopperId
+                shopperId: shopperId && shopperId
             },
         })
     }
@@ -75,7 +75,7 @@ const WishlistLinx = () => {
         wishRemoveItem({
             variables: {
                 id: idItem,
-                shopperId: shopperId
+                shopperId: shopperId && shopperId
             },
         })
     }
