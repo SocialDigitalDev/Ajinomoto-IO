@@ -381,17 +381,28 @@ ol {
 .trustvox-certificate__fixed-full-left {
 	margin-inline: auto;
 }
+.vtex-flex-layout-0-x-flexRow--middle-text-section-op,
+.vtex-flex-layout-0-x-flexRow--banner-principal-op,
+.vtex-flex-layout-0-x-flexRow--lp-op-prateleira,
+.vtex-flex-layout-0-x-flexRow--column-brand-mobile-row,
+.vtex-flex-layout-0-x-flexRow--ajinomoto--info-card-products-lp-op,
+.vtex-flex-layout-0-x-flexRow--second-banner-lp-op-mobile,
+.vtex-flex-layout-0-x-flexRow--recipes-container-mobile,
+.vtex-flex-layout-0-x-flexRow--third-slider-image-mobile-wrapper,
+.vtex-flex-layout-0-x-flexRow--video-section-op,
+.vtex-flex-layout-0-x-flexRow--newsletter {
 
-.render-route-store-custom-lp-one-piece .vtex-store-components-3-x-container {
-	padding: unset !important
+	.vtex-store-components-3-x-container {
+		padding: unset !important
+	}
 }
 
-.render-route-store-custom-lp-one-piece .vtex-store__template {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store__template {
 	background-image: url("../../../assets/img/lp-one-piece/bg-middle-text.png");
 	background-color: #642B1D !important;
 }
 
-.render-route-store-custom-lp-one-piece .vtex-slider-layout-0-x-sliderArrows {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-sliderArrows {
 	&--shelf {
 		background: white !important;
 		border: solid;
@@ -399,10 +410,14 @@ ol {
 		border-color: white;
 		width: 37px;
 		height: 37px;
+
+		@media (min-width: 1026px) and (max-width: 1526px) {
+			display: none
+		}
 	}
 }
 
-.render-route-store-custom-lp-one-piece .vtex-slider-layout-0-x-paginationDot {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-paginationDot {
 	&--shelf {
 		background: transparent !important;
 		border: 1px solid white !important;
@@ -413,24 +428,30 @@ ol {
 	}
 }
 
-.render-route-store-custom-lp-one-piece .vtex-slider-layout-0-x-caretIcon--shelf {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-caretIcon--shelf {
 	color: black!important;
 }
 
-.render-route-store-custom-lp-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-desktop {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-desktop {
 	background-color: white!important
 }
 
-.render-route-store-custom-lp-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-mobile {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-mobile {
 	background-color: white!important
 }
 
-.render-route-store-custom-lp-one-piece .vtex-flex-layout-0-x-flexRow--header--content {
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-flex-layout-0-x-flexRow--header--content {
 	height: 147px!important;
 	padding-top: 16px;
 
 	@media (max-width: 1025px) {
 		height: auto!important;
 		padding-top: 0;
+	}
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-flex-layout-0-x-flexRowContent--header--infos-client .stretchChildrenWidth{
+	&:last-child {
+		min-width: 45px!important;
 	}
 }

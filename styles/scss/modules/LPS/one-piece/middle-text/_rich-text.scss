@@ -21,5 +21,9 @@
         font-size: 18px;
         line-height: 25px;
         color: white;
+
+        @media (min-width: 1026px) and (max-width: 1380px) {
+            font-size: 15px;
+        }
     }
 }

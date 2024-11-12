@@ -1,7 +1,8 @@
 {
   "flex-layout.row#middle-text": {
     "props": {
-      "blockClass": "middle-text-section-op"
+      "blockClass": "middle-text-section-op",
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.row#first-text-op",

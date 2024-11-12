@@ -77,6 +77,10 @@
         }
       }
 
+      &:nth-child(2n) {
+        max-width: 586px
+      }
+
       &:last-child {
         align-items: center;
         width: fit-content !important;
@@ -93,7 +97,6 @@
 
     &:first-child {
       flex: 1;
-      width: max-content !important;
 
       @media (max-width: 1025px) {
         width: initial !important

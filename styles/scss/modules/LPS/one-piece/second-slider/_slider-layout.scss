@@ -13,6 +13,10 @@
         border-color: white;
         width: 37px;
         height: 37px;
+
+        @media(min-width: 1026px) and (max-width: 1436px) {
+            display:none
+        }
     }
 }
 
