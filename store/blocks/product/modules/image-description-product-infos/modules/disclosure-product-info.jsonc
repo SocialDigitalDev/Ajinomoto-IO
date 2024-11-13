@@ -11,8 +11,11 @@
     
     "flex-layout.col#disclosure-specifications": {
         "children": [
-            "disclosure-layout#description"
-            // "disclosure-layout#details"
+            "disclosure-layout#description",
+            // "disclosure-layout#details",
+            "condition-layout.product#aminovital-description",
+            "condition-layout.product#aminovital-how-to-use",
+            "condition-layout.product#aminovital-ingredients"
         ],
         "props": {
             "blockClass": "disclosure-specifications"
@@ -67,6 +70,331 @@
         "props": {
             "collapseContent": false,
             "showTitle": false
+        }
+    },
+
+    // description amino vital
+    "condition-layout.product#aminovital-description": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200831"]
+                    }
+                }, 
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200832"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200833"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200834"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200835"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200836"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200837"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200847"]
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "disclosure-layout#amino-vital",
+            "Else": "rich-text#empty"
+        }
+    },
+
+    "disclosure-layout#amino-vital": {
+        "children": [
+            "disclosure-trigger#trigger-amino-vital", 
+            "disclosure-content#content-amino-vital"
+        ],
+        "props": {
+            "blockClass": ["description", "description-amino-vital"]
+        }
+    },
+    
+    "disclosure-trigger#trigger-amino-vital": {
+        "children": [
+            "rich-text#description-amino-vital"
+        ],
+        "props": {
+            "blockClass": [
+                "trigger-spec",
+                "trigger-description",
+                "trigger-spec-amino-vital",
+                "trigger-description-amino-vital"
+            ]
+        }
+    },
+
+    "disclosure-content#content-amino-vital": {
+        "children": [
+            "description-amino-vital"
+        ],
+        "props": {
+            "blockClass": [
+                "content-spec",
+                "content-description",
+                "content-spec-amino-vital",
+                "content-description-amino-vital"
+            ]
+        }
+    },
+    
+    "rich-text#description-amino-vital": {
+        "props": {
+            "text": "Para quem é indicado",
+            "blockClass": [
+                "disc-title",
+                "disc-description",
+                "disc-title-amino-vital",
+                "disc-description-amino-vital"
+            ]
+        }
+    },
+
+    "condition-layout.product#aminovital-how-to-use": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200831"]
+                    }
+                }, 
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200832"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200833"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200834"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200835"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200836"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200837"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200847"]
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "disclosure-layout#amino-vital-how-to-use",
+            "Else": "rich-text#empty"
+        }
+    },
+
+    "disclosure-layout#amino-vital-how-to-use": {
+        "children": [
+            "disclosure-trigger#trigger-amino-vital-how-to-use", 
+            "disclosure-content#content-amino-vital-how-to-use"
+        ],
+        "props": {
+            "blockClass": ["description", "description-amino-vital"]
+        }
+    },
+    
+    "disclosure-trigger#trigger-amino-vital-how-to-use": {
+        "children": [
+            "rich-text#description-amino-vital-how-to-use"
+        ],
+        "props": {
+            "blockClass": [
+                "trigger-spec",
+                "trigger-description",
+                "trigger-spec-amino-vital",
+                "trigger-description-amino-vital"
+            ]
+        }
+    },
+
+    "disclosure-content#content-amino-vital-how-to-use": {
+        "children": [
+            "how-to-use-amino-vital"
+        ],
+        "props": {
+            "blockClass": [
+                "content-spec",
+                "content-description",
+                "content-spec-amino-vital",
+                "content-description-amino-vital"
+            ]
+        }
+    },
+    
+    "rich-text#description-amino-vital-how-to-use": {
+        "props": {
+            "text": "Modo de usar",
+            "blockClass": [
+                "disc-title",
+                "disc-description",
+                "disc-title-amino-vital",
+                "disc-description-amino-vital"
+            ]
+        }
+    },
+
+    "condition-layout.product#aminovital-ingredients": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200831"]
+                    }
+                }, 
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200832"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200833"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200834"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200835"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200836"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200837"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200847"]
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "disclosure-layout#amino-vital-ingredients",
+            "Else": "rich-text#empty"
+        }
+    },
+
+    "disclosure-layout#amino-vital-ingredients": {
+        "children": [
+            "disclosure-trigger#trigger-amino-vital-ingredients",
+            "disclosure-content#content-amino-vital-ingredients"
+        ],
+        "props": {
+            "blockClass": ["description", "description-amino-vital"]
+        }
+    },
+
+    "disclosure-trigger#trigger-amino-vital-ingredients": {
+        "children": [
+            "rich-text#description-amino-vital-ingredients"
+        ],
+        "props": {
+            "blockClass": [
+                "trigger-spec",
+                "trigger-description",
+                "trigger-spec-amino-vital",
+                "trigger-description-amino-vital"
+            ]
+        }
+    },
+
+    "disclosure-content#content-amino-vital-ingredients": {
+        "children": [
+            "ingredients-amino-vital"
+        ],
+        "props": {
+            "blockClass": [
+                "content-spec",
+                "content-description",
+                "content-spec-amino-vital",
+                "content-description-amino-vital"
+            ]
+        }
+    },
+    
+    "rich-text#description-amino-vital-ingredients": {
+        "props": {
+            "text": "Ingredientes",
+            "blockClass": [
+                "disc-title",
+                "disc-description",
+                "disc-title-amino-vital",
+                "disc-description-amino-vital"
+            ]
         }
     }
 }

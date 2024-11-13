@@ -1,0 +1,285 @@
+{
+    // benefícios
+    "condition-layout.product#benefits-features": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200831"]
+                    }
+                }, 
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200832"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["20083"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200834"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200835"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200836"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200837"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200847"]
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "flex-layout.col#benefits-amino-vital",
+            "Else": "rich-text#empty"
+        }
+    },
+
+    "rich-text#empty": {
+        "title": "nada",
+		"props": {
+			"text": " "
+		}
+    },
+
+    "flex-layout.col#benefits-amino-vital": {
+        "title": "coluna do beneficios amino vital",
+        "props": {
+            "blockClass": [
+                "aminovital--wrapper-benefits"
+            ]
+        },
+        "children": [
+            "rich-text#title-benefits-amino-vital",
+            "flex-layout.row#benefits-amino-vital-wrap"
+        ]
+    },
+
+    "rich-text#title-benefits-amino-vital": {
+        "title": "Título Benefícios Amino Vital",
+		"props": {
+			"text": "**Benefícios**",
+			"blockClass": [
+                "benefits-amino-vital-titles"
+            ]
+		}
+    },
+
+    "flex-layout.row#benefits-amino-vital-wrap": {
+        "title": "linha principal do beneficios amino vital",
+        "props": {
+            "blockClass": [
+                "aminovital--wrap-benefits"
+            ],
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "flex-layout.col#benefits-amino-vital-1",
+            "flex-layout.col#benefits-amino-vital-2",
+            "flex-layout.col#benefits-amino-vital-3"
+        ]
+    },
+
+    "flex-layout.col#benefits-amino-vital-1": {
+        "title": "coluna 1 dos beneficios de amino vital",
+        "props": {
+            "blockClass": [
+                "aminovital--col-benefits"
+            ]
+        },
+        "children": [
+            "image#benefits-amino-vital-1",
+            "rich-text#title-benefits-1"
+        ]
+    },
+
+    "image#benefits-amino-vital-1":{
+        "title": "Imagem benefícios coluna 1 - amino vital",
+        "props": {
+            "src": "assets/img/lp-amino-vital/recuperacao_muscular.png",
+            "blockClass": ["amino-vital-benefits-img"]
+        }
+    },
+    "rich-text#title-benefits-1": {
+        "title": "Título Benefícios coluna 1 - amino vital",
+		"props": {
+			"text": "**Retarda a fadiga muscular**",
+			"blockClass": [
+                "benefits-col-amino-vital-titles"
+            ]
+		}
+    },
+
+    "flex-layout.col#benefits-amino-vital-2": {
+        "title": "coluna 2 dos beneficios de amino vital",
+        "props": {
+            "blockClass": [
+                "aminovital--col-benefits"
+            ]
+        },
+        "children": [
+            "image#benefits-amino-vital-2",
+            "rich-text#title-benefits-2"
+        ]
+    },
+
+    "image#benefits-amino-vital-2":{
+        "title": "Imagem benefícios coluna 2 - amino vital",
+        "props": {
+            "src": "assets/img/lp-amino-vital/ganho_de_massa_magra.png",
+            "blockClass": ["amino-vital-benefits-img"]
+        }
+    },
+    "rich-text#title-benefits-2": {
+        "title": "Título Benefícios coluna 2 - amino vital",
+		"props": {
+			"text": "**Recuperação muscular**",
+			"blockClass": [
+                "benefits-col-amino-vital-titles"
+            ]
+		}
+    },
+
+    "flex-layout.col#benefits-amino-vital-3": {
+        "title": "coluna 3 dos beneficios de amino vital",
+        "props": {
+            "blockClass": [
+                "aminovital--col-benefits"
+            ]
+        },
+        "children": [
+            "image#benefits-amino-vital-3",
+            "rich-text#title-benefits-3"
+        ]
+    },
+
+    "image#benefits-amino-vital-3":{
+        "title": "Imagem benefícios coluna 3 - amino vital",
+        "props": {
+            "src": "assets/img/lp-amino-vital/manutencao_de_massa_magra.png",
+            "blockClass": ["amino-vital-benefits-img"]
+        }
+    },
+    "rich-text#title-benefits-3": {
+        "title": "Título Benefícios coluna 3 - amino vital",
+		"props": {
+			"text": "**Evita a perda de massa**",
+			"blockClass": [
+                "benefits-col-amino-vital-titles"
+            ]
+		}
+    },
+
+    // banner
+    "condition-layout.product#aminovital-banner": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200831"]
+                    }
+                }, 
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200832"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["20083"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200834"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200835"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200836"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200837"]
+                    }
+                },
+                {
+                    "subject": "productId",
+                    "arguments": {
+                        "id": ["200847"]
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "list-context.image-list#banner-amino-vital-pdp",
+            "Else": "rich-text#empty"
+        }
+    },
+
+    "list-context.image-list#banner-amino-vital-pdp": {
+		"title": "BANNER AMINO VITAL",
+        "children": ["slider-layout#slide-amino-vital-pdp"],
+		"props": {
+			"preload": true,
+			"height": "560",
+            "blockClass": "banner-middle-amino",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/lp-amino-vital/banner-middle-amino-vital.png",
+					"mobileImage": "assets/img/lp-amino-vital/banner-middle-amino-vital-mobile.png"
+				}
+			]
+		}
+	},
+
+    "slider-layout#slide-amino-vital-pdp": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": false,
+            "showPaginationDots": "never",
+            "showNavigationArrows": "never",
+            "blockClass": "slide-banner-middle-amino"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "store.custom#amino-vital": {
+    "blocks": [
+      "responsive-layout.desktop#main-banner-lp",
+      "responsive-layout.tablet#main-banner-lp",
+      "responsive-layout.phone#main-banner-lp",
+      "responsive-layout.desktop#seo-text-section",
+      "responsive-layout.tablet#seo-text-section",
+      "responsive-layout.phone#seo-text-section",
+      "responsive-layout.desktop#for-who-section",
+      "responsive-layout.tablet#for-who-section",
+      "responsive-layout.phone#for-who-section",
+      "flex-layout.row#shelf-section",
+      "responsive-layout.desktop#benefits-desktop-section",
+      "responsive-layout.tablet#benefits-tablet-section",
+      "responsive-layout.phone#benefits-mobile-section",
+      "responsive-layout.desktop#about-brand",
+      "responsive-layout.tablet#about-brand",
+      "responsive-layout.phone#about-brand",
+      "flex-layout.row#pure-aminoacid-section",
+      "flex-layout.row#section-information"
+    ]
+  }
+}

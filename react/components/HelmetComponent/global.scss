@@ -455,3 +455,63 @@ ol {
 		min-width: 45px!important;
 	}
 }
+
+
+.vtex-flex-layout-0-x-flexRowContent{
+	&--amino-vital-shelf-container{
+		> .vtex-flex-layout-0-x-stretchChildrenWidth{
+			&:first-child{
+				@media (max-width: 1025px){
+					width: 100% !important;
+				}
+			}
+			&:last-child{
+				@media (max-width: 1025px){
+					display: none;
+				}
+			}
+		}
+	}
+
+	&--about-brand-mobile{
+		@media (max-width: 1025px){
+			display: flex;
+			flex-flow: column;
+		}
+		> .vtex-flex-layout-0-x-stretchChildrenWidth{
+			@media (max-width: 1025px){
+				width: 100% !important;
+			}
+		}
+	}
+	
+	&--selo-section{
+		> .vtex-flex-layout-0-x-stretchChildrenWidth{
+			&:first-child{
+				max-width: 177px;
+				width: 100% !important;
+			}
+			&:last-child{
+				width: 100% !important;
+			}
+		}
+	}
+	&--section-selos{
+		> .vtex-flex-layout-0-x-stretchChildrenWidth{
+			&:first-child{
+				max-width: 863px;
+				width: 100% !important;
+				@media (max-width: 1025px){
+					max-width: 100%;
+				}
+			}
+			&:last-child{
+				max-width: 461px;
+				width: 100% !important;
+				@media (max-width: 1025px){
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
