@@ -127,7 +127,7 @@ const NewsletterHome = (
 							</div>
 						</div>
 						<form
-							className={`container-form ${window.location.pathname === "/one-piece" ? "form-moengage" : "" }`}
+							className={`container-form ${window.location.pathname === "/onepiece" ? "form-moengage" : "" }`}
 							onSubmit={(event) => {
 								event.preventDefault();
 								requestNewsletter();
