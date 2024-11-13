@@ -1,0 +1,136 @@
+.flexRow {
+
+    &--information-brand {
+
+        max-width: 1166px;
+        margin: 0 auto;
+
+        @media (max-width: 1025px) {
+            padding: 35px 0 0 0
+        }
+
+        &--lp-op-prateleira {
+            margin-bottom: 40px;
+        }
+    }
+
+    &Content {
+
+        &--information-brand {
+            background-image: url('assets/img/lp-one-piece/Papiro.png');
+            height: 821px;
+
+            @media (max-width: 1025px) {
+                background-image: url('assets/img/lp-one-piece/Papiromobile.png') !important;
+            }
+        }
+
+        &--lp-op-information-sugar {
+            max-width: 929px;
+            margin: 0 auto;
+            height: 456px;
+
+            @media (max-width: 1025px) {
+                padding: unset
+            }
+        }
+
+        &--lp-op-information-sugar .stretchChildrenWidth {
+            &:last-child {
+                width: 100%;
+                max-width: 456px;
+                max-height: 343px;
+                height: 100%;
+
+                @media (max-width: 1025px) {
+                    max-width: 311px;
+                    max-height: 230px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-flow: column-reverse;
+                    gap: 13px;
+                }
+            }
+        }
+
+        &--lp-op-information-sugar .stretchChildrenWidth {
+            &:last-child::before {
+
+                @media (max-width: 1025px) {
+                    content: "Saiba Mais";
+                    margin: 0 auto
+                }
+            }
+        }
+
+        &--column-brand-mobile-row {
+            background-image: url('assets/img/lp-one-piece/papiro-brand.png') !important;
+            max-width: 836px;
+            margin: 0 auto;
+            background-size: cover;
+            min-height: 910px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-flow: column;
+        }
+
+        &--column-brand-mobile-row .stretchChildrenWidth {
+            max-width: 318px;
+            margin: 0 auto
+        }
+    }
+}
+
+.flexCol {
+
+    &--text-sodio-lp-op {
+        gap: 40px
+    }
+
+    &--information-title-brand {
+        padding-top: 101px;
+
+        @media (max-width: 1025px) {
+            max-width: 318px;
+            padding-top: 110px;
+        }
+    }
+
+    &Child {
+        &--information-title-brand {
+            display: flex;
+            justify-content: center;
+        }
+
+        &--column-brand {
+
+            @media (max-width: 1025px) {
+                height: 100%;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        &--text-sodio-lp-op {
+            &:first-child {
+                justify-content: center;
+                display: flex;
+                height: 100%;
+                max-height: 66px;
+
+                @media(max-width: 1025px) {
+                    height: unset;
+                    margin-bottom: unset;
+                }
+            }
+
+            &:nth-child(2n) {
+                max-height: 108px;
+            }
+
+            &:last-child {
+                max-height: 107px;
+            }
+        }
+    }
+}

@@ -39,20 +39,20 @@ ol {
 // HEADER
 
 .vtex-flex-layout-0-x-flexRowContent--header--container-top {
-	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+	&>.vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--infos-client {
-	& > .vtex-flex-layout-0-x-stretchChildrenWidth {
+	&>.vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: initial !important;
 	}
 }
 
 .vtex-flex-layout-0-x-flexRowContent--header--account {
 	.vtex-button__label {
-		& > span {
+		&>span {
 			margin: 0;
 		}
 	}
@@ -67,7 +67,7 @@ ol {
 		justify-content: center;
 		gap: 5.3%;
 
-		> .vtex-flex-layout-0-x-stretchChildrenWidth {
+		>.vtex-flex-layout-0-x-stretchChildrenWidth {
 			width: auto !important;
 
 			&:nth-child(1) {
@@ -116,7 +116,7 @@ ol {
 
 .vtex-order-placed-2-x-orderPlacedWrapper {
 	.vtex-order-placed-2-x-customerInfoListContainer {
-		& > li {
+		&>li {
 			font-family: $OpenSans;
 		}
 	}
@@ -135,6 +135,7 @@ ol {
 .vtex-flex-layout-0-x-flexRowContent--flag-savings-wishlist-row {
 	.vtex-wish-list-1-x-wishlistIconContainer {
 		.vtex-button {
+
 			&:hover,
 			&:focus-visible {
 				background: none;
@@ -144,13 +145,13 @@ ol {
 				padding: 0 !important;
 
 				.vtex-wish-list-1-x-wishlistIcon {
-					background: url("../../../assets/svg/ico_wishlist-outline.svg")	no-repeat;
+					background: url("../../../assets/svg/ico_wishlist-outline.svg") no-repeat;
 					background-size: contain;
 					width: 35px;
 					height: 32px;
 
-					&.vtex-wish-list-1-x-fill{
-						background: url("../../../assets/svg/ico_wishlist-header.svg")	no-repeat;
+					&.vtex-wish-list-1-x-fill {
+						background: url("../../../assets/svg/ico_wishlist-header.svg") no-repeat;
 						background-size: contain;
 						width: 35px;
 						height: 32px;
@@ -163,19 +164,24 @@ ol {
 
 //HOME
 .vtex-flex-layout-0-x-flexRowContent--home-colecao {
-	> .vtex-flex-layout-0-x-stretchChildrenWidth {
+	>.vtex-flex-layout-0-x-stretchChildrenWidth {
 		width: auto !important;
+
 		&:first-child {
 			max-width: 342px;
+
 			@include media(">phone", "<=tablet") {
 				max-width: 205px;
 			}
 		}
+
 		&:last-child {
 			max-width: 780px;
+
 			@media (min-width: 820px) and (max-width: 1290px) {
 				max-width: 600px;
 			}
+
 			@media (min-width: 640px) and (max-width: 768px) {
 				max-width: 540px;
 			}
@@ -187,12 +193,13 @@ ol {
 
 .vtex-store-components-3-x-productImage {
 	.relative {
-		> div {
+		>div {
 			display: flex;
 			justify-content: center;
 		}
 	}
 }
+
 // FILTRO MOBILE
 .vtex-search-result-3-x-accordionFilter {
 	.ReactCollapse--collapse {
@@ -205,6 +212,7 @@ ol {
 // AVAILABILITY NOTIFY
 
 .vtex-availability-notify-1-x {
+
 	&-title,
 	&-notifyLabel {
 		display: none;
@@ -241,6 +249,7 @@ ol {
 				}
 			}
 		}
+
 		&Email {
 			.vtex-input {
 				&::before {
@@ -342,10 +351,11 @@ ol {
 	}
 }
 
-.vtex-login-2-x-profile{
+.vtex-login-2-x-profile {
 	color: $primary;
 	text-transform: none;
-	&:hover{
+
+	&:hover {
 		background: none;
 	}
 }
@@ -358,18 +368,92 @@ ol {
 }
 
 @include media("<=phone") {
-	.vtex-flex-layout-0-x-flexRowContent--shelf-banner-manioca-wrapper > div ~ div {
+	.vtex-flex-layout-0-x-flexRowContent--shelf-banner-manioca-wrapper>div~div {
 		padding-inline: 20px;
 	}
 }
 
-.vtex-flex-layout-0-x-flexRowContent--footer-bottom > .vtex-flex-layout-0-x-stretchChildrenWidth:nth-child(3) {
+.vtex-flex-layout-0-x-flexRowContent--footer-bottom>.vtex-flex-layout-0-x-stretchChildrenWidth:nth-child(3) {
 	width: fit-content !important;
 	margin-right: 20px;
 }
 
 .trustvox-certificate__fixed-full-left {
 	margin-inline: auto;
+}
+.vtex-flex-layout-0-x-flexRow--middle-text-section-op,
+.vtex-flex-layout-0-x-flexRow--banner-principal-op,
+.vtex-flex-layout-0-x-flexRow--lp-op-prateleira,
+.vtex-flex-layout-0-x-flexRow--column-brand-mobile-row,
+.vtex-flex-layout-0-x-flexRow--ajinomoto--info-card-products-lp-op,
+.vtex-flex-layout-0-x-flexRow--second-banner-lp-op-mobile,
+.vtex-flex-layout-0-x-flexRow--recipes-container-mobile,
+.vtex-flex-layout-0-x-flexRow--third-slider-image-mobile-wrapper,
+.vtex-flex-layout-0-x-flexRow--video-section-op,
+.vtex-flex-layout-0-x-flexRow--newsletter {
+
+	.vtex-store-components-3-x-container {
+		padding: unset !important
+	}
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store__template {
+	background-image: url("../../../assets/img/lp-one-piece/bg-middle-text.png");
+	background-color: #642B1D !important;
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-sliderArrows {
+	&--shelf {
+		background: white !important;
+		border: solid;
+		border-radius: 50%;
+		border-color: white;
+		width: 37px;
+		height: 37px;
+
+		@media (min-width: 1026px) and (max-width: 1526px) {
+			display: none
+		}
+	}
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-paginationDot {
+	&--shelf {
+		background: transparent !important;
+		border: 1px solid white !important;
+
+		&--isActive {
+			background: white !important
+		}
+	}
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-slider-layout-0-x-caretIcon--shelf {
+	color: black!important;
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-desktop {
+	background-color: white!important
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-store-footer-2-x-footerLayout--ajinomoto--footer-mobile {
+	background-color: white!important
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-flex-layout-0-x-flexRow--header--content {
+	height: 147px!important;
+	padding-top: 16px;
+
+	@media (max-width: 1025px) {
+		height: auto!important;
+		padding-top: 0;
+	}
+}
+
+.render-route-vtex-store-2-x-store-custom-one-piece .vtex-flex-layout-0-x-flexRowContent--header--infos-client .stretchChildrenWidth{
+	&:last-child {
+		min-width: 45px!important;
+	}
 }
 
 

@@ -1,0 +1,62 @@
+{
+  "flex-layout.row#middle-text": {
+    "props": {
+      "blockClass": "middle-text-section-op",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#first-text-op",
+      "flex-layout.row#second-text-op"
+    ]
+  },
+  "flex-layout.row#first-text-op": {
+    "props": {
+      "blockClass": "first-text-op"
+    },
+    "children": [
+     "flex-layout.row#first-text-op-apoio",
+     "image#usopp-op"
+    ]
+  },
+  "flex-layout.row#first-text-op-apoio": {
+    "props": {
+      "blockClass": "first-text-op-apoio"
+    },
+    "children": [
+     "rich-text#first-text-lp-op",
+      "image#nami-op"
+    ]
+  },
+  "rich-text#first-text-lp-op": {
+    "props": {
+      "text": "Apenas uma pitada e veja a diferença!",
+      "blockClass": "first-text-lp-op"
+    }
+  },
+  "image#nami-op": {
+    "props": {
+      "blockClass": "nami-op",
+      "src": "assets/img/lp-one-piece/one-piece-nami.png"
+    }
+  },
+  "image#usopp-op": {
+    "props": {
+      "blockClass": "usopp-op",
+      "src": "assets/img/lp-one-piece/one-piece-usopp.png"
+    }
+  },
+  "flex-layout.row#second-text-op": {
+    "props": {
+      "blockClass": "second-text-op"
+    },
+    "children": [
+      "rich-text#second-text-lp-op"
+    ]
+  },
+  "rich-text#second-text-lp-op": {
+    "props": {
+      "text": "Os fãs de One Piece agora podem explorar um novo mundo de sabor com a parceria exclusiva entre a franquia e Aji-no-moto®. Junte-se a Luffy e sua tripulação para uma jornada gastronômica repleta de produtos deliciosos e saudáveis com a qualidade da Ajinomoto, líder em temperos que fazem a diferença na vida dos brasileiros.",
+      "blockClass": "second-text-lp-op"
+    }
+  }
+}

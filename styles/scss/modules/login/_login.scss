@@ -275,6 +275,36 @@
 	visibility: hidden;
 }
 
+//LP One Piece
+
+:global(.vtex-flex-layout-0-x-flexColChild--wrapper-videos) :global(.videoEl){
+	min-height: 380px;
+
+	@media (max-width: 1025px) {
+		min-height: 174px;
+		max-height: 174px
+	}
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sodio-url) > a {
+	color:black
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead--infocard-recipe-1) span {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead--infocard-recipe-2) span {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead--infocard-recipe-3) span {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
 // lp amino vital
 
 :global(.vtex-rich-text-0-x-listItem--text-information-about-2):nth-child(2) {

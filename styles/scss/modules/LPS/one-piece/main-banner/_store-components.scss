@@ -1,0 +1,13 @@
+.imageElement {
+
+    &--main-banner-op-mobile{
+        width: 100%
+    }
+
+    &--second-banner-image-mobile{
+
+        @media (max-width: 1025px) {
+        margin-bottom: 50px
+        }
+    }
+}
