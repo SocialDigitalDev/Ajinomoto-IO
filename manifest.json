@@ -1,7 +1,7 @@
 {
   "vendor": "lojaajinomoto",
   "name": "store-theme",
-  "version": "0.1.229",
+  "version": "0.1.230",
   "builders": {
     "styles": ">=2.x",
     "store": "0.x",
