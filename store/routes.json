@@ -22,8 +22,5 @@
     },
     "store.custom#busca-linx": {
         "path": "/busca"
-    },
-    "store.custom#lp-one-piece": {
-        "path": "/onepiece"
     }
 }
