@@ -11,6 +11,7 @@
 		"children": [
 			"flex-layout.row#client-area",
 			"disclosure-layout-group#group-submenu",
+			"menu-item#suplementos",
 			"menu-item#ofertas",
 			"menu-item#foodService"
 			// "menu-item#assinatura",
