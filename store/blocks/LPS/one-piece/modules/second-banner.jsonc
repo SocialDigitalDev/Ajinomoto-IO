@@ -1,0 +1,46 @@
+{
+
+    "responsive-layout.desktop#second-banner": {
+        "children": [ 
+            "flex-layout.row#second-banner-lp-op"
+    ]
+    },
+    "responsive-layout.tablet#second-banner": {
+        "children": [ 
+            "flex-layout.row#second-banner-lp-op-mobile"
+    ]
+    },
+    "responsive-layout.mobile#second-banner": {
+        "children": [ 
+            "flex-layout.row#second-banner-lp-op-mobile"
+    ]
+    },
+    "flex-layout.row#second-banner-lp-op": {
+        "props": {
+            "blockClass": "second-banner-lp-op"
+        },
+        "children": [
+            "image#second-banner-op-lp"
+        ]
+    },
+    "image#second-banner-op-lp": {
+        "props": {
+            "src": "assets/img/lp-one-piece/second-banner.png",
+            "blockClass": "second-banner-image"
+        }
+},
+"flex-layout.row#second-banner-lp-op-mobile": {
+    "props": {
+        "blockClass": "second-banner-lp-op-mobile"
+    },
+    "children": [
+        "image#second-banner-op-lp-mobile"
+    ]
+},
+"image#second-banner-op-lp-mobile": {
+    "props": {
+        "src": "assets/img/lp-one-piece/second-banner-mobile.png",
+        "blockClass": "second-banner-image-mobile"
+    }
+}
+}

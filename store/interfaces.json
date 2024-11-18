@@ -19,6 +19,9 @@
 	"custom-newsletter": {
 		"component": "NewsletterHome"
 	},
+	"custom-newsletter-op": {
+		"component": "NewsletterOnePiece"
+	},
 	"custom-newsletter-bf": {
 		"component": "NewsletterBF"
 	},

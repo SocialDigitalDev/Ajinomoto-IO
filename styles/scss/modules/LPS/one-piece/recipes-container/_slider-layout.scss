@@ -1,0 +1,20 @@
+.sliderTrack {
+    &--slider-recipes-op {
+        gap: 30px
+    }
+}
+
+.slide {
+    &--slider-recipes-op {
+        &--visible {
+            max-height: 264px;
+            max-width: 324px;
+        }
+    }
+}
+
+.paginationDotsContainer {
+    &--slider-recipes-op {
+        bottom: -35px!important;
+    }
+}

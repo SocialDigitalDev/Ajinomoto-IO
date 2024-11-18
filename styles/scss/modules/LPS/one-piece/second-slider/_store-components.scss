@@ -1,0 +1,318 @@
+.infoCardContainer {
+    &--infocard-op-1 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+
+    &--infocard-op-2 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+
+    &--infocard-op-3 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+
+    &--infocard-op-4 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+
+    &--infocard-op-5 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+
+    &--infocard-op-6 {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: transparent
+    }
+}
+
+.infoCardTextContainer {
+    &--infocard-op-1 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+
+    &--infocard-op-2 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+
+    &--infocard-op-3 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+
+    &--infocard-op-4 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+
+    &--infocard-op-5 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+
+    &--infocard-op-6 {
+        max-width: 152px;
+        max-height: 42px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #4AA162;
+        background-color: #4AA162;
+        height: 42px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+            width: 100%
+        }
+    }
+}
+
+.infoCardCallActionText {
+
+    &--infocard-op-1 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--infocard-op-2 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--infocard-op-3 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--infocard-op-4 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--infocard-op-5 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--infocard-op-6 {
+        margin: unset !important;
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.infoCardCallActionContainer {
+
+    &--infocard-op-1 {
+        margin: unset !important
+    }
+
+    &--infocard-op-2 {
+        margin: unset !important
+    }
+
+    &--infocard-op-3 {
+        margin: unset !important
+    }
+
+    &--infocard-op-4 {
+        margin: unset !important
+    }
+
+    &--infocard-op-5 {
+        margin: unset !important
+    }
+
+    &--infocard-op-6 {
+        margin: unset !important
+    }
+}
+
+.infoCardImageContainer {
+    &--infocard-op-1 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+
+    &--infocard-op-2 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+
+    &--infocard-op-3 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+
+    &--infocard-op-4 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+
+    &--infocard-op-5 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+
+    &--infocard-op-6 {
+        max-width: 245px;
+        width: 100%;
+        padding: 30px 0
+    }
+}
+
+.infoCardCallActionContainer {
+
+    &--infocard-op-1 {
+        text-decoration: unset;
+    }
+
+    &--infocard-op-2 {
+        text-decoration: unset;
+    }
+
+    &--infocard-op-3 {
+        text-decoration: unset;
+    }
+
+    &--infocard-op-4 {
+        text-decoration: unset;
+    }
+
+    &--infocard-op-5 {
+        text-decoration: unset;
+    }
+
+    &--infocard-op-6 {
+        text-decoration: unset;
+    }
+}

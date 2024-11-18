@@ -1,0 +1,71 @@
+.paragraph {
+
+    &--information-subtitle-brand {
+        font-family: $OpenSans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    &--sodio-title {
+        font-family: $OpenSans;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #B51F23;
+
+        @media (max-width: 1025px) {
+            margin: unset !important;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    &--sodio-content {
+        font-family: $OpenSans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+
+        @media (max-width: 1025px) {
+            font-size: 16px;
+            line-height: 21.79px;
+            text-align: center;
+        }
+    }
+
+    &--sodio-url {
+        font-family: $OpenSans;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+
+        @media (max-width: 1025px) {
+            padding: unset
+        }
+    }
+}
+
+.container {
+    &--information-subtitle-brand {
+        padding: 0 308px;
+
+        @media (max-width: 1025px) {
+            padding: unset
+        }
+    }
+
+    &--sodio-url {
+        justify-content: center;
+        display: flex;
+    }
+
+    &--sodio-content {
+        margin: 0 auto;
+        max-width: 401px;
+    }
+}

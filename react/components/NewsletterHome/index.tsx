@@ -6,19 +6,27 @@ import { schemaEditor } from "./schemaEditor";
 
 import "./global.css";
 
-const NewsletterHome = () => {
+const NewsletterHome = (
+	{
+		title = defaultProps.title,
+		subtitle = defaultProps.subtitle,
+		button = defaultProps.button,
+	},
+) => {
 	const [email, setEmail] = useState("");
 	const [nome, setName] = useState("");
 	const [aceite, setAceite] = useState(false);
 	const [successMessage, setSuccessMessage] = useState(false);
 	const [errorNameEmptyMessage, setErrorNameEmptyMessage] = useState(false);
-	const [errorNameEmailEmptyMessage, setErrorNameEmailEmptyMessage] = useState(
-		false
-	);
+	const [errorNameEmailEmptyMessage, setErrorNameEmailEmptyMessage] =
+		useState(
+			false,
+		);
 	const [errorMessage, setErrorMessage] = useState(false);
 	const [errorAceiteMessage, setErrorAceiteMessage] = useState(false);
 
-	const regex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	const regex =
+		/^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 	const requestOptions = {
 		method: "POST",
@@ -34,10 +42,12 @@ const NewsletterHome = () => {
 	};
 
 	const requestNewsletter = () => {
-		if (nome !== "" && email !== "" && regex.test(email) && aceite == true) {
+		if (
+			nome !== "" && email !== "" && regex.test(email) && aceite == true
+		) {
 			setErrorMessage(false);
 			fetch(`/api/dataentities/NL/documents`, requestOptions)
-				.then(res => res.json())
+				.then((res) => res.json())
 				.then(() => {
 					setSuccessMessage(true);
 					setName("");
@@ -106,10 +116,10 @@ const NewsletterHome = () => {
 						<div className="texto-container">
 							<div className="texto-newsletter">
 								<span className="texto-newsletter__titulo">
-									{defaultProps.title}
+									{title}
 								</span>
 								<span className="texto-newsletter__subtitulo">
-									{defaultProps.subtitle}
+									{subtitle}
 								</span>
 							</div>
 							<div className="icon">
@@ -117,8 +127,8 @@ const NewsletterHome = () => {
 							</div>
 						</div>
 						<form
-							className="container-form"
-							onSubmit={event => {
+							className={`container-form ${window.location.pathname === "/onepiece" ? "form-moengage" : "" }`}
+							onSubmit={(event) => {
 								event.preventDefault();
 								requestNewsletter();
 							}}
@@ -134,7 +144,7 @@ const NewsletterHome = () => {
 										placeholder="Digite seu nome aqui"
 										required
 										value={nome}
-										onChange={event => {
+										onChange={(event) => {
 											setName(event.target.value);
 										}}
 									/>
@@ -148,7 +158,7 @@ const NewsletterHome = () => {
 										placeholder="Digite seu e-mail aqui"
 										required
 										value={email}
-										onChange={event => {
+										onChange={(event) => {
 											setEmail(event.target.value);
 										}}
 									/>
@@ -156,7 +166,10 @@ const NewsletterHome = () => {
 							</div>
 
 							<div className="container-form__checkbox">
-								<label htmlFor="aceite" className="txt-termos-condicoes">
+								<label
+									htmlFor="aceite"
+									className="txt-termos-condicoes"
+								>
 									<input
 										className="vtex-container-newsletter-form__input aceite"
 										type="checkbox"
@@ -173,8 +186,8 @@ const NewsletterHome = () => {
 									/>
 									<span className="check-aceite"></span>
 									<span>
-										Concordo que a Ajinomoto pode usar meus dados de contato e
-										interações.{" "}
+										Concordo que a Ajinomoto pode usar meus
+										dados de contato e interações.{" "}
 										<a href="/institucional/politica-de-privacidade">
 											Política de privacidade
 										</a>
@@ -192,32 +205,35 @@ const NewsletterHome = () => {
 									)}
 									{!!errorNameEmptyMessage && (
 										<p className="container-form__messages--error">
-											Preencha o campo <strong>Nome</strong>.
+											Preencha o campo{" "}
+											<strong>Nome</strong>.
 										</p>
 									)}
 
 									{!!errorAceiteMessage && (
 										<p className="container-form__messages--error-aceite">
-											É necessário aceitar receber a newsletter para se
-											cadastrar.
+											É necessário aceitar receber a
+											newsletter para se cadastrar.
 										</p>
 									)}
 
 									{!!errorNameEmailEmptyMessage && (
 										<p className="container-form__messages--error">
-											Preencha os campos <strong>Nome</strong> e{" "}
+											Preencha os campos{" "}
+											<strong>Nome</strong> e{" "}
 											<strong>E-mail</strong>.
 										</p>
 									)}
 
 									{!!errorMessage && (
 										<p className="container-form__messages--error">
-											Insira um endereço de <strong>E-mail</strong> válido.
+											Insira um endereço de{" "}
+											<strong>E-mail</strong> válido.
 										</p>
 									)}
 								</div>
 								<button className="container-newsletter-form__button">
-									{defaultProps.button}
+									{button}
 								</button>
 							</div>
 						</form>
@@ -229,6 +245,6 @@ const NewsletterHome = () => {
 };
 
 NewsletterHome.defaultProps = defaultProps;
-NewsletterHome.schemaEditor = schemaEditor;
+NewsletterHome.schema = schemaEditor;
 
 export default NewsletterHome;

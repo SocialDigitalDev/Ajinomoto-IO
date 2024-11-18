@@ -1,0 +1,35 @@
+.paragraph {
+    &--title-inforcards-op {
+        font-family: $OpenSans;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 43.58px;
+        text-align: center;
+        color: white;
+        margin: unset;
+
+        @media (max-width: 1025px) {
+            font-size: 26px;
+            line-height: 35.41px;
+        }
+    }
+
+    &--title-infocard-lp-op {
+        font-family: $OpenSans;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.51px;
+        text-align: center;
+    }
+}
+
+.container {
+    &--title-inforcards-op {
+        justify-content: center;
+    }
+
+    &--title-infocard-lp-op {
+        justify-content: center;
+        display: flex
+    }
+}

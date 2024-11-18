@@ -1,0 +1,169 @@
+{
+    "responsive-layout.desktop#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container"
+        ]
+    },
+    "responsive-layout.tablet#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container-mobile"
+        ]
+    },
+    "responsive-layout.mobile#recipes-op": {
+        "children": [
+            "flex-layout.row#recipes-container-mobile"
+        ]
+    },
+    "flex-layout.row#recipes-container": {
+        "props": {
+            "blockClass": "recipes-container"
+        },
+        "children": [
+            "flex-layout.col#recipes-wrapper"
+        ]
+    },
+    "flex-layout.row#recipes-container-mobile": {
+        "props": {
+            "blockClass": "recipes-container-mobile"
+        },
+        "children": [
+            "flex-layout.col#text-section-op-mobile"
+        ]
+    },
+    "flex-layout.col#recipes-wrapper": {
+        "props": {
+            "blockClass": "recipes-wrapper"
+        },
+        "children": [
+            "flex-layout.row#text-section-op",
+            "flex-layout.row#info-card-recipes-op-lp"
+        ]
+    },
+    "flex-layout.row#text-section-op": {
+        "props": {
+            "blockClass": "text-section-op"
+        },
+        "children": [
+            "flex-layout.col#title-subtitle-op",
+            "image#sanji"
+        ]
+    },
+    "flex-layout.col#text-section-op-mobile": {
+        "props": {
+            "blockClass": "text-section-op-mobile"
+        },
+        "children": [
+            "flex-layout.row#title-subtitle-op-mobile",
+            "rich-text#subtitle-section-op",
+            "flex-layout.row#info-card-recipes-op-lp"
+        ]
+    },
+    "flex-layout.col#title-subtitle-op": {
+        "props": {
+            "blockClass": "title-subtitle-op"
+        },
+        "children": [
+            "rich-text#title-section-op",
+            "rich-text#subtitle-section-op"
+        ]
+    },
+    "flex-layout.row#title-subtitle-op-mobile": {
+        "props": {
+            "blockClass": "title-subtitle-op-mobile"
+        },
+        "children": [
+            "rich-text#title-section-op",
+            "image#sanji"
+        ]
+    },
+    "rich-text#title-section-op": {
+        "props": {
+            "blockClass": "title-section-op",
+            "text": "Prepare os pratos favoritos da tripulação ​com o toque especial do chef Sanji"
+        }
+    },
+    "rich-text#subtitle-section-op": {
+        "props": {
+            "blockClass": "subtitle-section-op",
+            "text": "Você vai aprender a cozinhar as receitas mais amadas pelos Chapéus de Palha, todas recomendadas pela nossa tripulação. \n \n Use Aji-no-moto® para elevar o sabor dessas delícias e transforme suas refeições em verdadeiras aventuras gastronômicas!"
+        }
+    },
+    "image#sanji": {
+        "props": {
+            "src": "assets/img/lp-one-piece/sanji-character.png",
+            "blockClass": "sanji-op"
+        }
+    },
+    // Linha dos infocards
+    "flex-layout.row#info-card-recipes-op-lp": {
+        "title": "Linha dos Infocards",
+        "props": {
+            "blockClass": "info-card-recipes-op-lp"
+        },
+        "children": [
+            "slider-layout#slider-recipes-op"
+        ]
+    },
+    //Infocards
+    "slider-layout#slider-recipes-op": {
+        "props": {
+            "blockClass": [
+                "slider-recipes-op"
+            ],
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 3,
+                "phone": 1
+            }
+        },
+        "children": [
+            "info-card#infocard-recipe-1",
+            "info-card#infocard-recipe-2",
+            "info-card#infocard-recipe-3"
+        ]
+    },
+    "info-card#infocard-recipe-1": {
+        "props": {
+            "id": "info-card-recipe-1",
+            "headline": "Carne com quiabo e sódio reduzido",
+            "subhead": "Preparado com: Aji-No-Moto® Floppy 36G",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/quiabo.png",
+            "callToActionText": "ver receita",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-recipe-1"
+        }
+    },
+    "info-card#infocard-recipe-2": {
+        "props": {
+            "id": "info-card-recipe-2",
+            "headline": "Camusquim de camarão",
+            "subhead": "Preparado com: Aji-No-Moto® Frasco 100G ",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/camusquim.png",
+            "callToActionText": "ver receita",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-recipe-2"
+        }
+    },
+    "info-card#infocard-recipe-3": {
+        "props": {
+            "id": "info-card-recipe-3",
+            "headline": "Yakimeshi",
+            "subhead": "Preparado com: Aji-No-Moto® Floppy 36G",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/img/lp-one-piece/yakimeshi.png",
+            "callToActionText": "ver receita",
+            "callToActionUrl": "#",
+            "callToActionMode": "link",
+            "blockClass": "infocard-recipe-3"
+        }
+    }
+}

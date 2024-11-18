@@ -1,0 +1,133 @@
+{
+    "responsive-layout.desktop#information-brand": {
+        "children": [
+            "flex-layout.row#information-brand"
+        ]
+    },
+    "responsive-layout.mobile#information-brand-mobile": {
+        "children": [
+            "flex-layout.row#column-brand-mobile"
+        ]
+    },
+    "flex-layout.row#information-brand": {
+        "props": {
+            "blockClass": "information-brand"
+        },
+        "children": [
+            "flex-layout.col#column-brand"
+        ]
+    },
+    "flex-layout.col#column-brand": {
+        "props": {
+            "blockClass": "column-brand"
+        },
+        "children": [
+            "flex-layout.col#title-brand",
+            "flex-layout.row#lp-op-information-sugar"
+        ]
+    },
+    "flex-layout.col#title-brand": {
+        "props": {
+            "blockClass": "information-title-brand"
+        },
+        "children": [
+            "image#title-brand-op",
+            "rich-text##subtitletitle-brand"
+        ]
+    },
+    "image#title-brand-op": {
+        "props": {
+            "blockClass": "image-title-brand-op",
+            "src": "assets/img/lp-one-piece/title-brand.png"
+        }
+    },
+    "rich-text##subtitletitle-brand": {
+        "props": {
+            "blockClass": "information-subtitle-brand",
+            "text": "AJI-NO-MOTO® é produzido a partir da fermentação do melaço da cana-de-açúcar. Esse é um processo muito comum, também utilizado na fabricação de outros alimentos, como queijo, vinho e iogurte."
+        }
+    },
+    "flex-layout.row#lp-op-information-sugar": {
+        "props": {
+            "blockClass": "lp-op-information-sugar"
+        },
+        "children": [
+            "flex-layout.col#text-sodio-lp-op",
+            "image#steps-sugar"
+        ]
+    },
+    "flex-layout.col#text-sodio-lp-op": {
+        "props": {
+            "blockClass": "text-sodio-lp-op"
+        },
+        "children": [
+            "rich-text##sodio-title",
+            "rich-text##sodio-content",
+            "rich-text##sodio-url"
+        ]
+    },
+    "image#steps-sugar": {
+        "props": {
+            "src": "assets/img/lp-one-piece/steps-sugar.png"
+        }
+    },
+    "rich-text##sodio-title": {
+        "props": {
+            "blockClass": "sodio-title",
+            "text": "Com AJI-NO-MOTO®, é possível reduzir o sódio nas receitas?"
+        }
+    },
+    "rich-text##sodio-content": {
+        "props": {
+            "blockClass": "sodio-content",
+            "text": "AJI-NO-MOTO® é um aliado nesse controle. O glutamato monossódico é um realçador de sabor, e não sal de cozinha, como muitas pessoas pensam."
+        }
+    },
+    "rich-text##sodio-url": {
+        "props": {
+            "blockClass": "sodio-url",
+            "text": "Saiba mais"
+        }
+    },
+
+
+
+
+    "flex-layout.row#column-brand-mobile": {
+        "props": {
+            "blockClass": "column-brand-mobile-row"
+        },
+        "children": [
+            "flex-layout.col#title-brand",
+            "flex-layout.col#lp-op-information-sugar-mobile"
+        ]
+    },
+    "flex-layout.col#text-sodio-lp-op-mobile": {
+        "props": {
+            "blockClass": "text-sodio-lp-op-mobile"
+        },
+        "children": [
+            "rich-text##sodio-title",
+            "rich-text##sodio-content"
+        ]
+    },
+    "flex-layout.col#lp-op-information-sugar-mobile": {
+        "props": {
+            "blockClass": "lp-op-information-sugar-mobile"
+        },
+        "children": [
+            "flex-layout.col#text-sodio-lp-op-mobile",
+            "image#steps-sugar",
+            "rich-text##sodio-url"
+        ]
+    },
+    "flex-layout.col#column-brand-mobile": {
+        "props": {
+            "blockClass": "column-brand-mobile"
+        },
+        "children": [
+            "flex-layout.col#title-brand",
+            "flex-layout.col#lp-op-information-sugar-mobile"
+        ]
+    }
+}
