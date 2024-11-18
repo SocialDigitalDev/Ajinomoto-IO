@@ -9,7 +9,7 @@
 
 	"flex-layout.col#home-brands": {
 		"title": "HOME brands",
-		"children": ["rich-text#home-brands", "slider-layout#brands"],
+		"children": ["rich-text#home-brands", "list-context.image-list#brands"],
 		"props": {
 			"blockClass": "home-brands",
 			"preventHorizontalStretch": true,
@@ -22,6 +22,22 @@
 			"text": "## Nossas Marcas",
 			"textPosition": "CENTER",
 			"blockClass": "shelf-titles"
+		}
+	},
+
+	"list-context.image-list#brands": {
+		"title": "[ BRANDS IMAGENS ]",
+		"children": ["slider-layout#brands"],
+		"props": {
+			"blockClass": "home-brands",
+			"preload": true,
+			"height": "max-content",
+			"images": [
+				{
+					"loading": "lazy",
+					"image": "assets/img/food-service.png"
+				}
+			]
 		}
 	},
 
@@ -42,21 +58,7 @@
 			"blockClass": "home-brands",
 			"navigationStep": 2,
 			"arrowSize": 36
-		},
-		"children": [
-			"info-card#brands-1",
-			"info-card#brands-3",
-			"info-card#brands-4",
-			"info-card#brands-5",
-			"info-card#brands-6",
-			"info-card#brands-7",
-			"info-card#brands-8",
-			"info-card#brands-9",
-			"info-card#brands-10",
-			"info-card#brands-12",
-			"info-card#brands-13",
-			"info-card#brands-14"
-		]
+		}
 	},
 
 	"info-card#brands-1": {

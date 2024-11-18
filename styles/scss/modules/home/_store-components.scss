@@ -314,3 +314,27 @@
 		}
 	}
 }
+
+
+.imageElementLink--home-brands {
+	display: block;
+	position: relative;
+	text-decoration: none;
+
+    &::after {
+        content: attr(title);
+        color: #ee6262;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        font-family: $OpenSans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: $semi-bold;
+        line-height: normal;
+
+        @media (max-width: 320px) {
+            font-size: 12px;
+        }
+    }
+}
