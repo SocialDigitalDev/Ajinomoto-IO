@@ -1,0 +1,26 @@
+.flexRow {
+
+    &Content {
+
+        &--banner-principal-op .stretchChildrenWidth {
+
+            &:first-child {
+
+                width: 100% !important;
+
+                @media (max-width: 1027px) {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+
+                width: 100% !important;
+
+                @media (min-width: 1028px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

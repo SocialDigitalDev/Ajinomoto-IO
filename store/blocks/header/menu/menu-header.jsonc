@@ -19,6 +19,7 @@
 			"menu-item#position-7",
 			"menu-item#foodService",
 			"menu-item#manioca",
+			"menu-item#suplementos",
 			"menu-item#ofertas"
 
 		],
@@ -227,7 +228,24 @@
 			}
 		}
 	},
-
+	"menu-item#suplementos": {
+		"props": {
+			"id": "menu-item-suplementos",
+			"blockClass": [
+				"top-menu-suplementos",
+				"top-menu"
+			],
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"text": "Suplementos",
+				"href": "/aminovital",
+				"type": "internal",
+				"noFollow": true,
+				"tagTitle": "Suplementos"
+			}
+		}
+	},
 	"menu-item#ofertas": {
 		"props": {
 			"id": "menu-item-ofertas",

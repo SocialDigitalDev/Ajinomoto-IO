@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#lp-op-prateleira": {
+        "title": "HOME VITRINE 1",
+        "children": [
+            "flex-layout.col#lp-op-prateleira"
+        ],
+        "props": {
+            "blockClass": [
+                "lp-op-prateleira"
+            ]
+        }
+    },
+    "flex-layout.col#lp-op-prateleira": {
+        "children": [
+            "rich-text#lp-op-prateleira",
+            "list-context.product-list#lp-op-prateleira"
+        ],
+        "props": {
+            "blockClass": "lp-op-col-prateleira"
+        }
+    },
+    "rich-text#lp-op-prateleira": {
+        "title": "TITULO DA VITRINE",
+        "props": {
+            "text": "Produtos",
+            "textPosition": "CENTER",
+            "blockClass": "shelf-titles-lp-op"
+        }
+    },
+    // LIST SLIDER
+    "list-context.product-list#lp-op-prateleira": {
+        "title": "PRATELEIRA",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf"
+        ],
+        "props": {
+            "maxItems": 12,
+            "skusFilter": "ALL",
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    }
+}

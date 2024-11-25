@@ -1,0 +1,20 @@
+{
+  "store.custom#lp-one-piece": {
+    "blocks": [
+      "flex-layout.row#banner-principal-op",
+      "flex-layout.row#middle-text",
+      "flex-layout.row#lp-op-prateleira",
+      "responsive-layout.desktop#information-brand",
+      "responsive-layout.mobile#information-brand-mobile",
+      "flex-layout.row#info-card-container-lp-op",
+      "responsive-layout.desktop#second-banner",
+      "responsive-layout.mobile#second-banner",
+      "responsive-layout.desktop#recipes-op",
+      "responsive-layout.mobile#recipes-op",
+      "responsive-layout.desktop#third-slider-op",
+      "responsive-layout.mobile#third-slider-op",
+      "flex-layout.row#video-section-op",
+      "flex-layout.row#newsletter"
+    ]
+  }
+}

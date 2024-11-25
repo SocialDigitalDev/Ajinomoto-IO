@@ -1,0 +1,28 @@
+.headingLevel2 {
+    &--shelf-titles-lp-op {
+        font-family: $OpenSans;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 47px;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.paragraph {
+    &--shelf-titles-lp-op {
+        font-family: $OpenSans;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 47.66px;
+        text-align: center;
+        color: #FFFFFF;
+
+        @media (max-width: 1025px) {
+            font-size: 24px;
+            line-height: 32.68px;
+            text-align: center;
+
+        }
+    }
+}

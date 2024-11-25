@@ -19,7 +19,6 @@
 		"title": "HEADER DESKTOP",
 		"children": [
 			"helmet-component",
-			"metodos-wishilist",
 			"metodo-add-to-cart",
 			"flex-layout.row#topbar-header",
 			"sticky-layout#header-desktop"
@@ -34,7 +33,6 @@
 		"title": "HEADER MOBILE",
 		"children": [
 			"helmet-component",
-			"metodos-wishilist",
 			"metodo-add-to-cart",
 			"sticky-layout#header-mobile"
 		],

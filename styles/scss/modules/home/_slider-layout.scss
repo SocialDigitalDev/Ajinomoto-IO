@@ -20,3 +20,20 @@
         color: $white !important;
     }
 }
+
+.slideChildrenContainer--home-brands {
+    width: 100%;
+    max-width: 126px;
+    background: $white;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.imageElement--home-brands {
+    border-radius: 100%;
+    margin-bottom: 10px;
+    border: 1px solid $gray-18;
+    aspect-ratio: 1 / 1;
+    background-color: $white;
+    box-shadow: 0px 5px 5px 0px $gray-18;
+}

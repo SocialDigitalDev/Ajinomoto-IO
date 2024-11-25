@@ -1,0 +1,10 @@
+{
+	"flex-layout.row#newsletter-op": {
+		"title": "NEWSLETTER",
+		"children": ["custom-newsletter-op"],
+		"props": {
+			"blockClass": "newsletter-op",
+			"fullWidth": true
+		}
+	}
+}

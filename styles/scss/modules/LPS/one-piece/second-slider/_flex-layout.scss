@@ -1,0 +1,94 @@
+.flexRowContent {
+    &--wrapper-inforcard-op-1 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-2 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-3 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-4 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-5 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-6 {
+        display: flex;
+        flex-flow: column;
+        height: 495px;
+    }
+
+    &--wrapper-inforcard-op-1 .stretchChildrenWidth {
+        width: 100% !important
+    }
+
+    &--wrapper-inforcard-op-2 .stretchChildrenWidth {
+        width: 100% !important
+    }
+
+    &--wrapper-inforcard-op-3 .stretchChildrenWidth {
+        width: 100% !important
+    }
+
+    &--wrapper-inforcard-op-4 .stretchChildrenWidth {
+        width: 100% !important
+    }
+
+    &--wrapper-inforcard-op-5 .stretchChildrenWidth {
+        width: 100% !important
+    }
+
+    &--wrapper-inforcard-op-6 .stretchChildrenWidth {
+        width: 100% !important
+    }
+}
+
+.flexColChild {
+    &--info-card-row-wrapper-lp-op {
+
+        &:first-child {
+            padding: 0 0 49px 0;
+            margin: 0 auto;
+            max-width: 1339px;
+
+            @media (max-width: 1025px) {
+                padding: 0 0 18px 0
+            }
+        }
+
+        &:last-child {
+            padding: 0 0 94px 0;
+
+            @media (max-width: 1025px) {
+                padding: 0 0 20px 0
+            }
+        }
+    }
+}
+
+.flexRow {
+    &--ajinomoto {
+        &--info-card-products-lp-op {
+            padding: 50px 0 0 0;
+            margin: 0 auto 20px auto;
+            max-width: 1339px
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.flexRowContent {
+    &--third-slider-image {
+        align-items: center
+    }
+
+    &--third-slider-image .stretchChildrenWidth {
+        &:last-child {
+            max-width: 773px !important
+        }
+    }
+
+    &--third-slider-image-mobile-wrapper {
+        gap: 50px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    &--third-slider-image-mobile-wrapper .stretchChildrenWidth{
+
+        &:first-child {
+            max-width: 374px;
+            margin: 0 auto;
+        }
+
+        &:last-child {
+            width: 100%!important;
+            max-width: 678px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.flexRow {
+    &--third-slider-image {
+        padding-top: 50px;
+        max-width: 1428px;
+        margin: 0 auto;
+    }
+}
